@@ -158,7 +158,7 @@ export default function BuildInfo() {
                     <hr />
 
                     {/* Spells */}
-                    <div className="flex flex-col">
+                    <div className="flex flex-col min-h-20">
                         <p>Spells, Miracles, and Pyromancies</p>
                         <div className="grid grid-cols-2 gap-1">
                             {/* TODO: for each X points in ATT, add another <select> */}
