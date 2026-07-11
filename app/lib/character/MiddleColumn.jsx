@@ -233,6 +233,7 @@ export default function MiddleColumn() {
                     </select>
                 </div>
 
+                {/* TODO: make this affect stat calculation */}
                 <input id="two-handing" type="checkbox" />
                 <label htmlFor="two-handing">Two-Handed</label>
             </div>
@@ -240,6 +241,7 @@ export default function MiddleColumn() {
             <hr />
 
             {/* Rings */}
+            {/* TODO: update with real options */}
             <div className="grid grid-cols-2 gap-1 w-full">
                 <p className="col-span-2 flex items-center justify-center h-full">
                     Rings
