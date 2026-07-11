@@ -1,4 +1,4 @@
-import BuildInfo from "./lib/build/BuildInfo";
+import CharacterInfo from "./lib/character/CharacterInfo";
 
 export default function Home() {
     return (
@@ -23,19 +23,21 @@ export default function Home() {
                         <h2 className="text-2xl font-bold">
                             Armor info goes here
                         </h2>
+                        <hr />
                     </article>
                     {/* main column with build info */}
-                    <article className="flex col-span-1 border rounded p-1 h-full">
+                    <article className="flex col-span-2 border rounded p-1 h-full">
                         {/* <h2 className="text-3xl font-bold text-black dark:text-white">
                             Character info goes here
                         </h2> */}
-                        <BuildInfo />
+                        <CharacterInfo />
                     </article>
                     {/* right column with weapon info */}
                     <article className="flex col-span-1 border rounded p-1 h-full">
                         <h2 className="text-2xl font-bold">
                             Weapon info goes here
                         </h2>
+                        <hr />
                     </article>
                 </div>
             </main>
