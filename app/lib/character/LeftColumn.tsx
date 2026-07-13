@@ -1,6 +1,6 @@
 export default function LeftColumn() {
     return (
-        <div className="h-full text-xs flex flex-col w-full items-left justify-baseline align-baseline">
+        <div className="h-full flex flex-col w-full items-left justify-baseline align-baseline">
             {/* Starting class */}
             <div className="flex w-full items-left justify-between align-center">
                 <label

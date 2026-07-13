@@ -1,9 +1,14 @@
 export default function MiddleColumn() {
     return (
-        <div className="text-xs flex gap-1 flex-col w-full h-full items-left justify-baseline align-center">
+        <div className="flex flex-col w-full h-full items-left justify-baseline align-center">
             {/* HP */}
             {/* TODO: update with calculations based on level/attributes */}
-            <div className="flex gap-1 w-full justify-between">
+            <div
+                className="flex gap-1 w-full justify-between"
+                style={{
+                    backgroundColor: "var(--primary)",
+                }}
+            >
                 <label
                     className="flex items-center justify-center h-full"
                     htmlFor="hp"
@@ -39,14 +44,19 @@ export default function MiddleColumn() {
 
             {/* Equip load */}
             {/* TODO: update with calculations based on level/attributes */}
-            <div className="flex gap-1 w-full justify-between">
+            <div
+                className="flex gap-1 w-full justify-between"
+                style={{
+                    backgroundColor: "var(--primary)",
+                }}
+            >
                 <label
                     className="flex items-center justify-center h-full"
                     htmlFor="equip-load"
                 >
                     Equip Load:
                 </label>
-                <div>
+                <div className="flex flex-col items-end justify-end">
                     <input
                         className="flex text-right max-w-15"
                         id="equip-load"
@@ -80,7 +90,12 @@ export default function MiddleColumn() {
 
             {/* Attunement slots */}
             {/* TODO: update with calculations based on level/attributes */}
-            <div className="flex gap-1 w-full justify-between">
+            <div
+                className="flex gap-1 w-full justify-between"
+                style={{
+                    backgroundColor: "var(--primary)",
+                }}
+            >
                 <label
                     className="flex items-center justify-center h-full"
                     htmlFor="attunement-slots"
@@ -98,84 +113,98 @@ export default function MiddleColumn() {
 
             <hr />
 
-            {/* Helmet */}
-            {/* TODO: update with real options */}
-            <div className="flex gap-1 w-full justify-between">
-                <label
-                    className="flex items-center justify-center h-full"
-                    htmlFor="helmet"
-                >
-                    Helmet:
-                </label>
-                <select
-                    className="flex text-right h-full max-w-15"
-                    id="helmet"
-                    defaultValue="0"
-                >
-                    <option value="0">None</option>
-                </select>
-            </div>
+            {/* Armor */}
+            <div className="flex flex-col w-full items-left justify-baseline align-center gap-1">
+                {/* Helmet */}
+                {/* TODO: update with real options */}
+                <div className="flex gap-1 w-full justify-between">
+                    <label
+                        className="flex items-center justify-center h-full"
+                        htmlFor="helmet"
+                    >
+                        Helmet:
+                    </label>
+                    <select
+                        className="flex text-right h-full max-w-15"
+                        id="helmet"
+                        defaultValue="0"
+                    >
+                        <option value="0">None</option>
+                    </select>
+                </div>
 
-            {/* Chestpiece */}
-            {/* TODO: update with real options */}
-            <div className="flex gap-1 w-full justify-between">
-                <label
-                    className="flex items-center justify-center h-full"
-                    htmlFor="chestpiece"
+                {/* Chestpiece */}
+                {/* TODO: update with real options */}
+                <div
+                    className="flex gap-1 w-full justify-between"
+                    style={{
+                        backgroundColor: "var(--primary)",
+                    }}
                 >
-                    Chestpiece:
-                </label>
-                <select
-                    className="flex text-right h-full max-w-15"
-                    id="chestpiece"
-                    defaultValue="0"
-                >
-                    <option value="0">None</option>
-                </select>
-            </div>
+                    <label
+                        className="flex items-center justify-center h-full"
+                        htmlFor="chestpiece"
+                    >
+                        Chestpiece:
+                    </label>
+                    <select
+                        className="flex text-right h-full max-w-15"
+                        id="chestpiece"
+                        defaultValue="0"
+                    >
+                        <option value="0">None</option>
+                    </select>
+                </div>
 
-            {/* Gauntlets */}
-            {/* TODO: update with real options */}
-            <div className="flex gap-1 w-full justify-between">
-                <label
-                    className="flex items-center justify-center h-full"
-                    htmlFor="gauntlets"
-                >
-                    Gauntlets:
-                </label>
-                <select
-                    className="flex text-right h-full max-w-15"
-                    id="gauntlets"
-                    defaultValue="0"
-                >
-                    <option value="0">None</option>
-                </select>
-            </div>
+                {/* Gauntlets */}
+                {/* TODO: update with real options */}
+                <div className="flex gap-1 w-full justify-between">
+                    <label
+                        className="flex items-center justify-center h-full"
+                        htmlFor="gauntlets"
+                    >
+                        Gauntlets:
+                    </label>
+                    <select
+                        className="flex text-right h-full max-w-15"
+                        id="gauntlets"
+                        defaultValue="0"
+                    >
+                        <option value="0">None</option>
+                    </select>
+                </div>
 
-            {/* Leggings */}
-            {/* TODO: update with real options */}
-            <div className="flex gap-1 w-full justify-between">
-                <label
-                    className="flex items-center justify-center h-full"
-                    htmlFor="leggings"
+                {/* Leggings */}
+                {/* TODO: update with real options */}
+                <div
+                    className="flex gap-1 w-full justify-between"
+                    style={{
+                        backgroundColor: "var(--primary)",
+                    }}
                 >
-                    Leggings:
-                </label>
-                <select
-                    className="flex text-right h-full max-w-15"
-                    id="leggings"
-                    defaultValue="0"
-                >
-                    <option value="0">None</option>
-                </select>
+                    <label
+                        className="flex items-center justify-center h-full"
+                        htmlFor="leggings"
+                    >
+                        Leggings:
+                    </label>
+                    <select
+                        className="flex text-right h-full max-w-15"
+                        id="leggings"
+                        defaultValue="0"
+                    >
+                        <option value="0">None</option>
+                    </select>
+                </div>
             </div>
 
             <hr />
 
+            {/* Weapons */}
             <div className="grid grid-cols-2 gap-1 w-full justify-between">
                 {/* Left hand */}
                 {/* TODO: update with real options */}
-                <div className="col-span-1 flex flex-col gap-1 w-full justify-between">
+                <div className="col-span-1 flex flex-col w-full justify-between">
                     <p className="flex text-left w-full">Left Hand</p>
                     <p className="flex text-left w-full">(10/0/0/0)</p>
                     <select
@@ -205,7 +234,7 @@ export default function MiddleColumn() {
 
                 {/* Right hand */}
                 {/* TODO: update with real options */}
-                <div className="col-span-1 flex items-end flex-col gap-1 w-full">
+                <div className="col-span-1 flex items-end flex-col w-full">
                     <p className="text-right w-full">Right Hand</p>
                     <p className=" text-right w-full">(10/0/0/0)</p>
                     <select
