@@ -1,0 +1,122 @@
+[
+    {
+        "Name": "Warrior",
+        "Level": 12,
+        "Stats": {
+            "Vigor": 7,
+            "Endurance": 6,
+            "Vitality": 6,
+            "Adaptability": 5,
+            "Strength": 15,
+            "Dexterity": 11,
+            "Intelligence": 5,
+            "Faith": 5,
+            "Attunement": 5
+        }
+    },
+    {
+        "Name": "Knight",
+        "Level": 13,
+        "Stats": {
+            "Vigor": 12,
+            "Endurance": 6,
+            "Vitality": 7,
+            "Adaptability": 9,
+            "Strength": 11,
+            "Dexterity": 8,
+            "Intelligence": 3,
+            "Faith": 6,
+            "Attunement": 4
+        }
+    },
+    {
+        "Name": "Swordsman",
+        "Level": 12,
+        "Stats": {
+            "Vigor": 4,
+            "Endurance": 8,
+            "Vitality": 4,
+            "Adaptability": 6,
+            "Strength": 9,
+            "Dexterity": 16,
+            "Intelligence": 7,
+            "Faith": 5,
+            "Attunement": 6
+        }
+    },
+    {
+        "Name": "Bandit",
+        "Level": 11,
+        "Stats": {
+            "Vigor": 9,
+            "Endurance": 7,
+            "Vitality": 11,
+            "Adaptability": 3,
+            "Strength": 9,
+            "Dexterity": 14,
+            "Intelligence": 1,
+            "Faith": 8,
+            "Attunement": 2
+        }
+    },
+    {
+        "Name": "Cleric",
+        "Level": 14,
+        "Stats": {
+            "Vigor": 10,
+            "Endurance": 3,
+            "Vitality": 8,
+            "Adaptability": 4,
+            "Strength": 11,
+            "Dexterity": 5,
+            "Intelligence": 4,
+            "Faith": 12,
+            "Attunement": 10
+        }
+    },
+    {
+        "Name": "Sorcerer",
+        "Level": 11,
+        "Stats": {
+            "Vigor": 5,
+            "Endurance": 6,
+            "Vitality": 5,
+            "Adaptability": 8,
+            "Strength": 3,
+            "Dexterity": 7,
+            "Intelligence": 14,
+            "Faith": 4,
+            "Attunement": 12
+        }
+    },
+    {
+        "Name": "Explorer",
+        "Level": 10,
+        "Stats": {
+            "Vigor": 7,
+            "Endurance": 6,
+            "Vitality": 9,
+            "Adaptability": 12,
+            "Strength": 6,
+            "Dexterity": 6,
+            "Intelligence": 5,
+            "Faith": 5,
+            "Attunement": 7
+        }
+    },
+    {
+        "Name": "Deprived",
+        "Level": 1,
+        "Stats": {
+            "Vigor": 6,
+            "Endurance": 6,
+            "Vitality": 6,
+            "Adaptability": 6,
+            "Strength": 6,
+            "Dexterity": 6,
+            "Intelligence": 6,
+            "Faith": 6,
+            "Attunement": 6
+        }
+    }
+]
