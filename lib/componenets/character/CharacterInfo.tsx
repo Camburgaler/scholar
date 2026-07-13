@@ -1,8 +1,17 @@
-import LeftColumn from "./LeftColumn";
-import MiddleColumn from "./MiddleColumn";
-import RightColumn from "./RightColumn";
+import LeftColumn from "@/lib/componenets/character/LeftColumn";
+import MiddleColumn from "@/lib/componenets/character/MiddleColumn";
+import RightColumn from "@/lib/componenets/character/RightColumn";
+import Class from "@/lib/interfaces/class";
+import { fetchData } from "@/lib/scripts/scripts";
+import { useEffect, useState } from "react";
 
 export default function CharacterInfo() {
+    const [classes, setClasses] = useState<Class[]>([]);
+
+    useEffect(() => {
+        fetchData<Class[]>("/api/data/class").then((res) => setClasses(res));
+    }, []);
+
     return (
         <div className="flex flex-col w-full items-center justify-center align-center">
             {/* Header */}
@@ -11,7 +20,7 @@ export default function CharacterInfo() {
 
             {/* Content */}
             <div className="flex w-full h-full items-center justify-center align-center gap-4">
-                <LeftColumn />
+                <LeftColumn classes={classes} />
 
                 <hr className="h-full max-w-px" />
 

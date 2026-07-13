@@ -1,4 +1,6 @@
-import CharacterInfo from "./lib/character/CharacterInfo";
+"use client";
+
+import CharacterInfo from "@/lib/componenets/character/CharacterInfo";
 
 export default function Home() {
     return (

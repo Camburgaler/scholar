@@ -1,4 +1,6 @@
-export default function LeftColumn() {
+import Class from "@/lib/interfaces/class";
+
+export default function LeftColumn(params: { classes: Class[] }) {
     return (
         <div className="h-full flex flex-col w-full items-left justify-baseline align-baseline">
             {/* Starting class */}
@@ -12,7 +14,12 @@ export default function LeftColumn() {
 
                 {/* TODO: convert to <select> */}
                 <select id="starting-class" defaultValue="warrior">
-                    <option value="warrior">Warrior</option>
+                    {/* <option value="warrior">Warrior</option> */}
+                    {params.classes.map((c) => (
+                        <option key={c.Name} value={c.Name}>
+                            {c.Name}
+                        </option>
+                    ))}
                 </select>
             </div>
             <hr />
