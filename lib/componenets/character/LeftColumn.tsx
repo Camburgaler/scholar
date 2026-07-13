@@ -1,6 +1,9 @@
 import Class from "@/lib/interfaces/class";
+import { useState } from "react";
 
 export default function LeftColumn(params: { classes: Class[] }) {
+    const [selectedClass, setSelectedClass] = useState<string>("Warrior");
+
     return (
         <div className="h-full flex flex-col w-full items-left justify-baseline align-baseline">
             {/* Starting class */}
@@ -12,9 +15,11 @@ export default function LeftColumn(params: { classes: Class[] }) {
                     Starting class:
                 </label>
 
-                {/* TODO: convert to <select> */}
-                <select id="starting-class" defaultValue="warrior">
-                    {/* <option value="warrior">Warrior</option> */}
+                <select
+                    id="starting-class"
+                    value={selectedClass}
+                    onChange={(e) => setSelectedClass(e.target.value)}
+                >
                     {params.classes.map((c) => (
                         <option key={c.Name} value={c.Name}>
                             {c.Name}
