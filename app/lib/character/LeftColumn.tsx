@@ -30,53 +30,202 @@ export default function LeftColumn() {
                 <tbody>
                     <tr>
                         <td className="text-left">Soul Level:</td>
-                        <td className="text-center">12</td>
-                        <td className="text-right">12</td>
+                        <td className="text-center">
+                            <input
+                                type="number"
+                                disabled
+                                value="12"
+                                className="text-right h-full max-w-15"
+                            />
+                        </td>
+                        <td className="text-right">
+                            <input
+                                type="number"
+                                disabled
+                                value="12"
+                                className="text-right h-full max-w-15"
+                            />
+                        </td>
                     </tr>
                     <tr>
                         <td className="text-left">Vigor:</td>
-                        <td className="text-center">7</td>
-                        <td className="text-right">7</td>
+                        <td className="text-center">
+                            <input
+                                type="number"
+                                disabled
+                                value="7"
+                                className="text-right h-full max-w-15"
+                            />
+                        </td>
+                        <td className="text-right">
+                            <input
+                                type="number"
+                                min="7"
+                                max="99"
+                                defaultValue="7"
+                                className="text-right h-full max-w-15"
+                            />
+                        </td>
                     </tr>
                     <tr>
                         <td className="text-left">Endurance:</td>
-                        <td className="text-center">6</td>
-                        <td className="text-right">6</td>
+                        <td className="text-center">
+                            <input
+                                type="number"
+                                disabled
+                                value="6"
+                                className="text-right h-full max-w-15"
+                            />
+                        </td>
+                        <td className="text-right">
+                            <input
+                                type="number"
+                                min="6"
+                                max="99"
+                                defaultValue="6"
+                                className="text-right h-full max-w-15"
+                            />
+                        </td>
                     </tr>
                     <tr>
                         <td className="text-left">Vitality:</td>
-                        <td className="text-center">6</td>
-                        <td className="text-right">6</td>
+                        <td className="text-center">
+                            <input
+                                type="number"
+                                disabled
+                                value="6"
+                                className="text-right h-full max-w-15"
+                            />
+                        </td>
+                        <td className="text-right">
+                            <input
+                                type="number"
+                                min="6"
+                                max="99"
+                                defaultValue="6"
+                                className="text-right h-full max-w-15"
+                            />
+                        </td>
                     </tr>
                     <tr>
                         <td className="text-left">Attunement:</td>
-                        <td className="text-center">5</td>
-                        <td className="text-right">5</td>
+                        <td className="text-center">
+                            <input
+                                type="number"
+                                disabled
+                                value="5"
+                                className="text-right h-full max-w-15"
+                            />
+                        </td>
+                        <td className="text-right">
+                            <input
+                                type="number"
+                                min="5"
+                                max="99"
+                                defaultValue="5"
+                                className="text-right h-full max-w-15"
+                            />
+                        </td>
                     </tr>
                     <tr>
                         <td className="text-left">Strength:</td>
-                        <td className="text-center">15</td>
-                        <td className="text-right">15</td>
+                        <td className="text-center">
+                            <input
+                                type="number"
+                                disabled
+                                value="15"
+                                className="text-right h-full max-w-15"
+                            />
+                        </td>
+                        <td className="text-right">
+                            <input
+                                type="number"
+                                min="15"
+                                max="99"
+                                defaultValue="15"
+                                className="text-right h-full max-w-15"
+                            />
+                        </td>
                     </tr>
                     <tr>
                         <td className="text-left">Dexterity:</td>
-                        <td className="text-center">11</td>
-                        <td className="text-right">11</td>
+                        <td className="text-center">
+                            <input
+                                type="number"
+                                disabled
+                                value="11"
+                                className="text-right h-full max-w-15"
+                            />
+                        </td>
+                        <td className="text-right">
+                            <input
+                                type="number"
+                                min="11"
+                                max="99"
+                                defaultValue="11"
+                                className="text-right h-full max-w-15"
+                            />
+                        </td>
                     </tr>
                     <tr>
                         <td className="text-left">Adaptability:</td>
-                        <td className="text-center">5</td>
-                        <td className="text-right">5</td>
+                        <td className="text-center">
+                            <input
+                                type="number"
+                                disabled
+                                value="5"
+                                className="text-right h-full max-w-15"
+                            />
+                        </td>
+                        <td className="text-right">
+                            <input
+                                type="number"
+                                min="5"
+                                max="99"
+                                defaultValue="5"
+                                className="text-right h-full max-w-15"
+                            />
+                        </td>
                     </tr>
                     <tr>
                         <td className="text-left">Intelligence:</td>
-                        <td className="text-center">5</td>
-                        <td className="text-right">5</td>
+                        <td className="text-center">
+                            <input
+                                type="number"
+                                disabled
+                                value="5"
+                                className="text-right h-full max-w-15"
+                            />
+                        </td>
+                        <td className="text-right">
+                            <input
+                                type="number"
+                                min="5"
+                                max="99"
+                                defaultValue="5"
+                                className="text-right h-full max-w-15"
+                            />
+                        </td>
                     </tr>
                     <tr>
                         <td className="text-left">Faith:</td>
-                        <td className="text-center">5</td>
-                        <td className="text-right">5</td>
+                        <td className="text-center">
+                            <input
+                                type="number"
+                                disabled
+                                value="5"
+                                className="text-right h-full max-w-15"
+                            />
+                        </td>
+                        <td className="text-right">
+                            <input
+                                type="number"
+                                min="5"
+                                max="99"
+                                defaultValue="5"
+                                className="text-right h-full max-w-15"
+                            />
+                        </td>
                     </tr>
                 </tbody>
             </table>
