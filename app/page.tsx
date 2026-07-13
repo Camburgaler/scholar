@@ -19,23 +19,20 @@ export default function Home() {
                 {/* Three columns, each about 30% of the page's width */}
                 <div className="app">
                     {/* left column with armor info */}
-                    <article className="flex col-span-1 border rounded p-1 h-full">
-                        <h2 className="text-2xl font-bold">
-                            Armor info goes here
+                    <article className="flex col-span-2 border rounded p-1 h-full">
+                        <h2 className="text-2xl text-left font-bold">
+                            Armor Inventory
                         </h2>
                         <hr />
                     </article>
                     {/* main column with build info */}
-                    <article className="flex col-span-2 border rounded p-1 h-full">
-                        {/* <h2 className="text-3xl font-bold text-black dark:text-white">
-                            Character info goes here
-                        </h2> */}
+                    <article className="flex col-span-3 border rounded p-1 h-full">
                         <CharacterInfo />
                     </article>
                     {/* right column with weapon info */}
                     <article className="flex col-span-1 border rounded p-1 h-full">
-                        <h2 className="text-2xl font-bold">
-                            Weapon info goes here
+                        <h2 className="text-2xl text-right font-bold">
+                            Weapon Inventory
                         </h2>
                         <hr />
                     </article>
