@@ -1,16 +1,21 @@
 import LeftColumn from "@/lib/componenets/character/LeftColumn";
 import MiddleColumn from "@/lib/componenets/character/MiddleColumn";
 import RightColumn from "@/lib/componenets/character/RightColumn";
-import Class from "@/lib/interfaces/class";
-import { fetchData } from "@/lib/scripts/scripts";
-import { useEffect, useState } from "react";
+import ChestpieceContext from "@/lib/context/chestpieces";
+import GauntletsContext from "@/lib/context/gauntlets";
+import HelmetContext from "@/lib/context/helmets";
+import LeggingsContext from "@/lib/context/leggings";
+import RingContext from "@/lib/context/rings";
+import Armor from "@/lib/types/armor";
+import Ring from "@/lib/types/ring";
+import { useContext } from "react";
 
 export default function CharacterInfo() {
-    const [classes, setClasses] = useState<Class[]>([]);
-
-    useEffect(() => {
-        fetchData<Class[]>("/api/data/class").then((res) => setClasses(res));
-    }, []);
+    const rings: Ring[] = useContext(RingContext);
+    const helmets: Armor[] = useContext(HelmetContext);
+    const chestpieces: Armor[] = useContext(ChestpieceContext);
+    const gauntlets: Armor[] = useContext(GauntletsContext);
+    const leggings: Armor[] = useContext(LeggingsContext);
 
     return (
         <div className="flex flex-col w-full items-center justify-center align-center">
@@ -20,7 +25,16 @@ export default function CharacterInfo() {
 
             {/* Content */}
             <div className="flex w-full h-full items-center justify-center align-center gap-4">
-                <LeftColumn classes={classes} />
+                <LeftColumn
+                    equippedRings={[rings[0], rings[0], rings[0], rings[0]]}
+                    equippedArmor={{
+                        helmet: helmets[0],
+                        chestpiece: chestpieces[0],
+                        gauntlets: gauntlets[0],
+                        leggings: leggings[0],
+                        weight: 0,
+                    }}
+                />
 
                 <hr className="h-full max-w-px" />
 
