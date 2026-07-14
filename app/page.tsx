@@ -1,6 +1,6 @@
 "use client";
 
-import CharacterInfo from "@/lib/componenets/character/CharacterInfo";
+import CharacterInfo from "@/lib/components/CharacterInfo";
 import {
     VirtualStatsContext,
     VirtualStatsDispatchContext,
