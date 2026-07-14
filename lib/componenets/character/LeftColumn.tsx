@@ -1,5 +1,9 @@
 import ClassContext from "@/lib/context/classes";
 import Class from "@/lib/interfaces/class";
+import {
+    VirtualStatsContext,
+    VirtualStatsDispatchContext,
+} from "@/lib/reducers/virtualStats";
 import ArmorSet from "@/lib/types/armorSet";
 import Equippable from "@/lib/types/equippable";
 import Ring from "@/lib/types/ring";
@@ -85,17 +89,8 @@ export default function LeftColumn(props: {
     });
 
     // Virtual stats are the final stats after adding equipment bonuses
-    const [virtualStats, setVirtualStats] = useState<StatMap<number>>({
-        Vigor: 0,
-        Endurance: 0,
-        Vitality: 0,
-        Adaptability: 0,
-        Strength: 0,
-        Dexterity: 0,
-        Intelligence: 0,
-        Faith: 0,
-        Attunement: 0,
-    });
+    const virtualStats = useContext(VirtualStatsContext);
+    const setVirtualStats = useContext(VirtualStatsDispatchContext);
 
     // Optimal class is the class with the lowest delta
     const [optimalClass, setOptimalClass] = useState<Class>(classes[0] ?? {});
@@ -205,7 +200,10 @@ export default function LeftColumn(props: {
             },
         );
         setFinalStats(tempFinal);
-        setVirtualStats(tempVirtual);
+        // setVirtualStats(must be a Map<StatMapKey, number>);
+        setVirtualStats(
+            new Map(Object.entries(tempVirtual) as [StatMapKey, number][]),
+        );
     }, [desiredStats, optimalClass, itemStats]);
 
     /**
@@ -222,13 +220,14 @@ export default function LeftColumn(props: {
                 props.equippedArmor.leggings,
             ]),
         );
-    }, [props.equippedRings, props.equippedArmor]);
+    }, []);
 
     // RENDER
     return (
         <div className="h-full flex flex-col w-full items-left justify-baseline align-baseline">
             {/* Starting class */}
             <div className="flex w-full items-left justify-between align-center">
+                {/* TODO: set a toggle to switch between finding an optimal starting class and building around a selected starting class */}
                 <label
                     className="flex items-center justify-center"
                     htmlFor="starting-class"
@@ -246,17 +245,18 @@ export default function LeftColumn(props: {
             <hr />
 
             {/* Stats */}
-            {/* TODO: convert stat displays to <input> */}
             <table className="w-full">
                 <thead>
                     <tr>
-                        <th className="text-left">STAT</th>
-                        <th className="text-center">INITIAL</th>
-                        <th className="text-right">DESIRED</th>
+                        <th className="text-left">Stat</th>
+                        <th className="text-center">Base</th>
+                        <th className="text-right">Desired</th>
+                        <th className="text-right">Final</th>
+                        <th className="text-right">Virtual</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr className="w-full">
                         <td className="text-left">Soul Level:</td>
                         <td className="text-center">
                             <input
@@ -266,6 +266,7 @@ export default function LeftColumn(props: {
                                 className="text-right h-full max-w-15"
                             />
                         </td>
+                        <td></td>
                         <td className="text-right">
                             <input
                                 type="number"
@@ -274,6 +275,7 @@ export default function LeftColumn(props: {
                                 className="text-right h-full max-w-15"
                             />
                         </td>
+                        <td></td>
                     </tr>
                     {Object.keys(desiredStats).map((statId: string) => (
                         <tr key={statId}>
@@ -303,6 +305,22 @@ export default function LeftColumn(props: {
                                             parseInt(e.target.value),
                                         )
                                     }
+                                />
+                            </td>
+                            <td className="text-right">
+                                <input
+                                    type="number"
+                                    disabled
+                                    value={finalStats[statId as StatMapKey]!}
+                                    className="text-right h-full max-w-15"
+                                />
+                            </td>
+                            <td className="text-right">
+                                <input
+                                    type="number"
+                                    disabled
+                                    value={virtualStats[statId as StatMapKey]!}
+                                    className="text-right h-full max-w-15"
                                 />
                             </td>
                         </tr>
