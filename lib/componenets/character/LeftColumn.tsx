@@ -10,8 +10,9 @@ import { useCallback, useContext, useEffect, useState } from "react";
  * Returns a StatMap that contains the total stats of all the items in the given array.
  * Items without stats are ignored.
  * If an item has no stat for a particular statId, 0 is assumed for that statId.
- * The returned StatMap object is initialized with all statIds set to 0.
+ *
  * @param {Equippable[]} items The array of items to calculate the total stats from.
+ *
  * @returns {StatMap<number>} The total stats of all the items in the given array.
  */
 function getItemStats(items: Equippable[]): StatMap<number> {
@@ -239,7 +240,7 @@ export default function LeftColumn(props: {
                     className="flex max-w-30 text-right h-full"
                     id="starting-class"
                     disabled
-                    value="Warrior"
+                    value={optimalClass.Name}
                 />
             </div>
             <hr />
@@ -261,7 +262,7 @@ export default function LeftColumn(props: {
                             <input
                                 type="number"
                                 disabled
-                                value="12"
+                                value={optimalClass.Level}
                                 className="text-right h-full max-w-15"
                             />
                         </td>
@@ -269,191 +270,43 @@ export default function LeftColumn(props: {
                             <input
                                 type="number"
                                 disabled
-                                value={Math.max(12, 99)}
+                                value={optimalClass.sortingValue}
                                 className="text-right h-full max-w-15"
                             />
                         </td>
                     </tr>
-                    <tr>
-                        <td className="text-left">Vigor:</td>
-                        <td className="text-center">
-                            <input
-                                type="number"
-                                disabled
-                                value="7"
-                                className="text-right h-full max-w-15"
-                            />
-                        </td>
-                        <td className="text-right">
-                            <input
-                                type="number"
-                                min="7"
-                                max="99"
-                                defaultValue="7"
-                                className="text-right h-full max-w-15"
-                            />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className="text-left">Endurance:</td>
-                        <td className="text-center">
-                            <input
-                                type="number"
-                                disabled
-                                value="6"
-                                className="text-right h-full max-w-15"
-                            />
-                        </td>
-                        <td className="text-right">
-                            <input
-                                type="number"
-                                min="6"
-                                max="99"
-                                defaultValue="6"
-                                className="text-right h-full max-w-15"
-                            />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className="text-left">Vitality:</td>
-                        <td className="text-center">
-                            <input
-                                type="number"
-                                disabled
-                                value="6"
-                                className="text-right h-full max-w-15"
-                            />
-                        </td>
-                        <td className="text-right">
-                            <input
-                                type="number"
-                                min="6"
-                                max="99"
-                                defaultValue="6"
-                                className="text-right h-full max-w-15"
-                            />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className="text-left">Attunement:</td>
-                        <td className="text-center">
-                            <input
-                                type="number"
-                                disabled
-                                value="5"
-                                className="text-right h-full max-w-15"
-                            />
-                        </td>
-                        <td className="text-right">
-                            <input
-                                type="number"
-                                min="5"
-                                max="99"
-                                defaultValue="5"
-                                className="text-right h-full max-w-15"
-                            />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className="text-left">Strength:</td>
-                        <td className="text-center">
-                            <input
-                                type="number"
-                                disabled
-                                value="15"
-                                className="text-right h-full max-w-15"
-                            />
-                        </td>
-                        <td className="text-right">
-                            <input
-                                type="number"
-                                min="15"
-                                max="99"
-                                defaultValue="15"
-                                className="text-right h-full max-w-15"
-                            />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className="text-left">Dexterity:</td>
-                        <td className="text-center">
-                            <input
-                                type="number"
-                                disabled
-                                value="11"
-                                className="text-right h-full max-w-15"
-                            />
-                        </td>
-                        <td className="text-right">
-                            <input
-                                type="number"
-                                min="11"
-                                max="99"
-                                defaultValue="11"
-                                className="text-right h-full max-w-15"
-                            />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className="text-left">Adaptability:</td>
-                        <td className="text-center">
-                            <input
-                                type="number"
-                                disabled
-                                value="5"
-                                className="text-right h-full max-w-15"
-                            />
-                        </td>
-                        <td className="text-right">
-                            <input
-                                type="number"
-                                min="5"
-                                max="99"
-                                defaultValue="5"
-                                className="text-right h-full max-w-15"
-                            />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className="text-left">Intelligence:</td>
-                        <td className="text-center">
-                            <input
-                                type="number"
-                                disabled
-                                value="5"
-                                className="text-right h-full max-w-15"
-                            />
-                        </td>
-                        <td className="text-right">
-                            <input
-                                type="number"
-                                min="5"
-                                max="99"
-                                defaultValue="5"
-                                className="text-right h-full max-w-15"
-                            />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className="text-left">Faith:</td>
-                        <td className="text-center">
-                            <input
-                                type="number"
-                                disabled
-                                value="5"
-                                className="text-right h-full max-w-15"
-                            />
-                        </td>
-                        <td className="text-right">
-                            <input
-                                type="number"
-                                min="5"
-                                max="99"
-                                defaultValue="5"
-                                className="text-right h-full max-w-15"
-                            />
-                        </td>
-                    </tr>
+                    {Object.keys(desiredStats).map((statId: string) => (
+                        <tr key={statId}>
+                            <td className="text-left">{statId}:</td>
+                            <td className="text-center">
+                                <input
+                                    type="number"
+                                    disabled
+                                    value={
+                                        optimalClass.Stats[
+                                            statId as StatMapKey
+                                        ]!
+                                    }
+                                    className="text-right h-full max-w-15"
+                                />
+                            </td>
+                            <td className="text-right">
+                                <input
+                                    type="number"
+                                    min="0"
+                                    max="99"
+                                    value={desiredStats[statId as StatMapKey]!}
+                                    className="text-right h-full max-w-15"
+                                    onChange={(e) =>
+                                        updateDesiredStats(
+                                            statId as StatMapKey,
+                                            parseInt(e.target.value),
+                                        )
+                                    }
+                                />
+                            </td>
+                        </tr>
+                    ))}
                 </tbody>
             </table>
             <hr />
