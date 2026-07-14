@@ -1,5 +1,5 @@
-import AttackPowerTypeMap from "./attackPowerTypeMap";
-import StatMap from "./statMap";
+import AttackPowerTypeMap from "@/lib/types/attackPowerTypeMap";
+import StatMap from "@/lib/types/statMap";
 
 type WeaponInfusion = {
     ID: string;

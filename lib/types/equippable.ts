@@ -1,10 +1,10 @@
-import ModifierMap from "@/lib/types/modifers";
+import ModifierMap from "@/lib/types/modifer";
 
 type Equippable = {
-    ID: string;
-    Name: string;
+    Name: string; //pk
     AdditiveModifiers?: ModifierMap;
     MultiplicativeModifiers?: ModifierMap;
+    Weight: string;
 };
 
 export default Equippable;

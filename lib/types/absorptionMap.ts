@@ -1,6 +1,6 @@
 // This type is used to represent a map of armor resistances to values.
 
-export type AbsorptionsMapKey =
+export type AbsorptionMapKey =
     | "Magic"
     | "Lightning"
     | "Fire"
@@ -10,8 +10,8 @@ export type AbsorptionsMapKey =
     | "Petrify"
     | "Curse";
 
-type AbsorptionsMap<T> = {
-    [K in AbsorptionsMapKey]: T;
+type AbsorptionMap<T> = {
+    [K in AbsorptionMapKey]: T;
 };
 
-export default AbsorptionsMap;
+export default AbsorptionMap;

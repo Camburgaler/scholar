@@ -42,7 +42,7 @@ type ModifierKey =
     | "Weight";
 
 type ModifierMap = {
-    [key in ModifierKey]: number;
+    [key in ModifierKey]?: number;
 };
 
 export default ModifierMap;

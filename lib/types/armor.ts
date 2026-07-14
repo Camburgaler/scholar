@@ -1,10 +1,10 @@
-import AbsorptionsMap from "@/lib/types/absorptionsMap";
-import DefensesMap from "@/lib/types/defensesMap";
+import AbsorptionMap from "@/lib/types/absorptionMap";
+import DefenceMap from "@/lib/types/defenceMap";
 import Equippable from "@/lib/types/equippable";
 
 type Armor = Equippable & {
-    Defenses: DefensesMap<number>;
-    Absorptions: AbsorptionsMap<number>;
+    Defenses: DefenceMap<number>;
+    Absorptions: AbsorptionMap<number>;
     Poise: number;
     Weight: number;
     Fitness?: number;
