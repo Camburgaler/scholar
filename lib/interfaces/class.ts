@@ -1,17 +1,11 @@
-interface Stats {
-    Vigor: number;
-    Endurance: number;
-    Vitality: number;
-    Adaptability: number;
-    Strength: number;
-    Dexterity: number;
-    Intelligence: number;
-    Faith: number;
-    Attunement: number;
-}
+import StatMap from "@/lib/types/statMap";
 
 export default interface Class {
+    // Fields from the JSON file
     Name: string;
     Level: number;
-    Stats: Stats;
+    Stats: StatMap<number>;
+
+    // Calculated fields
+    sortingValue: number;
 }
