@@ -1,0 +1,25 @@
+[
+    {
+        "Name": "No Chestpiece",
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0,
+        "Weight": 0
+    }
+]
