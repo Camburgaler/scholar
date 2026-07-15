@@ -363,9 +363,9 @@ export default function LeftColumn(props: {
             <hr />
 
             {/* Souls */}
-            <div className="grid grid-cols-2 w-full gap-1">
+            <div className="flex w-full gap-1">
                 {/* Souls to next level */}
-                <div className="col-span-1 w-full flex flex-col justify-between">
+                <div className="w-full flex flex-col justify-between">
                     <label
                         htmlFor="soulsToNextLevel"
                         className="w-full text-center"
@@ -382,7 +382,7 @@ export default function LeftColumn(props: {
                 </div>
                 {/* Total soul cost */}
                 {/* TODO: add calculations to accurately display this data */}
-                <div className="col-span-1 w-full flex flex-col justify-between">
+                <div className="w-full flex flex-col justify-between">
                     <label
                         htmlFor="totalSoulCost"
                         className="w-full text-center"
@@ -392,20 +392,6 @@ export default function LeftColumn(props: {
                     <input
                         id="totalSoulCost"
                         className="w-full text-right"
-                        type="number"
-                        disabled
-                        value="0"
-                    />
-                </div>
-                {/* Soul memory */}
-                {/* TODO: add calculations to accurately display this data */}
-                <div className="col-span-2 w-full flex flex-col justify-between">
-                    <label htmlFor="soulMemory" className="w-full text-center">
-                        Soul Memory
-                    </label>
-                    <input
-                        id="soulMemory"
-                        className="w-full text-center"
                         type="number"
                         disabled
                         value="0"
