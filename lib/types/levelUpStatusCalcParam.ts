@@ -1,3 +1,11 @@
+export type WeaponEquipSlots =
+    | "LeftHandWeaponPrimary"
+    | "LeftHandWeaponSecondary"
+    | "LeftHandWeaponTertiary"
+    | "RightHandWeaponPrimary"
+    | "RightHandWeaponSecondary"
+    | "RightHandWeaponTertiary";
+
 export type LevelUpStatusCalcParamKey =
     | "ID"
     | "Name"
@@ -14,7 +22,7 @@ export type LevelUpStatusCalcParamKey =
     | "AttackPowerDark"
     | "AttackPowerPoison"
     | "AttackPowerBleed"
-    | "Defence"
+    | "Defense"
     | "AbsorptionMagic"
     | "AbsorptionFire"
     | "AbsorptionLightning"
@@ -25,16 +33,56 @@ export type LevelUpStatusCalcParamKey =
     | "AbsorptionCurse"
     | "Agility"
     | "Poise"
-    | "LeftHandWeaponPrimary"
-    | "LeftHandWeaponSecondary"
-    | "LeftHandWeaponTertiary"
-    | "RightHandWeaponPrimary"
-    | "RightHandWeaponSecondary"
-    | "RightHandWeaponTertiary"
-    | "DefenceStrike"
-    | "DefenceSlash"
-    | "DefenceThrust"
-    | "DefencePoise";
+    | WeaponEquipSlots
+    | "DefenseStrike"
+    | "DefenseSlash"
+    | "DefenseThrust"
+    | "DefensePoise";
+
+export const LevelUpStatusCalcParamMap: Map<LevelUpStatusCalcParamKey, string> =
+    new Map<LevelUpStatusCalcParamKey, string>([
+        // Middle Column
+        ["MaximumHP", "Maximum HP"],
+        ["MaximumStamina", "Maximum Stamina"],
+        ["MaximumEquipLoad", "Equip Load"],
+        ["Poise", "Poise"],
+        ["SpellSlotCount", "Attunement Slots"],
+        // <hr />
+        ["LeftHandWeaponPrimary", "Left Hand Weapon (Primary)"],
+        ["LeftHandWeaponSecondary", "Left Hand Weapon (Secondary)"],
+        ["LeftHandWeaponTertiary", "Left Hand Weapon (Tertiary)"],
+        ["RightHandWeaponPrimary", "Right Hand Weapon (Primary)"],
+        ["RightHandWeaponSecondary", "Right Hand Weapon (Secondary)"],
+        ["RightHandWeaponTertiary", "Right Hand Weapon (Tertiary)"],
+
+        // Right Column
+        ["SpellCastingSpeed", "Cast Speed"],
+        ["Agility", "Agility"],
+        // <hr />
+        ["PhysicalAttackPowerByStrength", "Attack (Strength)"],
+        ["PhysicalAttackPowerByDexterity", "Attack (Dexterity)"],
+        ["AttackPowerMagic", "Magic Bonus"],
+        ["AttackPowerFire", "Fire Bonus"],
+        ["AttackPowerLightning", "Lightning Bonus"],
+        ["AttackPowerDark", "Dark Bonus"],
+        ["AttackPowerPoison", "Poison Bonus"],
+        ["AttackPowerBleed", "Bleed Bonus"],
+        // <hr />
+        ["Defense", "Defense (Physical)"],
+        ["DefenseStrike", "VS Strike"],
+        ["DefenseSlash", "VS Slash"],
+        ["DefenseThrust", "VS Thrust"],
+        ["DefensePoise", "Defense (Poise)"],
+        ["AbsorptionMagic", "Absorption (Magic)"],
+        ["AbsorptionFire", "Absorption (Fire)"],
+        ["AbsorptionLightning", "Absorption (Lightning)"],
+        ["AbsorptionDark", "Absorption (Dark)"],
+        // <hr />
+        ["AbsorptionPoison", "Absorption (Poison)"],
+        ["AbsorptionBleed", "Absorption (Bleed)"],
+        ["AbsorptionPetrify", "Absorption (Petrify)"],
+        ["AbsorptionCurse", "Absorption (Curse)"],
+    ]);
 
 type LevelUpStatusCalcParam = {
     [key in LevelUpStatusCalcParamKey]: boolean;

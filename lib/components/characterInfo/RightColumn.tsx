@@ -1,458 +1,184 @@
+import StatDisplay from "@/lib/components/characterInfo/StatDisplay";
+
 export default function RightColumn() {
     return (
-        <div className="flex flex-col w-full h-full justify-baseline items-end align-center">
+        <div className="flex flex-col w-4xl h-full justify-baseline items-end align-center">
             {/* Cast Speed */}
             {/* TODO: update with calculations based on level/attributes */}
-            <div
-                className="flex gap-1 w-full justify-between"
-                style={{
-                    backgroundColor: "var(--primary)",
-                }}
-            >
-                <label
-                    className="flex items-center justify-center h-full"
-                    htmlFor="cast-speed"
-                >
-                    Cast Speed:
-                </label>
-                <input
-                    className="flex text-right h-full max-w-15"
-                    id="cast-speed"
-                    type="number"
-                    disabled
-                    value="45"
-                />
-            </div>
+            <StatDisplay
+                levelUpStatusCalcParamKey="SpellCastingSpeed"
+                displayValue="45"
+                isOddRow
+            />
 
             {/* Agility */}
             {/* TODO: update with calculations based on level/attributes */}
-            <div className="flex gap-1 w-full justify-between">
-                <label
-                    className="flex items-center justify-center h-full"
-                    htmlFor="agility"
-                >
-                    Agility:
-                </label>
-                <input
-                    className="flex text-right h-full max-w-15"
-                    id="agility"
-                    type="number"
-                    disabled
-                    value="85"
-                />
-            </div>
+            <StatDisplay
+                levelUpStatusCalcParamKey="Agility"
+                displayValue="85"
+            />
 
             <hr />
 
             {/* Attack: Strength */}
             {/* TODO: update with calculations based on level/attributes */}
-            <div
-                className="flex gap-1 w-full justify-between"
-                style={{
-                    backgroundColor: "var(--primary)",
-                }}
-            >
-                <label
-                    className="flex items-center justify-center h-full"
-                    htmlFor="attack-strength"
-                >
-                    Attack (Strength):
-                </label>
-                <input
-                    className="flex text-right h-full max-w-15"
-                    id="attack-strength"
-                    type="number"
-                    disabled
-                    value="68"
-                />
-            </div>
+            <StatDisplay
+                levelUpStatusCalcParamKey="PhysicalAttackPowerByStrength"
+                displayValue="68"
+                isOddRow
+            />
 
             {/* Attack: Dexterity */}
             {/* TODO: update with calculations based on level/attributes */}
-            <div className="flex gap-1 w-full justify-between">
-                <label
-                    className="flex items-center justify-center h-full"
-                    htmlFor="attack-dexterity"
-                >
-                    Attack (Dexterity):
-                </label>
-                <input
-                    className="flex text-right h-full max-w-15"
-                    id="attack-dexterity"
-                    type="number"
-                    disabled
-                    value="59"
-                />
-            </div>
+            <StatDisplay
+                levelUpStatusCalcParamKey="PhysicalAttackPowerByDexterity"
+                displayValue="59"
+            />
 
             {/* Magic Bonus */}
             {/* TODO: update with calculations based on level/attributes */}
-            <div
-                className="flex gap-1 w-full justify-between"
-                style={{
-                    backgroundColor: "var(--primary)",
-                }}
-            >
-                <label
-                    className="flex items-center justify-center h-full"
-                    htmlFor="magic-bonus"
-                >
-                    Magic Bonus:
-                </label>
-                <input
-                    className="flex text-right h-full max-w-15"
-                    id="magic-bonus"
-                    type="number"
-                    disabled
-                    value="51"
-                />
-            </div>
+            <StatDisplay
+                levelUpStatusCalcParamKey="AttackPowerMagic"
+                displayValue="51"
+                isOddRow
+            />
 
             {/* Fire Bonus */}
             {/* TODO: update with calculations based on level/attributes */}
-            <div className="flex gap-1 w-full justify-between">
-                <label
-                    className="flex items-center justify-center h-full"
-                    htmlFor="fire-bonus"
-                >
-                    Fire Bonus:
-                </label>
-                <input
-                    className="flex text-right h-full max-w-15"
-                    id="fire-bonus"
-                    type="number"
-                    disabled
-                    value="61"
-                />
-            </div>
+            <StatDisplay
+                levelUpStatusCalcParamKey="AttackPowerFire"
+                displayValue="61"
+            />
 
             {/* Lightning Bonus */}
             {/* TODO: update with calculations based on level/attributes */}
-            <div
-                className="flex gap-1 w-full justify-between"
-                style={{
-                    backgroundColor: "var(--primary)",
-                }}
-            >
-                <label
-                    className="flex items-center justify-center h-full"
-                    htmlFor="lightning-bonus"
-                >
-                    Lightning Bonus:
-                </label>
-                <input
-                    className="flex text-right h-full max-w-15"
-                    id="lightning-bonus"
-                    type="number"
-                    disabled
-                    value="53"
-                />
-            </div>
+            <StatDisplay
+                levelUpStatusCalcParamKey="AttackPowerLightning"
+                displayValue="53"
+                isOddRow
+            />
 
             {/* Dark Bonus */}
             {/* TODO: update with calculations based on level/attributes */}
-            <div className="flex gap-1 w-full justify-between">
-                <label
-                    className="flex items-center justify-center h-full"
-                    htmlFor="dark-bonus"
-                >
-                    Dark Bonus:
-                </label>
-                <input
-                    className="flex text-right h-full max-w-15"
-                    id="dark-bonus"
-                    type="number"
-                    disabled
-                    value="61"
-                />
-            </div>
+            <StatDisplay
+                levelUpStatusCalcParamKey="AttackPowerDark"
+                displayValue="61"
+            />
 
             {/* Poison Bonus */}
             {/* TODO: update with calculations based on level/attributes */}
-            <div
-                className="flex gap-1 w-full justify-between"
-                style={{
-                    backgroundColor: "var(--primary)",
-                }}
-            >
-                <label
-                    className="flex items-center justify-center h-full"
-                    htmlFor="poison-bonus"
-                >
-                    Poison Bonus:
-                </label>
-                <input
-                    className="flex text-right h-full max-w-15"
-                    id="poison-bonus"
-                    type="number"
-                    disabled
-                    value="56"
-                />
-            </div>
+            <StatDisplay
+                levelUpStatusCalcParamKey="AttackPowerPoison"
+                displayValue="56"
+                isOddRow
+            />
 
             {/* Bleed Bonus */}
             {/* TODO: update with calculations based on level/attributes */}
-            <div className="flex gap-1 w-full justify-between">
-                <label
-                    className="flex items-center justify-center h-full"
-                    htmlFor="bleed-bonus"
-                >
-                    Bleed Bonus:
-                </label>
-                <input
-                    className="flex text-right h-full max-w-15"
-                    id="bleed-bonus"
-                    type="number"
-                    disabled
-                    value="56"
-                />
-            </div>
+            <StatDisplay
+                levelUpStatusCalcParamKey="AttackPowerBleed"
+                displayValue="56"
+            />
 
             <hr />
 
             {/* Physical Defense */}
             {/* TODO: update with calculations based on level/attributes */}
-            <div
-                className="flex gap-1 w-full justify-between"
-                style={{
-                    backgroundColor: "var(--primary)",
-                }}
-            >
-                <label
-                    className="flex items-center justify-center h-full"
-                    htmlFor="physical-defense"
-                >
-                    Physical Defense:
-                </label>
-                <input
-                    className="flex text-right h-full max-w-15"
-                    id="physical-defense"
-                    type="number"
-                    disabled
-                    value="77"
-                />
-            </div>
+            <StatDisplay
+                levelUpStatusCalcParamKey="Defense"
+                displayValue="77"
+                isOddRow
+            />
 
             <ul className="flex flex-col w-full indent-4">
                 <li className="flex">
                     {/* Strike Defense */}
                     {/* TODO: update with calculations based on level/attributes */}
-                    <div className="flex gap-1 w-full justify-between">
-                        <label
-                            className="flex items-center justify-center h-full"
-                            htmlFor="strike-defense"
-                        >
-                            {"VS Strike:"}
-                        </label>
-                        <input
-                            className="flex text-right h-full max-w-15"
-                            id="strike-defense"
-                            type="number"
-                            disabled
-                            value="77"
-                        />
-                    </div>
+                    <StatDisplay
+                        levelUpStatusCalcParamKey="DefenseStrike"
+                        displayValue="77"
+                    />
                 </li>
                 <li>
                     {/* Slash Defense */}
                     {/* TODO: update with calculations based on level/attributes */}
-                    <div
-                        className="flex gap-1 w-full justify-between"
-                        style={{
-                            backgroundColor: "var(--primary)",
-                        }}
-                    >
-                        <label
-                            className="flex items-center justify-center h-full"
-                            htmlFor="slash-defense"
-                        >
-                            {"VS Slash:"}
-                        </label>
-                        <input
-                            className="flex text-right h-full max-w-15"
-                            id="slash-defense"
-                            type="number"
-                            disabled
-                            value="77"
-                        />
-                    </div>
+                    <StatDisplay
+                        levelUpStatusCalcParamKey="DefenseSlash"
+                        displayValue="77"
+                        isOddRow
+                    />
                 </li>
                 <li>
                     {/* Thrust Defense */}
                     {/* TODO: update with calculations based on level/attributes */}
-                    <div className="flex gap-1 w-full justify-between">
-                        <label
-                            className="flex items-center justify-center h-full"
-                            htmlFor="thrust-defense"
-                        >
-                            {"VS Thrust:"}
-                        </label>
-                        <input
-                            className="flex text-right h-full max-w-15"
-                            id="thrust-defense"
-                            type="number"
-                            disabled
-                            value="77"
-                        />
-                    </div>
+                    <StatDisplay
+                        levelUpStatusCalcParamKey="DefenseThrust"
+                        displayValue="77"
+                    />
                 </li>
             </ul>
 
             {/* Magic Defense */}
             {/* TODO: update with calculations based on level/attributes */}
-            <div
-                className="flex gap-1 w-full justify-between"
-                style={{
-                    backgroundColor: "var(--primary)",
-                }}
-            >
-                <label
-                    className="flex items-center justify-center h-full"
-                    htmlFor="magic-defense"
-                >
-                    Magic Defense:
-                </label>
-                <input
-                    className="flex text-right h-full max-w-15"
-                    id="magic-defense"
-                    type="number"
-                    disabled
-                    value="30"
-                />
-            </div>
+            <StatDisplay
+                levelUpStatusCalcParamKey="AbsorptionMagic"
+                displayValue="30"
+                isOddRow
+            />
 
             {/* Fire Defense */}
             {/* TODO: update with calculations based on level/attributes */}
-            <div className="flex gap-1 w-full justify-between">
-                <label
-                    className="flex items-center justify-center h-full"
-                    htmlFor="fire-defense"
-                >
-                    Fire Defense:
-                </label>
-                <input
-                    className="flex text-right h-full max-w-15"
-                    id="fire-defense"
-                    type="number"
-                    disabled
-                    value="68"
-                />
-            </div>
+            <StatDisplay
+                levelUpStatusCalcParamKey="AbsorptionFire"
+                displayValue="68"
+            />
 
             {/* Lightning Defense */}
             {/* TODO: update with calculations based on level/attributes */}
-            <div
-                className="flex gap-1 w-full justify-between"
-                style={{
-                    backgroundColor: "var(--primary)",
-                }}
-            >
-                <label
-                    className="flex items-center justify-center h-full"
-                    htmlFor="lightning-defense"
-                >
-                    Lightning Defense:
-                </label>
-                <input
-                    className="flex text-right h-full max-w-15"
-                    id="lightning-defense"
-                    type="number"
-                    disabled
-                    value="30"
-                />
-            </div>
+            <StatDisplay
+                levelUpStatusCalcParamKey="AbsorptionLightning"
+                displayValue="30"
+                isOddRow
+            />
 
             {/* Dark Defense */}
             {/* TODO: update with calculations based on level/attributes */}
-            <div className="flex gap-1 w-full justify-between">
-                <label
-                    className="flex items-center justify-center h-full"
-                    htmlFor="dark-defense"
-                >
-                    Dark Defense:
-                </label>
-                <input
-                    className="flex text-right h-full max-w-15"
-                    id="dark-defense"
-                    type="number"
-                    disabled
-                    value="36"
-                />
-            </div>
+            <StatDisplay
+                levelUpStatusCalcParamKey="AbsorptionDark"
+                displayValue="36"
+            />
 
             <hr />
 
             {/* Bleed Resistance */}
             {/* TODO: update with calculations based on level/attributes */}
-            <div className="flex gap-1 w-full justify-between">
-                <label
-                    className="flex items-center justify-center h-full"
-                    htmlFor="bleed-resistance"
-                >
-                    Bleed Resistance:
-                </label>
-                <input
-                    className="flex text-right h-full max-w-15"
-                    id="bleed-resistance"
-                    type="number"
-                    disabled
-                    value="30"
-                />
-            </div>
+            <StatDisplay
+                levelUpStatusCalcParamKey="AbsorptionBleed"
+                displayValue="30"
+                isOddRow
+            />
 
             {/* Poison Resistance */}
             {/* TODO: update with calculations based on level/attributes */}
-            <div className="flex gap-1 w-full justify-between">
-                <label
-                    className="flex items-center justify-center h-full"
-                    htmlFor="poison-resistance"
-                >
-                    Poison Resistance:
-                </label>
-                <input
-                    className="flex text-right h-full max-w-15"
-                    id="poison-resistance"
-                    type="number"
-                    disabled
-                    value="30"
-                />
-            </div>
+            <StatDisplay
+                levelUpStatusCalcParamKey="AbsorptionPoison"
+                displayValue="30"
+            />
 
             {/* Petrify Resistance */}
             {/* TODO: update with calculations based on level/attributes */}
-            <div className="flex gap-1 w-full justify-between">
-                <label
-                    className="flex items-center justify-center h-full"
-                    htmlFor="petrify-resistance"
-                >
-                    Petrify Resistance:
-                </label>
-                <input
-                    className="flex text-right h-full max-w-15"
-                    id="petrify-resistance"
-                    type="number"
-                    disabled
-                    value="30"
-                />
-            </div>
+            <StatDisplay
+                levelUpStatusCalcParamKey="AbsorptionPetrify"
+                displayValue="30"
+                isOddRow
+            />
 
             {/* Curse Resistance */}
             {/* TODO: update with calculations based on level/attributes */}
-            <div className="flex gap-1 w-full justify-between">
-                <label
-                    className="flex items-center justify-center h-full"
-                    htmlFor="curse-resistance"
-                >
-                    Curse Resistance:
-                </label>
-                <input
-                    className="flex text-right h-full max-w-15"
-                    id="curse-resistance"
-                    type="number"
-                    disabled
-                    value="30"
-                />
-            </div>
+            <StatDisplay
+                levelUpStatusCalcParamKey="AbsorptionCurse"
+                displayValue="30"
+            />
 
             <hr />
 
