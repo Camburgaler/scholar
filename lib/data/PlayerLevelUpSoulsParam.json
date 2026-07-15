@@ -1,0 +1,3406 @@
+[
+    {
+        "Level": 0,
+        "NecessarySouls": 0
+    },
+    {
+        "Level": 1,
+        "NecessarySouls": 500
+    },
+    {
+        "Level": 2,
+        "NecessarySouls": 528
+    },
+    {
+        "Level": 3,
+        "NecessarySouls": 557
+    },
+    {
+        "Level": 4,
+        "NecessarySouls": 587
+    },
+    {
+        "Level": 5,
+        "NecessarySouls": 619
+    },
+    {
+        "Level": 6,
+        "NecessarySouls": 653
+    },
+    {
+        "Level": 7,
+        "NecessarySouls": 689
+    },
+    {
+        "Level": 8,
+        "NecessarySouls": 727
+    },
+    {
+        "Level": 9,
+        "NecessarySouls": 767
+    },
+    {
+        "Level": 10,
+        "NecessarySouls": 810
+    },
+    {
+        "Level": 11,
+        "NecessarySouls": 854
+    },
+    {
+        "Level": 12,
+        "NecessarySouls": 901
+    },
+    {
+        "Level": 13,
+        "NecessarySouls": 948
+    },
+    {
+        "Level": 14,
+        "NecessarySouls": 997
+    },
+    {
+        "Level": 15,
+        "NecessarySouls": 1049
+    },
+    {
+        "Level": 16,
+        "NecessarySouls": 1104
+    },
+    {
+        "Level": 17,
+        "NecessarySouls": 1159
+    },
+    {
+        "Level": 18,
+        "NecessarySouls": 1217
+    },
+    {
+        "Level": 19,
+        "NecessarySouls": 1278
+    },
+    {
+        "Level": 20,
+        "NecessarySouls": 1341
+    },
+    {
+        "Level": 21,
+        "NecessarySouls": 1408
+    },
+    {
+        "Level": 22,
+        "NecessarySouls": 1479
+    },
+    {
+        "Level": 23,
+        "NecessarySouls": 1553
+    },
+    {
+        "Level": 24,
+        "NecessarySouls": 1631
+    },
+    {
+        "Level": 25,
+        "NecessarySouls": 1699
+    },
+    {
+        "Level": 26,
+        "NecessarySouls": 1770
+    },
+    {
+        "Level": 27,
+        "NecessarySouls": 1845
+    },
+    {
+        "Level": 28,
+        "NecessarySouls": 1922
+    },
+    {
+        "Level": 29,
+        "NecessarySouls": 2003
+    },
+    {
+        "Level": 30,
+        "NecessarySouls": 2087
+    },
+    {
+        "Level": 31,
+        "NecessarySouls": 2175
+    },
+    {
+        "Level": 32,
+        "NecessarySouls": 2266
+    },
+    {
+        "Level": 33,
+        "NecessarySouls": 2361
+    },
+    {
+        "Level": 34,
+        "NecessarySouls": 2460
+    },
+    {
+        "Level": 35,
+        "NecessarySouls": 2564
+    },
+    {
+        "Level": 36,
+        "NecessarySouls": 2671
+    },
+    {
+        "Level": 37,
+        "NecessarySouls": 2784
+    },
+    {
+        "Level": 38,
+        "NecessarySouls": 2900
+    },
+    {
+        "Level": 39,
+        "NecessarySouls": 3022
+    },
+    {
+        "Level": 40,
+        "NecessarySouls": 3149
+    },
+    {
+        "Level": 41,
+        "NecessarySouls": 3256
+    },
+    {
+        "Level": 42,
+        "NecessarySouls": 3367
+    },
+    {
+        "Level": 43,
+        "NecessarySouls": 3482
+    },
+    {
+        "Level": 44,
+        "NecessarySouls": 3600
+    },
+    {
+        "Level": 45,
+        "NecessarySouls": 3722
+    },
+    {
+        "Level": 46,
+        "NecessarySouls": 3849
+    },
+    {
+        "Level": 47,
+        "NecessarySouls": 3980
+    },
+    {
+        "Level": 48,
+        "NecessarySouls": 4115
+    },
+    {
+        "Level": 49,
+        "NecessarySouls": 4255
+    },
+    {
+        "Level": 50,
+        "NecessarySouls": 4400
+    },
+    {
+        "Level": 51,
+        "NecessarySouls": 4549
+    },
+    {
+        "Level": 52,
+        "NecessarySouls": 4704
+    },
+    {
+        "Level": 53,
+        "NecessarySouls": 4864
+    },
+    {
+        "Level": 54,
+        "NecessarySouls": 5029
+    },
+    {
+        "Level": 55,
+        "NecessarySouls": 5200
+    },
+    {
+        "Level": 56,
+        "NecessarySouls": 5330
+    },
+    {
+        "Level": 57,
+        "NecessarySouls": 5463
+    },
+    {
+        "Level": 58,
+        "NecessarySouls": 5600
+    },
+    {
+        "Level": 59,
+        "NecessarySouls": 5740
+    },
+    {
+        "Level": 60,
+        "NecessarySouls": 5883
+    },
+    {
+        "Level": 61,
+        "NecessarySouls": 6031
+    },
+    {
+        "Level": 62,
+        "NecessarySouls": 6181
+    },
+    {
+        "Level": 63,
+        "NecessarySouls": 6336
+    },
+    {
+        "Level": 64,
+        "NecessarySouls": 6494
+    },
+    {
+        "Level": 65,
+        "NecessarySouls": 6657
+    },
+    {
+        "Level": 66,
+        "NecessarySouls": 6823
+    },
+    {
+        "Level": 67,
+        "NecessarySouls": 6994
+    },
+    {
+        "Level": 68,
+        "NecessarySouls": 7168
+    },
+    {
+        "Level": 69,
+        "NecessarySouls": 7348
+    },
+    {
+        "Level": 70,
+        "NecessarySouls": 7531
+    },
+    {
+        "Level": 71,
+        "NecessarySouls": 7697
+    },
+    {
+        "Level": 72,
+        "NecessarySouls": 7866
+    },
+    {
+        "Level": 73,
+        "NecessarySouls": 8039
+    },
+    {
+        "Level": 74,
+        "NecessarySouls": 8216
+    },
+    {
+        "Level": 75,
+        "NecessarySouls": 8397
+    },
+    {
+        "Level": 76,
+        "NecessarySouls": 8582
+    },
+    {
+        "Level": 77,
+        "NecessarySouls": 8771
+    },
+    {
+        "Level": 78,
+        "NecessarySouls": 8964
+    },
+    {
+        "Level": 79,
+        "NecessarySouls": 9161
+    },
+    {
+        "Level": 80,
+        "NecessarySouls": 9362
+    },
+    {
+        "Level": 81,
+        "NecessarySouls": 9568
+    },
+    {
+        "Level": 82,
+        "NecessarySouls": 9779
+    },
+    {
+        "Level": 83,
+        "NecessarySouls": 9994
+    },
+    {
+        "Level": 84,
+        "NecessarySouls": 10214
+    },
+    {
+        "Level": 85,
+        "NecessarySouls": 10438
+    },
+    {
+        "Level": 86,
+        "NecessarySouls": 10668
+    },
+    {
+        "Level": 87,
+        "NecessarySouls": 10903
+    },
+    {
+        "Level": 88,
+        "NecessarySouls": 11143
+    },
+    {
+        "Level": 89,
+        "NecessarySouls": 11388
+    },
+    {
+        "Level": 90,
+        "NecessarySouls": 11638
+    },
+    {
+        "Level": 91,
+        "NecessarySouls": 11836
+    },
+    {
+        "Level": 92,
+        "NecessarySouls": 12037
+    },
+    {
+        "Level": 93,
+        "NecessarySouls": 12242
+    },
+    {
+        "Level": 94,
+        "NecessarySouls": 12450
+    },
+    {
+        "Level": 95,
+        "NecessarySouls": 12662
+    },
+    {
+        "Level": 96,
+        "NecessarySouls": 12877
+    },
+    {
+        "Level": 97,
+        "NecessarySouls": 13096
+    },
+    {
+        "Level": 98,
+        "NecessarySouls": 13319
+    },
+    {
+        "Level": 99,
+        "NecessarySouls": 13545
+    },
+    {
+        "Level": 100,
+        "NecessarySouls": 13775
+    },
+    {
+        "Level": 101,
+        "NecessarySouls": 14009
+    },
+    {
+        "Level": 102,
+        "NecessarySouls": 14248
+    },
+    {
+        "Level": 103,
+        "NecessarySouls": 14490
+    },
+    {
+        "Level": 104,
+        "NecessarySouls": 14736
+    },
+    {
+        "Level": 105,
+        "NecessarySouls": 14987
+    },
+    {
+        "Level": 106,
+        "NecessarySouls": 15241
+    },
+    {
+        "Level": 107,
+        "NecessarySouls": 15501
+    },
+    {
+        "Level": 108,
+        "NecessarySouls": 15764
+    },
+    {
+        "Level": 109,
+        "NecessarySouls": 16032
+    },
+    {
+        "Level": 110,
+        "NecessarySouls": 16305
+    },
+    {
+        "Level": 111,
+        "NecessarySouls": 16582
+    },
+    {
+        "Level": 112,
+        "NecessarySouls": 16864
+    },
+    {
+        "Level": 113,
+        "NecessarySouls": 17150
+    },
+    {
+        "Level": 114,
+        "NecessarySouls": 17442
+    },
+    {
+        "Level": 115,
+        "NecessarySouls": 17738
+    },
+    {
+        "Level": 116,
+        "NecessarySouls": 18005
+    },
+    {
+        "Level": 117,
+        "NecessarySouls": 18275
+    },
+    {
+        "Level": 118,
+        "NecessarySouls": 18549
+    },
+    {
+        "Level": 119,
+        "NecessarySouls": 18827
+    },
+    {
+        "Level": 120,
+        "NecessarySouls": 19109
+    },
+    {
+        "Level": 121,
+        "NecessarySouls": 19396
+    },
+    {
+        "Level": 122,
+        "NecessarySouls": 19687
+    },
+    {
+        "Level": 123,
+        "NecessarySouls": 19982
+    },
+    {
+        "Level": 124,
+        "NecessarySouls": 20282
+    },
+    {
+        "Level": 125,
+        "NecessarySouls": 20586
+    },
+    {
+        "Level": 126,
+        "NecessarySouls": 20895
+    },
+    {
+        "Level": 127,
+        "NecessarySouls": 21208
+    },
+    {
+        "Level": 128,
+        "NecessarySouls": 21527
+    },
+    {
+        "Level": 129,
+        "NecessarySouls": 21849
+    },
+    {
+        "Level": 130,
+        "NecessarySouls": 22177
+    },
+    {
+        "Level": 131,
+        "NecessarySouls": 22510
+    },
+    {
+        "Level": 132,
+        "NecessarySouls": 22847
+    },
+    {
+        "Level": 133,
+        "NecessarySouls": 23190
+    },
+    {
+        "Level": 134,
+        "NecessarySouls": 23538
+    },
+    {
+        "Level": 135,
+        "NecessarySouls": 23891
+    },
+    {
+        "Level": 136,
+        "NecessarySouls": 24249
+    },
+    {
+        "Level": 137,
+        "NecessarySouls": 24613
+    },
+    {
+        "Level": 138,
+        "NecessarySouls": 24982
+    },
+    {
+        "Level": 139,
+        "NecessarySouls": 25357
+    },
+    {
+        "Level": 140,
+        "NecessarySouls": 25738
+    },
+    {
+        "Level": 141,
+        "NecessarySouls": 26124
+    },
+    {
+        "Level": 142,
+        "NecessarySouls": 26515
+    },
+    {
+        "Level": 143,
+        "NecessarySouls": 26913
+    },
+    {
+        "Level": 144,
+        "NecessarySouls": 27317
+    },
+    {
+        "Level": 145,
+        "NecessarySouls": 27727
+    },
+    {
+        "Level": 146,
+        "NecessarySouls": 28143
+    },
+    {
+        "Level": 147,
+        "NecessarySouls": 28565
+    },
+    {
+        "Level": 148,
+        "NecessarySouls": 28993
+    },
+    {
+        "Level": 149,
+        "NecessarySouls": 29428
+    },
+    {
+        "Level": 150,
+        "NecessarySouls": 29869
+    },
+    {
+        "Level": 151,
+        "NecessarySouls": 30317
+    },
+    {
+        "Level": 152,
+        "NecessarySouls": 30772
+    },
+    {
+        "Level": 153,
+        "NecessarySouls": 31234
+    },
+    {
+        "Level": 154,
+        "NecessarySouls": 31702
+    },
+    {
+        "Level": 155,
+        "NecessarySouls": 32178
+    },
+    {
+        "Level": 156,
+        "NecessarySouls": 32661
+    },
+    {
+        "Level": 157,
+        "NecessarySouls": 33150
+    },
+    {
+        "Level": 158,
+        "NecessarySouls": 33648
+    },
+    {
+        "Level": 159,
+        "NecessarySouls": 34152
+    },
+    {
+        "Level": 160,
+        "NecessarySouls": 34665
+    },
+    {
+        "Level": 161,
+        "NecessarySouls": 35185
+    },
+    {
+        "Level": 162,
+        "NecessarySouls": 35712
+    },
+    {
+        "Level": 163,
+        "NecessarySouls": 36248
+    },
+    {
+        "Level": 164,
+        "NecessarySouls": 36792
+    },
+    {
+        "Level": 165,
+        "NecessarySouls": 37344
+    },
+    {
+        "Level": 166,
+        "NecessarySouls": 37904
+    },
+    {
+        "Level": 167,
+        "NecessarySouls": 38472
+    },
+    {
+        "Level": 168,
+        "NecessarySouls": 39050
+    },
+    {
+        "Level": 169,
+        "NecessarySouls": 39635
+    },
+    {
+        "Level": 170,
+        "NecessarySouls": 40230
+    },
+    {
+        "Level": 171,
+        "NecessarySouls": 40713
+    },
+    {
+        "Level": 172,
+        "NecessarySouls": 41201
+    },
+    {
+        "Level": 173,
+        "NecessarySouls": 41696
+    },
+    {
+        "Level": 174,
+        "NecessarySouls": 42196
+    },
+    {
+        "Level": 175,
+        "NecessarySouls": 42702
+    },
+    {
+        "Level": 176,
+        "NecessarySouls": 43215
+    },
+    {
+        "Level": 177,
+        "NecessarySouls": 43733
+    },
+    {
+        "Level": 178,
+        "NecessarySouls": 44258
+    },
+    {
+        "Level": 179,
+        "NecessarySouls": 44789
+    },
+    {
+        "Level": 180,
+        "NecessarySouls": 45327
+    },
+    {
+        "Level": 181,
+        "NecessarySouls": 45689
+    },
+    {
+        "Level": 182,
+        "NecessarySouls": 46055
+    },
+    {
+        "Level": 183,
+        "NecessarySouls": 46423
+    },
+    {
+        "Level": 184,
+        "NecessarySouls": 46795
+    },
+    {
+        "Level": 185,
+        "NecessarySouls": 47169
+    },
+    {
+        "Level": 186,
+        "NecessarySouls": 47546
+    },
+    {
+        "Level": 187,
+        "NecessarySouls": 47927
+    },
+    {
+        "Level": 188,
+        "NecessarySouls": 48310
+    },
+    {
+        "Level": 189,
+        "NecessarySouls": 48697
+    },
+    {
+        "Level": 190,
+        "NecessarySouls": 49086
+    },
+    {
+        "Level": 191,
+        "NecessarySouls": 49479
+    },
+    {
+        "Level": 192,
+        "NecessarySouls": 49875
+    },
+    {
+        "Level": 193,
+        "NecessarySouls": 50274
+    },
+    {
+        "Level": 194,
+        "NecessarySouls": 50676
+    },
+    {
+        "Level": 195,
+        "NecessarySouls": 51081
+    },
+    {
+        "Level": 196,
+        "NecessarySouls": 51490
+    },
+    {
+        "Level": 197,
+        "NecessarySouls": 51902
+    },
+    {
+        "Level": 198,
+        "NecessarySouls": 52317
+    },
+    {
+        "Level": 199,
+        "NecessarySouls": 52736
+    },
+    {
+        "Level": 200,
+        "NecessarySouls": 53157
+    },
+    {
+        "Level": 201,
+        "NecessarySouls": 55018
+    },
+    {
+        "Level": 202,
+        "NecessarySouls": 56944
+    },
+    {
+        "Level": 203,
+        "NecessarySouls": 58937
+    },
+    {
+        "Level": 204,
+        "NecessarySouls": 60999
+    },
+    {
+        "Level": 205,
+        "NecessarySouls": 63134
+    },
+    {
+        "Level": 206,
+        "NecessarySouls": 65344
+    },
+    {
+        "Level": 207,
+        "NecessarySouls": 67631
+    },
+    {
+        "Level": 208,
+        "NecessarySouls": 69998
+    },
+    {
+        "Level": 209,
+        "NecessarySouls": 72448
+    },
+    {
+        "Level": 210,
+        "NecessarySouls": 74984
+    },
+    {
+        "Level": 211,
+        "NecessarySouls": 77608
+    },
+    {
+        "Level": 212,
+        "NecessarySouls": 80324
+    },
+    {
+        "Level": 213,
+        "NecessarySouls": 83136
+    },
+    {
+        "Level": 214,
+        "NecessarySouls": 86046
+    },
+    {
+        "Level": 215,
+        "NecessarySouls": 89057
+    },
+    {
+        "Level": 216,
+        "NecessarySouls": 92174
+    },
+    {
+        "Level": 217,
+        "NecessarySouls": 95400
+    },
+    {
+        "Level": 218,
+        "NecessarySouls": 98739
+    },
+    {
+        "Level": 219,
+        "NecessarySouls": 102195
+    },
+    {
+        "Level": 220,
+        "NecessarySouls": 105772
+    },
+    {
+        "Level": 221,
+        "NecessarySouls": 109474
+    },
+    {
+        "Level": 222,
+        "NecessarySouls": 113306
+    },
+    {
+        "Level": 223,
+        "NecessarySouls": 117271
+    },
+    {
+        "Level": 224,
+        "NecessarySouls": 121376
+    },
+    {
+        "Level": 225,
+        "NecessarySouls": 125624
+    },
+    {
+        "Level": 226,
+        "NecessarySouls": 130021
+    },
+    {
+        "Level": 227,
+        "NecessarySouls": 134572
+    },
+    {
+        "Level": 228,
+        "NecessarySouls": 139282
+    },
+    {
+        "Level": 229,
+        "NecessarySouls": 144156
+    },
+    {
+        "Level": 230,
+        "NecessarySouls": 149202
+    },
+    {
+        "Level": 231,
+        "NecessarySouls": 154424
+    },
+    {
+        "Level": 232,
+        "NecessarySouls": 159829
+    },
+    {
+        "Level": 233,
+        "NecessarySouls": 165423
+    },
+    {
+        "Level": 234,
+        "NecessarySouls": 171213
+    },
+    {
+        "Level": 235,
+        "NecessarySouls": 177205
+    },
+    {
+        "Level": 236,
+        "NecessarySouls": 183407
+    },
+    {
+        "Level": 237,
+        "NecessarySouls": 189826
+    },
+    {
+        "Level": 238,
+        "NecessarySouls": 196470
+    },
+    {
+        "Level": 239,
+        "NecessarySouls": 203347
+    },
+    {
+        "Level": 240,
+        "NecessarySouls": 210464
+    },
+    {
+        "Level": 241,
+        "NecessarySouls": 217830
+    },
+    {
+        "Level": 242,
+        "NecessarySouls": 225454
+    },
+    {
+        "Level": 243,
+        "NecessarySouls": 233345
+    },
+    {
+        "Level": 244,
+        "NecessarySouls": 241512
+    },
+    {
+        "Level": 245,
+        "NecessarySouls": 249965
+    },
+    {
+        "Level": 246,
+        "NecessarySouls": 258714
+    },
+    {
+        "Level": 247,
+        "NecessarySouls": 267769
+    },
+    {
+        "Level": 248,
+        "NecessarySouls": 277141
+    },
+    {
+        "Level": 249,
+        "NecessarySouls": 286841
+    },
+    {
+        "Level": 250,
+        "NecessarySouls": 296880
+    },
+    {
+        "Level": 251,
+        "NecessarySouls": 297622
+    },
+    {
+        "Level": 252,
+        "NecessarySouls": 298367
+    },
+    {
+        "Level": 253,
+        "NecessarySouls": 299112
+    },
+    {
+        "Level": 254,
+        "NecessarySouls": 299860
+    },
+    {
+        "Level": 255,
+        "NecessarySouls": 300610
+    },
+    {
+        "Level": 256,
+        "NecessarySouls": 301361
+    },
+    {
+        "Level": 257,
+        "NecessarySouls": 302115
+    },
+    {
+        "Level": 258,
+        "NecessarySouls": 302870
+    },
+    {
+        "Level": 259,
+        "NecessarySouls": 303627
+    },
+    {
+        "Level": 260,
+        "NecessarySouls": 304386
+    },
+    {
+        "Level": 261,
+        "NecessarySouls": 305147
+    },
+    {
+        "Level": 262,
+        "NecessarySouls": 305910
+    },
+    {
+        "Level": 263,
+        "NecessarySouls": 306675
+    },
+    {
+        "Level": 264,
+        "NecessarySouls": 307442
+    },
+    {
+        "Level": 265,
+        "NecessarySouls": 308210
+    },
+    {
+        "Level": 266,
+        "NecessarySouls": 308981
+    },
+    {
+        "Level": 267,
+        "NecessarySouls": 309753
+    },
+    {
+        "Level": 268,
+        "NecessarySouls": 310528
+    },
+    {
+        "Level": 269,
+        "NecessarySouls": 311304
+    },
+    {
+        "Level": 270,
+        "NecessarySouls": 312082
+    },
+    {
+        "Level": 271,
+        "NecessarySouls": 312862
+    },
+    {
+        "Level": 272,
+        "NecessarySouls": 313645
+    },
+    {
+        "Level": 273,
+        "NecessarySouls": 314429
+    },
+    {
+        "Level": 274,
+        "NecessarySouls": 315215
+    },
+    {
+        "Level": 275,
+        "NecessarySouls": 316003
+    },
+    {
+        "Level": 276,
+        "NecessarySouls": 316793
+    },
+    {
+        "Level": 277,
+        "NecessarySouls": 317585
+    },
+    {
+        "Level": 278,
+        "NecessarySouls": 318379
+    },
+    {
+        "Level": 279,
+        "NecessarySouls": 319175
+    },
+    {
+        "Level": 280,
+        "NecessarySouls": 319973
+    },
+    {
+        "Level": 281,
+        "NecessarySouls": 320772
+    },
+    {
+        "Level": 282,
+        "NecessarySouls": 321574
+    },
+    {
+        "Level": 283,
+        "NecessarySouls": 322378
+    },
+    {
+        "Level": 284,
+        "NecessarySouls": 323184
+    },
+    {
+        "Level": 285,
+        "NecessarySouls": 323992
+    },
+    {
+        "Level": 286,
+        "NecessarySouls": 324802
+    },
+    {
+        "Level": 287,
+        "NecessarySouls": 325614
+    },
+    {
+        "Level": 288,
+        "NecessarySouls": 326428
+    },
+    {
+        "Level": 289,
+        "NecessarySouls": 327244
+    },
+    {
+        "Level": 290,
+        "NecessarySouls": 328062
+    },
+    {
+        "Level": 291,
+        "NecessarySouls": 328883
+    },
+    {
+        "Level": 292,
+        "NecessarySouls": 329705
+    },
+    {
+        "Level": 293,
+        "NecessarySouls": 330529
+    },
+    {
+        "Level": 294,
+        "NecessarySouls": 331355
+    },
+    {
+        "Level": 295,
+        "NecessarySouls": 332184
+    },
+    {
+        "Level": 296,
+        "NecessarySouls": 333014
+    },
+    {
+        "Level": 297,
+        "NecessarySouls": 333847
+    },
+    {
+        "Level": 298,
+        "NecessarySouls": 334681
+    },
+    {
+        "Level": 299,
+        "NecessarySouls": 335518
+    },
+    {
+        "Level": 300,
+        "NecessarySouls": 336357
+    },
+    {
+        "Level": 301,
+        "NecessarySouls": 337198
+    },
+    {
+        "Level": 302,
+        "NecessarySouls": 338041
+    },
+    {
+        "Level": 303,
+        "NecessarySouls": 338886
+    },
+    {
+        "Level": 304,
+        "NecessarySouls": 339733
+    },
+    {
+        "Level": 305,
+        "NecessarySouls": 340582
+    },
+    {
+        "Level": 306,
+        "NecessarySouls": 341434
+    },
+    {
+        "Level": 307,
+        "NecessarySouls": 342287
+    },
+    {
+        "Level": 308,
+        "NecessarySouls": 343143
+    },
+    {
+        "Level": 309,
+        "NecessarySouls": 344001
+    },
+    {
+        "Level": 310,
+        "NecessarySouls": 344861
+    },
+    {
+        "Level": 311,
+        "NecessarySouls": 345723
+    },
+    {
+        "Level": 312,
+        "NecessarySouls": 346588
+    },
+    {
+        "Level": 313,
+        "NecessarySouls": 347454
+    },
+    {
+        "Level": 314,
+        "NecessarySouls": 348323
+    },
+    {
+        "Level": 315,
+        "NecessarySouls": 349193
+    },
+    {
+        "Level": 316,
+        "NecessarySouls": 350066
+    },
+    {
+        "Level": 317,
+        "NecessarySouls": 350942
+    },
+    {
+        "Level": 318,
+        "NecessarySouls": 351819
+    },
+    {
+        "Level": 319,
+        "NecessarySouls": 352698
+    },
+    {
+        "Level": 320,
+        "NecessarySouls": 353580
+    },
+    {
+        "Level": 321,
+        "NecessarySouls": 354464
+    },
+    {
+        "Level": 322,
+        "NecessarySouls": 355350
+    },
+    {
+        "Level": 323,
+        "NecessarySouls": 356239
+    },
+    {
+        "Level": 324,
+        "NecessarySouls": 357129
+    },
+    {
+        "Level": 325,
+        "NecessarySouls": 358022
+    },
+    {
+        "Level": 326,
+        "NecessarySouls": 358917
+    },
+    {
+        "Level": 327,
+        "NecessarySouls": 359814
+    },
+    {
+        "Level": 328,
+        "NecessarySouls": 360714
+    },
+    {
+        "Level": 329,
+        "NecessarySouls": 361616
+    },
+    {
+        "Level": 330,
+        "NecessarySouls": 362520
+    },
+    {
+        "Level": 331,
+        "NecessarySouls": 363426
+    },
+    {
+        "Level": 332,
+        "NecessarySouls": 364335
+    },
+    {
+        "Level": 333,
+        "NecessarySouls": 365246
+    },
+    {
+        "Level": 334,
+        "NecessarySouls": 366159
+    },
+    {
+        "Level": 335,
+        "NecessarySouls": 367074
+    },
+    {
+        "Level": 336,
+        "NecessarySouls": 367992
+    },
+    {
+        "Level": 337,
+        "NecessarySouls": 368912
+    },
+    {
+        "Level": 338,
+        "NecessarySouls": 369834
+    },
+    {
+        "Level": 339,
+        "NecessarySouls": 370759
+    },
+    {
+        "Level": 340,
+        "NecessarySouls": 371685
+    },
+    {
+        "Level": 341,
+        "NecessarySouls": 372615
+    },
+    {
+        "Level": 342,
+        "NecessarySouls": 373546
+    },
+    {
+        "Level": 343,
+        "NecessarySouls": 374480
+    },
+    {
+        "Level": 344,
+        "NecessarySouls": 375416
+    },
+    {
+        "Level": 345,
+        "NecessarySouls": 376355
+    },
+    {
+        "Level": 346,
+        "NecessarySouls": 377296
+    },
+    {
+        "Level": 347,
+        "NecessarySouls": 378239
+    },
+    {
+        "Level": 348,
+        "NecessarySouls": 379185
+    },
+    {
+        "Level": 349,
+        "NecessarySouls": 380133
+    },
+    {
+        "Level": 350,
+        "NecessarySouls": 381083
+    },
+    {
+        "Level": 351,
+        "NecessarySouls": 382036
+    },
+    {
+        "Level": 352,
+        "NecessarySouls": 382991
+    },
+    {
+        "Level": 353,
+        "NecessarySouls": 383948
+    },
+    {
+        "Level": 354,
+        "NecessarySouls": 384908
+    },
+    {
+        "Level": 355,
+        "NecessarySouls": 385870
+    },
+    {
+        "Level": 356,
+        "NecessarySouls": 386835
+    },
+    {
+        "Level": 357,
+        "NecessarySouls": 387802
+    },
+    {
+        "Level": 358,
+        "NecessarySouls": 388772
+    },
+    {
+        "Level": 359,
+        "NecessarySouls": 389743
+    },
+    {
+        "Level": 360,
+        "NecessarySouls": 390718
+    },
+    {
+        "Level": 361,
+        "NecessarySouls": 391695
+    },
+    {
+        "Level": 362,
+        "NecessarySouls": 392674
+    },
+    {
+        "Level": 363,
+        "NecessarySouls": 393656
+    },
+    {
+        "Level": 364,
+        "NecessarySouls": 394640
+    },
+    {
+        "Level": 365,
+        "NecessarySouls": 395626
+    },
+    {
+        "Level": 366,
+        "NecessarySouls": 396615
+    },
+    {
+        "Level": 367,
+        "NecessarySouls": 397607
+    },
+    {
+        "Level": 368,
+        "NecessarySouls": 398601
+    },
+    {
+        "Level": 369,
+        "NecessarySouls": 399597
+    },
+    {
+        "Level": 370,
+        "NecessarySouls": 400596
+    },
+    {
+        "Level": 371,
+        "NecessarySouls": 401598
+    },
+    {
+        "Level": 372,
+        "NecessarySouls": 402602
+    },
+    {
+        "Level": 373,
+        "NecessarySouls": 403608
+    },
+    {
+        "Level": 374,
+        "NecessarySouls": 404617
+    },
+    {
+        "Level": 375,
+        "NecessarySouls": 405629
+    },
+    {
+        "Level": 376,
+        "NecessarySouls": 406643
+    },
+    {
+        "Level": 377,
+        "NecessarySouls": 407660
+    },
+    {
+        "Level": 378,
+        "NecessarySouls": 408679
+    },
+    {
+        "Level": 379,
+        "NecessarySouls": 409700
+    },
+    {
+        "Level": 380,
+        "NecessarySouls": 410725
+    },
+    {
+        "Level": 381,
+        "NecessarySouls": 411752
+    },
+    {
+        "Level": 382,
+        "NecessarySouls": 412781
+    },
+    {
+        "Level": 383,
+        "NecessarySouls": 413813
+    },
+    {
+        "Level": 384,
+        "NecessarySouls": 414847
+    },
+    {
+        "Level": 385,
+        "NecessarySouls": 415885
+    },
+    {
+        "Level": 386,
+        "NecessarySouls": 416924
+    },
+    {
+        "Level": 387,
+        "NecessarySouls": 417967
+    },
+    {
+        "Level": 388,
+        "NecessarySouls": 419011
+    },
+    {
+        "Level": 389,
+        "NecessarySouls": 420059
+    },
+    {
+        "Level": 390,
+        "NecessarySouls": 421109
+    },
+    {
+        "Level": 391,
+        "NecessarySouls": 422162
+    },
+    {
+        "Level": 392,
+        "NecessarySouls": 423217
+    },
+    {
+        "Level": 393,
+        "NecessarySouls": 424275
+    },
+    {
+        "Level": 394,
+        "NecessarySouls": 425336
+    },
+    {
+        "Level": 395,
+        "NecessarySouls": 426399
+    },
+    {
+        "Level": 396,
+        "NecessarySouls": 427465
+    },
+    {
+        "Level": 397,
+        "NecessarySouls": 428534
+    },
+    {
+        "Level": 398,
+        "NecessarySouls": 429605
+    },
+    {
+        "Level": 399,
+        "NecessarySouls": 430679
+    },
+    {
+        "Level": 400,
+        "NecessarySouls": 431756
+    },
+    {
+        "Level": 401,
+        "NecessarySouls": 432835
+    },
+    {
+        "Level": 402,
+        "NecessarySouls": 433918
+    },
+    {
+        "Level": 403,
+        "NecessarySouls": 435002
+    },
+    {
+        "Level": 404,
+        "NecessarySouls": 436090
+    },
+    {
+        "Level": 405,
+        "NecessarySouls": 437180
+    },
+    {
+        "Level": 406,
+        "NecessarySouls": 438273
+    },
+    {
+        "Level": 407,
+        "NecessarySouls": 439369
+    },
+    {
+        "Level": 408,
+        "NecessarySouls": 440467
+    },
+    {
+        "Level": 409,
+        "NecessarySouls": 441568
+    },
+    {
+        "Level": 410,
+        "NecessarySouls": 442672
+    },
+    {
+        "Level": 411,
+        "NecessarySouls": 443779
+    },
+    {
+        "Level": 412,
+        "NecessarySouls": 444888
+    },
+    {
+        "Level": 413,
+        "NecessarySouls": 446001
+    },
+    {
+        "Level": 414,
+        "NecessarySouls": 447116
+    },
+    {
+        "Level": 415,
+        "NecessarySouls": 448233
+    },
+    {
+        "Level": 416,
+        "NecessarySouls": 449354
+    },
+    {
+        "Level": 417,
+        "NecessarySouls": 450477
+    },
+    {
+        "Level": 418,
+        "NecessarySouls": 451604
+    },
+    {
+        "Level": 419,
+        "NecessarySouls": 452733
+    },
+    {
+        "Level": 420,
+        "NecessarySouls": 453864
+    },
+    {
+        "Level": 421,
+        "NecessarySouls": 454999
+    },
+    {
+        "Level": 422,
+        "NecessarySouls": 456137
+    },
+    {
+        "Level": 423,
+        "NecessarySouls": 457277
+    },
+    {
+        "Level": 424,
+        "NecessarySouls": 458420
+    },
+    {
+        "Level": 425,
+        "NecessarySouls": 459566
+    },
+    {
+        "Level": 426,
+        "NecessarySouls": 460715
+    },
+    {
+        "Level": 427,
+        "NecessarySouls": 461867
+    },
+    {
+        "Level": 428,
+        "NecessarySouls": 463022
+    },
+    {
+        "Level": 429,
+        "NecessarySouls": 464179
+    },
+    {
+        "Level": 430,
+        "NecessarySouls": 465340
+    },
+    {
+        "Level": 431,
+        "NecessarySouls": 466503
+    },
+    {
+        "Level": 432,
+        "NecessarySouls": 467669
+    },
+    {
+        "Level": 433,
+        "NecessarySouls": 468838
+    },
+    {
+        "Level": 434,
+        "NecessarySouls": 470010
+    },
+    {
+        "Level": 435,
+        "NecessarySouls": 471185
+    },
+    {
+        "Level": 436,
+        "NecessarySouls": 472363
+    },
+    {
+        "Level": 437,
+        "NecessarySouls": 473544
+    },
+    {
+        "Level": 438,
+        "NecessarySouls": 474728
+    },
+    {
+        "Level": 439,
+        "NecessarySouls": 475915
+    },
+    {
+        "Level": 440,
+        "NecessarySouls": 477105
+    },
+    {
+        "Level": 441,
+        "NecessarySouls": 478298
+    },
+    {
+        "Level": 442,
+        "NecessarySouls": 479493
+    },
+    {
+        "Level": 443,
+        "NecessarySouls": 480692
+    },
+    {
+        "Level": 444,
+        "NecessarySouls": 481894
+    },
+    {
+        "Level": 445,
+        "NecessarySouls": 483098
+    },
+    {
+        "Level": 446,
+        "NecessarySouls": 484306
+    },
+    {
+        "Level": 447,
+        "NecessarySouls": 485517
+    },
+    {
+        "Level": 448,
+        "NecessarySouls": 486731
+    },
+    {
+        "Level": 449,
+        "NecessarySouls": 487948
+    },
+    {
+        "Level": 450,
+        "NecessarySouls": 489167
+    },
+    {
+        "Level": 451,
+        "NecessarySouls": 490390
+    },
+    {
+        "Level": 452,
+        "NecessarySouls": 491616
+    },
+    {
+        "Level": 453,
+        "NecessarySouls": 492845
+    },
+    {
+        "Level": 454,
+        "NecessarySouls": 494078
+    },
+    {
+        "Level": 455,
+        "NecessarySouls": 495313
+    },
+    {
+        "Level": 456,
+        "NecessarySouls": 496551
+    },
+    {
+        "Level": 457,
+        "NecessarySouls": 497792
+    },
+    {
+        "Level": 458,
+        "NecessarySouls": 499037
+    },
+    {
+        "Level": 459,
+        "NecessarySouls": 500284
+    },
+    {
+        "Level": 460,
+        "NecessarySouls": 501535
+    },
+    {
+        "Level": 461,
+        "NecessarySouls": 502789
+    },
+    {
+        "Level": 462,
+        "NecessarySouls": 504046
+    },
+    {
+        "Level": 463,
+        "NecessarySouls": 505306
+    },
+    {
+        "Level": 464,
+        "NecessarySouls": 506569
+    },
+    {
+        "Level": 465,
+        "NecessarySouls": 507836
+    },
+    {
+        "Level": 466,
+        "NecessarySouls": 509105
+    },
+    {
+        "Level": 467,
+        "NecessarySouls": 510378
+    },
+    {
+        "Level": 468,
+        "NecessarySouls": 511654
+    },
+    {
+        "Level": 469,
+        "NecessarySouls": 512933
+    },
+    {
+        "Level": 470,
+        "NecessarySouls": 514216
+    },
+    {
+        "Level": 471,
+        "NecessarySouls": 515501
+    },
+    {
+        "Level": 472,
+        "NecessarySouls": 516790
+    },
+    {
+        "Level": 473,
+        "NecessarySouls": 518082
+    },
+    {
+        "Level": 474,
+        "NecessarySouls": 519377
+    },
+    {
+        "Level": 475,
+        "NecessarySouls": 520675
+    },
+    {
+        "Level": 476,
+        "NecessarySouls": 521977
+    },
+    {
+        "Level": 477,
+        "NecessarySouls": 523282
+    },
+    {
+        "Level": 478,
+        "NecessarySouls": 524590
+    },
+    {
+        "Level": 479,
+        "NecessarySouls": 525902
+    },
+    {
+        "Level": 480,
+        "NecessarySouls": 527217
+    },
+    {
+        "Level": 481,
+        "NecessarySouls": 528535
+    },
+    {
+        "Level": 482,
+        "NecessarySouls": 529856
+    },
+    {
+        "Level": 483,
+        "NecessarySouls": 531181
+    },
+    {
+        "Level": 484,
+        "NecessarySouls": 532508
+    },
+    {
+        "Level": 485,
+        "NecessarySouls": 533840
+    },
+    {
+        "Level": 486,
+        "NecessarySouls": 535174
+    },
+    {
+        "Level": 487,
+        "NecessarySouls": 536512
+    },
+    {
+        "Level": 488,
+        "NecessarySouls": 537854
+    },
+    {
+        "Level": 489,
+        "NecessarySouls": 539198
+    },
+    {
+        "Level": 490,
+        "NecessarySouls": 540546
+    },
+    {
+        "Level": 491,
+        "NecessarySouls": 541898
+    },
+    {
+        "Level": 492,
+        "NecessarySouls": 543252
+    },
+    {
+        "Level": 493,
+        "NecessarySouls": 544610
+    },
+    {
+        "Level": 494,
+        "NecessarySouls": 545972
+    },
+    {
+        "Level": 495,
+        "NecessarySouls": 547337
+    },
+    {
+        "Level": 496,
+        "NecessarySouls": 548705
+    },
+    {
+        "Level": 497,
+        "NecessarySouls": 550077
+    },
+    {
+        "Level": 498,
+        "NecessarySouls": 551452
+    },
+    {
+        "Level": 499,
+        "NecessarySouls": 552831
+    },
+    {
+        "Level": 500,
+        "NecessarySouls": 554213
+    },
+    {
+        "Level": 501,
+        "NecessarySouls": 555598
+    },
+    {
+        "Level": 502,
+        "NecessarySouls": 556987
+    },
+    {
+        "Level": 503,
+        "NecessarySouls": 558380
+    },
+    {
+        "Level": 504,
+        "NecessarySouls": 559776
+    },
+    {
+        "Level": 505,
+        "NecessarySouls": 561175
+    },
+    {
+        "Level": 506,
+        "NecessarySouls": 562578
+    },
+    {
+        "Level": 507,
+        "NecessarySouls": 563985
+    },
+    {
+        "Level": 508,
+        "NecessarySouls": 565395
+    },
+    {
+        "Level": 509,
+        "NecessarySouls": 566808
+    },
+    {
+        "Level": 510,
+        "NecessarySouls": 568225
+    },
+    {
+        "Level": 511,
+        "NecessarySouls": 569646
+    },
+    {
+        "Level": 512,
+        "NecessarySouls": 571070
+    },
+    {
+        "Level": 513,
+        "NecessarySouls": 572497
+    },
+    {
+        "Level": 514,
+        "NecessarySouls": 573929
+    },
+    {
+        "Level": 515,
+        "NecessarySouls": 575364
+    },
+    {
+        "Level": 516,
+        "NecessarySouls": 576802
+    },
+    {
+        "Level": 517,
+        "NecessarySouls": 578244
+    },
+    {
+        "Level": 518,
+        "NecessarySouls": 579690
+    },
+    {
+        "Level": 519,
+        "NecessarySouls": 581139
+    },
+    {
+        "Level": 520,
+        "NecessarySouls": 582592
+    },
+    {
+        "Level": 521,
+        "NecessarySouls": 584048
+    },
+    {
+        "Level": 522,
+        "NecessarySouls": 585508
+    },
+    {
+        "Level": 523,
+        "NecessarySouls": 586972
+    },
+    {
+        "Level": 524,
+        "NecessarySouls": 588439
+    },
+    {
+        "Level": 525,
+        "NecessarySouls": 589911
+    },
+    {
+        "Level": 526,
+        "NecessarySouls": 591385
+    },
+    {
+        "Level": 527,
+        "NecessarySouls": 592864
+    },
+    {
+        "Level": 528,
+        "NecessarySouls": 594346
+    },
+    {
+        "Level": 529,
+        "NecessarySouls": 595832
+    },
+    {
+        "Level": 530,
+        "NecessarySouls": 597321
+    },
+    {
+        "Level": 531,
+        "NecessarySouls": 598815
+    },
+    {
+        "Level": 532,
+        "NecessarySouls": 600312
+    },
+    {
+        "Level": 533,
+        "NecessarySouls": 601812
+    },
+    {
+        "Level": 534,
+        "NecessarySouls": 603317
+    },
+    {
+        "Level": 535,
+        "NecessarySouls": 604825
+    },
+    {
+        "Level": 536,
+        "NecessarySouls": 606337
+    },
+    {
+        "Level": 537,
+        "NecessarySouls": 607853
+    },
+    {
+        "Level": 538,
+        "NecessarySouls": 609373
+    },
+    {
+        "Level": 539,
+        "NecessarySouls": 610896
+    },
+    {
+        "Level": 540,
+        "NecessarySouls": 612424
+    },
+    {
+        "Level": 541,
+        "NecessarySouls": 613955
+    },
+    {
+        "Level": 542,
+        "NecessarySouls": 615489
+    },
+    {
+        "Level": 543,
+        "NecessarySouls": 617028
+    },
+    {
+        "Level": 544,
+        "NecessarySouls": 618571
+    },
+    {
+        "Level": 545,
+        "NecessarySouls": 620117
+    },
+    {
+        "Level": 546,
+        "NecessarySouls": 621667
+    },
+    {
+        "Level": 547,
+        "NecessarySouls": 623222
+    },
+    {
+        "Level": 548,
+        "NecessarySouls": 624780
+    },
+    {
+        "Level": 549,
+        "NecessarySouls": 626342
+    },
+    {
+        "Level": 550,
+        "NecessarySouls": 627908
+    },
+    {
+        "Level": 551,
+        "NecessarySouls": 629477
+    },
+    {
+        "Level": 552,
+        "NecessarySouls": 631051
+    },
+    {
+        "Level": 553,
+        "NecessarySouls": 632629
+    },
+    {
+        "Level": 554,
+        "NecessarySouls": 634210
+    },
+    {
+        "Level": 555,
+        "NecessarySouls": 635796
+    },
+    {
+        "Level": 556,
+        "NecessarySouls": 637385
+    },
+    {
+        "Level": 557,
+        "NecessarySouls": 638979
+    },
+    {
+        "Level": 558,
+        "NecessarySouls": 640576
+    },
+    {
+        "Level": 559,
+        "NecessarySouls": 642178
+    },
+    {
+        "Level": 560,
+        "NecessarySouls": 643783
+    },
+    {
+        "Level": 561,
+        "NecessarySouls": 645392
+    },
+    {
+        "Level": 562,
+        "NecessarySouls": 647006
+    },
+    {
+        "Level": 563,
+        "NecessarySouls": 648623
+    },
+    {
+        "Level": 564,
+        "NecessarySouls": 650245
+    },
+    {
+        "Level": 565,
+        "NecessarySouls": 651871
+    },
+    {
+        "Level": 566,
+        "NecessarySouls": 653500
+    },
+    {
+        "Level": 567,
+        "NecessarySouls": 655134
+    },
+    {
+        "Level": 568,
+        "NecessarySouls": 656772
+    },
+    {
+        "Level": 569,
+        "NecessarySouls": 658414
+    },
+    {
+        "Level": 570,
+        "NecessarySouls": 660060
+    },
+    {
+        "Level": 571,
+        "NecessarySouls": 661710
+    },
+    {
+        "Level": 572,
+        "NecessarySouls": 663364
+    },
+    {
+        "Level": 573,
+        "NecessarySouls": 665023
+    },
+    {
+        "Level": 574,
+        "NecessarySouls": 666685
+    },
+    {
+        "Level": 575,
+        "NecessarySouls": 668352
+    },
+    {
+        "Level": 576,
+        "NecessarySouls": 670023
+    },
+    {
+        "Level": 577,
+        "NecessarySouls": 671698
+    },
+    {
+        "Level": 578,
+        "NecessarySouls": 673377
+    },
+    {
+        "Level": 579,
+        "NecessarySouls": 675061
+    },
+    {
+        "Level": 580,
+        "NecessarySouls": 676748
+    },
+    {
+        "Level": 581,
+        "NecessarySouls": 678440
+    },
+    {
+        "Level": 582,
+        "NecessarySouls": 680136
+    },
+    {
+        "Level": 583,
+        "NecessarySouls": 681837
+    },
+    {
+        "Level": 584,
+        "NecessarySouls": 683541
+    },
+    {
+        "Level": 585,
+        "NecessarySouls": 685250
+    },
+    {
+        "Level": 586,
+        "NecessarySouls": 686963
+    },
+    {
+        "Level": 587,
+        "NecessarySouls": 688681
+    },
+    {
+        "Level": 588,
+        "NecessarySouls": 690402
+    },
+    {
+        "Level": 589,
+        "NecessarySouls": 692128
+    },
+    {
+        "Level": 590,
+        "NecessarySouls": 693859
+    },
+    {
+        "Level": 591,
+        "NecessarySouls": 695593
+    },
+    {
+        "Level": 592,
+        "NecessarySouls": 697332
+    },
+    {
+        "Level": 593,
+        "NecessarySouls": 699075
+    },
+    {
+        "Level": 594,
+        "NecessarySouls": 700823
+    },
+    {
+        "Level": 595,
+        "NecessarySouls": 702575
+    },
+    {
+        "Level": 596,
+        "NecessarySouls": 704332
+    },
+    {
+        "Level": 597,
+        "NecessarySouls": 706093
+    },
+    {
+        "Level": 598,
+        "NecessarySouls": 707858
+    },
+    {
+        "Level": 599,
+        "NecessarySouls": 709627
+    },
+    {
+        "Level": 600,
+        "NecessarySouls": 711401
+    },
+    {
+        "Level": 601,
+        "NecessarySouls": 713180
+    },
+    {
+        "Level": 602,
+        "NecessarySouls": 714963
+    },
+    {
+        "Level": 603,
+        "NecessarySouls": 716750
+    },
+    {
+        "Level": 604,
+        "NecessarySouls": 718542
+    },
+    {
+        "Level": 605,
+        "NecessarySouls": 720339
+    },
+    {
+        "Level": 606,
+        "NecessarySouls": 722139
+    },
+    {
+        "Level": 607,
+        "NecessarySouls": 723945
+    },
+    {
+        "Level": 608,
+        "NecessarySouls": 725755
+    },
+    {
+        "Level": 609,
+        "NecessarySouls": 727569
+    },
+    {
+        "Level": 610,
+        "NecessarySouls": 729388
+    },
+    {
+        "Level": 611,
+        "NecessarySouls": 731211
+    },
+    {
+        "Level": 612,
+        "NecessarySouls": 733039
+    },
+    {
+        "Level": 613,
+        "NecessarySouls": 734872
+    },
+    {
+        "Level": 614,
+        "NecessarySouls": 736709
+    },
+    {
+        "Level": 615,
+        "NecessarySouls": 738551
+    },
+    {
+        "Level": 616,
+        "NecessarySouls": 740397
+    },
+    {
+        "Level": 617,
+        "NecessarySouls": 742248
+    },
+    {
+        "Level": 618,
+        "NecessarySouls": 744104
+    },
+    {
+        "Level": 619,
+        "NecessarySouls": 745964
+    },
+    {
+        "Level": 620,
+        "NecessarySouls": 747829
+    },
+    {
+        "Level": 621,
+        "NecessarySouls": 749699
+    },
+    {
+        "Level": 622,
+        "NecessarySouls": 751573
+    },
+    {
+        "Level": 623,
+        "NecessarySouls": 753452
+    },
+    {
+        "Level": 624,
+        "NecessarySouls": 755336
+    },
+    {
+        "Level": 625,
+        "NecessarySouls": 757224
+    },
+    {
+        "Level": 626,
+        "NecessarySouls": 759117
+    },
+    {
+        "Level": 627,
+        "NecessarySouls": 761015
+    },
+    {
+        "Level": 628,
+        "NecessarySouls": 762917
+    },
+    {
+        "Level": 629,
+        "NecessarySouls": 764825
+    },
+    {
+        "Level": 630,
+        "NecessarySouls": 766737
+    },
+    {
+        "Level": 631,
+        "NecessarySouls": 768653
+    },
+    {
+        "Level": 632,
+        "NecessarySouls": 770575
+    },
+    {
+        "Level": 633,
+        "NecessarySouls": 772502
+    },
+    {
+        "Level": 634,
+        "NecessarySouls": 774433
+    },
+    {
+        "Level": 635,
+        "NecessarySouls": 776369
+    },
+    {
+        "Level": 636,
+        "NecessarySouls": 778310
+    },
+    {
+        "Level": 637,
+        "NecessarySouls": 780256
+    },
+    {
+        "Level": 638,
+        "NecessarySouls": 782206
+    },
+    {
+        "Level": 639,
+        "NecessarySouls": 784162
+    },
+    {
+        "Level": 640,
+        "NecessarySouls": 786122
+    },
+    {
+        "Level": 641,
+        "NecessarySouls": 788087
+    },
+    {
+        "Level": 642,
+        "NecessarySouls": 790058
+    },
+    {
+        "Level": 643,
+        "NecessarySouls": 792033
+    },
+    {
+        "Level": 644,
+        "NecessarySouls": 794013
+    },
+    {
+        "Level": 645,
+        "NecessarySouls": 795998
+    },
+    {
+        "Level": 646,
+        "NecessarySouls": 797988
+    },
+    {
+        "Level": 647,
+        "NecessarySouls": 799983
+    },
+    {
+        "Level": 648,
+        "NecessarySouls": 801983
+    },
+    {
+        "Level": 649,
+        "NecessarySouls": 803988
+    },
+    {
+        "Level": 650,
+        "NecessarySouls": 805998
+    },
+    {
+        "Level": 651,
+        "NecessarySouls": 808013
+    },
+    {
+        "Level": 652,
+        "NecessarySouls": 810033
+    },
+    {
+        "Level": 653,
+        "NecessarySouls": 812058
+    },
+    {
+        "Level": 654,
+        "NecessarySouls": 814088
+    },
+    {
+        "Level": 655,
+        "NecessarySouls": 816123
+    },
+    {
+        "Level": 656,
+        "NecessarySouls": 818164
+    },
+    {
+        "Level": 657,
+        "NecessarySouls": 820209
+    },
+    {
+        "Level": 658,
+        "NecessarySouls": 822259
+    },
+    {
+        "Level": 659,
+        "NecessarySouls": 824315
+    },
+    {
+        "Level": 660,
+        "NecessarySouls": 826376
+    },
+    {
+        "Level": 661,
+        "NecessarySouls": 828442
+    },
+    {
+        "Level": 662,
+        "NecessarySouls": 830513
+    },
+    {
+        "Level": 663,
+        "NecessarySouls": 832589
+    },
+    {
+        "Level": 664,
+        "NecessarySouls": 834671
+    },
+    {
+        "Level": 665,
+        "NecessarySouls": 836757
+    },
+    {
+        "Level": 666,
+        "NecessarySouls": 838849
+    },
+    {
+        "Level": 667,
+        "NecessarySouls": 840946
+    },
+    {
+        "Level": 668,
+        "NecessarySouls": 843049
+    },
+    {
+        "Level": 669,
+        "NecessarySouls": 845156
+    },
+    {
+        "Level": 670,
+        "NecessarySouls": 847269
+    },
+    {
+        "Level": 671,
+        "NecessarySouls": 849387
+    },
+    {
+        "Level": 672,
+        "NecessarySouls": 851511
+    },
+    {
+        "Level": 673,
+        "NecessarySouls": 853640
+    },
+    {
+        "Level": 674,
+        "NecessarySouls": 855774
+    },
+    {
+        "Level": 675,
+        "NecessarySouls": 857913
+    },
+    {
+        "Level": 676,
+        "NecessarySouls": 860058
+    },
+    {
+        "Level": 677,
+        "NecessarySouls": 862208
+    },
+    {
+        "Level": 678,
+        "NecessarySouls": 864364
+    },
+    {
+        "Level": 679,
+        "NecessarySouls": 866525
+    },
+    {
+        "Level": 680,
+        "NecessarySouls": 868691
+    },
+    {
+        "Level": 681,
+        "NecessarySouls": 870863
+    },
+    {
+        "Level": 682,
+        "NecessarySouls": 873040
+    },
+    {
+        "Level": 683,
+        "NecessarySouls": 875222
+    },
+    {
+        "Level": 684,
+        "NecessarySouls": 877410
+    },
+    {
+        "Level": 685,
+        "NecessarySouls": 879604
+    },
+    {
+        "Level": 686,
+        "NecessarySouls": 881803
+    },
+    {
+        "Level": 687,
+        "NecessarySouls": 884007
+    },
+    {
+        "Level": 688,
+        "NecessarySouls": 886217
+    },
+    {
+        "Level": 689,
+        "NecessarySouls": 888433
+    },
+    {
+        "Level": 690,
+        "NecessarySouls": 890654
+    },
+    {
+        "Level": 691,
+        "NecessarySouls": 892881
+    },
+    {
+        "Level": 692,
+        "NecessarySouls": 895113
+    },
+    {
+        "Level": 693,
+        "NecessarySouls": 897351
+    },
+    {
+        "Level": 694,
+        "NecessarySouls": 899594
+    },
+    {
+        "Level": 695,
+        "NecessarySouls": 901843
+    },
+    {
+        "Level": 696,
+        "NecessarySouls": 904098
+    },
+    {
+        "Level": 697,
+        "NecessarySouls": 906358
+    },
+    {
+        "Level": 698,
+        "NecessarySouls": 908624
+    },
+    {
+        "Level": 699,
+        "NecessarySouls": 910895
+    },
+    {
+        "Level": 700,
+        "NecessarySouls": 913173
+    },
+    {
+        "Level": 701,
+        "NecessarySouls": 915456
+    },
+    {
+        "Level": 702,
+        "NecessarySouls": 917744
+    },
+    {
+        "Level": 703,
+        "NecessarySouls": 920039
+    },
+    {
+        "Level": 704,
+        "NecessarySouls": 922339
+    },
+    {
+        "Level": 705,
+        "NecessarySouls": 924644
+    },
+    {
+        "Level": 706,
+        "NecessarySouls": 926956
+    },
+    {
+        "Level": 707,
+        "NecessarySouls": 929273
+    },
+    {
+        "Level": 708,
+        "NecessarySouls": 931597
+    },
+    {
+        "Level": 709,
+        "NecessarySouls": 933926
+    },
+    {
+        "Level": 710,
+        "NecessarySouls": 936260
+    },
+    {
+        "Level": 711,
+        "NecessarySouls": 938601
+    },
+    {
+        "Level": 712,
+        "NecessarySouls": 940948
+    },
+    {
+        "Level": 713,
+        "NecessarySouls": 943300
+    },
+    {
+        "Level": 714,
+        "NecessarySouls": 945658
+    },
+    {
+        "Level": 715,
+        "NecessarySouls": 948022
+    },
+    {
+        "Level": 716,
+        "NecessarySouls": 950392
+    },
+    {
+        "Level": 717,
+        "NecessarySouls": 952768
+    },
+    {
+        "Level": 718,
+        "NecessarySouls": 955150
+    },
+    {
+        "Level": 719,
+        "NecessarySouls": 957538
+    },
+    {
+        "Level": 720,
+        "NecessarySouls": 959932
+    },
+    {
+        "Level": 721,
+        "NecessarySouls": 962332
+    },
+    {
+        "Level": 722,
+        "NecessarySouls": 964738
+    },
+    {
+        "Level": 723,
+        "NecessarySouls": 967150
+    },
+    {
+        "Level": 724,
+        "NecessarySouls": 969567
+    },
+    {
+        "Level": 725,
+        "NecessarySouls": 971991
+    },
+    {
+        "Level": 726,
+        "NecessarySouls": 974421
+    },
+    {
+        "Level": 727,
+        "NecessarySouls": 976857
+    },
+    {
+        "Level": 728,
+        "NecessarySouls": 979300
+    },
+    {
+        "Level": 729,
+        "NecessarySouls": 981748
+    },
+    {
+        "Level": 730,
+        "NecessarySouls": 984202
+    },
+    {
+        "Level": 731,
+        "NecessarySouls": 986663
+    },
+    {
+        "Level": 732,
+        "NecessarySouls": 989129
+    },
+    {
+        "Level": 733,
+        "NecessarySouls": 991602
+    },
+    {
+        "Level": 734,
+        "NecessarySouls": 994081
+    },
+    {
+        "Level": 735,
+        "NecessarySouls": 996566
+    },
+    {
+        "Level": 736,
+        "NecessarySouls": 999058
+    },
+    {
+        "Level": 737,
+        "NecessarySouls": 1001555
+    },
+    {
+        "Level": 738,
+        "NecessarySouls": 1004059
+    },
+    {
+        "Level": 739,
+        "NecessarySouls": 1006569
+    },
+    {
+        "Level": 740,
+        "NecessarySouls": 1009086
+    },
+    {
+        "Level": 741,
+        "NecessarySouls": 1011609
+    },
+    {
+        "Level": 742,
+        "NecessarySouls": 1014138
+    },
+    {
+        "Level": 743,
+        "NecessarySouls": 1016673
+    },
+    {
+        "Level": 744,
+        "NecessarySouls": 1019215
+    },
+    {
+        "Level": 745,
+        "NecessarySouls": 1021763
+    },
+    {
+        "Level": 746,
+        "NecessarySouls": 1024317
+    },
+    {
+        "Level": 747,
+        "NecessarySouls": 1026878
+    },
+    {
+        "Level": 748,
+        "NecessarySouls": 1029445
+    },
+    {
+        "Level": 749,
+        "NecessarySouls": 1032019
+    },
+    {
+        "Level": 750,
+        "NecessarySouls": 1034599
+    },
+    {
+        "Level": 751,
+        "NecessarySouls": 1037185
+    },
+    {
+        "Level": 752,
+        "NecessarySouls": 1039778
+    },
+    {
+        "Level": 753,
+        "NecessarySouls": 1042378
+    },
+    {
+        "Level": 754,
+        "NecessarySouls": 1044984
+    },
+    {
+        "Level": 755,
+        "NecessarySouls": 1047596
+    },
+    {
+        "Level": 756,
+        "NecessarySouls": 1050215
+    },
+    {
+        "Level": 757,
+        "NecessarySouls": 1052841
+    },
+    {
+        "Level": 758,
+        "NecessarySouls": 1055473
+    },
+    {
+        "Level": 759,
+        "NecessarySouls": 1058111
+    },
+    {
+        "Level": 760,
+        "NecessarySouls": 1060757
+    },
+    {
+        "Level": 761,
+        "NecessarySouls": 1063409
+    },
+    {
+        "Level": 762,
+        "NecessarySouls": 1066067
+    },
+    {
+        "Level": 763,
+        "NecessarySouls": 1068732
+    },
+    {
+        "Level": 764,
+        "NecessarySouls": 1071404
+    },
+    {
+        "Level": 765,
+        "NecessarySouls": 1074083
+    },
+    {
+        "Level": 766,
+        "NecessarySouls": 1076768
+    },
+    {
+        "Level": 767,
+        "NecessarySouls": 1079460
+    },
+    {
+        "Level": 768,
+        "NecessarySouls": 1082158
+    },
+    {
+        "Level": 769,
+        "NecessarySouls": 1084864
+    },
+    {
+        "Level": 770,
+        "NecessarySouls": 1087576
+    },
+    {
+        "Level": 771,
+        "NecessarySouls": 1090295
+    },
+    {
+        "Level": 772,
+        "NecessarySouls": 1093021
+    },
+    {
+        "Level": 773,
+        "NecessarySouls": 1095753
+    },
+    {
+        "Level": 774,
+        "NecessarySouls": 1098492
+    },
+    {
+        "Level": 775,
+        "NecessarySouls": 1101239
+    },
+    {
+        "Level": 776,
+        "NecessarySouls": 1103992
+    },
+    {
+        "Level": 777,
+        "NecessarySouls": 1106752
+    },
+    {
+        "Level": 778,
+        "NecessarySouls": 1109519
+    },
+    {
+        "Level": 779,
+        "NecessarySouls": 1112292
+    },
+    {
+        "Level": 780,
+        "NecessarySouls": 1115073
+    },
+    {
+        "Level": 781,
+        "NecessarySouls": 1117861
+    },
+    {
+        "Level": 782,
+        "NecessarySouls": 1120656
+    },
+    {
+        "Level": 783,
+        "NecessarySouls": 1123457
+    },
+    {
+        "Level": 784,
+        "NecessarySouls": 1126266
+    },
+    {
+        "Level": 785,
+        "NecessarySouls": 1129081
+    },
+    {
+        "Level": 786,
+        "NecessarySouls": 1131904
+    },
+    {
+        "Level": 787,
+        "NecessarySouls": 1134734
+    },
+    {
+        "Level": 788,
+        "NecessarySouls": 1137571
+    },
+    {
+        "Level": 789,
+        "NecessarySouls": 1140415
+    },
+    {
+        "Level": 790,
+        "NecessarySouls": 1143266
+    },
+    {
+        "Level": 791,
+        "NecessarySouls": 1146124
+    },
+    {
+        "Level": 792,
+        "NecessarySouls": 1148989
+    },
+    {
+        "Level": 793,
+        "NecessarySouls": 1151862
+    },
+    {
+        "Level": 794,
+        "NecessarySouls": 1154741
+    },
+    {
+        "Level": 795,
+        "NecessarySouls": 1157628
+    },
+    {
+        "Level": 796,
+        "NecessarySouls": 1160522
+    },
+    {
+        "Level": 797,
+        "NecessarySouls": 1163424
+    },
+    {
+        "Level": 798,
+        "NecessarySouls": 1166332
+    },
+    {
+        "Level": 799,
+        "NecessarySouls": 1169248
+    },
+    {
+        "Level": 800,
+        "NecessarySouls": 1172171
+    },
+    {
+        "Level": 801,
+        "NecessarySouls": 1175102
+    },
+    {
+        "Level": 802,
+        "NecessarySouls": 1178039
+    },
+    {
+        "Level": 803,
+        "NecessarySouls": 1180984
+    },
+    {
+        "Level": 804,
+        "NecessarySouls": 1183937
+    },
+    {
+        "Level": 805,
+        "NecessarySouls": 1186897
+    },
+    {
+        "Level": 806,
+        "NecessarySouls": 1189864
+    },
+    {
+        "Level": 807,
+        "NecessarySouls": 1192839
+    },
+    {
+        "Level": 808,
+        "NecessarySouls": 1195821
+    },
+    {
+        "Level": 809,
+        "NecessarySouls": 1198810
+    },
+    {
+        "Level": 810,
+        "NecessarySouls": 1201807
+    },
+    {
+        "Level": 811,
+        "NecessarySouls": 1204812
+    },
+    {
+        "Level": 812,
+        "NecessarySouls": 1207824
+    },
+    {
+        "Level": 813,
+        "NecessarySouls": 1210843
+    },
+    {
+        "Level": 814,
+        "NecessarySouls": 1213870
+    },
+    {
+        "Level": 815,
+        "NecessarySouls": 1216905
+    },
+    {
+        "Level": 816,
+        "NecessarySouls": 1219947
+    },
+    {
+        "Level": 817,
+        "NecessarySouls": 1222997
+    },
+    {
+        "Level": 818,
+        "NecessarySouls": 1226055
+    },
+    {
+        "Level": 819,
+        "NecessarySouls": 1229120
+    },
+    {
+        "Level": 820,
+        "NecessarySouls": 1232193
+    },
+    {
+        "Level": 821,
+        "NecessarySouls": 1235273
+    },
+    {
+        "Level": 822,
+        "NecessarySouls": 1238361
+    },
+    {
+        "Level": 823,
+        "NecessarySouls": 1241457
+    },
+    {
+        "Level": 824,
+        "NecessarySouls": 1244561
+    },
+    {
+        "Level": 825,
+        "NecessarySouls": 1247672
+    },
+    {
+        "Level": 826,
+        "NecessarySouls": 1250792
+    },
+    {
+        "Level": 827,
+        "NecessarySouls": 1253918
+    },
+    {
+        "Level": 828,
+        "NecessarySouls": 1257053
+    },
+    {
+        "Level": 829,
+        "NecessarySouls": 1260196
+    },
+    {
+        "Level": 830,
+        "NecessarySouls": 1263346
+    },
+    {
+        "Level": 831,
+        "NecessarySouls": 1266505
+    },
+    {
+        "Level": 832,
+        "NecessarySouls": 1269671
+    },
+    {
+        "Level": 833,
+        "NecessarySouls": 1272845
+    },
+    {
+        "Level": 834,
+        "NecessarySouls": 1276027
+    },
+    {
+        "Level": 835,
+        "NecessarySouls": 1279217
+    },
+    {
+        "Level": 836,
+        "NecessarySouls": 1282415
+    },
+    {
+        "Level": 837,
+        "NecessarySouls": 1285621
+    },
+    {
+        "Level": 838,
+        "NecessarySouls": 1288836
+    },
+    {
+        "Level": 839,
+        "NecessarySouls": 1292058
+    },
+    {
+        "Level": 840,
+        "NecessarySouls": 1295288
+    },
+    {
+        "Level": 841,
+        "NecessarySouls": 1298526
+    },
+    {
+        "Level": 842,
+        "NecessarySouls": 1301772
+    },
+    {
+        "Level": 843,
+        "NecessarySouls": 1305027
+    },
+    {
+        "Level": 844,
+        "NecessarySouls": 1308289
+    },
+    {
+        "Level": 845,
+        "NecessarySouls": 1311560
+    },
+    {
+        "Level": 846,
+        "NecessarySouls": 1314839
+    },
+    {
+        "Level": 847,
+        "NecessarySouls": 1318126
+    },
+    {
+        "Level": 848,
+        "NecessarySouls": 1321421
+    },
+    {
+        "Level": 849,
+        "NecessarySouls": 1324725
+    },
+    {
+        "Level": 850,
+        "NecessarySouls": 1328037
+    }
+]

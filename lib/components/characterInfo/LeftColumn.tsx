@@ -1,4 +1,5 @@
 import ClassContext from "@/lib/context/classes";
+import PlayerLevelUpSoulsContext from "@/lib/context/playerLevelUpSouls";
 import Class from "@/lib/interfaces/class";
 import { FocusedAttributeDispatchContext } from "@/lib/reducers/focusedAttribute";
 import {
@@ -7,9 +8,13 @@ import {
 } from "@/lib/reducers/virtualStats";
 import ArmorSet from "@/lib/types/armorSet";
 import Equippable from "@/lib/types/equippable";
+import PlayerLevelUpSouls from "@/lib/types/playerLevelUpSouls";
 import Ring from "@/lib/types/ring";
 import StatMap, { StatMapKey } from "@/lib/types/statMap";
 import { useCallback, useContext, useEffect, useState } from "react";
+
+const MAX_PLAYER_LEVEL_UP_SOULS_ID = 850;
+const MAX_PLAYER_LEVEL = 838;
 
 /**
  * Returns a StatMap that contains the total stats of all the items in the given array.
@@ -50,6 +55,9 @@ export default function LeftColumn(props: {
 }) {
     // Context
     const classes: Class[] = useContext(ClassContext);
+    const playerLevelUpSouls: PlayerLevelUpSouls[] = useContext(
+        PlayerLevelUpSoulsContext,
+    );
     const setFocusedAttribute = useContext(FocusedAttributeDispatchContext);
 
     // Desired states are user input, and represent the "ideal" stats of a character
@@ -127,6 +135,9 @@ export default function LeftColumn(props: {
 
     // Sorted classes are the classes sorted by ascending delta
     const [sorted, setSorted] = useState<Class[]>(sortClasses());
+
+    // Souls to next level
+    const [soulsToNextLevel, setSoulsToNextLevel] = useState(0);
 
     // STATE UPDATE FUNCTIONS
 
@@ -209,8 +220,21 @@ export default function LeftColumn(props: {
         );
     }, [desiredStats, optimalClass, itemStats]);
 
+    useEffect(() => {
+        const currentLevel = Math.min(
+            optimalClass.sortingValue!,
+            MAX_PLAYER_LEVEL,
+            MAX_PLAYER_LEVEL_UP_SOULS_ID,
+        );
+        const currentPlayerLevelUpSouls = playerLevelUpSouls.find(
+            (playerLevelUpSouls) => playerLevelUpSouls.Level == currentLevel,
+        );
+
+        setSoulsToNextLevel(currentPlayerLevelUpSouls?.NecessarySouls || 0);
+    }, [finalStats]);
+
     /**
-     * Updates the item stats when the helmet, chestpiece, or equipped talismans change.
+     * Calculates the item stats on render
      */
     useEffect(() => {
         // get added stats from items
@@ -341,19 +365,18 @@ export default function LeftColumn(props: {
             {/* Souls */}
             <div className="grid grid-cols-2 w-full gap-1">
                 {/* Souls to next level */}
-                {/* TODO: add calculations to accurately display this data */}
                 <div className="col-span-1 w-full flex flex-col justify-between">
                     <label
                         htmlFor="soulsToNextLevel"
                         className="w-full text-center"
                     >
-                        Souls to next Level
+                        Souls to Next Level
                     </label>
                     <input
                         id="soulsToNextLevel"
                         disabled
                         type="number"
-                        value="500"
+                        value={soulsToNextLevel}
                         className="w-full text-left"
                     />
                 </div>
