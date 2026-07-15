@@ -7,8 +7,6 @@ export type WeaponEquipSlots =
     | "RightHandWeaponTertiary";
 
 export type LevelUpStatusCalcParamKey =
-    | "ID"
-    | "Name"
     | "MaximumHP"
     | "MaximumStamina"
     | "MaximumEquipLoad"
@@ -84,8 +82,13 @@ export const LevelUpStatusCalcParamMap: Map<LevelUpStatusCalcParamKey, string> =
         ["AbsorptionCurse", "Absorption (Curse)"],
     ]);
 
-type LevelUpStatusCalcParam = {
+type LevelUpStatusCalcParamCore = {
     [key in LevelUpStatusCalcParamKey]: boolean;
+};
+
+export type LevelUpStatusCalcParam = LevelUpStatusCalcParamCore & {
+    ID: number;
+    Name: string;
 };
 
 export default LevelUpStatusCalcParam;

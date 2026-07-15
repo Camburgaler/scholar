@@ -1,7 +1,10 @@
-import {
+import LevelUpStatusCalcParamContext from "@/lib/context/levelUpStatusCalcParam";
+import { FocusedAttributeContext } from "@/lib/reducers/focusedAttribute";
+import LevelUpStatusCalcParam, {
     LevelUpStatusCalcParamKey,
     LevelUpStatusCalcParamMap,
 } from "@/lib/types/levelUpStatusCalcParam";
+import { useContext, useEffect, useState } from "react";
 import { JSX } from "react/jsx-runtime";
 
 function getEquipLoadPercentFromRatio(ratio: string) {
@@ -15,17 +18,31 @@ export default function StatDisplay(props: {
     isOddRow?: boolean;
 }): JSX.Element {
     const { levelUpStatusCalcParamKey, displayValue, isOddRow } = props;
+    const focusedAttribute = useContext(FocusedAttributeContext);
+    const levelUpStatusCalcParams: LevelUpStatusCalcParam[] = useContext(
+        LevelUpStatusCalcParamContext,
+    );
+    const [isFocused, setIsFocused] = useState(false);
+
+    // determines if the focused attribute affects this stat
+    useEffect(() => {
+        setIsFocused(
+            levelUpStatusCalcParams.find(
+                (param) => param.Name == focusedAttribute!,
+            )?.[levelUpStatusCalcParamKey]!,
+        );
+    }, [focusedAttribute, levelUpStatusCalcParams]);
 
     return (
         <div
             className="flex gap-1 w-full justify-between"
-            style={
-                isOddRow
-                    ? {
-                          backgroundColor: "var(--primary)",
-                      }
-                    : {}
-            }
+            style={{
+                backgroundColor: isOddRow
+                    ? "var(--primary)"
+                    : "var(--secondary)",
+                color: isFocused ? "var(--accent)" : "var(--contrast)",
+                fontWeight: isFocused ? "bold" : "normal",
+            }}
             id={levelUpStatusCalcParamKey}
         >
             <label

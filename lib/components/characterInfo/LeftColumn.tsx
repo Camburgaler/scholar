@@ -1,5 +1,6 @@
 import ClassContext from "@/lib/context/classes";
 import Class from "@/lib/interfaces/class";
+import { FocusedAttributeDispatchContext } from "@/lib/reducers/focusedAttribute";
 import {
     VirtualStatsContext,
     VirtualStatsDispatchContext,
@@ -47,7 +48,9 @@ export default function LeftColumn(props: {
     equippedRings: Ring[];
     equippedArmor: ArmorSet;
 }) {
+    // Context
     const classes: Class[] = useContext(ClassContext);
+    const setFocusedAttribute = useContext(FocusedAttributeDispatchContext);
 
     // Desired states are user input, and represent the "ideal" stats of a character
     const [desiredStats, setDesiredStats] = useState<StatMap<number>>({
@@ -278,7 +281,13 @@ export default function LeftColumn(props: {
                         <td></td>
                     </tr>
                     {Object.keys(desiredStats).map((statId: string) => (
-                        <tr key={statId}>
+                        <tr
+                            key={statId}
+                            onMouseOver={() =>
+                                setFocusedAttribute(statId as StatMapKey)
+                            }
+                            onMouseOut={() => setFocusedAttribute(null)}
+                        >
                             <td className="text-left">{statId}:</td>
                             <td className="text-center">
                                 <input
