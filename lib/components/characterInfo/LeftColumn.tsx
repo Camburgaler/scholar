@@ -139,6 +139,9 @@ export default function LeftColumn(props: {
     // Souls to next level
     const [soulsToNextLevel, setSoulsToNextLevel] = useState(0);
 
+    // Total soul cost
+    const [totalSoulCost, setTotalSoulCost] = useState(0);
+
     // STATE UPDATE FUNCTIONS
 
     /**
@@ -231,6 +234,12 @@ export default function LeftColumn(props: {
         );
 
         setSoulsToNextLevel(currentPlayerLevelUpSouls?.NecessarySouls || 0);
+
+        let tempTotalSoulCost = 0;
+        for (let i = optimalClass.Level; i < currentLevel; i++) {
+            tempTotalSoulCost += playerLevelUpSouls[i].NecessarySouls;
+        }
+        setTotalSoulCost(tempTotalSoulCost);
     }, [finalStats]);
 
     /**
@@ -381,7 +390,6 @@ export default function LeftColumn(props: {
                     />
                 </div>
                 {/* Total soul cost */}
-                {/* TODO: add calculations to accurately display this data */}
                 <div className="w-full flex flex-col justify-between">
                     <label
                         htmlFor="totalSoulCost"
@@ -394,7 +402,7 @@ export default function LeftColumn(props: {
                         className="w-full text-right"
                         type="number"
                         disabled
-                        value="0"
+                        value={totalSoulCost}
                     />
                 </div>
             </div>
