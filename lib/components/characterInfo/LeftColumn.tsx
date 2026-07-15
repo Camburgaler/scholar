@@ -1,7 +1,10 @@
 import ClassContext from "@/lib/context/classes";
 import PlayerLevelUpSoulsContext from "@/lib/context/playerLevelUpSouls";
 import Class from "@/lib/interfaces/class";
-import { FocusedAttributeDispatchContext } from "@/lib/reducers/focusedAttribute";
+import {
+    FocusedAttributeContext,
+    FocusedAttributeDispatchContext,
+} from "@/lib/reducers/focusedAttribute";
 import {
     VirtualStatsContext,
     VirtualStatsDispatchContext,
@@ -58,6 +61,7 @@ export default function LeftColumn(props: {
     const playerLevelUpSouls: PlayerLevelUpSouls[] = useContext(
         PlayerLevelUpSoulsContext,
     );
+    const focusedAttribute = useContext(FocusedAttributeContext);
     const setFocusedAttribute = useContext(FocusedAttributeDispatchContext);
 
     // Desired states are user input, and represent the "ideal" stats of a character
@@ -284,7 +288,7 @@ export default function LeftColumn(props: {
             <table className="w-full">
                 <thead>
                     <tr>
-                        <th className="text-left">Stat</th>
+                        <th className="text-left w-full">Stat</th>
                         <th className="text-center">Base</th>
                         <th className="text-right">Desired</th>
                         <th className="text-right">Final</th>
@@ -320,6 +324,12 @@ export default function LeftColumn(props: {
                                 setFocusedAttribute(statId as StatMapKey)
                             }
                             onMouseOut={() => setFocusedAttribute(null)}
+                            style={{
+                                fontWeight:
+                                    focusedAttribute == statId
+                                        ? "bold"
+                                        : "normal",
+                            }}
                         >
                             <td className="text-left">{statId}:</td>
                             <td className="text-center">
