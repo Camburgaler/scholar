@@ -84,6 +84,7 @@ select {
 th {
     background-color: var(--primary);
     font-weight: bold;
+    border-bottom: 1px solid;
 }
 
 tr:nth-child(even) {

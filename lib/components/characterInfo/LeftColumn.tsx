@@ -1,5 +1,6 @@
 import ClassContext from "@/lib/context/classes";
-import PlayerLevelUpSoulsContext from "@/lib/context/playerLevelUpSouls";
+import PlayerLevelUpSoulsContext from "@/lib/context/playerLevelUpSoulsParam";
+import VowContext from "@/lib/context/vowParam";
 import Class from "@/lib/interfaces/class";
 import {
     FocusedAttributeContext,
@@ -11,9 +12,10 @@ import {
 } from "@/lib/reducers/virtualStats";
 import ArmorSet from "@/lib/types/armorSet";
 import Equippable from "@/lib/types/equippable";
-import PlayerLevelUpSouls from "@/lib/types/playerLevelUpSouls";
+import PlayerLevelUpSoulsParam from "@/lib/types/playerLevelUpSoulsParam";
 import Ring from "@/lib/types/ring";
 import StatMap, { StatMapKey } from "@/lib/types/statMap";
+import VowParam from "@/lib/types/vowParam";
 import { useCallback, useContext, useEffect, useState } from "react";
 
 const MAX_PLAYER_LEVEL_UP_SOULS_ID = 850;
@@ -58,9 +60,10 @@ export default function LeftColumn(props: {
 }) {
     // Context
     const classes: Class[] = useContext(ClassContext);
-    const playerLevelUpSouls: PlayerLevelUpSouls[] = useContext(
+    const playerLevelUpSouls: PlayerLevelUpSoulsParam[] = useContext(
         PlayerLevelUpSoulsContext,
     );
+    const vows: VowParam[] = useContext(VowContext);
     const focusedAttribute = useContext(FocusedAttributeContext);
     const setFocusedAttribute = useContext(FocusedAttributeDispatchContext);
 
@@ -145,6 +148,9 @@ export default function LeftColumn(props: {
 
     // Total soul cost
     const [totalSoulCost, setTotalSoulCost] = useState(0);
+
+    // Covenant
+    const [covenant, setCovenant] = useState("None");
 
     // STATE UPDATE FUNCTIONS
 
@@ -264,7 +270,7 @@ export default function LeftColumn(props: {
 
     // RENDER
     return (
-        <div className="h-full flex flex-col w-full items-left justify-baseline align-baseline">
+        <div className="h-full flex flex-col gap-2 w-full items-left justify-baseline align-baseline">
             {/* Starting class */}
             <div className="flex w-full items-left justify-between align-center">
                 {/* TODO: set a toggle to switch between finding an optimal starting class and building around a selected starting class */}
@@ -282,6 +288,7 @@ export default function LeftColumn(props: {
                     value={optimalClass.Name}
                 />
             </div>
+
             <hr />
 
             {/* Stats */}
@@ -426,10 +433,15 @@ export default function LeftColumn(props: {
                 >
                     Covenant:
                 </label>
-                <select id="covenant" className="col-span-2 w-full text-center">
-                    {/* TODO: add options */}
-                    <option value="0">None</option>
-                    <option value="1">One</option>
+                <select
+                    id="covenant"
+                    className="col-span-2 w-full text-center"
+                    value={covenant}
+                    onChange={(e) => setCovenant(e.target.value)}
+                >
+                    {vows.map((vow) => (
+                        <option key={vow.Name}>{vow.Name}</option>
+                    ))}
                 </select>
             </div>
             <hr />

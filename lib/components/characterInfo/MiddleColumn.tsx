@@ -4,40 +4,46 @@ import StatDisplay from "@/lib/components/characterInfo/StatDisplay";
 export default function MiddleColumn() {
     return (
         <div className="flex flex-col w-full h-full items-left justify-baseline align-center">
-            {/* HP */}
-            {/* TODO: update with calculations based on level/attributes */}
-            <StatDisplay
-                levelUpStatusCalcParamKey="MaximumHP"
-                displayValue="826"
-                isOddRow
-            />
+            {/* Stats */}
+            <div className="flex flex-col w-full items-left justify-baseline align-center">
+                {/* HP */}
+                {/* TODO: update with calculations based on level/attributes */}
+                <StatDisplay
+                    levelUpStatusCalcParamKey="MaximumHP"
+                    displayValue="826"
+                    isOddRow
+                />
 
-            {/* Stamina */}
-            {/* TODO: update with calculations based on level/attributes */}
-            <StatDisplay
-                levelUpStatusCalcParamKey="MaximumStamina"
-                displayValue="92"
-            />
+                {/* Stamina */}
+                {/* TODO: update with calculations based on level/attributes */}
+                <StatDisplay
+                    levelUpStatusCalcParamKey="MaximumStamina"
+                    displayValue="92"
+                />
 
-            {/* Equip load */}
-            {/* TODO: update with calculations based on level/attributes */}
-            <StatDisplay
-                levelUpStatusCalcParamKey="MaximumEquipLoad"
-                displayValue="0/47.5"
-                isOddRow
-            />
+                {/* Equip load */}
+                {/* TODO: update with calculations based on level/attributes */}
+                <StatDisplay
+                    levelUpStatusCalcParamKey="MaximumEquipLoad"
+                    displayValue="0/47.5"
+                    isOddRow
+                />
 
-            {/* Poise */}
-            {/* TODO: update with calculations based on level/attributes */}
-            <StatDisplay levelUpStatusCalcParamKey="Poise" displayValue="1.5" />
+                {/* Poise */}
+                {/* TODO: update with calculations based on level/attributes */}
+                <StatDisplay
+                    levelUpStatusCalcParamKey="Poise"
+                    displayValue="1.5"
+                />
 
-            {/* Attunement slots */}
-            {/* TODO: update with calculations based on level/attributes */}
-            <StatDisplay
-                levelUpStatusCalcParamKey="SpellSlotCount"
-                displayValue="0"
-                isOddRow
-            />
+                {/* Attunement slots */}
+                {/* TODO: update with calculations based on level/attributes */}
+                <StatDisplay
+                    levelUpStatusCalcParamKey="SpellSlotCount"
+                    displayValue="0"
+                    isOddRow
+                />
+            </div>
 
             <hr />
 
