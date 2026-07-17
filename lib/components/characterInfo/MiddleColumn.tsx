@@ -9,37 +9,31 @@ export default function MiddleColumn() {
                 {/* HP */}
                 {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
-                    levelUpStatusCalcParamKey="MaximumHP"
+                    statMapKey="MaximumHP"
                     displayValue="826"
                     isOddRow
                 />
 
                 {/* Stamina */}
                 {/* TODO: update with calculations based on level/attributes */}
-                <StatDisplay
-                    levelUpStatusCalcParamKey="MaximumStamina"
-                    displayValue="92"
-                />
+                <StatDisplay statMapKey="MaximumStamina" displayValue="92" />
 
                 {/* Equip load */}
                 {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
-                    levelUpStatusCalcParamKey="MaximumEquipLoad"
+                    statMapKey="MaximumEquipLoad"
                     displayValue="0/47.5"
                     isOddRow
                 />
 
                 {/* Poise */}
                 {/* TODO: update with calculations based on level/attributes */}
-                <StatDisplay
-                    levelUpStatusCalcParamKey="Poise"
-                    displayValue="1.5"
-                />
+                <StatDisplay statMapKey="Poise" displayValue="1.5" />
 
                 {/* Attunement slots */}
                 {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
-                    levelUpStatusCalcParamKey="SpellSlotCount"
+                    statMapKey="SpellSlotCount"
                     displayValue="0"
                     isOddRow
                 />

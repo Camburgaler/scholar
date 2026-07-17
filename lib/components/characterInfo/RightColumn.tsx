@@ -8,17 +8,14 @@ export default function RightColumn() {
                 {/* Cast Speed */}
                 {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
-                    levelUpStatusCalcParamKey="SpellCastingSpeed"
+                    statMapKey="SpellCastingSpeed"
                     displayValue="45"
                     isOddRow
                 />
 
                 {/* Agility */}
                 {/* TODO: update with calculations based on level/attributes */}
-                <StatDisplay
-                    levelUpStatusCalcParamKey="Agility"
-                    displayValue="85"
-                />
+                <StatDisplay statMapKey="Agility" displayValue="85" />
             </div>
 
             <hr />
@@ -28,7 +25,7 @@ export default function RightColumn() {
                 {/* Attack: Strength */}
                 {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
-                    levelUpStatusCalcParamKey="PhysicalAttackPowerByStrength"
+                    statMapKey="PhysicalAttackPowerByStrength"
                     displayValue="68"
                     isOddRow
                 />
@@ -36,54 +33,45 @@ export default function RightColumn() {
                 {/* Attack: Dexterity */}
                 {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
-                    levelUpStatusCalcParamKey="PhysicalAttackPowerByDexterity"
+                    statMapKey="PhysicalAttackPowerByDexterity"
                     displayValue="59"
                 />
 
                 {/* Magic Bonus */}
                 {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
-                    levelUpStatusCalcParamKey="AttackPowerMagic"
+                    statMapKey="AttackPowerMagic"
                     displayValue="51"
                     isOddRow
                 />
 
                 {/* Fire Bonus */}
                 {/* TODO: update with calculations based on level/attributes */}
-                <StatDisplay
-                    levelUpStatusCalcParamKey="AttackPowerFire"
-                    displayValue="61"
-                />
+                <StatDisplay statMapKey="AttackPowerFire" displayValue="61" />
 
                 {/* Lightning Bonus */}
                 {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
-                    levelUpStatusCalcParamKey="AttackPowerLightning"
+                    statMapKey="AttackPowerLightning"
                     displayValue="53"
                     isOddRow
                 />
 
                 {/* Dark Bonus */}
                 {/* TODO: update with calculations based on level/attributes */}
-                <StatDisplay
-                    levelUpStatusCalcParamKey="AttackPowerDark"
-                    displayValue="61"
-                />
+                <StatDisplay statMapKey="AttackPowerDark" displayValue="61" />
 
                 {/* Poison Bonus */}
                 {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
-                    levelUpStatusCalcParamKey="AttackPowerPoison"
+                    statMapKey="AttackPowerPoison"
                     displayValue="56"
                     isOddRow
                 />
 
                 {/* Bleed Bonus */}
                 {/* TODO: update with calculations based on level/attributes */}
-                <StatDisplay
-                    levelUpStatusCalcParamKey="AttackPowerBleed"
-                    displayValue="56"
-                />
+                <StatDisplay statMapKey="AttackPowerBleed" displayValue="56" />
             </div>
 
             <hr />
@@ -92,18 +80,14 @@ export default function RightColumn() {
             <div className="flex flex-col w-full">
                 {/* Physical Defense */}
                 {/* TODO: update with calculations based on level/attributes */}
-                <StatDisplay
-                    levelUpStatusCalcParamKey="Defense"
-                    displayValue="77"
-                    isOddRow
-                />
+                <StatDisplay statMapKey="Defense" displayValue="77" isOddRow />
 
                 <ul className="flex flex-col w-full indent-4">
                     <li className="flex">
                         {/* Strike Defense */}
                         {/* TODO: update with calculations based on level/attributes */}
                         <StatDisplay
-                            levelUpStatusCalcParamKey="DefenseStrike"
+                            statMapKey="DefenseStrike"
                             displayValue="77"
                         />
                     </li>
@@ -111,7 +95,7 @@ export default function RightColumn() {
                         {/* Slash Defense */}
                         {/* TODO: update with calculations based on level/attributes */}
                         <StatDisplay
-                            levelUpStatusCalcParamKey="DefenseSlash"
+                            statMapKey="DefenseSlash"
                             displayValue="77"
                             isOddRow
                         />
@@ -120,7 +104,7 @@ export default function RightColumn() {
                         {/* Thrust Defense */}
                         {/* TODO: update with calculations based on level/attributes */}
                         <StatDisplay
-                            levelUpStatusCalcParamKey="DefenseThrust"
+                            statMapKey="DefenseThrust"
                             displayValue="77"
                         />
                     </li>
@@ -129,32 +113,26 @@ export default function RightColumn() {
                 {/* Magic Defense */}
                 {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
-                    levelUpStatusCalcParamKey="AbsorptionMagic"
+                    statMapKey="AbsorptionMagic"
                     displayValue="30"
                     isOddRow
                 />
 
                 {/* Fire Defense */}
                 {/* TODO: update with calculations based on level/attributes */}
-                <StatDisplay
-                    levelUpStatusCalcParamKey="AbsorptionFire"
-                    displayValue="68"
-                />
+                <StatDisplay statMapKey="AbsorptionFire" displayValue="68" />
 
                 {/* Lightning Defense */}
                 {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
-                    levelUpStatusCalcParamKey="AbsorptionLightning"
+                    statMapKey="AbsorptionLightning"
                     displayValue="30"
                     isOddRow
                 />
 
                 {/* Dark Defense */}
                 {/* TODO: update with calculations based on level/attributes */}
-                <StatDisplay
-                    levelUpStatusCalcParamKey="AbsorptionDark"
-                    displayValue="36"
-                />
+                <StatDisplay statMapKey="AbsorptionDark" displayValue="36" />
             </div>
 
             <hr />
@@ -164,32 +142,26 @@ export default function RightColumn() {
                 {/* Bleed Resistance */}
                 {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
-                    levelUpStatusCalcParamKey="AbsorptionBleed"
+                    statMapKey="AbsorptionBleed"
                     displayValue="30"
                     isOddRow
                 />
 
                 {/* Poison Resistance */}
                 {/* TODO: update with calculations based on level/attributes */}
-                <StatDisplay
-                    levelUpStatusCalcParamKey="AbsorptionPoison"
-                    displayValue="30"
-                />
+                <StatDisplay statMapKey="AbsorptionPoison" displayValue="30" />
 
                 {/* Petrify Resistance */}
                 {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
-                    levelUpStatusCalcParamKey="AbsorptionPetrify"
+                    statMapKey="AbsorptionPetrify"
                     displayValue="30"
                     isOddRow
                 />
 
                 {/* Curse Resistance */}
                 {/* TODO: update with calculations based on level/attributes */}
-                <StatDisplay
-                    levelUpStatusCalcParamKey="AbsorptionCurse"
-                    displayValue="30"
-                />
+                <StatDisplay statMapKey="AbsorptionCurse" displayValue="30" />
             </div>
 
             <hr />

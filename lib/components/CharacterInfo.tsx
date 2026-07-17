@@ -13,12 +13,12 @@ import {
     FocusedAttributeContext,
     FocusedAttributeDispatchContext,
 } from "../reducers/focusedAttribute";
-import { StatMapKey } from "../types/statMap";
+import { AttributeMapKey } from "../types/attributeMap";
 
 function focusedAttributeReducer(
-    initialValue: StatMapKey | null,
-    newValue: StatMapKey | null,
-): StatMapKey | null {
+    initialValue: AttributeMapKey | null,
+    newValue: AttributeMapKey | null,
+): AttributeMapKey | null {
     if (initialValue === null || newValue === null) return newValue;
 
     return initialValue;

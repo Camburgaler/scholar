@@ -1,7 +1,7 @@
-import { StatMapKey } from "@/lib/types/statMap";
+import { AttributeMapKey } from "@/lib/types/attributeMap";
 
 type ModifierKey =
-    | StatMapKey
+    | AttributeMapKey
     | "AllPhysical"
     | "AntiStabilityModifier"
     | "ArmorDegradationRate"

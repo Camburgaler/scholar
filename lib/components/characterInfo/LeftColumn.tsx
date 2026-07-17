@@ -11,10 +11,10 @@ import {
     VirtualStatsDispatchContext,
 } from "@/lib/reducers/virtualStats";
 import ArmorSet from "@/lib/types/armorSet";
+import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
 import Equippable from "@/lib/types/equippable";
 import PlayerLevelUpSoulsParam from "@/lib/types/playerLevelUpSoulsParam";
 import Ring from "@/lib/types/ring";
-import StatMap, { StatMapKey } from "@/lib/types/statMap";
 import VowParam from "@/lib/types/vowParam";
 import { useCallback, useContext, useEffect, useState } from "react";
 
@@ -28,13 +28,13 @@ const MAX_PLAYER_LEVEL = 838;
  *
  * @param {Equippable[]} items The array of items to calculate the total stats from.
  *
- * @returns {StatMap<number>} The total stats of all the items in the given array.
+ * @returns {AttributeMap<number>} The total stats of all the items in the given array.
  */
-function getItemStats(items: Equippable[]): StatMap<number> {
+function getItemStats(items: Equippable[]): AttributeMap<number> {
     return items.reduce(
-        (totalStats: StatMap<number>, item: Equippable) =>
-            (Object.keys(totalStats) as StatMapKey[]).reduce(
-                (acc: StatMap<number>, statId: StatMapKey) => {
+        (totalStats: AttributeMap<number>, item: Equippable) =>
+            (Object.keys(totalStats) as AttributeMapKey[]).reduce(
+                (acc: AttributeMap<number>, statId: AttributeMapKey) => {
                     acc[statId]! += item.AdditiveModifiers?.[statId]! ?? 0;
                     return acc;
                 },
@@ -68,7 +68,7 @@ export default function LeftColumn(props: {
     const setFocusedAttribute = useContext(FocusedAttributeDispatchContext);
 
     // Desired states are user input, and represent the "ideal" stats of a character
-    const [desiredStats, setDesiredStats] = useState<StatMap<number>>({
+    const [desiredStats, setDesiredStats] = useState<AttributeMap<number>>({
         Vigor: 0,
         Endurance: 0,
         Vitality: 0,
@@ -81,7 +81,7 @@ export default function LeftColumn(props: {
     });
 
     // Item stats are the stats of the currently selected equipment
-    const [itemStats, setItemStats] = useState<StatMap<number>>({
+    const [itemStats, setItemStats] = useState<AttributeMap<number>>({
         Vigor: 0,
         Endurance: 0,
         Vitality: 0,
@@ -94,7 +94,7 @@ export default function LeftColumn(props: {
     });
 
     // Final stats are the optimal class's stats after leveling up
-    const [finalStats, setFinalStats] = useState<StatMap<number>>({
+    const [finalStats, setFinalStats] = useState<AttributeMap<number>>({
         Vigor: 0,
         Endurance: 0,
         Vitality: 0,
@@ -115,9 +115,9 @@ export default function LeftColumn(props: {
 
     // Delta is the difference between the desired stats and the class' stats
     const delta = useCallback(
-        (classStats: StatMap<number>): number => {
-            return (Object.keys(classStats) as StatMapKey[])
-                .map((statId: StatMapKey) =>
+        (classStats: AttributeMap<number>): number => {
+            return (Object.keys(classStats) as AttributeMapKey[])
+                .map((statId: AttributeMapKey) =>
                     classStats[statId]! <
                     desiredStats[statId]! - itemStats[statId]!
                         ? desiredStats[statId]! -
@@ -190,7 +190,7 @@ export default function LeftColumn(props: {
      */
     useEffect(() => {
         // calculate final stats
-        let tempFinal: StatMap<number> = {
+        let tempFinal: AttributeMap<number> = {
             Vigor: 0,
             Endurance: 0,
             Vitality: 0,
@@ -201,7 +201,7 @@ export default function LeftColumn(props: {
             Faith: 0,
             Attunement: 0,
         };
-        let tempVirtual: StatMap<number> = {
+        let tempVirtual: AttributeMap<number> = {
             Vigor: 0,
             Endurance: 0,
             Vitality: 0,
@@ -212,8 +212,8 @@ export default function LeftColumn(props: {
             Faith: 0,
             Attunement: 0,
         };
-        (Object.keys(desiredStats) as StatMapKey[]).forEach(
-            (statId: StatMapKey) => {
+        (Object.keys(desiredStats) as AttributeMapKey[]).forEach(
+            (statId: AttributeMapKey) => {
                 {
                     tempFinal[statId] = Math.max(
                         desiredStats[statId]! - itemStats[statId]!,
@@ -229,7 +229,7 @@ export default function LeftColumn(props: {
         setFinalStats(tempFinal);
         // setVirtualStats(must be a Map<StatMapKey, number>);
         setVirtualStats(
-            new Map(Object.entries(tempVirtual) as [StatMapKey, number][]),
+            new Map(Object.entries(tempVirtual) as [AttributeMapKey, number][]),
         );
     }, [desiredStats, optimalClass, itemStats]);
 
@@ -328,7 +328,7 @@ export default function LeftColumn(props: {
                         <tr
                             key={statId}
                             onMouseOver={() =>
-                                setFocusedAttribute(statId as StatMapKey)
+                                setFocusedAttribute(statId as AttributeMapKey)
                             }
                             onMouseOut={() => setFocusedAttribute(null)}
                             style={{
@@ -345,7 +345,7 @@ export default function LeftColumn(props: {
                                     disabled
                                     value={
                                         optimalClass.Stats[
-                                            statId as StatMapKey
+                                            statId as AttributeMapKey
                                         ]!
                                     }
                                     className="text-right h-full max-w-15"
@@ -356,11 +356,13 @@ export default function LeftColumn(props: {
                                     type="number"
                                     min="0"
                                     max="99"
-                                    value={desiredStats[statId as StatMapKey]!}
+                                    value={
+                                        desiredStats[statId as AttributeMapKey]!
+                                    }
                                     className="text-right h-full max-w-15"
                                     onChange={(e) =>
                                         updateDesiredStats(
-                                            statId as StatMapKey,
+                                            statId as AttributeMapKey,
                                             parseInt(e.target.value),
                                         )
                                     }
@@ -370,7 +372,9 @@ export default function LeftColumn(props: {
                                 <input
                                     type="number"
                                     disabled
-                                    value={finalStats[statId as StatMapKey]!}
+                                    value={
+                                        finalStats[statId as AttributeMapKey]!
+                                    }
                                     className="text-right h-full max-w-15"
                                 />
                             </td>
@@ -378,7 +382,9 @@ export default function LeftColumn(props: {
                                 <input
                                     type="number"
                                     disabled
-                                    value={virtualStats[statId as StatMapKey]!}
+                                    value={
+                                        virtualStats[statId as AttributeMapKey]!
+                                    }
                                     className="text-right h-full max-w-15"
                                 />
                             </td>

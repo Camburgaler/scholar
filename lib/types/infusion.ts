@@ -1,5 +1,5 @@
 import AttackPowerTypeMap from "@/lib/types/attackPowerTypeMap";
-import StatMap from "@/lib/types/statMap";
+import AttributeMap from "@/lib/types/attributeMap";
 
 type SlopeIntercept = {
     slope: number;
@@ -9,7 +9,7 @@ type SlopeIntercept = {
 export type InfusionData = {
     name: string;
     damageUpgradeRate: AttackPowerTypeMap<SlopeIntercept>;
-    statScalingRate: StatMap<number[]>;
+    statScalingRate: AttributeMap<number[]>;
 };
 
 type Infusion = {

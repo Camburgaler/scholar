@@ -5,13 +5,13 @@ import {
     VirtualStatsContext,
     VirtualStatsDispatchContext,
 } from "@/lib/reducers/virtualStats";
-import StatMap, { StatMapKey } from "@/lib/types/statMap";
+import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
 import { useReducer } from "react";
 
 function virtualStatsReducer(
-    initialStats: StatMap<number>,
-    newStats: Map<StatMapKey, number>,
-): StatMap<number> {
+    initialStats: AttributeMap<number>,
+    newStats: Map<AttributeMapKey, number>,
+): AttributeMap<number> {
     return {
         ...initialStats,
         ...Object.fromEntries(newStats),

@@ -1,9 +1,10 @@
-import LevelUpStatusCalcParamContext from "@/lib/context/levelUpStatusCalcParam";
+import AttributeToStatMapContext from "@/lib/context/attributeToStatMap";
 import { FocusedAttributeContext } from "@/lib/reducers/focusedAttribute";
-import LevelUpStatusCalcParam, {
-    LevelUpStatusCalcParamKey,
-    LevelUpStatusCalcParamMap,
-} from "@/lib/types/levelUpStatusCalcParam";
+import AttributeMap from "@/lib/types/attributeMap";
+import StatMap, {
+    StatMapKey,
+    StatMapKeyToStatNameMap,
+} from "@/lib/types/statMap";
 import { useContext, useEffect, useState } from "react";
 import { JSX } from "react/jsx-runtime";
 
@@ -12,26 +13,30 @@ function getEquipLoadPercentFromRatio(ratio: string) {
     return (numerator / denominator) * 100;
 }
 
+// StatDisplay is a component that displays a stat and its value.
+//
+// @prop {string} statMapKey - The key of the stat map that contains the stat value.
+//
+// @prop {string} displayValue - The value of the stat.
+//
+// @prop {boolean} isOddRow - Whether the row is odd or not. Optional.
 export default function StatDisplay(props: {
-    levelUpStatusCalcParamKey: LevelUpStatusCalcParamKey;
+    statMapKey: StatMapKey;
     displayValue: string;
     isOddRow?: boolean;
 }): JSX.Element {
-    const { levelUpStatusCalcParamKey, displayValue, isOddRow } = props;
+    const { statMapKey, displayValue, isOddRow } = props;
     const focusedAttribute = useContext(FocusedAttributeContext);
-    const levelUpStatusCalcParams: LevelUpStatusCalcParam[] = useContext(
-        LevelUpStatusCalcParamContext,
-    );
+    const attributeToStatMapContext: AttributeMap<StatMap<boolean>> =
+        useContext(AttributeToStatMapContext);
     const [isFocused, setIsFocused] = useState(false);
 
     // determines if the focused attribute affects this stat
     useEffect(() => {
         setIsFocused(
-            levelUpStatusCalcParams.find(
-                (param) => param.Name == focusedAttribute!,
-            )?.[levelUpStatusCalcParamKey]!,
+            attributeToStatMapContext[focusedAttribute!]?.[statMapKey],
         );
-    }, [focusedAttribute, levelUpStatusCalcParams]);
+    }, [focusedAttribute, attributeToStatMapContext]);
 
     return (
         <div
@@ -43,15 +48,15 @@ export default function StatDisplay(props: {
                 color: isFocused ? "var(--accent)" : "var(--contrast)",
                 fontWeight: isFocused ? "bold" : "normal",
             }}
-            id={levelUpStatusCalcParamKey}
+            id={statMapKey}
         >
             <label
                 className="flex items-center justify-center h-full"
-                htmlFor={levelUpStatusCalcParamKey}
+                htmlFor={statMapKey}
             >
-                {LevelUpStatusCalcParamMap.get(levelUpStatusCalcParamKey)}:
+                {StatMapKeyToStatNameMap.get(statMapKey)}:
             </label>
-            {levelUpStatusCalcParamKey == "MaximumEquipLoad" ? (
+            {statMapKey == "MaximumEquipLoad" ? (
                 <div className="flex flex-col items-end justify-end">
                     <input
                         className="flex text-right max-w-15"
@@ -67,7 +72,7 @@ export default function StatDisplay(props: {
             ) : (
                 <input
                     className="flex text-right h-full max-w-15"
-                    id={levelUpStatusCalcParamKey}
+                    id={statMapKey}
                     type="text"
                     disabled
                     value={displayValue}

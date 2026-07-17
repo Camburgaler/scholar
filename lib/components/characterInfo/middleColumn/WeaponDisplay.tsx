@@ -1,9 +1,8 @@
-import LevelUpStatusCalcParamContext from "@/lib/context/levelUpStatusCalcParam";
+import AttributeToStatMapContext from "@/lib/context/attributeToStatMap";
 import WeaponContext from "@/lib/context/weapons";
 import { FocusedAttributeContext } from "@/lib/reducers/focusedAttribute";
-import LevelUpStatusCalcParam, {
-    WeaponEquipSlots,
-} from "@/lib/types/levelUpStatusCalcParam";
+import AttributeMap from "@/lib/types/attributeMap";
+import StatMap, { WeaponEquipSlots } from "@/lib/types/statMap";
 import Weapon from "@/lib/types/weapon";
 import { useContext, useEffect, useState } from "react";
 
@@ -12,19 +11,15 @@ export default function WeaponDisplay(props: { slot: WeaponEquipSlots }) {
     const weapons: Weapon[] = useContext(WeaponContext);
     const [selected, setSelected] = useState("");
     const focusedAttribute = useContext(FocusedAttributeContext);
-    const levelUpStatusCalcParams: LevelUpStatusCalcParam[] = useContext(
-        LevelUpStatusCalcParamContext,
+    const attributeToStatMap: AttributeMap<StatMap<boolean>> = useContext(
+        AttributeToStatMapContext,
     );
     const [isFocused, setIsFocused] = useState(false);
 
     // determines if the focused attribute affects this weapon slot
     useEffect(() => {
-        setIsFocused(
-            levelUpStatusCalcParams.find(
-                (param) => param.Name == focusedAttribute!,
-            )?.[slot]!,
-        );
-    }, [focusedAttribute, levelUpStatusCalcParams]);
+        setIsFocused(attributeToStatMap[focusedAttribute!]?.[slot]);
+    }, [focusedAttribute, attributeToStatMap]);
 
     return (
         <div

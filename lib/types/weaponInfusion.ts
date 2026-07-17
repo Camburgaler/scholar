@@ -1,12 +1,12 @@
 import AttackPowerTypeMap from "@/lib/types/attackPowerTypeMap";
-import StatMap from "@/lib/types/statMap";
+import AttributeMap from "@/lib/types/attributeMap";
 
 type WeaponInfusion = {
     ID: string;
     damage: AttackPowerTypeMap<number>;
-    scaling: StatMap<number>;
+    scaling: AttributeMap<number>;
     aux: { [key: string]: [number, number] };
-    masks: AttackPowerTypeMap<StatMap<boolean>>;
+    masks: AttackPowerTypeMap<AttributeMap<boolean>>;
     corrections: AttackPowerTypeMap<string>;
     buffable: boolean;
 };
