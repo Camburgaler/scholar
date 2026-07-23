@@ -162,7 +162,48 @@ function calculateFireAttackPower(intelligence: number, faith: number): number {
     return statCurve[attributeScore];
 }
 
-// TODO: calculate dark attack power
+// calculateDarkAttackPower will calculate the Dark Attack Power stat
+function calculateDarkAttackPower(intelligence: number, faith: number): number {
+    // Scales with the lowest of Intelligence and Faith according to the stat curve below
+
+    const statCurve: number[] = [
+        // Attribute score of 0 is 0
+        0,
+        // 1-2 increase by 4
+        4, 8,
+        // 3 increases by 2
+        10,
+        // 4 increases by 3
+        13,
+        // 5-7 increase by 2
+        15, 17, 19,
+        // 8 increases by 3
+        22,
+        // 9-10 increase by 2
+        24, 26,
+        // 11-30 alternate between between 4 and 5
+        30, 35, 39, 44, 48, 53, 57, 62, 66, 71, 75, 80, 84, 89, 93, 98, 102,
+        107, 111, 116,
+        // 31-40 increase in a repeating pattern of 0, 1, 1, 1, 1
+        116, 117, 118, 119, 120, 120, 121, 122, 123, 124,
+        // 41-50 increase in a repeating pattern of 0, 1, 1, 1
+        124, 125, 126, 127, 127, 128, 129, 130, 130, 131,
+        // 51-60 increase in a repeating pattern of 0, 1, 1, 1, 1
+        131, 132, 133, 134, 135, 135, 136, 137, 138, 139,
+        // 61-70 increase in a pattern of 0, 0, 1, 0, 0, 1, 0, 1, 0, 0
+        139, 139, 140, 140, 140, 141, 141, 142, 142, 142,
+        // 71-80 increase in a pattern of 0, 0, 1, 0, 1, 0, 1, 0, 1, 0
+        142, 142, 143, 143, 144, 144, 144, 145, 145, 146,
+        // 81-90 increase in a repeating pattern of 0, 0, 1, 0, 1
+        146, 146, 147, 147, 148, 148, 148, 149, 149, 150,
+        // 91-99 increase by a pattern of 0, 0, 1, 0, 1, 0, 1, 0, 1
+        150, 150, 151, 151, 152, 152, 153, 153, 154,
+    ];
+
+    const attributeScore = Math.min(intelligence, faith);
+
+    return statCurve[attributeScore];
+}
 
 // TODO: calculate poison attack power
 
@@ -218,6 +259,14 @@ export function calculateStat(
             return (
                 statValue +
                 calculateFireAttackPower(
+                    attributes.Intelligence,
+                    attributes.Faith,
+                )
+            );
+        case "AttackPowerDark":
+            return (
+                statValue +
+                calculateDarkAttackPower(
                     attributes.Intelligence,
                     attributes.Faith,
                 )
