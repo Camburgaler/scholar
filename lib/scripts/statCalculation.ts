@@ -109,7 +109,58 @@ function calculateAgility(adaptability: number, attunement: number): number {
     return Math.max(0, agility - baseValue);
 }
 
-// TODO: calculate fire attack power
+// calculateFireAttackPower will calculate the Fire Attack Power stat
+//
+// @param {number} intelligence - The Intelligence attribute value
+//
+// @param {number} faith - The Faith attribute value
+//
+// @return {number} The amount to add to the base value for Fire Attack Power
+function calculateFireAttackPower(intelligence: number, faith: number): number {
+    // Increases once (according to the stat curve below) with any 2 points in Intelligence and Faith
+
+    const statCurve: number[] = [
+        // Score of 0 is 0
+        0,
+        // 1 increases by 0
+        0,
+        // 2 increases by 4
+        4,
+        // 3 increases by 2
+        6,
+        // 4 increases by 3
+        9,
+        // 5-7 increase by 2
+        11, 13, 15,
+        // 8 increases by 3
+        18,
+        // 9-10 increase by 2
+        20, 22,
+        // 11-20 alternate between between 4 and 5
+        26, 31, 35, 40, 44, 49, 53, 58, 62, 67,
+        // 21-30 increase by 3
+        70, 73, 76, 79, 82, 85, 88, 91, 94, 97,
+        // 31-40 increase in a repeating pattern of 0, 1, 1, 1, 1
+        97, 98, 99, 100, 101, 101, 102, 103, 104, 105,
+        // 41-50 increase in a repeating pattern of 0, 1, 1, 1
+        105, 106, 107, 108, 108, 109, 110, 111, 111, 112,
+        // 51-60 increase in a repeating pattern of 0, 1, 1, 1, 1
+        112, 113, 114, 115, 116, 116, 117, 118, 119, 120,
+        // 61-70 increase in a repeating pattern of 0, 1, 1, 1
+        120, 121, 122, 123, 123, 124, 125, 126, 126, 127,
+        // 71-80 increase in a repeating pattern of 0, 1, 1, 1, 1
+        127, 128, 129, 130, 131, 131, 132, 133, 134, 135,
+        // 81-90 increase in a repeating pattern of 0, 1, 1, 1
+        135, 136, 137, 138, 138, 139, 140, 141, 141, 142,
+        // 91 increases by 0
+        142,
+        // 92-99 increase by 1
+        143, 144, 145, 146, 147, 148, 149, 150,
+    ];
+    const attributeScore = Math.floor((intelligence + faith) / 2);
+
+    return statCurve[attributeScore];
+}
 
 // TODO: calculate dark attack power
 
@@ -162,6 +213,14 @@ export function calculateStat(
             return (
                 statValue +
                 calculateAgility(attributes.Adaptability, attributes.Attunement)
+            );
+        case "AttackPowerFire":
+            return (
+                statValue +
+                calculateFireAttackPower(
+                    attributes.Intelligence,
+                    attributes.Faith,
+                )
             );
     }
 
