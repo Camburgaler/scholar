@@ -3,6 +3,7 @@
         "Name": "No Helmet",
         "AdditiveModifiers": {},
         "MultiplicativeModifiers": {},
+        "Weight": 0,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -19,7 +20,6 @@
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0,
-        "Weight": 0
+        "Poise": 0
     }
 ]

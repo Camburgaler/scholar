@@ -2,6 +2,7 @@
     {
         "Name": "No Ring",
         "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {}
+        "MultiplicativeModifiers": {},
+        "Weight": 0
     }
 ]
