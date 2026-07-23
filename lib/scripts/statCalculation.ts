@@ -6,6 +6,13 @@ import {
 import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
 import { StatMapKey } from "@/lib/types/statMap";
 
+// calculatePoise will calculate the Poise stat
+//
+// @param {number} adaptability - The Adaptability attribute value
+//
+// @param {number} endurance - The Endurance attribute value
+//
+// @return {number} The amount to add to the base value for Poise
 function calculatePoise(adaptability: number, endurance: number): number {
     let effectiveAttributeValue = adaptability;
     let poise = 0;
@@ -31,6 +38,15 @@ function calculatePoise(adaptability: number, endurance: number): number {
     return poise;
 }
 
+// calculateCastingSpeed will calculate the Spell Casting Speed stat
+//
+// @param {number} attunement - The Attunement attribute value
+//
+// @param {number} faith - The Faith attribute value
+//
+// @param {number} intelligence - The Intelligence attribute value
+//
+// @return {number} The amount to add to the base value for Spell Casting Speed
 function calculateCastingSpeed(
     attunement: number,
     faith: number,
@@ -59,6 +75,68 @@ function calculateCastingSpeed(
     return castingSpeed;
 }
 
+// calculateAgility will calculate the Agility stat
+//
+// @param {number} adaptability - The Adaptability attribute value
+//
+// @param {number} attunement - The Attunement attribute value
+//
+// @return {number} The amount to add to the base value for Agility
+function calculateAgility(adaptability: number, attunement: number): number {
+    // Agility is hard capped at 120
+
+    // Agility is calculated as follows:
+    // When Attunement plus 3 * Adaptability is less than or equal to 120, Agility is equal to 80 + ((Attunement + (3 * Adaptability)) / 4)
+    // When Attunement plus 3 * Adaptability is greater than 120, Agility is equal to 110 + ((Attunement + (3 * Adaptability) - 120) / 28)
+
+    // Final Agility values are rounded down
+    // If Agility is calculated to be less than 85, it is set to a value of 85 regardless
+    // If Attunement and Adaptability are both at 99, Agility is set to a value of 120
+
+    if (attunement === 99 && adaptability === 99) {
+        return 120 - BaseStats.Agility;
+    }
+
+    const baseValue = BaseStats.Agility;
+    let agility = 0;
+
+    if (attunement + 3 * adaptability <= 120) {
+        agility = 80 + Math.floor((attunement + 3 * adaptability) / 4);
+    } else {
+        agility = 110 + Math.floor((attunement + 3 * adaptability - 120) / 28);
+    }
+
+    return Math.max(0, agility - baseValue);
+}
+
+// TODO: calculate fire attack power
+
+// TODO: calculate dark attack power
+
+// TODO: calculate poison attack power
+
+// TODO: calculate bleed attack power
+
+// TODO: calculate physical defense
+
+// TODO: calculate strike defense
+
+// TODO: calculate slash defense
+
+// TODO: calculate thrust defense
+
+// TODO: calculate fire absorption
+
+// TODO: calculate dark absorption
+
+// TODO: calculate bleed absorption
+
+// TODO: calculate poison absorption
+
+// TODO: calculate petrify absorption
+
+// TODO: calculate curse absorption
+
 export function calculateStat(
     statId: StatMapKey,
     attributes: AttributeMap<number>,
@@ -79,6 +157,11 @@ export function calculateStat(
                     attributes.Faith,
                     attributes.Intelligence,
                 )
+            );
+        case "Agility":
+            return (
+                statValue +
+                calculateAgility(attributes.Adaptability, attributes.Attunement)
             );
     }
 
