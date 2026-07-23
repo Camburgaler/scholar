@@ -1887,7 +1887,9 @@
         "AttackPowerFire": null,
         "AttackPowerLightning": null,
         "AttackPowerDark": null,
-        "AttackPowerPoison": null,
+        "AttackPowerPoison": [
+            -1
+        ],
         "AttackPowerBleed": null,
         "Defense": null,
         "AbsorptionMagic": null,

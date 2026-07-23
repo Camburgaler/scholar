@@ -1,5 +1,7 @@
 import { AttributeToStatMap } from "@/lib/gameData";
 import { FocusedAttributeContext } from "@/lib/reducers/focusedAttribute";
+import { VirtualAttributesContext } from "@/lib/reducers/virtualAttributes";
+import { calculateStat } from "@/lib/scripts/statCalculation";
 import { StatMapKey, StatMapKeyToStatNameMap } from "@/lib/types/statMap";
 import { useContext, useEffect, useState } from "react";
 import { JSX } from "react/jsx-runtime";
@@ -26,6 +28,9 @@ export default function StatDisplay(props: {
 
     // Context
     const focusedAttribute = useContext(FocusedAttributeContext);
+    const virtualAttributes = useContext(VirtualAttributesContext);
+
+    // State
     const [isFocused, setIsFocused] = useState(false);
 
     // determines if the focused attribute affects this stat
@@ -58,7 +63,7 @@ export default function StatDisplay(props: {
                         id="equip-load"
                         type="text"
                         disabled
-                        value={displayValue}
+                        value={`0/${calculateStat(statMapKey, virtualAttributes)}`}
                     />
                     <p className=" flex items-center justify-center text-right">
                         Using {getEquipLoadPercentFromRatio(displayValue)}%
@@ -70,7 +75,7 @@ export default function StatDisplay(props: {
                     id={statMapKey}
                     type="text"
                     disabled
-                    value={displayValue}
+                    value={calculateStat(statMapKey, virtualAttributes)}
                 />
             )}
         </div>

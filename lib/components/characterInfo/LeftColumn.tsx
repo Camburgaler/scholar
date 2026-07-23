@@ -75,15 +75,15 @@ export default function LeftColumn(props: {
     const [desiredAttributes, setDesiredAttributes] = useState<
         AttributeMap<number>
     >({
-        Vigor: 1,
-        Endurance: 1,
-        Vitality: 1,
-        Adaptability: 1,
-        Strength: 1,
-        Dexterity: 1,
-        Intelligence: 1,
-        Faith: 1,
-        Attunement: 1,
+        Vigor: 0,
+        Endurance: 0,
+        Vitality: 0,
+        Adaptability: 0,
+        Strength: 0,
+        Dexterity: 0,
+        Intelligence: 0,
+        Faith: 0,
+        Attunement: 0,
     });
 
     // Item attribute additions are the total attribute additions of the currently selected equipment
@@ -105,15 +105,15 @@ export default function LeftColumn(props: {
     const [finalAttributes, setFinalAttributes] = useState<
         AttributeMap<number>
     >({
-        Vigor: 1,
-        Endurance: 1,
-        Vitality: 1,
-        Adaptability: 1,
-        Strength: 1,
-        Dexterity: 1,
-        Intelligence: 1,
-        Faith: 1,
-        Attunement: 1,
+        Vigor: 0,
+        Endurance: 0,
+        Vitality: 0,
+        Adaptability: 0,
+        Strength: 0,
+        Dexterity: 0,
+        Intelligence: 0,
+        Faith: 0,
+        Attunement: 0,
     });
 
     // Virtual attributes are the final attributes after adding equipment bonuses
