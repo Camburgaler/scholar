@@ -31,7 +31,6 @@ export type StatMapKey =
     | "AbsorptionCurse"
     | "Agility"
     | "Poise"
-    | WeaponEquipSlots
     | "DefenseStrike"
     | "DefenseSlash"
     | "DefenseThrust"
@@ -47,13 +46,6 @@ export const StatMapKeyToStatNameMap: Map<StatMapKey, string> = new Map<
     ["MaximumEquipLoad", "Equip Load"],
     ["Poise", "Poise"],
     ["SpellSlotCount", "Attunement Slots"],
-    // <hr />
-    ["LeftHandWeaponPrimary", "Left Hand Weapon (Primary)"],
-    ["LeftHandWeaponSecondary", "Left Hand Weapon (Secondary)"],
-    ["LeftHandWeaponTertiary", "Left Hand Weapon (Tertiary)"],
-    ["RightHandWeaponPrimary", "Right Hand Weapon (Primary)"],
-    ["RightHandWeaponSecondary", "Right Hand Weapon (Secondary)"],
-    ["RightHandWeaponTertiary", "Right Hand Weapon (Tertiary)"],
 
     // Right Column
     ["SpellCastingSpeed", "Cast Speed"],

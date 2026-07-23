@@ -6,7 +6,6 @@ type Armor = Equippable & {
     Defenses: DefenseMap<number>;
     Absorptions: AbsorptionMap<number>;
     Poise: number;
-    Weight: number;
     Fitness?: number;
 };
 

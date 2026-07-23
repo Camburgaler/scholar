@@ -4,7 +4,7 @@ type Equippable = {
     Name: string; //pk
     AdditiveModifiers?: ModifierMap;
     MultiplicativeModifiers?: ModifierMap;
-    Weight: string;
+    Weight: number;
 };
 
 export default Equippable;

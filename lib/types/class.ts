@@ -1,11 +1,13 @@
 import AttributeMap from "@/lib/types/attributeMap";
 
-export default interface Class {
+type Class = {
     // Fields from the JSON file
     Name: string;
     Level: number;
-    Stats: AttributeMap<number>;
+    Attributes: AttributeMap<number>;
 
     // Calculated fields
-    sortingValue: number;
-}
+    sortingValue?: number;
+};
+
+export default Class;

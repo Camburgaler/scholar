@@ -1,12 +1,12 @@
 import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
 import { ActionDispatch, createContext } from "react";
 
-export interface VirtualStatsAction {
+export interface VirtualAttributesAction {
     key: string;
     value: number;
 }
 
-export const VirtualStatsContext = createContext<AttributeMap<number>>({
+export const VirtualAttributesContext = createContext<AttributeMap<number>>({
     Vigor: 0,
     Endurance: 0,
     Vitality: 0,
@@ -17,6 +17,6 @@ export const VirtualStatsContext = createContext<AttributeMap<number>>({
     Faith: 0,
     Attunement: 0,
 });
-export const VirtualStatsDispatchContext = createContext<
-    ActionDispatch<[newStats: Map<AttributeMapKey, number>]>
+export const VirtualAttributesDispatchContext = createContext<
+    ActionDispatch<[newAttributes: Map<AttributeMapKey, number>]>
 >(() => {});

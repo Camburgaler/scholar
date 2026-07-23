@@ -2,9 +2,9 @@
 
 import CharacterInfo from "@/lib/components/CharacterInfo";
 import {
-    VirtualStatsContext,
-    VirtualStatsDispatchContext,
-} from "@/lib/reducers/virtualStats";
+    VirtualAttributesContext,
+    VirtualAttributesDispatchContext,
+} from "@/lib/reducers/virtualAttributes";
 import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
 import { useReducer } from "react";
 
@@ -38,8 +38,8 @@ export default function Home() {
         // page container
         <div className="flex flex-col flex-1 items-center justify-center font-sans">
             {/* Reducers */}
-            <VirtualStatsContext value={virtualStats}>
-                <VirtualStatsDispatchContext value={virtualStatsDispatch}>
+            <VirtualAttributesContext value={virtualStats}>
+                <VirtualAttributesDispatchContext value={virtualStatsDispatch}>
                     {/* content container */}
                     <main className="flex flex-1 w-full h-full flex-col items-center justify-baseline p-4 sm:items-start">
                         {/* Header */}
@@ -76,8 +76,8 @@ export default function Home() {
                             </article>
                         </div>
                     </main>
-                </VirtualStatsDispatchContext>
-            </VirtualStatsContext>
+                </VirtualAttributesDispatchContext>
+            </VirtualAttributesContext>
         </div>
     );
 }

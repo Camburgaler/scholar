@@ -1,14 +1,8 @@
 import LeftColumn from "@/lib/components/characterInfo/LeftColumn";
 import MiddleColumn from "@/lib/components/characterInfo/MiddleColumn";
 import RightColumn from "@/lib/components/characterInfo/RightColumn";
-import ChestpieceContext from "@/lib/context/chestpieces";
-import GauntletsContext from "@/lib/context/gauntlets";
-import HelmetContext from "@/lib/context/helmets";
-import LeggingsContext from "@/lib/context/leggings";
-import RingContext from "@/lib/context/rings";
-import Armor from "@/lib/types/armor";
-import Ring from "@/lib/types/ring";
-import { useContext, useReducer } from "react";
+import { useReducer } from "react";
+import { Chestpieces, Gauntlets, Helmets, Leggings, Rings } from "../gameData";
 import {
     FocusedAttributeContext,
     FocusedAttributeDispatchContext,
@@ -25,11 +19,7 @@ function focusedAttributeReducer(
 }
 
 export default function CharacterInfo() {
-    const rings: Ring[] = useContext(RingContext);
-    const helmets: Armor[] = useContext(HelmetContext);
-    const chestpieces: Armor[] = useContext(ChestpieceContext);
-    const gauntlets: Armor[] = useContext(GauntletsContext);
-    const leggings: Armor[] = useContext(LeggingsContext);
+    // Reducers
     const [focusedAttribute, focusedAttributeDispatch] = useReducer(
         focusedAttributeReducer,
         null,
@@ -50,16 +40,16 @@ export default function CharacterInfo() {
                     <div className="flex w-full h-full items-center justify-center align-center gap-4">
                         <LeftColumn
                             equippedRings={[
-                                rings[0],
-                                rings[0],
-                                rings[0],
-                                rings[0],
+                                Rings[0],
+                                Rings[0],
+                                Rings[0],
+                                Rings[0],
                             ]}
                             equippedArmor={{
-                                helmet: helmets[0],
-                                chestpiece: chestpieces[0],
-                                gauntlets: gauntlets[0],
-                                leggings: leggings[0],
+                                helmet: Helmets[0],
+                                chestpiece: Chestpieces[0],
+                                gauntlets: Gauntlets[0],
+                                leggings: Leggings[0],
                                 weight: 0,
                             }}
                         />

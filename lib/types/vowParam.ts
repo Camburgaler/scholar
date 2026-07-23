@@ -1,6 +1,6 @@
 type VowParam = {
     ID: number;
-    Name: number;
+    Name: string;
 };
 
 export default VowParam;

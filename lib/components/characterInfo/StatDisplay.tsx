@@ -1,10 +1,6 @@
-import AttributeToStatMapContext from "@/lib/context/attributeToStatMap";
+import { AttributeToStatMap } from "@/lib/gameData";
 import { FocusedAttributeContext } from "@/lib/reducers/focusedAttribute";
-import AttributeMap from "@/lib/types/attributeMap";
-import StatMap, {
-    StatMapKey,
-    StatMapKeyToStatNameMap,
-} from "@/lib/types/statMap";
+import { StatMapKey, StatMapKeyToStatNameMap } from "@/lib/types/statMap";
 import { useContext, useEffect, useState } from "react";
 import { JSX } from "react/jsx-runtime";
 
@@ -25,18 +21,17 @@ export default function StatDisplay(props: {
     displayValue: string;
     isOddRow?: boolean;
 }): JSX.Element {
+    // Props
     const { statMapKey, displayValue, isOddRow } = props;
+
+    // Context
     const focusedAttribute = useContext(FocusedAttributeContext);
-    const attributeToStatMapContext: AttributeMap<StatMap<boolean>> =
-        useContext(AttributeToStatMapContext);
     const [isFocused, setIsFocused] = useState(false);
 
     // determines if the focused attribute affects this stat
     useEffect(() => {
-        setIsFocused(
-            attributeToStatMapContext[focusedAttribute!]?.[statMapKey],
-        );
-    }, [focusedAttribute, attributeToStatMapContext]);
+        setIsFocused(AttributeToStatMap[focusedAttribute!]?.[statMapKey]);
+    }, [focusedAttribute]);
 
     return (
         <div
