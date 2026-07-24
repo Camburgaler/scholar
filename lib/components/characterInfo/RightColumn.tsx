@@ -6,7 +6,6 @@ export default function RightColumn() {
             {/* Casting Speed / Agility */}
             <div className="flex flex-col w-full">
                 {/* Cast Speed */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
                     statMapKey="SpellCastingSpeed"
                     displayValue="45"
@@ -14,7 +13,6 @@ export default function RightColumn() {
                 />
 
                 {/* Agility */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay statMapKey="Agility" displayValue="85" />
             </div>
 
@@ -23,7 +21,6 @@ export default function RightColumn() {
             {/* Attack */}
             <div className="flex flex-col w-full">
                 {/* Attack: Strength */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
                     statMapKey="PhysicalAttackPowerByStrength"
                     displayValue="68"
@@ -31,14 +28,12 @@ export default function RightColumn() {
                 />
 
                 {/* Attack: Dexterity */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
                     statMapKey="PhysicalAttackPowerByDexterity"
                     displayValue="59"
                 />
 
                 {/* Magic Bonus */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
                     statMapKey="AttackPowerMagic"
                     displayValue="51"
@@ -46,11 +41,9 @@ export default function RightColumn() {
                 />
 
                 {/* Fire Bonus */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay statMapKey="AttackPowerFire" displayValue="61" />
 
                 {/* Lightning Bonus */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
                     statMapKey="AttackPowerLightning"
                     displayValue="53"
@@ -58,11 +51,9 @@ export default function RightColumn() {
                 />
 
                 {/* Dark Bonus */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay statMapKey="AttackPowerDark" displayValue="61" />
 
                 {/* Poison Bonus */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
                     statMapKey="AttackPowerPoison"
                     displayValue="56"
@@ -70,7 +61,6 @@ export default function RightColumn() {
                 />
 
                 {/* Bleed Bonus */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay statMapKey="AttackPowerBleed" displayValue="56" />
             </div>
 
@@ -79,15 +69,12 @@ export default function RightColumn() {
             {/* Defense */}
             <div className="flex flex-col w-full">
                 {/* Physical Defense */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay statMapKey="Defense" displayValue="77" isOddRow />
 
                 {/* Magic Defense */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay statMapKey="AbsorptionMagic" displayValue="30" />
 
                 {/* Fire Defense */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
                     statMapKey="AbsorptionFire"
                     displayValue="68"
@@ -95,14 +82,12 @@ export default function RightColumn() {
                 />
 
                 {/* Lightning Defense */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
                     statMapKey="AbsorptionLightning"
                     displayValue="30"
                 />
 
                 {/* Dark Defense */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
                     statMapKey="AbsorptionDark"
                     displayValue="36"
@@ -115,11 +100,9 @@ export default function RightColumn() {
             {/* Resistances */}
             <div className="flex flex-col w-full">
                 {/* Bleed Resistance */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay statMapKey="ResistanceBleed" displayValue="30" />
 
                 {/* Poison Resistance */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
                     statMapKey="ResistancePoison"
                     displayValue="30"
@@ -127,11 +110,9 @@ export default function RightColumn() {
                 />
 
                 {/* Petrify Resistance */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay statMapKey="ResistancePetrify" displayValue="30" />
 
                 {/* Curse Resistance */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
                     statMapKey="ResistanceCurse"
                     displayValue="30"
@@ -143,7 +124,7 @@ export default function RightColumn() {
 
             {/* Active Effects */}
             <div className="flex flex-col w-full">
-                {/* TODO: update with calculations based on level/attributes */}
+                {/* TODO: update with status effects based on equipment */}
                 <label htmlFor="active-effects" className="w-full text-left">
                     Active Effects:
                 </label>

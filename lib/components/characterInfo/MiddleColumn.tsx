@@ -7,7 +7,6 @@ export default function MiddleColumn() {
             {/* Stats */}
             <div className="flex flex-col w-full items-left justify-baseline align-center">
                 {/* HP */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
                     statMapKey="MaximumHP"
                     displayValue="826"
@@ -15,11 +14,9 @@ export default function MiddleColumn() {
                 />
 
                 {/* Stamina */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay statMapKey="MaximumStamina" displayValue="92" />
 
                 {/* Equip load */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
                     statMapKey="MaximumEquipLoad"
                     displayValue="0/47.5"
@@ -27,11 +24,9 @@ export default function MiddleColumn() {
                 />
 
                 {/* Poise */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay statMapKey="Poise" displayValue="1.5" />
 
                 {/* Attunement slots */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
                     statMapKey="SpellSlotCount"
                     displayValue="0"

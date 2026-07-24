@@ -286,6 +286,10 @@ export default function LeftColumn(props: {
             {/* Starting class */}
             <div className="flex w-full items-left justify-between align-center">
                 {/* TODO: set a toggle to switch between finding an optimal starting class and building around a selected starting class */}
+                {/* I'm thinking a simple button next to the optimal class <input> that displays an unlocked padlock with a bright background on load, then switches to a locked padlock with a dark background when clicked, and switches back when clicked again */}
+                {/* When "unlocked", the <input> will always freely switch between classes, always showing the optimal selection */}
+                {/* When the user "locks" the class, the <input> will switch to a <select> with the currently displayed class pre-selected */}
+                {/* While the class is "locked", the user can manually switch between starting classes using the <select> dropdown */}
                 <label
                     className="flex items-center justify-center"
                     htmlFor="starting-class"
@@ -493,7 +497,7 @@ export default function LeftColumn(props: {
                     }).map((_, index) => (
                         <select
                             className="flex h-full col-span-1"
-                            id={`${index}`}
+                            key={`${index}`}
                             defaultValue="0"
                         >
                             <option value="0">None</option>

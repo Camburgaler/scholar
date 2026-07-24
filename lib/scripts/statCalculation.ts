@@ -792,8 +792,6 @@ function calculateCommonResistance(primary: number, secondary: number): number {
     return resistance;
 }
 
-// TODO: calculate curse resistance
-
 export function calculateStat(
     statId: StatMapKey,
     attributes: AttributeMap<number>,
