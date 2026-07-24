@@ -6,6 +6,62 @@ import {
 import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
 import { StatMapKey } from "@/lib/types/statMap";
 
+// Score curve defines the way that the breakpoints change
+const SCORE_CURVE: number[] = [
+    // Attribute score of 0 is 0
+    0,
+    // 1-9 increase in a repeating pattern of 8, 4, 4
+    8, 12, 16, 24, 28, 32, 40, 44, 48,
+    // 10-29 increase by 4
+    52, 56, 60, 64, 68, 72, 76, 80, 84, 88, 92, 96, 100, 104, 108, 112, 116,
+    120, 124, 128,
+    // 30 increases by 8
+    136,
+    // 31-36 increase by 4
+    140, 144, 148, 152, 156, 160,
+    // 37-43 increase by 8, 4, 4, 4, 8, 8, 4
+    168, 172, 176, 180, 188, 196, 200,
+    // 44-50 increase in a repeating pattern of 8, 4, 4
+    208, 212, 216, 224, 228, 232, 240,
+    // 51-58 increase in a repeating pattern of 8, 4, 4, 4
+    248, 252, 256, 260, 268, 272, 276, 280,
+    // 59-68 increase by 4
+    284, 288, 292, 296, 300, 304, 308, 312, 316, 320,
+    // 69-75 increase in a repeating pattern of 8, 4, 4
+    328, 332, 336, 344, 348, 352, 360,
+    // 76 increases by 8
+    368,
+    // 77-83 increase by 4
+    372, 376, 380, 384, 388, 392, 396,
+];
+
+// Stat curve defines the way that the stat changes
+const STAT_CURVE: number[] = [
+    // Score of 0 is 0
+    0,
+    // 1-7 increase by 1
+    1, 2, 3, 4, 5, 6, 7,
+    // 8-17 alternate between 4 and 5
+    11, 16, 20, 25, 29, 34, 38, 43, 47, 52,
+    // 18-27 increase by 3
+    55, 58, 61, 64, 67, 70, 73, 76, 79, 82,
+    // 28-32 increase by 1, 2, 1, 3, 2
+    83, 85, 86, 89, 91,
+    // 33-37 alternate between 1 and 2
+    92, 94, 95, 97, 98,
+    // 38-41 increase by 1
+    99, 100, 101, 102,
+    // 42 increases by 2
+    104,
+    // 43-59 increase by 1
+    105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119,
+    120, 121,
+    // 60-69 alternate between 2 and 1
+    123, 124, 126, 127, 129, 130, 132, 133, 135, 136,
+    // 70-83 increase by 1
+    137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150,
+];
+
 // calculatePoise will calculate the Poise stat
 //
 // @param {number} adaptability - The Adaptability attribute value
@@ -212,76 +268,41 @@ function calculateDarkAttackPower(intelligence: number, faith: number): number {
 }
 
 // calculatePoisonAttackPower will calculate the Poison Attack Power stat
+//
+// @param {number} dexterity - The Dexterity attribute value
+//
+// @param {number} adaptability - The Adaptability attribute value
+//
+// @return {number} The amount to add to the base value for Poison Attack Power
 function calculatePoisonAttackPower(
     dexterity: number,
     adaptability: number,
 ): number {
-    // Every point of Dexterity gives 3 points, every point of Adaptability gives 1 point, the points are summed and checked against the stat curve below
-
-    // Score curve defines the way that the breakpoints change
-    const scoreCurve: number[] = [
-        // Attribute score of 0 is 0
-        0,
-        // 1-9 increase in a repeating pattern of 8, 4, 4
-        8, 12, 16, 24, 28, 32, 40, 44, 48,
-        // 10-29 increase by 4
-        52, 56, 60, 64, 68, 72, 76, 80, 84, 88, 92, 96, 100, 104, 108, 112, 116,
-        120, 124, 128,
-        // 30 increases by 8
-        136,
-        // 31-36 increase by 4
-        140, 144, 148, 152, 156, 160,
-        // 37-43 increase by 8, 4, 4, 4, 8, 8, 4
-        168, 172, 176, 180, 188, 196, 200,
-        // 44-50 increase in a repeating pattern of 8, 4, 4
-        208, 212, 216, 224, 228, 232, 240,
-        // 51-58 increase in a repeating pattern of 8, 4, 4, 4
-        248, 252, 256, 260, 268, 272, 276, 280,
-        // 59-68 increase by 4
-        284, 288, 292, 296, 300, 304, 308, 312, 316, 320,
-        // 69-75 increase in a repeating pattern of 8, 4, 4
-        328, 332, 336, 344, 348, 352, 360,
-        // 76 increases by 8
-        368,
-        // 77-83 increase by 4
-        372, 376, 380, 384, 388, 392, 396,
-    ];
-
-    // Stat curve defines the way that the stat changes
-    const statCurve: number[] = [
-        // Score of 0 is 0
-        0,
-        // 1-7 increase by 1
-        1, 2, 3, 4, 5, 6, 7,
-        // 8-17 alternate between 4 and 5
-        11, 16, 20, 25, 29, 34, 38, 43, 47, 52,
-        // 18-27 increase by 3
-        55, 58, 61, 64, 67, 70, 73, 76, 79, 82,
-        // 28-32 increase by 1, 2, 1, 3, 2
-        83, 85, 86, 89, 91,
-        // 33-37 alternate between 1 and 2
-        92, 94, 95, 97, 98,
-        // 38-41 increase by 1
-        99, 100, 101, 102,
-        // 42 increases by 2
-        104,
-        // 43-59 increase by 1
-        105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118,
-        119, 120, 121,
-        // 60-69 alternate between 2 and 1
-        123, 124, 126, 127, 129, 130, 132, 133, 135, 136,
-        // 70-83 increase by 1
-        137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150,
-    ];
+    // Every point of Dexterity gives 3 points, every point of Adaptability gives 1 point, the points are summed and checked against the common stat curve
 
     const attributeScore = dexterity * 3 + adaptability;
     const curveIndex =
-        scoreCurve.findIndex((index) => index >= attributeScore) ?? 0;
+        SCORE_CURVE.findIndex((index) => index >= attributeScore) ?? 0;
 
-    return statCurve[curveIndex];
+    return STAT_CURVE[curveIndex];
 }
 
-// TODO: calculate bleed attack power
+// calculateBleedAttackPower will calculate the Bleed Attack Power stat
+//
+// @param {number} dexterity - The Dexterity attribute value
+//
+// @param {number} faith - The Faith attribute value
+//
+// @return {number} The amount to add to the base value for Bleed Attack Power
+function calculateBleedAttackPower(dexterity: number, faith: number): number {
+    // Every point of Dexterity gives 3 points, every point of Faith gives 1 point, the points are summed and checked against the common stat curve
+
+    const attributeScore = dexterity * 3 + faith;
+    const curveIndex =
+        SCORE_CURVE.findIndex((index) => index >= attributeScore) ?? 0;
+
+    return STAT_CURVE[curveIndex];
+}
 
 // TODO: calculate physical defense
 
@@ -351,6 +372,14 @@ export function calculateStat(
                 calculatePoisonAttackPower(
                     attributes.Dexterity,
                     attributes.Adaptability,
+                )
+            );
+        case "AttackPowerBleed":
+            return (
+                statValue +
+                calculateBleedAttackPower(
+                    attributes.Dexterity,
+                    attributes.Faith,
                 )
             );
     }
