@@ -7,6 +7,7 @@ import {
     VirtualAttributesContext,
     VirtualAttributesDispatchContext,
 } from "@/lib/reducers/virtualAttributes";
+import { calculateStat } from "@/lib/scripts/statCalculation";
 import ArmorSet from "@/lib/types/armorSet";
 import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
 import Class from "@/lib/types/class";
@@ -470,11 +471,34 @@ export default function LeftColumn(props: {
             <hr />
 
             {/* Spells */}
-            <div className="flex flex-col min-h-20">
-                <p>Spells, Miracles, and Pyromancies</p>
+            <div className="flex flex-col min-h-20 text-center">
+                <p
+                    style={{
+                        fontWeight:
+                            focusedAttribute == "Attunement"
+                                ? "bold"
+                                : "normal",
+                    }}
+                >
+                    Spells, Miracles, and Pyromancies
+                </p>
                 <div className="grid grid-cols-2 gap-1">
-                    {/* TODO: for each X points in ATT, add another <select> */}
-                    {/* each <select> should take 1 column of the grid */}
+                    {/* TODO: add spells */}
+                    {/* TODO: pull this out into its own component */}
+                    {Array.from({
+                        length: calculateStat(
+                            "SpellSlotCount",
+                            virtualAttributes,
+                        ),
+                    }).map((_, index) => (
+                        <select
+                            className="flex h-full col-span-1"
+                            id={`${index}`}
+                            defaultValue="0"
+                        >
+                            <option value="0">None</option>
+                        </select>
+                    ))}
                 </div>
             </div>
         </div>
