@@ -6,8 +6,8 @@ import {
 import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
 import { StatMapKey } from "@/lib/types/statMap";
 
-// Score curve defines the way that the breakpoints change
-const SCORE_CURVE: number[] = [
+// This defines the way that the attack stat attribute score breakpoints change
+const ATTACK_STAT_ATTRIBUTE_SCORE_CURVE: number[] = [
     // Attribute score of 0 is 0
     0,
     // 1-9 increase in a repeating pattern of 8, 4, 4
@@ -35,8 +35,8 @@ const SCORE_CURVE: number[] = [
     372, 376, 380, 384, 388, 392, 396,
 ];
 
-// Stat curve defines the way that the stat changes
-const STAT_CURVE: number[] = [
+// This defines the way that the attack stat value changes at each breakpoint
+const ATTACK_STAT_VALUE_CURVE: number[] = [
     // Score of 0 is 0
     0,
     // 1-7 increase by 1
@@ -60,6 +60,142 @@ const STAT_CURVE: number[] = [
     123, 124, 126, 127, 129, 130, 132, 133, 135, 136,
     // 70-83 increase by 1
     137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150,
+];
+
+const PHYSICAL_DEFENSE_CURVE: { breakpoint: number; value: number }[] = [
+    { breakpoint: 0, value: 0 },
+    // 20	67
+    { breakpoint: 20, value: 17 },
+    // 24	70
+    { breakpoint: 24, value: 20 },
+    // 28	72
+    { breakpoint: 28, value: 22 },
+    // 32	75
+    { breakpoint: 32, value: 25 },
+    // 36	77
+    { breakpoint: 36, value: 27 },
+    // 40	80
+    { breakpoint: 40, value: 30 },
+    // 44	81
+    { breakpoint: 44, value: 31 },
+    // 48	82
+    { breakpoint: 48, value: 32 },
+    // 52	83
+    { breakpoint: 52, value: 33 },
+    // 56	84
+    { breakpoint: 56, value: 34 },
+    // 60	85
+    { breakpoint: 60, value: 35 },
+    // 64	86
+    { breakpoint: 64, value: 36 },
+    // 68	87
+    { breakpoint: 68, value: 37 },
+    // 72	89
+    { breakpoint: 72, value: 39 },
+    // 76	90
+    { breakpoint: 76, value: 40 },
+    // 80	91
+    { breakpoint: 80, value: 41 },
+    // 84	93
+    { breakpoint: 84, value: 43 },
+    // 88	95
+    { breakpoint: 88, value: 45 },
+    // 92	97
+    { breakpoint: 92, value: 47 },
+    // 96	99
+    { breakpoint: 96, value: 49 },
+    // 100	102
+    { breakpoint: 100, value: 52 },
+    // 104	104
+    { breakpoint: 104, value: 54 },
+    // 108	106
+    { breakpoint: 108, value: 56 },
+    // 112	108
+    { breakpoint: 112, value: 58 },
+    // 116	110
+    { breakpoint: 116, value: 60 },
+    // 120	113
+    { breakpoint: 120, value: 63 },
+    // 124	115
+    { breakpoint: 124, value: 65 },
+    // 128	118
+    { breakpoint: 128, value: 68 },
+    // 132	121
+    { breakpoint: 132, value: 71 },
+    // 136	124
+    { breakpoint: 136, value: 74 },
+    // 140	127
+    { breakpoint: 140, value: 77 },
+    // 144	130
+    { breakpoint: 144, value: 80 },
+    // 148	133
+    { breakpoint: 148, value: 83 },
+    // 152	136
+    { breakpoint: 152, value: 86 },
+    // 156	139
+    { breakpoint: 156, value: 89 },
+    // 160	142
+    { breakpoint: 160, value: 92 },
+    // 164	143
+    { breakpoint: 164, value: 93 },
+    // 168	145
+    { breakpoint: 168, value: 95 },
+    // 172	147
+    { breakpoint: 172, value: 97 },
+    // 176	149
+    { breakpoint: 176, value: 99 },
+    // 180	151
+    { breakpoint: 180, value: 101 },
+    // 184	152
+    { breakpoint: 184, value: 102 },
+    // 188	154
+    { breakpoint: 188, value: 104 },
+    // 192	156
+    { breakpoint: 192, value: 106 },
+    // 196	158
+    { breakpoint: 196, value: 108 },
+    // 200	160
+    { breakpoint: 200, value: 110 },
+    // 212	161
+    { breakpoint: 212, value: 111 },
+    // 224	162
+    { breakpoint: 224, value: 112 },
+    // 232	163
+    { breakpoint: 232, value: 113 },
+    // 244	164
+    { breakpoint: 244, value: 114 },
+    // 248	165
+    { breakpoint: 248, value: 115 },
+    // 256	166
+    { breakpoint: 256, value: 116 },
+    // 260	167
+    { breakpoint: 260, value: 117 },
+    // 264	168
+    { breakpoint: 264, value: 118 },
+    // 268	169
+    { breakpoint: 268, value: 119 },
+    // 272	170
+    { breakpoint: 272, value: 120 },
+    // 276	171
+    { breakpoint: 276, value: 121 },
+    // 280	172
+    { breakpoint: 280, value: 122 },
+    // 284	173
+    { breakpoint: 284, value: 123 },
+    // 292	175
+    { breakpoint: 292, value: 125 },
+    // 296	176
+    { breakpoint: 296, value: 126 },
+    // 300	178
+    { breakpoint: 300, value: 128 },
+    // 304	179
+    { breakpoint: 304, value: 129 },
+    // 308	181
+    { breakpoint: 308, value: 131 },
+    // 312	182
+    { breakpoint: 312, value: 132 },
+    // 316	184
+    { breakpoint: 316, value: 134 },
 ];
 
 // calculatePoise will calculate the Poise stat
@@ -282,9 +418,11 @@ function calculatePoisonAttackPower(
 
     const attributeScore = dexterity * 3 + adaptability;
     const curveIndex =
-        SCORE_CURVE.findIndex((index) => index >= attributeScore) ?? 0;
+        ATTACK_STAT_ATTRIBUTE_SCORE_CURVE.findLastIndex(
+            (index) => index <= attributeScore,
+        ) ?? 0;
 
-    return STAT_CURVE[curveIndex];
+    return ATTACK_STAT_VALUE_CURVE[curveIndex];
 }
 
 // calculateBleedAttackPower will calculate the Bleed Attack Power stat
@@ -299,12 +437,32 @@ function calculateBleedAttackPower(dexterity: number, faith: number): number {
 
     const attributeScore = dexterity * 3 + faith;
     const curveIndex =
-        SCORE_CURVE.findIndex((index) => index >= attributeScore) ?? 0;
+        ATTACK_STAT_ATTRIBUTE_SCORE_CURVE.findLastIndex(
+            (index) => index <= attributeScore,
+        ) ?? 0;
 
-    return STAT_CURVE[curveIndex];
+    return ATTACK_STAT_VALUE_CURVE[curveIndex];
 }
 
 // TODO: calculate physical defense
+function calculatePhysicalDefense(
+    endurance: number,
+    vitality: number,
+    strength: number,
+    dexterity: number,
+): number {
+    // Endurance, Vitality, Strength and Dexterity equally influence Physical DEF.
+
+    const attributeScore: number = endurance + vitality + strength + dexterity;
+
+    console.log(`attributeScore: ${attributeScore}`);
+
+    return (
+        PHYSICAL_DEFENSE_CURVE.findLast(
+            (mapping) => mapping.breakpoint <= attributeScore,
+        )?.value ?? 0
+    );
+}
 
 // TODO: calculate strike defense
 
@@ -380,6 +538,16 @@ export function calculateStat(
                 calculateBleedAttackPower(
                     attributes.Dexterity,
                     attributes.Faith,
+                )
+            );
+        case "Defense":
+            return (
+                statValue +
+                calculatePhysicalDefense(
+                    attributes.Endurance,
+                    attributes.Vitality,
+                    attributes.Strength,
+                    attributes.Dexterity,
                 )
             );
     }
