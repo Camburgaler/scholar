@@ -82,57 +82,32 @@ export default function RightColumn() {
                 {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay statMapKey="Defense" displayValue="77" isOddRow />
 
-                <ul className="flex flex-col w-full indent-4">
-                    <li className="flex">
-                        {/* Strike Defense */}
-                        {/* TODO: update with calculations based on level/attributes */}
-                        <StatDisplay
-                            statMapKey="DefenseStrike"
-                            displayValue="77"
-                        />
-                    </li>
-                    <li>
-                        {/* Slash Defense */}
-                        {/* TODO: update with calculations based on level/attributes */}
-                        <StatDisplay
-                            statMapKey="DefenseSlash"
-                            displayValue="77"
-                            isOddRow
-                        />
-                    </li>
-                    <li>
-                        {/* Thrust Defense */}
-                        {/* TODO: update with calculations based on level/attributes */}
-                        <StatDisplay
-                            statMapKey="DefenseThrust"
-                            displayValue="77"
-                        />
-                    </li>
-                </ul>
-
                 {/* Magic Defense */}
                 {/* TODO: update with calculations based on level/attributes */}
-                <StatDisplay
-                    statMapKey="AbsorptionMagic"
-                    displayValue="30"
-                    isOddRow
-                />
+                <StatDisplay statMapKey="AbsorptionMagic" displayValue="30" />
 
                 {/* Fire Defense */}
                 {/* TODO: update with calculations based on level/attributes */}
-                <StatDisplay statMapKey="AbsorptionFire" displayValue="68" />
+                <StatDisplay
+                    statMapKey="AbsorptionFire"
+                    displayValue="68"
+                    isOddRow
+                />
 
                 {/* Lightning Defense */}
                 {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
                     statMapKey="AbsorptionLightning"
                     displayValue="30"
-                    isOddRow
                 />
 
                 {/* Dark Defense */}
                 {/* TODO: update with calculations based on level/attributes */}
-                <StatDisplay statMapKey="AbsorptionDark" displayValue="36" />
+                <StatDisplay
+                    statMapKey="AbsorptionDark"
+                    displayValue="36"
+                    isOddRow
+                />
             </div>
 
             <hr />
@@ -141,27 +116,27 @@ export default function RightColumn() {
             <div className="flex flex-col w-full">
                 {/* Bleed Resistance */}
                 {/* TODO: update with calculations based on level/attributes */}
-                <StatDisplay
-                    statMapKey="AbsorptionBleed"
-                    displayValue="30"
-                    isOddRow
-                />
+                <StatDisplay statMapKey="ResistanceBleed" displayValue="30" />
 
                 {/* Poison Resistance */}
                 {/* TODO: update with calculations based on level/attributes */}
-                <StatDisplay statMapKey="AbsorptionPoison" displayValue="30" />
-
-                {/* Petrify Resistance */}
-                {/* TODO: update with calculations based on level/attributes */}
                 <StatDisplay
-                    statMapKey="AbsorptionPetrify"
+                    statMapKey="ResistancePoison"
                     displayValue="30"
                     isOddRow
                 />
 
+                {/* Petrify Resistance */}
+                {/* TODO: update with calculations based on level/attributes */}
+                <StatDisplay statMapKey="ResistancePetrify" displayValue="30" />
+
                 {/* Curse Resistance */}
                 {/* TODO: update with calculations based on level/attributes */}
-                <StatDisplay statMapKey="AbsorptionCurse" displayValue="30" />
+                <StatDisplay
+                    statMapKey="ResistanceCurse"
+                    displayValue="30"
+                    isOddRow
+                />
             </div>
 
             <hr />

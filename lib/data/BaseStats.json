@@ -17,14 +17,10 @@
     "AbsorptionFire": 0,
     "AbsorptionLightning": 0,
     "AbsorptionDark": 0,
-    "AbsorptionPoison": 0,
-    "AbsorptionBleed": 0,
-    "AbsorptionPetrify": 0,
-    "AbsorptionCurse": 0,
+    "ResistancePoison": 0,
+    "ResistanceBleed": 0,
+    "ResistancePetrify": 0,
+    "ResistanceCurse": 0,
     "Agility": 85,
-    "Poise": 0,
-    "DefenseStrike": -1,
-    "DefenseSlash": -1,
-    "DefenseThrust": -1,
-    "DefensePoise": -1
+    "Poise": 0
 }

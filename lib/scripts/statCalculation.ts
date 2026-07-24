@@ -6,6 +6,8 @@ import {
 import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
 import { StatMapKey } from "@/lib/types/statMap";
 
+type CurveMap = { breakpoint: number; value: number };
+
 // This defines the way that the attack stat attribute score breakpoints change
 const ATTACK_STAT_ATTRIBUTE_SCORE_CURVE: number[] = [
     // Attribute score of 0 is 0
@@ -62,7 +64,7 @@ const ATTACK_STAT_VALUE_CURVE: number[] = [
     137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150,
 ];
 
-const PHYSICAL_DEFENSE_CURVE: { breakpoint: number; value: number }[] = [
+const PHYSICAL_DEFENSE_CURVE: CurveMap[] = [
     { breakpoint: 0, value: 0 },
     // 20	67
     { breakpoint: 20, value: 17 },
@@ -444,7 +446,17 @@ function calculateBleedAttackPower(dexterity: number, faith: number): number {
     return ATTACK_STAT_VALUE_CURVE[curveIndex];
 }
 
-// TODO: calculate physical defense
+// calculatePhysicalDefense will calculate the Physical Defense stat
+//
+// @param {number} endurance - The Endurance attribute value
+//
+// @param {number} vitality - The Vitality attribute value
+//
+// @param {number} strength - The Strength attribute value
+//
+// @param {number} dexterity - The Dexterity attribute value
+//
+// @return {number} The amount to add to the base value for Physical Defense
 function calculatePhysicalDefense(
     endurance: number,
     vitality: number,
@@ -464,23 +476,197 @@ function calculatePhysicalDefense(
     );
 }
 
-// TODO: calculate strike defense
+// calculateFireAbsorption will calculate the Fire Absorption stat
+//
+// @param {number} intelligence - The Intelligence attribute value
+//
+// @param {number} faith - The Faith attribute value
+//
+// @return {number} The amount to add to the base value for Fire Absorption
+function calculateFireAbsorption(intelligence: number, faith: number): number {
+    // Intelligence and Faith equally influence Fire Absorption
 
-// TODO: calculate slash defense
+    const statCurve: CurveMap[] = [
+        { breakpoint: 0, value: 0 },
+        // 2	6
+        { breakpoint: 2, value: 6 },
+        // 4	12
+        { breakpoint: 4, value: 12 },
+        // 6	18
+        { breakpoint: 6, value: 18 },
+        // 8	24
+        { breakpoint: 8, value: 24 },
+        // 10	30
+        { breakpoint: 10, value: 30 },
+        // 12	36
+        { breakpoint: 12, value: 36 },
+        // 14	42
+        { breakpoint: 14, value: 42 },
+        // 16	48
+        { breakpoint: 16, value: 48 },
+        // 18	54
+        { breakpoint: 18, value: 54 },
+        // 20	60
+        { breakpoint: 20, value: 60 },
+        // 22	68
+        { breakpoint: 22, value: 68 },
+        // 24	76
+        { breakpoint: 24, value: 76 },
+        // 26	84
+        { breakpoint: 26, value: 84 },
+        // 28	92
+        { breakpoint: 28, value: 92 },
+        // 30	100
+        { breakpoint: 30, value: 100 },
+        // 32	108
+        { breakpoint: 32, value: 108 },
+        // 34	116
+        { breakpoint: 34, value: 116 },
+        // 36	124
+        { breakpoint: 36, value: 124 },
+        // 38	132
+        { breakpoint: 38, value: 132 },
+        // 40	140
+        { breakpoint: 40, value: 140 },
+        // 42	141
+        { breakpoint: 42, value: 141 },
+        // 44	142
+        { breakpoint: 44, value: 142 },
+        // 46	143
+        { breakpoint: 46, value: 143 },
+        // 48	144
+        { breakpoint: 48, value: 144 },
+        // 50	145
+        { breakpoint: 50, value: 145 },
+        // 52	146
+        { breakpoint: 52, value: 146 },
+        // 54	147
+        { breakpoint: 54, value: 147 },
+        // 56	148
+        { breakpoint: 56, value: 148 },
+        // 58	149
+        { breakpoint: 58, value: 149 },
+        // 60	150
+        { breakpoint: 60, value: 150 },
+        // 62	151
+        { breakpoint: 62, value: 151 },
+        // 64	152
+        { breakpoint: 64, value: 152 },
+        // 66	153
+        { breakpoint: 66, value: 153 },
+        // 68	154
+        { breakpoint: 68, value: 154 },
+        // 70	155
+        { breakpoint: 70, value: 155 },
+        // 72	156
+        { breakpoint: 72, value: 156 },
+        // 74	157
+        { breakpoint: 74, value: 157 },
+        // 76	158
+        { breakpoint: 76, value: 158 },
+        // 78	159
+        { breakpoint: 78, value: 159 },
+        // 80	160
+        { breakpoint: 80, value: 160 },
+        // 82	161
+        { breakpoint: 82, value: 161 },
+        // 84	162
+        { breakpoint: 84, value: 162 },
+        // 86	163
+        { breakpoint: 86, value: 163 },
+        // 88	164
+        { breakpoint: 88, value: 164 },
+        // 90	165
+        { breakpoint: 90, value: 165 },
+        // 92	166
+        { breakpoint: 92, value: 166 },
+        // 94	167
+        { breakpoint: 94, value: 167 },
+        // 96	168
+        { breakpoint: 96, value: 168 },
+        // 98	169
+        { breakpoint: 98, value: 169 },
+        // 100	170
+        { breakpoint: 100, value: 170 },
+        // 102	171
+        { breakpoint: 102, value: 171 },
+        // 104	172
+        { breakpoint: 104, value: 172 },
+        // 106	173
+        { breakpoint: 106, value: 173 },
+        // 108	174
+        { breakpoint: 108, value: 174 },
+        // 110	175
+        { breakpoint: 110, value: 175 },
+        // 112	176
+        { breakpoint: 112, value: 176 },
+        // 114	177
+        { breakpoint: 114, value: 177 },
+        // 116	178
+        { breakpoint: 116, value: 178 },
+        // 118	179
+        { breakpoint: 118, value: 179 },
+        // 120	180
+        { breakpoint: 120, value: 180 },
+        // 124	181
+        { breakpoint: 124, value: 181 },
+        // 128	182
+        { breakpoint: 128, value: 182 },
+        // 132	183
+        { breakpoint: 132, value: 183 },
+        // 136	184
+        { breakpoint: 136, value: 184 },
+        // 140	185
+        { breakpoint: 140, value: 185 },
+        // 144	186
+        { breakpoint: 144, value: 186 },
+        // 148	187
+        { breakpoint: 148, value: 187 },
+        // 152	188
+        { breakpoint: 152, value: 188 },
+        // 156	189
+        { breakpoint: 156, value: 189 },
+        // 160	190
+        { breakpoint: 160, value: 190 },
+        // 164	191
+        { breakpoint: 164, value: 191 },
+        // 168	192
+        { breakpoint: 168, value: 192 },
+        // 172	193
+        { breakpoint: 172, value: 193 },
+        // 176	194
+        { breakpoint: 176, value: 194 },
+        // 180	195
+        { breakpoint: 180, value: 195 },
+        // 184	196
+        { breakpoint: 184, value: 196 },
+        // 188	197
+        { breakpoint: 188, value: 197 },
+        // 192	198
+        { breakpoint: 192, value: 198 },
+        // 196	199
+        { breakpoint: 196, value: 199 },
+        // 198	200
+        { breakpoint: 198, value: 200 },
+    ];
 
-// TODO: calculate thrust defense
+    const attributeScore: number = intelligence + faith;
 
-// TODO: calculate fire absorption
+    return (
+        statCurve.findLast((mapping) => mapping.breakpoint <= attributeScore)
+            ?.value ?? 0
+    );
+}
 
 // TODO: calculate dark absorption
 
-// TODO: calculate bleed absorption
+// TODO: calculate bleed resistance
 
-// TODO: calculate poison absorption
+// TODO: calculate poison resistance
 
-// TODO: calculate petrify absorption
+// TODO: calculate petrify resistance
 
-// TODO: calculate curse absorption
+// TODO: calculate curse resistance
 
 export function calculateStat(
     statId: StatMapKey,
@@ -548,6 +734,14 @@ export function calculateStat(
                     attributes.Vitality,
                     attributes.Strength,
                     attributes.Dexterity,
+                )
+            );
+        case "AbsorptionFire":
+            return (
+                statValue +
+                calculateFireAbsorption(
+                    attributes.Intelligence,
+                    attributes.Faith,
                 )
             );
     }

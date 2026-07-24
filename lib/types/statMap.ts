@@ -25,16 +25,12 @@ export type StatMapKey =
     | "AbsorptionFire"
     | "AbsorptionLightning"
     | "AbsorptionDark"
-    | "AbsorptionPoison"
-    | "AbsorptionBleed"
-    | "AbsorptionPetrify"
-    | "AbsorptionCurse"
+    | "ResistancePoison"
+    | "ResistanceBleed"
+    | "ResistancePetrify"
+    | "ResistanceCurse"
     | "Agility"
-    | "Poise"
-    | "DefenseStrike"
-    | "DefenseSlash"
-    | "DefenseThrust"
-    | "DefensePoise";
+    | "Poise";
 
 export const StatMapKeyToStatNameMap: Map<StatMapKey, string> = new Map<
     StatMapKey,
@@ -61,19 +57,15 @@ export const StatMapKeyToStatNameMap: Map<StatMapKey, string> = new Map<
     ["AttackPowerBleed", "Bleed Bonus"],
     // <hr />
     ["Defense", "Defense (Physical)"],
-    ["DefenseStrike", "VS Strike"],
-    ["DefenseSlash", "VS Slash"],
-    ["DefenseThrust", "VS Thrust"],
-    ["DefensePoise", "Defense (Poise)"],
     ["AbsorptionMagic", "Absorption (Magic)"],
     ["AbsorptionFire", "Absorption (Fire)"],
     ["AbsorptionLightning", "Absorption (Lightning)"],
     ["AbsorptionDark", "Absorption (Dark)"],
     // <hr />
-    ["AbsorptionPoison", "Absorption (Poison)"],
-    ["AbsorptionBleed", "Absorption (Bleed)"],
-    ["AbsorptionPetrify", "Absorption (Petrify)"],
-    ["AbsorptionCurse", "Absorption (Curse)"],
+    ["ResistancePoison", "Resistance (Poison)"],
+    ["ResistanceBleed", "Resistance (Bleed)"],
+    ["ResistancePetrify", "Resistance (Petrify)"],
+    ["ResistanceCurse", "Resistance (Curse)"],
 ]);
 
 type StatMap<T> = {

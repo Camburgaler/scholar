@@ -222,16 +222,12 @@
         "AbsorptionFire": null,
         "AbsorptionLightning": null,
         "AbsorptionDark": null,
-        "AbsorptionPoison": null,
-        "AbsorptionBleed": null,
-        "AbsorptionPetrify": null,
-        "AbsorptionCurse": null,
+        "ResistancePoison": null,
+        "ResistanceBleed": null,
+        "ResistancePetrify": null,
+        "ResistanceCurse": null,
         "Agility": null,
-        "Poise": null,
-        "DefenseStrike": null,
-        "DefenseSlash": null,
-        "DefenseThrust": null,
-        "DefensePoise": null
+        "Poise": null
     },
     "Dexterity": {
         "MaximumHP": [
@@ -460,16 +456,12 @@
         "AbsorptionFire": null,
         "AbsorptionLightning": null,
         "AbsorptionDark": null,
-        "AbsorptionPoison": null,
-        "AbsorptionBleed": null,
-        "AbsorptionPetrify": null,
-        "AbsorptionCurse": null,
+        "ResistancePoison": null,
+        "ResistanceBleed": null,
+        "ResistancePetrify": null,
+        "ResistanceCurse": null,
         "Agility": null,
-        "Poise": null,
-        "DefenseStrike": null,
-        "DefenseSlash": null,
-        "DefenseThrust": null,
-        "DefensePoise": null
+        "Poise": null
     },
     "Intelligence": {
         "MaximumHP": [
@@ -805,16 +797,12 @@
         "AbsorptionDark": [
             -1
         ],
-        "AbsorptionPoison": null,
-        "AbsorptionBleed": null,
-        "AbsorptionPetrify": null,
-        "AbsorptionCurse": null,
+        "ResistancePoison": null,
+        "ResistanceBleed": null,
+        "ResistancePetrify": null,
+        "ResistanceCurse": null,
         "Agility": null,
-        "Poise": null,
-        "DefenseStrike": null,
-        "DefenseSlash": null,
-        "DefenseThrust": null,
-        "DefensePoise": null
+        "Poise": null
     },
     "Faith": {
         "MaximumHP": [
@@ -1150,18 +1138,14 @@
         "AbsorptionDark": [
             -1
         ],
-        "AbsorptionPoison": null,
-        "AbsorptionBleed": [
+        "ResistancePoison": null,
+        "ResistanceBleed": [
             -1
         ],
-        "AbsorptionPetrify": null,
-        "AbsorptionCurse": null,
+        "ResistancePetrify": null,
+        "ResistanceCurse": null,
         "Agility": null,
-        "Poise": null,
-        "DefenseStrike": null,
-        "DefenseSlash": null,
-        "DefenseThrust": null,
-        "DefensePoise": null
+        "Poise": null
     },
     "Vigor": {
         "MaximumHP": [
@@ -1283,18 +1267,14 @@
         "AbsorptionFire": null,
         "AbsorptionLightning": null,
         "AbsorptionDark": null,
-        "AbsorptionPoison": null,
-        "AbsorptionBleed": null,
-        "AbsorptionPetrify": [
+        "ResistancePoison": null,
+        "ResistanceBleed": null,
+        "ResistancePetrify": [
             -1
         ],
-        "AbsorptionCurse": null,
+        "ResistanceCurse": null,
         "Agility": null,
-        "Poise": null,
-        "DefenseStrike": null,
-        "DefenseSlash": null,
-        "DefenseThrust": null,
-        "DefensePoise": null
+        "Poise": null
     },
     "Endurance": {
         "MaximumHP": [
@@ -1519,24 +1499,14 @@
         "AbsorptionFire": null,
         "AbsorptionLightning": null,
         "AbsorptionDark": null,
-        "AbsorptionPoison": null,
-        "AbsorptionBleed": null,
-        "AbsorptionPetrify": null,
-        "AbsorptionCurse": null,
+        "ResistancePoison": null,
+        "ResistanceBleed": null,
+        "ResistancePetrify": null,
+        "ResistanceCurse": null,
         "Agility": null,
         "Poise": [
             -1
-        ],
-        "DefenseStrike": [
-            -1
-        ],
-        "DefenseSlash": [
-            -1
-        ],
-        "DefenseThrust": [
-            -1
-        ],
-        "DefensePoise": null
+        ]
     },
     "Vitality": {
         "MaximumHP": [
@@ -1761,18 +1731,14 @@
         "AbsorptionFire": null,
         "AbsorptionLightning": null,
         "AbsorptionDark": null,
-        "AbsorptionPoison": [
+        "ResistancePoison": [
             -1
         ],
-        "AbsorptionBleed": null,
-        "AbsorptionPetrify": null,
-        "AbsorptionCurse": null,
+        "ResistanceBleed": null,
+        "ResistancePetrify": null,
+        "ResistanceCurse": null,
         "Agility": null,
-        "Poise": null,
-        "DefenseStrike": null,
-        "DefenseSlash": null,
-        "DefenseThrust": null,
-        "DefensePoise": null
+        "Poise": null
     },
     "Adaptability": {
         "MaximumHP": [
@@ -1896,16 +1862,16 @@
         "AbsorptionFire": null,
         "AbsorptionLightning": null,
         "AbsorptionDark": null,
-        "AbsorptionPoison": [
+        "ResistancePoison": [
             -1
         ],
-        "AbsorptionBleed": [
+        "ResistanceBleed": [
             -1
         ],
-        "AbsorptionPetrify": [
+        "ResistancePetrify": [
             -1
         ],
-        "AbsorptionCurse": [
+        "ResistanceCurse": [
             -1
         ],
         "Agility": [
@@ -1913,11 +1879,7 @@
         ],
         "Poise": [
             -1
-        ],
-        "DefenseStrike": null,
-        "DefenseSlash": null,
-        "DefenseThrust": null,
-        "DefensePoise": null
+        ]
     },
     "Attunement": {
         "MaximumHP": [
@@ -2142,19 +2104,15 @@
         "AbsorptionFire": null,
         "AbsorptionLightning": null,
         "AbsorptionDark": null,
-        "AbsorptionPoison": null,
-        "AbsorptionBleed": null,
-        "AbsorptionPetrify": null,
-        "AbsorptionCurse": [
+        "ResistancePoison": null,
+        "ResistanceBleed": null,
+        "ResistancePetrify": null,
+        "ResistanceCurse": [
             -1
         ],
         "Agility": [
             -1
         ],
-        "Poise": null,
-        "DefenseStrike": null,
-        "DefenseSlash": null,
-        "DefenseThrust": null,
-        "DefensePoise": null
+        "Poise": null
     }
 }
