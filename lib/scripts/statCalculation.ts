@@ -758,46 +758,39 @@ function calculateCommonAbsorption(...attributes: number[]): number {
     );
 }
 
-// calculateBleedResistance will calculate the Bleed Resistance stat
+// calculateCommonResistance will calculate the Resistance stats
 //
-// @param {number} faith - The Faith attribute value
+// @param {number} primary - The primary scaling attribute's value
 //
-// @param {number} adaptability - The Adaptability attribute value
+// @param {number} secondary - The secondary scaling attribute's value
 //
-// @return {number} The amount to add to the base value for Bleed Resistance
-function calculateBleedResistance(faith: number, adaptability: number): number {
-    // Scales with Faith and Adaptability.
-    // Every fourth Faith will increase Bleed Reistance one tick, three out of four Adaptability will increase Bleed Resistance one tick
-    // Start with 0 Bleed Resistance and gain 6 Bleed Resistance per tick between 1 and 10 ticks, total 60 Bleed Resistance at 10 tricks
-    // Between 11 and 20 ticks you gain 8 Bleed Resistance per tick, total 140 Bleed Resistance at 20 ticks
-    // Between 21 and 60 ticks you gain one Bleed Resistance per tick, total 180 Bleed Resistance at 60 ticks
-    // Between 61 and 99 ticks you gain one Bleed Resistance every other tick for a total of of 200 Bleed Resistance at 99 Faith and 99 Adaptability
+// @return {number} The amount to add to the base value for Resistance
+function calculateCommonResistance(primary: number, secondary: number): number {
+    // Scales with two attributes
+    // Every fourth secondary attribute value will increase Reistance one tick, three out of four primary attribute values will increase Resistance one tick
+    // Start with 0 Resistance and gain 6 Resistance per tick between 1 and 10 ticks, total 60 Resistance at 10 tricks
+    // Between 11 and 20 ticks you gain 8 Resistance per tick, total 140 Resistance at 20 ticks
+    // Between 21 and 60 ticks you gain one Resistance per tick, total 180 Resistance at 60 ticks
+    // Between 61 and 99 ticks you gain one Resistance every other tick for a total of of 200 Resistance at 99 primary and 99 secondary
 
-    const ticks =
-        Math.floor(faith / 4) + Math.ceil(adaptability - adaptability / 4);
-    let bleedResistance = 0;
-
-    console.log(`ticks: ${ticks}`);
+    const ticks = Math.floor(secondary / 4) + Math.ceil(primary - primary / 4);
+    let resistance = 0;
 
     if (ticks >= 0) {
-        bleedResistance += Math.min(ticks, 10) * 6;
+        resistance += Math.min(ticks, 10) * 6;
     }
     if (ticks > 10) {
-        bleedResistance += (Math.min(ticks, 20) - 10) * 8;
+        resistance += (Math.min(ticks, 20) - 10) * 8;
     }
     if (ticks > 20) {
-        bleedResistance += Math.min(ticks, 60) - 20;
+        resistance += Math.min(ticks, 60) - 20;
     }
     if (ticks > 60) {
-        bleedResistance += (ticks - 60) / 2;
+        resistance += (ticks - 60) / 2;
     }
 
-    return bleedResistance;
+    return resistance;
 }
-
-// TODO: calculate poison resistance
-
-// TODO: calculate petrify resistance
 
 // TODO: calculate curse resistance
 
@@ -887,9 +880,33 @@ export function calculateStat(
         case "ResistanceBleed":
             return (
                 statValue +
-                calculateBleedResistance(
-                    attributes.Faith,
+                calculateCommonResistance(
                     attributes.Adaptability,
+                    attributes.Faith,
+                )
+            );
+        case "ResistancePoison":
+            return (
+                statValue +
+                calculateCommonResistance(
+                    attributes.Adaptability,
+                    attributes.Vitality,
+                )
+            );
+        case "ResistancePetrify":
+            return (
+                statValue +
+                calculateCommonResistance(
+                    attributes.Adaptability,
+                    attributes.Vigor,
+                )
+            );
+        case "ResistanceCurse":
+            return (
+                statValue +
+                calculateCommonResistance(
+                    attributes.Adaptability,
+                    attributes.Attunement,
                 )
             );
         default:
