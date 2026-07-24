@@ -774,9 +774,7 @@ function calculateBleedResistance(faith: number, adaptability: number): number {
     // Between 61 and 99 ticks you gain one Bleed Resistance every other tick for a total of of 200 Bleed Resistance at 99 Faith and 99 Adaptability
 
     const ticks =
-        Math.floor(faith / 4) +
-        Math.floor((adaptability * 3) / 4) +
-        (adaptability % 4);
+        Math.floor(faith / 4) + Math.ceil(adaptability - adaptability / 4);
     let bleedResistance = 0;
 
     console.log(`ticks: ${ticks}`);
