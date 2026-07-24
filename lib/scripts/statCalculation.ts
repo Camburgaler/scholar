@@ -8,196 +8,175 @@ import { StatMapKey } from "@/lib/types/statMap";
 
 type CurveMap = { breakpoint: number; value: number };
 
-// This defines the way that the attack stat attribute score breakpoints change
-const ATTACK_STAT_ATTRIBUTE_SCORE_CURVE: number[] = [
-    // Attribute score of 0 is 0
-    0,
-    // 1-9 increase in a repeating pattern of 8, 4, 4
-    8, 12, 16, 24, 28, 32, 40, 44, 48,
-    // 10-29 increase by 4
-    52, 56, 60, 64, 68, 72, 76, 80, 84, 88, 92, 96, 100, 104, 108, 112, 116,
-    120, 124, 128,
-    // 30 increases by 8
-    136,
-    // 31-36 increase by 4
-    140, 144, 148, 152, 156, 160,
-    // 37-43 increase by 8, 4, 4, 4, 8, 8, 4
-    168, 172, 176, 180, 188, 196, 200,
-    // 44-50 increase in a repeating pattern of 8, 4, 4
-    208, 212, 216, 224, 228, 232, 240,
-    // 51-58 increase in a repeating pattern of 8, 4, 4, 4
-    248, 252, 256, 260, 268, 272, 276, 280,
-    // 59-68 increase by 4
-    284, 288, 292, 296, 300, 304, 308, 312, 316, 320,
-    // 69-75 increase in a repeating pattern of 8, 4, 4
-    328, 332, 336, 344, 348, 352, 360,
-    // 76 increases by 8
-    368,
-    // 77-83 increase by 4
-    372, 376, 380, 384, 388, 392, 396,
-];
-
-// This defines the way that the attack stat value changes at each breakpoint
-const ATTACK_STAT_VALUE_CURVE: number[] = [
-    // Score of 0 is 0
-    0,
-    // 1-7 increase by 1
-    1, 2, 3, 4, 5, 6, 7,
-    // 8-17 alternate between 4 and 5
-    11, 16, 20, 25, 29, 34, 38, 43, 47, 52,
-    // 18-27 increase by 3
-    55, 58, 61, 64, 67, 70, 73, 76, 79, 82,
-    // 28-32 increase by 1, 2, 1, 3, 2
-    83, 85, 86, 89, 91,
-    // 33-37 alternate between 1 and 2
-    92, 94, 95, 97, 98,
-    // 38-41 increase by 1
-    99, 100, 101, 102,
-    // 42 increases by 2
-    104,
-    // 43-59 increase by 1
-    105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119,
-    120, 121,
-    // 60-69 alternate between 2 and 1
-    123, 124, 126, 127, 129, 130, 132, 133, 135, 136,
-    // 70-83 increase by 1
-    137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150,
-];
-
-const PHYSICAL_DEFENSE_CURVE: CurveMap[] = [
+const ATTACK_STAT_CURVE: CurveMap[] = [
+    // 0	50
     { breakpoint: 0, value: 0 },
-    // 20	67
-    { breakpoint: 20, value: 17 },
-    // 24	70
-    { breakpoint: 24, value: 20 },
-    // 28	72
-    { breakpoint: 28, value: 22 },
-    // 32	75
-    { breakpoint: 32, value: 25 },
-    // 36	77
-    { breakpoint: 36, value: 27 },
-    // 40	80
-    { breakpoint: 40, value: 30 },
-    // 44	81
-    { breakpoint: 44, value: 31 },
-    // 48	82
-    { breakpoint: 48, value: 32 },
-    // 52	83
-    { breakpoint: 52, value: 33 },
-    // 56	84
-    { breakpoint: 56, value: 34 },
-    // 60	85
-    { breakpoint: 60, value: 35 },
-    // 64	86
-    { breakpoint: 64, value: 36 },
-    // 68	87
-    { breakpoint: 68, value: 37 },
-    // 72	89
-    { breakpoint: 72, value: 39 },
-    // 76	90
-    { breakpoint: 76, value: 40 },
-    // 80	91
-    { breakpoint: 80, value: 41 },
-    // 84	93
-    { breakpoint: 84, value: 43 },
-    // 88	95
-    { breakpoint: 88, value: 45 },
-    // 92	97
-    { breakpoint: 92, value: 47 },
-    // 96	99
-    { breakpoint: 96, value: 49 },
-    // 100	102
-    { breakpoint: 100, value: 52 },
-    // 104	104
-    { breakpoint: 104, value: 54 },
-    // 108	106
-    { breakpoint: 108, value: 56 },
-    // 112	108
-    { breakpoint: 112, value: 58 },
-    // 116	110
-    { breakpoint: 116, value: 60 },
-    // 120	113
-    { breakpoint: 120, value: 63 },
-    // 124	115
-    { breakpoint: 124, value: 65 },
-    // 128	118
-    { breakpoint: 128, value: 68 },
-    // 132	121
-    { breakpoint: 132, value: 71 },
-    // 136	124
-    { breakpoint: 136, value: 74 },
-    // 140	127
-    { breakpoint: 140, value: 77 },
-    // 144	130
-    { breakpoint: 144, value: 80 },
-    // 148	133
-    { breakpoint: 148, value: 83 },
-    // 152	136
-    { breakpoint: 152, value: 86 },
-    // 156	139
-    { breakpoint: 156, value: 89 },
-    // 160	142
-    { breakpoint: 160, value: 92 },
-    // 164	143
-    { breakpoint: 164, value: 93 },
-    // 168	145
-    { breakpoint: 168, value: 95 },
-    // 172	147
-    { breakpoint: 172, value: 97 },
-    // 176	149
-    { breakpoint: 176, value: 99 },
+    // 8	51
+    { breakpoint: 8, value: 1 },
+    // 12	52
+    { breakpoint: 12, value: 2 },
+    // 16	53
+    { breakpoint: 16, value: 3 },
+    // 24	54
+    { breakpoint: 24, value: 4 },
+    // 28	55
+    { breakpoint: 28, value: 5 },
+    // 32	56
+    { breakpoint: 32, value: 6 },
+    // 40	57
+    { breakpoint: 40, value: 7 },
+    // 44	61
+    { breakpoint: 44, value: 11 },
+    // 48	66
+    { breakpoint: 48, value: 16 },
+    // 52	70
+    { breakpoint: 52, value: 20 },
+    // 56	75
+    { breakpoint: 56, value: 25 },
+    // 60	79
+    { breakpoint: 60, value: 29 },
+    // 64	84
+    { breakpoint: 64, value: 34 },
+    // 68	88
+    { breakpoint: 68, value: 38 },
+    // 72	93
+    { breakpoint: 72, value: 43 },
+    // 76	97
+    { breakpoint: 76, value: 47 },
+    // 80	102
+    { breakpoint: 80, value: 52 },
+    // 84	105
+    { breakpoint: 84, value: 55 },
+    // 88	108
+    { breakpoint: 88, value: 58 },
+    // 92	111
+    { breakpoint: 92, value: 61 },
+    // 96	114
+    { breakpoint: 96, value: 64 },
+    // 100	117
+    { breakpoint: 100, value: 67 },
+    // 104	120
+    { breakpoint: 104, value: 70 },
+    // 108	123
+    { breakpoint: 108, value: 73 },
+    // 112	126
+    { breakpoint: 112, value: 76 },
+    // 116	129
+    { breakpoint: 116, value: 79 },
+    // 120	132
+    { breakpoint: 120, value: 82 },
+    // 124	133
+    { breakpoint: 124, value: 83 },
+    // 128	135
+    { breakpoint: 128, value: 85 },
+    // 136	136
+    { breakpoint: 136, value: 86 },
+    // 140	139
+    { breakpoint: 140, value: 89 },
+    // 144	141
+    { breakpoint: 144, value: 91 },
+    // 148	142
+    { breakpoint: 148, value: 92 },
+    // 152	144
+    { breakpoint: 152, value: 94 },
+    // 156	145
+    { breakpoint: 156, value: 95 },
+    // 160	147
+    { breakpoint: 160, value: 97 },
+    // 168	148
+    { breakpoint: 168, value: 98 },
+    // 172	149
+    { breakpoint: 172, value: 99 },
+    // 176	150
+    { breakpoint: 176, value: 100 },
     // 180	151
     { breakpoint: 180, value: 101 },
-    // 184	152
-    { breakpoint: 184, value: 102 },
-    // 188	154
-    { breakpoint: 188, value: 104 },
-    // 192	156
-    { breakpoint: 192, value: 106 },
-    // 196	158
-    { breakpoint: 196, value: 108 },
-    // 200	160
-    { breakpoint: 200, value: 110 },
-    // 212	161
-    { breakpoint: 212, value: 111 },
-    // 224	162
-    { breakpoint: 224, value: 112 },
-    // 232	163
-    { breakpoint: 232, value: 113 },
-    // 244	164
-    { breakpoint: 244, value: 114 },
-    // 248	165
-    { breakpoint: 248, value: 115 },
-    // 256	166
-    { breakpoint: 256, value: 116 },
-    // 260	167
-    { breakpoint: 260, value: 117 },
-    // 264	168
-    { breakpoint: 264, value: 118 },
-    // 268	169
-    { breakpoint: 268, value: 119 },
-    // 272	170
-    { breakpoint: 272, value: 120 },
-    // 276	171
-    { breakpoint: 276, value: 121 },
-    // 280	172
-    { breakpoint: 280, value: 122 },
-    // 284	173
-    { breakpoint: 284, value: 123 },
-    // 292	175
-    { breakpoint: 292, value: 125 },
+    // 188	152
+    { breakpoint: 188, value: 102 },
+    // 196	154
+    { breakpoint: 196, value: 104 },
+    // 200	155
+    { breakpoint: 200, value: 105 },
+    // 208	156
+    { breakpoint: 208, value: 106 },
+    // 212	157
+    { breakpoint: 212, value: 107 },
+    // 216	158
+    { breakpoint: 216, value: 108 },
+    // 224	159
+    { breakpoint: 224, value: 109 },
+    // 228	160
+    { breakpoint: 228, value: 110 },
+    // 232	161
+    { breakpoint: 232, value: 111 },
+    // 240	162
+    { breakpoint: 240, value: 112 },
+    // 248	163
+    { breakpoint: 248, value: 113 },
+    // 252	164
+    { breakpoint: 252, value: 114 },
+    // 256	165
+    { breakpoint: 256, value: 115 },
+    // 260	166
+    { breakpoint: 260, value: 116 },
+    // 268	167
+    { breakpoint: 268, value: 117 },
+    // 272	168
+    { breakpoint: 272, value: 118 },
+    // 276	169
+    { breakpoint: 276, value: 119 },
+    // 280	170
+    { breakpoint: 280, value: 120 },
+    // 284	171
+    { breakpoint: 284, value: 121 },
+    // 288	173
+    { breakpoint: 288, value: 123 },
+    // 292	174
+    { breakpoint: 292, value: 124 },
     // 296	176
     { breakpoint: 296, value: 126 },
-    // 300	178
-    { breakpoint: 300, value: 128 },
+    // 300	177
+    { breakpoint: 300, value: 127 },
     // 304	179
     { breakpoint: 304, value: 129 },
-    // 308	181
-    { breakpoint: 308, value: 131 },
+    // 308	180
+    { breakpoint: 308, value: 130 },
     // 312	182
     { breakpoint: 312, value: 132 },
-    // 316	184
-    { breakpoint: 316, value: 134 },
+    // 316	183
+    { breakpoint: 316, value: 133 },
+    // 320	185
+    { breakpoint: 320, value: 135 },
+    // 328	186
+    { breakpoint: 328, value: 136 },
+    // 332	187
+    { breakpoint: 332, value: 137 },
+    // 336	188
+    { breakpoint: 336, value: 138 },
+    // 344	189
+    { breakpoint: 344, value: 139 },
+    // 348	190
+    { breakpoint: 348, value: 140 },
+    // 352	191
+    { breakpoint: 352, value: 141 },
+    // 360	192
+    { breakpoint: 360, value: 142 },
+    // 368	193
+    { breakpoint: 368, value: 143 },
+    // 372	194
+    { breakpoint: 372, value: 144 },
+    // 376	195
+    { breakpoint: 376, value: 145 },
+    // 380	196
+    { breakpoint: 380, value: 146 },
+    // 384	197
+    { breakpoint: 384, value: 147 },
+    // 388	198
+    { breakpoint: 388, value: 148 },
+    // 392	199
+    { breakpoint: 392, value: 149 },
+    // 396	200
+    { breakpoint: 396, value: 150 },
 ];
 
 // calculatePoise will calculate the Poise stat
@@ -405,45 +384,28 @@ function calculateDarkAttackPower(intelligence: number, faith: number): number {
     return statCurve[attributeScore];
 }
 
-// calculatePoisonAttackPower will calculate the Poison Attack Power stat
+// calculateCommonAttackPower will calculate certain Attack Power stats
 //
-// @param {number} dexterity - The Dexterity attribute value
+// @param {number} primary - The primary scaling attribute's value
 //
-// @param {number} adaptability - The Adaptability attribute value
+// @param {number} secondary - The secondary scaling attribute's value
 //
-// @return {number} The amount to add to the base value for Poison Attack Power
-function calculatePoisonAttackPower(
-    dexterity: number,
-    adaptability: number,
+// @return {number} The amount to add to the base value for Attack Power
+function calculateCommonAttackPower(
+    primary: number,
+    secondary: number,
 ): number {
-    // Every point of Dexterity gives 3 points, every point of Adaptability gives 1 point, the points are summed and checked against the common stat curve
+    // For Poison, every point of Dexterity gives 3 points, every point of Adaptability gives 1 point
+    // For Bleed, every point of Dexterity gives 3 points, every point of Faith gives 1 point
+    // The points are summed and checked against the common stat curve
 
-    const attributeScore = dexterity * 3 + adaptability;
-    const curveIndex =
-        ATTACK_STAT_ATTRIBUTE_SCORE_CURVE.findLastIndex(
-            (index) => index <= attributeScore,
-        ) ?? 0;
+    const attributeScore = primary * 3 + secondary;
 
-    return ATTACK_STAT_VALUE_CURVE[curveIndex];
-}
-
-// calculateBleedAttackPower will calculate the Bleed Attack Power stat
-//
-// @param {number} dexterity - The Dexterity attribute value
-//
-// @param {number} faith - The Faith attribute value
-//
-// @return {number} The amount to add to the base value for Bleed Attack Power
-function calculateBleedAttackPower(dexterity: number, faith: number): number {
-    // Every point of Dexterity gives 3 points, every point of Faith gives 1 point, the points are summed and checked against the common stat curve
-
-    const attributeScore = dexterity * 3 + faith;
-    const curveIndex =
-        ATTACK_STAT_ATTRIBUTE_SCORE_CURVE.findLastIndex(
-            (index) => index <= attributeScore,
-        ) ?? 0;
-
-    return ATTACK_STAT_VALUE_CURVE[curveIndex];
+    return (
+        ATTACK_STAT_CURVE.findLast(
+            (mapping) => mapping.breakpoint <= attributeScore,
+        )?.value ?? 0
+    );
 }
 
 // calculatePhysicalDefense will calculate the Physical Defense stat
@@ -463,7 +425,143 @@ function calculatePhysicalDefense(
     strength: number,
     dexterity: number,
 ): number {
-    // Endurance, Vitality, Strength and Dexterity equally influence Physical DEF.
+    // Endurance, Vitality, Strength and Dexterity equally influence Physical DEF
+
+    const PHYSICAL_DEFENSE_CURVE: CurveMap[] = [
+        { breakpoint: 0, value: 0 },
+        // 20	67
+        { breakpoint: 20, value: 17 },
+        // 24	70
+        { breakpoint: 24, value: 20 },
+        // 28	72
+        { breakpoint: 28, value: 22 },
+        // 32	75
+        { breakpoint: 32, value: 25 },
+        // 36	77
+        { breakpoint: 36, value: 27 },
+        // 40	80
+        { breakpoint: 40, value: 30 },
+        // 44	81
+        { breakpoint: 44, value: 31 },
+        // 48	82
+        { breakpoint: 48, value: 32 },
+        // 52	83
+        { breakpoint: 52, value: 33 },
+        // 56	84
+        { breakpoint: 56, value: 34 },
+        // 60	85
+        { breakpoint: 60, value: 35 },
+        // 64	86
+        { breakpoint: 64, value: 36 },
+        // 68	87
+        { breakpoint: 68, value: 37 },
+        // 72	89
+        { breakpoint: 72, value: 39 },
+        // 76	90
+        { breakpoint: 76, value: 40 },
+        // 80	91
+        { breakpoint: 80, value: 41 },
+        // 84	93
+        { breakpoint: 84, value: 43 },
+        // 88	95
+        { breakpoint: 88, value: 45 },
+        // 92	97
+        { breakpoint: 92, value: 47 },
+        // 96	99
+        { breakpoint: 96, value: 49 },
+        // 100	102
+        { breakpoint: 100, value: 52 },
+        // 104	104
+        { breakpoint: 104, value: 54 },
+        // 108	106
+        { breakpoint: 108, value: 56 },
+        // 112	108
+        { breakpoint: 112, value: 58 },
+        // 116	110
+        { breakpoint: 116, value: 60 },
+        // 120	113
+        { breakpoint: 120, value: 63 },
+        // 124	115
+        { breakpoint: 124, value: 65 },
+        // 128	118
+        { breakpoint: 128, value: 68 },
+        // 132	121
+        { breakpoint: 132, value: 71 },
+        // 136	124
+        { breakpoint: 136, value: 74 },
+        // 140	127
+        { breakpoint: 140, value: 77 },
+        // 144	130
+        { breakpoint: 144, value: 80 },
+        // 148	133
+        { breakpoint: 148, value: 83 },
+        // 152	136
+        { breakpoint: 152, value: 86 },
+        // 156	139
+        { breakpoint: 156, value: 89 },
+        // 160	142
+        { breakpoint: 160, value: 92 },
+        // 164	143
+        { breakpoint: 164, value: 93 },
+        // 168	145
+        { breakpoint: 168, value: 95 },
+        // 172	147
+        { breakpoint: 172, value: 97 },
+        // 176	149
+        { breakpoint: 176, value: 99 },
+        // 180	151
+        { breakpoint: 180, value: 101 },
+        // 184	152
+        { breakpoint: 184, value: 102 },
+        // 188	154
+        { breakpoint: 188, value: 104 },
+        // 192	156
+        { breakpoint: 192, value: 106 },
+        // 196	158
+        { breakpoint: 196, value: 108 },
+        // 200	160
+        { breakpoint: 200, value: 110 },
+        // 212	161
+        { breakpoint: 212, value: 111 },
+        // 224	162
+        { breakpoint: 224, value: 112 },
+        // 232	163
+        { breakpoint: 232, value: 113 },
+        // 244	164
+        { breakpoint: 244, value: 114 },
+        // 248	165
+        { breakpoint: 248, value: 115 },
+        // 256	166
+        { breakpoint: 256, value: 116 },
+        // 260	167
+        { breakpoint: 260, value: 117 },
+        // 264	168
+        { breakpoint: 264, value: 118 },
+        // 268	169
+        { breakpoint: 268, value: 119 },
+        // 272	170
+        { breakpoint: 272, value: 120 },
+        // 276	171
+        { breakpoint: 276, value: 121 },
+        // 280	172
+        { breakpoint: 280, value: 122 },
+        // 284	173
+        { breakpoint: 284, value: 123 },
+        // 292	175
+        { breakpoint: 292, value: 125 },
+        // 296	176
+        { breakpoint: 296, value: 126 },
+        // 300	178
+        { breakpoint: 300, value: 128 },
+        // 304	179
+        { breakpoint: 304, value: 129 },
+        // 308	181
+        { breakpoint: 308, value: 131 },
+        // 312	182
+        { breakpoint: 312, value: 132 },
+        // 316	184
+        { breakpoint: 316, value: 134 },
+    ];
 
     const attributeScore: number = endurance + vitality + strength + dexterity;
 
@@ -713,7 +811,7 @@ export function calculateStat(
         case "AttackPowerPoison":
             return (
                 statValue +
-                calculatePoisonAttackPower(
+                calculateCommonAttackPower(
                     attributes.Dexterity,
                     attributes.Adaptability,
                 )
@@ -721,7 +819,7 @@ export function calculateStat(
         case "AttackPowerBleed":
             return (
                 statValue +
-                calculateBleedAttackPower(
+                calculateCommonAttackPower(
                     attributes.Dexterity,
                     attributes.Faith,
                 )
