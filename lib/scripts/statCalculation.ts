@@ -729,8 +729,6 @@ function calculatePhysicalDefense(
 
     const attributeScore: number = endurance + vitality + strength + dexterity;
 
-    console.log(`attributeScore: ${attributeScore}`);
-
     return (
         PHYSICAL_DEFENSE_CURVE.findLast(
             (mapping) => mapping.breakpoint <= attributeScore,
@@ -760,7 +758,44 @@ function calculateCommonAbsorption(...attributes: number[]): number {
     );
 }
 
-// TODO: calculate bleed resistance
+// calculateBleedResistance will calculate the Bleed Resistance stat
+//
+// @param {number} faith - The Faith attribute value
+//
+// @param {number} adaptability - The Adaptability attribute value
+//
+// @return {number} The amount to add to the base value for Bleed Resistance
+function calculateBleedResistance(faith: number, adaptability: number): number {
+    // Scales with Faith and Adaptability.
+    // Every fourth Faith will increase Bleed Reistance one tick, three out of four Adaptability will increase Bleed Resistance one tick
+    // Start with 0 Bleed Resistance and gain 6 Bleed Resistance per tick between 1 and 10 ticks, total 60 Bleed Resistance at 10 tricks
+    // Between 11 and 20 ticks you gain 8 Bleed Resistance per tick, total 140 Bleed Resistance at 20 ticks
+    // Between 21 and 60 ticks you gain one Bleed Resistance per tick, total 180 Bleed Resistance at 60 ticks
+    // Between 61 and 99 ticks you gain one Bleed Resistance every other tick for a total of of 200 Bleed Resistance at 99 Faith and 99 Adaptability
+
+    const ticks =
+        Math.floor(faith / 4) +
+        Math.floor((adaptability * 3) / 4) +
+        (adaptability % 4);
+    let bleedResistance = 0;
+
+    console.log(`ticks: ${ticks}`);
+
+    if (ticks >= 0) {
+        bleedResistance += Math.min(ticks, 10) * 6;
+    }
+    if (ticks > 10) {
+        bleedResistance += (Math.min(ticks, 20) - 10) * 8;
+    }
+    if (ticks > 20) {
+        bleedResistance += Math.min(ticks, 60) - 20;
+    }
+    if (ticks > 60) {
+        bleedResistance += (ticks - 60) / 2;
+    }
+
+    return bleedResistance;
+}
 
 // TODO: calculate poison resistance
 
@@ -849,6 +884,14 @@ export function calculateStat(
                 statValue +
                 calculateCommonAbsorption(
                     Math.min(attributes.Intelligence, attributes.Faith),
+                )
+            );
+        case "ResistanceBleed":
+            return (
+                statValue +
+                calculateBleedResistance(
+                    attributes.Faith,
+                    attributes.Adaptability,
                 )
             );
         default:
