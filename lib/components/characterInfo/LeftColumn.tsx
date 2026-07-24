@@ -365,7 +365,7 @@ export default function LeftColumn(props: {
                             <td className="text-right">
                                 <input
                                     type="number"
-                                    min="1"
+                                    min="0"
                                     max="99"
                                     value={
                                         desiredAttributes[
