@@ -2,21 +2,19 @@ import attributeToStatMap from "@/lib/data/AttributeToStatMap.json";
 import baseStats from "@/lib/data/BaseStats.json";
 import chestpieces from "@/lib/data/Chestpieces.json";
 import classes from "@/lib/data/Classes.json";
+import covenants from "@/lib/data/Covenants.json";
 import gauntlets from "@/lib/data/Gauntlets.json";
 import helmets from "@/lib/data/Helmets.json";
 import leggings from "@/lib/data/Leggings.json";
-import playerLevelUpSoulsParams from "@/lib/data/PlayerLevelUpSoulsParam.json";
+import levels from "@/lib/data/Levels.json";
 import rings from "@/lib/data/Rings.json";
 import statCalculation from "@/lib/data/StatCalculation.json";
-import vowParams from "@/lib/data/VowParam.json";
 import weapons from "@/lib/data/Weapons.json";
 import Armor from "@/lib/types/armor";
 import AttributeMap from "@/lib/types/attributeMap";
 import Class from "@/lib/types/class";
-import PlayerLevelUpSoulsParam from "@/lib/types/playerLevelUpSoulsParam";
 import Ring from "@/lib/types/ring";
 import StatMap from "@/lib/types/statMap";
-import VowParam from "@/lib/types/vowParam";
 import Weapon from "@/lib/types/weapon";
 
 // AttributeToStatMap is a map of attributes to a map of stats to whether or not the attribute affects the stat
@@ -39,16 +37,13 @@ export const Helmets: Armor[] = helmets;
 export const Leggings: Armor[] = leggings;
 
 // PlayerLevelUpSouls is a list of the souls required to level up at each level
-export const PlayerLevelUpSouls: PlayerLevelUpSoulsParam[] =
-    playerLevelUpSoulsParams;
+export const PlayerLevelUpSouls: number[] = levels;
 
 // Rings is a list of rings
 export const Rings: Ring[] = rings;
 
-// Vows is a list of VowParams
-//
-// TODO: replace with a list of covenants when available
-export const Vows: VowParam[] = vowParams;
+// Covenants is a list of covenant names
+export const Covenants: string[] = covenants;
 
 // Weapons is a list of weapons
 export const Weapons: Weapon[] = weapons;

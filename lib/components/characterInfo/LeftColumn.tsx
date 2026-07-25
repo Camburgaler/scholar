@@ -1,4 +1,4 @@
-import { Classes, PlayerLevelUpSouls, Vows } from "@/lib/gameData";
+import { Classes, Covenants, PlayerLevelUpSouls } from "@/lib/gameData";
 import {
     FocusedAttributeContext,
     FocusedAttributeDispatchContext,
@@ -14,6 +14,7 @@ import Class from "@/lib/types/class";
 import Equippable from "@/lib/types/equippable";
 import Ring from "@/lib/types/ring";
 import { useCallback, useContext, useEffect, useState } from "react";
+import { Lock, Unlock } from "react-bootstrap-icons";
 
 const MAX_PLAYER_LEVEL_UP_SOULS_ID = 850;
 const MAX_PLAYER_LEVEL = 838;
@@ -62,6 +63,10 @@ function getItemAttributeAdditions(
 
 function sumArray(array: number[]): number {
     return array.reduce((acc: number, num: number) => acc + num, 0);
+}
+
+function getClassByName(name: string): Class | undefined {
+    return Classes.find((c) => c.Name === name);
 }
 
 export default function LeftColumn(props: {
@@ -162,6 +167,14 @@ export default function LeftColumn(props: {
     // Covenant
     const [covenant, setCovenant] = useState("None");
 
+    // Class lock
+    // This determines if the class will be automatically optimized or manually selected
+    const [classLocked, setClassLocked] = useState(false);
+
+    // Selected class
+    // This is the class selected by the user if classLocked is false
+    const [selectedClass, setSelectedClass] = useState(Classes[0].Name);
+
     // STATE UPDATE FUNCTIONS
 
     /**
@@ -228,22 +241,22 @@ export default function LeftColumn(props: {
                     tempFinal[attributeId] = Math.max(
                         desiredAttributes[attributeId]! -
                             sumArray(itemAttributeAdditions[attributeId]!),
-                        optimalClass?.Attributes[attributeId]!,
+                        getClassByName(selectedClass)?.Attributes[attributeId]!,
                     );
                     tempVirtual[attributeId] = Math.max(
                         desiredAttributes[attributeId]!,
-                        optimalClass.Attributes![attributeId]! +
-                            sumArray(itemAttributeAdditions[attributeId]!),
+                        getClassByName(selectedClass)?.Attributes![
+                            attributeId
+                        ]! + sumArray(itemAttributeAdditions[attributeId]!),
                     );
                 }
             },
         );
         setFinalAttributes(tempFinal);
-        // setVirtualStats(must be a Map<StatMapKey, number>);
         setVirtualAttributes(
             new Map(Object.entries(tempVirtual) as [AttributeMapKey, number][]),
         );
-    }, [desiredAttributes, optimalClass, itemAttributeAdditions]);
+    }, [desiredAttributes, selectedClass, itemAttributeAdditions]);
 
     useEffect(() => {
         const currentLevel = Math.min(
@@ -251,18 +264,25 @@ export default function LeftColumn(props: {
             MAX_PLAYER_LEVEL,
             MAX_PLAYER_LEVEL_UP_SOULS_ID,
         );
-        const currentPlayerLevelUpSouls = PlayerLevelUpSouls.find(
-            (playerLevelUpSouls) => playerLevelUpSouls.Level == currentLevel,
-        );
+        const currentPlayerLevelUpSouls = PlayerLevelUpSouls[currentLevel];
 
-        setSoulsToNextLevel(currentPlayerLevelUpSouls?.NecessarySouls || 0);
+        setSoulsToNextLevel(currentPlayerLevelUpSouls || 0);
 
         let tempTotalSoulCost = 0;
         for (let i = optimalClass.Level; i < currentLevel; i++) {
-            tempTotalSoulCost += PlayerLevelUpSouls[i].NecessarySouls;
+            tempTotalSoulCost += PlayerLevelUpSouls[i];
         }
         setTotalSoulCost(tempTotalSoulCost);
     }, [finalAttributes]);
+
+    /**
+     * Sets selected class if classLocked is false
+     */
+    useEffect(() => {
+        if (!classLocked) {
+            setSelectedClass(optimalClass.Name);
+        }
+    }, [optimalClass, classLocked]);
 
     /**
      * Calculates the item stats on render
@@ -285,11 +305,6 @@ export default function LeftColumn(props: {
         <div className="h-full flex flex-col gap-2 w-full items-left justify-baseline align-baseline">
             {/* Starting class */}
             <div className="flex w-full items-left justify-between align-center">
-                {/* TODO: set a toggle to switch between finding an optimal starting class and building around a selected starting class */}
-                {/* I'm thinking a simple button next to the optimal class <input> that displays an unlocked padlock with a bright background on load, then switches to a locked padlock with a dark background when clicked, and switches back when clicked again */}
-                {/* When "unlocked", the <input> will always freely switch between classes, always showing the optimal selection */}
-                {/* When the user "locks" the class, the <input> will switch to a <select> with the currently displayed class pre-selected */}
-                {/* While the class is "locked", the user can manually switch between starting classes using the <select> dropdown */}
                 <label
                     className="flex items-center justify-center"
                     htmlFor="starting-class"
@@ -297,12 +312,37 @@ export default function LeftColumn(props: {
                     Optimal starting class:
                 </label>
 
-                <input
-                    className="flex max-w-30 text-right h-full"
-                    id="starting-class"
-                    disabled
-                    value={optimalClass.Name}
-                />
+                <div className="flex gap-2 items-center">
+                    <button
+                        className="h-full w-full p-1"
+                        onClick={() => setClassLocked(!classLocked)}
+                    >
+                        {classLocked ? (
+                            <Lock className="h-full w-full" />
+                        ) : (
+                            <Unlock className="h-full w-full" />
+                        )}
+                    </button>
+                    {classLocked ? (
+                        <select
+                            value={selectedClass}
+                            onChange={(e) => setSelectedClass(e.target.value)}
+                        >
+                            {sorted.map((c) => (
+                                <option key={c.Name} value={c.Name}>
+                                    {c.Name}
+                                </option>
+                            ))}
+                        </select>
+                    ) : (
+                        <input
+                            className="flex max-w-30 text-right h-full"
+                            id="starting-class"
+                            disabled
+                            value={optimalClass.Name}
+                        />
+                    )}
+                </div>
             </div>
 
             <hr />
@@ -467,8 +507,8 @@ export default function LeftColumn(props: {
                     value={covenant}
                     onChange={(e) => setCovenant(e.target.value)}
                 >
-                    {Vows.map((vow) => (
-                        <option key={vow.Name}>{vow.Name}</option>
+                    {Covenants.map((vow) => (
+                        <option key={vow}>{vow}</option>
                     ))}
                 </select>
             </div>
@@ -497,7 +537,7 @@ export default function LeftColumn(props: {
                     }).map((_, index) => (
                         <select
                             className="flex h-full col-span-1"
-                            key={`${index}`}
+                            key={index}
                             defaultValue="0"
                         >
                             <option value="0">None</option>
