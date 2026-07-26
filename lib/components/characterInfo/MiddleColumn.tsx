@@ -1,5 +1,6 @@
 import WeaponDisplay from "@/lib/components/characterInfo/middleColumn/WeaponDisplay";
 import StatDisplay from "@/lib/components/characterInfo/StatDisplay";
+import { Chestpieces, Gauntlets, Helmets, Leggings } from "@/lib/gameData";
 
 export default function MiddleColumn() {
     return (
@@ -37,9 +38,9 @@ export default function MiddleColumn() {
             <hr />
 
             {/* Armor */}
+            {/* TODO: make these affect attributes/stats */}
             <div className="flex flex-col w-full items-left justify-baseline align-center gap-1">
-                {/* Helmet */}
-                {/* TODO: update with real options */}
+                {/* Helmets */}
                 <div className="flex gap-1 w-full justify-between">
                     <label
                         className="flex items-center justify-center h-full"
@@ -48,16 +49,19 @@ export default function MiddleColumn() {
                         Helmet:
                     </label>
                     <select
-                        className="flex text-right h-full max-w-15"
+                        className="flex text-right h-full"
                         id="helmet"
                         defaultValue="0"
                     >
-                        <option value="0">None</option>
+                        {Helmets.map((helmet) => (
+                            <option key={helmet.Name} value={helmet.Name}>
+                                {helmet.Name}
+                            </option>
+                        ))}
                     </select>
                 </div>
 
-                {/* Chestpiece */}
-                {/* TODO: update with real options */}
+                {/* Chestpieces */}
                 <div
                     className="flex gap-1 w-full justify-between"
                     style={{
@@ -71,16 +75,22 @@ export default function MiddleColumn() {
                         Chestpiece:
                     </label>
                     <select
-                        className="flex text-right h-full max-w-15"
+                        className="flex text-right h-full"
                         id="chestpiece"
                         defaultValue="0"
                     >
-                        <option value="0">None</option>
+                        {Chestpieces.map((chestpiece) => (
+                            <option
+                                key={chestpiece.Name}
+                                value={chestpiece.Name}
+                            >
+                                {chestpiece.Name}
+                            </option>
+                        ))}
                     </select>
                 </div>
 
                 {/* Gauntlets */}
-                {/* TODO: update with real options */}
                 <div className="flex gap-1 w-full justify-between">
                     <label
                         className="flex items-center justify-center h-full"
@@ -89,16 +99,19 @@ export default function MiddleColumn() {
                         Gauntlets:
                     </label>
                     <select
-                        className="flex text-right h-full max-w-15"
+                        className="flex text-right h-full"
                         id="gauntlets"
                         defaultValue="0"
                     >
-                        <option value="0">None</option>
+                        {Gauntlets.map((gauntlet) => (
+                            <option key={gauntlet.Name} value={gauntlet.Name}>
+                                {gauntlet.Name}
+                            </option>
+                        ))}
                     </select>
                 </div>
 
                 {/* Leggings */}
-                {/* TODO: update with real options */}
                 <div
                     className="flex gap-1 w-full justify-between"
                     style={{
@@ -112,11 +125,15 @@ export default function MiddleColumn() {
                         Leggings:
                     </label>
                     <select
-                        className="flex text-right h-full max-w-15"
+                        className="flex text-right h-full"
                         id="leggings"
                         defaultValue="0"
                     >
-                        <option value="0">None</option>
+                        {Leggings.map((legging) => (
+                            <option key={legging.Name} value={legging.Name}>
+                                {legging.Name}
+                            </option>
+                        ))}
                     </select>
                 </div>
             </div>

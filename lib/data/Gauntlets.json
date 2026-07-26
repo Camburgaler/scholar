@@ -1,8 +1,2354 @@
 [
     {
-        "Name": "No Gauntlets",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Name": "No Armor",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Pate's Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Black Leather Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Wanderer Manchettes",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Leather Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Knight Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Elite Knight Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Tattered Cloth Manchettes",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Brigand Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Imported Manchettes",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Traveling Merchant Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Havel's Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Jester's Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Astrologist's Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Faraam Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Black Dragon Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Xanthous Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Manchettes ofJudgment",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Gauntlets of Aurous (Visible)",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Gauntlets of Aurous (Invisible)",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Monastery Long Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Dingy Cuffs",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Engraved Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Moon Butterfly Cuffs",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Catarina Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Alva Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Black Witch Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Drakeblood Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Northwarder Manchettes",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Hollow Soldier Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Royal Soldier Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Hollow Infantry Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Infantry Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "White Priest Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Priestess Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Rogue Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Bandit Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Varangian Cuffs",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Lion Mage Cuffs",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Steel Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Shadow Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Manikin Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Prisoner's Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Archdrake Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Gyrm Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Gyrm Warrior Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Dark Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Tseldora Manchettes",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Peasant Long Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Ironclad Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Old Ironclad Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Royal Swordsman Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Syan's Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Bone King Cuffs",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Heide Knight Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Smelter Demon Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Alonne Knight Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Vengarl's Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Lion Warrior Cuffs",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Grave Warden Cuffs",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Falconer Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Rusted Mastodon Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Mastodon Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Desert Sorceress Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Dragon Acolyte Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Ruin Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Old Knight Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Drakekeeper Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Throne Defender Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Velstadt's Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Throne Watcher Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Looking Glass Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Agdayne's Cuffs",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Insolent Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Imperious Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Leydia Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "King's Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Dragonrider Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Executioner Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Penal Handcuffs",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Fume Sorcerer Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Rampart Golem Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Sanctum Knight Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Sanctum Soldier Gauntlet",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Raime's Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Alonne's Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Loyce Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Charred Loyce Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Ivory King Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Gauntlets of the Forlorn",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Llewellyn Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Drangleic Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Creighton's Chain Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Benhart's Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Hard Leather Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Lucatiel's Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Bell Keeper Cuffs",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Mad Warrior Gauntlets",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Black Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Saint's Long Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Hexer's Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Chaos Gloves",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Targray's Manifers",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
         "Weight": 0,
         "Defenses": {
             "Slash": 0,

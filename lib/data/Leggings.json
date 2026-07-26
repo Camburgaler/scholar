@@ -1,8 +1,2354 @@
 [
     {
-        "Name": "No Leggings",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Name": "No Armor",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Pate's Trousers",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Black Leather Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Wanderer Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Leather Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Knight Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Elite Knight Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Heavy Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Brigand Trousers",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Imported Trousers",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Traveling Merchant Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Havel's Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Jester's Tights",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Astrologist's Bottoms",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Faraam Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Black Dragon Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Xanthous Waistcloth",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Tights of Judgment",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Leggings of Aurous (Visible)",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Leggings of Aurous (Invisible)",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Monastery Skirt",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Blood-stained Skirt",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Flying Feline Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Moon Butterfly Skirt",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Catarina Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Alva Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Black Witch Trousers",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Drakeblood Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Northwarder Trousers",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Flower Skirt",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Hollow Soldier Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Royal Soldier Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Hollow Infantry Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Infantry Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "White Priest Skirt",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Priestess Skirt",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Rogue Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Bandit Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Varangian Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Lion Mage Skirt",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Steel Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Shadow Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Manikin Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Prisoner's Waistcloth",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Archdrake Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Gyrm Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Gyrm Warrior Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Dark Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Tseldora Trousers",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Peasant Trousers",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Ironclad Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Old Ironclad Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Royal Swordsman Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Syan's Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Bone King Skirt",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Heide Knight Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Smelter Demon Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Alonne Knight Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Vengarl's Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Lion Warrior Skirt",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Grave Warden Bottoms",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Falconer Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Rusted Mastodon Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Mastodon Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Desert Sorceress Skirt",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Dragon Acolyte Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Ruin Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Old Knight Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Drakekeeper Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Throne Defender Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Velstadt's Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Throne Watcher Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Looking Glass Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Agdayne's Kilt",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Insolent Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Imperious Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "King's Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Dragonrider Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Executioner Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Penal Skirt",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Fume Sorcerer Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Rampart Golem Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Sanctum Knight Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Raime's Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Alonne's Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Loyce Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Charred Loyce Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Ivory King Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Leggings of the Forlorn",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Llewellyn Shoes",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Drangleic Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Creighton's Chain Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Benhart's Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Hard Leather Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Cale's Shoes",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Lucatiel's Trousers",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Bell Keeper Trousers",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Mad Warrior Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Black Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Saint's Trousers",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Hexer's Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Chaos Boots",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Targray's Leggings",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
         "Weight": 0,
         "Defenses": {
             "Slash": 0,

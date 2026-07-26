@@ -1,8 +1,2791 @@
 [
     {
-        "Name": "No Helmet",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Name": "No Armor",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Pate's Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Thief Mask",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Wanderer Hood",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Hunter's Hat",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Knight Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Elite Knight Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Tattered Cloth Hood",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Brigand Hood",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Imported Hood",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Traveling Merchant Hat",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Havel's Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Jester's Cap",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Moon Hat",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Faraam Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Black Dragon Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Xanthous Crown",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Mask of Judgment",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Helm of Aurous (Visible)",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Helm of Aurous (Invisible)",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Monastery Headcloth",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Dingy Hood",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Durgo's Hat",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Moon Butterfly Hat",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Catarina Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Alva Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Black Witch Veil",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Black Witch Hat",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Black Witch Domino Mask",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Drakeblood Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Northwarder Hood",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Crown of the Old Iron King",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Crown of the Ivory King",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Crown of the Sunken King",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Old Bell Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Hollow Skin",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Pharros Mask",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Minotaur Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Symbol of Avarice",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Hollow Soldier Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Royal Soldier Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Hollow Infantry Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Infantry Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "White Priest Headpiece",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Priestess Headpiece",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Rogue Hood",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Spiked Bandit Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Varangian Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Black Hollow Mage Hood",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "White Hollow Mage Hood",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Steel Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Shadow Mask",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Manikin Mask",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Prisoner's Hood (Mask Only)",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Prisoner's Hood",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Archdrake Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Gyrm Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Gyrm Warrior Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Gyrm Warrior Greathelm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Dark Mask",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Warlock Mask",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Tseldora Cap",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Peasant Hat",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Ironclad Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Old Ironclad Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Royal Swordsman Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Syan's Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Bone Crown",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Heide Knight Greathelm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Heide Knight Iron Mask",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Smelter Demon Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Alonne Captain Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Alonne Knight Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Vengarl's Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Lion Warrior Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Grave Warden Mask",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Falconer Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Rusted Mastodon Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Mastodon Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Desert Sorceress Hood",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Dragon Acolyte Mask",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Dragon Sage Hood",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Ruin Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Old Knight Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Drakekeeper Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Throne Defender Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Velstadt's Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Throne Watcher Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Looking Glass Mask",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Leydia Black Hood",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Insolent Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Imperious Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Leydia White Hood",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "King's Crown",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Dragonrider Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Executioner Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Penal Mask",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Fume Sorcerer Mask",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Rampart Golem Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Sanctum Knight Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Sanctum Priestess Tiara",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Raime's Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Alonne's Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Loyce Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Charred Loyce Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Ivory King Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Hood of the Forlorn",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Drangleic Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Creighton's Steel Mask",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Benhart's Knight Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Standard Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Cale's Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Lucatiel's Mask",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Mirrah Hat",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Bell Keeper Helmet",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Mad Warrior Mask",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Black Hood",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Saint's Hood",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Hexer's Hood",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Chaos Hood",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Nahr Alma Hood",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
+        "Weight": 0,
+        "Defenses": {
+            "Slash": 0,
+            "Thrust": 0,
+            "Strike": 0,
+            "Standard": 0
+        },
+        "Absorptions": {
+            "Magic": 0,
+            "Lightning": 0,
+            "Fire": 0,
+            "Dark": 0,
+            "Poison": 0,
+            "Bleed": 0,
+            "Petrify": 0,
+            "Curse": 0
+        },
+        "Poise": 0
+    },
+    {
+        "Name": "Targray's Helm",
+        "AdditiveModifiers": null,
+        "MultiplicativeModifiers": null,
         "Weight": 0,
         "Defenses": {
             "Slash": 0,

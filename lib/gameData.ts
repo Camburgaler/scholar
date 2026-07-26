@@ -24,19 +24,51 @@ export const AttributeToStatMap: AttributeMap<StatMap<boolean>> =
     attributeToStatMap;
 
 // Chestpieces is a list of chestpiece armor
-export const Chestpieces: Armor[] = chestpieces;
+export const Chestpieces: Armor[] = chestpieces.sort((a, b) =>
+    // Sort by name
+    // "No Armor" is always first
+    a.Name === "No Armor"
+        ? -1
+        : b.Name === "No Armor"
+          ? 1
+          : a.Name.localeCompare(b.Name),
+);
 
 // Classes is a list of starting character classes
 export const Classes: Class[] = classes;
 
 // Gauntlets is a list of gauntlet armor
-export const Gauntlets: Armor[] = gauntlets;
+export const Gauntlets: Armor[] = gauntlets.sort((a, b) =>
+    // Sort by name
+    // "No Armor" is always first
+    a.Name === "No Armor"
+        ? -1
+        : b.Name === "No Armor"
+          ? 1
+          : a.Name.localeCompare(b.Name),
+);
 
 // Helmets is a list of helmet armor
-export const Helmets: Armor[] = helmets;
+export const Helmets: Armor[] = helmets.sort((a, b) =>
+    // Sort by name
+    // "No Armor" is always first
+    a.Name === "No Armor"
+        ? -1
+        : b.Name === "No Armor"
+          ? 1
+          : a.Name.localeCompare(b.Name),
+);
 
 // Leggings is a list of leggings armor
-export const Leggings: Armor[] = leggings;
+export const Leggings: Armor[] = leggings.sort((a, b) =>
+    // Sort by name
+    // "No Armor" is always first
+    a.Name === "No Armor"
+        ? -1
+        : b.Name === "No Armor"
+          ? 1
+          : a.Name.localeCompare(b.Name),
+);
 
 // PlayerLevelUpSouls is a list of the souls required to level up at each level
 export const PlayerLevelUpSouls: number[] = levels;
