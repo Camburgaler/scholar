@@ -8,12 +8,14 @@ import helmets from "@/lib/data/Helmets.json";
 import leggings from "@/lib/data/Leggings.json";
 import levels from "@/lib/data/Levels.json";
 import rings from "@/lib/data/Rings.json";
+import spells from "@/lib/data/Spells.json";
 import statCalculation from "@/lib/data/StatCalculation.json";
 import weapons from "@/lib/data/Weapons.json";
 import Armor from "@/lib/types/armor";
 import AttributeMap from "@/lib/types/attributeMap";
 import Class from "@/lib/types/class";
 import Ring from "@/lib/types/ring";
+import Spell from "@/lib/types/spell";
 import StatMap from "@/lib/types/statMap";
 import Weapon from "@/lib/types/weapon";
 
@@ -44,6 +46,11 @@ export const Rings: Ring[] = rings;
 
 // Covenants is a list of covenant names
 export const Covenants: string[] = covenants;
+
+// Spells is a list of spells
+export const Spells: Spell[] = spells.sort((a, b) =>
+    a.Name.localeCompare(b.Name),
+);
 
 // Weapons is a list of weapons
 export const Weapons: Weapon[] = weapons;

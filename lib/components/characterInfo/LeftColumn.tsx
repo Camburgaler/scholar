@@ -1,4 +1,4 @@
-import { Classes, Covenants, PlayerLevelUpSouls } from "@/lib/gameData";
+import { Classes, Covenants, PlayerLevelUpSouls, Spells } from "@/lib/gameData";
 import {
     FocusedAttributeContext,
     FocusedAttributeDispatchContext,
@@ -13,8 +13,9 @@ import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
 import Class from "@/lib/types/class";
 import Equippable from "@/lib/types/equippable";
 import Ring from "@/lib/types/ring";
+import Spell from "@/lib/types/spell";
 import { useCallback, useContext, useEffect, useState } from "react";
-import { Lock, Unlock } from "react-bootstrap-icons";
+import { Lock, Trash, Unlock } from "react-bootstrap-icons";
 
 const MAX_PLAYER_LEVEL_UP_SOULS_ID = 850;
 const MAX_PLAYER_LEVEL = 838;
@@ -67,6 +68,10 @@ function sumArray(array: number[]): number {
 
 function getClassByName(name: string): Class | undefined {
     return Classes.find((c) => c.Name === name);
+}
+
+function getSpellByName(name: string): Spell | "none" {
+    return Spells.find((spell) => spell.Name === name) || "none";
 }
 
 export default function LeftColumn(props: {
@@ -175,6 +180,18 @@ export default function LeftColumn(props: {
     // This is the class selected by the user if classLocked is false
     const [selectedClass, setSelectedClass] = useState(Classes[0].Name);
 
+    // Spell Slots
+    // This is the number of spell slots granted by the virtual attributes
+    const [spellSlots, setSpellSlots] = useState(0);
+
+    // Equipped Spells
+    // This is a list of spells that are currently equipped
+    const [equippedSpells, setEquippedSpells] = useState<Spell[]>([]);
+
+    // Consumed Spell Slots
+    // This is the number of spell slots that have been consumed by the equipped spells
+    const [consumedSpellSlots, setConsumedSpellSlots] = useState(0);
+
     // STATE UPDATE FUNCTIONS
 
     /**
@@ -188,6 +205,28 @@ export default function LeftColumn(props: {
             ...desiredAttributes,
             [statId]: Math.min(Math.max(value, 0), 99),
         });
+    }
+
+    // HELPER FUNCTIONS
+
+    function getSpellUsages(spell: Spell): number {
+        const attunementBreakpoints: number[] = [
+            0, 15, 26, 32, 38, 43, 49, 58, 79, 94,
+        ];
+        const index: number = attunementBreakpoints.findLastIndex(
+            (breakpoint) => breakpoint <= virtualAttributes.Attunement,
+        );
+
+        return spell.UsageCountCurve[index];
+    }
+
+    function getSpellDisplayName(spell: Spell): string {
+        return `${spell.Name} x ${getSpellUsages(spell)}
+                                ${
+                                    spell.SpellSlotCost > 1
+                                        ? ` (${spell.SpellSlotCost} slots)`
+                                        : ""
+                                }`;
     }
 
     // EFFECTS
@@ -209,7 +248,7 @@ export default function LeftColumn(props: {
     }, [finalAttributes, sortClasses]);
 
     /**
-     * Updates the final stats and virtual stats when the desired stats, optimal class, or item stats change.
+     * Updates the final stats and virtual stats when the desired stats, selected class, or item stats change.
      */
     useEffect(() => {
         // calculate final stats
@@ -258,6 +297,9 @@ export default function LeftColumn(props: {
         );
     }, [desiredAttributes, selectedClass, itemAttributeAdditions]);
 
+    /**
+     * Updates the souls to next level and total soul cost when the final stats change.
+     */
     useEffect(() => {
         const currentLevel = Math.min(
             optimalClass.sortingValue!,
@@ -283,6 +325,37 @@ export default function LeftColumn(props: {
             setSelectedClass(optimalClass.Name);
         }
     }, [optimalClass, classLocked]);
+
+    /**
+     * Updates the spell slots when the virtual attributes change.
+     */
+    useEffect(() => {
+        setSpellSlots(calculateStat("SpellSlotCount", virtualAttributes));
+    }, [virtualAttributes]);
+
+    /**
+     * Updates the consumed spell slots when the spell slots change.
+     */
+    useEffect(() => {
+        if (consumedSpellSlots > spellSlots) {
+            setEquippedSpells(
+                equippedSpells.slice(0, equippedSpells.length - 1),
+            );
+        }
+    }, [spellSlots]);
+
+    /**
+     * Updates the consumed spell slots when the equipped spells change.
+     */
+    useEffect(() => {
+        let consumedSpellSlots = 0;
+
+        for (const spell of equippedSpells) {
+            consumedSpellSlots += spell.SpellSlotCost;
+        }
+
+        setConsumedSpellSlots(consumedSpellSlots);
+    }, [equippedSpells]);
 
     /**
      * Calculates the item stats on render
@@ -503,7 +576,7 @@ export default function LeftColumn(props: {
                 </label>
                 <select
                     id="covenant"
-                    className="col-span-2 w-full text-center"
+                    className="col-span-2 w-full text-left"
                     value={covenant}
                     onChange={(e) => setCovenant(e.target.value)}
                 >
@@ -524,25 +597,81 @@ export default function LeftColumn(props: {
                                 : "normal",
                     }}
                 >
-                    Spells, Miracles, and Pyromancies
+                    Spells, Miracles, and Pyromancies ({consumedSpellSlots}/
+                    {spellSlots})
                 </p>
                 <div className="grid grid-cols-2 gap-1">
-                    {/* TODO: add spells */}
-                    {/* TODO: pull this out into its own component */}
                     {Array.from({
-                        length: calculateStat(
-                            "SpellSlotCount",
-                            virtualAttributes,
-                        ),
+                        length: equippedSpells.length,
                     }).map((_, index) => (
-                        <select
-                            className="flex h-full col-span-1"
+                        <div
                             key={index}
-                            defaultValue="0"
+                            className="flex h-full w-full col-span-1"
                         >
-                            <option value="0">None</option>
-                        </select>
+                            {index % 2 === 0 ? (
+                                <button
+                                    onClick={() =>
+                                        setEquippedSpells(
+                                            equippedSpells.filter(
+                                                (_, i) => i !== index,
+                                            ),
+                                        )
+                                    }
+                                >
+                                    <Trash />
+                                </button>
+                            ) : null}
+                            <input
+                                type="text"
+                                disabled
+                                value={getSpellDisplayName(
+                                    equippedSpells[index],
+                                )}
+                                className="text-left h-full w-full"
+                            />
+                            {index % 2 === 1 ? (
+                                <button
+                                    onClick={() =>
+                                        setEquippedSpells(
+                                            equippedSpells.filter(
+                                                (_, i) => i !== index,
+                                            ),
+                                        )
+                                    }
+                                >
+                                    <Trash />
+                                </button>
+                            ) : null}
+                        </div>
                     ))}
+
+                    <select
+                        className="flex h-full w-full col-span-1"
+                        onChange={(e) => {
+                            setEquippedSpells(
+                                equippedSpells.concat(
+                                    getSpellByName(e.target.value) as Spell,
+                                ),
+                            );
+                            e.target.value = "none";
+                        }}
+                    >
+                        <option value="none">None</option>
+                        {Spells.filter(
+                            (spell) =>
+                                // Check if spell meets attribute requirements
+                                spell.RequiredFaith <=
+                                    virtualAttributes.Faith &&
+                                spell.RequiredIntelligence <=
+                                    virtualAttributes.Intelligence &&
+                                spell.SpellSlotCost <=
+                                    spellSlots - consumedSpellSlots,
+                        ).map((spell) => (
+                            <option key={spell.Name} value={spell.Name}>
+                                {getSpellDisplayName(spell)}
+                            </option>
+                        ))}
+                    </select>
                 </div>
             </div>
         </div>

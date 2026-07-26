@@ -1,0 +1,1910 @@
+[
+    {
+        "Name": "Soul Arrow",
+        "RequiredIntelligence": 10,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            40
+        ]
+    },
+    {
+        "Name": "Great Soul Arrow",
+        "RequiredIntelligence": 14,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            15,
+            15,
+            16,
+            16,
+            17,
+            17,
+            18,
+            18,
+            19,
+            20
+        ]
+    },
+    {
+        "Name": "Heavy Soul Arrow",
+        "RequiredIntelligence": 12,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            30
+        ]
+    },
+    {
+        "Name": "Great Heavy Soul Arrow",
+        "RequiredIntelligence": 16,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            10,
+            10,
+            11,
+            11,
+            12,
+            12,
+            13,
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "Name": "Homing Soul Arrow",
+        "RequiredIntelligence": 25,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            20
+        ]
+    },
+    {
+        "Name": "Heavy Homing Soul Arrow",
+        "RequiredIntelligence": 35,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            8,
+            8,
+            9,
+            10,
+            11,
+            11,
+            12,
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "Name": "Homing Soulmass",
+        "RequiredIntelligence": 24,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            4,
+            4,
+            4,
+            5,
+            5,
+            6,
+            6,
+            7,
+            7,
+            8
+        ]
+    },
+    {
+        "Name": "Homing Crystal Soulmass",
+        "RequiredIntelligence": 32,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            6
+        ]
+    },
+    {
+        "Name": "Soul Spear",
+        "RequiredIntelligence": 40,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5
+        ]
+    },
+    {
+        "Name": "Crystal Soul Spear",
+        "RequiredIntelligence": 53,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 2,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5
+        ]
+    },
+    {
+        "Name": "Shockwave",
+        "RequiredIntelligence": 13,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            6
+        ]
+    },
+    {
+        "Name": "Soul Spear Barrage",
+        "RequiredIntelligence": 17,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            6
+        ]
+    },
+    {
+        "Name": "Soul Shower",
+        "RequiredIntelligence": 22,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            5,
+            5,
+            6,
+            7,
+            8,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "Name": "Soul Greatsword",
+        "RequiredIntelligence": 27,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            6
+        ]
+    },
+    {
+        "Name": "Soul Vortex",
+        "RequiredIntelligence": 37,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            4,
+            4,
+            4,
+            5,
+            5,
+            6,
+            6,
+            7,
+            7,
+            8
+        ]
+    },
+    {
+        "Name": "Soul Bolt",
+        "RequiredIntelligence": 45,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            6
+        ]
+    },
+    {
+        "Name": "Soul Geyser",
+        "RequiredIntelligence": 64,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            3
+        ]
+    },
+    {
+        "Name": "Magic Weapon",
+        "RequiredIntelligence": 10,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            8,
+            8,
+            9,
+            10,
+            11,
+            11,
+            12,
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "Name": "Great Magic Weapon",
+        "RequiredIntelligence": 18,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            6
+        ]
+    },
+    {
+        "Name": "Crystal Magic Weapon",
+        "RequiredIntelligence": 28,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            3
+        ]
+    },
+    {
+        "Name": "Strong Magic Shield",
+        "RequiredIntelligence": 18,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            4,
+            4,
+            4,
+            5,
+            5,
+            6,
+            6,
+            7,
+            7,
+            8
+        ]
+    },
+    {
+        "Name": "Yearn",
+        "RequiredIntelligence": 19,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            4,
+            4,
+            4,
+            5,
+            5,
+            6,
+            6,
+            7,
+            7,
+            8
+        ]
+    },
+    {
+        "Name": "Hush",
+        "RequiredIntelligence": 15,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            20
+        ]
+    },
+    {
+        "Name": "Fall Control",
+        "RequiredIntelligence": 15,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            20
+        ]
+    },
+    {
+        "Name": "Hidden Weapon",
+        "RequiredIntelligence": 14,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            20
+        ]
+    },
+    {
+        "Name": "Repair",
+        "RequiredIntelligence": 15,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            4
+        ]
+    },
+    {
+        "Name": "Cast Light",
+        "RequiredIntelligence": 14,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            8,
+            8,
+            9,
+            10,
+            11,
+            11,
+            12,
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "Name": "Chameleon",
+        "RequiredIntelligence": 14,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            20
+        ]
+    },
+    {
+        "Name": "Unleash Magic",
+        "RequiredIntelligence": 58,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 3,
+        "UsageCountCurve": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            3
+        ]
+    },
+    {
+        "Name": "Soul Flash",
+        "RequiredIntelligence": 28,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            5,
+            6
+        ]
+    },
+    {
+        "Name": "Focus Souls",
+        "RequiredIntelligence": 60,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 2,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5
+        ]
+    },
+    {
+        "Name": "Heal",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 12,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            6
+        ]
+    },
+    {
+        "Name": "Med Heal",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 18,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            4
+        ]
+    },
+    {
+        "Name": "Great Heal Excerpt",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 14,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            3
+        ]
+    },
+    {
+        "Name": "Great Heal",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 28,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            6
+        ]
+    },
+    {
+        "Name": "Soothing Sunlight",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 52,
+        "SpellSlotCost": 2,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            4
+        ]
+    },
+    {
+        "Name": "Replenishment",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 16,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5
+        ]
+    },
+    {
+        "Name": "Resplendent Life",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 25,
+        "SpellSlotCost": 2,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5
+        ]
+    },
+    {
+        "Name": "Bountiful Sunlight",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 38,
+        "SpellSlotCost": 3,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5
+        ]
+    },
+    {
+        "Name": "Caressing Prayer",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 15,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            8,
+            8,
+            9,
+            10,
+            11,
+            11,
+            12,
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "Name": "Force",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 12,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            20
+        ]
+    },
+    {
+        "Name": "Wrath of the Gods",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 30,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            3
+        ]
+    },
+    {
+        "Name": "Emit Force",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 20,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            4,
+            4,
+            5,
+            6,
+            6,
+            7,
+            8,
+            8,
+            9,
+            10
+        ]
+    },
+    {
+        "Name": "Heavenly Thunder",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 17,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            5,
+            5,
+            6,
+            7,
+            8,
+            8,
+            9,
+            10,
+            11,
+            12
+        ]
+    },
+    {
+        "Name": "Lightning Spear",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 22,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            3,
+            3,
+            4,
+            4,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15
+        ]
+    },
+    {
+        "Name": "Great Lightning Spear",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 42,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            2,
+            3,
+            3,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            10
+        ]
+    },
+    {
+        "Name": "Sunlight Spear",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 55,
+        "SpellSlotCost": 2,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            4,
+            4,
+            5,
+            6
+        ]
+    },
+    {
+        "Name": "Soul Appease",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 19,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5
+        ]
+    },
+    {
+        "Name": "Blinding Bolt",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 65,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            4,
+            4,
+            4,
+            5,
+            5,
+            6,
+            6,
+            7,
+            7,
+            8
+        ]
+    },
+    {
+        "Name": "Magic Barrier",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 14,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5
+        ]
+    },
+    {
+        "Name": "Great Magic Barrier",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 28,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            3
+        ]
+    },
+    {
+        "Name": "Homeward",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 18,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+        ]
+    },
+    {
+        "Name": "Guidance",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 12,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            20
+        ]
+    },
+    {
+        "Name": "Sacred Oath",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 25,
+        "SpellSlotCost": 4,
+        "UsageCountCurve": [
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            6
+        ]
+    },
+    {
+        "Name": "Unveil",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 13,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            8,
+            8,
+            9,
+            10,
+            11,
+            11,
+            12,
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "Name": "Perseverance",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 15,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            8,
+            8,
+            9,
+            10,
+            11,
+            11,
+            12,
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "Name": "Sunlight Blade",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 36,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            3
+        ]
+    },
+    {
+        "Name": "Denial",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 24,
+        "SpellSlotCost": 3,
+        "UsageCountCurve": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+        ]
+    },
+    {
+        "Name": "Splintering Lightning Spear",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 50,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5
+        ]
+    },
+    {
+        "Name": "Fireball",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            8,
+            8,
+            9,
+            10,
+            11,
+            11,
+            12,
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "Name": "Fire Orb",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            4,
+            4,
+            4,
+            5,
+            5,
+            6,
+            6,
+            7,
+            7,
+            8
+        ]
+    },
+    {
+        "Name": "Great Fireball",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            6
+        ]
+    },
+    {
+        "Name": "Great Chaos Fireball",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 2,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5
+        ]
+    },
+    {
+        "Name": "Firestorm",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            4,
+            4,
+            4,
+            5,
+            5,
+            6,
+            6,
+            7,
+            7,
+            8
+        ]
+    },
+    {
+        "Name": "Fire Tempest",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5
+        ]
+    },
+    {
+        "Name": "Chaos Storm",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            4
+        ]
+    },
+    {
+        "Name": "Combustion",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            10,
+            10,
+            11,
+            11,
+            12,
+            12,
+            13,
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "Name": "Great Combustion",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            7,
+            7,
+            7,
+            7,
+            8
+        ]
+    },
+    {
+        "Name": "Fire Whip",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            4,
+            4,
+            4,
+            5,
+            5,
+            6,
+            6,
+            7,
+            7,
+            8
+        ]
+    },
+    {
+        "Name": "Poison Mist",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5
+        ]
+    },
+    {
+        "Name": "Toxic Mist",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            6
+        ]
+    },
+    {
+        "Name": "Acid Surge",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5
+        ]
+    },
+    {
+        "Name": "Lingering Flame",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 2,
+        "UsageCountCurve": [
+            4,
+            4,
+            4,
+            5,
+            5,
+            6,
+            6,
+            7,
+            7,
+            8
+        ]
+    },
+    {
+        "Name": "Flame Swathe",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5
+        ]
+    },
+    {
+        "Name": "Forbidden Sun",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 3,
+        "UsageCountCurve": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            3
+        ]
+    },
+    {
+        "Name": "Flame Weapon",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            4,
+            4,
+            4,
+            5,
+            5,
+            6,
+            6,
+            7,
+            7,
+            8
+        ]
+    },
+    {
+        "Name": "Flash Sweat",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            4,
+            4,
+            4,
+            5,
+            5,
+            6,
+            6,
+            7,
+            7,
+            8
+        ]
+    },
+    {
+        "Name": "Iron Flesh",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            4
+        ]
+    },
+    {
+        "Name": "Warmth",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            4,
+            4,
+            4,
+            5,
+            5,
+            6,
+            6,
+            7,
+            7,
+            8
+        ]
+    },
+    {
+        "Name": "Immolation",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            8,
+            8,
+            9,
+            10,
+            11,
+            11,
+            12,
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "Name": "Fire Snake",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 2,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            4
+        ]
+    },
+    {
+        "Name": "Dance of Fire",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            6
+        ]
+    },
+    {
+        "Name": "Outcry",
+        "RequiredIntelligence": 0,
+        "RequiredFaith": 0,
+        "SpellSlotCost": 2,
+        "UsageCountCurve": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2
+        ]
+    },
+    {
+        "Name": "Dark Orb",
+        "RequiredIntelligence": 12,
+        "RequiredFaith": 10,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            30
+        ]
+    },
+    {
+        "Name": "Dark Hail",
+        "RequiredIntelligence": 19,
+        "RequiredFaith": 12,
+        "SpellSlotCost": 2,
+        "UsageCountCurve": [
+            8,
+            8,
+            9,
+            10,
+            11,
+            11,
+            12,
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "Name": "Dark Fog",
+        "RequiredIntelligence": 25,
+        "RequiredFaith": 14,
+        "SpellSlotCost": 2,
+        "UsageCountCurve": [
+            4,
+            4,
+            4,
+            5,
+            5,
+            6,
+            6,
+            7,
+            7,
+            8
+        ]
+    },
+    {
+        "Name": "Affinity",
+        "RequiredIntelligence": 40,
+        "RequiredFaith": 24,
+        "SpellSlotCost": 3,
+        "UsageCountCurve": [
+            8,
+            8,
+            9,
+            10,
+            11,
+            11,
+            12,
+            13,
+            14,
+            15
+        ]
+    },
+    {
+        "Name": "Dead Again",
+        "RequiredIntelligence": 22,
+        "RequiredFaith": 20,
+        "SpellSlotCost": 2,
+        "UsageCountCurve": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            20
+        ]
+    },
+    {
+        "Name": "Dark Weapon",
+        "RequiredIntelligence": 16,
+        "RequiredFaith": 14,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            4,
+            4,
+            4,
+            5,
+            5,
+            6,
+            6,
+            7,
+            7,
+            8
+        ]
+    },
+    {
+        "Name": "Whisper of Despair",
+        "RequiredIntelligence": 24,
+        "RequiredFaith": 18,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5
+        ]
+    },
+    {
+        "Name": "Repel",
+        "RequiredIntelligence": 35,
+        "RequiredFaith": 27,
+        "SpellSlotCost": 3,
+        "UsageCountCurve": [
+            15,
+            15,
+            16,
+            16,
+            17,
+            17,
+            18,
+            18,
+            19,
+            20
+        ]
+    },
+    {
+        "Name": "Twisted Barricade",
+        "RequiredIntelligence": 38,
+        "RequiredFaith": 25,
+        "SpellSlotCost": 2,
+        "UsageCountCurve": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            30
+        ]
+    },
+    {
+        "Name": "Numbness",
+        "RequiredIntelligence": 42,
+        "RequiredFaith": 30,
+        "SpellSlotCost": 2,
+        "UsageCountCurve": [
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            6
+        ]
+    },
+    {
+        "Name": "Dark Greatsword",
+        "RequiredIntelligence": 55,
+        "RequiredFaith": 29,
+        "SpellSlotCost": 2,
+        "UsageCountCurve": [
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            6
+        ]
+    },
+    {
+        "Name": "Recollection",
+        "RequiredIntelligence": 35,
+        "RequiredFaith": 30,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            7,
+            7,
+            7,
+            7,
+            8
+        ]
+    },
+    {
+        "Name": "Scraps of Life",
+        "RequiredIntelligence": 8,
+        "RequiredFaith": 12,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            4,
+            4,
+            4,
+            5,
+            5,
+            6,
+            6,
+            7,
+            7,
+            8
+        ]
+    },
+    {
+        "Name": "Darkstorm",
+        "RequiredIntelligence": 12,
+        "RequiredFaith": 21,
+        "SpellSlotCost": 2,
+        "UsageCountCurve": [
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            6
+        ]
+    },
+    {
+        "Name": "Resonant Soul",
+        "RequiredIntelligence": 10,
+        "RequiredFaith": 18,
+        "SpellSlotCost": 2,
+        "UsageCountCurve": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            30
+        ]
+    },
+    {
+        "Name": "Great Resonant Soul",
+        "RequiredIntelligence": 13,
+        "RequiredFaith": 26,
+        "SpellSlotCost": 2,
+        "UsageCountCurve": [
+            4,
+            4,
+            4,
+            5,
+            5,
+            6,
+            6,
+            7,
+            7,
+            8
+        ]
+    },
+    {
+        "Name": "Climax",
+        "RequiredIntelligence": 30,
+        "RequiredFaith": 47,
+        "SpellSlotCost": 4,
+        "UsageCountCurve": [
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            6
+        ]
+    },
+    {
+        "Name": "Resonant Flesh",
+        "RequiredIntelligence": 11,
+        "RequiredFaith": 19,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            4
+        ]
+    },
+    {
+        "Name": "Resonant Weapon",
+        "RequiredIntelligence": 15,
+        "RequiredFaith": 24,
+        "SpellSlotCost": 2,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5
+        ]
+    },
+    {
+        "Name": "Lifedrain Patch",
+        "RequiredIntelligence": 20,
+        "RequiredFaith": 35,
+        "SpellSlotCost": 1,
+        "UsageCountCurve": [
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            6
+        ]
+    },
+    {
+        "Name": "Profound Still",
+        "RequiredIntelligence": 20,
+        "RequiredFaith": 42,
+        "SpellSlotCost": 2,
+        "UsageCountCurve": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            2,
+            3
+        ]
+    },
+    {
+        "Name": "Promised Walk of Peace",
+        "RequiredIntelligence": 30,
+        "RequiredFaith": 40,
+        "SpellSlotCost": 2,
+        "UsageCountCurve": [
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5
+        ]
+    },
+    {
+        "Name": "Dark Dance",
+        "RequiredIntelligence": 22,
+        "RequiredFaith": 60,
+        "SpellSlotCost": 2,
+        "UsageCountCurve": [
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            5,
+            5,
+            5,
+            6
+        ]
+    }
+]
