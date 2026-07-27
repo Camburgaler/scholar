@@ -1,8 +1,26 @@
 import WeaponDisplay from "@/lib/components/characterInfo/middleColumn/WeaponDisplay";
 import StatDisplay from "@/lib/components/characterInfo/StatDisplay";
 import { Chestpieces, Gauntlets, Helmets, Leggings } from "@/lib/gameData";
+import { VirtualAttributesContext } from "@/lib/reducers/virtualAttributes";
+import Armor from "@/lib/types/armor";
+import { useContext } from "react";
 
 export default function MiddleColumn() {
+    // Context
+    const virtualAttributes = useContext(VirtualAttributesContext);
+
+    // Helper Functions
+    function filterArmor(armor: Armor[]) {
+        return armor.filter(
+            (armor) =>
+                armor.Requirements.Strength <= virtualAttributes.Strength &&
+                armor.Requirements.Dexterity <= virtualAttributes.Dexterity &&
+                armor.Requirements.Intelligence <=
+                    virtualAttributes.Intelligence &&
+                armor.Requirements.Faith <= virtualAttributes.Faith,
+        );
+    }
+
     return (
         <div className="flex flex-col w-full h-full items-left justify-baseline align-center">
             {/* Stats */}
@@ -53,7 +71,7 @@ export default function MiddleColumn() {
                         id="helmet"
                         defaultValue="0"
                     >
-                        {Helmets.map((helmet) => (
+                        {filterArmor(Helmets).map((helmet) => (
                             <option key={helmet.Name} value={helmet.Name}>
                                 {helmet.Name}
                             </option>
@@ -79,7 +97,7 @@ export default function MiddleColumn() {
                         id="chestpiece"
                         defaultValue="0"
                     >
-                        {Chestpieces.map((chestpiece) => (
+                        {filterArmor(Chestpieces).map((chestpiece) => (
                             <option
                                 key={chestpiece.Name}
                                 value={chestpiece.Name}
@@ -103,7 +121,7 @@ export default function MiddleColumn() {
                         id="gauntlets"
                         defaultValue="0"
                     >
-                        {Gauntlets.map((gauntlet) => (
+                        {filterArmor(Gauntlets).map((gauntlet) => (
                             <option key={gauntlet.Name} value={gauntlet.Name}>
                                 {gauntlet.Name}
                             </option>
@@ -129,7 +147,7 @@ export default function MiddleColumn() {
                         id="leggings"
                         defaultValue="0"
                     >
-                        {Leggings.map((legging) => (
+                        {filterArmor(Leggings).map((legging) => (
                             <option key={legging.Name} value={legging.Name}>
                                 {legging.Name}
                             </option>
