@@ -40,7 +40,7 @@ function getItemAttributeAdditions(
                     attributeId: AttributeMapKey,
                 ) => {
                     if (item.AdditiveModifiers?.[attributeId] !== undefined) {
-                        attMap[attributeId].push(
+                        attMap[attributeId]!.push(
                             item.AdditiveModifiers[attributeId],
                         );
                     }
@@ -214,7 +214,7 @@ export default function LeftColumn(props: {
             0, 15, 26, 32, 38, 43, 49, 58, 79, 94,
         ];
         const index: number = attunementBreakpoints.findLastIndex(
-            (breakpoint) => breakpoint <= virtualAttributes.Attunement,
+            (breakpoint) => breakpoint <= virtualAttributes.Attunement!,
         );
 
         return spell.UsageCountCurve[index];
@@ -382,7 +382,9 @@ export default function LeftColumn(props: {
                     className="flex items-center justify-center"
                     htmlFor="starting-class"
                 >
-                    Optimal starting class:
+                    {classLocked
+                        ? "Selected starting class:"
+                        : "Optimal starting class:"}
                 </label>
 
                 <div className="flex gap-2 items-center">

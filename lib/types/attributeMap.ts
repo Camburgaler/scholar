@@ -1,16 +1,18 @@
-export type AttributeMapKey =
+type ScalingAttributeKey = "Strength" | "Dexterity" | "Intelligence" | "Faith";
+
+type OptionalAttributeKey =
     | "Vigor"
     | "Endurance"
     | "Vitality"
     | "Adaptability"
-    | "Strength"
-    | "Dexterity"
-    | "Intelligence"
-    | "Faith"
     | "Attunement";
 
+export type AttributeMapKey = ScalingAttributeKey | OptionalAttributeKey;
+
 type AttributeMap<T> = {
-    [key in AttributeMapKey]: T;
+    [RK in ScalingAttributeKey]: T;
+} & {
+    [OK in OptionalAttributeKey]?: T;
 };
 
 export default AttributeMap;
