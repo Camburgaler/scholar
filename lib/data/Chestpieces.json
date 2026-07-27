@@ -1,2555 +1,3221 @@
 [
     {
         "Name": "No Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
         "Weight": 0,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Pate's Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 5.9,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Black Leather Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 3.9,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Wanderer Coat",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 3.5,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Leather Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 4.7,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Knight Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 10.9,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 20,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Elite Knight Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 11.7,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 15,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Tattered Cloth Robe",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 2.7,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Brigand Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 3.1,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Imported Tunic",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 6.5,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Traveling Merchant Coat",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 7.7,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Havel's Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 19.5,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 51,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Jester's Robes",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 5.7,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 14,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Astrologist's Robe",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 4.1,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Faraam Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 12.6,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 24,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Black Dragon Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 4.8,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Xanthous Overcoat",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 3.9,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Robe of Judgment",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 3.9,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Armor of Aurous (Visible)",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 3.2,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Armor of Aurous (Invisible)",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 10.1,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 18,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Monastery Longshirt",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 1.6,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Dingy Robe",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 3,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Moon Butterfly Wings",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 1.4,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Catarina Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 11.7,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 25,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Alva Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 8.8,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 15,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Black Witch Robe",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 4.8,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Drakeblood Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 12.5,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 22,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Northwarder Robe",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 2.5,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Hollow Soldier Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 8.6,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 7,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Royal Soldier Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 9.2,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 16,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Hollow Infantry Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 5.9,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Infantry Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 5.9,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "White Priest Robe",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 3.3,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Priestess Robe",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 2.8,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Rogue Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 3.5,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Bandit Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 6.2,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 5,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Varangian Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 5.1,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Black Hollow Mage Robe",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 3.3,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "White Hollow Mage Robe",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 2.8,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Lion Mage Robe",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 2.2,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Steel Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 14,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 36,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Shadow Top",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 2.6,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Manikin Top",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 2.3,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Prisoner's Tatters (Master's Attire)",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 2.2,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Prisoner's Tatters",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 2.2,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Archdrake Robes",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 9.8,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 13.5,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Gyrm Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 12.3,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 26,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Gyrm Warrior Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 19.7,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 47,
+        "Requirements": {
+            "Strength": 14,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Dark Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 9.8,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 16,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Tseldora Robe",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 3,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Peasant Attire",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 3.8,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Ironclad Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 29.8,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 36,
+        "Requirements": {
+            "Strength": 14,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Old Ironclad Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 29.8,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 32,
+        "Requirements": {
+            "Strength": 14,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Royal Swordsman Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 11.2,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 18,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Syan's Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 13.8,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 23,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Bone King Robe",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 3.8,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Heide Knight Chainmail",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 10.9,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 20,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Singer's Dress",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 2.6,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Smelter Demon Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 17.6,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 43,
+        "Requirements": {
+            "Strength": 16,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Alonne Captain Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 15.6,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 38,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Alonne Knight Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 14.2,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 38,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Vengarl's Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 15.1,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 39,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Lion Warrior Cape",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 1.5,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Red Lion Warrior Cape",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 1.5,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Grave Warden Top",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 6,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Falconer Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 7.7,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 12,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Rusted Mastodon Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 15.9,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 32,
+        "Requirements": {
+            "Strength": 14,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Mastodon Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 17.7,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 39,
+        "Requirements": {
+            "Strength": 16,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Desert Sorceress Top",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 2.7,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Dragon Acolyte Robe",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 3.9,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Ruin Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 10.5,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 18,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Old Knight Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 16.4,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 50,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Drakekeeper Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 15.7,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 40,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Throne Defender Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 13.8,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 25,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Velstadt's Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 15.2,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 33,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Throne Watcher Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 11.2,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 16,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Looking Glass Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 18.3,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 44,
+        "Requirements": {
+            "Strength": 16,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Agdayne's Black Robe",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 5.8,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Leydia Black Robe",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 3.5,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Insolent Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 9.8,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 16,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Imperious Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 14.7,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 35,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Leydia White Robe",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 3.5,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "King's Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 12,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 16.5,
+        "Requirements": {
+            "Strength": 14,
+            "Dexterity": 12,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Dragonrider Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 16,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 45,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Executioner Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 6.7,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 7.5,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Penal Straightjacket",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 6.2,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Fume Sorcerer Robes",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 4.7,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Rampart Golem Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 15.5,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 38,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Sanctum Knight Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 14.4,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 27,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Raime's Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 13.6,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 23,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Retainer Robe",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 3.3,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Alonne's Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 9,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 17,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Loyce Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 12.3,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 20,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Charred Loyce Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 12.8,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 22,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Ivory King Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 14.8,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 28,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Armor of the Forlorn",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 11.3,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 22,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Llewellyn Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 6.8,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 17,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Drangleic Mail",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 14.5,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 28,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Creighton's Chainmail",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 9.7,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 14.5,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Benhart's Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 10.5,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 18,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Hard Leather Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 7.2,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Cale's Leather Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 6.4,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Lucatiel's Vest",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 6,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Bell Keeper Bellyband",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 6,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Mad Warrior Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 12.5,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 25,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Black Robes",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 2.6,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 16,
+            "Faith": 0
+        }
     },
     {
         "Name": "Saint's Dress",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 2.6,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 16
+        }
     },
     {
         "Name": "Hexer's Robe",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 2.6,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Chaos Robe",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 2.6,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 16,
+            "Faith": 16
+        }
     },
     {
         "Name": "Nahr Alma Robes",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 3.5,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 0,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     },
     {
         "Name": "Targray's Armor",
-        "AdditiveModifiers": null,
-        "MultiplicativeModifiers": null,
-        "Weight": 0,
+        "AdditiveModifiers": {},
+        "MultiplicativeModifiers": {},
+        "Weight": 9.8,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
             "Strike": 0,
-            "Standard": 0
-        },
-        "Absorptions": {
+            "Standard": 0,
             "Magic": 0,
             "Lightning": 0,
             "Fire": 0,
-            "Dark": 0,
+            "Dark": 0
+        },
+        "Resistances": {
             "Poison": 0,
             "Bleed": 0,
             "Petrify": 0,
             "Curse": 0
         },
-        "Poise": 0
+        "Poise": 17,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        }
     }
 ]
