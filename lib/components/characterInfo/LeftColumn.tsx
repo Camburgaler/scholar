@@ -32,34 +32,45 @@ const MAX_PLAYER_LEVEL = 838;
 function getItemAttributeAdditions(
     items: Equippable[],
 ): AttributeMap<number[]> {
-    return items.reduce(
-        (attributes: AttributeMap<number[]>, item: Equippable) =>
-            (Object.keys(attributes) as AttributeMapKey[]).reduce(
-                (
-                    attMap: AttributeMap<number[]>,
-                    attributeId: AttributeMapKey,
-                ) => {
-                    if (item.AdditiveModifiers?.[attributeId] !== undefined) {
-                        attMap[attributeId]!.push(
-                            item.AdditiveModifiers[attributeId],
-                        );
-                    }
-                    return attMap;
-                },
-                attributes,
-            ),
-        {
-            Vigor: [],
-            Endurance: [],
-            Vitality: [],
-            Adaptability: [],
-            Strength: [],
-            Dexterity: [],
-            Intelligence: [],
-            Faith: [],
-            Attunement: [],
-        },
-    );
+    // return items.reduce(
+    //     (attributes: AttributeMap<number[]>, item: Equippable) =>
+    //         (Object.keys(attributes) as AttributeMapKey[]).reduce(
+    //             (
+    //                 attMap: AttributeMap<number[]>,
+    //                 attributeId: AttributeMapKey,
+    //             ) => {
+    //                 if (item.AdditiveModifiers?.[attributeId] !== undefined) {
+    //                     attMap[attributeId]!.push(
+    //                         item.AdditiveModifiers[attributeId],
+    //                     );
+    //                 }
+    //                 return attMap;
+    //             },
+    //             attributes,
+    //         ),
+    //     {
+    //         Vigor: [],
+    //         Endurance: [],
+    //         Vitality: [],
+    //         Adaptability: [],
+    //         Strength: [],
+    //         Dexterity: [],
+    //         Intelligence: [],
+    //         Faith: [],
+    //         Attunement: [],
+    //     },
+    // );
+    return {
+        Vigor: [],
+        Endurance: [],
+        Vitality: [],
+        Adaptability: [],
+        Strength: [],
+        Dexterity: [],
+        Intelligence: [],
+        Faith: [],
+        Attunement: [],
+    };
 }
 
 function sumArray(array: number[]): number {

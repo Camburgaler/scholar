@@ -1,9 +1,8 @@
-import ModifierMap from "@/lib/types/modifer";
+import Modifier from "@/lib/types/modifier";
 
 type Equippable = {
     Name: string; //pk
-    AdditiveModifiers?: ModifierMap;
-    MultiplicativeModifiers?: ModifierMap;
+    Modifiers?: Modifier[];
     Weight: number;
 };
 

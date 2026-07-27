@@ -39,3 +39,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+ds2application-995a091c9ba9f63b4097766a3cdb5a3f2f6dfd2c72f8c4c36868693a99f1f1b1.js

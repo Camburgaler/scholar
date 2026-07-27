@@ -1,8 +1,7 @@
 [
     {
         "Name": "No Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 0,
         "Defenses": {
             "Slash": 0,
@@ -30,8 +29,7 @@
     },
     {
         "Name": "Pate's Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 5.9,
         "Defenses": {
             "Slash": 0,
@@ -59,8 +57,7 @@
     },
     {
         "Name": "Black Leather Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3.9,
         "Defenses": {
             "Slash": 0,
@@ -88,8 +85,7 @@
     },
     {
         "Name": "Wanderer Coat",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3.5,
         "Defenses": {
             "Slash": 0,
@@ -117,8 +113,7 @@
     },
     {
         "Name": "Leather Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4.7,
         "Defenses": {
             "Slash": 0,
@@ -146,8 +141,7 @@
     },
     {
         "Name": "Knight Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 10.9,
         "Defenses": {
             "Slash": 0,
@@ -175,8 +169,7 @@
     },
     {
         "Name": "Elite Knight Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 11.7,
         "Defenses": {
             "Slash": 0,
@@ -204,8 +197,7 @@
     },
     {
         "Name": "Tattered Cloth Robe",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2.7,
         "Defenses": {
             "Slash": 0,
@@ -233,8 +225,7 @@
     },
     {
         "Name": "Brigand Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3.1,
         "Defenses": {
             "Slash": 0,
@@ -262,8 +253,7 @@
     },
     {
         "Name": "Imported Tunic",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 6.5,
         "Defenses": {
             "Slash": 0,
@@ -291,8 +281,7 @@
     },
     {
         "Name": "Traveling Merchant Coat",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 7.7,
         "Defenses": {
             "Slash": 0,
@@ -320,8 +309,7 @@
     },
     {
         "Name": "Havel's Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 19.5,
         "Defenses": {
             "Slash": 0,
@@ -349,8 +337,7 @@
     },
     {
         "Name": "Jester's Robes",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 5.7,
         "Defenses": {
             "Slash": 0,
@@ -378,8 +365,7 @@
     },
     {
         "Name": "Astrologist's Robe",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4.1,
         "Defenses": {
             "Slash": 0,
@@ -407,8 +393,7 @@
     },
     {
         "Name": "Faraam Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 12.6,
         "Defenses": {
             "Slash": 0,
@@ -436,8 +421,7 @@
     },
     {
         "Name": "Black Dragon Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4.8,
         "Defenses": {
             "Slash": 0,
@@ -465,8 +449,7 @@
     },
     {
         "Name": "Xanthous Overcoat",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3.9,
         "Defenses": {
             "Slash": 0,
@@ -494,8 +477,7 @@
     },
     {
         "Name": "Robe of Judgment",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3.9,
         "Defenses": {
             "Slash": 0,
@@ -523,8 +505,7 @@
     },
     {
         "Name": "Armor of Aurous (Visible)",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3.2,
         "Defenses": {
             "Slash": 0,
@@ -552,8 +533,7 @@
     },
     {
         "Name": "Armor of Aurous (Invisible)",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 10.1,
         "Defenses": {
             "Slash": 0,
@@ -581,8 +561,7 @@
     },
     {
         "Name": "Monastery Longshirt",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.6,
         "Defenses": {
             "Slash": 0,
@@ -610,8 +589,7 @@
     },
     {
         "Name": "Dingy Robe",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3,
         "Defenses": {
             "Slash": 0,
@@ -639,8 +617,7 @@
     },
     {
         "Name": "Moon Butterfly Wings",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.4,
         "Defenses": {
             "Slash": 0,
@@ -668,8 +645,7 @@
     },
     {
         "Name": "Catarina Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 11.7,
         "Defenses": {
             "Slash": 0,
@@ -697,8 +673,7 @@
     },
     {
         "Name": "Alva Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 8.8,
         "Defenses": {
             "Slash": 0,
@@ -726,8 +701,7 @@
     },
     {
         "Name": "Black Witch Robe",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4.8,
         "Defenses": {
             "Slash": 0,
@@ -755,8 +729,7 @@
     },
     {
         "Name": "Drakeblood Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 12.5,
         "Defenses": {
             "Slash": 0,
@@ -784,8 +757,7 @@
     },
     {
         "Name": "Northwarder Robe",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2.5,
         "Defenses": {
             "Slash": 0,
@@ -813,8 +785,7 @@
     },
     {
         "Name": "Hollow Soldier Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 8.6,
         "Defenses": {
             "Slash": 0,
@@ -842,8 +813,7 @@
     },
     {
         "Name": "Royal Soldier Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 9.2,
         "Defenses": {
             "Slash": 0,
@@ -871,8 +841,7 @@
     },
     {
         "Name": "Hollow Infantry Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 5.9,
         "Defenses": {
             "Slash": 0,
@@ -900,8 +869,7 @@
     },
     {
         "Name": "Infantry Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 5.9,
         "Defenses": {
             "Slash": 0,
@@ -929,8 +897,7 @@
     },
     {
         "Name": "White Priest Robe",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3.3,
         "Defenses": {
             "Slash": 0,
@@ -958,8 +925,7 @@
     },
     {
         "Name": "Priestess Robe",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2.8,
         "Defenses": {
             "Slash": 0,
@@ -987,8 +953,7 @@
     },
     {
         "Name": "Rogue Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3.5,
         "Defenses": {
             "Slash": 0,
@@ -1016,8 +981,7 @@
     },
     {
         "Name": "Bandit Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 6.2,
         "Defenses": {
             "Slash": 0,
@@ -1045,8 +1009,7 @@
     },
     {
         "Name": "Varangian Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 5.1,
         "Defenses": {
             "Slash": 0,
@@ -1074,8 +1037,7 @@
     },
     {
         "Name": "Black Hollow Mage Robe",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3.3,
         "Defenses": {
             "Slash": 0,
@@ -1103,8 +1065,7 @@
     },
     {
         "Name": "White Hollow Mage Robe",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2.8,
         "Defenses": {
             "Slash": 0,
@@ -1132,8 +1093,7 @@
     },
     {
         "Name": "Lion Mage Robe",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2.2,
         "Defenses": {
             "Slash": 0,
@@ -1161,8 +1121,7 @@
     },
     {
         "Name": "Steel Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 14,
         "Defenses": {
             "Slash": 0,
@@ -1190,8 +1149,7 @@
     },
     {
         "Name": "Shadow Top",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2.6,
         "Defenses": {
             "Slash": 0,
@@ -1219,8 +1177,7 @@
     },
     {
         "Name": "Manikin Top",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2.3,
         "Defenses": {
             "Slash": 0,
@@ -1248,8 +1205,7 @@
     },
     {
         "Name": "Prisoner's Tatters (Master's Attire)",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2.2,
         "Defenses": {
             "Slash": 0,
@@ -1277,8 +1233,7 @@
     },
     {
         "Name": "Prisoner's Tatters",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2.2,
         "Defenses": {
             "Slash": 0,
@@ -1306,8 +1261,7 @@
     },
     {
         "Name": "Archdrake Robes",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 9.8,
         "Defenses": {
             "Slash": 0,
@@ -1335,8 +1289,7 @@
     },
     {
         "Name": "Gyrm Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 12.3,
         "Defenses": {
             "Slash": 0,
@@ -1364,8 +1317,7 @@
     },
     {
         "Name": "Gyrm Warrior Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 19.7,
         "Defenses": {
             "Slash": 0,
@@ -1393,8 +1345,7 @@
     },
     {
         "Name": "Dark Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 9.8,
         "Defenses": {
             "Slash": 0,
@@ -1422,8 +1373,7 @@
     },
     {
         "Name": "Tseldora Robe",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3,
         "Defenses": {
             "Slash": 0,
@@ -1451,8 +1401,7 @@
     },
     {
         "Name": "Peasant Attire",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3.8,
         "Defenses": {
             "Slash": 0,
@@ -1480,8 +1429,7 @@
     },
     {
         "Name": "Ironclad Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 29.8,
         "Defenses": {
             "Slash": 0,
@@ -1509,8 +1457,7 @@
     },
     {
         "Name": "Old Ironclad Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 29.8,
         "Defenses": {
             "Slash": 0,
@@ -1538,8 +1485,7 @@
     },
     {
         "Name": "Royal Swordsman Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 11.2,
         "Defenses": {
             "Slash": 0,
@@ -1567,8 +1513,7 @@
     },
     {
         "Name": "Syan's Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 13.8,
         "Defenses": {
             "Slash": 0,
@@ -1596,8 +1541,7 @@
     },
     {
         "Name": "Bone King Robe",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3.8,
         "Defenses": {
             "Slash": 0,
@@ -1625,8 +1569,7 @@
     },
     {
         "Name": "Heide Knight Chainmail",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 10.9,
         "Defenses": {
             "Slash": 0,
@@ -1654,8 +1597,7 @@
     },
     {
         "Name": "Singer's Dress",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2.6,
         "Defenses": {
             "Slash": 0,
@@ -1683,8 +1625,7 @@
     },
     {
         "Name": "Smelter Demon Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 17.6,
         "Defenses": {
             "Slash": 0,
@@ -1712,8 +1653,7 @@
     },
     {
         "Name": "Alonne Captain Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 15.6,
         "Defenses": {
             "Slash": 0,
@@ -1741,8 +1681,7 @@
     },
     {
         "Name": "Alonne Knight Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 14.2,
         "Defenses": {
             "Slash": 0,
@@ -1770,8 +1709,7 @@
     },
     {
         "Name": "Vengarl's Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 15.1,
         "Defenses": {
             "Slash": 0,
@@ -1799,8 +1737,7 @@
     },
     {
         "Name": "Lion Warrior Cape",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.5,
         "Defenses": {
             "Slash": 0,
@@ -1828,8 +1765,7 @@
     },
     {
         "Name": "Red Lion Warrior Cape",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.5,
         "Defenses": {
             "Slash": 0,
@@ -1857,8 +1793,7 @@
     },
     {
         "Name": "Grave Warden Top",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 6,
         "Defenses": {
             "Slash": 0,
@@ -1886,8 +1821,7 @@
     },
     {
         "Name": "Falconer Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 7.7,
         "Defenses": {
             "Slash": 0,
@@ -1915,8 +1849,7 @@
     },
     {
         "Name": "Rusted Mastodon Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 15.9,
         "Defenses": {
             "Slash": 0,
@@ -1944,8 +1877,7 @@
     },
     {
         "Name": "Mastodon Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 17.7,
         "Defenses": {
             "Slash": 0,
@@ -1973,8 +1905,7 @@
     },
     {
         "Name": "Desert Sorceress Top",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2.7,
         "Defenses": {
             "Slash": 0,
@@ -2002,8 +1933,7 @@
     },
     {
         "Name": "Dragon Acolyte Robe",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3.9,
         "Defenses": {
             "Slash": 0,
@@ -2031,8 +1961,7 @@
     },
     {
         "Name": "Ruin Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 10.5,
         "Defenses": {
             "Slash": 0,
@@ -2060,8 +1989,7 @@
     },
     {
         "Name": "Old Knight Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 16.4,
         "Defenses": {
             "Slash": 0,
@@ -2089,8 +2017,7 @@
     },
     {
         "Name": "Drakekeeper Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 15.7,
         "Defenses": {
             "Slash": 0,
@@ -2118,8 +2045,7 @@
     },
     {
         "Name": "Throne Defender Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 13.8,
         "Defenses": {
             "Slash": 0,
@@ -2147,8 +2073,7 @@
     },
     {
         "Name": "Velstadt's Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 15.2,
         "Defenses": {
             "Slash": 0,
@@ -2176,8 +2101,7 @@
     },
     {
         "Name": "Throne Watcher Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 11.2,
         "Defenses": {
             "Slash": 0,
@@ -2205,8 +2129,7 @@
     },
     {
         "Name": "Looking Glass Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 18.3,
         "Defenses": {
             "Slash": 0,
@@ -2234,8 +2157,7 @@
     },
     {
         "Name": "Agdayne's Black Robe",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 5.8,
         "Defenses": {
             "Slash": 0,
@@ -2263,8 +2185,7 @@
     },
     {
         "Name": "Leydia Black Robe",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3.5,
         "Defenses": {
             "Slash": 0,
@@ -2292,8 +2213,7 @@
     },
     {
         "Name": "Insolent Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 9.8,
         "Defenses": {
             "Slash": 0,
@@ -2321,8 +2241,7 @@
     },
     {
         "Name": "Imperious Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 14.7,
         "Defenses": {
             "Slash": 0,
@@ -2350,8 +2269,7 @@
     },
     {
         "Name": "Leydia White Robe",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3.5,
         "Defenses": {
             "Slash": 0,
@@ -2379,8 +2297,7 @@
     },
     {
         "Name": "King's Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 12,
         "Defenses": {
             "Slash": 0,
@@ -2408,8 +2325,7 @@
     },
     {
         "Name": "Dragonrider Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 16,
         "Defenses": {
             "Slash": 0,
@@ -2437,8 +2353,7 @@
     },
     {
         "Name": "Executioner Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 6.7,
         "Defenses": {
             "Slash": 0,
@@ -2466,8 +2381,7 @@
     },
     {
         "Name": "Penal Straightjacket",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 6.2,
         "Defenses": {
             "Slash": 0,
@@ -2495,8 +2409,7 @@
     },
     {
         "Name": "Fume Sorcerer Robes",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4.7,
         "Defenses": {
             "Slash": 0,
@@ -2524,8 +2437,7 @@
     },
     {
         "Name": "Rampart Golem Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 15.5,
         "Defenses": {
             "Slash": 0,
@@ -2553,8 +2465,7 @@
     },
     {
         "Name": "Sanctum Knight Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 14.4,
         "Defenses": {
             "Slash": 0,
@@ -2582,8 +2493,7 @@
     },
     {
         "Name": "Raime's Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 13.6,
         "Defenses": {
             "Slash": 0,
@@ -2611,8 +2521,7 @@
     },
     {
         "Name": "Retainer Robe",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3.3,
         "Defenses": {
             "Slash": 0,
@@ -2640,8 +2549,7 @@
     },
     {
         "Name": "Alonne's Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 9,
         "Defenses": {
             "Slash": 0,
@@ -2669,8 +2577,7 @@
     },
     {
         "Name": "Loyce Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 12.3,
         "Defenses": {
             "Slash": 0,
@@ -2698,8 +2605,7 @@
     },
     {
         "Name": "Charred Loyce Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 12.8,
         "Defenses": {
             "Slash": 0,
@@ -2727,8 +2633,7 @@
     },
     {
         "Name": "Ivory King Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 14.8,
         "Defenses": {
             "Slash": 0,
@@ -2756,8 +2661,7 @@
     },
     {
         "Name": "Armor of the Forlorn",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 11.3,
         "Defenses": {
             "Slash": 0,
@@ -2785,8 +2689,7 @@
     },
     {
         "Name": "Llewellyn Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 6.8,
         "Defenses": {
             "Slash": 0,
@@ -2814,8 +2717,7 @@
     },
     {
         "Name": "Drangleic Mail",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 14.5,
         "Defenses": {
             "Slash": 0,
@@ -2843,8 +2745,7 @@
     },
     {
         "Name": "Creighton's Chainmail",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 9.7,
         "Defenses": {
             "Slash": 0,
@@ -2872,8 +2773,7 @@
     },
     {
         "Name": "Benhart's Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 10.5,
         "Defenses": {
             "Slash": 0,
@@ -2901,8 +2801,7 @@
     },
     {
         "Name": "Hard Leather Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 7.2,
         "Defenses": {
             "Slash": 0,
@@ -2930,8 +2829,7 @@
     },
     {
         "Name": "Cale's Leather Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 6.4,
         "Defenses": {
             "Slash": 0,
@@ -2959,8 +2857,7 @@
     },
     {
         "Name": "Lucatiel's Vest",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 6,
         "Defenses": {
             "Slash": 0,
@@ -2988,8 +2885,7 @@
     },
     {
         "Name": "Bell Keeper Bellyband",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 6,
         "Defenses": {
             "Slash": 0,
@@ -3017,8 +2913,7 @@
     },
     {
         "Name": "Mad Warrior Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 12.5,
         "Defenses": {
             "Slash": 0,
@@ -3046,8 +2941,7 @@
     },
     {
         "Name": "Black Robes",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2.6,
         "Defenses": {
             "Slash": 0,
@@ -3075,8 +2969,7 @@
     },
     {
         "Name": "Saint's Dress",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2.6,
         "Defenses": {
             "Slash": 0,
@@ -3104,8 +2997,7 @@
     },
     {
         "Name": "Hexer's Robe",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2.6,
         "Defenses": {
             "Slash": 0,
@@ -3133,8 +3025,7 @@
     },
     {
         "Name": "Chaos Robe",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2.6,
         "Defenses": {
             "Slash": 0,
@@ -3162,8 +3053,7 @@
     },
     {
         "Name": "Nahr Alma Robes",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3.5,
         "Defenses": {
             "Slash": 0,
@@ -3191,8 +3081,7 @@
     },
     {
         "Name": "Targray's Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 9.8,
         "Defenses": {
             "Slash": 0,

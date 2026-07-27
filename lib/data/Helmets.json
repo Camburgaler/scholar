@@ -1,8 +1,7 @@
 [
     {
         "Name": "No Armor",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 0,
         "Defenses": {
             "Slash": 0,
@@ -30,8 +29,7 @@
     },
     {
         "Name": "Pate's Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3.5,
         "Defenses": {
             "Slash": 0,
@@ -59,8 +57,7 @@
     },
     {
         "Name": "Thief Mask",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.2,
         "Defenses": {
             "Slash": 0,
@@ -88,8 +85,7 @@
     },
     {
         "Name": "Wanderer Hood",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.4,
         "Defenses": {
             "Slash": 0,
@@ -117,8 +113,7 @@
     },
     {
         "Name": "Hunter's Hat",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.2,
         "Defenses": {
             "Slash": 0,
@@ -146,8 +141,7 @@
     },
     {
         "Name": "Knight Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4.2,
         "Defenses": {
             "Slash": 0,
@@ -175,8 +169,7 @@
     },
     {
         "Name": "Elite Knight Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4.5,
         "Defenses": {
             "Slash": 0,
@@ -204,8 +197,7 @@
     },
     {
         "Name": "Tattered Cloth Hood",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.1,
         "Defenses": {
             "Slash": 0,
@@ -233,8 +225,7 @@
     },
     {
         "Name": "Brigand Hood",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.2,
         "Defenses": {
             "Slash": 0,
@@ -262,8 +253,7 @@
     },
     {
         "Name": "Imported Hood",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2.2,
         "Defenses": {
             "Slash": 0,
@@ -291,8 +281,7 @@
     },
     {
         "Name": "Traveling Merchant Hat",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2.6,
         "Defenses": {
             "Slash": 0,
@@ -320,8 +309,7 @@
     },
     {
         "Name": "Havel's Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 7.5,
         "Defenses": {
             "Slash": 0,
@@ -349,8 +337,7 @@
     },
     {
         "Name": "Jester's Cap",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3,
         "Defenses": {
             "Slash": 0,
@@ -378,8 +365,7 @@
     },
     {
         "Name": "Moon Hat",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2.2,
         "Defenses": {
             "Slash": 0,
@@ -407,8 +393,7 @@
     },
     {
         "Name": "Faraam Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4.8,
         "Defenses": {
             "Slash": 0,
@@ -436,8 +421,7 @@
     },
     {
         "Name": "Black Dragon Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2.2,
         "Defenses": {
             "Slash": 0,
@@ -465,8 +449,7 @@
     },
     {
         "Name": "Xanthous Crown",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 5,
         "Defenses": {
             "Slash": 0,
@@ -494,8 +477,7 @@
     },
     {
         "Name": "Mask of Judgment",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2.5,
         "Defenses": {
             "Slash": 0,
@@ -523,8 +505,7 @@
     },
     {
         "Name": "Helm of Aurous (Visible)",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.2,
         "Defenses": {
             "Slash": 0,
@@ -552,8 +533,7 @@
     },
     {
         "Name": "Helm of Aurous (Invisible)",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3.8,
         "Defenses": {
             "Slash": 0,
@@ -581,8 +561,7 @@
     },
     {
         "Name": "Monastery Headcloth",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 0.6,
         "Defenses": {
             "Slash": 0,
@@ -610,8 +589,7 @@
     },
     {
         "Name": "Dingy Hood",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 0.8,
         "Defenses": {
             "Slash": 0,
@@ -639,8 +617,7 @@
     },
     {
         "Name": "Durgo's Hat",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2.6,
         "Defenses": {
             "Slash": 0,
@@ -668,8 +645,7 @@
     },
     {
         "Name": "Moon Butterfly Hat",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 0.8,
         "Defenses": {
             "Slash": 0,
@@ -697,8 +673,7 @@
     },
     {
         "Name": "Catarina Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4.5,
         "Defenses": {
             "Slash": 0,
@@ -726,8 +701,7 @@
     },
     {
         "Name": "Alva Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3.7,
         "Defenses": {
             "Slash": 0,
@@ -755,8 +729,7 @@
     },
     {
         "Name": "Black Witch Veil",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 0.5,
         "Defenses": {
             "Slash": 0,
@@ -784,8 +757,7 @@
     },
     {
         "Name": "Black Witch Hat",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.5,
         "Defenses": {
             "Slash": 0,
@@ -813,8 +785,7 @@
     },
     {
         "Name": "Black Witch Domino Mask",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 0.5,
         "Defenses": {
             "Slash": 0,
@@ -842,8 +813,7 @@
     },
     {
         "Name": "Drakeblood Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4.7,
         "Defenses": {
             "Slash": 0,
@@ -871,8 +841,7 @@
     },
     {
         "Name": "Northwarder Hood",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 0.9,
         "Defenses": {
             "Slash": 0,
@@ -900,8 +869,7 @@
     },
     {
         "Name": "Crown of the Old Iron King",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4,
         "Defenses": {
             "Slash": 0,
@@ -929,8 +897,7 @@
     },
     {
         "Name": "Crown of the Ivory King",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3.5,
         "Defenses": {
             "Slash": 0,
@@ -958,8 +925,7 @@
     },
     {
         "Name": "Crown of the Sunken King",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4,
         "Defenses": {
             "Slash": 0,
@@ -987,8 +953,7 @@
     },
     {
         "Name": "Old Bell Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 6,
         "Defenses": {
             "Slash": 0,
@@ -1016,8 +981,7 @@
     },
     {
         "Name": "Hollow Skin",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.5,
         "Defenses": {
             "Slash": 0,
@@ -1045,8 +1009,7 @@
     },
     {
         "Name": "Pharros Mask",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4.3,
         "Defenses": {
             "Slash": 0,
@@ -1074,8 +1037,7 @@
     },
     {
         "Name": "Minotaur Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 9.8,
         "Defenses": {
             "Slash": 0,
@@ -1103,8 +1065,7 @@
     },
     {
         "Name": "Symbol of Avarice",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 8,
         "Defenses": {
             "Slash": 0,
@@ -1132,8 +1093,7 @@
     },
     {
         "Name": "Hollow Soldier Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4.3,
         "Defenses": {
             "Slash": 0,
@@ -1161,8 +1121,7 @@
     },
     {
         "Name": "Royal Soldier Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4.8,
         "Defenses": {
             "Slash": 0,
@@ -1190,8 +1149,7 @@
     },
     {
         "Name": "Hollow Infantry Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4,
         "Defenses": {
             "Slash": 0,
@@ -1219,8 +1177,7 @@
     },
     {
         "Name": "Infantry Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4,
         "Defenses": {
             "Slash": 0,
@@ -1248,8 +1205,7 @@
     },
     {
         "Name": "White Priest Headpiece",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.4,
         "Defenses": {
             "Slash": 0,
@@ -1277,8 +1233,7 @@
     },
     {
         "Name": "Priestess Headpiece",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.2,
         "Defenses": {
             "Slash": 0,
@@ -1306,8 +1261,7 @@
     },
     {
         "Name": "Rogue Hood",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 0.7,
         "Defenses": {
             "Slash": 0,
@@ -1335,8 +1289,7 @@
     },
     {
         "Name": "Spiked Bandit Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4.1,
         "Defenses": {
             "Slash": 0,
@@ -1364,8 +1317,7 @@
     },
     {
         "Name": "Varangian Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4.6,
         "Defenses": {
             "Slash": 0,
@@ -1393,8 +1345,7 @@
     },
     {
         "Name": "Black Hollow Mage Hood",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.9,
         "Defenses": {
             "Slash": 0,
@@ -1422,8 +1373,7 @@
     },
     {
         "Name": "White Hollow Mage Hood",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.8,
         "Defenses": {
             "Slash": 0,
@@ -1451,8 +1401,7 @@
     },
     {
         "Name": "Steel Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 5.4,
         "Defenses": {
             "Slash": 0,
@@ -1480,8 +1429,7 @@
     },
     {
         "Name": "Shadow Mask",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.8,
         "Defenses": {
             "Slash": 0,
@@ -1509,8 +1457,7 @@
     },
     {
         "Name": "Manikin Mask",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.8,
         "Defenses": {
             "Slash": 0,
@@ -1538,8 +1485,7 @@
     },
     {
         "Name": "Prisoner's Hood (Mask Only)",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 0.8,
         "Defenses": {
             "Slash": 0,
@@ -1567,8 +1513,7 @@
     },
     {
         "Name": "Prisoner's Hood",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 0.8,
         "Defenses": {
             "Slash": 0,
@@ -1596,8 +1541,7 @@
     },
     {
         "Name": "Archdrake Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 5.4,
         "Defenses": {
             "Slash": 0,
@@ -1625,8 +1569,7 @@
     },
     {
         "Name": "Gyrm Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 8.2,
         "Defenses": {
             "Slash": 0,
@@ -1654,8 +1597,7 @@
     },
     {
         "Name": "Gyrm Warrior Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 8.9,
         "Defenses": {
             "Slash": 0,
@@ -1683,8 +1625,7 @@
     },
     {
         "Name": "Gyrm Warrior Greathelm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 9.6,
         "Defenses": {
             "Slash": 0,
@@ -1712,8 +1653,7 @@
     },
     {
         "Name": "Dark Mask",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3.8,
         "Defenses": {
             "Slash": 0,
@@ -1741,8 +1681,7 @@
     },
     {
         "Name": "Warlock Mask",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4.8,
         "Defenses": {
             "Slash": 0,
@@ -1770,8 +1709,7 @@
     },
     {
         "Name": "Tseldora Cap",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.4,
         "Defenses": {
             "Slash": 0,
@@ -1799,8 +1737,7 @@
     },
     {
         "Name": "Peasant Hat",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.3,
         "Defenses": {
             "Slash": 0,
@@ -1828,8 +1765,7 @@
     },
     {
         "Name": "Ironclad Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 6.3,
         "Defenses": {
             "Slash": 0,
@@ -1857,8 +1793,7 @@
     },
     {
         "Name": "Old Ironclad Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 6.3,
         "Defenses": {
             "Slash": 0,
@@ -1886,8 +1821,7 @@
     },
     {
         "Name": "Royal Swordsman Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4.7,
         "Defenses": {
             "Slash": 0,
@@ -1915,8 +1849,7 @@
     },
     {
         "Name": "Syan's Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 6.2,
         "Defenses": {
             "Slash": 0,
@@ -1944,8 +1877,7 @@
     },
     {
         "Name": "Bone Crown",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.7,
         "Defenses": {
             "Slash": 0,
@@ -1973,8 +1905,7 @@
     },
     {
         "Name": "Heide Knight Greathelm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 6,
         "Defenses": {
             "Slash": 0,
@@ -2002,8 +1933,7 @@
     },
     {
         "Name": "Heide Knight Iron Mask",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 5.2,
         "Defenses": {
             "Slash": 0,
@@ -2031,8 +1961,7 @@
     },
     {
         "Name": "Smelter Demon Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 9,
         "Defenses": {
             "Slash": 0,
@@ -2060,8 +1989,7 @@
     },
     {
         "Name": "Alonne Captain Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 5.1,
         "Defenses": {
             "Slash": 0,
@@ -2089,8 +2017,7 @@
     },
     {
         "Name": "Alonne Knight Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4.6,
         "Defenses": {
             "Slash": 0,
@@ -2118,8 +2045,7 @@
     },
     {
         "Name": "Vengarl's Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 6.8,
         "Defenses": {
             "Slash": 0,
@@ -2147,8 +2073,7 @@
     },
     {
         "Name": "Lion Warrior Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 0.5,
         "Defenses": {
             "Slash": 0,
@@ -2176,8 +2101,7 @@
     },
     {
         "Name": "Grave Warden Mask",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 0.5,
         "Defenses": {
             "Slash": 0,
@@ -2205,8 +2129,7 @@
     },
     {
         "Name": "Falconer Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4.5,
         "Defenses": {
             "Slash": 0,
@@ -2234,8 +2157,7 @@
     },
     {
         "Name": "Rusted Mastodon Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 6,
         "Defenses": {
             "Slash": 0,
@@ -2263,8 +2185,7 @@
     },
     {
         "Name": "Mastodon Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 6.6,
         "Defenses": {
             "Slash": 0,
@@ -2292,8 +2213,7 @@
     },
     {
         "Name": "Desert Sorceress Hood",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 0.6,
         "Defenses": {
             "Slash": 0,
@@ -2321,8 +2241,7 @@
     },
     {
         "Name": "Dragon Acolyte Mask",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.5,
         "Defenses": {
             "Slash": 0,
@@ -2350,8 +2269,7 @@
     },
     {
         "Name": "Dragon Sage Hood",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2,
         "Defenses": {
             "Slash": 0,
@@ -2379,8 +2297,7 @@
     },
     {
         "Name": "Ruin Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4,
         "Defenses": {
             "Slash": 0,
@@ -2408,8 +2325,7 @@
     },
     {
         "Name": "Old Knight Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 7,
         "Defenses": {
             "Slash": 0,
@@ -2437,8 +2353,7 @@
     },
     {
         "Name": "Drakekeeper Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 6,
         "Defenses": {
             "Slash": 0,
@@ -2466,8 +2381,7 @@
     },
     {
         "Name": "Throne Defender Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 6.4,
         "Defenses": {
             "Slash": 0,
@@ -2495,8 +2409,7 @@
     },
     {
         "Name": "Velstadt's Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 7.5,
         "Defenses": {
             "Slash": 0,
@@ -2524,8 +2437,7 @@
     },
     {
         "Name": "Throne Watcher Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 5.6,
         "Defenses": {
             "Slash": 0,
@@ -2553,8 +2465,7 @@
     },
     {
         "Name": "Looking Glass Mask",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 7,
         "Defenses": {
             "Slash": 0,
@@ -2582,8 +2493,7 @@
     },
     {
         "Name": "Leydia Black Hood",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1,
         "Defenses": {
             "Slash": 0,
@@ -2611,8 +2521,7 @@
     },
     {
         "Name": "Insolent Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4.8,
         "Defenses": {
             "Slash": 0,
@@ -2640,8 +2549,7 @@
     },
     {
         "Name": "Imperious Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 5.8,
         "Defenses": {
             "Slash": 0,
@@ -2669,8 +2577,7 @@
     },
     {
         "Name": "Leydia White Hood",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1,
         "Defenses": {
             "Slash": 0,
@@ -2698,8 +2605,7 @@
     },
     {
         "Name": "King's Crown",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3.8,
         "Defenses": {
             "Slash": 0,
@@ -2727,8 +2633,7 @@
     },
     {
         "Name": "Dragonrider Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 7.5,
         "Defenses": {
             "Slash": 0,
@@ -2756,8 +2661,7 @@
     },
     {
         "Name": "Executioner Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4.4,
         "Defenses": {
             "Slash": 0,
@@ -2785,8 +2689,7 @@
     },
     {
         "Name": "Penal Mask",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 5.1,
         "Defenses": {
             "Slash": 0,
@@ -2814,8 +2717,7 @@
     },
     {
         "Name": "Fume Sorcerer Mask",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2,
         "Defenses": {
             "Slash": 0,
@@ -2843,8 +2745,7 @@
     },
     {
         "Name": "Rampart Golem Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 5.8,
         "Defenses": {
             "Slash": 0,
@@ -2872,8 +2773,7 @@
     },
     {
         "Name": "Sanctum Knight Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 5.8,
         "Defenses": {
             "Slash": 0,
@@ -2901,8 +2801,7 @@
     },
     {
         "Name": "Sanctum Priestess Tiara",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2,
         "Defenses": {
             "Slash": 0,
@@ -2930,8 +2829,7 @@
     },
     {
         "Name": "Raime's Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 6,
         "Defenses": {
             "Slash": 0,
@@ -2959,8 +2857,7 @@
     },
     {
         "Name": "Alonne's Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4,
         "Defenses": {
             "Slash": 0,
@@ -2988,8 +2885,7 @@
     },
     {
         "Name": "Loyce Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 6.3,
         "Defenses": {
             "Slash": 0,
@@ -3017,8 +2913,7 @@
     },
     {
         "Name": "Charred Loyce Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 6.5,
         "Defenses": {
             "Slash": 0,
@@ -3046,8 +2941,7 @@
     },
     {
         "Name": "Ivory King Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 7,
         "Defenses": {
             "Slash": 0,
@@ -3075,8 +2969,7 @@
     },
     {
         "Name": "Hood of the Forlorn",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.1,
         "Defenses": {
             "Slash": 0,
@@ -3104,8 +2997,7 @@
     },
     {
         "Name": "Drangleic Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 5.9,
         "Defenses": {
             "Slash": 0,
@@ -3133,8 +3025,7 @@
     },
     {
         "Name": "Creighton's Steel Mask",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4.3,
         "Defenses": {
             "Slash": 0,
@@ -3162,8 +3053,7 @@
     },
     {
         "Name": "Benhart's Knight Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 7,
         "Defenses": {
             "Slash": 0,
@@ -3191,8 +3081,7 @@
     },
     {
         "Name": "Standard Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4,
         "Defenses": {
             "Slash": 0,
@@ -3220,8 +3109,7 @@
     },
     {
         "Name": "Cale's Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 3,
         "Defenses": {
             "Slash": 0,
@@ -3249,8 +3137,7 @@
     },
     {
         "Name": "Lucatiel's Mask",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 2,
         "Defenses": {
             "Slash": 0,
@@ -3278,8 +3165,7 @@
     },
     {
         "Name": "Mirrah Hat",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.5,
         "Defenses": {
             "Slash": 0,
@@ -3307,8 +3193,7 @@
     },
     {
         "Name": "Bell Keeper Helmet",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4.8,
         "Defenses": {
             "Slash": 0,
@@ -3336,8 +3221,7 @@
     },
     {
         "Name": "Mad Warrior Mask",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 5,
         "Defenses": {
             "Slash": 0,
@@ -3365,8 +3249,7 @@
     },
     {
         "Name": "Black Hood",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 0.9,
         "Defenses": {
             "Slash": 0,
@@ -3394,8 +3277,7 @@
     },
     {
         "Name": "Saint's Hood",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 0.9,
         "Defenses": {
             "Slash": 0,
@@ -3423,8 +3305,7 @@
     },
     {
         "Name": "Hexer's Hood",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 0.9,
         "Defenses": {
             "Slash": 0,
@@ -3452,8 +3333,7 @@
     },
     {
         "Name": "Chaos Hood",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 0.9,
         "Defenses": {
             "Slash": 0,
@@ -3481,8 +3361,7 @@
     },
     {
         "Name": "Nahr Alma Hood",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 1.5,
         "Defenses": {
             "Slash": 0,
@@ -3510,8 +3389,7 @@
     },
     {
         "Name": "Targray's Helm",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
+        "Modifiers": [],
         "Weight": 4,
         "Defenses": {
             "Slash": 0,
