@@ -89,9 +89,14 @@ export default function LeftColumn(props: {
     equippedRings: Ring[];
     equippedArmor: ArmorSet;
 }) {
-    // Context
+    // CONTEXT
+
     const focusedAttribute = useContext(FocusedAttributeContext);
     const setFocusedAttribute = useContext(FocusedAttributeDispatchContext);
+    const virtualAttributes = useContext(VirtualAttributesContext);
+    const setVirtualAttributes = useContext(VirtualAttributesDispatchContext);
+
+    // STATE
 
     // Desired attributes are user input, and represent the "ideal" attributes of a character
     const [desiredAttributes, setDesiredAttributes] = useState<
@@ -137,10 +142,6 @@ export default function LeftColumn(props: {
         Faith: 0,
         Attunement: 0,
     });
-
-    // Virtual attributes are the final attributes after adding equipment bonuses
-    const virtualAttributes = useContext(VirtualAttributesContext);
-    const setVirtualAttributes = useContext(VirtualAttributesDispatchContext);
 
     // Optimal class is the class with the lowest delta
     const [optimalClass, setOptimalClass] = useState<Class>(Classes[0] ?? {});
