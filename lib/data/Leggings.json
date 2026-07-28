@@ -3,6 +3,7 @@
         "Name": "No Armor",
         "Modifiers": [],
         "Weight": 0,
+        "Durability": 30,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -31,6 +32,7 @@
         "Name": "Pate's Trousers",
         "Modifiers": [],
         "Weight": 3.5,
+        "Durability": 70,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -59,6 +61,7 @@
         "Name": "Black Leather Boots",
         "Modifiers": [],
         "Weight": 2.2,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -87,6 +90,7 @@
         "Name": "Wanderer Boots",
         "Modifiers": [],
         "Weight": 2.1,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -115,6 +119,7 @@
         "Name": "Leather Boots",
         "Modifiers": [],
         "Weight": 2.8,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -143,6 +148,7 @@
         "Name": "Knight Leggings",
         "Modifiers": [],
         "Weight": 6.4,
+        "Durability": 80,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -171,6 +177,7 @@
         "Name": "Elite Knight Leggings",
         "Modifiers": [],
         "Weight": 6.9,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -199,6 +206,7 @@
         "Name": "Heavy Boots",
         "Modifiers": [],
         "Weight": 1.6,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -227,6 +235,7 @@
         "Name": "Brigand Trousers",
         "Modifiers": [],
         "Weight": 1.8,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -255,6 +264,7 @@
         "Name": "Imported Trousers",
         "Modifiers": [],
         "Weight": 3.6,
+        "Durability": 35,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -283,6 +293,7 @@
         "Name": "Traveling Merchant Boots",
         "Modifiers": [],
         "Weight": 3.8,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -311,6 +322,7 @@
         "Name": "Havel's Leggings",
         "Modifiers": [],
         "Weight": 11.5,
+        "Durability": 255,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -339,6 +351,7 @@
         "Name": "Jester's Tights",
         "Modifiers": [],
         "Weight": 2.7,
+        "Durability": 45,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -367,6 +380,7 @@
         "Name": "Astrologist's Bottoms",
         "Modifiers": [],
         "Weight": 3,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -395,6 +409,7 @@
         "Name": "Faraam Boots",
         "Modifiers": [],
         "Weight": 7.9,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -423,6 +438,7 @@
         "Name": "Black Dragon Leggings",
         "Modifiers": [],
         "Weight": 2.7,
+        "Durability": 225,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -451,6 +467,7 @@
         "Name": "Xanthous Waistcloth",
         "Modifiers": [],
         "Weight": 4,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -479,6 +496,7 @@
         "Name": "Tights of Judgment",
         "Modifiers": [],
         "Weight": 2.8,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -507,6 +525,7 @@
         "Name": "Leggings of Aurous (Visible)",
         "Modifiers": [],
         "Weight": 2,
+        "Durability": 40,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -535,6 +554,7 @@
         "Name": "Leggings of Aurous (Invisible)",
         "Modifiers": [],
         "Weight": 5.8,
+        "Durability": 80,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -563,6 +583,7 @@
         "Name": "Monastery Skirt",
         "Modifiers": [],
         "Weight": 4,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -591,6 +612,7 @@
         "Name": "Blood-stained Skirt",
         "Modifiers": [],
         "Weight": 2.5,
+        "Durability": 40,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -619,6 +641,7 @@
         "Name": "Flying Feline Boots",
         "Modifiers": [],
         "Weight": 2,
+        "Durability": 66,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -647,6 +670,7 @@
         "Name": "Moon Butterfly Skirt",
         "Modifiers": [],
         "Weight": 1.2,
+        "Durability": 35,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -675,6 +699,7 @@
         "Name": "Catarina Leggings",
         "Modifiers": [],
         "Weight": 6.9,
+        "Durability": 95,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -703,6 +728,7 @@
         "Name": "Alva Leggings",
         "Modifiers": [],
         "Weight": 5.2,
+        "Durability": 80,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -731,6 +757,7 @@
         "Name": "Black Witch Trousers",
         "Modifiers": [],
         "Weight": 1.7,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -759,6 +786,7 @@
         "Name": "Drakeblood Leggings",
         "Modifiers": [],
         "Weight": 7.8,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -787,6 +815,7 @@
         "Name": "Northwarder Trousers",
         "Modifiers": [],
         "Weight": 1.8,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -815,6 +844,7 @@
         "Name": "Flower Skirt",
         "Modifiers": [],
         "Weight": 1.7,
+        "Durability": 80,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -843,6 +873,7 @@
         "Name": "Hollow Soldier Leggings",
         "Modifiers": [],
         "Weight": 1.8,
+        "Durability": 35,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -871,6 +902,7 @@
         "Name": "Royal Soldier Leggings",
         "Modifiers": [],
         "Weight": 5.3,
+        "Durability": 70,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -899,6 +931,7 @@
         "Name": "Hollow Infantry Boots",
         "Modifiers": [],
         "Weight": 4.5,
+        "Durability": 40,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -927,6 +960,7 @@
         "Name": "Infantry Boots",
         "Modifiers": [],
         "Weight": 4.5,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -955,6 +989,7 @@
         "Name": "White Priest Skirt",
         "Modifiers": [],
         "Weight": 2.4,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -983,6 +1018,7 @@
         "Name": "Priestess Skirt",
         "Modifiers": [],
         "Weight": 1.9,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1011,6 +1047,7 @@
         "Name": "Rogue Leggings",
         "Modifiers": [],
         "Weight": 2.5,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1039,6 +1076,7 @@
         "Name": "Bandit Boots",
         "Modifiers": [],
         "Weight": 2.8,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1067,6 +1105,7 @@
         "Name": "Varangian Leggings",
         "Modifiers": [],
         "Weight": 2.4,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1095,6 +1134,7 @@
         "Name": "Lion Mage Skirt",
         "Modifiers": [],
         "Weight": 1.4,
+        "Durability": 40,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1123,6 +1163,7 @@
         "Name": "Steel Leggings",
         "Modifiers": [],
         "Weight": 8.3,
+        "Durability": 100,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1151,6 +1192,7 @@
         "Name": "Shadow Leggings",
         "Modifiers": [],
         "Weight": 1.6,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1179,6 +1221,7 @@
         "Name": "Manikin Boots",
         "Modifiers": [],
         "Weight": 1.6,
+        "Durability": 65,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1207,6 +1250,7 @@
         "Name": "Prisoner's Waistcloth",
         "Modifiers": [],
         "Weight": 1,
+        "Durability": 25,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1235,6 +1279,7 @@
         "Name": "Archdrake Boots",
         "Modifiers": [],
         "Weight": 4.7,
+        "Durability": 80,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1263,6 +1308,7 @@
         "Name": "Gyrm Boots",
         "Modifiers": [],
         "Weight": 5.6,
+        "Durability": 70,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1291,6 +1337,7 @@
         "Name": "Gyrm Warrior Boots",
         "Modifiers": [],
         "Weight": 8.8,
+        "Durability": 75,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1319,6 +1366,7 @@
         "Name": "Dark Leggings",
         "Modifiers": [],
         "Weight": 5.8,
+        "Durability": 90,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1347,6 +1395,7 @@
         "Name": "Tseldora Trousers",
         "Modifiers": [],
         "Weight": 2,
+        "Durability": 40,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1375,6 +1424,7 @@
         "Name": "Peasant Trousers",
         "Modifiers": [],
         "Weight": 2.6,
+        "Durability": 45,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1403,6 +1453,7 @@
         "Name": "Ironclad Leggings",
         "Modifiers": [],
         "Weight": 9.4,
+        "Durability": 90,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1431,6 +1482,7 @@
         "Name": "Old Ironclad Leggings",
         "Modifiers": [],
         "Weight": 9.4,
+        "Durability": 45,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1459,6 +1511,7 @@
         "Name": "Royal Swordsman Leggings",
         "Modifiers": [],
         "Weight": 6.1,
+        "Durability": 75,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1487,6 +1540,7 @@
         "Name": "Syan's Leggings",
         "Modifiers": [],
         "Weight": 7.1,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1515,6 +1569,7 @@
         "Name": "Bone King Skirt",
         "Modifiers": [],
         "Weight": 2.9,
+        "Durability": 65,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1543,6 +1598,7 @@
         "Name": "Heide Knight Leggings",
         "Modifiers": [],
         "Weight": 6.4,
+        "Durability": 90,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1571,6 +1627,7 @@
         "Name": "Smelter Demon Leggings",
         "Modifiers": [],
         "Weight": 10.4,
+        "Durability": 160,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1599,6 +1656,7 @@
         "Name": "Alonne Knight Leggings",
         "Modifiers": [],
         "Weight": 9.8,
+        "Durability": 80,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1627,6 +1685,7 @@
         "Name": "Vengarl's Boots",
         "Modifiers": [],
         "Weight": 7.9,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1655,6 +1714,7 @@
         "Name": "Lion Warrior Skirt",
         "Modifiers": [],
         "Weight": 1.2,
+        "Durability": 40,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1683,6 +1743,7 @@
         "Name": "Grave Warden Bottoms",
         "Modifiers": [],
         "Weight": 3.8,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1711,6 +1772,7 @@
         "Name": "Falconer Boots",
         "Modifiers": [],
         "Weight": 5.8,
+        "Durability": 75,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1739,6 +1801,7 @@
         "Name": "Rusted Mastodon Leggings",
         "Modifiers": [],
         "Weight": 9.8,
+        "Durability": 40,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1767,6 +1830,7 @@
         "Name": "Mastodon Leggings",
         "Modifiers": [],
         "Weight": 10.8,
+        "Durability": 90,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1795,6 +1859,7 @@
         "Name": "Desert Sorceress Skirt",
         "Modifiers": [],
         "Weight": 2.4,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1823,6 +1888,7 @@
         "Name": "Dragon Acolyte Boots",
         "Modifiers": [],
         "Weight": 2.4,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1851,6 +1917,7 @@
         "Name": "Ruin Leggings",
         "Modifiers": [],
         "Weight": 6.2,
+        "Durability": 105,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1879,6 +1946,7 @@
         "Name": "Old Knight Leggings",
         "Modifiers": [],
         "Weight": 8.2,
+        "Durability": 20,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1907,6 +1975,7 @@
         "Name": "Drakekeeper Boots",
         "Modifiers": [],
         "Weight": 8.4,
+        "Durability": 90,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1935,6 +2004,7 @@
         "Name": "Throne Defender Leggings",
         "Modifiers": [],
         "Weight": 7.7,
+        "Durability": 100,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1963,6 +2033,7 @@
         "Name": "Velstadt's Leggings",
         "Modifiers": [],
         "Weight": 7.2,
+        "Durability": 140,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1991,6 +2062,7 @@
         "Name": "Throne Watcher Leggings",
         "Modifiers": [],
         "Weight": 6.6,
+        "Durability": 95,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2019,6 +2091,7 @@
         "Name": "Looking Glass Leggings",
         "Modifiers": [],
         "Weight": 10.4,
+        "Durability": 150,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2047,6 +2120,7 @@
         "Name": "Agdayne's Kilt",
         "Modifiers": [],
         "Weight": 2.9,
+        "Durability": 65,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2075,6 +2149,7 @@
         "Name": "Insolent Boots",
         "Modifiers": [],
         "Weight": 5.8,
+        "Durability": 75,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2103,6 +2178,7 @@
         "Name": "Imperious Leggings",
         "Modifiers": [],
         "Weight": 7.5,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2131,6 +2207,7 @@
         "Name": "King's Leggings",
         "Modifiers": [],
         "Weight": 7.1,
+        "Durability": 120,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2159,6 +2236,7 @@
         "Name": "Dragonrider Leggings",
         "Modifiers": [],
         "Weight": 7.4,
+        "Durability": 95,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2187,6 +2265,7 @@
         "Name": "Executioner Leggings",
         "Modifiers": [],
         "Weight": 2.7,
+        "Durability": 65,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2215,6 +2294,7 @@
         "Name": "Penal Skirt",
         "Modifiers": [],
         "Weight": 4.8,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2243,6 +2323,7 @@
         "Name": "Fume Sorcerer Boots",
         "Modifiers": [],
         "Weight": 2.8,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2271,6 +2352,7 @@
         "Name": "Rampart Golem Leggings",
         "Modifiers": [],
         "Weight": 8.2,
+        "Durability": 70,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2299,6 +2381,7 @@
         "Name": "Sanctum Knight Leggings",
         "Modifiers": [],
         "Weight": 7.4,
+        "Durability": 90,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2327,6 +2410,7 @@
         "Name": "Raime's Leggings",
         "Modifiers": [],
         "Weight": 6.9,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2355,6 +2439,7 @@
         "Name": "Alonne's Leggings",
         "Modifiers": [],
         "Weight": 5.5,
+        "Durability": 80,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2383,6 +2468,7 @@
         "Name": "Loyce Leggings",
         "Modifiers": [],
         "Weight": 7.5,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2411,6 +2497,7 @@
         "Name": "Charred Loyce Leggings",
         "Modifiers": [],
         "Weight": 7.8,
+        "Durability": 45,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2439,6 +2526,7 @@
         "Name": "Ivory King Leggings",
         "Modifiers": [],
         "Weight": 8.6,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2467,6 +2555,7 @@
         "Name": "Leggings of the Forlorn",
         "Modifiers": [],
         "Weight": 6.2,
+        "Durability": 75,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2495,6 +2584,7 @@
         "Name": "Llewellyn Shoes",
         "Modifiers": [],
         "Weight": 3.1,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2523,6 +2613,7 @@
         "Name": "Drangleic Leggings",
         "Modifiers": [],
         "Weight": 7.6,
+        "Durability": 90,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2551,6 +2642,7 @@
         "Name": "Creighton's Chain Leggings",
         "Modifiers": [],
         "Weight": 4.5,
+        "Durability": 70,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2579,6 +2671,7 @@
         "Name": "Benhart's Boots",
         "Modifiers": [],
         "Weight": 6.5,
+        "Durability": 72,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2607,6 +2700,7 @@
         "Name": "Hard Leather Boots",
         "Modifiers": [],
         "Weight": 3.8,
+        "Durability": 65,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2635,6 +2729,7 @@
         "Name": "Cale's Shoes",
         "Modifiers": [],
         "Weight": 3,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2663,6 +2758,7 @@
         "Name": "Lucatiel's Trousers",
         "Modifiers": [],
         "Weight": 4,
+        "Durability": 65,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2691,6 +2787,7 @@
         "Name": "Bell Keeper Trousers",
         "Modifiers": [],
         "Weight": 4,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2719,6 +2816,7 @@
         "Name": "Mad Warrior Leggings",
         "Modifiers": [],
         "Weight": 7.4,
+        "Durability": 75,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2747,6 +2845,7 @@
         "Name": "Black Boots",
         "Modifiers": [],
         "Weight": 2,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2775,6 +2874,7 @@
         "Name": "Saint's Trousers",
         "Modifiers": [],
         "Weight": 2,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2803,6 +2903,7 @@
         "Name": "Hexer's Boots",
         "Modifiers": [],
         "Weight": 2,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2831,6 +2932,7 @@
         "Name": "Chaos Boots",
         "Modifiers": [],
         "Weight": 2,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2859,6 +2961,7 @@
         "Name": "Targray's Leggings",
         "Modifiers": [],
         "Weight": 5.8,
+        "Durability": 75,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,

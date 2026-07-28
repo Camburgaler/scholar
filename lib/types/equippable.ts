@@ -4,6 +4,7 @@ type Equippable = {
     Name: string; //pk
     Modifiers?: Modifier[];
     Weight: number;
+    Durability: number;
 };
 
 export default Equippable;

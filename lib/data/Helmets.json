@@ -3,6 +3,7 @@
         "Name": "No Armor",
         "Modifiers": [],
         "Weight": 0,
+        "Durability": 30,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -31,6 +32,7 @@
         "Name": "Pate's Helm",
         "Modifiers": [],
         "Weight": 3.5,
+        "Durability": 80,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -59,6 +61,7 @@
         "Name": "Thief Mask",
         "Modifiers": [],
         "Weight": 1.2,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -87,6 +90,7 @@
         "Name": "Wanderer Hood",
         "Modifiers": [],
         "Weight": 1.4,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -115,6 +119,7 @@
         "Name": "Hunter's Hat",
         "Modifiers": [],
         "Weight": 1.2,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -143,6 +148,7 @@
         "Name": "Knight Helm",
         "Modifiers": [],
         "Weight": 4.2,
+        "Durability": 80,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -171,6 +177,7 @@
         "Name": "Elite Knight Helm",
         "Modifiers": [],
         "Weight": 4.5,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -199,6 +206,7 @@
         "Name": "Tattered Cloth Hood",
         "Modifiers": [],
         "Weight": 1.1,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -227,6 +235,7 @@
         "Name": "Brigand Hood",
         "Modifiers": [],
         "Weight": 1.2,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -255,6 +264,7 @@
         "Name": "Imported Hood",
         "Modifiers": [],
         "Weight": 2.2,
+        "Durability": 35,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -283,6 +293,7 @@
         "Name": "Traveling Merchant Hat",
         "Modifiers": [],
         "Weight": 2.6,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -311,6 +322,7 @@
         "Name": "Havel's Helm",
         "Modifiers": [],
         "Weight": 7.5,
+        "Durability": 255,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -339,6 +351,7 @@
         "Name": "Jester's Cap",
         "Modifiers": [],
         "Weight": 3,
+        "Durability": 45,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -367,6 +380,7 @@
         "Name": "Moon Hat",
         "Modifiers": [],
         "Weight": 2.2,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -395,6 +409,7 @@
         "Name": "Faraam Helm",
         "Modifiers": [],
         "Weight": 4.8,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -423,6 +438,7 @@
         "Name": "Black Dragon Helm",
         "Modifiers": [],
         "Weight": 2.2,
+        "Durability": 225,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -451,6 +467,7 @@
         "Name": "Xanthous Crown",
         "Modifiers": [],
         "Weight": 5,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -479,6 +496,7 @@
         "Name": "Mask of Judgment",
         "Modifiers": [],
         "Weight": 2.5,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -507,6 +525,7 @@
         "Name": "Helm of Aurous (Visible)",
         "Modifiers": [],
         "Weight": 1.2,
+        "Durability": 40,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -535,6 +554,7 @@
         "Name": "Helm of Aurous (Invisible)",
         "Modifiers": [],
         "Weight": 3.8,
+        "Durability": 80,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -563,6 +583,7 @@
         "Name": "Monastery Headcloth",
         "Modifiers": [],
         "Weight": 0.6,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -591,6 +612,7 @@
         "Name": "Dingy Hood",
         "Modifiers": [],
         "Weight": 0.8,
+        "Durability": 40,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -619,6 +641,7 @@
         "Name": "Durgo's Hat",
         "Modifiers": [],
         "Weight": 2.6,
+        "Durability": 48,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -647,6 +670,7 @@
         "Name": "Moon Butterfly Hat",
         "Modifiers": [],
         "Weight": 0.8,
+        "Durability": 35,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -675,6 +699,7 @@
         "Name": "Catarina Helm",
         "Modifiers": [],
         "Weight": 4.5,
+        "Durability": 95,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -703,6 +728,7 @@
         "Name": "Alva Helm",
         "Modifiers": [],
         "Weight": 3.7,
+        "Durability": 80,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -731,6 +757,7 @@
         "Name": "Black Witch Veil",
         "Modifiers": [],
         "Weight": 0.5,
+        "Durability": 45,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -759,6 +786,7 @@
         "Name": "Black Witch Hat",
         "Modifiers": [],
         "Weight": 1.5,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -787,6 +815,7 @@
         "Name": "Black Witch Domino Mask",
         "Modifiers": [],
         "Weight": 0.5,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -815,6 +844,7 @@
         "Name": "Drakeblood Helm",
         "Modifiers": [],
         "Weight": 4.7,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -843,6 +873,7 @@
         "Name": "Northwarder Hood",
         "Modifiers": [],
         "Weight": 0.9,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -871,6 +902,7 @@
         "Name": "Crown of the Old Iron King",
         "Modifiers": [],
         "Weight": 4,
+        "Durability": 100,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -899,6 +931,7 @@
         "Name": "Crown of the Ivory King",
         "Modifiers": [],
         "Weight": 3.5,
+        "Durability": 100,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -927,6 +960,7 @@
         "Name": "Crown of the Sunken King",
         "Modifiers": [],
         "Weight": 4,
+        "Durability": 100,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -955,6 +989,7 @@
         "Name": "Old Bell Helm",
         "Modifiers": [],
         "Weight": 6,
+        "Durability": 80,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -983,6 +1018,7 @@
         "Name": "Hollow Skin",
         "Modifiers": [],
         "Weight": 1.5,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1011,6 +1047,7 @@
         "Name": "Pharros Mask",
         "Modifiers": [],
         "Weight": 4.3,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1039,6 +1076,7 @@
         "Name": "Minotaur Helm",
         "Modifiers": [],
         "Weight": 9.8,
+        "Durability": 100,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1067,6 +1105,7 @@
         "Name": "Symbol of Avarice",
         "Modifiers": [],
         "Weight": 8,
+        "Durability": 100,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1095,6 +1134,7 @@
         "Name": "Hollow Soldier Helm",
         "Modifiers": [],
         "Weight": 4.3,
+        "Durability": 35,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1123,6 +1163,7 @@
         "Name": "Royal Soldier Helm",
         "Modifiers": [],
         "Weight": 4.8,
+        "Durability": 70,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1151,6 +1192,7 @@
         "Name": "Hollow Infantry Helm",
         "Modifiers": [],
         "Weight": 4,
+        "Durability": 40,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1179,6 +1221,7 @@
         "Name": "Infantry Helm",
         "Modifiers": [],
         "Weight": 4,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1207,6 +1250,7 @@
         "Name": "White Priest Headpiece",
         "Modifiers": [],
         "Weight": 1.4,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1235,6 +1279,7 @@
         "Name": "Priestess Headpiece",
         "Modifiers": [],
         "Weight": 1.2,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1263,6 +1308,7 @@
         "Name": "Rogue Hood",
         "Modifiers": [],
         "Weight": 0.7,
+        "Durability": 40,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1291,6 +1337,7 @@
         "Name": "Spiked Bandit Helm",
         "Modifiers": [],
         "Weight": 4.1,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1319,6 +1366,7 @@
         "Name": "Varangian Helm",
         "Modifiers": [],
         "Weight": 4.6,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1347,6 +1395,7 @@
         "Name": "Black Hollow Mage Hood",
         "Modifiers": [],
         "Weight": 1.9,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1375,6 +1424,7 @@
         "Name": "White Hollow Mage Hood",
         "Modifiers": [],
         "Weight": 1.8,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1403,6 +1453,7 @@
         "Name": "Steel Helm",
         "Modifiers": [],
         "Weight": 5.4,
+        "Durability": 100,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1431,6 +1482,7 @@
         "Name": "Shadow Mask",
         "Modifiers": [],
         "Weight": 1.8,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1459,6 +1511,7 @@
         "Name": "Manikin Mask",
         "Modifiers": [],
         "Weight": 1.8,
+        "Durability": 65,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1487,6 +1540,7 @@
         "Name": "Prisoner's Hood (Mask Only)",
         "Modifiers": [],
         "Weight": 0.8,
+        "Durability": 25,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1515,6 +1569,7 @@
         "Name": "Prisoner's Hood",
         "Modifiers": [],
         "Weight": 0.8,
+        "Durability": 25,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1543,6 +1598,7 @@
         "Name": "Archdrake Helm",
         "Modifiers": [],
         "Weight": 5.4,
+        "Durability": 80,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1571,6 +1627,7 @@
         "Name": "Gyrm Helm",
         "Modifiers": [],
         "Weight": 8.2,
+        "Durability": 70,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1599,6 +1656,7 @@
         "Name": "Gyrm Warrior Helm",
         "Modifiers": [],
         "Weight": 8.9,
+        "Durability": 75,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1627,6 +1685,7 @@
         "Name": "Gyrm Warrior Greathelm",
         "Modifiers": [],
         "Weight": 9.6,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1655,6 +1714,7 @@
         "Name": "Dark Mask",
         "Modifiers": [],
         "Weight": 3.8,
+        "Durability": 90,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1683,6 +1743,7 @@
         "Name": "Warlock Mask",
         "Modifiers": [],
         "Weight": 4.8,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1711,6 +1772,7 @@
         "Name": "Tseldora Cap",
         "Modifiers": [],
         "Weight": 1.4,
+        "Durability": 40,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1739,6 +1801,7 @@
         "Name": "Peasant Hat",
         "Modifiers": [],
         "Weight": 1.3,
+        "Durability": 45,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1767,6 +1830,7 @@
         "Name": "Ironclad Helm",
         "Modifiers": [],
         "Weight": 6.3,
+        "Durability": 90,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1795,6 +1859,7 @@
         "Name": "Old Ironclad Helm",
         "Modifiers": [],
         "Weight": 6.3,
+        "Durability": 45,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1823,6 +1888,7 @@
         "Name": "Royal Swordsman Helm",
         "Modifiers": [],
         "Weight": 4.7,
+        "Durability": 75,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1851,6 +1917,7 @@
         "Name": "Syan's Helm",
         "Modifiers": [],
         "Weight": 6.2,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1879,6 +1946,7 @@
         "Name": "Bone Crown",
         "Modifiers": [],
         "Weight": 1.7,
+        "Durability": 65,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1907,6 +1975,7 @@
         "Name": "Heide Knight Greathelm",
         "Modifiers": [],
         "Weight": 6,
+        "Durability": 90,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1935,6 +2004,7 @@
         "Name": "Heide Knight Iron Mask",
         "Modifiers": [],
         "Weight": 5.2,
+        "Durability": 95,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1963,6 +2033,7 @@
         "Name": "Smelter Demon Helm",
         "Modifiers": [],
         "Weight": 9,
+        "Durability": 160,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1991,6 +2062,7 @@
         "Name": "Alonne Captain Helm",
         "Modifiers": [],
         "Weight": 5.1,
+        "Durability": 90,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2019,6 +2091,7 @@
         "Name": "Alonne Knight Helm",
         "Modifiers": [],
         "Weight": 4.6,
+        "Durability": 80,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2047,6 +2120,7 @@
         "Name": "Vengarl's Helm",
         "Modifiers": [],
         "Weight": 6.8,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2075,6 +2149,7 @@
         "Name": "Lion Warrior Helm",
         "Modifiers": [],
         "Weight": 0.5,
+        "Durability": 40,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2103,6 +2178,7 @@
         "Name": "Grave Warden Mask",
         "Modifiers": [],
         "Weight": 0.5,
+        "Durability": 40,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2131,6 +2207,7 @@
         "Name": "Falconer Helm",
         "Modifiers": [],
         "Weight": 4.5,
+        "Durability": 75,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2159,6 +2236,7 @@
         "Name": "Rusted Mastodon Helm",
         "Modifiers": [],
         "Weight": 6,
+        "Durability": 40,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2187,6 +2265,7 @@
         "Name": "Mastodon Helm",
         "Modifiers": [],
         "Weight": 6.6,
+        "Durability": 90,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2215,6 +2294,7 @@
         "Name": "Desert Sorceress Hood",
         "Modifiers": [],
         "Weight": 0.6,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2243,6 +2323,7 @@
         "Name": "Dragon Acolyte Mask",
         "Modifiers": [],
         "Weight": 1.5,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2271,6 +2352,7 @@
         "Name": "Dragon Sage Hood",
         "Modifiers": [],
         "Weight": 2,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2299,6 +2381,7 @@
         "Name": "Ruin Helm",
         "Modifiers": [],
         "Weight": 4,
+        "Durability": 105,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2327,6 +2410,7 @@
         "Name": "Old Knight Helm",
         "Modifiers": [],
         "Weight": 7,
+        "Durability": 20,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2355,6 +2439,7 @@
         "Name": "Drakekeeper Helm",
         "Modifiers": [],
         "Weight": 6,
+        "Durability": 90,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2383,6 +2468,7 @@
         "Name": "Throne Defender Helm",
         "Modifiers": [],
         "Weight": 6.4,
+        "Durability": 100,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2411,6 +2497,7 @@
         "Name": "Velstadt's Helm",
         "Modifiers": [],
         "Weight": 7.5,
+        "Durability": 140,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2439,6 +2526,7 @@
         "Name": "Throne Watcher Helm",
         "Modifiers": [],
         "Weight": 5.6,
+        "Durability": 95,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2467,6 +2555,7 @@
         "Name": "Looking Glass Mask",
         "Modifiers": [],
         "Weight": 7,
+        "Durability": 150,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2495,6 +2584,7 @@
         "Name": "Leydia Black Hood",
         "Modifiers": [],
         "Weight": 1,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2523,6 +2613,7 @@
         "Name": "Insolent Helm",
         "Modifiers": [],
         "Weight": 4.8,
+        "Durability": 75,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2551,6 +2642,7 @@
         "Name": "Imperious Helm",
         "Modifiers": [],
         "Weight": 5.8,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2579,6 +2671,7 @@
         "Name": "Leydia White Hood",
         "Modifiers": [],
         "Weight": 1,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2607,6 +2700,7 @@
         "Name": "King's Crown",
         "Modifiers": [],
         "Weight": 3.8,
+        "Durability": 230,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2635,6 +2729,7 @@
         "Name": "Dragonrider Helm",
         "Modifiers": [],
         "Weight": 7.5,
+        "Durability": 95,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2663,6 +2758,7 @@
         "Name": "Executioner Helm",
         "Modifiers": [],
         "Weight": 4.4,
+        "Durability": 65,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2691,6 +2787,7 @@
         "Name": "Penal Mask",
         "Modifiers": [],
         "Weight": 5.1,
+        "Durability": 120,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2719,6 +2816,7 @@
         "Name": "Fume Sorcerer Mask",
         "Modifiers": [],
         "Weight": 2,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2747,6 +2845,7 @@
         "Name": "Rampart Golem Helm",
         "Modifiers": [],
         "Weight": 5.8,
+        "Durability": 70,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2775,6 +2874,7 @@
         "Name": "Sanctum Knight Helm",
         "Modifiers": [],
         "Weight": 5.8,
+        "Durability": 90,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2803,6 +2903,7 @@
         "Name": "Sanctum Priestess Tiara",
         "Modifiers": [],
         "Weight": 2,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2831,6 +2932,7 @@
         "Name": "Raime's Helm",
         "Modifiers": [],
         "Weight": 6,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2859,6 +2961,7 @@
         "Name": "Alonne's Helm",
         "Modifiers": [],
         "Weight": 4,
+        "Durability": 80,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2887,6 +2990,7 @@
         "Name": "Loyce Helm",
         "Modifiers": [],
         "Weight": 6.3,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2915,6 +3019,7 @@
         "Name": "Charred Loyce Helm",
         "Modifiers": [],
         "Weight": 6.5,
+        "Durability": 45,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2943,6 +3048,7 @@
         "Name": "Ivory King Helm",
         "Modifiers": [],
         "Weight": 7,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2971,6 +3077,7 @@
         "Name": "Hood of the Forlorn",
         "Modifiers": [],
         "Weight": 1.1,
+        "Durability": 40,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2999,6 +3106,7 @@
         "Name": "Drangleic Helm",
         "Modifiers": [],
         "Weight": 5.9,
+        "Durability": 90,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3027,6 +3135,7 @@
         "Name": "Creighton's Steel Mask",
         "Modifiers": [],
         "Weight": 4.3,
+        "Durability": 70,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3055,6 +3164,7 @@
         "Name": "Benhart's Knight Helm",
         "Modifiers": [],
         "Weight": 7,
+        "Durability": 72,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3083,6 +3193,7 @@
         "Name": "Standard Helm",
         "Modifiers": [],
         "Weight": 4,
+        "Durability": 65,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3111,6 +3222,7 @@
         "Name": "Cale's Helm",
         "Modifiers": [],
         "Weight": 3,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3139,6 +3251,7 @@
         "Name": "Lucatiel's Mask",
         "Modifiers": [],
         "Weight": 2,
+        "Durability": 65,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3167,6 +3280,7 @@
         "Name": "Mirrah Hat",
         "Modifiers": [],
         "Weight": 1.5,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3195,6 +3309,7 @@
         "Name": "Bell Keeper Helmet",
         "Modifiers": [],
         "Weight": 4.8,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3223,6 +3338,7 @@
         "Name": "Mad Warrior Mask",
         "Modifiers": [],
         "Weight": 5,
+        "Durability": 75,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3251,6 +3367,7 @@
         "Name": "Black Hood",
         "Modifiers": [],
         "Weight": 0.9,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3279,6 +3396,7 @@
         "Name": "Saint's Hood",
         "Modifiers": [],
         "Weight": 0.9,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3307,6 +3425,7 @@
         "Name": "Hexer's Hood",
         "Modifiers": [],
         "Weight": 0.9,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3335,6 +3454,7 @@
         "Name": "Chaos Hood",
         "Modifiers": [],
         "Weight": 0.9,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3363,6 +3483,7 @@
         "Name": "Nahr Alma Hood",
         "Modifiers": [],
         "Weight": 1.5,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3391,6 +3512,7 @@
         "Name": "Targray's Helm",
         "Modifiers": [],
         "Weight": 4,
+        "Durability": 75,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,

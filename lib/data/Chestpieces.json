@@ -3,6 +3,7 @@
         "Name": "No Armor",
         "Modifiers": [],
         "Weight": 0,
+        "Durability": 30,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -31,6 +32,7 @@
         "Name": "Pate's Armor",
         "Modifiers": [],
         "Weight": 5.9,
+        "Durability": 70,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -59,6 +61,7 @@
         "Name": "Black Leather Armor",
         "Modifiers": [],
         "Weight": 3.9,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -87,6 +90,7 @@
         "Name": "Wanderer Coat",
         "Modifiers": [],
         "Weight": 3.5,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -115,6 +119,7 @@
         "Name": "Leather Armor",
         "Modifiers": [],
         "Weight": 4.7,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -143,6 +148,7 @@
         "Name": "Knight Armor",
         "Modifiers": [],
         "Weight": 10.9,
+        "Durability": 80,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -171,6 +177,7 @@
         "Name": "Elite Knight Armor",
         "Modifiers": [],
         "Weight": 11.7,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -199,6 +206,7 @@
         "Name": "Tattered Cloth Robe",
         "Modifiers": [],
         "Weight": 2.7,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -227,6 +235,7 @@
         "Name": "Brigand Armor",
         "Modifiers": [],
         "Weight": 3.1,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -255,6 +264,7 @@
         "Name": "Imported Tunic",
         "Modifiers": [],
         "Weight": 6.5,
+        "Durability": 35,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -283,6 +293,7 @@
         "Name": "Traveling Merchant Coat",
         "Modifiers": [],
         "Weight": 7.7,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -311,6 +322,7 @@
         "Name": "Havel's Armor",
         "Modifiers": [],
         "Weight": 19.5,
+        "Durability": 255,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -339,6 +351,7 @@
         "Name": "Jester's Robes",
         "Modifiers": [],
         "Weight": 5.7,
+        "Durability": 45,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -367,6 +380,7 @@
         "Name": "Astrologist's Robe",
         "Modifiers": [],
         "Weight": 4.1,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -395,6 +409,7 @@
         "Name": "Faraam Armor",
         "Modifiers": [],
         "Weight": 12.6,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -423,6 +438,7 @@
         "Name": "Black Dragon Armor",
         "Modifiers": [],
         "Weight": 4.8,
+        "Durability": 225,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -451,6 +467,7 @@
         "Name": "Xanthous Overcoat",
         "Modifiers": [],
         "Weight": 3.9,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -479,6 +496,7 @@
         "Name": "Robe of Judgment",
         "Modifiers": [],
         "Weight": 3.9,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -507,6 +525,7 @@
         "Name": "Armor of Aurous (Visible)",
         "Modifiers": [],
         "Weight": 3.2,
+        "Durability": 40,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -535,6 +554,7 @@
         "Name": "Armor of Aurous (Invisible)",
         "Modifiers": [],
         "Weight": 10.1,
+        "Durability": 80,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -563,6 +583,7 @@
         "Name": "Monastery Longshirt",
         "Modifiers": [],
         "Weight": 1.6,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -591,6 +612,7 @@
         "Name": "Dingy Robe",
         "Modifiers": [],
         "Weight": 3,
+        "Durability": 40,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -619,6 +641,7 @@
         "Name": "Moon Butterfly Wings",
         "Modifiers": [],
         "Weight": 1.4,
+        "Durability": 35,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -647,6 +670,7 @@
         "Name": "Catarina Armor",
         "Modifiers": [],
         "Weight": 11.7,
+        "Durability": 95,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -675,6 +699,7 @@
         "Name": "Alva Armor",
         "Modifiers": [],
         "Weight": 8.8,
+        "Durability": 80,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -703,6 +728,7 @@
         "Name": "Black Witch Robe",
         "Modifiers": [],
         "Weight": 4.8,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -731,6 +757,7 @@
         "Name": "Drakeblood Armor",
         "Modifiers": [],
         "Weight": 12.5,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -759,6 +786,7 @@
         "Name": "Northwarder Robe",
         "Modifiers": [],
         "Weight": 2.5,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -787,6 +815,7 @@
         "Name": "Hollow Soldier Armor",
         "Modifiers": [],
         "Weight": 8.6,
+        "Durability": 35,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -815,6 +844,7 @@
         "Name": "Royal Soldier Armor",
         "Modifiers": [],
         "Weight": 9.2,
+        "Durability": 70,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -843,6 +873,7 @@
         "Name": "Hollow Infantry Armor",
         "Modifiers": [],
         "Weight": 5.9,
+        "Durability": 40,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -871,6 +902,7 @@
         "Name": "Infantry Armor",
         "Modifiers": [],
         "Weight": 5.9,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -899,6 +931,7 @@
         "Name": "White Priest Robe",
         "Modifiers": [],
         "Weight": 3.3,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -927,6 +960,7 @@
         "Name": "Priestess Robe",
         "Modifiers": [],
         "Weight": 2.8,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -955,6 +989,7 @@
         "Name": "Rogue Armor",
         "Modifiers": [],
         "Weight": 3.5,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -983,6 +1018,7 @@
         "Name": "Bandit Armor",
         "Modifiers": [],
         "Weight": 6.2,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1011,6 +1047,7 @@
         "Name": "Varangian Armor",
         "Modifiers": [],
         "Weight": 5.1,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1039,6 +1076,7 @@
         "Name": "Black Hollow Mage Robe",
         "Modifiers": [],
         "Weight": 3.3,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1067,6 +1105,7 @@
         "Name": "White Hollow Mage Robe",
         "Modifiers": [],
         "Weight": 2.8,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1095,6 +1134,7 @@
         "Name": "Lion Mage Robe",
         "Modifiers": [],
         "Weight": 2.2,
+        "Durability": 40,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1123,6 +1163,7 @@
         "Name": "Steel Armor",
         "Modifiers": [],
         "Weight": 14,
+        "Durability": 100,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1151,6 +1192,7 @@
         "Name": "Shadow Top",
         "Modifiers": [],
         "Weight": 2.6,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1179,6 +1221,7 @@
         "Name": "Manikin Top",
         "Modifiers": [],
         "Weight": 2.3,
+        "Durability": 65,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1207,6 +1250,7 @@
         "Name": "Prisoner's Tatters (Master's Attire)",
         "Modifiers": [],
         "Weight": 2.2,
+        "Durability": 25,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1235,6 +1279,7 @@
         "Name": "Prisoner's Tatters",
         "Modifiers": [],
         "Weight": 2.2,
+        "Durability": 25,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1263,6 +1308,7 @@
         "Name": "Archdrake Robes",
         "Modifiers": [],
         "Weight": 9.8,
+        "Durability": 80,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1291,6 +1337,7 @@
         "Name": "Gyrm Armor",
         "Modifiers": [],
         "Weight": 12.3,
+        "Durability": 70,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1319,6 +1366,7 @@
         "Name": "Gyrm Warrior Armor",
         "Modifiers": [],
         "Weight": 19.7,
+        "Durability": 75,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1347,6 +1395,7 @@
         "Name": "Dark Armor",
         "Modifiers": [],
         "Weight": 9.8,
+        "Durability": 90,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1375,6 +1424,7 @@
         "Name": "Tseldora Robe",
         "Modifiers": [],
         "Weight": 3,
+        "Durability": 40,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1403,6 +1453,7 @@
         "Name": "Peasant Attire",
         "Modifiers": [],
         "Weight": 3.8,
+        "Durability": 45,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1431,6 +1482,7 @@
         "Name": "Ironclad Armor",
         "Modifiers": [],
         "Weight": 29.8,
+        "Durability": 90,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1459,6 +1511,7 @@
         "Name": "Old Ironclad Armor",
         "Modifiers": [],
         "Weight": 29.8,
+        "Durability": 45,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1487,6 +1540,7 @@
         "Name": "Royal Swordsman Armor",
         "Modifiers": [],
         "Weight": 11.2,
+        "Durability": 75,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1515,6 +1569,7 @@
         "Name": "Syan's Armor",
         "Modifiers": [],
         "Weight": 13.8,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1543,6 +1598,7 @@
         "Name": "Bone King Robe",
         "Modifiers": [],
         "Weight": 3.8,
+        "Durability": 65,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1571,6 +1627,7 @@
         "Name": "Heide Knight Chainmail",
         "Modifiers": [],
         "Weight": 10.9,
+        "Durability": 90,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1599,6 +1656,7 @@
         "Name": "Singer's Dress",
         "Modifiers": [],
         "Weight": 2.6,
+        "Durability": 40,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1627,6 +1685,7 @@
         "Name": "Smelter Demon Armor",
         "Modifiers": [],
         "Weight": 17.6,
+        "Durability": 160,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1655,6 +1714,7 @@
         "Name": "Alonne Captain Armor",
         "Modifiers": [],
         "Weight": 15.6,
+        "Durability": 90,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1683,6 +1743,7 @@
         "Name": "Alonne Knight Armor",
         "Modifiers": [],
         "Weight": 14.2,
+        "Durability": 80,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1711,6 +1772,7 @@
         "Name": "Vengarl's Armor",
         "Modifiers": [],
         "Weight": 15.1,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1739,6 +1801,7 @@
         "Name": "Lion Warrior Cape",
         "Modifiers": [],
         "Weight": 1.5,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1767,6 +1830,7 @@
         "Name": "Red Lion Warrior Cape",
         "Modifiers": [],
         "Weight": 1.5,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1795,6 +1859,7 @@
         "Name": "Grave Warden Top",
         "Modifiers": [],
         "Weight": 6,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1823,6 +1888,7 @@
         "Name": "Falconer Armor",
         "Modifiers": [],
         "Weight": 7.7,
+        "Durability": 75,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1851,6 +1917,7 @@
         "Name": "Rusted Mastodon Armor",
         "Modifiers": [],
         "Weight": 15.9,
+        "Durability": 40,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1879,6 +1946,7 @@
         "Name": "Mastodon Armor",
         "Modifiers": [],
         "Weight": 17.7,
+        "Durability": 90,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1907,6 +1975,7 @@
         "Name": "Desert Sorceress Top",
         "Modifiers": [],
         "Weight": 2.7,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1935,6 +2004,7 @@
         "Name": "Dragon Acolyte Robe",
         "Modifiers": [],
         "Weight": 3.9,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1963,6 +2033,7 @@
         "Name": "Ruin Armor",
         "Modifiers": [],
         "Weight": 10.5,
+        "Durability": 105,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1991,6 +2062,7 @@
         "Name": "Old Knight Armor",
         "Modifiers": [],
         "Weight": 16.4,
+        "Durability": 20,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2019,6 +2091,7 @@
         "Name": "Drakekeeper Armor",
         "Modifiers": [],
         "Weight": 15.7,
+        "Durability": 90,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2047,6 +2120,7 @@
         "Name": "Throne Defender Armor",
         "Modifiers": [],
         "Weight": 13.8,
+        "Durability": 100,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2075,6 +2149,7 @@
         "Name": "Velstadt's Armor",
         "Modifiers": [],
         "Weight": 15.2,
+        "Durability": 140,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2103,6 +2178,7 @@
         "Name": "Throne Watcher Armor",
         "Modifiers": [],
         "Weight": 11.2,
+        "Durability": 95,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2131,6 +2207,7 @@
         "Name": "Looking Glass Armor",
         "Modifiers": [],
         "Weight": 18.3,
+        "Durability": 150,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2159,6 +2236,7 @@
         "Name": "Agdayne's Black Robe",
         "Modifiers": [],
         "Weight": 5.8,
+        "Durability": 65,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2187,6 +2265,7 @@
         "Name": "Leydia Black Robe",
         "Modifiers": [],
         "Weight": 3.5,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2215,6 +2294,7 @@
         "Name": "Insolent Armor",
         "Modifiers": [],
         "Weight": 9.8,
+        "Durability": 75,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2243,6 +2323,7 @@
         "Name": "Imperious Armor",
         "Modifiers": [],
         "Weight": 14.7,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2271,6 +2352,7 @@
         "Name": "Leydia White Robe",
         "Modifiers": [],
         "Weight": 3.5,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2299,6 +2381,7 @@
         "Name": "King's Armor",
         "Modifiers": [],
         "Weight": 12,
+        "Durability": 120,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2327,6 +2410,7 @@
         "Name": "Dragonrider Armor",
         "Modifiers": [],
         "Weight": 16,
+        "Durability": 95,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2355,6 +2439,7 @@
         "Name": "Executioner Armor",
         "Modifiers": [],
         "Weight": 6.7,
+        "Durability": 65,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2383,6 +2468,7 @@
         "Name": "Penal Straightjacket",
         "Modifiers": [],
         "Weight": 6.2,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2411,6 +2497,7 @@
         "Name": "Fume Sorcerer Robes",
         "Modifiers": [],
         "Weight": 4.7,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2439,6 +2526,7 @@
         "Name": "Rampart Golem Armor",
         "Modifiers": [],
         "Weight": 15.5,
+        "Durability": 70,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2467,6 +2555,7 @@
         "Name": "Sanctum Knight Armor",
         "Modifiers": [],
         "Weight": 14.4,
+        "Durability": 90,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2495,6 +2584,7 @@
         "Name": "Raime's Armor",
         "Modifiers": [],
         "Weight": 13.6,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2523,6 +2613,7 @@
         "Name": "Retainer Robe",
         "Modifiers": [],
         "Weight": 3.3,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2551,6 +2642,7 @@
         "Name": "Alonne's Armor",
         "Modifiers": [],
         "Weight": 9,
+        "Durability": 80,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2579,6 +2671,7 @@
         "Name": "Loyce Armor",
         "Modifiers": [],
         "Weight": 12.3,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2607,6 +2700,7 @@
         "Name": "Charred Loyce Armor",
         "Modifiers": [],
         "Weight": 12.8,
+        "Durability": 45,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2635,6 +2729,7 @@
         "Name": "Ivory King Armor",
         "Modifiers": [],
         "Weight": 14.8,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2663,6 +2758,7 @@
         "Name": "Armor of the Forlorn",
         "Modifiers": [],
         "Weight": 11.3,
+        "Durability": 80,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2691,6 +2787,7 @@
         "Name": "Llewellyn Armor",
         "Modifiers": [],
         "Weight": 6.8,
+        "Durability": 85,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2719,6 +2816,7 @@
         "Name": "Drangleic Mail",
         "Modifiers": [],
         "Weight": 14.5,
+        "Durability": 90,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2747,6 +2845,7 @@
         "Name": "Creighton's Chainmail",
         "Modifiers": [],
         "Weight": 9.7,
+        "Durability": 70,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2775,6 +2874,7 @@
         "Name": "Benhart's Armor",
         "Modifiers": [],
         "Weight": 10.5,
+        "Durability": 72,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2803,6 +2903,7 @@
         "Name": "Hard Leather Armor",
         "Modifiers": [],
         "Weight": 7.2,
+        "Durability": 65,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2831,6 +2932,7 @@
         "Name": "Cale's Leather Armor",
         "Modifiers": [],
         "Weight": 6.4,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2859,6 +2961,7 @@
         "Name": "Lucatiel's Vest",
         "Modifiers": [],
         "Weight": 6,
+        "Durability": 65,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2887,6 +2990,7 @@
         "Name": "Bell Keeper Bellyband",
         "Modifiers": [],
         "Weight": 6,
+        "Durability": 60,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2915,6 +3019,7 @@
         "Name": "Mad Warrior Armor",
         "Modifiers": [],
         "Weight": 12.5,
+        "Durability": 75,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2943,6 +3048,7 @@
         "Name": "Black Robes",
         "Modifiers": [],
         "Weight": 2.6,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2971,6 +3077,7 @@
         "Name": "Saint's Dress",
         "Modifiers": [],
         "Weight": 2.6,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2999,6 +3106,7 @@
         "Name": "Hexer's Robe",
         "Modifiers": [],
         "Weight": 2.6,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3027,6 +3135,7 @@
         "Name": "Chaos Robe",
         "Modifiers": [],
         "Weight": 2.6,
+        "Durability": 55,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3055,6 +3164,7 @@
         "Name": "Nahr Alma Robes",
         "Modifiers": [],
         "Weight": 3.5,
+        "Durability": 50,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3083,6 +3193,7 @@
         "Name": "Targray's Armor",
         "Modifiers": [],
         "Weight": 9.8,
+        "Durability": 75,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,

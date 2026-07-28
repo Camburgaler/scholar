@@ -1,8 +1,8 @@
 [
     {
         "Name": "No Ring",
-        "AdditiveModifiers": {},
-        "MultiplicativeModifiers": {},
-        "Weight": 0
+        "Modifiers": [],
+        "Weight": 0,
+        "Durability": 0
     }
 ]

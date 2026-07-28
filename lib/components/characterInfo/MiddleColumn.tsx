@@ -82,7 +82,7 @@ export default function MiddleColumn() {
                             id="equip-load"
                             type="text"
                             disabled
-                            value={`${equippedArmor.weight.toFixed(2)}/${calculateStatFromAttributes("MaximumEquipLoad", virtualAttributes).toFixed(2)}`}
+                            value={`${equippedArmor.weight.toFixed(1)}/${calculateStatFromAttributes("MaximumEquipLoad", virtualAttributes).toFixed(1)}`}
                         />
                         <input
                             className="flex text-right max"
