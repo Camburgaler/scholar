@@ -4,6 +4,7 @@
         "Modifiers": [],
         "Weight": 0,
         "Durability": 30,
+        "RepairCost": 46,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -33,6 +34,7 @@
         "Modifiers": [],
         "Weight": 3.5,
         "Durability": 80,
+        "RepairCost": 164,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -62,6 +64,7 @@
         "Modifiers": [],
         "Weight": 1.2,
         "Durability": 55,
+        "RepairCost": 143,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -91,6 +94,7 @@
         "Modifiers": [],
         "Weight": 1.4,
         "Durability": 50,
+        "RepairCost": 154,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -120,6 +124,7 @@
         "Modifiers": [],
         "Weight": 1.2,
         "Durability": 50,
+        "RepairCost": 123,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -149,6 +154,7 @@
         "Modifiers": [],
         "Weight": 4.2,
         "Durability": 80,
+        "RepairCost": 175,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -178,6 +184,7 @@
         "Modifiers": [],
         "Weight": 4.5,
         "Durability": 85,
+        "RepairCost": 185,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -207,6 +214,7 @@
         "Modifiers": [],
         "Weight": 1.1,
         "Durability": 55,
+        "RepairCost": 112,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -236,6 +244,7 @@
         "Modifiers": [],
         "Weight": 1.2,
         "Durability": 60,
+        "RepairCost": 154,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -265,6 +274,7 @@
         "Modifiers": [],
         "Weight": 2.2,
         "Durability": 35,
+        "RepairCost": 56,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -294,6 +304,7 @@
         "Modifiers": [],
         "Weight": 2.6,
         "Durability": 60,
+        "RepairCost": 154,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -323,6 +334,7 @@
         "Modifiers": [],
         "Weight": 7.5,
         "Durability": 255,
+        "RepairCost": 520,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -352,6 +364,7 @@
         "Modifiers": [],
         "Weight": 3,
         "Durability": 45,
+        "RepairCost": 102,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -381,6 +394,7 @@
         "Modifiers": [],
         "Weight": 2.2,
         "Durability": 50,
+        "RepairCost": 112,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -410,6 +424,7 @@
         "Modifiers": [],
         "Weight": 4.8,
         "Durability": 85,
+        "RepairCost": 370,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -439,6 +454,7 @@
         "Modifiers": [],
         "Weight": 2.2,
         "Durability": 225,
+        "RepairCost": 328,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -468,6 +484,7 @@
         "Modifiers": [],
         "Weight": 5,
         "Durability": 60,
+        "RepairCost": 203,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -497,6 +514,7 @@
         "Modifiers": [],
         "Weight": 2.5,
         "Durability": 50,
+        "RepairCost": 154,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -526,6 +544,7 @@
         "Modifiers": [],
         "Weight": 1.2,
         "Durability": 40,
+        "RepairCost": 328,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -555,6 +574,7 @@
         "Modifiers": [],
         "Weight": 3.8,
         "Durability": 80,
+        "RepairCost": 349,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -584,6 +604,7 @@
         "Modifiers": [],
         "Weight": 0.6,
         "Durability": 55,
+        "RepairCost": 133,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -613,6 +634,7 @@
         "Modifiers": [],
         "Weight": 0.8,
         "Durability": 40,
+        "RepairCost": 133,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -642,6 +664,7 @@
         "Modifiers": [],
         "Weight": 2.6,
         "Durability": 48,
+        "RepairCost": 245,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -671,6 +694,7 @@
         "Modifiers": [],
         "Weight": 0.8,
         "Durability": 35,
+        "RepairCost": 182,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -700,6 +724,7 @@
         "Modifiers": [],
         "Weight": 4.5,
         "Durability": 95,
+        "RepairCost": 195,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -729,6 +754,7 @@
         "Modifiers": [],
         "Weight": 3.7,
         "Durability": 80,
+        "RepairCost": 185,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -758,6 +784,7 @@
         "Modifiers": [],
         "Weight": 0.5,
         "Durability": 45,
+        "RepairCost": 182,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -787,6 +814,7 @@
         "Modifiers": [],
         "Weight": 1.5,
         "Durability": 55,
+        "RepairCost": 273,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -816,6 +844,7 @@
         "Modifiers": [],
         "Weight": 0.5,
         "Durability": 60,
+        "RepairCost": 273,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -845,6 +874,7 @@
         "Modifiers": [],
         "Weight": 4.7,
         "Durability": 85,
+        "RepairCost": 195,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -874,6 +904,7 @@
         "Modifiers": [],
         "Weight": 0.9,
         "Durability": 55,
+        "RepairCost": 336,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -903,6 +934,7 @@
         "Modifiers": [],
         "Weight": 4,
         "Durability": 100,
+        "RepairCost": 390,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -932,6 +964,7 @@
         "Modifiers": [],
         "Weight": 3.5,
         "Durability": 100,
+        "RepairCost": 390,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -961,6 +994,7 @@
         "Modifiers": [],
         "Weight": 4,
         "Durability": 100,
+        "RepairCost": 390,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -990,6 +1024,7 @@
         "Modifiers": [],
         "Weight": 6,
         "Durability": 80,
+        "RepairCost": 227,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1019,6 +1054,7 @@
         "Modifiers": [],
         "Weight": 1.5,
         "Durability": 50,
+        "RepairCost": 175,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1048,6 +1084,7 @@
         "Modifiers": [],
         "Weight": 4.3,
         "Durability": 55,
+        "RepairCost": 154,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1077,6 +1114,7 @@
         "Modifiers": [],
         "Weight": 9.8,
         "Durability": 100,
+        "RepairCost": 370,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1106,6 +1144,7 @@
         "Modifiers": [],
         "Weight": 8,
         "Durability": 100,
+        "RepairCost": 328,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1135,6 +1174,7 @@
         "Modifiers": [],
         "Weight": 4.3,
         "Durability": 35,
+        "RepairCost": 123,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1164,6 +1204,7 @@
         "Modifiers": [],
         "Weight": 4.8,
         "Durability": 70,
+        "RepairCost": 175,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1193,6 +1234,7 @@
         "Modifiers": [],
         "Weight": 4,
         "Durability": 40,
+        "RepairCost": 115,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1222,6 +1264,7 @@
         "Modifiers": [],
         "Weight": 4,
         "Durability": 55,
+        "RepairCost": 143,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1251,6 +1294,7 @@
         "Modifiers": [],
         "Weight": 1.4,
         "Durability": 50,
+        "RepairCost": 112,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1280,6 +1324,7 @@
         "Modifiers": [],
         "Weight": 1.2,
         "Durability": 50,
+        "RepairCost": 112,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1309,6 +1354,7 @@
         "Modifiers": [],
         "Weight": 0.7,
         "Durability": 40,
+        "RepairCost": 154,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1338,6 +1384,7 @@
         "Modifiers": [],
         "Weight": 4.1,
         "Durability": 60,
+        "RepairCost": 164,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1367,6 +1414,7 @@
         "Modifiers": [],
         "Weight": 4.6,
         "Durability": 55,
+        "RepairCost": 164,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1396,6 +1444,7 @@
         "Modifiers": [],
         "Weight": 1.9,
         "Durability": 50,
+        "RepairCost": 112,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1425,6 +1474,7 @@
         "Modifiers": [],
         "Weight": 1.8,
         "Durability": 50,
+        "RepairCost": 112,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1454,6 +1504,7 @@
         "Modifiers": [],
         "Weight": 5.4,
         "Durability": 100,
+        "RepairCost": 216,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1483,6 +1534,7 @@
         "Modifiers": [],
         "Weight": 1.8,
         "Durability": 60,
+        "RepairCost": 154,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1512,6 +1564,7 @@
         "Modifiers": [],
         "Weight": 1.8,
         "Durability": 65,
+        "RepairCost": 154,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1541,6 +1594,7 @@
         "Modifiers": [],
         "Weight": 0.8,
         "Durability": 25,
+        "RepairCost": 46,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1570,6 +1624,7 @@
         "Modifiers": [],
         "Weight": 0.8,
         "Durability": 25,
+        "RepairCost": 46,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1599,6 +1654,7 @@
         "Modifiers": [],
         "Weight": 5.4,
         "Durability": 80,
+        "RepairCost": 185,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1628,6 +1684,7 @@
         "Modifiers": [],
         "Weight": 8.2,
         "Durability": 70,
+        "RepairCost": 175,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1657,6 +1714,7 @@
         "Modifiers": [],
         "Weight": 8.9,
         "Durability": 75,
+        "RepairCost": 206,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1686,6 +1744,7 @@
         "Modifiers": [],
         "Weight": 9.6,
         "Durability": 85,
+        "RepairCost": 206,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1715,6 +1774,7 @@
         "Modifiers": [],
         "Weight": 3.8,
         "Durability": 90,
+        "RepairCost": 175,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1744,6 +1804,7 @@
         "Modifiers": [],
         "Weight": 4.8,
         "Durability": 50,
+        "RepairCost": 245,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1773,6 +1834,7 @@
         "Modifiers": [],
         "Weight": 1.4,
         "Durability": 40,
+        "RepairCost": 90,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1802,6 +1864,7 @@
         "Modifiers": [],
         "Weight": 1.3,
         "Durability": 45,
+        "RepairCost": 82,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1831,6 +1894,7 @@
         "Modifiers": [],
         "Weight": 6.3,
         "Durability": 90,
+        "RepairCost": 181,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1860,6 +1924,7 @@
         "Modifiers": [],
         "Weight": 6.3,
         "Durability": 45,
+        "RepairCost": 227,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1889,6 +1954,7 @@
         "Modifiers": [],
         "Weight": 4.7,
         "Durability": 75,
+        "RepairCost": 164,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1918,6 +1984,7 @@
         "Modifiers": [],
         "Weight": 6.2,
         "Durability": 85,
+        "RepairCost": 195,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1947,6 +2014,7 @@
         "Modifiers": [],
         "Weight": 1.7,
         "Durability": 65,
+        "RepairCost": 182,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -1976,6 +2044,7 @@
         "Modifiers": [],
         "Weight": 6,
         "Durability": 90,
+        "RepairCost": 195,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2005,6 +2074,7 @@
         "Modifiers": [],
         "Weight": 5.2,
         "Durability": 95,
+        "RepairCost": 195,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2034,6 +2104,7 @@
         "Modifiers": [],
         "Weight": 9,
         "Durability": 160,
+        "RepairCost": 328,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2063,6 +2134,7 @@
         "Modifiers": [],
         "Weight": 5.1,
         "Durability": 90,
+        "RepairCost": 370,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2092,6 +2164,7 @@
         "Modifiers": [],
         "Weight": 4.6,
         "Durability": 80,
+        "RepairCost": 185,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2121,6 +2194,7 @@
         "Modifiers": [],
         "Weight": 6.8,
         "Durability": 85,
+        "RepairCost": 175,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2150,6 +2224,7 @@
         "Modifiers": [],
         "Weight": 0.5,
         "Durability": 40,
+        "RepairCost": 266,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2179,6 +2254,7 @@
         "Modifiers": [],
         "Weight": 0.5,
         "Durability": 40,
+        "RepairCost": 112,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2208,6 +2284,7 @@
         "Modifiers": [],
         "Weight": 4.5,
         "Durability": 75,
+        "RepairCost": 164,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2237,6 +2314,7 @@
         "Modifiers": [],
         "Weight": 6,
         "Durability": 40,
+        "RepairCost": 173,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2266,6 +2344,7 @@
         "Modifiers": [],
         "Weight": 6.6,
         "Durability": 90,
+        "RepairCost": 216,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2295,6 +2374,7 @@
         "Modifiers": [],
         "Weight": 0.6,
         "Durability": 50,
+        "RepairCost": 91,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2324,6 +2404,7 @@
         "Modifiers": [],
         "Weight": 1.5,
         "Durability": 55,
+        "RepairCost": 123,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2353,6 +2434,7 @@
         "Modifiers": [],
         "Weight": 2,
         "Durability": 55,
+        "RepairCost": 266,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2382,6 +2464,7 @@
         "Modifiers": [],
         "Weight": 4,
         "Durability": 105,
+        "RepairCost": 185,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2411,6 +2494,7 @@
         "Modifiers": [],
         "Weight": 7,
         "Durability": 20,
+        "RepairCost": 206,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2440,6 +2524,7 @@
         "Modifiers": [],
         "Weight": 6,
         "Durability": 90,
+        "RepairCost": 411,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2469,6 +2554,7 @@
         "Modifiers": [],
         "Weight": 6.4,
         "Durability": 100,
+        "RepairCost": 370,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2498,6 +2584,7 @@
         "Modifiers": [],
         "Weight": 7.5,
         "Durability": 140,
+        "RepairCost": 390,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2527,6 +2614,7 @@
         "Modifiers": [],
         "Weight": 5.6,
         "Durability": 95,
+        "RepairCost": 349,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2556,6 +2644,7 @@
         "Modifiers": [],
         "Weight": 7,
         "Durability": 150,
+        "RepairCost": 390,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2585,6 +2674,7 @@
         "Modifiers": [],
         "Weight": 1,
         "Durability": 50,
+        "RepairCost": 203,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2614,6 +2704,7 @@
         "Modifiers": [],
         "Weight": 4.8,
         "Durability": 75,
+        "RepairCost": 185,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2643,6 +2734,7 @@
         "Modifiers": [],
         "Weight": 5.8,
         "Durability": 85,
+        "RepairCost": 195,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2672,6 +2764,7 @@
         "Modifiers": [],
         "Weight": 1,
         "Durability": 50,
+        "RepairCost": 112,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2701,6 +2794,7 @@
         "Modifiers": [],
         "Weight": 3.8,
         "Durability": 230,
+        "RepairCost": 390,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2730,6 +2824,7 @@
         "Modifiers": [],
         "Weight": 7.5,
         "Durability": 95,
+        "RepairCost": 206,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2759,6 +2854,7 @@
         "Modifiers": [],
         "Weight": 4.4,
         "Durability": 65,
+        "RepairCost": 307,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2788,6 +2884,7 @@
         "Modifiers": [],
         "Weight": 5.1,
         "Durability": 120,
+        "RepairCost": 224,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2817,6 +2914,7 @@
         "Modifiers": [],
         "Weight": 2,
         "Durability": 60,
+        "RepairCost": 245,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2846,6 +2944,7 @@
         "Modifiers": [],
         "Weight": 5.8,
         "Durability": 70,
+        "RepairCost": 411,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2875,6 +2974,7 @@
         "Modifiers": [],
         "Weight": 5.8,
         "Durability": 90,
+        "RepairCost": 175,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2904,6 +3004,7 @@
         "Modifiers": [],
         "Weight": 2,
         "Durability": 55,
+        "RepairCost": 112,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2933,6 +3034,7 @@
         "Modifiers": [],
         "Weight": 6,
         "Durability": 85,
+        "RepairCost": 390,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2962,6 +3064,7 @@
         "Modifiers": [],
         "Weight": 4,
         "Durability": 80,
+        "RepairCost": 370,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -2991,6 +3094,7 @@
         "Modifiers": [],
         "Weight": 6.3,
         "Durability": 85,
+        "RepairCost": 349,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3020,6 +3124,7 @@
         "Modifiers": [],
         "Weight": 6.5,
         "Durability": 45,
+        "RepairCost": 370,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3049,6 +3154,7 @@
         "Modifiers": [],
         "Weight": 7,
         "Durability": 55,
+        "RepairCost": 390,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3078,6 +3184,7 @@
         "Modifiers": [],
         "Weight": 1.1,
         "Durability": 40,
+        "RepairCost": 390,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3107,6 +3214,7 @@
         "Modifiers": [],
         "Weight": 5.9,
         "Durability": 90,
+        "RepairCost": 175,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3136,6 +3244,7 @@
         "Modifiers": [],
         "Weight": 4.3,
         "Durability": 70,
+        "RepairCost": 175,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3165,6 +3274,7 @@
         "Modifiers": [],
         "Weight": 7,
         "Durability": 72,
+        "RepairCost": 175,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3194,6 +3304,7 @@
         "Modifiers": [],
         "Weight": 4,
         "Durability": 65,
+        "RepairCost": 164,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3223,6 +3334,7 @@
         "Modifiers": [],
         "Weight": 3,
         "Durability": 60,
+        "RepairCost": 143,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3252,6 +3364,7 @@
         "Modifiers": [],
         "Weight": 2,
         "Durability": 65,
+        "RepairCost": 349,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3281,6 +3394,7 @@
         "Modifiers": [],
         "Weight": 1.5,
         "Durability": 50,
+        "RepairCost": 349,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3310,6 +3424,7 @@
         "Modifiers": [],
         "Weight": 4.8,
         "Durability": 60,
+        "RepairCost": 164,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3339,6 +3454,7 @@
         "Modifiers": [],
         "Weight": 5,
         "Durability": 75,
+        "RepairCost": 185,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3368,6 +3484,7 @@
         "Modifiers": [],
         "Weight": 0.9,
         "Durability": 55,
+        "RepairCost": 224,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3397,6 +3514,7 @@
         "Modifiers": [],
         "Weight": 0.9,
         "Durability": 55,
+        "RepairCost": 224,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3426,6 +3544,7 @@
         "Modifiers": [],
         "Weight": 0.9,
         "Durability": 55,
+        "RepairCost": 224,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3455,6 +3574,7 @@
         "Modifiers": [],
         "Weight": 0.9,
         "Durability": 55,
+        "RepairCost": 224,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3484,6 +3604,7 @@
         "Modifiers": [],
         "Weight": 1.5,
         "Durability": 50,
+        "RepairCost": 203,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,
@@ -3513,6 +3634,7 @@
         "Modifiers": [],
         "Weight": 4,
         "Durability": 75,
+        "RepairCost": 175,
         "Defenses": {
             "Slash": 0,
             "Thrust": 0,

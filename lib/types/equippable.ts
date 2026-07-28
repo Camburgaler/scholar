@@ -5,6 +5,7 @@ type Equippable = {
     Modifiers?: Modifier[];
     Weight: number;
     Durability: number;
+    RepairCost: number;
 };
 
 export default Equippable;
