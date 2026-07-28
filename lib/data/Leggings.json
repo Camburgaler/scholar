@@ -27,7 +27,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Pate's Trousers",
@@ -57,7 +58,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Black Leather Boots",
@@ -87,7 +89,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Wanderer Boots",
@@ -117,7 +120,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Leather Boots",
@@ -147,7 +151,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Knight Leggings",
@@ -177,7 +182,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Elite Knight Leggings",
@@ -207,7 +213,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Heavy Boots",
@@ -237,7 +244,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Brigand Trousers",
@@ -267,7 +275,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Imported Trousers",
@@ -297,7 +306,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Traveling Merchant Boots",
@@ -327,7 +337,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Havel's Leggings",
@@ -357,7 +368,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Jester's Tights",
@@ -387,7 +399,8 @@
             "Dexterity": 14,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Astrologist's Bottoms",
@@ -417,7 +430,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Faraam Boots",
@@ -447,7 +461,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Black Dragon Leggings",
@@ -477,7 +492,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Xanthous Waistcloth",
@@ -507,7 +523,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Tights of Judgment",
@@ -537,7 +554,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Leggings of Aurous (Visible)",
@@ -567,7 +585,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Leggings of Aurous (Invisible)",
@@ -597,7 +616,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Monastery Skirt",
@@ -627,7 +647,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Blood-stained Skirt",
@@ -657,7 +678,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Flying Feline Boots",
@@ -687,7 +709,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Moon Butterfly Skirt",
@@ -717,7 +740,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Catarina Leggings",
@@ -747,7 +771,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Alva Leggings",
@@ -777,7 +802,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Black Witch Trousers",
@@ -807,7 +833,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Drakeblood Leggings",
@@ -837,7 +864,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Northwarder Trousers",
@@ -867,7 +895,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Flower Skirt",
@@ -897,7 +926,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Hollow Soldier Leggings",
@@ -927,7 +957,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Royal Soldier Leggings",
@@ -957,7 +988,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Hollow Infantry Boots",
@@ -987,7 +1019,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Infantry Boots",
@@ -1017,7 +1050,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "White Priest Skirt",
@@ -1047,7 +1081,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Priestess Skirt",
@@ -1077,7 +1112,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Rogue Leggings",
@@ -1107,7 +1143,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Bandit Boots",
@@ -1137,7 +1174,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Varangian Leggings",
@@ -1167,7 +1205,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Lion Mage Skirt",
@@ -1197,7 +1236,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Steel Leggings",
@@ -1227,7 +1267,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Shadow Leggings",
@@ -1257,7 +1298,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Manikin Boots",
@@ -1287,7 +1329,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Prisoner's Waistcloth",
@@ -1317,7 +1360,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Archdrake Boots",
@@ -1347,7 +1391,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Gyrm Boots",
@@ -1377,7 +1422,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Gyrm Warrior Boots",
@@ -1407,7 +1453,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Dark Leggings",
@@ -1437,7 +1484,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Tseldora Trousers",
@@ -1467,7 +1515,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Peasant Trousers",
@@ -1497,7 +1546,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Ironclad Leggings",
@@ -1527,7 +1577,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Old Ironclad Leggings",
@@ -1557,7 +1608,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Royal Swordsman Leggings",
@@ -1587,7 +1639,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Syan's Leggings",
@@ -1617,7 +1670,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Bone King Skirt",
@@ -1647,7 +1701,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Heide Knight Leggings",
@@ -1677,7 +1732,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Smelter Demon Leggings",
@@ -1707,7 +1763,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Alonne Knight Leggings",
@@ -1737,7 +1794,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Vengarl's Boots",
@@ -1767,7 +1825,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Lion Warrior Skirt",
@@ -1797,7 +1856,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Grave Warden Bottoms",
@@ -1827,7 +1887,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Falconer Boots",
@@ -1857,7 +1918,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Rusted Mastodon Leggings",
@@ -1887,7 +1949,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Mastodon Leggings",
@@ -1917,7 +1980,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Desert Sorceress Skirt",
@@ -1947,7 +2011,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Dragon Acolyte Boots",
@@ -1977,7 +2042,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Ruin Leggings",
@@ -2007,7 +2073,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Old Knight Leggings",
@@ -2037,7 +2104,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Drakekeeper Boots",
@@ -2067,7 +2135,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Throne Defender Leggings",
@@ -2097,7 +2166,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Velstadt's Leggings",
@@ -2127,7 +2197,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Throne Watcher Leggings",
@@ -2157,7 +2228,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Looking Glass Leggings",
@@ -2187,7 +2259,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Agdayne's Kilt",
@@ -2217,7 +2290,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Insolent Boots",
@@ -2247,7 +2321,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Imperious Leggings",
@@ -2277,7 +2352,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "King's Leggings",
@@ -2307,7 +2383,8 @@
             "Dexterity": 12,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Dragonrider Leggings",
@@ -2337,7 +2414,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Executioner Leggings",
@@ -2367,7 +2445,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Penal Skirt",
@@ -2397,7 +2476,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Fume Sorcerer Boots",
@@ -2427,7 +2507,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Rampart Golem Leggings",
@@ -2457,7 +2538,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Sanctum Knight Leggings",
@@ -2487,7 +2569,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Raime's Leggings",
@@ -2517,7 +2600,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Alonne's Leggings",
@@ -2547,7 +2631,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Loyce Leggings",
@@ -2577,7 +2662,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Charred Loyce Leggings",
@@ -2607,7 +2693,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Ivory King Leggings",
@@ -2637,7 +2724,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Leggings of the Forlorn",
@@ -2667,7 +2755,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Llewellyn Shoes",
@@ -2697,7 +2786,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Drangleic Leggings",
@@ -2727,7 +2817,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Creighton's Chain Leggings",
@@ -2757,7 +2848,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Benhart's Boots",
@@ -2787,7 +2879,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Hard Leather Boots",
@@ -2817,7 +2910,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Cale's Shoes",
@@ -2847,7 +2941,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Lucatiel's Trousers",
@@ -2877,7 +2972,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Bell Keeper Trousers",
@@ -2907,7 +3003,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Mad Warrior Leggings",
@@ -2937,7 +3034,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Black Boots",
@@ -2967,7 +3065,8 @@
             "Dexterity": 0,
             "Intelligence": 16,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Saint's Trousers",
@@ -2997,7 +3096,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 16
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Hexer's Boots",
@@ -3027,7 +3127,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Chaos Boots",
@@ -3057,7 +3158,8 @@
             "Dexterity": 0,
             "Intelligence": 16,
             "Faith": 16
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Targray's Leggings",
@@ -3087,6 +3189,7 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     }
 ]

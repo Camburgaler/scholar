@@ -8,6 +8,7 @@ type Armor = Equippable & {
     Resistances: ResistanceMap<number>;
     Poise: number;
     Requirements: AttributeMap<number>;
+    ItemDiscovery: number;
 
     fitness?: number;
 };

@@ -27,7 +27,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Pate's Helm",
@@ -57,7 +58,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Thief Mask",
@@ -87,7 +89,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Wanderer Hood",
@@ -117,7 +120,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Hunter's Hat",
@@ -147,7 +151,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Knight Helm",
@@ -177,7 +182,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Elite Knight Helm",
@@ -207,7 +213,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Tattered Cloth Hood",
@@ -237,7 +244,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Brigand Hood",
@@ -267,7 +275,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Imported Hood",
@@ -297,7 +306,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Traveling Merchant Hat",
@@ -327,7 +337,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 25
     },
     {
         "Name": "Havel's Helm",
@@ -357,7 +368,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Jester's Cap",
@@ -387,7 +399,8 @@
             "Dexterity": 14,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 50
     },
     {
         "Name": "Moon Hat",
@@ -417,7 +430,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Faraam Helm",
@@ -447,7 +461,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Black Dragon Helm",
@@ -477,7 +492,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Xanthous Crown",
@@ -507,7 +523,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Mask of Judgment",
@@ -537,7 +554,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Helm of Aurous (Visible)",
@@ -567,7 +585,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Helm of Aurous (Invisible)",
@@ -597,7 +616,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Monastery Headcloth",
@@ -627,7 +647,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Dingy Hood",
@@ -657,7 +678,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Durgo's Hat",
@@ -687,7 +709,8 @@
             "Dexterity": 16,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Moon Butterfly Hat",
@@ -717,7 +740,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Catarina Helm",
@@ -747,7 +771,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Alva Helm",
@@ -777,7 +802,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Black Witch Veil",
@@ -807,7 +833,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Black Witch Hat",
@@ -837,7 +864,8 @@
             "Dexterity": 0,
             "Intelligence": 20,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Black Witch Domino Mask",
@@ -867,7 +895,8 @@
             "Dexterity": 0,
             "Intelligence": 20,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Drakeblood Helm",
@@ -897,7 +926,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Northwarder Hood",
@@ -927,7 +957,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Crown of the Old Iron King",
@@ -957,7 +988,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Crown of the Ivory King",
@@ -987,7 +1019,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Crown of the Sunken King",
@@ -1017,7 +1050,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Old Bell Helm",
@@ -1047,7 +1081,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Hollow Skin",
@@ -1077,7 +1112,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Pharros Mask",
@@ -1107,7 +1143,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Minotaur Helm",
@@ -1137,7 +1174,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Symbol of Avarice",
@@ -1167,7 +1205,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 100
     },
     {
         "Name": "Hollow Soldier Helm",
@@ -1197,7 +1236,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Royal Soldier Helm",
@@ -1227,7 +1267,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Hollow Infantry Helm",
@@ -1257,7 +1298,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Infantry Helm",
@@ -1287,7 +1329,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "White Priest Headpiece",
@@ -1317,7 +1360,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Priestess Headpiece",
@@ -1347,7 +1391,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Rogue Hood",
@@ -1377,7 +1422,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Spiked Bandit Helm",
@@ -1407,7 +1453,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Varangian Helm",
@@ -1437,7 +1484,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Black Hollow Mage Hood",
@@ -1467,7 +1515,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "White Hollow Mage Hood",
@@ -1497,7 +1546,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Steel Helm",
@@ -1527,7 +1577,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Shadow Mask",
@@ -1557,7 +1608,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Manikin Mask",
@@ -1587,7 +1639,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Prisoner's Hood (Mask Only)",
@@ -1617,7 +1670,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 10
     },
     {
         "Name": "Prisoner's Hood",
@@ -1647,7 +1701,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 10
     },
     {
         "Name": "Archdrake Helm",
@@ -1677,7 +1732,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Gyrm Helm",
@@ -1707,7 +1763,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Gyrm Warrior Helm",
@@ -1737,7 +1794,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Gyrm Warrior Greathelm",
@@ -1767,7 +1825,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Dark Mask",
@@ -1797,7 +1856,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Warlock Mask",
@@ -1827,7 +1887,8 @@
             "Dexterity": 0,
             "Intelligence": 14,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Tseldora Cap",
@@ -1857,7 +1918,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Peasant Hat",
@@ -1887,7 +1949,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Ironclad Helm",
@@ -1917,7 +1980,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Old Ironclad Helm",
@@ -1947,7 +2011,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Royal Swordsman Helm",
@@ -1977,7 +2042,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Syan's Helm",
@@ -2007,7 +2073,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Bone Crown",
@@ -2037,7 +2104,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Heide Knight Greathelm",
@@ -2067,7 +2135,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Heide Knight Iron Mask",
@@ -2097,7 +2166,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Smelter Demon Helm",
@@ -2127,7 +2197,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Alonne Captain Helm",
@@ -2157,7 +2228,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Alonne Knight Helm",
@@ -2187,7 +2259,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Vengarl's Helm",
@@ -2217,7 +2290,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Lion Warrior Helm",
@@ -2247,7 +2321,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Grave Warden Mask",
@@ -2277,7 +2352,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Falconer Helm",
@@ -2307,7 +2383,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Rusted Mastodon Helm",
@@ -2337,7 +2414,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Mastodon Helm",
@@ -2367,7 +2445,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Desert Sorceress Hood",
@@ -2397,7 +2476,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Dragon Acolyte Mask",
@@ -2427,7 +2507,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Dragon Sage Hood",
@@ -2457,7 +2538,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Ruin Helm",
@@ -2487,7 +2569,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Old Knight Helm",
@@ -2517,7 +2600,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Drakekeeper Helm",
@@ -2547,7 +2631,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Throne Defender Helm",
@@ -2577,7 +2662,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Velstadt's Helm",
@@ -2607,7 +2693,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Throne Watcher Helm",
@@ -2637,7 +2724,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Looking Glass Mask",
@@ -2667,7 +2755,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Leydia Black Hood",
@@ -2697,7 +2786,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Insolent Helm",
@@ -2727,7 +2817,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Imperious Helm",
@@ -2757,7 +2848,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Leydia White Hood",
@@ -2787,7 +2879,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "King's Crown",
@@ -2817,7 +2910,8 @@
             "Dexterity": 12,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Dragonrider Helm",
@@ -2847,7 +2941,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Executioner Helm",
@@ -2877,7 +2972,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Penal Mask",
@@ -2907,7 +3003,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Fume Sorcerer Mask",
@@ -2937,7 +3034,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Rampart Golem Helm",
@@ -2967,7 +3065,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Sanctum Knight Helm",
@@ -2997,7 +3096,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Sanctum Priestess Tiara",
@@ -3027,7 +3127,8 @@
             "Dexterity": 0,
             "Intelligence": 11,
             "Faith": 11
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Raime's Helm",
@@ -3057,7 +3158,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Alonne's Helm",
@@ -3087,7 +3189,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Loyce Helm",
@@ -3117,7 +3220,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Charred Loyce Helm",
@@ -3147,7 +3251,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Ivory King Helm",
@@ -3177,7 +3282,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Hood of the Forlorn",
@@ -3207,7 +3313,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Drangleic Helm",
@@ -3237,7 +3344,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Creighton's Steel Mask",
@@ -3267,7 +3375,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Benhart's Knight Helm",
@@ -3297,7 +3406,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Standard Helm",
@@ -3327,7 +3437,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Cale's Helm",
@@ -3357,7 +3468,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Lucatiel's Mask",
@@ -3387,7 +3499,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Mirrah Hat",
@@ -3417,7 +3530,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Bell Keeper Helmet",
@@ -3447,7 +3561,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Mad Warrior Mask",
@@ -3477,7 +3592,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Black Hood",
@@ -3507,7 +3623,8 @@
             "Dexterity": 0,
             "Intelligence": 16,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Saint's Hood",
@@ -3537,7 +3654,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 16
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Hexer's Hood",
@@ -3567,7 +3685,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Chaos Hood",
@@ -3597,7 +3716,8 @@
             "Dexterity": 0,
             "Intelligence": 16,
             "Faith": 16
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Nahr Alma Hood",
@@ -3627,7 +3747,8 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     },
     {
         "Name": "Targray's Helm",
@@ -3657,6 +3778,7 @@
             "Dexterity": 0,
             "Intelligence": 0,
             "Faith": 0
-        }
+        },
+        "ItemDiscovery": 0
     }
 ]

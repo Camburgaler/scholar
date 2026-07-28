@@ -4,6 +4,7 @@
         "Modifiers": [],
         "Weight": 0,
         "Durability": 0,
-        "RepairCost": 0
+        "RepairCost": 0,
+        "ItemDiscovery": 0
     }
 ]
