@@ -6,14 +6,10 @@ export default function RightColumn() {
             {/* Casting Speed / Agility */}
             <div className="flex flex-col w-full">
                 {/* Cast Speed */}
-                <StatDisplay
-                    statMapKey="SpellCastingSpeed"
-                    displayValue="45"
-                    isOddRow
-                />
+                <StatDisplay statMapKey="SpellCastingSpeed" isOddRow />
 
                 {/* Agility */}
-                <StatDisplay statMapKey="Agility" displayValue="85" />
+                <StatDisplay statMapKey="Agility" />
             </div>
 
             <hr />
@@ -23,45 +19,28 @@ export default function RightColumn() {
                 {/* Attack: Strength */}
                 <StatDisplay
                     statMapKey="PhysicalAttackPowerByStrength"
-                    displayValue="68"
                     isOddRow
                 />
 
                 {/* Attack: Dexterity */}
-                <StatDisplay
-                    statMapKey="PhysicalAttackPowerByDexterity"
-                    displayValue="59"
-                />
+                <StatDisplay statMapKey="PhysicalAttackPowerByDexterity" />
 
                 {/* Magic Bonus */}
-                <StatDisplay
-                    statMapKey="AttackPowerMagic"
-                    displayValue="51"
-                    isOddRow
-                />
+                <StatDisplay statMapKey="AttackPowerMagic" isOddRow />
 
                 {/* Fire Bonus */}
-                <StatDisplay statMapKey="AttackPowerFire" displayValue="61" />
-
+                <StatDisplay statMapKey="AttackPowerFire" />
                 {/* Lightning Bonus */}
-                <StatDisplay
-                    statMapKey="AttackPowerLightning"
-                    displayValue="53"
-                    isOddRow
-                />
+                <StatDisplay statMapKey="AttackPowerLightning" isOddRow />
 
                 {/* Dark Bonus */}
-                <StatDisplay statMapKey="AttackPowerDark" displayValue="61" />
+                <StatDisplay statMapKey="AttackPowerDark" />
 
                 {/* Poison Bonus */}
-                <StatDisplay
-                    statMapKey="AttackPowerPoison"
-                    displayValue="56"
-                    isOddRow
-                />
+                <StatDisplay statMapKey="AttackPowerPoison" isOddRow />
 
                 {/* Bleed Bonus */}
-                <StatDisplay statMapKey="AttackPowerBleed" displayValue="56" />
+                <StatDisplay statMapKey="AttackPowerBleed" />
             </div>
 
             <hr />
@@ -69,30 +48,19 @@ export default function RightColumn() {
             {/* Defense */}
             <div className="flex flex-col w-full">
                 {/* Physical Defense */}
-                <StatDisplay statMapKey="Defense" displayValue="77" isOddRow />
+                <StatDisplay statMapKey="Defense" isOddRow />
 
                 {/* Magic Defense */}
-                <StatDisplay statMapKey="AbsorptionMagic" displayValue="30" />
+                <StatDisplay statMapKey="AbsorptionMagic" />
 
                 {/* Fire Defense */}
-                <StatDisplay
-                    statMapKey="AbsorptionFire"
-                    displayValue="68"
-                    isOddRow
-                />
+                <StatDisplay statMapKey="AbsorptionFire" isOddRow />
 
                 {/* Lightning Defense */}
-                <StatDisplay
-                    statMapKey="AbsorptionLightning"
-                    displayValue="30"
-                />
+                <StatDisplay statMapKey="AbsorptionLightning" />
 
                 {/* Dark Defense */}
-                <StatDisplay
-                    statMapKey="AbsorptionDark"
-                    displayValue="36"
-                    isOddRow
-                />
+                <StatDisplay statMapKey="AbsorptionDark" isOddRow />
             </div>
 
             <hr />
@@ -100,24 +68,16 @@ export default function RightColumn() {
             {/* Resistances */}
             <div className="flex flex-col w-full">
                 {/* Bleed Resistance */}
-                <StatDisplay statMapKey="ResistanceBleed" displayValue="30" />
+                <StatDisplay statMapKey="ResistanceBleed" />
 
                 {/* Poison Resistance */}
-                <StatDisplay
-                    statMapKey="ResistancePoison"
-                    displayValue="30"
-                    isOddRow
-                />
+                <StatDisplay statMapKey="ResistancePoison" isOddRow />
 
                 {/* Petrify Resistance */}
-                <StatDisplay statMapKey="ResistancePetrify" displayValue="30" />
+                <StatDisplay statMapKey="ResistancePetrify" />
 
                 {/* Curse Resistance */}
-                <StatDisplay
-                    statMapKey="ResistanceCurse"
-                    displayValue="30"
-                    isOddRow
-                />
+                <StatDisplay statMapKey="ResistanceCurse" isOddRow />
             </div>
 
             <hr />

@@ -1,9 +1,10 @@
 import { AttributeToStatMap } from "@/lib/gameData";
-import { FocusedAttributeContext } from "@/lib/reducers/focusedAttribute";
-import { VirtualAttributesContext } from "@/lib/reducers/virtualAttributes";
+import { useEquippedArmor } from "@/lib/reducers/equippedArmor";
+import { useFocusedAttribute } from "@/lib/reducers/focusedAttribute";
+import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
 import { calculateStat } from "@/lib/scripts/statCalculation";
 import { StatMapKey, StatMapKeyToStatNameMap } from "@/lib/types/statMap";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { JSX } from "react/jsx-runtime";
 
 function getEquipLoadPercentFromRatio(ratio: string) {
@@ -11,31 +12,31 @@ function getEquipLoadPercentFromRatio(ratio: string) {
     return (numerator / denominator) * 100;
 }
 
-// StatDisplay is a component that displays a stat and its value.
-//
-// @prop {string} statMapKey - The key of the stat map that contains the stat value.
-//
-// @prop {string} displayValue - The value of the stat.
-//
-// @prop {boolean} isOddRow - Whether the row is odd or not. Optional.
+/**
+ * StatDisplay is a component that displays a stat and its value.
+ *
+ * @prop {string} statMapKey - The key of the stat map that contains the stat value.
+ * @prop {string} displayValue - The value of the stat.
+ * @prop {boolean} isOddRow - Whether the row is odd or not. Optional.
+ **/
 export default function StatDisplay(props: {
     statMapKey: StatMapKey;
-    displayValue: string;
     isOddRow?: boolean;
 }): JSX.Element {
     // Props
-    const { statMapKey, displayValue, isOddRow } = props;
+    const { statMapKey, isOddRow } = props;
 
     // Context
-    const focusedAttribute = useContext(FocusedAttributeContext);
-    const virtualAttributes = useContext(VirtualAttributesContext);
+    const focusedAttribute = useFocusedAttribute();
+    const virtualAttributes = useVirtualAttributes();
+    const equippedArmor = useEquippedArmor();
 
     // State
     const [isFocused, setIsFocused] = useState(false);
 
     // determines if the focused attribute affects this stat
     useEffect(() => {
-        setIsFocused(AttributeToStatMap[focusedAttribute!]?.[statMapKey]);
+        setIsFocused(AttributeToStatMap[focusedAttribute!]?.[statMapKey]!);
     }, [focusedAttribute]);
 
     return (
@@ -59,15 +60,33 @@ export default function StatDisplay(props: {
             {statMapKey == "MaximumEquipLoad" ? (
                 <div className="flex flex-col items-end justify-end">
                     <input
-                        className="flex text-right max-w-15"
+                        className="flex text-right max-w-30 h-full"
+                        style={{ border: "none" }}
                         id="equip-load"
                         type="text"
                         disabled
-                        value={`0/${calculateStat(statMapKey, virtualAttributes)}`}
+                        value={`${equippedArmor.weight.toFixed(2)}/${calculateStat(statMapKey, virtualAttributes).toFixed(2)}`}
                     />
-                    <p className=" flex items-center justify-center text-right">
-                        Using {getEquipLoadPercentFromRatio(displayValue)}%
-                    </p>
+                    <input
+                        className="flex text-right max"
+                        disabled
+                        style={{
+                            border: "none",
+                            color:
+                                getEquipLoadPercentFromRatio(
+                                    `${equippedArmor.weight}/${calculateStat(statMapKey, virtualAttributes)}`,
+                                ) > 100
+                                    ? "red"
+                                    : getEquipLoadPercentFromRatio(
+                                            `${equippedArmor.weight}/${calculateStat(statMapKey, virtualAttributes)}`,
+                                        ) > 70
+                                      ? "yellow"
+                                      : "var(--contrast)",
+                        }}
+                        value={`${getEquipLoadPercentFromRatio(
+                            `${equippedArmor.weight}/${calculateStat(statMapKey, virtualAttributes)}`,
+                        ).toFixed(2)}%`}
+                    />
                 </div>
             ) : (
                 <input

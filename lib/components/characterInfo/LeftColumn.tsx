@@ -1,11 +1,11 @@
 import { Classes, Covenants, PlayerLevelUpSouls, Spells } from "@/lib/gameData";
 import {
-    FocusedAttributeContext,
-    FocusedAttributeDispatchContext,
+    useFocusedAttribute,
+    useFocusedAttributeDispatch,
 } from "@/lib/reducers/focusedAttribute";
 import {
-    VirtualAttributesContext,
-    VirtualAttributesDispatchContext,
+    useVirtualAttributes,
+    useVirtualAttributesDispatch,
 } from "@/lib/reducers/virtualAttributes";
 import { calculateStat } from "@/lib/scripts/statCalculation";
 import ArmorSet from "@/lib/types/armorSet";
@@ -14,7 +14,7 @@ import Class from "@/lib/types/class";
 import Equippable from "@/lib/types/equippable";
 import Ring from "@/lib/types/ring";
 import Spell from "@/lib/types/spell";
-import { useCallback, useContext, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Lock, Trash, Unlock } from "react-bootstrap-icons";
 
 const MAX_PLAYER_LEVEL_UP_SOULS_ID = 850;
@@ -91,10 +91,10 @@ export default function LeftColumn(props: {
 }) {
     // CONTEXT
 
-    const focusedAttribute = useContext(FocusedAttributeContext);
-    const setFocusedAttribute = useContext(FocusedAttributeDispatchContext);
-    const virtualAttributes = useContext(VirtualAttributesContext);
-    const setVirtualAttributes = useContext(VirtualAttributesDispatchContext);
+    const focusedAttribute = useFocusedAttribute();
+    const setFocusedAttribute = useFocusedAttributeDispatch();
+    const virtualAttributes = useVirtualAttributes();
+    const setVirtualAttributes = useVirtualAttributesDispatch();
 
     // STATE
 

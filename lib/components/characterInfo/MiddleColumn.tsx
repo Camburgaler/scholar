@@ -1,13 +1,18 @@
 import WeaponDisplay from "@/lib/components/characterInfo/middleColumn/WeaponDisplay";
 import StatDisplay from "@/lib/components/characterInfo/StatDisplay";
 import { Chestpieces, Gauntlets, Helmets, Leggings } from "@/lib/gameData";
-import { VirtualAttributesContext } from "@/lib/reducers/virtualAttributes";
+import { useEquippedArmorDispatch } from "@/lib/reducers/equippedArmor";
+import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
 import Armor from "@/lib/types/armor";
-import { useContext } from "react";
+
+function getArmorByName(armorList: Armor[], name: string): Armor {
+    return armorList.find((armor) => armor.Name === name) || armorList[0];
+}
 
 export default function MiddleColumn() {
     // Context
-    const virtualAttributes = useContext(VirtualAttributesContext);
+    const virtualAttributes = useVirtualAttributes();
+    const setEquippedArmor = useEquippedArmorDispatch();
 
     // Helper Functions
     function filterArmor(armor: Armor[]) {
@@ -26,37 +31,27 @@ export default function MiddleColumn() {
             {/* Stats */}
             <div className="flex flex-col w-full items-left justify-baseline align-center">
                 {/* HP */}
-                <StatDisplay
-                    statMapKey="MaximumHP"
-                    displayValue="826"
-                    isOddRow
-                />
+                <StatDisplay statMapKey="MaximumHP" isOddRow />
 
                 {/* Stamina */}
-                <StatDisplay statMapKey="MaximumStamina" displayValue="92" />
-
+                <StatDisplay statMapKey="MaximumStamina" />
                 {/* Equip load */}
-                <StatDisplay
-                    statMapKey="MaximumEquipLoad"
-                    displayValue="0/47.5"
-                    isOddRow
-                />
+                <StatDisplay statMapKey="MaximumEquipLoad" isOddRow />
 
                 {/* Poise */}
-                <StatDisplay statMapKey="Poise" displayValue="1.5" />
+                <StatDisplay statMapKey="Poise" />
 
                 {/* Attunement slots */}
-                <StatDisplay
-                    statMapKey="SpellSlotCount"
-                    displayValue="0"
-                    isOddRow
-                />
+                <StatDisplay statMapKey="SpellSlotCount" isOddRow />
             </div>
 
             <hr />
 
             {/* Armor */}
             {/* TODO: make these affect attributes/stats */}
+            {/* TODO: add lock toggles to these similar to the one for the starting class */}
+            {/*     the lock would control how the armor optimization behaves */}
+            {/*     (e.g. if the armor is locked, the optimization should not change it) */}
             <div className="flex flex-col w-full items-left justify-baseline align-center gap-1">
                 {/* Helmets */}
                 <div className="flex gap-1 w-full justify-between">
@@ -70,6 +65,12 @@ export default function MiddleColumn() {
                         className="flex text-right h-full"
                         id="helmet"
                         defaultValue="0"
+                        onChange={(e) =>
+                            setEquippedArmor({
+                                slot: "helmet",
+                                armor: getArmorByName(Helmets, e.target.value),
+                            })
+                        }
                     >
                         {filterArmor(Helmets).map((helmet) => (
                             <option key={helmet.Name} value={helmet.Name}>
@@ -96,6 +97,15 @@ export default function MiddleColumn() {
                         className="flex text-right h-full"
                         id="chestpiece"
                         defaultValue="0"
+                        onChange={(e) =>
+                            setEquippedArmor({
+                                slot: "chestpiece",
+                                armor: getArmorByName(
+                                    Chestpieces,
+                                    e.target.value,
+                                ),
+                            })
+                        }
                     >
                         {filterArmor(Chestpieces).map((chestpiece) => (
                             <option
@@ -120,6 +130,15 @@ export default function MiddleColumn() {
                         className="flex text-right h-full"
                         id="gauntlets"
                         defaultValue="0"
+                        onChange={(e) =>
+                            setEquippedArmor({
+                                slot: "gauntlets",
+                                armor: getArmorByName(
+                                    Gauntlets,
+                                    e.target.value,
+                                ),
+                            })
+                        }
                     >
                         {filterArmor(Gauntlets).map((gauntlet) => (
                             <option key={gauntlet.Name} value={gauntlet.Name}>
@@ -146,6 +165,12 @@ export default function MiddleColumn() {
                         className="flex text-right h-full"
                         id="leggings"
                         defaultValue="0"
+                        onChange={(e) =>
+                            setEquippedArmor({
+                                slot: "leggings",
+                                armor: getArmorByName(Leggings, e.target.value),
+                            })
+                        }
                     >
                         {filterArmor(Leggings).map((legging) => (
                             <option key={legging.Name} value={legging.Name}>
