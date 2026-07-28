@@ -32,6 +32,48 @@ export type StatMapKey =
     | "Agility"
     | "Poise";
 
+export const StatMapKeys: StatMapKey[] = [
+    "MaximumHP",
+    "MaximumStamina",
+    "MaximumEquipLoad",
+    "SpellSlotCount",
+    "SpellCastingSpeed",
+    "PhysicalAttackPowerByStrength",
+    "PhysicalAttackPowerByDexterity",
+    "AttackPowerMagic",
+    "AttackPowerFire",
+    "AttackPowerLightning",
+    "AttackPowerDark",
+    "AttackPowerPoison",
+    "AttackPowerBleed",
+    "Defense",
+    "AbsorptionMagic",
+    "AbsorptionFire",
+    "AbsorptionLightning",
+    "AbsorptionDark",
+    "ResistancePoison",
+    "ResistanceBleed",
+    "ResistancePetrify",
+    "ResistanceCurse",
+    "Agility",
+    "Poise",
+];
+
+export const StatIsDefenseOrResistance: Map<StatMapKey, boolean> = new Map<
+    StatMapKey,
+    boolean
+>([
+    ["Defense", true],
+    ["AbsorptionMagic", true],
+    ["AbsorptionFire", true],
+    ["AbsorptionLightning", true],
+    ["AbsorptionDark", true],
+    ["ResistancePoison", true],
+    ["ResistanceBleed", true],
+    ["ResistancePetrify", true],
+    ["ResistanceCurse", true],
+]);
+
 export const StatMapKeyToStatNameMap: Map<StatMapKey, string> = new Map<
     StatMapKey,
     string

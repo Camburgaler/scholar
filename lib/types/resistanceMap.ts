@@ -2,6 +2,13 @@
 
 export type ResistanceMapKey = "Poison" | "Bleed" | "Petrify" | "Curse";
 
+export const ResistanceMapKeys: ResistanceMapKey[] = [
+    "Poison",
+    "Bleed",
+    "Petrify",
+    "Curse",
+];
+
 type ResistanceMap<T> = {
     [K in ResistanceMapKey]: T;
 };

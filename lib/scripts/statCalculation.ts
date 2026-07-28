@@ -1,10 +1,20 @@
 import {
+    mapDisplayKeyToArmorDefenseField,
+    mapDisplayKeyToArmorResistanceField,
+    mapDisplayKeyToStatMapKey,
+    StatDisplayKey,
+} from "@/lib/components/characterInfo/StatDisplay";
+import {
     AttributeToStatMap,
     BaseStats,
     StatCalculationDetails,
 } from "@/lib/gameData";
+import ArmorSet, {
+    sumArmorSetDefense,
+    sumArmorSetResistance,
+} from "@/lib/types/armorSet";
 import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
-import { StatMapKey } from "@/lib/types/statMap";
+import { StatIsDefenseOrResistance, StatMapKey } from "@/lib/types/statMap";
 
 type CurveMap = { breakpoint: number; value: number };
 
@@ -792,7 +802,7 @@ function calculateCommonResistance(primary: number, secondary: number): number {
     return resistance;
 }
 
-export function calculateStat(
+export function calculateStatFromAttributes(
     statId: StatMapKey,
     attributes: AttributeMap<number>,
 ): number {
@@ -802,13 +812,13 @@ export function calculateStat(
         case "Poise":
             return (
                 statValue +
-                calculatePoise(attributes.Adaptability, attributes.Endurance)
+                calculatePoise(attributes.Adaptability!, attributes.Endurance!)
             );
         case "SpellCastingSpeed":
             return (
                 statValue +
                 calculateCastingSpeed(
-                    attributes.Attunement,
+                    attributes.Attunement!,
                     attributes.Faith,
                     attributes.Intelligence,
                 )
@@ -816,7 +826,10 @@ export function calculateStat(
         case "Agility":
             return (
                 statValue +
-                calculateAgility(attributes.Adaptability, attributes.Attunement)
+                calculateAgility(
+                    attributes.Adaptability!,
+                    attributes.Attunement!,
+                )
             );
         case "AttackPowerFire":
             return (
@@ -839,7 +852,7 @@ export function calculateStat(
                 statValue +
                 calculateCommonAttackPower(
                     attributes.Dexterity,
-                    attributes.Adaptability,
+                    attributes.Adaptability!,
                 )
             );
         case "AttackPowerBleed":
@@ -854,8 +867,8 @@ export function calculateStat(
             return (
                 statValue +
                 calculatePhysicalDefense(
-                    attributes.Endurance,
-                    attributes.Vitality,
+                    attributes.Endurance!,
+                    attributes.Vitality!,
                     attributes.Strength,
                     attributes.Dexterity,
                 )
@@ -879,7 +892,7 @@ export function calculateStat(
             return (
                 statValue +
                 calculateCommonResistance(
-                    attributes.Adaptability,
+                    attributes.Adaptability!,
                     attributes.Faith,
                 )
             );
@@ -887,24 +900,24 @@ export function calculateStat(
             return (
                 statValue +
                 calculateCommonResistance(
-                    attributes.Adaptability,
-                    attributes.Vitality,
+                    attributes.Adaptability!,
+                    attributes.Vitality!,
                 )
             );
         case "ResistancePetrify":
             return (
                 statValue +
                 calculateCommonResistance(
-                    attributes.Adaptability,
-                    attributes.Vigor,
+                    attributes.Adaptability!,
+                    attributes.Vigor!,
                 )
             );
         case "ResistanceCurse":
             return (
                 statValue +
                 calculateCommonResistance(
-                    attributes.Adaptability,
-                    attributes.Attunement,
+                    attributes.Adaptability!,
+                    attributes.Attunement!,
                 )
             );
         default:
@@ -920,7 +933,7 @@ export function calculateStat(
 
         const attributeId = key as AttributeMapKey;
         const attributeDetails = StatCalculationDetails[attributeId];
-        const statCurve = attributeDetails[statId];
+        const statCurve = attributeDetails![statId];
 
         if (!statCurve) {
             console.error(
@@ -929,9 +942,37 @@ export function calculateStat(
             continue;
         }
 
-        const scalingValue = statCurve[attributes[attributeId]];
+        const scalingValue = statCurve[attributes[attributeId]!];
 
         statValue += scalingValue;
+    }
+
+    return statValue;
+}
+
+export function calculateStatDisplayValue(
+    statDisplayKey: StatDisplayKey,
+    attributes: AttributeMap<number>,
+    equippedArmor: ArmorSet,
+): number {
+    const statMapKey: StatMapKey = mapDisplayKeyToStatMapKey(statDisplayKey);
+    let statValue = calculateStatFromAttributes(statMapKey, attributes);
+
+    if (StatIsDefenseOrResistance.get(statMapKey)) {
+        if (
+            statDisplayKey.includes("Defense") ||
+            statDisplayKey.includes("Absorption")
+        ) {
+            statValue += sumArmorSetDefense(
+                equippedArmor,
+                mapDisplayKeyToArmorDefenseField(statDisplayKey),
+            );
+        } else {
+            statValue += sumArmorSetResistance(
+                equippedArmor,
+                mapDisplayKeyToArmorResistanceField(statDisplayKey),
+            );
+        }
     }
 
     return statValue;

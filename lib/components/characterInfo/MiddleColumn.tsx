@@ -1,9 +1,26 @@
 import WeaponDisplay from "@/lib/components/characterInfo/middleColumn/WeaponDisplay";
 import StatDisplay from "@/lib/components/characterInfo/StatDisplay";
-import { Chestpieces, Gauntlets, Helmets, Leggings } from "@/lib/gameData";
-import { useEquippedArmorDispatch } from "@/lib/reducers/equippedArmor";
+import {
+    AttributeToStatMap,
+    Chestpieces,
+    Gauntlets,
+    Helmets,
+    Leggings,
+} from "@/lib/gameData";
+import {
+    useEquippedArmor,
+    useEquippedArmorDispatch,
+} from "@/lib/reducers/equippedArmor";
+import { useFocusedAttribute } from "@/lib/reducers/focusedAttribute";
 import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
+import { calculateStatFromAttributes } from "@/lib/scripts/statCalculation";
 import Armor from "@/lib/types/armor";
+import { StatMapKeyToStatNameMap } from "@/lib/types/statMap";
+
+function getEquipLoadPercentFromRatio(ratio: string) {
+    const [numerator, denominator] = ratio.split("/").map(Number);
+    return (numerator / denominator) * 100;
+}
 
 function getArmorByName(armorList: Armor[], name: string): Armor {
     return armorList.find((armor) => armor.Name === name) || armorList[0];
@@ -12,7 +29,9 @@ function getArmorByName(armorList: Armor[], name: string): Armor {
 export default function MiddleColumn() {
     // Context
     const virtualAttributes = useVirtualAttributes();
+    const equippedArmor = useEquippedArmor();
     const setEquippedArmor = useEquippedArmorDispatch();
+    const focusedAttribute = useFocusedAttribute();
 
     // Helper Functions
     function filterArmor(armor: Armor[]) {
@@ -31,18 +50,68 @@ export default function MiddleColumn() {
             {/* Stats */}
             <div className="flex flex-col w-full items-left justify-baseline align-center">
                 {/* HP */}
-                <StatDisplay statMapKey="MaximumHP" isOddRow />
+                <StatDisplay statDisplayKey="MaximumHP" isOddRow />
 
                 {/* Stamina */}
-                <StatDisplay statMapKey="MaximumStamina" />
+                <StatDisplay statDisplayKey="MaximumStamina" />
+
                 {/* Equip load */}
-                <StatDisplay statMapKey="MaximumEquipLoad" isOddRow />
+                {/* <StatDisplay statMapKey="MaximumEquipLoad" isOddRow /> */}
+                <div
+                    className="flex gap-1 w-full justify-between"
+                    style={{
+                        backgroundColor: "var(--primary)",
+                        fontWeight: AttributeToStatMap[focusedAttribute!]?.[
+                            "MaximumEquipLoad"
+                        ]!
+                            ? "bold"
+                            : "normal",
+                    }}
+                    id={"MaximumEquipLoad"}
+                >
+                    <label
+                        className="flex items-center justify-center h-full"
+                        htmlFor={"MaximumEquipLoad"}
+                    >
+                        {StatMapKeyToStatNameMap.get("MaximumEquipLoad")}:
+                    </label>
+                    <div className="flex flex-col items-end justify-end">
+                        <input
+                            className="flex text-right max-w-30 h-full"
+                            style={{ border: "none" }}
+                            id="equip-load"
+                            type="text"
+                            disabled
+                            value={`${equippedArmor.weight.toFixed(2)}/${calculateStatFromAttributes("MaximumEquipLoad", virtualAttributes).toFixed(2)}`}
+                        />
+                        <input
+                            className="flex text-right max"
+                            disabled
+                            style={{
+                                border: "none",
+                                color:
+                                    getEquipLoadPercentFromRatio(
+                                        `${equippedArmor.weight}/${calculateStatFromAttributes("MaximumEquipLoad", virtualAttributes)}`,
+                                    ) > 100
+                                        ? "red"
+                                        : getEquipLoadPercentFromRatio(
+                                                `${equippedArmor.weight}/${calculateStatFromAttributes("MaximumEquipLoad", virtualAttributes)}`,
+                                            ) > 70
+                                          ? "yellow"
+                                          : "var(--contrast)",
+                            }}
+                            value={`${getEquipLoadPercentFromRatio(
+                                `${equippedArmor.weight}/${calculateStatFromAttributes("MaximumEquipLoad", virtualAttributes)}`,
+                            ).toFixed(2)}%`}
+                        />
+                    </div>
+                </div>
 
                 {/* Poise */}
-                <StatDisplay statMapKey="Poise" />
+                <StatDisplay statDisplayKey="Poise" />
 
                 {/* Attunement slots */}
-                <StatDisplay statMapKey="SpellSlotCount" isOddRow />
+                <StatDisplay statDisplayKey="SpellSlotCount" isOddRow />
             </div>
 
             <hr />

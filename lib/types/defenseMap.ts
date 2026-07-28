@@ -10,6 +10,17 @@ export type DefenseMapKey =
     | "Fire"
     | "Dark";
 
+export const DefenseMapKeys: DefenseMapKey[] = [
+    "Slash",
+    "Thrust",
+    "Strike",
+    "Standard",
+    "Magic",
+    "Lightning",
+    "Fire",
+    "Dark",
+];
+
 type DefenseMap<T> = {
     [K in DefenseMapKey]: T;
 };

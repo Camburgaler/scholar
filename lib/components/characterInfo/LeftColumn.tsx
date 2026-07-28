@@ -7,7 +7,7 @@ import {
     useVirtualAttributes,
     useVirtualAttributesDispatch,
 } from "@/lib/reducers/virtualAttributes";
-import { calculateStat } from "@/lib/scripts/statCalculation";
+import { calculateStatFromAttributes } from "@/lib/scripts/statCalculation";
 import ArmorSet from "@/lib/types/armorSet";
 import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
 import Class from "@/lib/types/class";
@@ -342,7 +342,9 @@ export default function LeftColumn(props: {
      * Updates the spell slots when the virtual attributes change.
      */
     useEffect(() => {
-        setSpellSlots(calculateStat("SpellSlotCount", virtualAttributes));
+        setSpellSlots(
+            calculateStatFromAttributes("SpellSlotCount", virtualAttributes),
+        );
     }, [virtualAttributes]);
 
     /**
