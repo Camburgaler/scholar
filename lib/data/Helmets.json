@@ -28,7 +28,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 0
     },
     {
         "Name": "Pate's Helm",
@@ -59,7 +60,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Thief Mask",
@@ -90,7 +92,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Wanderer Hood",
@@ -121,7 +124,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Hunter's Hat",
@@ -152,7 +156,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Knight Helm",
@@ -183,7 +188,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Elite Knight Helm",
@@ -214,7 +220,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Tattered Cloth Hood",
@@ -245,7 +252,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Brigand Hood",
@@ -276,7 +284,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Imported Hood",
@@ -307,7 +316,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Traveling Merchant Hat",
@@ -338,7 +348,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 25
+        "ItemDiscovery": 25,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Havel's Helm",
@@ -369,7 +380,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Jester's Cap",
@@ -400,7 +412,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 50
+        "ItemDiscovery": 50,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Moon Hat",
@@ -431,7 +444,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Faraam Helm",
@@ -462,7 +476,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Black Dragon Helm",
@@ -493,7 +508,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Xanthous Crown",
@@ -524,7 +540,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Mask of Judgment",
@@ -555,7 +572,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Helm of Aurous (Visible)",
@@ -586,7 +604,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Helm of Aurous (Invisible)",
@@ -617,7 +636,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Monastery Headcloth",
@@ -648,7 +668,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Dingy Hood",
@@ -679,7 +700,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Durgo's Hat",
@@ -710,7 +732,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Moon Butterfly Hat",
@@ -741,7 +764,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Catarina Helm",
@@ -772,7 +796,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Alva Helm",
@@ -803,7 +828,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Black Witch Veil",
@@ -834,7 +860,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Black Witch Hat",
@@ -865,7 +892,8 @@
             "Intelligence": 20,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Black Witch Domino Mask",
@@ -896,7 +924,8 @@
             "Intelligence": 20,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Drakeblood Helm",
@@ -927,7 +956,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Northwarder Hood",
@@ -958,7 +988,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Crown of the Old Iron King",
@@ -989,7 +1020,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Crown of the Ivory King",
@@ -1020,7 +1052,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Crown of the Sunken King",
@@ -1051,7 +1084,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Old Bell Helm",
@@ -1082,7 +1116,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Hollow Skin",
@@ -1113,7 +1148,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Pharros Mask",
@@ -1144,7 +1180,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Minotaur Helm",
@@ -1175,7 +1212,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Symbol of Avarice",
@@ -1206,7 +1244,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 100
+        "ItemDiscovery": 100,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Hollow Soldier Helm",
@@ -1237,7 +1276,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Royal Soldier Helm",
@@ -1268,7 +1308,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Hollow Infantry Helm",
@@ -1299,7 +1340,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Infantry Helm",
@@ -1330,7 +1372,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "White Priest Headpiece",
@@ -1361,7 +1404,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Priestess Headpiece",
@@ -1392,7 +1436,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Rogue Hood",
@@ -1423,7 +1468,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Spiked Bandit Helm",
@@ -1454,7 +1500,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Varangian Helm",
@@ -1485,7 +1532,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Black Hollow Mage Hood",
@@ -1516,7 +1564,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "White Hollow Mage Hood",
@@ -1547,7 +1596,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Steel Helm",
@@ -1578,7 +1628,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Shadow Mask",
@@ -1609,7 +1660,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Manikin Mask",
@@ -1640,7 +1692,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Prisoner's Hood (Mask Only)",
@@ -1671,7 +1724,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 10
+        "ItemDiscovery": 10,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Prisoner's Hood",
@@ -1702,7 +1756,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 10
+        "ItemDiscovery": 10,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Archdrake Helm",
@@ -1733,7 +1788,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Gyrm Helm",
@@ -1764,7 +1820,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Gyrm Warrior Helm",
@@ -1795,7 +1852,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Gyrm Warrior Greathelm",
@@ -1826,7 +1884,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Dark Mask",
@@ -1857,7 +1916,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Warlock Mask",
@@ -1888,7 +1948,8 @@
             "Intelligence": 14,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Tseldora Cap",
@@ -1919,7 +1980,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Peasant Hat",
@@ -1950,7 +2012,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Ironclad Helm",
@@ -1981,7 +2044,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Old Ironclad Helm",
@@ -2012,7 +2076,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Royal Swordsman Helm",
@@ -2043,7 +2108,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Syan's Helm",
@@ -2074,7 +2140,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Bone Crown",
@@ -2105,7 +2172,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Heide Knight Greathelm",
@@ -2136,7 +2204,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Heide Knight Iron Mask",
@@ -2167,7 +2236,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Smelter Demon Helm",
@@ -2198,7 +2268,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Alonne Captain Helm",
@@ -2229,7 +2300,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Alonne Knight Helm",
@@ -2260,7 +2332,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Vengarl's Helm",
@@ -2291,7 +2364,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Lion Warrior Helm",
@@ -2322,7 +2396,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Grave Warden Mask",
@@ -2353,7 +2428,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Falconer Helm",
@@ -2384,7 +2460,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Rusted Mastodon Helm",
@@ -2415,7 +2492,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Mastodon Helm",
@@ -2446,7 +2524,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Desert Sorceress Hood",
@@ -2477,7 +2556,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Dragon Acolyte Mask",
@@ -2508,7 +2588,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Dragon Sage Hood",
@@ -2539,7 +2620,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Ruin Helm",
@@ -2570,7 +2652,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Old Knight Helm",
@@ -2601,7 +2684,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Drakekeeper Helm",
@@ -2632,7 +2716,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Throne Defender Helm",
@@ -2663,7 +2748,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Velstadt's Helm",
@@ -2694,7 +2780,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Throne Watcher Helm",
@@ -2725,7 +2812,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Looking Glass Mask",
@@ -2756,7 +2844,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Leydia Black Hood",
@@ -2787,7 +2876,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Insolent Helm",
@@ -2818,7 +2908,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Imperious Helm",
@@ -2849,7 +2940,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Leydia White Hood",
@@ -2880,7 +2972,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "King's Crown",
@@ -2911,7 +3004,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Dragonrider Helm",
@@ -2942,7 +3036,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Executioner Helm",
@@ -2973,7 +3068,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Penal Mask",
@@ -3004,7 +3100,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Fume Sorcerer Mask",
@@ -3035,7 +3132,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Rampart Golem Helm",
@@ -3066,7 +3164,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Sanctum Knight Helm",
@@ -3097,7 +3196,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Sanctum Priestess Tiara",
@@ -3128,7 +3228,8 @@
             "Intelligence": 11,
             "Faith": 11
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Raime's Helm",
@@ -3159,7 +3260,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Alonne's Helm",
@@ -3190,7 +3292,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Loyce Helm",
@@ -3221,7 +3324,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Charred Loyce Helm",
@@ -3252,7 +3356,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Ivory King Helm",
@@ -3283,7 +3388,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Hood of the Forlorn",
@@ -3314,7 +3420,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Drangleic Helm",
@@ -3345,7 +3452,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Creighton's Steel Mask",
@@ -3376,7 +3484,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Benhart's Knight Helm",
@@ -3407,7 +3516,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Standard Helm",
@@ -3438,7 +3548,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Cale's Helm",
@@ -3469,7 +3580,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Lucatiel's Mask",
@@ -3500,7 +3612,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Mirrah Hat",
@@ -3531,7 +3644,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Bell Keeper Helmet",
@@ -3562,7 +3676,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Mad Warrior Mask",
@@ -3593,7 +3708,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Black Hood",
@@ -3624,7 +3740,8 @@
             "Intelligence": 16,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Saint's Hood",
@@ -3655,7 +3772,8 @@
             "Intelligence": 0,
             "Faith": 16
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Hexer's Hood",
@@ -3686,7 +3804,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Chaos Hood",
@@ -3717,7 +3836,8 @@
             "Intelligence": 16,
             "Faith": 16
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Nahr Alma Hood",
@@ -3748,7 +3868,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Targray's Helm",
@@ -3779,6 +3900,7 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     }
 ]

@@ -28,7 +28,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 0
     },
     {
         "Name": "Pate's Gloves",
@@ -59,7 +60,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Black Leather Gloves",
@@ -90,7 +92,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Wanderer Manchettes",
@@ -121,7 +124,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Leather Gloves",
@@ -152,7 +156,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Knight Gauntlets",
@@ -183,7 +188,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Elite Knight Gloves",
@@ -214,7 +220,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Tattered Cloth Manchettes",
@@ -245,7 +252,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Brigand Gauntlets",
@@ -276,7 +284,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Imported Manchettes",
@@ -307,7 +316,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Traveling Merchant Gloves",
@@ -338,7 +348,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Havel's Gauntlets",
@@ -369,7 +380,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Jester's Gloves",
@@ -400,7 +412,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Astrologist's Gauntlets",
@@ -431,7 +444,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Faraam Gauntlets",
@@ -462,7 +476,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Black Dragon Gauntlets",
@@ -493,7 +508,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Xanthous Gloves",
@@ -524,7 +540,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Manchettes ofJudgment",
@@ -555,7 +572,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Gauntlets of Aurous (Visible)",
@@ -586,7 +604,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Gauntlets of Aurous (Invisible)",
@@ -617,7 +636,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Monastery Long Gloves",
@@ -648,7 +668,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Dingy Cuffs",
@@ -679,7 +700,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Engraved Gauntlets",
@@ -710,7 +732,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Moon Butterfly Cuffs",
@@ -741,7 +764,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Catarina Gauntlets",
@@ -772,7 +796,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Alva Gauntlets",
@@ -803,7 +828,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Black Witch Gloves",
@@ -834,7 +860,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Drakeblood Gauntlets",
@@ -865,7 +892,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Northwarder Manchettes",
@@ -896,7 +924,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Hollow Soldier Gauntlets",
@@ -927,7 +956,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Royal Soldier Gauntlets",
@@ -958,7 +988,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Hollow Infantry Gloves",
@@ -989,7 +1020,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Infantry Gloves",
@@ -1020,7 +1052,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "White Priest Gloves",
@@ -1051,7 +1084,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Priestess Gloves",
@@ -1082,7 +1116,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Rogue Gauntlets",
@@ -1113,7 +1148,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Bandit Gauntlets",
@@ -1144,7 +1180,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Varangian Cuffs",
@@ -1175,7 +1212,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Lion Mage Cuffs",
@@ -1206,7 +1244,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Steel Gauntlets",
@@ -1237,7 +1276,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Shadow Gauntlets",
@@ -1268,7 +1308,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Manikin Gloves",
@@ -1299,7 +1340,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Prisoner's Gloves",
@@ -1330,7 +1372,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Archdrake Gloves",
@@ -1361,7 +1404,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Gyrm Gloves",
@@ -1392,7 +1436,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Gyrm Warrior Gloves",
@@ -1423,7 +1468,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Dark Gauntlets",
@@ -1454,7 +1500,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Tseldora Manchettes",
@@ -1485,7 +1532,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Peasant Long Gloves",
@@ -1516,7 +1564,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Ironclad Gauntlets",
@@ -1547,7 +1596,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Old Ironclad Gauntlets",
@@ -1578,7 +1628,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Royal Swordsman Gloves",
@@ -1609,7 +1660,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Syan's Gloves",
@@ -1640,7 +1692,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Bone King Cuffs",
@@ -1671,7 +1724,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Heide Knight Gauntlets",
@@ -1702,7 +1756,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Smelter Demon Gauntlets",
@@ -1733,7 +1788,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Alonne Knight Gauntlets",
@@ -1764,7 +1820,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Vengarl's Gloves",
@@ -1795,7 +1852,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Lion Warrior Cuffs",
@@ -1826,7 +1884,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Grave Warden Cuffs",
@@ -1857,7 +1916,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Falconer Gloves",
@@ -1888,7 +1948,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Rusted Mastodon Gauntlets",
@@ -1919,7 +1980,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Mastodon Gauntlets",
@@ -1950,7 +2012,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Desert Sorceress Gloves",
@@ -1981,7 +2044,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Dragon Acolyte Gloves",
@@ -2012,7 +2076,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Ruin Gauntlets",
@@ -2043,7 +2108,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Old Knight Gauntlets",
@@ -2074,7 +2140,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Drakekeeper Gauntlets",
@@ -2105,7 +2172,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Throne Defender Gauntlets",
@@ -2136,7 +2204,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Velstadt's Gauntlets",
@@ -2167,7 +2236,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Throne Watcher Gauntlets",
@@ -2198,7 +2268,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Looking Glass Gauntlets",
@@ -2229,7 +2300,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Agdayne's Cuffs",
@@ -2260,7 +2332,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Insolent Gloves",
@@ -2291,7 +2364,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Imperious Gloves",
@@ -2322,7 +2396,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Leydia Gauntlets",
@@ -2353,7 +2428,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "King's Gauntlets",
@@ -2384,7 +2460,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Dragonrider Gauntlets",
@@ -2415,7 +2492,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Executioner Gauntlets",
@@ -2446,7 +2524,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Penal Handcuffs",
@@ -2477,7 +2556,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Fume Sorcerer Gloves",
@@ -2508,7 +2588,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Rampart Golem Gauntlets",
@@ -2539,7 +2620,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Sanctum Knight Gauntlets",
@@ -2570,7 +2652,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Sanctum Soldier Gauntlet",
@@ -2601,7 +2684,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Raime's Gauntlets",
@@ -2632,7 +2716,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Alonne's Gauntlets",
@@ -2663,7 +2748,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Loyce Gauntlets",
@@ -2694,7 +2780,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Charred Loyce Gauntlets",
@@ -2725,7 +2812,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Ivory King Gauntlets",
@@ -2756,7 +2844,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Gauntlets of the Forlorn",
@@ -2787,7 +2876,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Llewellyn Gloves",
@@ -2818,7 +2908,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Drangleic Gauntlets",
@@ -2849,7 +2940,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Creighton's Chain Gloves",
@@ -2880,7 +2972,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Benhart's Gauntlets",
@@ -2911,7 +3004,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Hard Leather Gauntlets",
@@ -2942,7 +3036,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Lucatiel's Gloves",
@@ -2973,7 +3068,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Bell Keeper Cuffs",
@@ -3004,7 +3100,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Mad Warrior Gauntlets",
@@ -3035,7 +3132,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Black Gloves",
@@ -3066,7 +3164,8 @@
             "Intelligence": 16,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Saint's Long Gloves",
@@ -3097,7 +3196,8 @@
             "Intelligence": 0,
             "Faith": 16
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Hexer's Gloves",
@@ -3128,7 +3228,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Chaos Gloves",
@@ -3159,7 +3260,8 @@
             "Intelligence": 16,
             "Faith": 16
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Targray's Manifers",
@@ -3190,6 +3292,7 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     }
 ]

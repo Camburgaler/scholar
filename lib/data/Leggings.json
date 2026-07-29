@@ -28,7 +28,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 0
     },
     {
         "Name": "Pate's Trousers",
@@ -59,7 +60,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Black Leather Boots",
@@ -90,7 +92,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Wanderer Boots",
@@ -121,7 +124,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Leather Boots",
@@ -152,7 +156,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Knight Leggings",
@@ -183,7 +188,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Elite Knight Leggings",
@@ -214,7 +220,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Heavy Boots",
@@ -245,7 +252,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Brigand Trousers",
@@ -276,7 +284,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Imported Trousers",
@@ -307,7 +316,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Traveling Merchant Boots",
@@ -338,7 +348,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Havel's Leggings",
@@ -369,7 +380,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Jester's Tights",
@@ -400,7 +412,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Astrologist's Bottoms",
@@ -431,7 +444,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Faraam Boots",
@@ -462,7 +476,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Black Dragon Leggings",
@@ -493,7 +508,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Xanthous Waistcloth",
@@ -524,7 +540,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Tights of Judgment",
@@ -555,7 +572,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Leggings of Aurous (Visible)",
@@ -586,7 +604,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Leggings of Aurous (Invisible)",
@@ -617,7 +636,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Monastery Skirt",
@@ -648,7 +668,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Blood-stained Skirt",
@@ -679,7 +700,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Flying Feline Boots",
@@ -710,7 +732,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Moon Butterfly Skirt",
@@ -741,7 +764,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Catarina Leggings",
@@ -772,7 +796,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Alva Leggings",
@@ -803,7 +828,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Black Witch Trousers",
@@ -834,7 +860,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Drakeblood Leggings",
@@ -865,7 +892,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Northwarder Trousers",
@@ -896,7 +924,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Flower Skirt",
@@ -927,7 +956,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Hollow Soldier Leggings",
@@ -958,7 +988,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Royal Soldier Leggings",
@@ -989,7 +1020,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Hollow Infantry Boots",
@@ -1020,7 +1052,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Infantry Boots",
@@ -1051,7 +1084,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "White Priest Skirt",
@@ -1082,7 +1116,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Priestess Skirt",
@@ -1113,7 +1148,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Rogue Leggings",
@@ -1144,7 +1180,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Bandit Boots",
@@ -1175,7 +1212,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Varangian Leggings",
@@ -1206,7 +1244,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Lion Mage Skirt",
@@ -1237,7 +1276,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Steel Leggings",
@@ -1268,7 +1308,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Shadow Leggings",
@@ -1299,7 +1340,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Manikin Boots",
@@ -1330,7 +1372,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Prisoner's Waistcloth",
@@ -1361,7 +1404,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Archdrake Boots",
@@ -1392,7 +1436,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Gyrm Boots",
@@ -1423,7 +1468,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Gyrm Warrior Boots",
@@ -1454,7 +1500,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Dark Leggings",
@@ -1485,7 +1532,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Tseldora Trousers",
@@ -1516,7 +1564,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Peasant Trousers",
@@ -1547,7 +1596,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Ironclad Leggings",
@@ -1578,7 +1628,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Old Ironclad Leggings",
@@ -1609,7 +1660,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Royal Swordsman Leggings",
@@ -1640,7 +1692,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Syan's Leggings",
@@ -1671,7 +1724,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Bone King Skirt",
@@ -1702,7 +1756,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Heide Knight Leggings",
@@ -1733,7 +1788,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Smelter Demon Leggings",
@@ -1764,7 +1820,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Alonne Knight Leggings",
@@ -1795,7 +1852,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Vengarl's Boots",
@@ -1826,7 +1884,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Lion Warrior Skirt",
@@ -1857,7 +1916,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Grave Warden Bottoms",
@@ -1888,7 +1948,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Falconer Boots",
@@ -1919,7 +1980,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Rusted Mastodon Leggings",
@@ -1950,7 +2012,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Mastodon Leggings",
@@ -1981,7 +2044,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Desert Sorceress Skirt",
@@ -2012,7 +2076,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Dragon Acolyte Boots",
@@ -2043,7 +2108,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Ruin Leggings",
@@ -2074,7 +2140,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Old Knight Leggings",
@@ -2105,7 +2172,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Drakekeeper Boots",
@@ -2136,7 +2204,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Throne Defender Leggings",
@@ -2167,7 +2236,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Velstadt's Leggings",
@@ -2198,7 +2268,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Throne Watcher Leggings",
@@ -2229,7 +2300,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Looking Glass Leggings",
@@ -2260,7 +2332,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Agdayne's Kilt",
@@ -2291,7 +2364,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Insolent Boots",
@@ -2322,7 +2396,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Imperious Leggings",
@@ -2353,7 +2428,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "King's Leggings",
@@ -2384,7 +2460,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Dragonrider Leggings",
@@ -2415,7 +2492,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Executioner Leggings",
@@ -2446,7 +2524,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Penal Skirt",
@@ -2477,7 +2556,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Fume Sorcerer Boots",
@@ -2508,7 +2588,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Rampart Golem Leggings",
@@ -2539,7 +2620,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Sanctum Knight Leggings",
@@ -2570,7 +2652,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Raime's Leggings",
@@ -2601,7 +2684,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Alonne's Leggings",
@@ -2632,7 +2716,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Loyce Leggings",
@@ -2663,7 +2748,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Charred Loyce Leggings",
@@ -2694,7 +2780,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Ivory King Leggings",
@@ -2725,7 +2812,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Leggings of the Forlorn",
@@ -2756,7 +2844,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Llewellyn Shoes",
@@ -2787,7 +2876,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Drangleic Leggings",
@@ -2818,7 +2908,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Creighton's Chain Leggings",
@@ -2849,7 +2940,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Benhart's Boots",
@@ -2880,7 +2972,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Hard Leather Boots",
@@ -2911,7 +3004,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Cale's Shoes",
@@ -2942,7 +3036,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Lucatiel's Trousers",
@@ -2973,7 +3068,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Bell Keeper Trousers",
@@ -3004,7 +3100,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Mad Warrior Leggings",
@@ -3035,7 +3132,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Black Boots",
@@ -3066,7 +3164,8 @@
             "Intelligence": 16,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Saint's Trousers",
@@ -3097,7 +3196,8 @@
             "Intelligence": 0,
             "Faith": 16
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Hexer's Boots",
@@ -3128,7 +3228,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Chaos Boots",
@@ -3159,7 +3260,8 @@
             "Intelligence": 16,
             "Faith": 16
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Targray's Leggings",
@@ -3190,6 +3292,7 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     }
 ]

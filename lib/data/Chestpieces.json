@@ -28,7 +28,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 0
     },
     {
         "Name": "Pate's Armor",
@@ -59,7 +60,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Black Leather Armor",
@@ -90,7 +92,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Wanderer Coat",
@@ -121,7 +124,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Leather Armor",
@@ -152,7 +156,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Knight Armor",
@@ -183,7 +188,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Elite Knight Armor",
@@ -214,7 +220,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Tattered Cloth Robe",
@@ -245,7 +252,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Brigand Armor",
@@ -276,7 +284,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Imported Tunic",
@@ -307,7 +316,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Traveling Merchant Coat",
@@ -338,7 +348,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Havel's Armor",
@@ -369,7 +380,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Jester's Robes",
@@ -400,7 +412,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Astrologist's Robe",
@@ -431,7 +444,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Faraam Armor",
@@ -462,7 +476,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Black Dragon Armor",
@@ -493,7 +508,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Xanthous Overcoat",
@@ -524,7 +540,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Robe of Judgment",
@@ -555,7 +572,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Armor of Aurous (Visible)",
@@ -586,7 +604,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Armor of Aurous (Invisible)",
@@ -617,7 +636,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Monastery Longshirt",
@@ -648,7 +668,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Dingy Robe",
@@ -679,7 +700,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Moon Butterfly Wings",
@@ -710,7 +732,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Catarina Armor",
@@ -741,7 +764,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Alva Armor",
@@ -772,7 +796,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Black Witch Robe",
@@ -803,7 +828,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Drakeblood Armor",
@@ -834,7 +860,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Northwarder Robe",
@@ -865,7 +892,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Hollow Soldier Armor",
@@ -896,7 +924,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Royal Soldier Armor",
@@ -927,7 +956,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Hollow Infantry Armor",
@@ -958,7 +988,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Infantry Armor",
@@ -989,7 +1020,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "White Priest Robe",
@@ -1020,7 +1052,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Priestess Robe",
@@ -1051,7 +1084,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Rogue Armor",
@@ -1082,7 +1116,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Bandit Armor",
@@ -1113,7 +1148,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Varangian Armor",
@@ -1144,7 +1180,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Black Hollow Mage Robe",
@@ -1175,7 +1212,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "White Hollow Mage Robe",
@@ -1206,7 +1244,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Lion Mage Robe",
@@ -1237,7 +1276,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Steel Armor",
@@ -1268,7 +1308,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Shadow Top",
@@ -1299,7 +1340,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Manikin Top",
@@ -1330,7 +1372,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Prisoner's Tatters (Master's Attire)",
@@ -1361,7 +1404,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 15
+        "ItemDiscovery": 15,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Prisoner's Tatters",
@@ -1392,7 +1436,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 15
+        "ItemDiscovery": 15,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Archdrake Robes",
@@ -1423,7 +1468,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Gyrm Armor",
@@ -1454,7 +1500,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Gyrm Warrior Armor",
@@ -1485,7 +1532,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Dark Armor",
@@ -1516,7 +1564,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Tseldora Robe",
@@ -1547,7 +1596,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Peasant Attire",
@@ -1578,7 +1628,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Ironclad Armor",
@@ -1609,7 +1660,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Old Ironclad Armor",
@@ -1640,7 +1692,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Royal Swordsman Armor",
@@ -1671,7 +1724,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Syan's Armor",
@@ -1702,7 +1756,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Bone King Robe",
@@ -1733,7 +1788,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Heide Knight Chainmail",
@@ -1764,7 +1820,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Singer's Dress",
@@ -1795,7 +1852,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Smelter Demon Armor",
@@ -1826,7 +1884,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Alonne Captain Armor",
@@ -1857,7 +1916,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Alonne Knight Armor",
@@ -1888,7 +1948,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Vengarl's Armor",
@@ -1919,7 +1980,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Lion Warrior Cape",
@@ -1950,7 +2012,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Red Lion Warrior Cape",
@@ -1981,7 +2044,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Grave Warden Top",
@@ -2012,7 +2076,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Falconer Armor",
@@ -2043,7 +2108,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Rusted Mastodon Armor",
@@ -2074,7 +2140,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Mastodon Armor",
@@ -2105,7 +2172,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Desert Sorceress Top",
@@ -2136,7 +2204,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Dragon Acolyte Robe",
@@ -2167,7 +2236,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Ruin Armor",
@@ -2198,7 +2268,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Old Knight Armor",
@@ -2229,7 +2300,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Drakekeeper Armor",
@@ -2260,7 +2332,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Throne Defender Armor",
@@ -2291,7 +2364,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Velstadt's Armor",
@@ -2322,7 +2396,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Throne Watcher Armor",
@@ -2353,7 +2428,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Looking Glass Armor",
@@ -2384,7 +2460,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Agdayne's Black Robe",
@@ -2415,7 +2492,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Leydia Black Robe",
@@ -2446,7 +2524,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Insolent Armor",
@@ -2477,7 +2556,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Imperious Armor",
@@ -2508,7 +2588,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Leydia White Robe",
@@ -2539,7 +2620,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "King's Armor",
@@ -2570,7 +2652,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Dragonrider Armor",
@@ -2601,7 +2684,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Executioner Armor",
@@ -2632,7 +2716,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Penal Straightjacket",
@@ -2663,7 +2748,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Fume Sorcerer Robes",
@@ -2694,7 +2780,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Rampart Golem Armor",
@@ -2725,7 +2812,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Sanctum Knight Armor",
@@ -2756,7 +2844,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Raime's Armor",
@@ -2787,7 +2876,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Retainer Robe",
@@ -2818,7 +2908,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Alonne's Armor",
@@ -2849,7 +2940,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Loyce Armor",
@@ -2880,7 +2972,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Charred Loyce Armor",
@@ -2911,7 +3004,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Ivory King Armor",
@@ -2942,7 +3036,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Armor of the Forlorn",
@@ -2973,7 +3068,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Llewellyn Armor",
@@ -3004,7 +3100,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Drangleic Mail",
@@ -3035,7 +3132,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Creighton's Chainmail",
@@ -3066,7 +3164,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Benhart's Armor",
@@ -3097,7 +3196,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Hard Leather Armor",
@@ -3128,7 +3228,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Cale's Leather Armor",
@@ -3159,7 +3260,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Lucatiel's Vest",
@@ -3190,7 +3292,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Bell Keeper Bellyband",
@@ -3221,7 +3324,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Mad Warrior Armor",
@@ -3252,7 +3356,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Black Robes",
@@ -3283,7 +3388,8 @@
             "Intelligence": 16,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Saint's Dress",
@@ -3314,7 +3420,8 @@
             "Intelligence": 0,
             "Faith": 16
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Hexer's Robe",
@@ -3345,7 +3452,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Chaos Robe",
@@ -3376,7 +3484,8 @@
             "Intelligence": 16,
             "Faith": 16
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 5
     },
     {
         "Name": "Nahr Alma Robes",
@@ -3407,7 +3516,8 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     },
     {
         "Name": "Targray's Armor",
@@ -3438,6 +3548,7 @@
             "Intelligence": 0,
             "Faith": 0
         },
-        "ItemDiscovery": 0
+        "ItemDiscovery": 0,
+        "MaxReinforcementLevel": 10
     }
 ]

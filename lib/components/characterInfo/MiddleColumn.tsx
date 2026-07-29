@@ -1,12 +1,6 @@
 import WeaponDisplay from "@/lib/components/characterInfo/middleColumn/WeaponDisplay";
 import StatDisplay from "@/lib/components/characterInfo/StatDisplay";
-import {
-    AttributeToStatMap,
-    Chestpieces,
-    Gauntlets,
-    Helmets,
-    Leggings,
-} from "@/lib/gameData";
+import { AttributeToStatMap } from "@/lib/gameData";
 import {
     useEquippedArmor,
     useEquippedArmorDispatch,
@@ -14,16 +8,12 @@ import {
 import { useFocusedAttribute } from "@/lib/reducers/focusedAttribute";
 import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
 import { calculateStatFromAttributes } from "@/lib/scripts/statCalculation";
-import Armor from "@/lib/types/armor";
 import { StatMapKeyToStatNameMap } from "@/lib/types/statMap";
+import { ArmorDisplay } from "./middleColumn/ArmorDisplay";
 
 function getEquipLoadPercentFromRatio(ratio: string) {
     const [numerator, denominator] = ratio.split("/").map(Number);
     return (numerator / denominator) * 100;
-}
-
-function getArmorByName(armorList: Armor[], name: string): Armor {
-    return armorList.find((armor) => armor.Name === name) || armorList[0];
 }
 
 export default function MiddleColumn() {
@@ -32,18 +22,6 @@ export default function MiddleColumn() {
     const equippedArmor = useEquippedArmor();
     const setEquippedArmor = useEquippedArmorDispatch();
     const focusedAttribute = useFocusedAttribute();
-
-    // Helper Functions
-    function filterArmor(armor: Armor[]) {
-        return armor.filter(
-            (armor) =>
-                armor.Requirements.Strength <= virtualAttributes.Strength &&
-                armor.Requirements.Dexterity <= virtualAttributes.Dexterity &&
-                armor.Requirements.Intelligence <=
-                    virtualAttributes.Intelligence &&
-                armor.Requirements.Faith <= virtualAttributes.Faith,
-        );
-    }
 
     return (
         <div className="flex flex-col w-full h-full items-left justify-baseline align-center">
@@ -117,137 +95,18 @@ export default function MiddleColumn() {
             <hr />
 
             {/* Armor */}
-            {/* TODO: make these affect attributes/stats */}
-            {/* TODO: add lock toggles to these similar to the one for the starting class */}
-            {/*     the lock would control how the armor optimization behaves */}
-            {/*     (e.g. if the armor is locked, the optimization should not change it) */}
             <div className="flex flex-col w-full items-left justify-baseline align-center gap-1">
                 {/* Helmets */}
-                <div className="flex gap-1 w-full justify-between">
-                    <label
-                        className="flex items-center justify-center h-full"
-                        htmlFor="helmet"
-                    >
-                        Helmet:
-                    </label>
-                    <select
-                        className="flex text-right h-full"
-                        id="helmet"
-                        defaultValue="0"
-                        onChange={(e) =>
-                            setEquippedArmor({
-                                slot: "helmet",
-                                armor: getArmorByName(Helmets, e.target.value),
-                            })
-                        }
-                    >
-                        {filterArmor(Helmets).map((helmet) => (
-                            <option key={helmet.Name} value={helmet.Name}>
-                                {helmet.Name}
-                            </option>
-                        ))}
-                    </select>
-                </div>
+                <ArmorDisplay label="Helmet" />
 
                 {/* Chestpieces */}
-                <div
-                    className="flex gap-1 w-full justify-between"
-                    style={{
-                        backgroundColor: "var(--primary)",
-                    }}
-                >
-                    <label
-                        className="flex items-center justify-center h-full"
-                        htmlFor="chestpiece"
-                    >
-                        Chestpiece:
-                    </label>
-                    <select
-                        className="flex text-right h-full"
-                        id="chestpiece"
-                        defaultValue="0"
-                        onChange={(e) =>
-                            setEquippedArmor({
-                                slot: "chestpiece",
-                                armor: getArmorByName(
-                                    Chestpieces,
-                                    e.target.value,
-                                ),
-                            })
-                        }
-                    >
-                        {filterArmor(Chestpieces).map((chestpiece) => (
-                            <option
-                                key={chestpiece.Name}
-                                value={chestpiece.Name}
-                            >
-                                {chestpiece.Name}
-                            </option>
-                        ))}
-                    </select>
-                </div>
+                <ArmorDisplay label="Chestpiece" isOddRow />
 
                 {/* Gauntlets */}
-                <div className="flex gap-1 w-full justify-between">
-                    <label
-                        className="flex items-center justify-center h-full"
-                        htmlFor="gauntlets"
-                    >
-                        Gauntlets:
-                    </label>
-                    <select
-                        className="flex text-right h-full"
-                        id="gauntlets"
-                        defaultValue="0"
-                        onChange={(e) =>
-                            setEquippedArmor({
-                                slot: "gauntlets",
-                                armor: getArmorByName(
-                                    Gauntlets,
-                                    e.target.value,
-                                ),
-                            })
-                        }
-                    >
-                        {filterArmor(Gauntlets).map((gauntlet) => (
-                            <option key={gauntlet.Name} value={gauntlet.Name}>
-                                {gauntlet.Name}
-                            </option>
-                        ))}
-                    </select>
-                </div>
+                <ArmorDisplay label="Gauntlets" />
 
                 {/* Leggings */}
-                <div
-                    className="flex gap-1 w-full justify-between"
-                    style={{
-                        backgroundColor: "var(--primary)",
-                    }}
-                >
-                    <label
-                        className="flex items-center justify-center h-full"
-                        htmlFor="leggings"
-                    >
-                        Leggings:
-                    </label>
-                    <select
-                        className="flex text-right h-full"
-                        id="leggings"
-                        defaultValue="0"
-                        onChange={(e) =>
-                            setEquippedArmor({
-                                slot: "leggings",
-                                armor: getArmorByName(Leggings, e.target.value),
-                            })
-                        }
-                    >
-                        {filterArmor(Leggings).map((legging) => (
-                            <option key={legging.Name} value={legging.Name}>
-                                {legging.Name}
-                            </option>
-                        ))}
-                    </select>
-                </div>
+                <ArmorDisplay label="Leggings" isOddRow />
             </div>
 
             <hr />
