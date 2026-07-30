@@ -1,20 +1,5 @@
-import DefenseMap from "@/lib/types/defenseMap";
-import Equippable from "@/lib/types/equippable";
-import ResistanceMap from "@/lib/types/resistanceMap";
-import AttributeMap from "./attributeMap";
-
-type Armor = Equippable & {
-    Defenses: DefenseMap<number>;
-    Resistances: ResistanceMap<number>;
-    Poise: number;
-    Requirements: AttributeMap<number>;
-    ItemDiscovery: number;
-    MaxReinforcementLevel: number;
-
-    fitness?: number;
-};
-
-export default Armor;
+import Armor from "@/lib/interfaces/armor";
+import AttributeMap from "@/lib/types/attributeMap";
 
 export function getArmorByName(armorList: Armor[], name: string): Armor {
     return armorList.find((armor) => armor.Name === name) || armorList[0];

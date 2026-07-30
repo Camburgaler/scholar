@@ -1,7 +1,7 @@
 import AttackPowerTypeMap from "@/lib/types/attackPowerTypeMap";
 import AttributeMap from "@/lib/types/attributeMap";
 
-type WeaponInfusion = {
+interface WeaponInfusion {
     ID: string;
     damage: AttackPowerTypeMap<number>;
     scaling: AttributeMap<number>;
@@ -9,6 +9,6 @@ type WeaponInfusion = {
     masks: AttackPowerTypeMap<AttributeMap<boolean>>;
     corrections: AttackPowerTypeMap<string>;
     buffable: boolean;
-};
+}
 
 export default WeaponInfusion;

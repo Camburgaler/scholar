@@ -1,6 +1,6 @@
 import AttributeMap from "@/lib/types/attributeMap";
 
-type Class = {
+interface Class {
     // Fields from the JSON file
     Name: string;
     Level: number;
@@ -8,6 +8,6 @@ type Class = {
 
     // Calculated fields
     sortingValue?: number;
-};
+}
 
 export default Class;

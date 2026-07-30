@@ -1,4 +1,6 @@
 import { Classes, Covenants, PlayerLevelUpSouls, Spells } from "@/lib/gameData";
+import Class from "@/lib/interfaces/class";
+import Spell from "@/lib/interfaces/spell";
 import {
     useFocusedAttribute,
     useFocusedAttributeDispatch,
@@ -7,88 +9,21 @@ import {
     useVirtualAttributes,
     useVirtualAttributesDispatch,
 } from "@/lib/reducers/virtualAttributes";
+import { getClassByName } from "@/lib/scripts/class";
+import { getSpellByName } from "@/lib/scripts/spell";
 import { calculateStatFromAttributes } from "@/lib/scripts/statCalculation";
-import ArmorSet from "@/lib/types/armorSet";
 import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
-import Class from "@/lib/types/class";
-import Equippable from "@/lib/types/equippable";
-import Ring from "@/lib/types/ring";
-import Spell from "@/lib/types/spell";
 import { useCallback, useEffect, useState } from "react";
 import { Lock, Trash, Unlock } from "react-bootstrap-icons";
 
 const MAX_PLAYER_LEVEL_UP_SOULS_ID = 850;
 const MAX_PLAYER_LEVEL = 838;
 
-/**
- * Returns a StatMap that contains the total stats of all the items in the given array.
- * Items without stats are ignored.
- * If an item has no stat for a particular statId, 0 is assumed for that statId.
- *
- * @param {Equippable[]} items The array of items to calculate the total stats from.
- *
- * @returns {AttributeMap<number>} The total stats of all the items in the given array.
- */
-function getItemAttributeAdditions(
-    items: Equippable[],
-): AttributeMap<number[]> {
-    // return items.reduce(
-    //     (attributes: AttributeMap<number[]>, item: Equippable) =>
-    //         (Object.keys(attributes) as AttributeMapKey[]).reduce(
-    //             (
-    //                 attMap: AttributeMap<number[]>,
-    //                 attributeId: AttributeMapKey,
-    //             ) => {
-    //                 if (item.AdditiveModifiers?.[attributeId] !== undefined) {
-    //                     attMap[attributeId]!.push(
-    //                         item.AdditiveModifiers[attributeId],
-    //                     );
-    //                 }
-    //                 return attMap;
-    //             },
-    //             attributes,
-    //         ),
-    //     {
-    //         Vigor: [],
-    //         Endurance: [],
-    //         Vitality: [],
-    //         Adaptability: [],
-    //         Strength: [],
-    //         Dexterity: [],
-    //         Intelligence: [],
-    //         Faith: [],
-    //         Attunement: [],
-    //     },
-    // );
-    return {
-        Vigor: [],
-        Endurance: [],
-        Vitality: [],
-        Adaptability: [],
-        Strength: [],
-        Dexterity: [],
-        Intelligence: [],
-        Faith: [],
-        Attunement: [],
-    };
-}
-
 function sumArray(array: number[]): number {
     return array.reduce((acc: number, num: number) => acc + num, 0);
 }
 
-function getClassByName(name: string): Class | undefined {
-    return Classes.find((c) => c.Name === name);
-}
-
-function getSpellByName(name: string): Spell | "none" {
-    return Spells.find((spell) => spell.Name === name) || "none";
-}
-
-export default function LeftColumn(props: {
-    equippedRings: Ring[];
-    equippedArmor: ArmorSet;
-}) {
+export default function LeftColumn() {
     // CONTEXT
 
     const focusedAttribute = useFocusedAttribute();
@@ -375,16 +310,16 @@ export default function LeftColumn(props: {
      * Calculates the item stats on render
      */
     useEffect(() => {
-        // get added stats from items
-        setItemAttributeAdditions(
-            getItemAttributeAdditions([
-                ...Object.values(props.equippedRings),
-                props.equippedArmor.helmet,
-                props.equippedArmor.chestpiece,
-                props.equippedArmor.gauntlets,
-                props.equippedArmor.leggings,
-            ]),
-        );
+        // TODO: get added stats from items
+        // setItemAttributeAdditions(
+        //     getItemAttributeAdditions([
+        //         ...Object.values(props.equippedRings),
+        //         props.equippedArmor.getHelmetData(),
+        //         props.equippedArmor.chestpiece.data,
+        //         props.equippedArmor.gauntlets.data,
+        //         props.equippedArmor.leggings.data,
+        //     ]),
+        // );
     }, []);
 
     // RENDER

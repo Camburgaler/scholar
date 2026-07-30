@@ -11,13 +11,13 @@ import rings from "@/lib/data/Rings.json";
 import spells from "@/lib/data/Spells.json";
 import statCalculation from "@/lib/data/StatCalculation.json";
 import weapons from "@/lib/data/Weapons.json";
-import Armor from "@/lib/types/armor";
+import Armor from "@/lib/interfaces/armor";
+import Class from "@/lib/interfaces/class";
+import Ring from "@/lib/interfaces/ring";
+import Spell from "@/lib/interfaces/spell";
+import Weapon from "@/lib/interfaces/weapon";
 import AttributeMap from "@/lib/types/attributeMap";
-import Class from "@/lib/types/class";
-import Ring from "@/lib/types/ring";
-import Spell from "@/lib/types/spell";
 import StatMap from "@/lib/types/statMap";
-import Weapon from "@/lib/types/weapon";
 
 // AttributeToStatMap is a map of attributes to a map of stats to whether or not the attribute affects the stat
 export const AttributeToStatMap: AttributeMap<StatMap<boolean>> =

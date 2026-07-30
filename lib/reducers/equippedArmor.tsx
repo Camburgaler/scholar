@@ -1,71 +1,50 @@
-import { Chestpieces, Gauntlets, Helmets, Leggings } from "@/lib/gameData";
-import Armor from "@/lib/types/armor";
-import ArmorSet from "@/lib/types/armorSet";
+import ArmorSet from "@/lib/classes/armorSet";
 import { ActionDispatch, createContext, useContext, useReducer } from "react";
+import EquippedArmor from "../interfaces/equippedArmor";
 
-export type EquippedArmorAction = {
+export type EquippedArmorSetAction = {
     slot: keyof ArmorSet;
-    armor: Armor;
+    equippedArmor: EquippedArmor;
 };
 
-const EquippedArmorContext = createContext<ArmorSet>({
-    helmet: Helmets[0],
-    chestpiece: Chestpieces[0],
-    gauntlets: Gauntlets[0],
-    leggings: Leggings[0],
-    weight: 0,
-});
+const EquippedArmorSetContext = createContext<ArmorSet>(new ArmorSet());
 
-export function useEquippedArmor() {
-    return useContext(EquippedArmorContext);
+export function useEquippedArmorSet() {
+    return useContext(EquippedArmorSetContext);
 }
 
-const EquippedArmorDispatchContext = createContext<
-    ActionDispatch<[action: EquippedArmorAction]>
+const EquippedArmorSetDispatchContext = createContext<
+    ActionDispatch<[action: EquippedArmorSetAction]>
 >(() => {});
 
-export function useEquippedArmorDispatch() {
-    return useContext(EquippedArmorDispatchContext);
+export function useEquippedArmorSetDispatch() {
+    return useContext(EquippedArmorSetDispatchContext);
 }
 
-function equippedArmorReducer(
+function equippedArmorSetReducer(
     initialArmor: ArmorSet,
-    action: EquippedArmorAction,
+    action: EquippedArmorSetAction,
 ): ArmorSet {
-    const weight =
-        initialArmor.weight -
-        (initialArmor[action.slot]! as Armor).Weight +
-        action.armor.Weight;
-
-    return {
-        ...initialArmor,
-        [action.slot]: action.armor,
-        fitness: 0, // TODO: Calculate fitness
-        weight: weight,
-    };
+    const result = ArmorSet.fromArmorSet(initialArmor);
+    result.setField(action.slot, action.equippedArmor);
+    return result;
 }
 
-export function EquippedArmorProvider({
+export function EquippedArmorSetProvider({
     children,
 }: {
     children: React.ReactNode;
 }) {
     const [equippedArmor, equippedArmorDispatch] = useReducer(
-        equippedArmorReducer,
-        {
-            helmet: Helmets[0],
-            chestpiece: Chestpieces[0],
-            gauntlets: Gauntlets[0],
-            leggings: Leggings[0],
-            weight: 0,
-        },
+        equippedArmorSetReducer,
+        new ArmorSet(),
     );
 
     return (
-        <EquippedArmorContext value={equippedArmor}>
-            <EquippedArmorDispatchContext value={equippedArmorDispatch}>
+        <EquippedArmorSetContext value={equippedArmor}>
+            <EquippedArmorSetDispatchContext value={equippedArmorDispatch}>
                 {children}
-            </EquippedArmorDispatchContext>
-        </EquippedArmorContext>
+            </EquippedArmorSetDispatchContext>
+        </EquippedArmorSetContext>
     );
 }

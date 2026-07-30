@@ -1,5 +1,5 @@
 import { AttributeToStatMap } from "@/lib/gameData";
-import { useEquippedArmor } from "@/lib/reducers/equippedArmor";
+import { useEquippedArmorSet } from "@/lib/reducers/equippedArmor";
 import { useFocusedAttribute } from "@/lib/reducers/focusedAttribute";
 import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
 import { calculateStatDisplayValue } from "@/lib/scripts/statCalculation";
@@ -112,7 +112,7 @@ export default function StatDisplay(props: {
     // Context
     const focusedAttribute = useFocusedAttribute();
     const virtualAttributes = useVirtualAttributes();
-    const equippedArmor = useEquippedArmor();
+    const equippedArmor = useEquippedArmorSet();
 
     // State
     const [isFocused, setIsFocused] = useState(false);

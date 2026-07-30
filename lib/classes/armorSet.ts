@@ -1,0 +1,388 @@
+import { Chestpieces, Gauntlets, Helmets, Leggings } from "@/lib/gameData";
+import EquippedArmor from "@/lib/interfaces/equippedArmor";
+import { DefenseMapKey } from "@/lib/types/defenseMap";
+import Armor from "../interfaces/armor";
+import { ResistanceMapKey } from "../types/resistanceMap";
+
+/**
+ * @class ArmorSet
+ * @description A class representing an armor set. Provides static methods for creating armor sets. Provides methods for getting and setting armor set data.
+ *
+ * @member {EquippedArmor} helmet - The helmet equipped in the armor set. Initialized to No Armor.
+ * @member {EquippedArmor} chestpiece - The chestpiece equipped in the armor set. Initialized to No Armor.
+ * @member {EquippedArmor} gauntlets - The gauntlets equipped in the armor set. Initialized to No Armor.
+ * @member {EquippedArmor} leggings - The leggings equipped in the armor set. Initialized to No Armor.
+ */
+class ArmorSet {
+    // MEMBERS
+
+    private helmet: EquippedArmor = {
+        data: Helmets[0],
+        reinforcementLevel: 0,
+    };
+    private chestpiece: EquippedArmor = {
+        data: Chestpieces[0],
+        reinforcementLevel: 0,
+    };
+    private gauntlets: EquippedArmor = {
+        data: Gauntlets[0],
+        reinforcementLevel: 0,
+    };
+    private leggings: EquippedArmor = {
+        data: Leggings[0],
+        reinforcementLevel: 0,
+    };
+
+    // STATIC METHODS
+
+    /**
+     * @method fromArmorSet
+     * @static
+     * @description Creates a new armor set from an existing armor set.
+     * @param {ArmorSet} given - The armor set to copy from.
+     * @returns {ArmorSet} The new armor set.
+     */
+    public static fromArmorSet(given: ArmorSet): ArmorSet {
+        const newArmorSet = new ArmorSet();
+        newArmorSet.setHelmet(given.getHelmet());
+        newArmorSet.setChestpiece(given.getChestpiece());
+        newArmorSet.setGauntlets(given.getGauntlets());
+        newArmorSet.setLeggings(given.getLeggings());
+        return newArmorSet;
+    }
+
+    /**
+     * @method fromEquippedArmor
+     * @static
+     * @description Creates a new armor set from equipped armors.
+     * @param {EquippedArmor} helmet - The helmet equipped in the armor set.
+     * @param {EquippedArmor} chestpiece - The chestpiece equipped in the armor set.
+     * @param {EquippedArmor} gauntlets - The gauntlets equipped in the armor set.
+     * @param {EquippedArmor} leggings - The leggings equipped in the armor set.
+     * @returns {ArmorSet} The new armor set.
+     */
+    public static fromEquippedArmor(
+        helmet: EquippedArmor,
+        chestpiece: EquippedArmor,
+        gauntlets: EquippedArmor,
+        leggings: EquippedArmor,
+    ): ArmorSet {
+        const newArmorSet = new ArmorSet();
+        newArmorSet.setHelmet(helmet);
+        newArmorSet.setChestpiece(chestpiece);
+        newArmorSet.setGauntlets(gauntlets);
+        newArmorSet.setLeggings(leggings);
+        return newArmorSet;
+    }
+
+    /**
+     * @method fromArmor
+     * @static
+     * @description Creates a new armor set from armor data.
+     * @param {Armor} helmet - The helmet data in the armor set.
+     * @param {Armor} chestpiece - The chestpiece data in the armor set.
+     * @param {Armor} gauntlets - The gauntlets data in the armor set.
+     * @param {Armor} leggings - The leggings data in the armor set.
+     * @returns {ArmorSet} The new armor set.
+     */
+    public static fromArmor(
+        helmet: Armor,
+        chestpiece: Armor,
+        gauntlets: Armor,
+        leggings: Armor,
+    ): ArmorSet {
+        const newArmorSet = new ArmorSet();
+        newArmorSet.setHelmetData(helmet);
+        newArmorSet.setChestpieceData(chestpiece);
+        newArmorSet.setGauntletsData(gauntlets);
+        newArmorSet.setLeggingsData(leggings);
+        return newArmorSet;
+    }
+
+    // GETTERS & SETTERS
+
+    /**
+     * @method getField
+     * @description Gets the armor set data for a given field.
+     * @param slot The field to get the data for.
+     * @returns The armor set data for the given field.
+     */
+    public getArmor(slot: keyof ArmorSet): EquippedArmor {
+        if (this[slot] === undefined || this[slot] === null) {
+            // panic out
+            throw new Error(`ArmorSet slot ${slot} is undefined`);
+        }
+
+        if (typeof this[slot] !== "object") {
+            // panic out
+            throw new Error(`ArmorSet slot ${slot} is not an object`);
+        }
+
+        return this[slot];
+    }
+
+    /**
+     * @method setField
+     * @description Sets the armor set data for a given field.
+     * @param field The field to set the data for. Must refer to a member and not a method.
+     * @param value The value to set the field to. Must be an EquippedArmor object.
+     */
+    public setField(field: keyof ArmorSet, value: any) {
+        if (typeof this[field] !== "object") {
+            // panic out
+            throw new Error(`ArmorSet field ${field} is not a member`);
+        }
+
+        if (
+            typeof value !== "object" ||
+            value.data === undefined ||
+            value.reinforcementLevel === undefined
+        ) {
+            // panic out
+            throw new Error(
+                `ArmorSet field ${field} must be an EquippedArmor object`,
+            );
+        }
+
+        this[field] = value;
+    }
+
+    /**
+     * @method copyFrom
+     * @description Copies the armor set from another armor set.
+     * @param armorSet The armor set to copy from.
+     */
+    public copyFrom(armorSet: ArmorSet) {
+        this.setHelmet(armorSet.getHelmet());
+        this.setChestpiece(armorSet.getChestpiece());
+        this.setGauntlets(armorSet.getGauntlets());
+        this.setLeggings(armorSet.getLeggings());
+    }
+
+    /**
+     * @method getHelmet
+     * @description Gets the helmet equipped in the armor set.
+     * @returns {EquippedArmor} The helmet equipped in the armor set.
+     */
+    public getHelmet(): EquippedArmor {
+        return this.helmet;
+    }
+
+    /**
+     * @method setHelmetData
+     * @description Sets the helmet data in the armor set.
+     * @param helmet - The helmet data to set.
+     */
+    public setHelmetData(helmet: Armor): void {
+        this.helmet.data = helmet;
+    }
+
+    /**
+     * @method setHelmetReinforcementLevel
+     * @description Sets the reinforcement level of the helmet in the armor set.
+     * @param level - The reinforcement level to set.
+     */
+    public setHelmetReinforcementLevel(level: number): void {
+        this.helmet.reinforcementLevel = level;
+    }
+
+    /**
+     * @method setHelmet
+     * @description Sets the helmet in the armor set.
+     * @param helmet - The helmet to set.
+     */
+    public setHelmet(helmet: EquippedArmor): void {
+        this.setHelmetData(helmet.data);
+        this.setHelmetReinforcementLevel(helmet.reinforcementLevel);
+    }
+
+    /**
+     * @method getChestpiece
+     * @description Gets the chestpiece equipped in the armor set.
+     * @returns {EquippedArmor} The chestpiece equipped in the armor set.
+     */
+    public getChestpiece(): EquippedArmor {
+        return this.chestpiece;
+    }
+
+    /**
+     * @method setChestpieceData
+     * @description Sets the chestpiece data in the armor set.
+     * @param chestpiece - The chestpiece data to set.
+     */
+    public setChestpieceData(chestpiece: Armor): void {
+        this.chestpiece.data = chestpiece;
+    }
+
+    /**
+     * @method setChestpieceReinforcementLevel
+     * @description Sets the reinforcement level of the chestpiece in the armor set.
+     * @param level - The reinforcement level to set.
+     */
+    public setChestpieceReinforcementLevel(level: number): void {
+        this.chestpiece.reinforcementLevel = level;
+    }
+
+    /**
+     * @method setChestpiece
+     * @description Sets the chestpiece in the armor set.
+     * @param chestpiece - The chestpiece to set.
+     */
+    public setChestpiece(chestpiece: EquippedArmor): void {
+        this.setChestpieceData(chestpiece.data);
+        this.setChestpieceReinforcementLevel(chestpiece.reinforcementLevel);
+    }
+
+    /**
+     * @method getGauntlets
+     * @description Gets the gauntlets equipped in the armor set.
+     * @returns {EquippedArmor} The gauntlets equipped in the armor set.
+     */
+    public getGauntlets(): EquippedArmor {
+        return this.gauntlets;
+    }
+
+    /**
+     * @method setGauntletsData
+     * @description Sets the gauntlets data in the armor set.
+     * @param gauntlets - The gauntlets data to set.
+     */
+    public setGauntletsData(gauntlets: Armor): void {
+        this.gauntlets.data = gauntlets;
+    }
+
+    /**
+     * @method setGauntletsReinforcementLevel
+     * @description Sets the reinforcement level of the gauntlets in the armor set.
+     * @param level - The reinforcement level to set.
+     */
+    public setGauntletsReinforcementLevel(level: number): void {
+        this.gauntlets.reinforcementLevel = level;
+    }
+
+    /**
+     * @method setGauntlets
+     * @description Sets the gauntlets in the armor set.
+     * @param gauntlets - The gauntlets to set.
+     */
+    public setGauntlets(gauntlets: EquippedArmor): void {
+        this.setGauntletsData(gauntlets.data);
+        this.setGauntletsReinforcementLevel(gauntlets.reinforcementLevel);
+    }
+
+    /**
+     * @method getLeggings
+     * @description Gets the leggings equipped in the armor set.
+     * @returns {EquippedArmor} The leggings equipped in the armor set.
+     */
+    public getLeggings(): EquippedArmor {
+        return this.leggings;
+    }
+
+    /**
+     * @method setLeggingsData
+     * @description Sets the leggings data in the armor set.
+     * @param leggings - The leggings data to set.
+     */
+    public setLeggingsData(leggings: Armor): void {
+        this.leggings.data = leggings;
+    }
+
+    /**
+     * @method setLeggingsReinforcementLevel
+     * @description Sets the reinforcement level of the leggings in the armor set.
+     * @param level - The reinforcement level to set.
+     */
+    public setLeggingsReinforcementLevel(level: number): void {
+        this.leggings.reinforcementLevel = level;
+    }
+
+    /**
+     * @method setLeggings
+     * @description Sets the leggings in the armor set.
+     * @param leggings - The leggings to set.
+     */
+    public setLeggings(leggings: EquippedArmor): void {
+        this.setLeggingsData(leggings.data);
+        this.setLeggingsReinforcementLevel(leggings.reinforcementLevel);
+    }
+
+    // METHODS
+
+    /**
+     * @method weight
+     * @description Gets the total weight of the armor set.
+     * @returns {number} The total weight of the armor set.
+     */
+    public weight(): number {
+        return (
+            this.helmet.data.Weight +
+            this.chestpiece.data.Weight +
+            this.gauntlets.data.Weight +
+            this.leggings.data.Weight
+        );
+    }
+
+    /**
+     * @description Sums the defense values of an armor set for a given defense field.
+     * @param defenseField The defense field to sum the values for.
+     * @returns The sum of the defense values for the given field.
+     */
+    public defense(defenseField: DefenseMapKey): number {
+        return (
+            this.helmet.data.Defenses[defenseField] +
+            this.chestpiece.data.Defenses[defenseField] +
+            this.gauntlets.data.Defenses[defenseField] +
+            this.leggings.data.Defenses[defenseField]
+        );
+    }
+
+    /**
+     * @description Sums the resistance values of an armor set for a given resistance field.
+     * @param resistanceField The resistance field to sum the values for.
+     * @returns The sum of the resistance values for the given field.
+     */
+    public resistance(resistanceField: ResistanceMapKey): number {
+        return (
+            this.helmet.data.Resistances[resistanceField] +
+            this.chestpiece.data.Resistances[resistanceField] +
+            this.gauntlets.data.Resistances[resistanceField] +
+            this.leggings.data.Resistances[resistanceField]
+        );
+    }
+
+    /**
+     * @method poise
+     * @description Gets the total poise of the armor set.
+     * @returns {number} The total poise of the armor set.
+     */
+    public poise(): number {
+        return (
+            this.helmet.data.Poise +
+            this.chestpiece.data.Poise +
+            this.gauntlets.data.Poise +
+            this.leggings.data.Poise
+        );
+    }
+
+    /**
+     * @method itemDiscovery
+     * @description Gets the total item discovery of the armor set.
+     * @returns {number} The total item discovery of the armor set.
+     */
+    public itemDiscovery(): number {
+        return (
+            this.helmet.data.ItemDiscovery +
+            this.chestpiece.data.ItemDiscovery +
+            this.gauntlets.data.ItemDiscovery +
+            this.leggings.data.ItemDiscovery
+        );
+    }
+
+    public fitness(): number {
+        // TODO: Implement fitness calculation
+        return 0;
+    }
+}
+
+export default ArmorSet;

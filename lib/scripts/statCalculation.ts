@@ -1,3 +1,4 @@
+import ArmorSet from "@/lib/classes/armorSet";
 import {
     mapDisplayKeyToArmorDefenseField,
     mapDisplayKeyToArmorResistanceField,
@@ -9,10 +10,6 @@ import {
     BaseStats,
     StatCalculationDetails,
 } from "@/lib/gameData";
-import ArmorSet, {
-    sumArmorSetDefense,
-    sumArmorSetResistance,
-} from "@/lib/types/armorSet";
 import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
 import { StatIsDefenseOrResistance, StatMapKey } from "@/lib/types/statMap";
 
@@ -963,13 +960,11 @@ export function calculateStatDisplayValue(
             statDisplayKey.includes("Defense") ||
             statDisplayKey.includes("Absorption")
         ) {
-            statValue += sumArmorSetDefense(
-                equippedArmor,
+            statValue += equippedArmor.defense(
                 mapDisplayKeyToArmorDefenseField(statDisplayKey),
             );
         } else {
-            statValue += sumArmorSetResistance(
-                equippedArmor,
+            statValue += equippedArmor.resistance(
                 mapDisplayKeyToArmorResistanceField(statDisplayKey),
             );
         }

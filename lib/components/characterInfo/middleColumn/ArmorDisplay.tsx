@@ -1,11 +1,11 @@
+import ArmorSet from "@/lib/classes/armorSet";
 import { Chestpieces, Gauntlets, Helmets, Leggings } from "@/lib/gameData";
 import {
-    useEquippedArmor,
-    useEquippedArmorDispatch,
+    useEquippedArmorSet,
+    useEquippedArmorSetDispatch,
 } from "@/lib/reducers/equippedArmor";
 import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
-import Armor, { filterArmor, getArmorByName } from "@/lib/types/armor";
-import ArmorSet from "@/lib/types/armorSet";
+import { filterArmor, getArmorByName } from "@/lib/scripts/armor";
 
 // TODO: add a lock toggle to this similar to the one for the starting class
 //    the lock would control how the armor optimization behaves
@@ -15,8 +15,8 @@ export function ArmorDisplay(props: { label: string; isOddRow?: boolean }) {
     const { label, isOddRow } = props;
 
     // Context
-    const equippedArmor = useEquippedArmor();
-    const setEquippedArmor = useEquippedArmorDispatch();
+    const equippedArmorSet = useEquippedArmorSet();
+    const setEquippedArmor = useEquippedArmorSetDispatch();
     const virtualAttributes = useVirtualAttributes();
 
     // Constants
@@ -30,6 +30,7 @@ export function ArmorDisplay(props: { label: string; isOddRow?: boolean }) {
                 : label === "Leggings"
                   ? Leggings
                   : [];
+    const slot: keyof ArmorSet = label.toLowerCase() as keyof ArmorSet;
 
     // Render
     return (
@@ -47,15 +48,18 @@ export function ArmorDisplay(props: { label: string; isOddRow?: boolean }) {
             >
                 {label}:
             </label>
-            <div className="flex items-center justify-center h-full">
+            <div className="flex gap-1 items-center justify-center h-full">
                 <select
                     className="flex text-right h-full max-w-50"
                     id={label}
                     defaultValue="0"
                     onChange={(e) =>
                         setEquippedArmor({
-                            slot: label.toLowerCase() as keyof ArmorSet,
-                            armor: getArmorByName(armorList, e.target.value),
+                            slot: slot,
+                            equippedArmor: {
+                                data: getArmorByName(armorList, e.target.value),
+                                reinforcementLevel: 0,
+                            },
                         })
                     }
                 >
@@ -65,14 +69,24 @@ export function ArmorDisplay(props: { label: string; isOddRow?: boolean }) {
                         </option>
                     ))}
                 </select>
-                <select className="flex text-left h-full min-w-15">
+                <select
+                    className="flex text-left h-full min-w-15"
+                    value={equippedArmorSet.getArmor(slot).reinforcementLevel}
+                    onChange={(e) =>
+                        // TODO: simplify ASAP
+                        setEquippedArmor({
+                            slot: slot,
+                            equippedArmor: {
+                                data: equippedArmorSet.getArmor(slot).data,
+                                reinforcementLevel: Number(e.target.value),
+                            },
+                        })
+                    }
+                >
                     {[
                         ...Array(
-                            (
-                                equippedArmor[
-                                    label.toLowerCase() as keyof ArmorSet
-                                ]! as Armor
-                            ).MaxReinforcementLevel + 1,
+                            equippedArmorSet.getArmor(slot).data
+                                .MaxReinforcementLevel + 1,
                         ),
                     ].map((_, index) => (
                         <option key={index} value={index}>

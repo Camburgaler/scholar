@@ -1,7 +1,7 @@
 "use client";
 
 import CharacterInfo from "@/lib/components/CharacterInfo";
-import { EquippedArmorProvider } from "@/lib/reducers/equippedArmor";
+import { EquippedArmorSetProvider } from "@/lib/reducers/equippedArmor";
 import { VirtualAttributesProvider } from "@/lib/reducers/virtualAttributes";
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
         // page container
         <div className="flex flex-col flex-1 items-center justify-center font-sans">
             {/* Reducers */}
-            <EquippedArmorProvider>
+            <EquippedArmorSetProvider>
                 <VirtualAttributesProvider>
                     {/* content container */}
                     <main className="flex flex-1 w-full h-full flex-col items-center justify-baseline p-4 sm:items-start">
@@ -35,27 +35,27 @@ export default function Home() {
                                 {/* TODO: add armor inventory container */}
                                 {/* TODO: add optimal armor calculation */}
                                 {/* TODO: add inventory system for armor: */}
-                                {/*     - every character has an armor inventory */}
-                                {/*     - inventory starts empty */}
-                                {/*     - player can add instances of armor to their character's inventory from a filterable list of armor pieces */}
-                                {/*     - player can add the currently displayed starting class's armor with one button */}
-                                {/*     - each armor piece links out to a wiki page for it */}
-                                {/*     - three views in armor inventory: */}
-                                {/*         - top three optimal armor sets from the character's inventory */}
-                                {/*             - can be clicked to auto-equip */}
-                                {/*         - list of armor pieces in character's inventory */}
-                                {/*             - can be interacted with to remove or upgrade armor pieces */}
-                                {/*         - collapsible list of all armor pieces in the game */}
-                                {/*             - starts collapsed */}
-                                {/*             - when opened, will expand into the empty space underneath the main three columns */}
-                                {/*             - can be interacted with to add instances of armor pieces to the character's inventory */}
-                                {/*             - has settings that can be configured for sorting */}
-                                {/*                 - target equip load breakpoint */}
-                                {/*                 - sorting presets */}
-                                {/*                 - how many optimal armor sets to show */}
-                                {/*                 - upgrade level */}
-                                {/*             - shows top X number of optimal armor sets */}
-                                {/*             - instructions/tips for sorting */}
+                                {/* TODO:     - every character has an armor inventory */}
+                                {/* TODO:     - inventory starts empty */}
+                                {/* TODO:     - player can add instances of armor to their character's inventory from a filterable list of armor pieces */}
+                                {/* TODO:     - player can add the currently displayed starting class's armor with one button */}
+                                {/* TODO:     - each armor piece links out to a wiki page for it */}
+                                {/* TODO:     - three views in armor inventory: */}
+                                {/* TODO:         - top three optimal armor sets from the character's inventory */}
+                                {/* TODO:             - can be clicked to auto-equip */}
+                                {/* TODO:         - list of armor pieces in character's inventory */}
+                                {/* TODO:             - can be interacted with to remove or upgrade armor pieces */}
+                                {/* TODO:         - collapsible list of all armor pieces in the game */}
+                                {/* TODO:             - starts collapsed */}
+                                {/* TODO:             - when opened, will expand into the empty space underneath the main three columns */}
+                                {/* TODO:             - can be interacted with to add instances of armor pieces to the character's inventory */}
+                                {/* TODO:             - has settings that can be configured for sorting */}
+                                {/* TODO:                 - target equip load breakpoint */}
+                                {/* TODO:                 - sorting presets */}
+                                {/* TODO:                 - how many optimal armor sets to show */}
+                                {/* TODO:                 - upgrade level */}
+                                {/* TODO:             - shows top X number of optimal armor sets */}
+                                {/* TODO:             - instructions/tips for sorting */}
                                 <hr />
                             </article>
                             {/* main column with build info */}
@@ -70,40 +70,40 @@ export default function Home() {
                                 {/* TODO: add weapon inventory container */}
                                 {/* TODO: add weapon sorting algorithm */}
                                 {/* TODO: add inventory system for weapons: */}
-                                {/*     - every character has a weapon inventory */}
-                                {/*     - inventory starts empty */}
-                                {/*     - player can add instances of weapons to their character's inventory from a sortable list */}
-                                {/*     - player can add the currently displayed starting class's weapons to their inventory with one button */}
-                                {/*     - each weapon links out to a wiki page for it */}
-                                {/*     - three views in weapon inventory: */}
-                                {/*         - sorted weapons from within their inventory */}
-                                {/*             - each weapon is "generic", meaning that it can have its infusion changed as necessary */}
-                                {/*             - each weapon can be click-dragged onto a weapon slot to equip it */}
-                                {/*             - each weapon can be interacted with to remove from inventory, infuse, or upgrade */}
-                                {/*             - each weapon will show an icon next to it if it can be optimized via infusion */}
-                                {/*                 - the icon will be that of the optimal infusion */}
-                                {/*                 - to differentiate from the info that just shows what infusion the weapon currently has, there will be an exclamation point on the icon */}
-                                {/*         - sorted list of all weapons */}
-                                {/*             - each weapon is "specific", meaning that each weapon's infusion is listed as a separate weapon (see https://eldenring.tclark.io/) */}
-                                {/*             - each weapon can be interacted with to add to inventory */}
-                                {/*         - collapsible configs for sorting */}
-                                {/*             - starts collapsed */}
-                                {/*             - when opened, will expand into the empty space underneath the main three columns */}
-                                {/*             - configure upgrade level (will only affect specific weapons) */}
-                                {/*             - toggle for only showing weapons for which the character meets the requirements */}
-                                {/*             - toggle for only showing buffable weapons */}
-                                {/*             - toggle for showing weapons that use split damage */}
-                                {/*             - toggle for considering status effects in sorting calculations */}
-                                {/*             - filters based on infusion */}
-                                {/*             - filters based on attack power types */}
-                                {/*             - filters based on weapon category */}
-                                {/*             - instructions/tips for sorting */}
+                                {/* TODO:     - every character has a weapon inventory */}
+                                {/* TODO:     - inventory starts empty */}
+                                {/* TODO:     - player can add instances of weapons to their character's inventory from a sortable list */}
+                                {/* TODO:     - player can add the currently displayed starting class's weapons to their inventory with one button */}
+                                {/* TODO:     - each weapon links out to a wiki page for it */}
+                                {/* TODO:     - three views in weapon inventory: */}
+                                {/* TODO:         - sorted weapons from within their inventory */}
+                                {/* TODO:             - each weapon is "generic", meaning that it can have its infusion changed as necessary */}
+                                {/* TODO:             - each weapon can be click-dragged onto a weapon slot to equip it */}
+                                {/* TODO:             - each weapon can be interacted with to remove from inventory, infuse, or upgrade */}
+                                {/* TODO:             - each weapon will show an icon next to it if it can be optimized via infusion */}
+                                {/* TODO:                 - the icon will be that of the optimal infusion */}
+                                {/* TODO:                 - to differentiate from the info that just shows what infusion the weapon currently has, there will be an exclamation point on the icon */}
+                                {/* TODO:         - sorted list of all weapons */}
+                                {/* TODO:             - each weapon is "specific", meaning that each weapon's infusion is listed as a separate weapon (see https://eldenring.tclark.io/) */}
+                                {/* TODO:             - each weapon can be interacted with to add to inventory */}
+                                {/* TODO:         - collapsible configs for sorting */}
+                                {/* TODO:             - starts collapsed */}
+                                {/* TODO:             - when opened, will expand into the empty space underneath the main three columns */}
+                                {/* TODO:             - configure upgrade level (will only affect specific weapons) */}
+                                {/* TODO:             - toggle for only showing weapons for which the character meets the requirements */}
+                                {/* TODO:             - toggle for only showing buffable weapons */}
+                                {/* TODO:             - toggle for showing weapons that use split damage */}
+                                {/* TODO:             - toggle for considering status effects in sorting calculations */}
+                                {/* TODO:             - filters based on infusion */}
+                                {/* TODO:             - filters based on attack power types */}
+                                {/* TODO:             - filters based on weapon category */}
+                                {/* TODO:             - instructions/tips for sorting */}
                                 <hr />
                             </article>
                         </div>
                     </main>
                 </VirtualAttributesProvider>
-            </EquippedArmorProvider>
+            </EquippedArmorSetProvider>
         </div>
     );
 }
