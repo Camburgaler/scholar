@@ -1,8 +1,10 @@
+import ModifierDisplay from "@/lib/components/characterInfo/rightColumn/modifierDisplay";
 import { Chestpieces, Gauntlets, Helmets, Leggings } from "@/lib/gameData";
+import Armor from "@/lib/interfaces/armor";
 import EquippedArmor from "@/lib/interfaces/equippedArmor";
 import { DefenseMapKey } from "@/lib/types/defenseMap";
-import Armor from "../interfaces/armor";
-import { ResistanceMapKey } from "../types/resistanceMap";
+import { ResistanceMapKey } from "@/lib/types/resistanceMap";
+import { JSX } from "react/jsx-runtime";
 
 /**
  * @class ArmorSet
@@ -377,6 +379,57 @@ class ArmorSet {
             this.gauntlets.data.ItemDiscovery +
             this.leggings.data.ItemDiscovery
         );
+    }
+
+    public activeEffects(): JSX.Element[] {
+        let activeEffects: JSX.Element[] = [];
+        let isOddRow = true;
+
+        this.getHelmet().data.Modifiers.forEach((modifier) => {
+            activeEffects.push(
+                <ModifierDisplay
+                    description={modifier.Description}
+                    armorName={this.getHelmet().data.Name}
+                    isOddRow={isOddRow}
+                />,
+            );
+            isOddRow = !isOddRow;
+        });
+
+        this.getChestpiece().data.Modifiers.forEach((modifier) => {
+            activeEffects.push(
+                <ModifierDisplay
+                    description={modifier.Description}
+                    armorName={this.getChestpiece().data.Name}
+                    isOddRow={isOddRow}
+                />,
+            );
+            isOddRow = !isOddRow;
+        });
+
+        this.getGauntlets().data.Modifiers.forEach((modifier) => {
+            activeEffects.push(
+                <ModifierDisplay
+                    description={modifier.Description}
+                    armorName={this.getGauntlets().data.Name}
+                    isOddRow={isOddRow}
+                />,
+            );
+            isOddRow = !isOddRow;
+        });
+
+        this.getLeggings().data.Modifiers.forEach((modifier) => {
+            activeEffects.push(
+                <ModifierDisplay
+                    description={modifier.Description}
+                    armorName={this.getLeggings().data.Name}
+                    isOddRow={isOddRow}
+                />,
+            );
+            isOddRow = !isOddRow;
+        });
+
+        return activeEffects;
     }
 
     public fitness(): number {

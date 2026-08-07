@@ -1,6 +1,10 @@
 import StatDisplay from "@/lib/components/characterInfo/StatDisplay";
+import { useEquippedArmorSet } from "@/lib/reducers/equippedArmor";
 
 export default function RightColumn() {
+    // Context
+    const equippedArmor = useEquippedArmorSet();
+
     return (
         <div className="flex flex-col w-4xl h-full justify-baseline items-end align-center">
             {/* Casting Speed / Agility */}
@@ -102,13 +106,9 @@ export default function RightColumn() {
                 <label htmlFor="active-effects" className="w-full text-left">
                     Active Effects:
                 </label>
-                <textarea
-                    id="active-effects"
-                    className="w-full"
-                    rows={4}
-                    readOnly
-                    value=""
-                ></textarea>
+                <div className="flex flex-col w-full border rounded-2xl p-2 gap-1 min-h-30 max-h-65 overflow-y-auto">
+                    {equippedArmor.activeEffects()}
+                </div>
             </div>
         </div>
     );

@@ -417,7 +417,15 @@
     },
     {
         "Name": "Moon Hat",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Intelligence by 2",
+                "TargetType": "attribute",
+                "Target": "Intelligence",
+                "Method": "additive",
+                "Value": 2
+            }
+        ],
         "Weight": 2.2,
         "Durability": 50,
         "RepairCost": 112,
@@ -577,7 +585,15 @@
     },
     {
         "Name": "Helm of Aurous (Visible)",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Max Equip Load by 1.0%",
+                "TargetType": "stat",
+                "Target": "Max Equip Load",
+                "Method": "multiplicative",
+                "Value": 0.01
+            }
+        ],
         "Weight": 1.2,
         "Durability": 40,
         "RepairCost": 328,
@@ -737,7 +753,15 @@
     },
     {
         "Name": "Moon Butterfly Hat",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Intelligence by 1",
+                "TargetType": "attribute",
+                "Target": "Intelligence",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.8,
         "Durability": 35,
         "RepairCost": 182,
@@ -865,7 +889,15 @@
     },
     {
         "Name": "Black Witch Hat",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Attunement Slots by 1",
+                "TargetType": "stat",
+                "Target": "Attunement Slots",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.5,
         "Durability": 55,
         "RepairCost": 273,
@@ -897,7 +929,50 @@
     },
     {
         "Name": "Black Witch Domino Mask",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Decrease Max HP by 10.0%",
+                "TargetType": "stat",
+                "Target": "Max HP",
+                "Method": "multiplicative",
+                "Value": -0.1
+            },
+            {
+                "Description": "Increase Sorcery Power by 3.0%",
+                "TargetType": "special",
+                "Target": "Sorcery Power",
+                "Method": "multiplicative",
+                "Value": 0.03
+            },
+            {
+                "Description": "Increase Miracle Power by 3.0%",
+                "TargetType": "special",
+                "Target": "Miracle Power",
+                "Method": "multiplicative",
+                "Value": 0.03
+            },
+            {
+                "Description": "Increase Pyromancy Power by 3.0%",
+                "TargetType": "special",
+                "Target": "Pyromancy Power",
+                "Method": "multiplicative",
+                "Value": 0.03
+            },
+            {
+                "Description": "Increase Hex Power Staff by 3.0%",
+                "TargetType": "special",
+                "Target": "Hex Power Staff",
+                "Method": "multiplicative",
+                "Value": 0.03
+            },
+            {
+                "Description": "Increase Hex Power Chime by 3.0%",
+                "TargetType": "special",
+                "Target": "Hex Power Chime",
+                "Method": "multiplicative",
+                "Value": 0.03
+            }
+        ],
         "Weight": 0.5,
         "Durability": 60,
         "RepairCost": 273,
@@ -1057,7 +1132,57 @@
     },
     {
         "Name": "Crown of the Sunken King",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Decrease Vitality by 1",
+                "TargetType": "attribute",
+                "Target": "Vitality",
+                "Method": "additive",
+                "Value": -1
+            },
+            {
+                "Description": "Decrease Vigor by 1",
+                "TargetType": "attribute",
+                "Target": "Vigor",
+                "Method": "additive",
+                "Value": -1
+            },
+            {
+                "Description": "Increase Endurance by 1",
+                "TargetType": "attribute",
+                "Target": "Endurance",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "Increase Strength by 1",
+                "TargetType": "attribute",
+                "Target": "Strength",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "Increase Dexterity by 1",
+                "TargetType": "attribute",
+                "Target": "Dexterity",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "Increase Intelligence by 1",
+                "TargetType": "attribute",
+                "Target": "Intelligence",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "Increase Faith by 1",
+                "TargetType": "attribute",
+                "Target": "Faith",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 4,
         "Durability": 100,
         "RepairCost": 390,
@@ -1089,7 +1214,22 @@
     },
     {
         "Name": "Old Bell Helm",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Miracle Power by 1.5%",
+                "TargetType": "special",
+                "Target": "Miracle Power",
+                "Method": "multiplicative",
+                "Value": 0.015
+            },
+            {
+                "Description": "Increase Hex Power Chime by 1.5%",
+                "TargetType": "special",
+                "Target": "Hex Power Chime",
+                "Method": "multiplicative",
+                "Value": 0.015
+            }
+        ],
         "Weight": 6,
         "Durability": 80,
         "RepairCost": 227,
@@ -1217,7 +1357,15 @@
     },
     {
         "Name": "Symbol of Avarice",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Soul Gain Rate by 2.5%",
+                "TargetType": "special",
+                "Target": "Soul Gain Rate",
+                "Method": "multiplicative",
+                "Value": 0.025
+            }
+        ],
         "Weight": 8,
         "Durability": 100,
         "RepairCost": 328,
@@ -1377,7 +1525,15 @@
     },
     {
         "Name": "White Priest Headpiece",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Faith by 1",
+                "TargetType": "attribute",
+                "Target": "Faith",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.4,
         "Durability": 50,
         "RepairCost": 112,
@@ -1409,7 +1565,15 @@
     },
     {
         "Name": "Priestess Headpiece",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Faith by 1",
+                "TargetType": "attribute",
+                "Target": "Faith",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.2,
         "Durability": 50,
         "RepairCost": 112,
@@ -1537,7 +1701,15 @@
     },
     {
         "Name": "Black Hollow Mage Hood",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Intelligence by 1",
+                "TargetType": "attribute",
+                "Target": "Intelligence",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.9,
         "Durability": 50,
         "RepairCost": 112,
@@ -1569,7 +1741,15 @@
     },
     {
         "Name": "White Hollow Mage Hood",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Intelligence by 1",
+                "TargetType": "attribute",
+                "Target": "Intelligence",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.8,
         "Durability": 50,
         "RepairCost": 112,
@@ -1761,7 +1941,15 @@
     },
     {
         "Name": "Archdrake Helm",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Intelligence by 1",
+                "TargetType": "attribute",
+                "Target": "Intelligence",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 5.4,
         "Durability": 80,
         "RepairCost": 185,
@@ -1889,7 +2077,22 @@
     },
     {
         "Name": "Dark Mask",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Intelligence by 1",
+                "TargetType": "attribute",
+                "Target": "Intelligence",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "Increase Faith by 1",
+                "TargetType": "attribute",
+                "Target": "Faith",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 3.8,
         "Durability": 90,
         "RepairCost": 175,
@@ -1921,7 +2124,22 @@
     },
     {
         "Name": "Warlock Mask",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Soul Gain Rate by 2.5%",
+                "TargetType": "special",
+                "Target": "Soul Gain Rate",
+                "Method": "multiplicative",
+                "Value": 0.025
+            },
+            {
+                "Description": "Increase Intelligence by 2",
+                "TargetType": "attribute",
+                "Target": "Intelligence",
+                "Method": "additive",
+                "Value": 2
+            }
+        ],
         "Weight": 4.8,
         "Durability": 50,
         "RepairCost": 245,
@@ -1953,7 +2171,15 @@
     },
     {
         "Name": "Tseldora Cap",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Soul Gain Rate by 2.5%",
+                "TargetType": "special",
+                "Target": "Soul Gain Rate",
+                "Method": "multiplicative",
+                "Value": 0.025
+            }
+        ],
         "Weight": 1.4,
         "Durability": 40,
         "RepairCost": 90,
@@ -1985,7 +2211,22 @@
     },
     {
         "Name": "Peasant Hat",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Faith by 2",
+                "TargetType": "attribute",
+                "Target": "Faith",
+                "Method": "additive",
+                "Value": 2
+            },
+            {
+                "Description": "Decrease Intelligence by 1",
+                "TargetType": "attribute",
+                "Target": "Intelligence",
+                "Method": "additive",
+                "Value": -1
+            }
+        ],
         "Weight": 1.3,
         "Durability": 45,
         "RepairCost": 82,
@@ -2337,7 +2578,15 @@
     },
     {
         "Name": "Vengarl's Helm",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Vitality by 2",
+                "TargetType": "attribute",
+                "Target": "Vitality",
+                "Method": "additive",
+                "Value": 2
+            }
+        ],
         "Weight": 6.8,
         "Durability": 85,
         "RepairCost": 175,
@@ -2369,7 +2618,15 @@
     },
     {
         "Name": "Lion Warrior Helm",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Fall Damage Protection Modifier by 1",
+                "TargetType": "special",
+                "Target": "Fall Damage Protection Modifier",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.5,
         "Durability": 40,
         "RepairCost": 266,
@@ -2529,7 +2786,15 @@
     },
     {
         "Name": "Desert Sorceress Hood",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Intelligence by 3",
+                "TargetType": "attribute",
+                "Target": "Intelligence",
+                "Method": "additive",
+                "Value": 3
+            }
+        ],
         "Weight": 0.6,
         "Durability": 50,
         "RepairCost": 91,
@@ -2593,7 +2858,22 @@
     },
     {
         "Name": "Dragon Sage Hood",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Intelligence by 1",
+                "TargetType": "attribute",
+                "Target": "Intelligence",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "Increase Faith by 1",
+                "TargetType": "attribute",
+                "Target": "Faith",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 2,
         "Durability": 55,
         "RepairCost": 266,
@@ -2753,7 +3033,22 @@
     },
     {
         "Name": "Velstadt's Helm",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Endurance by 1",
+                "TargetType": "attribute",
+                "Target": "Endurance",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "Increase Vitality by 1",
+                "TargetType": "attribute",
+                "Target": "Vitality",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 7.5,
         "Durability": 140,
         "RepairCost": 390,
@@ -2817,7 +3112,15 @@
     },
     {
         "Name": "Looking Glass Mask",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Faith by 1",
+                "TargetType": "attribute",
+                "Target": "Faith",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 7,
         "Durability": 150,
         "RepairCost": 390,
@@ -2849,7 +3152,22 @@
     },
     {
         "Name": "Leydia Black Hood",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Intelligence by 1",
+                "TargetType": "attribute",
+                "Target": "Intelligence",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "Increase Faith by 1",
+                "TargetType": "attribute",
+                "Target": "Faith",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1,
         "Durability": 50,
         "RepairCost": 203,
@@ -2881,7 +3199,15 @@
     },
     {
         "Name": "Insolent Helm",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Faith by 2",
+                "TargetType": "attribute",
+                "Target": "Faith",
+                "Method": "additive",
+                "Value": 2
+            }
+        ],
         "Weight": 4.8,
         "Durability": 75,
         "RepairCost": 185,
@@ -2977,7 +3303,22 @@
     },
     {
         "Name": "King's Crown",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Intelligence by 3",
+                "TargetType": "attribute",
+                "Target": "Intelligence",
+                "Method": "additive",
+                "Value": 3
+            },
+            {
+                "Description": "Increase Faith by 3",
+                "TargetType": "attribute",
+                "Target": "Faith",
+                "Method": "additive",
+                "Value": 3
+            }
+        ],
         "Weight": 3.8,
         "Durability": 230,
         "RepairCost": 390,
@@ -3073,7 +3414,15 @@
     },
     {
         "Name": "Penal Mask",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Max Equip Load by 3.0%",
+                "TargetType": "stat",
+                "Target": "Max Equip Load",
+                "Method": "multiplicative",
+                "Value": 0.03
+            }
+        ],
         "Weight": 5.1,
         "Durability": 120,
         "RepairCost": 224,
@@ -3553,7 +3902,22 @@
     },
     {
         "Name": "Cale's Helm",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Dexterity by 2",
+                "TargetType": "attribute",
+                "Target": "Dexterity",
+                "Method": "additive",
+                "Value": 2
+            },
+            {
+                "Description": "Increase Endurance by 1",
+                "TargetType": "attribute",
+                "Target": "Endurance",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 3,
         "Durability": 60,
         "RepairCost": 143,
@@ -3681,7 +4045,15 @@
     },
     {
         "Name": "Mad Warrior Mask",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Adaptability by 2",
+                "TargetType": "attribute",
+                "Target": "Adaptability",
+                "Method": "additive",
+                "Value": 2
+            }
+        ],
         "Weight": 5,
         "Durability": 75,
         "RepairCost": 185,
@@ -3713,7 +4085,29 @@
     },
     {
         "Name": "Black Hood",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Intelligence by 2",
+                "TargetType": "attribute",
+                "Target": "Intelligence",
+                "Method": "additive",
+                "Value": 2
+            },
+            {
+                "Description": "Increase Faith by 2",
+                "TargetType": "attribute",
+                "Target": "Faith",
+                "Method": "additive",
+                "Value": 2
+            },
+            {
+                "Description": "Decrease Spell Cast Time by 10.0%",
+                "TargetType": "stat",
+                "Target": "Spell Cast Time",
+                "Method": "multiplicative",
+                "Value": -0.1
+            }
+        ],
         "Weight": 0.9,
         "Durability": 55,
         "RepairCost": 224,
@@ -3745,7 +4139,22 @@
     },
     {
         "Name": "Saint's Hood",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Faith by 1",
+                "TargetType": "attribute",
+                "Target": "Faith",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "Increase Max Spell Usages by 5.0%",
+                "TargetType": "stat",
+                "Target": "Max Spell Usages",
+                "Method": "multiplicative",
+                "Value": 0.05
+            }
+        ],
         "Weight": 0.9,
         "Durability": 55,
         "RepairCost": 224,
@@ -3777,7 +4186,29 @@
     },
     {
         "Name": "Hexer's Hood",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Intelligence by 1",
+                "TargetType": "attribute",
+                "Target": "Intelligence",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "Increase Faith by 1",
+                "TargetType": "attribute",
+                "Target": "Faith",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "Increase Max Spell Usages by 5.0%",
+                "TargetType": "stat",
+                "Target": "Max Spell Usages",
+                "Method": "multiplicative",
+                "Value": 0.05
+            }
+        ],
         "Weight": 0.9,
         "Durability": 55,
         "RepairCost": 224,
@@ -3809,7 +4240,22 @@
     },
     {
         "Name": "Chaos Hood",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Intelligence by 3",
+                "TargetType": "attribute",
+                "Target": "Intelligence",
+                "Method": "additive",
+                "Value": 3
+            },
+            {
+                "Description": "Decrease Spell Cast Time by 5.0%",
+                "TargetType": "stat",
+                "Target": "Spell Cast Time",
+                "Method": "multiplicative",
+                "Value": -0.05
+            }
+        ],
         "Weight": 0.9,
         "Durability": 55,
         "RepairCost": 224,
@@ -3841,7 +4287,15 @@
     },
     {
         "Name": "Nahr Alma Hood",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Soul Gain Rate by 2.5%",
+                "TargetType": "special",
+                "Target": "Soul Gain Rate",
+                "Method": "multiplicative",
+                "Value": 0.025
+            }
+        ],
         "Weight": 1.5,
         "Durability": 50,
         "RepairCost": 203,

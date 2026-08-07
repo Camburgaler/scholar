@@ -385,7 +385,15 @@
     },
     {
         "Name": "Jester's Gloves",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Soul Gain Rate by 10.0%",
+                "TargetType": "special",
+                "Target": "Soul Gain Rate",
+                "Method": "multiplicative",
+                "Value": 0.1
+            }
+        ],
         "Weight": 2.3,
         "Durability": 45,
         "RepairCost": 102,
@@ -577,7 +585,15 @@
     },
     {
         "Name": "Gauntlets of Aurous (Visible)",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Max Equip Load by 1.0%",
+                "TargetType": "stat",
+                "Target": "Max Equip Load",
+                "Method": "multiplicative",
+                "Value": 0.01
+            }
+        ],
         "Weight": 1.2,
         "Durability": 40,
         "RepairCost": 328,
@@ -1217,7 +1233,15 @@
     },
     {
         "Name": "Lion Mage Cuffs",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Decrease Spell Cast Time by 5.0%",
+                "TargetType": "stat",
+                "Target": "Spell Cast Time",
+                "Method": "multiplicative",
+                "Value": -0.05
+            }
+        ],
         "Weight": 1.4,
         "Durability": 40,
         "RepairCost": 102,
@@ -1281,7 +1305,29 @@
     },
     {
         "Name": "Shadow Gauntlets",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Bleed Damage by 50 when the weapon has innate Bleed Damage",
+                "TargetType": "stat",
+                "Target": "Bleed Damage",
+                "Method": "additive",
+                "Value": 50
+            },
+            {
+                "Description": "Increase Bleed Damage by 25 when the weapon is infused with Bleed Damage",
+                "TargetType": "stat",
+                "Target": "Bleed Damage",
+                "Method": "additive",
+                "Value": 25
+            },
+            {
+                "Description": "Increase Bleed Damage by 60 when the weapon has innate AND infused Bleed Damage",
+                "TargetType": "stat",
+                "Target": "Bleed Damage",
+                "Method": "additive",
+                "Value": 60
+            }
+        ],
         "Weight": 1.6,
         "Durability": 60,
         "RepairCost": 154,
@@ -1505,7 +1551,15 @@
     },
     {
         "Name": "Tseldora Manchettes",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Soul Gain Rate by 10.0%",
+                "TargetType": "special",
+                "Target": "Soul Gain Rate",
+                "Method": "multiplicative",
+                "Value": 0.1
+            }
+        ],
         "Weight": 2,
         "Durability": 40,
         "RepairCost": 90,
@@ -1537,7 +1591,22 @@
     },
     {
         "Name": "Peasant Long Gloves",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Adaptability by 2",
+                "TargetType": "attribute",
+                "Target": "Adaptability",
+                "Method": "additive",
+                "Value": 2
+            },
+            {
+                "Description": "Decrease Intelligence by 1",
+                "TargetType": "attribute",
+                "Target": "Intelligence",
+                "Method": "additive",
+                "Value": -1
+            }
+        ],
         "Weight": 1.8,
         "Durability": 45,
         "RepairCost": 82,
@@ -1857,7 +1926,15 @@
     },
     {
         "Name": "Lion Warrior Cuffs",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Fall Damage Protection Modifier by 1",
+                "TargetType": "special",
+                "Target": "Fall Damage Protection Modifier",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.3,
         "Durability": 40,
         "RepairCost": 133,
@@ -2305,7 +2382,15 @@
     },
     {
         "Name": "Agdayne's Cuffs",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Faith by 1",
+                "TargetType": "attribute",
+                "Target": "Faith",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 2.9,
         "Durability": 65,
         "RepairCost": 123,
@@ -2529,7 +2614,15 @@
     },
     {
         "Name": "Penal Handcuffs",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Pyromancy Power by 7.5%",
+                "TargetType": "special",
+                "Target": "Pyromancy Power",
+                "Method": "multiplicative",
+                "Value": 0.075
+            }
+        ],
         "Weight": 4.8,
         "Durability": 55,
         "RepairCost": 224,
@@ -2657,7 +2750,29 @@
     },
     {
         "Name": "Sanctum Soldier Gauntlet",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Poison Damage by 50 when the weapon has innate Poison Damage",
+                "TargetType": "stat",
+                "Target": "Poison Damage",
+                "Method": "additive",
+                "Value": 50
+            },
+            {
+                "Description": "Increase Poison Damage by 25 when the weapon is infused with Poison Damage",
+                "TargetType": "stat",
+                "Target": "Poison Damage",
+                "Method": "additive",
+                "Value": 25
+            },
+            {
+                "Description": "Increase Poison Damage by 60 when the weapon has innate AND infused Poison Damage",
+                "TargetType": "stat",
+                "Target": "Poison Damage",
+                "Method": "additive",
+                "Value": 60
+            }
+        ],
         "Weight": 3.5,
         "Durability": 80,
         "RepairCost": 175,

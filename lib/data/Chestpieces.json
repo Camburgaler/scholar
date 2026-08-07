@@ -577,7 +577,15 @@
     },
     {
         "Name": "Armor of Aurous (Visible)",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Max Equip Load by 1.5%",
+                "TargetType": "stat",
+                "Target": "Max Equip Load",
+                "Method": "multiplicative",
+                "Value": 0.015
+            }
+        ],
         "Weight": 3.2,
         "Durability": 40,
         "RepairCost": 1260,
@@ -705,7 +713,15 @@
     },
     {
         "Name": "Moon Butterfly Wings",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Fall Damage Protection Modifier by 2",
+                "TargetType": "special",
+                "Target": "Fall Damage Protection Modifier",
+                "Method": "additive",
+                "Value": 2
+            }
+        ],
         "Weight": 1.4,
         "Durability": 35,
         "RepairCost": 700,
@@ -1249,7 +1265,15 @@
     },
     {
         "Name": "Lion Mage Robe",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Decrease Spell Cast Time by 5.0%",
+                "TargetType": "stat",
+                "Target": "Spell Cast Time",
+                "Method": "multiplicative",
+                "Value": -0.05
+            }
+        ],
         "Weight": 2.2,
         "Durability": 40,
         "RepairCost": 390,
@@ -1569,7 +1593,15 @@
     },
     {
         "Name": "Tseldora Robe",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Soul Gain Rate by 5.0%",
+                "TargetType": "special",
+                "Target": "Soul Gain Rate",
+                "Method": "multiplicative",
+                "Value": 0.05
+            }
+        ],
         "Weight": 3,
         "Durability": 40,
         "RepairCost": 344,
@@ -1601,7 +1633,22 @@
     },
     {
         "Name": "Peasant Attire",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Adaptability by 2",
+                "TargetType": "attribute",
+                "Target": "Adaptability",
+                "Method": "additive",
+                "Value": 2
+            },
+            {
+                "Description": "Decrease Intelligence by 1",
+                "TargetType": "attribute",
+                "Target": "Intelligence",
+                "Method": "additive",
+                "Value": -1
+            }
+        ],
         "Weight": 3.8,
         "Durability": 45,
         "RepairCost": 312,
@@ -1985,7 +2032,15 @@
     },
     {
         "Name": "Lion Warrior Cape",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Fall Damage Protection Modifier by 1",
+                "TargetType": "special",
+                "Target": "Fall Damage Protection Modifier",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.5,
         "Durability": 55,
         "RepairCost": 510,
@@ -2017,7 +2072,15 @@
     },
     {
         "Name": "Red Lion Warrior Cape",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Fall Damage Protection Modifier by 2",
+                "TargetType": "special",
+                "Target": "Fall Damage Protection Modifier",
+                "Method": "additive",
+                "Value": 2
+            }
+        ],
         "Weight": 1.5,
         "Durability": 55,
         "RepairCost": 1020,
@@ -3489,7 +3552,15 @@
     },
     {
         "Name": "Nahr Alma Robes",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Soul Gain Rate by 10.0%",
+                "TargetType": "special",
+                "Target": "Soul Gain Rate",
+                "Method": "multiplicative",
+                "Value": 0.1
+            }
+        ],
         "Weight": 3.5,
         "Durability": 50,
         "RepairCost": 780,

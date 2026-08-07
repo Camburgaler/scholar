@@ -385,7 +385,15 @@
     },
     {
         "Name": "Jester's Tights",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Fall Damage Protection Modifier by 2",
+                "TargetType": "special",
+                "Target": "Fall Damage Protection Modifier",
+                "Method": "additive",
+                "Value": 2
+            }
+        ],
         "Weight": 2.7,
         "Durability": 45,
         "RepairCost": 188,
@@ -577,7 +585,15 @@
     },
     {
         "Name": "Leggings of Aurous (Visible)",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Max Equip Load by 1.5%",
+                "TargetType": "stat",
+                "Target": "Max Equip Load",
+                "Method": "multiplicative",
+                "Value": 0.015
+            }
+        ],
         "Weight": 2,
         "Durability": 40,
         "RepairCost": 605,
@@ -705,7 +721,15 @@
     },
     {
         "Name": "Flying Feline Boots",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Fall Damage Protection Modifier by 3",
+                "TargetType": "special",
+                "Target": "Fall Damage Protection Modifier",
+                "Method": "additive",
+                "Value": 3
+            }
+        ],
         "Weight": 2,
         "Durability": 66,
         "RepairCost": 413,
@@ -737,7 +761,15 @@
     },
     {
         "Name": "Moon Butterfly Skirt",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Fall Damage Protection Modifier by 1",
+                "TargetType": "special",
+                "Target": "Fall Damage Protection Modifier",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.2,
         "Durability": 35,
         "RepairCost": 336,
@@ -929,7 +961,22 @@
     },
     {
         "Name": "Flower Skirt",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Vigor by 2",
+                "TargetType": "attribute",
+                "Target": "Vigor",
+                "Method": "additive",
+                "Value": 2
+            },
+            {
+                "Description": "Increase Endurance by 1",
+                "TargetType": "attribute",
+                "Target": "Endurance",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.7,
         "Durability": 80,
         "RepairCost": 644,
@@ -1249,7 +1296,15 @@
     },
     {
         "Name": "Lion Mage Skirt",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Decrease Spell Cast Time by 5.0%",
+                "TargetType": "stat",
+                "Target": "Spell Cast Time",
+                "Method": "multiplicative",
+                "Value": -0.05
+            }
+        ],
         "Weight": 1.4,
         "Durability": 40,
         "RepairCost": 188,
@@ -1537,7 +1592,15 @@
     },
     {
         "Name": "Tseldora Trousers",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Soul Gain Rate by 5.0%",
+                "TargetType": "special",
+                "Target": "Soul Gain Rate",
+                "Method": "multiplicative",
+                "Value": 0.05
+            }
+        ],
         "Weight": 2,
         "Durability": 40,
         "RepairCost": 166,
@@ -1569,7 +1632,22 @@
     },
     {
         "Name": "Peasant Trousers",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Adaptability by 2",
+                "TargetType": "attribute",
+                "Target": "Adaptability",
+                "Method": "additive",
+                "Value": 2
+            },
+            {
+                "Description": "Decrease Intelligence by 1",
+                "TargetType": "attribute",
+                "Target": "Intelligence",
+                "Method": "additive",
+                "Value": -1
+            }
+        ],
         "Weight": 2.6,
         "Durability": 45,
         "RepairCost": 150,
@@ -1889,7 +1967,15 @@
     },
     {
         "Name": "Lion Warrior Skirt",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Fall Damage Protection Modifier by 2",
+                "TargetType": "special",
+                "Target": "Fall Damage Protection Modifier",
+                "Method": "additive",
+                "Value": 2
+            }
+        ],
         "Weight": 1.2,
         "Durability": 40,
         "RepairCost": 245,
@@ -2625,7 +2711,15 @@
     },
     {
         "Name": "Sanctum Knight Leggings",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Fall Damage Protection Modifier by 2",
+                "TargetType": "special",
+                "Target": "Fall Damage Protection Modifier",
+                "Method": "additive",
+                "Value": 2
+            }
+        ],
         "Weight": 7.4,
         "Durability": 90,
         "RepairCost": 322,
