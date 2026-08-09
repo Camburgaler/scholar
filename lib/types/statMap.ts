@@ -110,6 +110,18 @@ export const StatMapKeyToStatNameMap: Map<StatMapKey, string> = new Map<
     ["ResistanceCurse", "Resistance (Curse)"],
 ]);
 
+export const ModifierTargetToStatMapKey: Map<string, StatMapKey> = new Map<
+    string,
+    StatMapKey
+>([
+    ["Max Equip Load", "MaximumEquipLoad"],
+    ["Attunement Slots", "SpellSlotCount"],
+    ["Max HP", "MaximumHP"],
+    ["Spell Cast Time", "SpellCastingSpeed"],
+    ["Bleed Damage", "AttackPowerBleed"],
+    ["Poison Damage", "AttackPowerPoison"],
+]);
+
 type StatMap<T> = {
     [key in StatMapKey]: T;
 };

@@ -1,6 +1,7 @@
 import { Classes, Covenants, PlayerLevelUpSouls, Spells } from "@/lib/gameData";
 import Class from "@/lib/interfaces/class";
 import Spell from "@/lib/interfaces/spell";
+import { useEquippedArmorSet } from "@/lib/reducers/equippedArmor";
 import {
     useFocusedAttribute,
     useFocusedAttributeDispatch,
@@ -11,17 +12,13 @@ import {
 } from "@/lib/reducers/virtualAttributes";
 import { getClassByName } from "@/lib/scripts/class";
 import { getSpellByName } from "@/lib/scripts/spell";
-import { calculateStatFromAttributes } from "@/lib/scripts/statCalculation";
+import { calculateStatDisplayValue } from "@/lib/scripts/statCalculation";
 import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
 import { useCallback, useEffect, useState } from "react";
 import { Lock, Trash, Unlock } from "react-bootstrap-icons";
 
 const MAX_PLAYER_LEVEL_UP_SOULS_ID = 850;
 const MAX_PLAYER_LEVEL = 838;
-
-function sumArray(array: number[]): number {
-    return array.reduce((acc: number, num: number) => acc + num, 0);
-}
 
 export default function LeftColumn() {
     // CONTEXT
@@ -30,6 +27,7 @@ export default function LeftColumn() {
     const setFocusedAttribute = useFocusedAttributeDispatch();
     const virtualAttributes = useVirtualAttributes();
     const setVirtualAttributes = useVirtualAttributesDispatch();
+    const equippedArmorSet = useEquippedArmorSet();
 
     // STATE
 
@@ -46,21 +44,6 @@ export default function LeftColumn() {
         Intelligence: 0,
         Faith: 0,
         Attunement: 0,
-    });
-
-    // Item attribute additions are the total attribute additions of the currently selected equipment
-    const [itemAttributeAdditions, setItemAttributeAdditions] = useState<
-        AttributeMap<number[]>
-    >({
-        Vigor: [],
-        Endurance: [],
-        Vitality: [],
-        Adaptability: [],
-        Strength: [],
-        Dexterity: [],
-        Intelligence: [],
-        Faith: [],
-        Attunement: [],
     });
 
     // Final attributes are the optimal class's attributes after leveling up
@@ -85,23 +68,24 @@ export default function LeftColumn() {
     const delta = useCallback(
         (classAttributes: AttributeMap<number>): number => {
             return (Object.keys(classAttributes) as AttributeMapKey[])
-                .map((statId: AttributeMapKey) =>
-                    classAttributes[statId]! <
-                    desiredAttributes[statId]! -
-                        sumArray(itemAttributeAdditions[statId]!)
-                        ? desiredAttributes[statId]! -
-                          classAttributes[statId]! -
-                          sumArray(itemAttributeAdditions[statId]!)
+                .map((attributeId: AttributeMapKey) =>
+                    classAttributes[attributeId]! <
+                    desiredAttributes[attributeId]! -
+                        equippedArmorSet.attributeModifier(attributeId)
+                        ? desiredAttributes[attributeId]! -
+                          classAttributes[attributeId]! -
+                          equippedArmorSet.attributeModifier(attributeId)
                         : 0,
                 )
                 .reduce((total: number, n: number) => total + n);
         },
-        [desiredAttributes, itemAttributeAdditions],
+        [desiredAttributes, equippedArmorSet],
     );
 
     // Sort classes by ascending delta
     const sortClasses = useCallback((): Class[] => {
         return Classes.map((c: Class) => {
+            // TODO: Set sorting value to the number of souls it will take to reach the desired stats, instead of just the level difference
             c.sortingValue = c.Level + delta(c.Attributes);
             return c;
         }).sort((a: Class, b: Class) => a.sortingValue! - b.sortingValue!);
@@ -176,6 +160,10 @@ export default function LeftColumn() {
                                 }`;
     }
 
+    const effectiveClass = useCallback((): Class => {
+        return classLocked ? getClassByName(selectedClass)! : optimalClass;
+    }, [classLocked, selectedClass, optimalClass]);
+
     // EFFECTS
 
     /**
@@ -195,7 +183,7 @@ export default function LeftColumn() {
     }, [finalAttributes, sortClasses]);
 
     /**
-     * Updates the final stats and virtual stats when the desired stats, selected class, or item stats change.
+     * Updates the final stats and virtual stats when the desired stats, effective class, or equipped armor set change.
      */
     useEffect(() => {
         // calculate final stats
@@ -226,14 +214,12 @@ export default function LeftColumn() {
                 {
                     tempFinal[attributeId] = Math.max(
                         desiredAttributes[attributeId]! -
-                            sumArray(itemAttributeAdditions[attributeId]!),
-                        getClassByName(selectedClass)?.Attributes[attributeId]!,
+                            equippedArmorSet.attributeModifier(attributeId),
+                        effectiveClass().Attributes[attributeId]!,
                     );
                     tempVirtual[attributeId] = Math.max(
                         desiredAttributes[attributeId]!,
-                        getClassByName(selectedClass)?.Attributes![
-                            attributeId
-                        ]! + sumArray(itemAttributeAdditions[attributeId]!),
+                        effectiveClass().Attributes[attributeId]!,
                     );
                 }
             },
@@ -242,14 +228,14 @@ export default function LeftColumn() {
         setVirtualAttributes(
             new Map(Object.entries(tempVirtual) as [AttributeMapKey, number][]),
         );
-    }, [desiredAttributes, selectedClass, itemAttributeAdditions]);
+    }, [desiredAttributes, equippedArmorSet, effectiveClass]);
 
     /**
      * Updates the souls to next level and total soul cost when the final stats change.
      */
     useEffect(() => {
         const currentLevel = Math.min(
-            optimalClass.sortingValue!,
+            effectiveClass().sortingValue!,
             MAX_PLAYER_LEVEL,
             MAX_PLAYER_LEVEL_UP_SOULS_ID,
         );
@@ -258,11 +244,11 @@ export default function LeftColumn() {
         setSoulsToNextLevel(currentPlayerLevelUpSouls || 0);
 
         let tempTotalSoulCost = 0;
-        for (let i = optimalClass.Level; i < currentLevel; i++) {
+        for (let i = effectiveClass().Level; i < currentLevel; i++) {
             tempTotalSoulCost += PlayerLevelUpSouls[i];
         }
         setTotalSoulCost(tempTotalSoulCost);
-    }, [finalAttributes]);
+    }, [effectiveClass, finalAttributes]);
 
     /**
      * Sets selected class if classLocked is false
@@ -278,9 +264,13 @@ export default function LeftColumn() {
      */
     useEffect(() => {
         setSpellSlots(
-            calculateStatFromAttributes("SpellSlotCount", virtualAttributes),
+            calculateStatDisplayValue(
+                "SpellSlotCount",
+                virtualAttributes,
+                equippedArmorSet,
+            ),
         );
-    }, [virtualAttributes]);
+    }, [virtualAttributes, equippedArmorSet]);
 
     /**
      * Updates the consumed spell slots when the spell slots change.
@@ -305,22 +295,6 @@ export default function LeftColumn() {
 
         setConsumedSpellSlots(consumedSpellSlots);
     }, [equippedSpells]);
-
-    /**
-     * Calculates the item stats on render
-     */
-    useEffect(() => {
-        // TODO: get added stats from items
-        // setItemAttributeAdditions(
-        //     getItemAttributeAdditions([
-        //         ...Object.values(props.equippedRings),
-        //         props.equippedArmor.getHelmetData(),
-        //         props.equippedArmor.chestpiece.data,
-        //         props.equippedArmor.gauntlets.data,
-        //         props.equippedArmor.leggings.data,
-        //     ]),
-        // );
-    }, []);
 
     // RENDER
     return (
@@ -349,6 +323,7 @@ export default function LeftColumn() {
                     </button>
                     {classLocked ? (
                         <select
+                            className="flex min-w-30 text-right h-full"
                             value={selectedClass}
                             onChange={(e) => setSelectedClass(e.target.value)}
                         >
@@ -360,7 +335,7 @@ export default function LeftColumn() {
                         </select>
                     ) : (
                         <input
-                            className="flex max-w-30 text-right h-full"
+                            className="flex w-30 text-right h-full"
                             id="starting-class"
                             disabled
                             value={optimalClass.Name}
@@ -389,7 +364,7 @@ export default function LeftColumn() {
                             <input
                                 type="number"
                                 disabled
-                                value={optimalClass.Level}
+                                value={effectiveClass().Level}
                                 className="text-right h-full max-w-15"
                             />
                         </td>
@@ -398,84 +373,93 @@ export default function LeftColumn() {
                             <input
                                 type="number"
                                 disabled
-                                value={optimalClass.sortingValue}
+                                value={effectiveClass().sortingValue}
                                 className="text-right h-full max-w-15"
                             />
                         </td>
                         <td></td>
                     </tr>
-                    {Object.keys(desiredAttributes).map((statId: string) => (
-                        <tr
-                            key={statId}
-                            onMouseOver={() =>
-                                setFocusedAttribute(statId as AttributeMapKey)
-                            }
-                            onMouseOut={() => setFocusedAttribute(null)}
-                            style={{
-                                fontWeight:
-                                    focusedAttribute == statId
-                                        ? "bold"
-                                        : "normal",
-                            }}
-                        >
-                            <td className="text-left">{statId}:</td>
-                            <td className="text-center">
-                                <input
-                                    type="number"
-                                    disabled
-                                    value={
-                                        optimalClass.Attributes[
-                                            statId as AttributeMapKey
-                                        ]!
-                                    }
-                                    className="text-right h-full max-w-15"
-                                />
-                            </td>
-                            <td className="text-right">
-                                <input
-                                    type="number"
-                                    min="0"
-                                    max="99"
-                                    value={
-                                        desiredAttributes[
-                                            statId as AttributeMapKey
-                                        ]!
-                                    }
-                                    className="text-right h-full max-w-15"
-                                    onChange={(e) =>
-                                        updateDesiredAttributes(
-                                            statId as AttributeMapKey,
-                                            parseInt(e.target.value),
-                                        )
-                                    }
-                                />
-                            </td>
-                            <td className="text-right">
-                                <input
-                                    type="number"
-                                    disabled
-                                    value={
-                                        finalAttributes[
-                                            statId as AttributeMapKey
-                                        ]!
-                                    }
-                                    className="text-right h-full max-w-15"
-                                />
-                            </td>
-                            <td className="text-right">
-                                <input
-                                    type="number"
-                                    disabled
-                                    value={
-                                        virtualAttributes[
-                                            statId as AttributeMapKey
-                                        ]!
-                                    }
-                                    className="text-right h-full max-w-15"
-                                />
-                            </td>
-                        </tr>
-                    ))}
+                    {Object.keys(desiredAttributes).map(
+                        (attributeId: string) => (
+                            <tr
+                                key={attributeId}
+                                onMouseOver={() =>
+                                    setFocusedAttribute(
+                                        attributeId as AttributeMapKey,
+                                    )
+                                }
+                                onMouseOut={() => setFocusedAttribute(null)}
+                                style={{
+                                    fontWeight:
+                                        focusedAttribute == attributeId
+                                            ? "bold"
+                                            : "normal",
+                                }}
+                            >
+                                {/* Attribute name */}
+                                <td className="text-left">{attributeId}:</td>
+                                {/* Starting class base attribute value */}
+                                <td className="text-center">
+                                    <input
+                                        type="number"
+                                        disabled
+                                        value={
+                                            effectiveClass().Attributes[
+                                                attributeId as AttributeMapKey
+                                            ]!
+                                        }
+                                        className="text-right h-full max-w-15"
+                                    />
+                                </td>
+                                {/* Desired attribute value */}
+                                <td className="text-right">
+                                    <input
+                                        type="number"
+                                        min="0"
+                                        max="99"
+                                        value={
+                                            desiredAttributes[
+                                                attributeId as AttributeMapKey
+                                            ]!
+                                        }
+                                        className="text-right h-full max-w-15"
+                                        onChange={(e) =>
+                                            updateDesiredAttributes(
+                                                attributeId as AttributeMapKey,
+                                                parseInt(e.target.value),
+                                            )
+                                        }
+                                    />
+                                </td>
+                                {/* Final attribute value */}
+                                <td className="text-right">
+                                    <input
+                                        type="number"
+                                        disabled
+                                        value={
+                                            finalAttributes[
+                                                attributeId as AttributeMapKey
+                                            ]!
+                                        }
+                                        className="text-right h-full max-w-15"
+                                    />
+                                </td>
+                                {/* Virtual attribute value */}
+                                <td className="text-right">
+                                    <input
+                                        type="number"
+                                        disabled
+                                        value={
+                                            virtualAttributes[
+                                                attributeId as AttributeMapKey
+                                            ]!
+                                        }
+                                        className="text-right h-full max-w-15"
+                                    />
+                                </td>
+                            </tr>
+                        ),
+                    )}
                 </tbody>
             </table>
             <hr />

@@ -1,8 +1,8 @@
 import Equippable from "@/lib/interfaces/equippable";
+import Modifier from "@/lib/interfaces/modifier";
+import AttributeMap from "@/lib/types/attributeMap";
 import DefenseMap from "@/lib/types/defenseMap";
 import ResistanceMap from "@/lib/types/resistanceMap";
-import AttributeMap from "../types/attributeMap";
-import Modifier from "./modifier";
 
 interface Armor extends Equippable {
     Defenses: DefenseMap<number>;

@@ -107,7 +107,7 @@ export default function RightColumn() {
                     Active Effects:
                 </label>
                 <div className="flex flex-col w-full border rounded-2xl p-2 gap-1 min-h-30 max-h-65 overflow-y-auto">
-                    {equippedArmor.activeEffects()}
+                    {...equippedArmor.getModifierDisplays()}
                 </div>
             </div>
         </div>

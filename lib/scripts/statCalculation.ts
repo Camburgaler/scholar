@@ -11,7 +11,11 @@ import {
     StatCalculationDetails,
 } from "@/lib/gameData";
 import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
-import { StatIsDefenseOrResistance, StatMapKey } from "@/lib/types/statMap";
+import {
+    ModifierTargetToStatMapKey,
+    StatIsDefenseOrResistance,
+    StatMapKey,
+} from "@/lib/types/statMap";
 
 type CurveMap = { breakpoint: number; value: number };
 
@@ -954,7 +958,10 @@ export function calculateStatDisplayValue(
 ): number {
     const statMapKey: StatMapKey = mapDisplayKeyToStatMapKey(statDisplayKey);
     let statValue = calculateStatFromAttributes(statMapKey, attributes);
+    let additiveModifier = 0;
+    let multiplicativeModifier = 1.0;
 
+    // Add armor defense/resistance
     if (StatIsDefenseOrResistance.get(statMapKey)) {
         if (
             statDisplayKey.includes("Defense") ||
@@ -970,5 +977,26 @@ export function calculateStatDisplayValue(
         }
     }
 
-    return statValue;
+    // Add active effects from armor
+    equippedArmor
+        .activeEffects()
+        .filter(
+            (effect) =>
+                effect.TargetType === "stat" &&
+                ModifierTargetToStatMapKey.get(effect.Target) === statMapKey,
+        )
+        .forEach((effect) => {
+            switch (effect.Method) {
+                case "additive":
+                    additiveModifier += effect.Value;
+                    break;
+                case "multiplicative":
+                    multiplicativeModifier += effect.Value;
+                    break;
+                default:
+                    break;
+            }
+        });
+
+    return (statValue + additiveModifier) * multiplicativeModifier;
 }

@@ -6,6 +6,7 @@ import {
 } from "@/lib/reducers/equippedArmor";
 import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
 import { filterArmor, getArmorByName } from "@/lib/scripts/armor";
+import { useEffect } from "react";
 
 // TODO: add a lock toggle to this similar to the one for the starting class
 //    the lock would control how the armor optimization behaves
@@ -31,6 +32,24 @@ export function ArmorDisplay(props: { label: string; isOddRow?: boolean }) {
                   ? Leggings
                   : [];
     const slot: keyof ArmorSet = label.toLowerCase() as keyof ArmorSet;
+
+    // Effects
+    useEffect(() => {
+        // when the virtual attributes change, if the new attributes don't meet the current armor requirements, unequip the armor
+        if (
+            !filterArmor(armorList, virtualAttributes).some(
+                (armor) => armor === equippedArmorSet.getArmor(slot).data,
+            )
+        ) {
+            setEquippedArmor({
+                slot: slot,
+                equippedArmor: {
+                    data: armorList[0],
+                    reinforcementLevel: 0,
+                },
+            });
+        }
+    }, [virtualAttributes]);
 
     // Render
     return (

@@ -112,7 +112,7 @@ export default function StatDisplay(props: {
     // Context
     const focusedAttribute = useFocusedAttribute();
     const virtualAttributes = useVirtualAttributes();
-    const equippedArmor = useEquippedArmorSet();
+    const equippedArmorSet = useEquippedArmorSet();
 
     // State
     const [isFocused, setIsFocused] = useState(false);
@@ -127,15 +127,16 @@ export default function StatDisplay(props: {
         setIsFocused(AttributeToStatMap[focusedAttribute!]?.[statMapKey]!);
     }, [focusedAttribute]);
 
+    // updates the display value
     useEffect(() => {
         setDisplayValue(
             calculateStatDisplayValue(
                 statDisplayKey,
                 virtualAttributes,
-                equippedArmor,
+                equippedArmorSet,
             ),
         );
-    }, [virtualAttributes, equippedArmor]);
+    }, [virtualAttributes, equippedArmorSet]);
 
     return (
         <div

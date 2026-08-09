@@ -2,6 +2,8 @@ import ModifierDisplay from "@/lib/components/characterInfo/rightColumn/modifier
 import { Chestpieces, Gauntlets, Helmets, Leggings } from "@/lib/gameData";
 import Armor from "@/lib/interfaces/armor";
 import EquippedArmor from "@/lib/interfaces/equippedArmor";
+import Modifier from "@/lib/interfaces/modifier";
+import { AttributeMapKey } from "@/lib/types/attributeMap";
 import { DefenseMapKey } from "@/lib/types/defenseMap";
 import { ResistanceMapKey } from "@/lib/types/resistanceMap";
 import { JSX } from "react/jsx-runtime";
@@ -381,7 +383,12 @@ class ArmorSet {
         );
     }
 
-    public activeEffects(): JSX.Element[] {
+    /**
+     * @method getModifierDisplays
+     * @description Gets the ModifierDisplay components for the armor set.
+     * @returns {ModifierDisplay[]} The modifier displays for the armor set.
+     */
+    public getModifierDisplays(): JSX.Element[] {
         let activeEffects: JSX.Element[] = [];
         let isOddRow = true;
 
@@ -430,6 +437,55 @@ class ArmorSet {
         });
 
         return activeEffects;
+    }
+
+    /**
+     * @method activeEffects
+     * @description Gets the active effects of the armor set.
+     * @returns {Modifier[]} The active effects of the armor set.
+     */
+    public activeEffects(): Modifier[] {
+        let activeEffects: Modifier[] = [];
+
+        this.getHelmet().data.Modifiers.forEach((modifier) => {
+            activeEffects.push(modifier);
+        });
+
+        this.getChestpiece().data.Modifiers.forEach((modifier) => {
+            activeEffects.push(modifier);
+        });
+
+        this.getGauntlets().data.Modifiers.forEach((modifier) => {
+            activeEffects.push(modifier);
+        });
+
+        this.getLeggings().data.Modifiers.forEach((modifier) => {
+            activeEffects.push(modifier);
+        });
+
+        return activeEffects;
+    }
+
+    /**
+     * @method attributeModifier
+     * @description Gets the total attribute modifier of the armor set for a given attribute.
+     * @param attribute The attribute to get the modifier for.
+     * @returns {number} The total attribute modifier of the armor set for the given attribute.
+     */
+    public attributeModifier(attribute: AttributeMapKey): number {
+        let modifierSum = 0;
+
+        this.activeEffects()
+            .filter(
+                (modifier) =>
+                    modifier.TargetType === "attribute" &&
+                    modifier.Target === attribute,
+            )
+            .forEach((modifier) => {
+                modifierSum += modifier.Value;
+            });
+
+        return modifierSum;
     }
 
     public fitness(): number {
