@@ -82,14 +82,52 @@ export default function LeftColumn() {
         [desiredAttributes, equippedArmorSet],
     );
 
+    const calculateFinalLevel = useCallback(
+        (startingClass: Class): number => {
+            return startingClass.Level + delta(startingClass.Attributes);
+        },
+        [delta],
+    );
+
+    // Calculate souls to next level
+    const calculateSoulsToNextLevel = useCallback(
+        (startingClass: Class): number => {
+            const currentLevel = Math.min(
+                calculateFinalLevel(startingClass),
+                MAX_PLAYER_LEVEL,
+                MAX_PLAYER_LEVEL_UP_SOULS_ID,
+            );
+            return PlayerLevelUpSouls[currentLevel];
+        },
+        [calculateFinalLevel],
+    );
+
+    // Calculate total soul cost
+    const calculateTotalSoulCost = useCallback(
+        (startingClass: Class): number => {
+            const currentLevel = Math.min(
+                calculateFinalLevel(startingClass),
+                MAX_PLAYER_LEVEL,
+                MAX_PLAYER_LEVEL_UP_SOULS_ID,
+            );
+            let tempTotalSoulCost = 0;
+
+            for (let i = startingClass.Level; i < currentLevel; i++) {
+                tempTotalSoulCost += PlayerLevelUpSouls[i];
+            }
+
+            return tempTotalSoulCost;
+        },
+        [calculateFinalLevel],
+    );
+
     // Sort classes by ascending delta
     const sortClasses = useCallback((): Class[] => {
         return Classes.map((c: Class) => {
-            // TODO: Set sorting value to the number of souls it will take to reach the desired stats, instead of just the level difference
-            c.sortingValue = c.Level + delta(c.Attributes);
+            c.sortingValue = calculateTotalSoulCost(c);
             return c;
         }).sort((a: Class, b: Class) => a.sortingValue! - b.sortingValue!);
-    }, [delta]);
+    }, [delta, calculateTotalSoulCost]);
 
     // Sorted classes are the classes sorted by ascending delta
     const [sorted, setSorted] = useState<Class[]>(sortClasses());
@@ -231,24 +269,17 @@ export default function LeftColumn() {
     }, [desiredAttributes, equippedArmorSet, effectiveClass]);
 
     /**
-     * Updates the souls to next level and total soul cost when the final stats change.
+     * Updates the souls to next level and total soul cost when the final attributes change.
      */
     useEffect(() => {
-        const currentLevel = Math.min(
-            effectiveClass().sortingValue!,
-            MAX_PLAYER_LEVEL,
-            MAX_PLAYER_LEVEL_UP_SOULS_ID,
-        );
-        const currentPlayerLevelUpSouls = PlayerLevelUpSouls[currentLevel];
-
-        setSoulsToNextLevel(currentPlayerLevelUpSouls || 0);
-
-        let tempTotalSoulCost = 0;
-        for (let i = effectiveClass().Level; i < currentLevel; i++) {
-            tempTotalSoulCost += PlayerLevelUpSouls[i];
-        }
-        setTotalSoulCost(tempTotalSoulCost);
-    }, [effectiveClass, finalAttributes]);
+        setSoulsToNextLevel(calculateSoulsToNextLevel(effectiveClass()));
+        setTotalSoulCost(calculateTotalSoulCost(effectiveClass()));
+    }, [
+        effectiveClass,
+        calculateSoulsToNextLevel,
+        calculateTotalSoulCost,
+        finalAttributes,
+    ]);
 
     /**
      * Sets selected class if classLocked is false
@@ -373,7 +404,7 @@ export default function LeftColumn() {
                             <input
                                 type="number"
                                 disabled
-                                value={effectiveClass().sortingValue}
+                                value={calculateFinalLevel(effectiveClass())}
                                 className="text-right h-full max-w-15"
                             />
                         </td>
