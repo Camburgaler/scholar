@@ -865,7 +865,15 @@
     },
     {
         "Name": "Jester's Robes",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Cannot be backstabbed",
+                "TargetType": "special",
+                "Target": "Backstab",
+                "Method": "toggle",
+                "Value": 0
+            }
+        ],
         "Weight": 5.7,
         "Durability": 45,
         "RepairCost": 390,
@@ -1961,7 +1969,15 @@
     },
     {
         "Name": "Northwarder Robe",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Spell Effect Length by 2.50%",
+                "TargetType": "special",
+                "Target": "Increase Spell Effect Length",
+                "Method": "multiplicative",
+                "Value": 0
+            }
+        ],
         "Weight": 2.5,
         "Durability": 55,
         "RepairCost": 1290,
@@ -3720,7 +3736,15 @@
     },
     {
         "Name": "Ironclad Armor",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Cannot be backstabbed",
+                "TargetType": "special",
+                "Target": "Backstab",
+                "Method": "toggle",
+                "Value": 0
+            }
+        ],
         "Weight": 29.8,
         "Durability": 90,
         "RepairCost": 696,
@@ -3792,7 +3816,15 @@
     },
     {
         "Name": "Old Ironclad Armor",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Cannot be backstabbed",
+                "TargetType": "special",
+                "Target": "Backstab",
+                "Method": "toggle",
+                "Value": 0
+            }
+        ],
         "Weight": 29.8,
         "Durability": 45,
         "RepairCost": 870,

@@ -1601,7 +1601,15 @@
     },
     {
         "Name": "Durgo's Hat",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Bow Range by 5.0%",
+                "TargetType": "special",
+                "Target": "Bow Range",
+                "Method": "additive",
+                "Value": 0
+            }
+        ],
         "Weight": 2.6,
         "Durability": 48,
         "RepairCost": 245,
@@ -2236,7 +2244,15 @@
     },
     {
         "Name": "Northwarder Hood",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Spell Effect Length by 5.00%",
+                "TargetType": "special",
+                "Target": "Increase Spell Effect Length",
+                "Method": "multiplicative",
+                "Value": 0
+            }
+        ],
         "Weight": 0.9,
         "Durability": 55,
         "RepairCost": 336,
@@ -2576,6 +2592,13 @@
         "Name": "Old Bell Helm",
         "Modifiers": [
             {
+                "Description": "Disable Headshot Damage",
+                "TargetType": "special",
+                "Target": "Headshot Damage",
+                "Method": "toggle",
+                "Value": 0
+            },
+            {
                 "Description": "Increase Miracle Power by 1.5%",
                 "TargetType": "special",
                 "Target": "Miracle Power",
@@ -2733,7 +2756,15 @@
     },
     {
         "Name": "Pharros Mask",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Soaks the wearer",
+                "TargetType": "special",
+                "Target": "Soak",
+                "Method": "toggle",
+                "Value": 0
+            }
+        ],
         "Weight": 4.3,
         "Durability": 55,
         "RepairCost": 154,
@@ -4778,7 +4809,15 @@
     },
     {
         "Name": "Ironclad Helm",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Disable Headshot Stagger",
+                "TargetType": "special",
+                "Target": "Headshot Stagger",
+                "Method": "toggle",
+                "Value": 0
+            }
+        ],
         "Weight": 6.3,
         "Durability": 90,
         "RepairCost": 181,
@@ -4850,7 +4889,15 @@
     },
     {
         "Name": "Old Ironclad Helm",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Disable Headshot Stagger",
+                "TargetType": "special",
+                "Target": "Headshot Stagger",
+                "Method": "toggle",
+                "Value": 0
+            }
+        ],
         "Weight": 6.3,
         "Durability": 45,
         "RepairCost": 227,

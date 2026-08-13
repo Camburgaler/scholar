@@ -2049,7 +2049,15 @@
     },
     {
         "Name": "Northwarder Trousers",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Spell Effect Length by 2.50%",
+                "TargetType": "special",
+                "Target": "Increase Spell Effect Length",
+                "Method": "multiplicative",
+                "Value": 0
+            }
+        ],
         "Weight": 1.8,
         "Durability": 55,
         "RepairCost": 620,
@@ -5992,6 +6000,13 @@
     {
         "Name": "Sanctum Knight Leggings",
         "Modifiers": [
+            {
+                "Description": "Disable Footstep Sound",
+                "TargetType": "special",
+                "Target": "Footstep Sound",
+                "Method": "toggle",
+                "Value": 0
+            },
             {
                 "Description": "Increase Fall Damage Protection Modifier by 2",
                 "TargetType": "special",

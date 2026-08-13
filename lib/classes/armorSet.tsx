@@ -428,6 +428,17 @@ class ArmorSet {
             isOddRow = !isOddRow;
         });
 
+        if (this.getHelmet().data.ItemDiscovery > 0) {
+            activeEffects.push(
+                <ModifierDisplay
+                    description={`Increase Item Discovery by ${this.getHelmet().data.ItemDiscovery}`}
+                    armorName={this.getHelmet().data.Name}
+                    isOddRow={isOddRow}
+                />,
+            );
+            isOddRow = !isOddRow;
+        }
+
         this.getChestpiece().data.Modifiers.forEach((modifier) => {
             activeEffects.push(
                 <ModifierDisplay
@@ -438,6 +449,17 @@ class ArmorSet {
             );
             isOddRow = !isOddRow;
         });
+
+        if (this.getChestpiece().data.ItemDiscovery > 0) {
+            activeEffects.push(
+                <ModifierDisplay
+                    description={`Increase Item Discovery by ${this.getChestpiece().data.ItemDiscovery}`}
+                    armorName={this.getChestpiece().data.Name}
+                    isOddRow={isOddRow}
+                />,
+            );
+            isOddRow = !isOddRow;
+        }
 
         this.getGauntlets().data.Modifiers.forEach((modifier) => {
             activeEffects.push(
@@ -450,6 +472,17 @@ class ArmorSet {
             isOddRow = !isOddRow;
         });
 
+        if (this.getGauntlets().data.ItemDiscovery > 0) {
+            activeEffects.push(
+                <ModifierDisplay
+                    description={`Increase Item Discovery by ${this.getGauntlets().data.ItemDiscovery}`}
+                    armorName={this.getGauntlets().data.Name}
+                    isOddRow={isOddRow}
+                />,
+            );
+            isOddRow = !isOddRow;
+        }
+
         this.getLeggings().data.Modifiers.forEach((modifier) => {
             activeEffects.push(
                 <ModifierDisplay
@@ -460,6 +493,17 @@ class ArmorSet {
             );
             isOddRow = !isOddRow;
         });
+
+        if (this.getLeggings().data.ItemDiscovery > 0) {
+            activeEffects.push(
+                <ModifierDisplay
+                    description={`Increase Item Discovery by ${this.getLeggings().data.ItemDiscovery}`}
+                    armorName={this.getLeggings().data.Name}
+                    isOddRow={isOddRow}
+                />,
+            );
+            isOddRow = !isOddRow;
+        }
 
         return activeEffects;
     }

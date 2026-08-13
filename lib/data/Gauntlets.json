@@ -1601,7 +1601,15 @@
     },
     {
         "Name": "Engraved Gauntlets",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Enable 5% chance for crits, which deal 50% more damage",
+                "TargetType": "special",
+                "Target": "Critical Damage",
+                "Method": "toggle",
+                "Value": 0
+            }
+        ],
         "Weight": 5.5,
         "Durability": 55,
         "RepairCost": 286,
@@ -2033,7 +2041,15 @@
     },
     {
         "Name": "Northwarder Manchettes",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Spell Effect Length by 10.00%",
+                "TargetType": "special",
+                "Target": "Increase Spell Effect Length",
+                "Method": "multiplicative",
+                "Value": 0
+            }
+        ],
         "Weight": 1,
         "Durability": 55,
         "RepairCost": 336,
