@@ -70,7 +70,7 @@ export function ArmorDisplay(props: { label: string; isOddRow?: boolean }) {
             </label>
             <div className="flex gap-1 items-center justify-center h-full">
                 <select
-                    className="flex text-right h-full max-w-50"
+                    className="flex text-left h-full max-w-50"
                     id={label}
                     defaultValue="0"
                     onChange={(e) =>

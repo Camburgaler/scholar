@@ -2,7 +2,7 @@ import Modifier from "@/lib/interfaces/modifier";
 
 interface Equippable {
     Name: string; //pk
-    Modifiers?: Modifier[];
+    Modifiers: Modifier[];
     Weight: number;
     Durability: number;
     RepairCost: number;

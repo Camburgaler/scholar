@@ -6,5 +6,997 @@
         "Durability": 0,
         "RepairCost": 0,
         "ItemDiscovery": 0
+    },
+    {
+        "Name": "Life Ring",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 120,
+        "RepairCost": 1250,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Life Ring+1",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 90,
+        "RepairCost": 1900,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Life Ring+2",
+        "Modifiers": [],
+        "Weight": 0.8,
+        "Durability": 75,
+        "RepairCost": 2500,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Life Ring+3",
+        "Modifiers": [],
+        "Weight": 1.2,
+        "Durability": 25,
+        "RepairCost": 3150,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Chloranthy Ring",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 120,
+        "RepairCost": 1250,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Chloranthy Ring+1",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 90,
+        "RepairCost": 1900,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Chloranthy Ring+2",
+        "Modifiers": [],
+        "Weight": 0.8,
+        "Durability": 75,
+        "RepairCost": 2500,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Royal Soldier's Ring",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 120,
+        "RepairCost": 1250,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Royal Soldier's Ring+1",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 90,
+        "RepairCost": 1900,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Royal Soldier's Ring+2",
+        "Modifiers": [],
+        "Weight": 0.8,
+        "Durability": 75,
+        "RepairCost": 2500,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "First Dragon Ring",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 30,
+        "RepairCost": 2500,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Second Dragon Ring",
+        "Modifiers": [],
+        "Weight": 0.8,
+        "Durability": 25,
+        "RepairCost": 3750,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Third Dragon Ring",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 20,
+        "RepairCost": 5000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of Steel Protection",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 140,
+        "RepairCost": 1750,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of Steel Protection+1",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 110,
+        "RepairCost": 2650,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of Steel Protection+2",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 90,
+        "RepairCost": 3500,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Spell Quartz Ring",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 140,
+        "RepairCost": 1750,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Spell Quartz Ring+1",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 110,
+        "RepairCost": 2650,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Spell Quartz Ring+2",
+        "Modifiers": [],
+        "Weight": 0.8,
+        "Durability": 90,
+        "RepairCost": 3500,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Spell Quartz Ring+3",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 75,
+        "RepairCost": 4400,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Flame Quartz Ring",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 140,
+        "RepairCost": 1750,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Flame Quartz Ring+1",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 110,
+        "RepairCost": 2650,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Flame Quartz Ring+2",
+        "Modifiers": [],
+        "Weight": 0.8,
+        "Durability": 90,
+        "RepairCost": 3500,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Flame Quartz Ring+3",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 75,
+        "RepairCost": 4400,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Thunder Quartz Ring",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 140,
+        "RepairCost": 1750,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Thunder Quartz Ring+1",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 110,
+        "RepairCost": 2650,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Thunder Quartz Ring+2",
+        "Modifiers": [],
+        "Weight": 0.8,
+        "Durability": 90,
+        "RepairCost": 3500,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Thunder Quartz Ring+3",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 75,
+        "RepairCost": 4400,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Dark Quartz Ring",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 140,
+        "RepairCost": 1750,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Dark Quartz Ring+1",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 110,
+        "RepairCost": 2650,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Dark Quartz Ring+2",
+        "Modifiers": [],
+        "Weight": 0.8,
+        "Durability": 90,
+        "RepairCost": 3500,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Dark Quartz Ring+3",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 75,
+        "RepairCost": 4400,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Poisonbite Ring",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 140,
+        "RepairCost": 1750,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Poisonbite Ring+1",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 60,
+        "RepairCost": 2650,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Bloodbite Ring",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 140,
+        "RepairCost": 1750,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Bloodbite Ring+1",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 60,
+        "RepairCost": 2650,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Bracing Knuckle Ring",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 110,
+        "RepairCost": 1750,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Bracing Knuckle Ring+1",
+        "Modifiers": [],
+        "Weight": 0.8,
+        "Durability": 85,
+        "RepairCost": 2650,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Bracing Knuckle Ring+2",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 70,
+        "RepairCost": 3500,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Cursebite Ring",
+        "Modifiers": [],
+        "Weight": 0.8,
+        "Durability": 140,
+        "RepairCost": 5250,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ash Knuckle Ring",
+        "Modifiers": [],
+        "Weight": 0.8,
+        "Durability": 140,
+        "RepairCost": 5250,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Dispelling Ring",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 110,
+        "RepairCost": 3500,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Dispelling Ring+1",
+        "Modifiers": [],
+        "Weight": 4,
+        "Durability": 35,
+        "RepairCost": 7900,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of Resistance",
+        "Modifiers": [],
+        "Weight": 0.8,
+        "Durability": 110,
+        "RepairCost": 3500,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of Resistance+1",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 35,
+        "RepairCost": 5250,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of Blades",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 110,
+        "RepairCost": 4400,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of Blades+1",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 85,
+        "RepairCost": 6600,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of Blades+2",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 70,
+        "RepairCost": 8800,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of Knowledge",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 120,
+        "RepairCost": 1250,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of Prayer",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 120,
+        "RepairCost": 1250,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Stone Ring",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 110,
+        "RepairCost": 2200,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Red Tearstone Ring",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 110,
+        "RepairCost": 6600,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Blue Tearstone Ring",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 110,
+        "RepairCost": 6600,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of Giants",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 150,
+        "RepairCost": 1250,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of Giants+1",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 115,
+        "RepairCost": 1900,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of Giants+2",
+        "Modifiers": [],
+        "Weight": 5,
+        "Durability": 95,
+        "RepairCost": 2500,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Old Leo Ring",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 110,
+        "RepairCost": 6600,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of Soul Protection",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 340,
+        "RepairCost": 14000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of Life Protection",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 340,
+        "RepairCost": 14000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Lingering Dragoncrest Ring",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 120,
+        "RepairCost": 1250,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Lingering Dragoncrest Ring+1",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 90,
+        "RepairCost": 1900,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Lingering Dragoncrest Ring+2",
+        "Modifiers": [],
+        "Weight": 0.8,
+        "Durability": 75,
+        "RepairCost": 2500,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Clear Bluestone Ring",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 120,
+        "RepairCost": 1250,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Clear Bluestone Ring+1",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 90,
+        "RepairCost": 1900,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Clear Bluestone Ring+2",
+        "Modifiers": [],
+        "Weight": 0.8,
+        "Durability": 75,
+        "RepairCost": 2500,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Northern Ritual Band",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 120,
+        "RepairCost": 1250,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Northern Ritual Band+1",
+        "Modifiers": [],
+        "Weight": 0.8,
+        "Durability": 90,
+        "RepairCost": 1900,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Northern Ritual Band+2",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 75,
+        "RepairCost": 2500,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Southern Ritual Band",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 120,
+        "RepairCost": 1250,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Southern Ritual Band+1",
+        "Modifiers": [],
+        "Weight": 1.2,
+        "Durability": 90,
+        "RepairCost": 1900,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Southern Ritual Band+2",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 75,
+        "RepairCost": 2500,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Covetous Gold Serpent Ring",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 120,
+        "RepairCost": 1250,
+        "ItemDiscovery": 50
+    },
+    {
+        "Name": "Covetous Gold Serpent Ring+1",
+        "Modifiers": [],
+        "Weight": 1.2,
+        "Durability": 90,
+        "RepairCost": 1900,
+        "ItemDiscovery": 75
+    },
+    {
+        "Name": "Covetous Gold Serpent Ring+2",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 75,
+        "RepairCost": 2500,
+        "ItemDiscovery": 100
+    },
+    {
+        "Name": "Covetous Silver Serpent Ring",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 90,
+        "RepairCost": 3000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Covetous Silver Serpent Ring+1",
+        "Modifiers": [],
+        "Weight": 1.2,
+        "Durability": 70,
+        "RepairCost": 4500,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Covetous Silver Serpent Ring+2",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 55,
+        "RepairCost": 6000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of the Evil Eye",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 105,
+        "RepairCost": 6000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of the Evil Eye+1",
+        "Modifiers": [],
+        "Weight": 1.2,
+        "Durability": 80,
+        "RepairCost": 9000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of the Evil Eye+2",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 65,
+        "RepairCost": 12000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of Restoration",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 70,
+        "RepairCost": 15000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of Binding",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 130,
+        "RepairCost": 1000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Silvercat Ring",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 130,
+        "RepairCost": 1000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Redeye Ring",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 130,
+        "RepairCost": 1000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Gower's Ring of Protection",
+        "Modifiers": [],
+        "Weight": 10,
+        "Durability": 75,
+        "RepairCost": 8750,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Name-engraved Ring",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 130,
+        "RepairCost": 1000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Slumbering Dragoncrest Ring",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 130,
+        "RepairCost": 1000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Hawk Ring",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 130,
+        "RepairCost": 1000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Old Sun Ring",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 75,
+        "RepairCost": 5250,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Illusory Ring of a Conqueror",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 130,
+        "RepairCost": 1000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "King's Ring",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 110,
+        "RepairCost": 2200,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of the Dead",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 130,
+        "RepairCost": 1000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of Thorns",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 110,
+        "RepairCost": 4400,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of Thorns+1",
+        "Modifiers": [],
+        "Weight": 0.8,
+        "Durability": 85,
+        "RepairCost": 6600,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of Thorns+2",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 70,
+        "RepairCost": 8800,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Delicate String",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 130,
+        "RepairCost": 1000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "White Ring",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 130,
+        "RepairCost": 1000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Illusory Ring of the Vengeful",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 130,
+        "RepairCost": 1000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Illusory Ring of the Guilty",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 130,
+        "RepairCost": 1000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of Whispers",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 130,
+        "RepairCost": 1000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Illusory Ring of the Exalted",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 130,
+        "RepairCost": 1000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Crest of the Rat",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 100,
+        "RepairCost": 2650,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Bell Keeper's Seal",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 120,
+        "RepairCost": 1200,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Guardian's Seal",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 120,
+        "RepairCost": 1200,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Crest of Blood",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 100,
+        "RepairCost": 2650,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Blue Seal",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 110,
+        "RepairCost": 1500,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Abyss Seal",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 100,
+        "RepairCost": 2650,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Vanquisher's Seal",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 100,
+        "RepairCost": 2650,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Sun Seal",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 100,
+        "RepairCost": 2650,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ancient Dragon Seal",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 120,
+        "RepairCost": 1200,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Simpleton's Ring",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 120,
+        "RepairCost": 1250,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Strength Ring",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 120,
+        "RepairCost": 1250,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Dexterity Ring",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 120,
+        "RepairCost": 1250,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ivory Warrior Ring",
+        "Modifiers": [],
+        "Weight": 5,
+        "Durability": 30,
+        "RepairCost": 4400,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Sorcery Clutch Ring",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 30,
+        "RepairCost": 4400,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Lightning Clutch Ring",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 30,
+        "RepairCost": 4400,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Fire Clutch Ring",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 30,
+        "RepairCost": 4400,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Dark Clutch Ring",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 30,
+        "RepairCost": 4400,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Baneful Bird Ring",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 45,
+        "RepairCost": 5250,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Flynn's Ring",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 30,
+        "RepairCost": 4400,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of the Embedded",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 80,
+        "RepairCost": 3750,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Ring of the Living",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 130,
+        "RepairCost": 1000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Yorgh's Ring",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 10,
+        "RepairCost": 6000,
+        "ItemDiscovery": 0
+    },
+    {
+        "Name": "Agape Ring",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 500,
+        "RepairCost": 3000,
+        "ItemDiscovery": 0
     }
 ]

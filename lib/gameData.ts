@@ -23,6 +23,20 @@ import StatMap from "@/lib/types/statMap";
 export const AttributeToStatMap: AttributeMap<StatMap<boolean>> =
     attributeToStatMap;
 
+// Classes is a list of starting character classes
+export const Classes: Class[] = classes;
+
+// Helmets is a list of helmet armor
+export const Helmets: Armor[] = helmets.sort((a, b) =>
+    // Sort by name
+    // "No Armor" is always first
+    a.Name === "No Armor"
+        ? -1
+        : b.Name === "No Armor"
+          ? 1
+          : a.Name.localeCompare(b.Name),
+);
+
 // Chestpieces is a list of chestpiece armor
 export const Chestpieces: Armor[] = chestpieces.sort((a, b) =>
     // Sort by name
@@ -34,22 +48,8 @@ export const Chestpieces: Armor[] = chestpieces.sort((a, b) =>
           : a.Name.localeCompare(b.Name),
 );
 
-// Classes is a list of starting character classes
-export const Classes: Class[] = classes;
-
 // Gauntlets is a list of gauntlet armor
 export const Gauntlets: Armor[] = gauntlets.sort((a, b) =>
-    // Sort by name
-    // "No Armor" is always first
-    a.Name === "No Armor"
-        ? -1
-        : b.Name === "No Armor"
-          ? 1
-          : a.Name.localeCompare(b.Name),
-);
-
-// Helmets is a list of helmet armor
-export const Helmets: Armor[] = helmets.sort((a, b) =>
     // Sort by name
     // "No Armor" is always first
     a.Name === "No Armor"
@@ -74,10 +74,22 @@ export const Leggings: Armor[] = leggings.sort((a, b) =>
 export const PlayerLevelUpSouls: number[] = levels;
 
 // Rings is a list of rings
-export const Rings: Ring[] = rings;
+export const Rings: Ring[] = rings.sort((a, b) =>
+    // Sort by name
+    // "No Ring" is always first
+    a.Name === "No Ring"
+        ? -1
+        : b.Name === "No Ring"
+          ? 1
+          : a.Name.localeCompare(b.Name),
+);
 
 // Covenants is a list of covenant names
-export const Covenants: string[] = covenants;
+export const Covenants: string[] = covenants.sort((a, b) =>
+    // Sort by name
+    // "None" is always first
+    a === "None" ? -1 : b === "None" ? 1 : a.localeCompare(b),
+);
 
 // Spells is a list of spells
 export const Spells: Spell[] = spells.sort((a, b) =>
@@ -85,6 +97,7 @@ export const Spells: Spell[] = spells.sort((a, b) =>
 );
 
 // Weapons is a list of weapons
+// TODO: Sort
 export const Weapons: Weapon[] = weapons;
 
 // BaseStats is a map of stats to their respective values before scaling
