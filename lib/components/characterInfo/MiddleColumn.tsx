@@ -75,7 +75,7 @@ export default function MiddleColumn() {
                             }}
                             value={`${getEquipLoadPercentFromRatio(
                                 `${equippedArmor.weight()}/${calculateStatDisplayValue("MaximumEquipLoad", virtualAttributes, equippedArmor)}`,
-                            ).toFixed(2)}%`}
+                            ).toFixed(1)}%`}
                         />
                     </div>
                 </div>

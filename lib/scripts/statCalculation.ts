@@ -1,7 +1,6 @@
 import ArmorSet from "@/lib/classes/armorSet";
 import {
     mapDisplayKeyToArmorDefenseField,
-    mapDisplayKeyToArmorResistanceField,
     mapDisplayKeyToStatMapKey,
     StatDisplayKey,
 } from "@/lib/components/characterInfo/StatDisplay";
@@ -11,6 +10,7 @@ import {
     StatCalculationDetails,
 } from "@/lib/gameData";
 import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
+import { ResistanceMapKey } from "@/lib/types/resistanceMap";
 import {
     ModifierTargetToStatMapKey,
     StatIsDefenseOrResistance,
@@ -967,12 +967,28 @@ export function calculateStatDisplayValue(
             statDisplayKey.includes("Defense") ||
             statDisplayKey.includes("Absorption")
         ) {
-            statValue += equippedArmor.defense(
-                mapDisplayKeyToArmorDefenseField(statDisplayKey),
-            );
+            switch (statDisplayKey) {
+                case "DefenseStrike":
+                    statValue = equippedArmor.strikeDefense(statValue);
+                    break;
+                case "DefenseSlash":
+                    statValue = equippedArmor.slashDefense(statValue);
+                    break;
+                case "DefenseThrust":
+                    statValue = equippedArmor.thrustDefense(statValue);
+                    break;
+                case "Defense":
+                    // Do nothing since the display value of the "Defense" stat stays the same regardless of armor
+                    break;
+                default:
+                    statValue += equippedArmor.defense(
+                        mapDisplayKeyToArmorDefenseField(statDisplayKey),
+                    );
+                    break;
+            }
         } else {
             statValue += equippedArmor.resistance(
-                mapDisplayKeyToArmorResistanceField(statDisplayKey),
+                statDisplayKey.replace("Resistance", "") as ResistanceMapKey,
             );
         }
     }
@@ -997,6 +1013,11 @@ export function calculateStatDisplayValue(
                     break;
             }
         });
+
+    // Add armor poise
+    if (statMapKey === "Poise") {
+        additiveModifier += equippedArmor.poise();
+    }
 
     return (statValue + additiveModifier) * multiplicativeModifier;
 }

@@ -4,7 +4,6 @@ import { useFocusedAttribute } from "@/lib/reducers/focusedAttribute";
 import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
 import { calculateStatDisplayValue } from "@/lib/scripts/statCalculation";
 import { DefenseMapKey } from "@/lib/types/defenseMap";
-import { ResistanceMapKey } from "@/lib/types/resistanceMap";
 import {
     StatMapKey,
     StatMapKeys,
@@ -55,25 +54,6 @@ export function mapDisplayKeyToArmorDefenseField(
     }
 }
 
-export function mapDisplayKeyToArmorResistanceField(
-    displayKey: StatDisplayKey,
-): ResistanceMapKey {
-    switch (displayKey) {
-        case "ResistancePoison":
-            return "Poison";
-        case "ResistanceBleed":
-            return "Bleed";
-        case "ResistancePetrify":
-            return "Petrify";
-        case "ResistanceCurse":
-            return "Curse";
-        default:
-            throw new Error(
-                `StatDisplayKey ${displayKey} does not have a corresponding armor resistance field.`,
-            );
-    }
-}
-
 function statDisplayKeyIsStatMapKey(statDisplayKey: StatDisplayKey): boolean {
     return StatMapKeys.includes(statDisplayKey as StatMapKey);
 }
@@ -85,11 +65,11 @@ function mapStatDisplayKeyToLabel(statDisplayKey: StatDisplayKey): string {
 
     switch (statDisplayKey) {
         case "DefenseStrike":
-            return "Defense (Strike)";
+            return "VS Strike";
         case "DefenseSlash":
-            return "Defense (Slash)";
+            return "VS Slash";
         case "DefenseThrust":
-            return "Defense (Thrust)";
+            return "VS Thrust";
     }
 
     return statDisplayKey;
@@ -129,13 +109,17 @@ export default function StatDisplay(props: {
 
     // updates the display value
     useEffect(() => {
-        setDisplayValue(
-            calculateStatDisplayValue(
-                statDisplayKey,
-                virtualAttributes,
-                equippedArmorSet,
-            ),
+        let displayValue = calculateStatDisplayValue(
+            statDisplayKey,
+            virtualAttributes,
+            equippedArmorSet,
         );
+
+        if (statDisplayKey !== "Poise") {
+            displayValue = Math.floor(displayValue);
+        }
+
+        setDisplayValue(displayValue);
     }, [virtualAttributes, equippedArmorSet]);
 
     return (

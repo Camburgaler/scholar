@@ -51,7 +51,8 @@ export function ArmorDisplay(props: { label: string; isOddRow?: boolean }) {
         }
     }, [virtualAttributes]);
 
-    // Render
+    // TODO: add on-hover tooltip that shows the stats of the currently equipped armor
+    // TODO: add graph of normal distribution of armor stats and where the currently equipped armor falls on that distribution
     return (
         <div
             className="flex gap-1 w-full justify-between"
@@ -92,7 +93,6 @@ export function ArmorDisplay(props: { label: string; isOddRow?: boolean }) {
                     className="flex text-left h-full min-w-15"
                     value={equippedArmorSet.getArmor(slot).reinforcementLevel}
                     onChange={(e) =>
-                        // TODO: simplify ASAP
                         setEquippedArmor({
                             slot: slot,
                             equippedArmor: {
