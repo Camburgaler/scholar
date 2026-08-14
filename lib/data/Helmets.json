@@ -2246,9 +2246,9 @@
         "Name": "Northwarder Hood",
         "Modifiers": [
             {
-                "Description": "Increase Spell Effect Length by 5.00%",
+                "Description": "Increase Spell Effect Length by 5.0%",
                 "TargetType": "special",
-                "Target": "Increase Spell Effect Length",
+                "Target": "Spell Effect Length",
                 "Method": "multiplicative",
                 "Value": 0
             }

@@ -2043,9 +2043,9 @@
         "Name": "Northwarder Manchettes",
         "Modifiers": [
             {
-                "Description": "Increase Spell Effect Length by 10.00%",
+                "Description": "Increase Spell Effect Length by 10.0%",
                 "TargetType": "special",
-                "Target": "Increase Spell Effect Length",
+                "Target": "Spell Effect Length",
                 "Method": "multiplicative",
                 "Value": 0
             }
@@ -2923,18 +2923,18 @@
         "Name": "Shadow Gauntlets",
         "Modifiers": [
             {
-                "Description": "Increase Bleed Damage by 50 when the weapon has innate Bleed Damage",
-                "TargetType": "stat",
-                "Target": "Bleed Damage",
-                "Method": "additive",
-                "Value": 50
-            },
-            {
                 "Description": "Increase Bleed Damage by 25 when the weapon is infused with Bleed Damage",
                 "TargetType": "stat",
                 "Target": "Bleed Damage",
                 "Method": "additive",
                 "Value": 25
+            },
+            {
+                "Description": "Increase Bleed Damage by 50 when the weapon has innate Bleed Damage",
+                "TargetType": "stat",
+                "Target": "Bleed Damage",
+                "Method": "additive",
+                "Value": 50
             },
             {
                 "Description": "Increase Bleed Damage by 60 when the weapon has innate AND infused Bleed Damage",
@@ -6088,18 +6088,18 @@
         "Name": "Sanctum Soldier Gauntlet",
         "Modifiers": [
             {
-                "Description": "Increase Poison Damage by 50 when the weapon has innate Poison Damage",
-                "TargetType": "stat",
-                "Target": "Poison Damage",
-                "Method": "additive",
-                "Value": 50
-            },
-            {
                 "Description": "Increase Poison Damage by 25 when the weapon is infused with Poison Damage",
                 "TargetType": "stat",
                 "Target": "Poison Damage",
                 "Method": "additive",
                 "Value": 25
+            },
+            {
+                "Description": "Increase Poison Damage by 50 when the weapon has innate Poison Damage",
+                "TargetType": "stat",
+                "Target": "Poison Damage",
+                "Method": "additive",
+                "Value": 50
             },
             {
                 "Description": "Increase Poison Damage by 60 when the weapon has innate AND infused Poison Damage",

@@ -1971,9 +1971,9 @@
         "Name": "Northwarder Robe",
         "Modifiers": [
             {
-                "Description": "Increase Spell Effect Length by 2.50%",
+                "Description": "Increase Spell Effect Length by 2.5%",
                 "TargetType": "special",
-                "Target": "Increase Spell Effect Length",
+                "Target": "Spell Effect Length",
                 "Method": "multiplicative",
                 "Value": 0
             }

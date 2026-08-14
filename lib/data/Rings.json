@@ -11,11 +11,11 @@
         "Name": "Life Ring",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
+                "Description": "Increase Max HP by 5.0%",
                 "TargetType": "stat",
                 "Target": "Max HP",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.05
             }
         ],
         "Weight": 0.2,
@@ -27,11 +27,11 @@
         "Name": "Life Ring+1",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
+                "Description": "Increase Max HP by 7.5%",
                 "TargetType": "stat",
                 "Target": "Max HP",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.075
             }
         ],
         "Weight": 0.5,
@@ -43,11 +43,11 @@
         "Name": "Life Ring+2",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
+                "Description": "Increase Max HP by 12.5%",
                 "TargetType": "stat",
                 "Target": "Max HP",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.125
             }
         ],
         "Weight": 0.8,
@@ -59,11 +59,11 @@
         "Name": "Life Ring+3",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
+                "Description": "Increase Max HP by 15.0%",
                 "TargetType": "stat",
                 "Target": "Max HP",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.15
             }
         ],
         "Weight": 1.2,
@@ -75,11 +75,11 @@
         "Name": "Chloranthy Ring",
         "Modifiers": [
             {
-                "Description": "ModifyStaminaRecovery",
-                "TargetType": "stat",
-                "Target": "",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Increase Stamina Recovery by 15.0%",
+                "TargetType": "special",
+                "Target": "Stamina Recovery",
+                "Method": "multiplicative",
+                "Value": 14.999999999999991
             }
         ],
         "Weight": 0.2,
@@ -91,11 +91,11 @@
         "Name": "Chloranthy Ring+1",
         "Modifiers": [
             {
-                "Description": "ModifyStaminaRecovery",
-                "TargetType": "stat",
-                "Target": "",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Increase Stamina Recovery by 20.0%",
+                "TargetType": "special",
+                "Target": "Stamina Recovery",
+                "Method": "multiplicative",
+                "Value": 19.999999999999996
             }
         ],
         "Weight": 0.5,
@@ -107,11 +107,11 @@
         "Name": "Chloranthy Ring+2",
         "Modifiers": [
             {
-                "Description": "ModifyStaminaRecovery",
-                "TargetType": "stat",
-                "Target": "",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Increase Stamina Recovery by 25.0%",
+                "TargetType": "special",
+                "Target": "Stamina Recovery",
+                "Method": "multiplicative",
+                "Value": 25
             }
         ],
         "Weight": 0.8,
@@ -123,11 +123,11 @@
         "Name": "Royal Soldier's Ring",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
+                "Description": "Increase Max Equip Load by 10.0%",
                 "TargetType": "stat",
                 "Target": "Max Equip Load",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.1
             }
         ],
         "Weight": 0.2,
@@ -139,11 +139,11 @@
         "Name": "Royal Soldier's Ring+1",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
+                "Description": "Increase Max Equip Load by 15.0%",
                 "TargetType": "stat",
                 "Target": "Max Equip Load",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.15
             }
         ],
         "Weight": 0.5,
@@ -155,11 +155,11 @@
         "Name": "Royal Soldier's Ring+2",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
+                "Description": "Increase Max Equip Load by 20.0%",
                 "TargetType": "stat",
                 "Target": "Max Equip Load",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.2
             }
         ],
         "Weight": 0.8,
@@ -171,25 +171,25 @@
         "Name": "First Dragon Ring",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
+                "Description": "Increase Max HP by 3.0%",
                 "TargetType": "stat",
                 "Target": "Max HP",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.03
             },
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
+                "Description": "Increase Max Stamina by 5.0%",
+                "TargetType": "special",
                 "Target": "Max Stamina",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.05
             },
             {
-                "Description": "ModifyStatMultiplicatively",
+                "Description": "Increase Max Equip Load by 5.0%",
                 "TargetType": "stat",
                 "Target": "Max Equip Load",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.05
             }
         ],
         "Weight": 0.5,
@@ -201,25 +201,25 @@
         "Name": "Second Dragon Ring",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
+                "Description": "Increase Max HP by 5.0%",
                 "TargetType": "stat",
                 "Target": "Max HP",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.05
             },
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
+                "Description": "Increase Max Stamina by 10.0%",
+                "TargetType": "special",
                 "Target": "Max Stamina",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.1
             },
             {
-                "Description": "ModifyStatMultiplicatively",
+                "Description": "Increase Max Equip Load by 10.0%",
                 "TargetType": "stat",
                 "Target": "Max Equip Load",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.1
             }
         ],
         "Weight": 0.8,
@@ -231,25 +231,25 @@
         "Name": "Third Dragon Ring",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
+                "Description": "Increase Max HP by 7.5%",
                 "TargetType": "stat",
                 "Target": "Max HP",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.075
             },
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
+                "Description": "Increase Max Stamina by 12.5%",
+                "TargetType": "special",
                 "Target": "Max Stamina",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.125
             },
             {
-                "Description": "ModifyStatMultiplicatively",
+                "Description": "Increase Max Equip Load by 12.5%",
                 "TargetType": "stat",
                 "Target": "Max Equip Load",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.125
             }
         ],
         "Weight": 1,
@@ -261,18 +261,18 @@
         "Name": "Ring of Steel Protection",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase All Physical Defense by 50",
+                "TargetType": "special",
+                "Target": "All Physical Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 50
             },
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
-                "Target": "Pv E Damage Reduction",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Decrease PvE Damage Reduction by 10.0%",
+                "TargetType": "special",
+                "Target": "PvE Damage Reduction",
+                "Method": "multiplicative",
+                "Value": -0.1
             }
         ],
         "Weight": 1,
@@ -284,18 +284,18 @@
         "Name": "Ring of Steel Protection+1",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase All Physical Defense by 75",
+                "TargetType": "special",
+                "Target": "All Physical Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 75
             },
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
-                "Target": "Pv E Damage Reduction",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Decrease PvE Damage Reduction by 10.0%",
+                "TargetType": "special",
+                "Target": "PvE Damage Reduction",
+                "Method": "multiplicative",
+                "Value": -0.1
             }
         ],
         "Weight": 1.5,
@@ -307,18 +307,18 @@
         "Name": "Ring of Steel Protection+2",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase All Physical Defense by 100",
+                "TargetType": "special",
+                "Target": "All Physical Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 100
             },
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
-                "Target": "Pv E Damage Reduction",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Decrease PvE Damage Reduction by 12.5%",
+                "TargetType": "special",
+                "Target": "PvE Damage Reduction",
+                "Method": "multiplicative",
+                "Value": -0.125
             }
         ],
         "Weight": 2,
@@ -330,11 +330,11 @@
         "Name": "Spell Quartz Ring",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Magic Defense by 5",
+                "TargetType": "special",
+                "Target": "Magic Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 5
             }
         ],
         "Weight": 0.2,
@@ -346,11 +346,11 @@
         "Name": "Spell Quartz Ring+1",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Magic Defense by 8",
+                "TargetType": "special",
+                "Target": "Magic Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 8
             }
         ],
         "Weight": 0.5,
@@ -362,11 +362,11 @@
         "Name": "Spell Quartz Ring+2",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Magic Defense by 10",
+                "TargetType": "special",
+                "Target": "Magic Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 10
             }
         ],
         "Weight": 0.8,
@@ -378,11 +378,11 @@
         "Name": "Spell Quartz Ring+3",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Magic Defense by 15",
+                "TargetType": "special",
+                "Target": "Magic Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 15
             }
         ],
         "Weight": 1,
@@ -394,11 +394,11 @@
         "Name": "Flame Quartz Ring",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Fire Defense by 5",
+                "TargetType": "special",
+                "Target": "Fire Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 5
             }
         ],
         "Weight": 0.2,
@@ -410,11 +410,11 @@
         "Name": "Flame Quartz Ring+1",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Fire Defense by 8",
+                "TargetType": "special",
+                "Target": "Fire Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 8
             }
         ],
         "Weight": 0.5,
@@ -426,11 +426,11 @@
         "Name": "Flame Quartz Ring+2",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Fire Defense by 10",
+                "TargetType": "special",
+                "Target": "Fire Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 10
             }
         ],
         "Weight": 0.8,
@@ -442,11 +442,11 @@
         "Name": "Flame Quartz Ring+3",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Fire Defense by 15",
+                "TargetType": "special",
+                "Target": "Fire Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 15
             }
         ],
         "Weight": 1,
@@ -458,11 +458,11 @@
         "Name": "Thunder Quartz Ring",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Lightning Defense by 5",
+                "TargetType": "special",
+                "Target": "Lightning Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 5
             }
         ],
         "Weight": 0.2,
@@ -474,11 +474,11 @@
         "Name": "Thunder Quartz Ring+1",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Lightning Defense by 8",
+                "TargetType": "special",
+                "Target": "Lightning Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 8
             }
         ],
         "Weight": 0.5,
@@ -490,11 +490,11 @@
         "Name": "Thunder Quartz Ring+2",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Lightning Defense by 10",
+                "TargetType": "special",
+                "Target": "Lightning Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 10
             }
         ],
         "Weight": 0.8,
@@ -506,11 +506,11 @@
         "Name": "Thunder Quartz Ring+3",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Lightning Defense by 15",
+                "TargetType": "special",
+                "Target": "Lightning Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 15
             }
         ],
         "Weight": 1,
@@ -522,11 +522,11 @@
         "Name": "Dark Quartz Ring",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Dark Defense by 5",
+                "TargetType": "special",
+                "Target": "Dark Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 5
             }
         ],
         "Weight": 0.2,
@@ -538,11 +538,11 @@
         "Name": "Dark Quartz Ring+1",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Dark Defense by 8",
+                "TargetType": "special",
+                "Target": "Dark Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 8
             }
         ],
         "Weight": 0.5,
@@ -554,11 +554,11 @@
         "Name": "Dark Quartz Ring+2",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Dark Defense by 10",
+                "TargetType": "special",
+                "Target": "Dark Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 10
             }
         ],
         "Weight": 0.8,
@@ -570,11 +570,11 @@
         "Name": "Dark Quartz Ring+3",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Dark Defense by 15",
+                "TargetType": "special",
+                "Target": "Dark Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 15
             }
         ],
         "Weight": 1,
@@ -586,11 +586,11 @@
         "Name": "Poisonbite Ring",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Poison Defense by 15",
+                "TargetType": "special",
+                "Target": "Poison Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 15
             }
         ],
         "Weight": 0.5,
@@ -602,11 +602,11 @@
         "Name": "Poisonbite Ring+1",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Poison Defense by 30",
+                "TargetType": "special",
+                "Target": "Poison Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 30
             }
         ],
         "Weight": 1.5,
@@ -618,11 +618,11 @@
         "Name": "Bloodbite Ring",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Bleed Defense by 15",
+                "TargetType": "special",
+                "Target": "Bleed Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 15
             }
         ],
         "Weight": 0.5,
@@ -634,11 +634,11 @@
         "Name": "Bloodbite Ring+1",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Bleed Defense by 30",
+                "TargetType": "special",
+                "Target": "Bleed Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 30
             }
         ],
         "Weight": 1.5,
@@ -650,25 +650,25 @@
         "Name": "Bracing Knuckle Ring",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
-                "Target": "Weapon Degredation Rate",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Decrease Weapon Degradation Rate by 20.0%",
+                "TargetType": "special",
+                "Target": "Weapon Degradation Rate",
+                "Method": "multiplicative",
+                "Value": -0.2
             },
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
+                "Description": "Decrease Armor Degradation Rate by 20.0%",
+                "TargetType": "special",
                 "Target": "Armor Degradation Rate",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": -0.2
             },
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
+                "Description": "Decrease Ring Degradation Rate by 20.0%",
+                "TargetType": "special",
                 "Target": "Ring Degradation Rate",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": -0.2
             }
         ],
         "Weight": 0.5,
@@ -680,25 +680,25 @@
         "Name": "Bracing Knuckle Ring+1",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
-                "Target": "Weapon Degredation Rate",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Decrease Weapon Degradation Rate by 35.0%",
+                "TargetType": "special",
+                "Target": "Weapon Degradation Rate",
+                "Method": "multiplicative",
+                "Value": -0.35
             },
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
+                "Description": "Decrease Armor Degradation Rate by 25.0%",
+                "TargetType": "special",
                 "Target": "Armor Degradation Rate",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": -0.25
             },
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
+                "Description": "Decrease Ring Degradation Rate by 25.0%",
+                "TargetType": "special",
                 "Target": "Ring Degradation Rate",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": -0.25
             }
         ],
         "Weight": 0.8,
@@ -710,25 +710,25 @@
         "Name": "Bracing Knuckle Ring+2",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
-                "Target": "Weapon Degredation Rate",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Decrease Weapon Degradation Rate by 50.0%",
+                "TargetType": "special",
+                "Target": "Weapon Degradation Rate",
+                "Method": "multiplicative",
+                "Value": -0.5
             },
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
+                "Description": "Decrease Armor Degradation Rate by 35.0%",
+                "TargetType": "special",
                 "Target": "Armor Degradation Rate",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": -0.35
             },
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
+                "Description": "Decrease Ring Degradation Rate by 35.0%",
+                "TargetType": "special",
                 "Target": "Ring Degradation Rate",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": -0.35
             }
         ],
         "Weight": 1,
@@ -740,11 +740,11 @@
         "Name": "Cursebite Ring",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Curse Defense by 40",
+                "TargetType": "special",
+                "Target": "Curse Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 40
             }
         ],
         "Weight": 0.8,
@@ -756,11 +756,11 @@
         "Name": "Ash Knuckle Ring",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Petrify Defense by 40",
+                "TargetType": "special",
+                "Target": "Petrify Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 40
             }
         ],
         "Weight": 0.8,
@@ -772,32 +772,32 @@
         "Name": "Dispelling Ring",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Magic Defense by 6",
+                "TargetType": "special",
+                "Target": "Magic Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 6
             },
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Lightning Defense by 6",
+                "TargetType": "special",
+                "Target": "Lightning Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 6
             },
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Fire Defense by 6",
+                "TargetType": "special",
+                "Target": "Fire Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 6
             },
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Dark Defense by 6",
+                "TargetType": "special",
+                "Target": "Dark Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 6
             }
         ],
         "Weight": 1,
@@ -809,32 +809,32 @@
         "Name": "Dispelling Ring+1",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Magic Defense by 12",
+                "TargetType": "special",
+                "Target": "Magic Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 12
             },
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Lightning Defense by 12",
+                "TargetType": "special",
+                "Target": "Lightning Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 12
             },
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Fire Defense by 12",
+                "TargetType": "special",
+                "Target": "Fire Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 12
             },
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Dark Defense by 12",
+                "TargetType": "special",
+                "Target": "Dark Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 12
             }
         ],
         "Weight": 4,
@@ -846,39 +846,39 @@
         "Name": "Ring of Resistance",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Poison Defense by 12",
+                "TargetType": "special",
+                "Target": "Poison Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 12
             },
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Bleed Defense by 12",
+                "TargetType": "special",
+                "Target": "Bleed Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 12
             },
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Unknown7 Defense by 12",
+                "TargetType": "special",
+                "Target": "Unknown7 Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 12
             },
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Curse Defense by 12",
+                "TargetType": "special",
+                "Target": "Curse Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 12
             },
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Petrify Defense by 12",
+                "TargetType": "special",
+                "Target": "Petrify Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 12
             }
         ],
         "Weight": 0.8,
@@ -890,39 +890,39 @@
         "Name": "Ring of Resistance+1",
         "Modifiers": [
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Poison Defense by 20",
+                "TargetType": "special",
+                "Target": "Poison Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 20
             },
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Bleed Defense by 20",
+                "TargetType": "special",
+                "Target": "Bleed Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 20
             },
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Unknown7 Defense by 20",
+                "TargetType": "special",
+                "Target": "Unknown7 Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 20
             },
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Curse Defense by 20",
+                "TargetType": "special",
+                "Target": "Curse Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 20
             },
             {
-                "Description": "BuffDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Petrify Defense by 20",
+                "TargetType": "special",
+                "Target": "Petrify Defense",
                 "Method": "additive",
-                "Value": 1
+                "Value": 20
             }
         ],
         "Weight": 1.5,
@@ -934,11 +934,25 @@
         "Name": "Ring of Blades",
         "Modifiers": [
             {
-                "Description": "ModifyDamageFlatToBaseAr",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase All Physical Damage by 25 when the weapon is infused with All Physical Damage",
+                "TargetType": "special",
+                "Target": "All Physical Damage",
                 "Method": "additive",
-                "Value": 1
+                "Value": 25
+            },
+            {
+                "Description": "Increase All Physical Damage by 50 when the weapon has innate All Physical Damage",
+                "TargetType": "special",
+                "Target": "All Physical Damage",
+                "Method": "additive",
+                "Value": 50
+            },
+            {
+                "Description": "Increase All Physical Damage by 60 when the weapon has innate AND infused All Physical Damage",
+                "TargetType": "special",
+                "Target": "All Physical Damage",
+                "Method": "additive",
+                "Value": 60
             }
         ],
         "Weight": 1,
@@ -950,11 +964,25 @@
         "Name": "Ring of Blades+1",
         "Modifiers": [
             {
-                "Description": "ModifyDamageFlatToBaseAr",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase All Physical Damage by 25 when the weapon is infused with All Physical Damage",
+                "TargetType": "special",
+                "Target": "All Physical Damage",
                 "Method": "additive",
-                "Value": 1
+                "Value": 25
+            },
+            {
+                "Description": "Increase All Physical Damage by 50 when the weapon has innate All Physical Damage",
+                "TargetType": "special",
+                "Target": "All Physical Damage",
+                "Method": "additive",
+                "Value": 50
+            },
+            {
+                "Description": "Increase All Physical Damage by 60 when the weapon has innate AND infused All Physical Damage",
+                "TargetType": "special",
+                "Target": "All Physical Damage",
+                "Method": "additive",
+                "Value": 60
             }
         ],
         "Weight": 1.5,
@@ -966,11 +994,25 @@
         "Name": "Ring of Blades+2",
         "Modifiers": [
             {
-                "Description": "ModifyDamageFlatToBaseAr",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase All Physical Damage by 25 when the weapon is infused with All Physical Damage",
+                "TargetType": "special",
+                "Target": "All Physical Damage",
                 "Method": "additive",
-                "Value": 1
+                "Value": 25
+            },
+            {
+                "Description": "Increase All Physical Damage by 50 when the weapon has innate All Physical Damage",
+                "TargetType": "special",
+                "Target": "All Physical Damage",
+                "Method": "additive",
+                "Value": 50
+            },
+            {
+                "Description": "Increase All Physical Damage by 60 when the weapon has innate AND infused All Physical Damage",
+                "TargetType": "special",
+                "Target": "All Physical Damage",
+                "Method": "additive",
+                "Value": 60
             }
         ],
         "Weight": 2,
@@ -982,11 +1024,11 @@
         "Name": "Ring of Knowledge",
         "Modifiers": [
             {
-                "Description": "ModifyStatAdditively",
-                "TargetType": "stat",
+                "Description": "Increase Intelligence by 5",
+                "TargetType": "attribute",
                 "Target": "Intelligence",
                 "Method": "additive",
-                "Value": 1
+                "Value": 5
             }
         ],
         "Weight": 0.5,
@@ -998,11 +1040,11 @@
         "Name": "Ring of Prayer",
         "Modifiers": [
             {
-                "Description": "ModifyStatAdditively",
-                "TargetType": "stat",
+                "Description": "Increase Faith by 5",
+                "TargetType": "attribute",
                 "Target": "Faith",
                 "Method": "additive",
-                "Value": 1
+                "Value": 5
             }
         ],
         "Weight": 0.5,
@@ -1014,11 +1056,11 @@
         "Name": "Stone Ring",
         "Modifiers": [
             {
-                "Description": "ModifyStatAdditively",
-                "TargetType": "stat",
+                "Description": "Increase Attack Poise Damage by 30",
+                "TargetType": "special",
                 "Target": "Attack Poise Damage",
                 "Method": "additive",
-                "Value": 1
+                "Value": 30
             }
         ],
         "Weight": 1.5,
@@ -1030,18 +1072,18 @@
         "Name": "Red Tearstone Ring",
         "Modifiers": [
             {
-                "Description": "ModifyStatAdditively",
-                "TargetType": "stat",
+                "Description": "Triggers an auxiliary effect while below 30% HP",
+                "TargetType": "special",
                 "Target": "Current HP Ratio",
                 "Method": "additive",
-                "Value": 1
+                "Value": 30
             },
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
+                "Description": "Increase Outgoing Physical Damage Rate by 20.0%",
+                "TargetType": "special",
                 "Target": "Outgoing Physical Damage Rate",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.2
             }
         ],
         "Weight": 1.5,
@@ -1053,18 +1095,18 @@
         "Name": "Blue Tearstone Ring",
         "Modifiers": [
             {
-                "Description": "ModifyStatAdditively",
-                "TargetType": "stat",
+                "Description": "Triggers an auxiliary effect while below 30% HP",
+                "TargetType": "special",
                 "Target": "Current HP Ratio2",
                 "Method": "additive",
-                "Value": 1
+                "Value": 30
             },
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
+                "Description": "Decrease Incoming Physical Damage Rate by 35.0%",
+                "TargetType": "special",
                 "Target": "Incoming Physical Damage Rate",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": -0.35
             }
         ],
         "Weight": 1,
@@ -1076,11 +1118,11 @@
         "Name": "Ring of Giants",
         "Modifiers": [
             {
-                "Description": "ModifyStatAdditively",
-                "TargetType": "stat",
+                "Description": "Increase Poise by 10",
+                "TargetType": "special",
                 "Target": "Poise",
                 "Method": "additive",
-                "Value": 1
+                "Value": 10
             }
         ],
         "Weight": 2,
@@ -1092,11 +1134,11 @@
         "Name": "Ring of Giants+1",
         "Modifiers": [
             {
-                "Description": "ModifyStatAdditively",
-                "TargetType": "stat",
+                "Description": "Increase Poise by 20",
+                "TargetType": "special",
                 "Target": "Poise",
                 "Method": "additive",
-                "Value": 1
+                "Value": 20
             }
         ],
         "Weight": 3,
@@ -1108,11 +1150,11 @@
         "Name": "Ring of Giants+2",
         "Modifiers": [
             {
-                "Description": "ModifyStatAdditively",
-                "TargetType": "stat",
+                "Description": "Increase Poise by 30",
+                "TargetType": "special",
                 "Target": "Poise",
                 "Method": "additive",
-                "Value": 1
+                "Value": 30
             }
         ],
         "Weight": 5,
@@ -1124,11 +1166,11 @@
         "Name": "Old Leo Ring",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
+                "Description": "Increase Thrust Counterattack Damage Rate by 12.5%",
+                "TargetType": "special",
                 "Target": "Thrust Counterattack Damage Rate",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.125
             }
         ],
         "Weight": 0.5,
@@ -1140,11 +1182,11 @@
         "Name": "Ring of Soul Protection",
         "Modifiers": [
             {
-                "Description": "SetStateInfo",
-                "TargetType": "stat",
-                "Target": "Disable Soul Loss",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Disable Soul Loss On Death",
+                "TargetType": "special",
+                "Target": "Soul Loss On Death",
+                "Method": "toggle",
+                "Value": 0
             }
         ],
         "Weight": 1,
@@ -1156,11 +1198,11 @@
         "Name": "Ring of Life Protection",
         "Modifiers": [
             {
-                "Description": "SetStateInfo",
-                "TargetType": "stat",
-                "Target": "Disable Hollowing And Soul Loss",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Disable Hollowing and Soul Loss On Death",
+                "TargetType": "special",
+                "Target": "Hollowing and Soul Loss On Death",
+                "Method": "toggle",
+                "Value": 0
             }
         ],
         "Weight": 1,
@@ -1172,11 +1214,11 @@
         "Name": "Lingering Dragoncrest Ring",
         "Modifiers": [
             {
-                "Description": "ModifySpellEffectLength",
-                "TargetType": "stat",
-                "Target": "15",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Increase Spell Effect Length by 15.0%",
+                "TargetType": "special",
+                "Target": "Spell Effect Length",
+                "Method": "multiplicative",
+                "Value": 0
             }
         ],
         "Weight": 0.2,
@@ -1188,11 +1230,11 @@
         "Name": "Lingering Dragoncrest Ring+1",
         "Modifiers": [
             {
-                "Description": "ModifySpellEffectLength",
-                "TargetType": "stat",
-                "Target": "25",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Increase Spell Effect Length by 25.0%",
+                "TargetType": "special",
+                "Target": "Spell Effect Length",
+                "Method": "multiplicative",
+                "Value": 0
             }
         ],
         "Weight": 0.5,
@@ -1204,11 +1246,11 @@
         "Name": "Lingering Dragoncrest Ring+2",
         "Modifiers": [
             {
-                "Description": "ModifySpellEffectLength",
-                "TargetType": "stat",
-                "Target": "4",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Increase Spell Effect Length by 40.0%",
+                "TargetType": "special",
+                "Target": "Spell Effect Length",
+                "Method": "multiplicative",
+                "Value": 0
             }
         ],
         "Weight": 0.8,
@@ -1220,11 +1262,11 @@
         "Name": "Clear Bluestone Ring",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
+                "Description": "Decrease Spell Cast Time by 20.0%",
                 "TargetType": "stat",
                 "Target": "Spell Cast Time",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": -0.2
             }
         ],
         "Weight": 0.2,
@@ -1236,11 +1278,11 @@
         "Name": "Clear Bluestone Ring+1",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
+                "Description": "Decrease Spell Cast Time by 35.0%",
                 "TargetType": "stat",
                 "Target": "Spell Cast Time",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": -0.35
             }
         ],
         "Weight": 0.5,
@@ -1252,11 +1294,11 @@
         "Name": "Clear Bluestone Ring+2",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
+                "Description": "Decrease Spell Cast Time by 40.0%",
                 "TargetType": "stat",
                 "Target": "Spell Cast Time",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": -0.4
             }
         ],
         "Weight": 0.8,
@@ -1268,18 +1310,18 @@
         "Name": "Northern Ritual Band",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
+                "Description": "Increase Max Spell Usages by 10.0%",
                 "TargetType": "stat",
                 "Target": "Max Spell Usages",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.1
             },
             {
-                "Description": "ModifyStatMultiplicatively",
+                "Description": "Decrease Max HP by 20.0%",
                 "TargetType": "stat",
                 "Target": "Max HP",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": -0.2
             }
         ],
         "Weight": 0.5,
@@ -1291,18 +1333,18 @@
         "Name": "Northern Ritual Band+1",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
+                "Description": "Increase Max Spell Usages by 20.0%",
                 "TargetType": "stat",
                 "Target": "Max Spell Usages",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.2
             },
             {
-                "Description": "ModifyStatMultiplicatively",
+                "Description": "Decrease Max HP by 25.0%",
                 "TargetType": "stat",
                 "Target": "Max HP",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": -0.25
             }
         ],
         "Weight": 0.8,
@@ -1314,18 +1356,18 @@
         "Name": "Northern Ritual Band+2",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
+                "Description": "Increase Max Spell Usages by 30.0%",
                 "TargetType": "stat",
                 "Target": "Max Spell Usages",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.3
             },
             {
-                "Description": "ModifyStatMultiplicatively",
+                "Description": "Decrease Max HP by 50.0%",
                 "TargetType": "stat",
                 "Target": "Max HP",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": -0.5
             }
         ],
         "Weight": 1,
@@ -1337,7 +1379,7 @@
         "Name": "Southern Ritual Band",
         "Modifiers": [
             {
-                "Description": "ModifyStatAdditively",
+                "Description": "Increase Attunement Slots by 1",
                 "TargetType": "stat",
                 "Target": "Attunement Slots",
                 "Method": "additive",
@@ -1353,11 +1395,11 @@
         "Name": "Southern Ritual Band+1",
         "Modifiers": [
             {
-                "Description": "ModifyStatAdditively",
+                "Description": "Increase Attunement Slots by 2",
                 "TargetType": "stat",
                 "Target": "Attunement Slots",
                 "Method": "additive",
-                "Value": 1
+                "Value": 2
             }
         ],
         "Weight": 1.2,
@@ -1369,11 +1411,11 @@
         "Name": "Southern Ritual Band+2",
         "Modifiers": [
             {
-                "Description": "ModifyStatAdditively",
+                "Description": "Increase Attunement Slots by 3",
                 "TargetType": "stat",
                 "Target": "Attunement Slots",
                 "Method": "additive",
-                "Value": 1
+                "Value": 3
             }
         ],
         "Weight": 1.5,
@@ -1409,11 +1451,11 @@
         "Name": "Covetous Silver Serpent Ring",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
+                "Description": "Increase Soul Gain Rate by 10.0%",
+                "TargetType": "special",
                 "Target": "Soul Gain Rate",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.1
             }
         ],
         "Weight": 1,
@@ -1425,11 +1467,11 @@
         "Name": "Covetous Silver Serpent Ring+1",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
+                "Description": "Increase Soul Gain Rate by 20.0%",
+                "TargetType": "special",
                 "Target": "Soul Gain Rate",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.2
             }
         ],
         "Weight": 1.2,
@@ -1441,11 +1483,11 @@
         "Name": "Covetous Silver Serpent Ring+2",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
+                "Description": "Increase Soul Gain Rate by 30.0%",
+                "TargetType": "special",
                 "Target": "Soul Gain Rate",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.3
             }
         ],
         "Weight": 1.5,
@@ -1457,25 +1499,11 @@
         "Name": "Ring of the Evil Eye",
         "Modifiers": [
             {
-                "Description": "ModifyStatAdditively",
-                "TargetType": "stat",
+                "Description": "Increase HP On Kill by 30",
+                "TargetType": "special",
                 "Target": "HP On Kill",
                 "Method": "additive",
-                "Value": 1
-            },
-            {
-                "Description": "ModifyProperty",
-                "TargetType": "stat",
-                "Target": "Sfx I D On Kill",
-                "Method": "additive",
-                "Value": 1
-            },
-            {
-                "Description": "ModifyProperty",
-                "TargetType": "stat",
-                "Target": "Sfx On Kill Origin",
-                "Method": "additive",
-                "Value": 1
+                "Value": 30
             }
         ],
         "Weight": 1,
@@ -1487,25 +1515,11 @@
         "Name": "Ring of the Evil Eye+1",
         "Modifiers": [
             {
-                "Description": "ModifyStatAdditively",
-                "TargetType": "stat",
+                "Description": "Increase HP On Kill by 50",
+                "TargetType": "special",
                 "Target": "HP On Kill",
                 "Method": "additive",
-                "Value": 1
-            },
-            {
-                "Description": "ModifyProperty",
-                "TargetType": "stat",
-                "Target": "Sfx I D On Kill",
-                "Method": "additive",
-                "Value": 1
-            },
-            {
-                "Description": "ModifyProperty",
-                "TargetType": "stat",
-                "Target": "Sfx On Kill Origin",
-                "Method": "additive",
-                "Value": 1
+                "Value": 50
             }
         ],
         "Weight": 1.2,
@@ -1517,25 +1531,11 @@
         "Name": "Ring of the Evil Eye+2",
         "Modifiers": [
             {
-                "Description": "ModifyStatAdditively",
-                "TargetType": "stat",
+                "Description": "Increase HP On Kill by 80",
+                "TargetType": "special",
                 "Target": "HP On Kill",
                 "Method": "additive",
-                "Value": 1
-            },
-            {
-                "Description": "ModifyProperty",
-                "TargetType": "stat",
-                "Target": "Sfx I D On Kill",
-                "Method": "additive",
-                "Value": 1
-            },
-            {
-                "Description": "ModifyProperty",
-                "TargetType": "stat",
-                "Target": "Sfx On Kill Origin",
-                "Method": "additive",
-                "Value": 1
+                "Value": 80
             }
         ],
         "Weight": 1.5,
@@ -1547,11 +1547,11 @@
         "Name": "Ring of Restoration",
         "Modifiers": [
             {
-                "Description": "UnknownCommand10004002",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase HP by 2 every 1 second(s)",
+                "TargetType": "special",
+                "Target": "HP Regen",
                 "Method": "additive",
-                "Value": 1
+                "Value": 2
             }
         ],
         "Weight": 1,
@@ -1563,11 +1563,11 @@
         "Name": "Ring of Binding",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
-                "Target": "Unknown29",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Decrease Hollowing HP Reduction by 50.0%",
+                "TargetType": "special",
+                "Target": "Hollowing HP Reduction",
+                "Method": "multiplicative",
+                "Value": -0.5
             }
         ],
         "Weight": 0.2,
@@ -1579,11 +1579,11 @@
         "Name": "Silvercat Ring",
         "Modifiers": [
             {
-                "Description": "ModifyStatAdditively",
-                "TargetType": "stat",
+                "Description": "Increase Fall Damage Protection Modifier by 4",
+                "TargetType": "special",
                 "Target": "Fall Damage Protection Modifier",
                 "Method": "additive",
-                "Value": 1
+                "Value": 4
             }
         ],
         "Weight": 0.2,
@@ -1595,11 +1595,11 @@
         "Name": "Redeye Ring",
         "Modifiers": [
             {
-                "Description": "ModifyEnemyAggroToPlayer",
-                "TargetType": "stat",
-                "Target": "",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Increase enemy aggro",
+                "TargetType": "special",
+                "Target": "Aggro",
+                "Method": "toggle",
+                "Value": 0
             }
         ],
         "Weight": 0.2,
@@ -1611,32 +1611,32 @@
         "Name": "Gower's Ring of Protection",
         "Modifiers": [
             {
-                "Description": "SetStateInfo",
-                "TargetType": "stat",
-                "Target": "Disable Backstab",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Cannot be backstabbed",
+                "TargetType": "special",
+                "Target": "Backstab",
+                "Method": "toggle",
+                "Value": 0
             },
             {
-                "Description": "SetStateInfo",
-                "TargetType": "stat",
-                "Target": "Reduce Back Damage",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Reduce Damage From Behind",
+                "TargetType": "special",
+                "Target": "Damage From Behind",
+                "Method": "toggle",
+                "Value": 0
             },
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
-                "Target": "Unknown61",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Decrease Physical Damage From Behind by 20.0%",
+                "TargetType": "special",
+                "Target": "Physical Damage From Behind",
+                "Method": "multiplicative",
+                "Value": -0.2
             },
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
-                "Target": "Unknown62",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Decrease Elemental Damage From Behind by 85.0%",
+                "TargetType": "special",
+                "Target": "Elemental Damage From Behind",
+                "Method": "multiplicative",
+                "Value": -0.85
             }
         ],
         "Weight": 10,
@@ -1656,11 +1656,11 @@
         "Name": "Slumbering Dragoncrest Ring",
         "Modifiers": [
             {
-                "Description": "SetStateInfo",
-                "TargetType": "stat",
-                "Target": "Disable Footstep Sound",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Disable Footstep Sound",
+                "TargetType": "special",
+                "Target": "Footstep Sound",
+                "Method": "toggle",
+                "Value": 0
             }
         ],
         "Weight": 0.2,
@@ -1672,25 +1672,11 @@
         "Name": "Hawk Ring",
         "Modifiers": [
             {
-                "Description": "ModifyBulletParam",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Bow Range by 7.5%",
+                "TargetType": "special",
+                "Target": "Bow Range",
                 "Method": "additive",
-                "Value": 1
-            },
-            {
-                "Description": "ModifyBulletParam",
-                "TargetType": "stat",
-                "Target": "",
-                "Method": "additive",
-                "Value": 1
-            },
-            {
-                "Description": "ModifyBulletParam",
-                "TargetType": "stat",
-                "Target": "",
-                "Method": "additive",
-                "Value": 1
+                "Value": 0
             }
         ],
         "Weight": 0.2,
@@ -1702,11 +1688,11 @@
         "Name": "Old Sun Ring",
         "Modifiers": [
             {
-                "Description": "RandomlySpawnBulletAfterTakingDamageDurabilitybasedRandomness",
-                "TargetType": "stat",
-                "Target": "",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Chance to trigger an explosion on taking damage with a probability between 10% and 30%, scaling with remaining durability",
+                "TargetType": "special",
+                "Target": "Trigger Explosion",
+                "Method": "toggle",
+                "Value": 0
             }
         ],
         "Weight": 3,
@@ -1718,11 +1704,11 @@
         "Name": "Illusory Ring of a Conqueror",
         "Modifiers": [
             {
-                "Description": "SetStateInfo",
-                "TargetType": "stat",
-                "Target": "Hide Weapon Left",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Hide Left Hand Weapon",
+                "TargetType": "special",
+                "Target": "Left Weapon",
+                "Method": "toggle",
+                "Value": 0
             }
         ],
         "Weight": 0.2,
@@ -1734,11 +1720,25 @@
         "Name": "King's Ring",
         "Modifiers": [
             {
-                "Description": "ModifyDamageFlatToBaseAr",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Fire Damage by 25 when the weapon is infused with Fire Damage",
+                "TargetType": "special",
+                "Target": "Fire Damage",
                 "Method": "additive",
-                "Value": 1
+                "Value": 25
+            },
+            {
+                "Description": "Increase Fire Damage by 50 when the weapon has innate Fire Damage",
+                "TargetType": "special",
+                "Target": "Fire Damage",
+                "Method": "additive",
+                "Value": 50
+            },
+            {
+                "Description": "Increase Fire Damage by 60 when the weapon has innate AND infused Fire Damage",
+                "TargetType": "special",
+                "Target": "Fire Damage",
+                "Method": "additive",
+                "Value": 60
             }
         ],
         "Weight": 0.2,
@@ -1750,11 +1750,11 @@
         "Name": "Ring of the Dead",
         "Modifiers": [
             {
-                "Description": "SetStateInfo",
-                "TargetType": "stat",
-                "Target": "Unknown6",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Force human appearance even when hollow",
+                "TargetType": "special",
+                "Target": "Human Appearance",
+                "Method": "toggle",
+                "Value": 0
             }
         ],
         "Weight": 0.2,
@@ -1766,11 +1766,11 @@
         "Name": "Ring of Thorns",
         "Modifiers": [
             {
-                "Description": "RandomlySpawnBulletAfterTakingDamageFlatRandomness",
-                "TargetType": "stat",
-                "Target": "",
-                "Method": "additive",
-                "Value": 1
+                "Description": "30% chance to counterattack on taking damage",
+                "TargetType": "special",
+                "Target": "Counterattack",
+                "Method": "toggle",
+                "Value": 0
             }
         ],
         "Weight": 0.5,
@@ -1782,11 +1782,11 @@
         "Name": "Ring of Thorns+1",
         "Modifiers": [
             {
-                "Description": "RandomlySpawnBulletAfterTakingDamageFlatRandomness",
-                "TargetType": "stat",
-                "Target": "",
-                "Method": "additive",
-                "Value": 1
+                "Description": "50% chance to counterattack on taking damage",
+                "TargetType": "special",
+                "Target": "Counterattack",
+                "Method": "toggle",
+                "Value": 0
             }
         ],
         "Weight": 0.8,
@@ -1798,11 +1798,11 @@
         "Name": "Ring of Thorns+2",
         "Modifiers": [
             {
-                "Description": "RandomlySpawnBulletAfterTakingDamageFlatRandomness",
-                "TargetType": "stat",
-                "Target": "",
-                "Method": "additive",
-                "Value": 1
+                "Description": "70% chance to counterattack on taking damage",
+                "TargetType": "special",
+                "Target": "Counterattack",
+                "Method": "toggle",
+                "Value": 0
             }
         ],
         "Weight": 1,
@@ -1814,11 +1814,11 @@
         "Name": "Delicate String",
         "Modifiers": [
             {
-                "Description": "ResetInvasionCooldownTimer",
-                "TargetType": "stat",
-                "Target": "",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Disable invasion cooldown timer",
+                "TargetType": "special",
+                "Target": "Invasion Cooldown Timer",
+                "Method": "toggle",
+                "Value": 0
             }
         ],
         "Weight": 0.2,
@@ -1830,11 +1830,11 @@
         "Name": "White Ring",
         "Modifiers": [
             {
-                "Description": "ModifyProperty",
-                "TargetType": "stat",
-                "Target": "Appearence",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Force white phantom appearance",
+                "TargetType": "special",
+                "Target": "White Phantom Appearance",
+                "Method": "toggle",
+                "Value": 0
             }
         ],
         "Weight": 1,
@@ -1854,11 +1854,11 @@
         "Name": "Illusory Ring of the Exalted",
         "Modifiers": [
             {
-                "Description": "SetStateInfo",
-                "TargetType": "stat",
-                "Target": "Hide Weapon Right",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Hide Right Hand Weapon",
+                "TargetType": "special",
+                "Target": "Right Weapon",
+                "Method": "toggle",
+                "Value": 0
             }
         ],
         "Weight": 0.2,
@@ -1870,18 +1870,32 @@
         "Name": "Crest of the Rat",
         "Modifiers": [
             {
-                "Description": "InitiatePassiveServermediatedMultiplayerItem",
-                "TargetType": "stat",
-                "Target": "Crestofthe Rat",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Covenant Invasion: Rat King",
+                "TargetType": "special",
+                "Target": "Covenant Invasion",
+                "Method": "toggle",
+                "Value": 0
             },
             {
-                "Description": "ModifyDamageFlatToBaseAr",
+                "Description": "Increase Poison Damage by 25 when the weapon is infused with Poison Damage",
                 "TargetType": "stat",
-                "Target": "",
+                "Target": "Poison Damage",
                 "Method": "additive",
-                "Value": 1
+                "Value": 25
+            },
+            {
+                "Description": "Increase Poison Damage by 50 when the weapon has innate Poison Damage",
+                "TargetType": "stat",
+                "Target": "Poison Damage",
+                "Method": "additive",
+                "Value": 50
+            },
+            {
+                "Description": "Increase Poison Damage by 60 when the weapon has innate AND infused Poison Damage",
+                "TargetType": "stat",
+                "Target": "Poison Damage",
+                "Method": "additive",
+                "Value": 60
             }
         ],
         "Weight": 0.2,
@@ -1893,11 +1907,11 @@
         "Name": "Bell Keeper's Seal",
         "Modifiers": [
             {
-                "Description": "InitiatePassiveServermediatedMultiplayerItem",
-                "TargetType": "stat",
-                "Target": "Bell Keepers Soul",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Covenant Invasion: Bell Keepers",
+                "TargetType": "special",
+                "Target": "Covenant Invasion",
+                "Method": "toggle",
+                "Value": 0
             }
         ],
         "Weight": 0.2,
@@ -1909,11 +1923,11 @@
         "Name": "Guardian's Seal",
         "Modifiers": [
             {
-                "Description": "InitiatePassiveServermediatedMultiplayerItem",
-                "TargetType": "stat",
-                "Target": "Guardians Seal",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Covenant Invasion: Blue Seninels",
+                "TargetType": "special",
+                "Target": "Covenant Invasion",
+                "Method": "toggle",
+                "Value": 0
             }
         ],
         "Weight": 0.2,
@@ -1925,11 +1939,25 @@
         "Name": "Crest of Blood",
         "Modifiers": [
             {
-                "Description": "ModifyDamageFlatToBaseAr",
+                "Description": "Increase Bleed Damage by 25 when the weapon is infused with Bleed Damage",
                 "TargetType": "stat",
-                "Target": "",
+                "Target": "Bleed Damage",
                 "Method": "additive",
-                "Value": 1
+                "Value": 25
+            },
+            {
+                "Description": "Increase Bleed Damage by 50 when the weapon has innate Bleed Damage",
+                "TargetType": "stat",
+                "Target": "Bleed Damage",
+                "Method": "additive",
+                "Value": 50
+            },
+            {
+                "Description": "Increase Bleed Damage by 60 when the weapon has innate AND infused Bleed Damage",
+                "TargetType": "stat",
+                "Target": "Bleed Damage",
+                "Method": "additive",
+                "Value": 60
             }
         ],
         "Weight": 0.2,
@@ -1941,11 +1969,11 @@
         "Name": "Blue Seal",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
+                "Description": "Increase Max HP by 3.0%",
                 "TargetType": "stat",
                 "Target": "Max HP",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.03
             }
         ],
         "Weight": 0.2,
@@ -1957,32 +1985,32 @@
         "Name": "Abyss Seal",
         "Modifiers": [
             {
-                "Description": "ModifyProperty",
-                "TargetType": "stat",
+                "Description": "Take 30 damage every time the player casts a hex from a staff",
+                "TargetType": "special",
                 "Target": "Hex Self Damage Staff",
-                "Method": "additive",
-                "Value": 1
+                "Method": "toggle",
+                "Value": 0
             },
             {
-                "Description": "ModifyProperty",
-                "TargetType": "stat",
+                "Description": "Take 30 damage every time the player casts a hex from a chime",
+                "TargetType": "special",
                 "Target": "Hex Self Damage Chime",
-                "Method": "additive",
-                "Value": 1
+                "Method": "toggle",
+                "Value": 0
             },
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
+                "Description": "Increase Hex Power Staff by 7.5%",
+                "TargetType": "special",
                 "Target": "Hex Power Staff",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.075
             },
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
+                "Description": "Increase Hex Power Chime by 7.5%",
+                "TargetType": "special",
                 "Target": "Hex Power Chime",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.075
             }
         ],
         "Weight": 0.2,
@@ -1994,11 +2022,32 @@
         "Name": "Vanquisher's Seal",
         "Modifiers": [
             {
-                "Description": "ReplaceFistsWithAlternateWeapon",
-                "TargetType": "stat",
-                "Target": "",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Increase base damage of bare fists to 200",
+                "TargetType": "special",
+                "Target": "Bare Fist Base Damage",
+                "Method": "toggle",
+                "Value": 0
+            },
+            {
+                "Description": "Increase damage scaling of bare fists",
+                "TargetType": "special",
+                "Target": "Bare Fist Damage Scaling",
+                "Method": "toggle",
+                "Value": 0
+            },
+            {
+                "Description": "Increase damage on ladders",
+                "TargetType": "special",
+                "Target": "Ladder Damage",
+                "Method": "toggle",
+                "Value": 0
+            },
+            {
+                "Description": "Enable powerstancing bare fists",
+                "TargetType": "special",
+                "Target": "Powerstancing Bare Fist",
+                "Method": "toggle",
+                "Value": 0
             }
         ],
         "Weight": 0.2,
@@ -2010,11 +2059,11 @@
         "Name": "Sun Seal",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
+                "Description": "Increase Miracle Power by 5.0%",
+                "TargetType": "special",
                 "Target": "Miracle Power",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.05
             }
         ],
         "Weight": 0.2,
@@ -2026,11 +2075,11 @@
         "Name": "Ancient Dragon Seal",
         "Modifiers": [
             {
-                "Description": "ModifyEstusUsage",
-                "TargetType": "stat",
-                "Target": "Boostby50",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Increase estus healing by 50",
+                "TargetType": "special",
+                "Target": "Estus Healing",
+                "Method": "toggle",
+                "Value": 0
             }
         ],
         "Weight": 0.2,
@@ -2042,18 +2091,18 @@
         "Name": "Simpleton's Ring",
         "Modifiers": [
             {
-                "Description": "ModifyStatAdditively",
-                "TargetType": "stat",
+                "Description": "Increase Adaptability by 5",
+                "TargetType": "attribute",
                 "Target": "Adaptability",
                 "Method": "additive",
-                "Value": 1
+                "Value": 5
             },
             {
-                "Description": "SetStateInfo",
-                "TargetType": "stat",
-                "Target": "Unknown31",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Invisible while rolling",
+                "TargetType": "special",
+                "Target": "Invisible While Rolling",
+                "Method": "toggle",
+                "Value": 0
             }
         ],
         "Weight": 1.5,
@@ -2065,11 +2114,11 @@
         "Name": "Strength Ring",
         "Modifiers": [
             {
-                "Description": "ModifyStatAdditively",
-                "TargetType": "stat",
+                "Description": "Increase Strength by 5",
+                "TargetType": "attribute",
                 "Target": "Strength",
                 "Method": "additive",
-                "Value": 1
+                "Value": 5
             }
         ],
         "Weight": 1.5,
@@ -2081,11 +2130,11 @@
         "Name": "Dexterity Ring",
         "Modifiers": [
             {
-                "Description": "ModifyStatAdditively",
-                "TargetType": "stat",
+                "Description": "Increase Dexterity by 5",
+                "TargetType": "attribute",
                 "Target": "Dexterity",
                 "Method": "additive",
-                "Value": 1
+                "Value": 5
             }
         ],
         "Weight": 1.5,
@@ -2097,18 +2146,11 @@
         "Name": "Ivory Warrior Ring",
         "Modifiers": [
             {
-                "Description": "ModifyStatAdditively",
-                "TargetType": "stat",
-                "Target": "Anti Stability Modifier",
+                "Description": "Increase Stamina Damage by 20",
+                "TargetType": "special",
+                "Target": "Stamina Damage",
                 "Method": "additive",
-                "Value": 1
-            },
-            {
-                "Description": "ModifyStatAdditively",
-                "TargetType": "stat",
-                "Target": "Unknown22",
-                "Method": "additive",
-                "Value": 1
+                "Value": 20
             }
         ],
         "Weight": 5,
@@ -2120,18 +2162,32 @@
         "Name": "Sorcery Clutch Ring",
         "Modifiers": [
             {
-                "Description": "ModifyDamageFlatToBaseAr",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Magic Damage by 25 when the weapon is infused with Magic Damage",
+                "TargetType": "special",
+                "Target": "Magic Damage",
                 "Method": "additive",
-                "Value": 1
+                "Value": 25
             },
             {
-                "Description": "NerfDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Magic Damage by 50 when the weapon has innate Magic Damage",
+                "TargetType": "special",
+                "Target": "Magic Damage",
                 "Method": "additive",
-                "Value": 1
+                "Value": 50
+            },
+            {
+                "Description": "Increase Magic Damage by 60 when the weapon has innate AND infused Magic Damage",
+                "TargetType": "special",
+                "Target": "Magic Damage",
+                "Method": "additive",
+                "Value": 60
+            },
+            {
+                "Description": "Decrease All Physical Defense by 80",
+                "TargetType": "special",
+                "Target": "All Physical Defense",
+                "Method": "additive",
+                "Value": -80
             }
         ],
         "Weight": 2,
@@ -2143,18 +2199,32 @@
         "Name": "Lightning Clutch Ring",
         "Modifiers": [
             {
-                "Description": "ModifyDamageFlatToBaseAr",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Lightning Damage by 25 when the weapon is infused with Lightning Damage",
+                "TargetType": "special",
+                "Target": "Lightning Damage",
                 "Method": "additive",
-                "Value": 1
+                "Value": 25
             },
             {
-                "Description": "NerfDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Lightning Damage by 50 when the weapon has innate Lightning Damage",
+                "TargetType": "special",
+                "Target": "Lightning Damage",
                 "Method": "additive",
-                "Value": 1
+                "Value": 50
+            },
+            {
+                "Description": "Increase Lightning Damage by 60 when the weapon has innate AND infused Lightning Damage",
+                "TargetType": "special",
+                "Target": "Lightning Damage",
+                "Method": "additive",
+                "Value": 60
+            },
+            {
+                "Description": "Decrease All Physical Defense by 80",
+                "TargetType": "special",
+                "Target": "All Physical Defense",
+                "Method": "additive",
+                "Value": -80
             }
         ],
         "Weight": 2,
@@ -2166,18 +2236,32 @@
         "Name": "Fire Clutch Ring",
         "Modifiers": [
             {
-                "Description": "ModifyDamageFlatToBaseAr",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Fire Damage by 25 when the weapon is infused with Fire Damage",
+                "TargetType": "special",
+                "Target": "Fire Damage",
                 "Method": "additive",
-                "Value": 1
+                "Value": 25
             },
             {
-                "Description": "NerfDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Fire Damage by 50 when the weapon has innate Fire Damage",
+                "TargetType": "special",
+                "Target": "Fire Damage",
                 "Method": "additive",
-                "Value": 1
+                "Value": 50
+            },
+            {
+                "Description": "Increase Fire Damage by 60 when the weapon has innate AND infused Fire Damage",
+                "TargetType": "special",
+                "Target": "Fire Damage",
+                "Method": "additive",
+                "Value": 60
+            },
+            {
+                "Description": "Decrease All Physical Defense by 80",
+                "TargetType": "special",
+                "Target": "All Physical Defense",
+                "Method": "additive",
+                "Value": -80
             }
         ],
         "Weight": 2,
@@ -2189,18 +2273,32 @@
         "Name": "Dark Clutch Ring",
         "Modifiers": [
             {
-                "Description": "ModifyDamageFlatToBaseAr",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Dark Damage by 25 when the weapon is infused with Dark Damage",
+                "TargetType": "special",
+                "Target": "Dark Damage",
                 "Method": "additive",
-                "Value": 1
+                "Value": 25
             },
             {
-                "Description": "NerfDefense",
-                "TargetType": "stat",
-                "Target": "",
+                "Description": "Increase Dark Damage by 50 when the weapon has innate Dark Damage",
+                "TargetType": "special",
+                "Target": "Dark Damage",
                 "Method": "additive",
-                "Value": 1
+                "Value": 50
+            },
+            {
+                "Description": "Increase Dark Damage by 60 when the weapon has innate AND infused Dark Damage",
+                "TargetType": "special",
+                "Target": "Dark Damage",
+                "Method": "additive",
+                "Value": 60
+            },
+            {
+                "Description": "Decrease All Physical Defense by 80",
+                "TargetType": "special",
+                "Target": "All Physical Defense",
+                "Method": "additive",
+                "Value": -80
             }
         ],
         "Weight": 2,
@@ -2212,11 +2310,11 @@
         "Name": "Baneful Bird Ring",
         "Modifiers": [
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
+                "Description": "Increase Shield Stability by 400.0%",
+                "TargetType": "special",
                 "Target": "Shield Stability",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 4
             }
         ],
         "Weight": 2,
@@ -2228,11 +2326,11 @@
         "Name": "Flynn's Ring",
         "Modifiers": [
             {
-                "Description": "ApplyEquipLoadbasedFlatDamageToWeapon",
-                "TargetType": "stat",
-                "Target": "",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Increase Physical Attack Rating by 50 at or less than 60.4 Maximum Equip Load, inversely scaling linearly to 0 at 85.4 Maximum Equip Load",
+                "TargetType": "special",
+                "Target": "Physical Attack Rating",
+                "Method": "toggle",
+                "Value": 0
             }
         ],
         "Weight": 0.2,
@@ -2244,32 +2342,32 @@
         "Name": "Ring of the Embedded",
         "Modifiers": [
             {
-                "Description": "ModifyAttributeBasedOnCurrentValue",
-                "TargetType": "stat",
+                "Description": "Decrease Vigor by 1",
+                "TargetType": "attribute",
                 "Target": "Vigor",
                 "Method": "additive",
-                "Value": 1
+                "Value": -1
             },
             {
-                "Description": "ModifyAttributeBasedOnCurrentValue",
-                "TargetType": "stat",
+                "Description": "Decrease Endurance by 1",
+                "TargetType": "attribute",
                 "Target": "Endurance",
                 "Method": "additive",
-                "Value": 1
+                "Value": -1
             },
             {
-                "Description": "ModifyAttributeBasedOnCurrentValue",
-                "TargetType": "stat",
+                "Description": "Decrease Vitality by 1",
+                "TargetType": "attribute",
                 "Target": "Vitality",
                 "Method": "additive",
-                "Value": 1
+                "Value": -1
             },
             {
-                "Description": "ModifyStatMultiplicatively",
-                "TargetType": "stat",
+                "Description": "Increase Incoming Damage Rate by 8.5%",
+                "TargetType": "special",
                 "Target": "Incoming Damage Rate",
-                "Method": "additive",
-                "Value": 1
+                "Method": "multiplicative",
+                "Value": 0.085
             }
         ],
         "Weight": 2,
@@ -2281,11 +2379,11 @@
         "Name": "Ring of the Living",
         "Modifiers": [
             {
-                "Description": "SetStateInfo",
-                "TargetType": "stat",
-                "Target": "Disable Chr Phantom Color",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Disable Phantom Color",
+                "TargetType": "special",
+                "Target": "Phantom Color",
+                "Method": "toggle",
+                "Value": 0
             }
         ],
         "Weight": 0.2,
@@ -2297,11 +2395,18 @@
         "Name": "Yorgh's Ring",
         "Modifiers": [
             {
-                "Description": "AddSpellDeflectChance",
-                "TargetType": "stat",
-                "Target": "",
-                "Method": "additive",
-                "Value": 1
+                "Description": "50% chance to deflect spells",
+                "TargetType": "special",
+                "Target": "Spell Deflection Chance",
+                "Method": "toggle",
+                "Value": 0
+            },
+            {
+                "Description": "Enables spell deflection for shield parries",
+                "TargetType": "special",
+                "Target": "Shiled Parry Spell Deflection",
+                "Method": "toggle",
+                "Value": 0
             }
         ],
         "Weight": 0.5,
@@ -2313,11 +2418,11 @@
         "Name": "Agape Ring",
         "Modifiers": [
             {
-                "Description": "SetStateInfo",
-                "TargetType": "stat",
-                "Target": "Disable Soul Absorption",
-                "Method": "additive",
-                "Value": 1
+                "Description": "Disable Soul Absorption",
+                "TargetType": "special",
+                "Target": "Soul Absorption",
+                "Method": "toggle",
+                "Value": 0
             }
         ],
         "Weight": 0.2,
