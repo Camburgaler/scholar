@@ -9,7 +9,15 @@
     },
     {
         "Name": "Life Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Max HP",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 120,
         "RepairCost": 1250,
@@ -17,7 +25,15 @@
     },
     {
         "Name": "Life Ring+1",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Max HP",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.5,
         "Durability": 90,
         "RepairCost": 1900,
@@ -25,7 +41,15 @@
     },
     {
         "Name": "Life Ring+2",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Max HP",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.8,
         "Durability": 75,
         "RepairCost": 2500,
@@ -33,7 +57,15 @@
     },
     {
         "Name": "Life Ring+3",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Max HP",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.2,
         "Durability": 25,
         "RepairCost": 3150,
@@ -41,7 +73,15 @@
     },
     {
         "Name": "Chloranthy Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStaminaRecovery",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 120,
         "RepairCost": 1250,
@@ -49,7 +89,15 @@
     },
     {
         "Name": "Chloranthy Ring+1",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStaminaRecovery",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.5,
         "Durability": 90,
         "RepairCost": 1900,
@@ -57,7 +105,15 @@
     },
     {
         "Name": "Chloranthy Ring+2",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStaminaRecovery",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.8,
         "Durability": 75,
         "RepairCost": 2500,
@@ -65,7 +121,15 @@
     },
     {
         "Name": "Royal Soldier's Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Max Equip Load",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 120,
         "RepairCost": 1250,
@@ -73,7 +137,15 @@
     },
     {
         "Name": "Royal Soldier's Ring+1",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Max Equip Load",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.5,
         "Durability": 90,
         "RepairCost": 1900,
@@ -81,7 +153,15 @@
     },
     {
         "Name": "Royal Soldier's Ring+2",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Max Equip Load",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.8,
         "Durability": 75,
         "RepairCost": 2500,
@@ -89,7 +169,29 @@
     },
     {
         "Name": "First Dragon Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Max HP",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Max Stamina",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Max Equip Load",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.5,
         "Durability": 30,
         "RepairCost": 2500,
@@ -97,7 +199,29 @@
     },
     {
         "Name": "Second Dragon Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Max HP",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Max Stamina",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Max Equip Load",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.8,
         "Durability": 25,
         "RepairCost": 3750,
@@ -105,7 +229,29 @@
     },
     {
         "Name": "Third Dragon Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Max HP",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Max Stamina",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Max Equip Load",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1,
         "Durability": 20,
         "RepairCost": 5000,
@@ -113,7 +259,22 @@
     },
     {
         "Name": "Ring of Steel Protection",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Pv E Damage Reduction",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1,
         "Durability": 140,
         "RepairCost": 1750,
@@ -121,7 +282,22 @@
     },
     {
         "Name": "Ring of Steel Protection+1",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Pv E Damage Reduction",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.5,
         "Durability": 110,
         "RepairCost": 2650,
@@ -129,7 +305,22 @@
     },
     {
         "Name": "Ring of Steel Protection+2",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Pv E Damage Reduction",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 2,
         "Durability": 90,
         "RepairCost": 3500,
@@ -137,7 +328,15 @@
     },
     {
         "Name": "Spell Quartz Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 140,
         "RepairCost": 1750,
@@ -145,7 +344,15 @@
     },
     {
         "Name": "Spell Quartz Ring+1",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.5,
         "Durability": 110,
         "RepairCost": 2650,
@@ -153,7 +360,15 @@
     },
     {
         "Name": "Spell Quartz Ring+2",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.8,
         "Durability": 90,
         "RepairCost": 3500,
@@ -161,7 +376,15 @@
     },
     {
         "Name": "Spell Quartz Ring+3",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1,
         "Durability": 75,
         "RepairCost": 4400,
@@ -169,7 +392,15 @@
     },
     {
         "Name": "Flame Quartz Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 140,
         "RepairCost": 1750,
@@ -177,7 +408,15 @@
     },
     {
         "Name": "Flame Quartz Ring+1",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.5,
         "Durability": 110,
         "RepairCost": 2650,
@@ -185,7 +424,15 @@
     },
     {
         "Name": "Flame Quartz Ring+2",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.8,
         "Durability": 90,
         "RepairCost": 3500,
@@ -193,7 +440,15 @@
     },
     {
         "Name": "Flame Quartz Ring+3",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1,
         "Durability": 75,
         "RepairCost": 4400,
@@ -201,7 +456,15 @@
     },
     {
         "Name": "Thunder Quartz Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 140,
         "RepairCost": 1750,
@@ -209,7 +472,15 @@
     },
     {
         "Name": "Thunder Quartz Ring+1",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.5,
         "Durability": 110,
         "RepairCost": 2650,
@@ -217,7 +488,15 @@
     },
     {
         "Name": "Thunder Quartz Ring+2",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.8,
         "Durability": 90,
         "RepairCost": 3500,
@@ -225,7 +504,15 @@
     },
     {
         "Name": "Thunder Quartz Ring+3",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1,
         "Durability": 75,
         "RepairCost": 4400,
@@ -233,7 +520,15 @@
     },
     {
         "Name": "Dark Quartz Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 140,
         "RepairCost": 1750,
@@ -241,7 +536,15 @@
     },
     {
         "Name": "Dark Quartz Ring+1",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.5,
         "Durability": 110,
         "RepairCost": 2650,
@@ -249,7 +552,15 @@
     },
     {
         "Name": "Dark Quartz Ring+2",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.8,
         "Durability": 90,
         "RepairCost": 3500,
@@ -257,7 +568,15 @@
     },
     {
         "Name": "Dark Quartz Ring+3",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1,
         "Durability": 75,
         "RepairCost": 4400,
@@ -265,7 +584,15 @@
     },
     {
         "Name": "Poisonbite Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.5,
         "Durability": 140,
         "RepairCost": 1750,
@@ -273,7 +600,15 @@
     },
     {
         "Name": "Poisonbite Ring+1",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.5,
         "Durability": 60,
         "RepairCost": 2650,
@@ -281,7 +616,15 @@
     },
     {
         "Name": "Bloodbite Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.5,
         "Durability": 140,
         "RepairCost": 1750,
@@ -289,7 +632,15 @@
     },
     {
         "Name": "Bloodbite Ring+1",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.5,
         "Durability": 60,
         "RepairCost": 2650,
@@ -297,7 +648,29 @@
     },
     {
         "Name": "Bracing Knuckle Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Weapon Degredation Rate",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Armor Degradation Rate",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Ring Degradation Rate",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.5,
         "Durability": 110,
         "RepairCost": 1750,
@@ -305,7 +678,29 @@
     },
     {
         "Name": "Bracing Knuckle Ring+1",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Weapon Degredation Rate",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Armor Degradation Rate",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Ring Degradation Rate",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.8,
         "Durability": 85,
         "RepairCost": 2650,
@@ -313,7 +708,29 @@
     },
     {
         "Name": "Bracing Knuckle Ring+2",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Weapon Degredation Rate",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Armor Degradation Rate",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Ring Degradation Rate",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1,
         "Durability": 70,
         "RepairCost": 3500,
@@ -321,7 +738,15 @@
     },
     {
         "Name": "Cursebite Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.8,
         "Durability": 140,
         "RepairCost": 5250,
@@ -329,7 +754,15 @@
     },
     {
         "Name": "Ash Knuckle Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.8,
         "Durability": 140,
         "RepairCost": 5250,
@@ -337,7 +770,36 @@
     },
     {
         "Name": "Dispelling Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1,
         "Durability": 110,
         "RepairCost": 3500,
@@ -345,7 +807,36 @@
     },
     {
         "Name": "Dispelling Ring+1",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 4,
         "Durability": 35,
         "RepairCost": 7900,
@@ -353,7 +844,43 @@
     },
     {
         "Name": "Ring of Resistance",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.8,
         "Durability": 110,
         "RepairCost": 3500,
@@ -361,7 +888,43 @@
     },
     {
         "Name": "Ring of Resistance+1",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "BuffDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.5,
         "Durability": 35,
         "RepairCost": 5250,
@@ -369,7 +932,15 @@
     },
     {
         "Name": "Ring of Blades",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyDamageFlatToBaseAr",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1,
         "Durability": 110,
         "RepairCost": 4400,
@@ -377,7 +948,15 @@
     },
     {
         "Name": "Ring of Blades+1",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyDamageFlatToBaseAr",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.5,
         "Durability": 85,
         "RepairCost": 6600,
@@ -385,7 +964,15 @@
     },
     {
         "Name": "Ring of Blades+2",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyDamageFlatToBaseAr",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 2,
         "Durability": 70,
         "RepairCost": 8800,
@@ -393,7 +980,15 @@
     },
     {
         "Name": "Ring of Knowledge",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatAdditively",
+                "TargetType": "stat",
+                "Target": "Intelligence",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.5,
         "Durability": 120,
         "RepairCost": 1250,
@@ -401,7 +996,15 @@
     },
     {
         "Name": "Ring of Prayer",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatAdditively",
+                "TargetType": "stat",
+                "Target": "Faith",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.5,
         "Durability": 120,
         "RepairCost": 1250,
@@ -409,7 +1012,15 @@
     },
     {
         "Name": "Stone Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatAdditively",
+                "TargetType": "stat",
+                "Target": "Attack Poise Damage",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.5,
         "Durability": 110,
         "RepairCost": 2200,
@@ -417,7 +1028,22 @@
     },
     {
         "Name": "Red Tearstone Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatAdditively",
+                "TargetType": "stat",
+                "Target": "Current HP Ratio",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Outgoing Physical Damage Rate",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.5,
         "Durability": 110,
         "RepairCost": 6600,
@@ -425,7 +1051,22 @@
     },
     {
         "Name": "Blue Tearstone Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatAdditively",
+                "TargetType": "stat",
+                "Target": "Current HP Ratio2",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Incoming Physical Damage Rate",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1,
         "Durability": 110,
         "RepairCost": 6600,
@@ -433,7 +1074,15 @@
     },
     {
         "Name": "Ring of Giants",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatAdditively",
+                "TargetType": "stat",
+                "Target": "Poise",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 2,
         "Durability": 150,
         "RepairCost": 1250,
@@ -441,7 +1090,15 @@
     },
     {
         "Name": "Ring of Giants+1",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatAdditively",
+                "TargetType": "stat",
+                "Target": "Poise",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 3,
         "Durability": 115,
         "RepairCost": 1900,
@@ -449,7 +1106,15 @@
     },
     {
         "Name": "Ring of Giants+2",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatAdditively",
+                "TargetType": "stat",
+                "Target": "Poise",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 5,
         "Durability": 95,
         "RepairCost": 2500,
@@ -457,7 +1122,15 @@
     },
     {
         "Name": "Old Leo Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Thrust Counterattack Damage Rate",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.5,
         "Durability": 110,
         "RepairCost": 6600,
@@ -465,7 +1138,15 @@
     },
     {
         "Name": "Ring of Soul Protection",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "SetStateInfo",
+                "TargetType": "stat",
+                "Target": "Disable Soul Loss",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1,
         "Durability": 340,
         "RepairCost": 14000,
@@ -473,7 +1154,15 @@
     },
     {
         "Name": "Ring of Life Protection",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "SetStateInfo",
+                "TargetType": "stat",
+                "Target": "Disable Hollowing And Soul Loss",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1,
         "Durability": 340,
         "RepairCost": 14000,
@@ -481,7 +1170,15 @@
     },
     {
         "Name": "Lingering Dragoncrest Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifySpellEffectLength",
+                "TargetType": "stat",
+                "Target": "15",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 120,
         "RepairCost": 1250,
@@ -489,7 +1186,15 @@
     },
     {
         "Name": "Lingering Dragoncrest Ring+1",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifySpellEffectLength",
+                "TargetType": "stat",
+                "Target": "25",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.5,
         "Durability": 90,
         "RepairCost": 1900,
@@ -497,7 +1202,15 @@
     },
     {
         "Name": "Lingering Dragoncrest Ring+2",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifySpellEffectLength",
+                "TargetType": "stat",
+                "Target": "4",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.8,
         "Durability": 75,
         "RepairCost": 2500,
@@ -505,7 +1218,15 @@
     },
     {
         "Name": "Clear Bluestone Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Spell Cast Time",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 120,
         "RepairCost": 1250,
@@ -513,7 +1234,15 @@
     },
     {
         "Name": "Clear Bluestone Ring+1",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Spell Cast Time",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.5,
         "Durability": 90,
         "RepairCost": 1900,
@@ -521,7 +1250,15 @@
     },
     {
         "Name": "Clear Bluestone Ring+2",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Spell Cast Time",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.8,
         "Durability": 75,
         "RepairCost": 2500,
@@ -529,7 +1266,22 @@
     },
     {
         "Name": "Northern Ritual Band",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Max Spell Usages",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Max HP",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.5,
         "Durability": 120,
         "RepairCost": 1250,
@@ -537,7 +1289,22 @@
     },
     {
         "Name": "Northern Ritual Band+1",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Max Spell Usages",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Max HP",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.8,
         "Durability": 90,
         "RepairCost": 1900,
@@ -545,7 +1312,22 @@
     },
     {
         "Name": "Northern Ritual Band+2",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Max Spell Usages",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Max HP",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1,
         "Durability": 75,
         "RepairCost": 2500,
@@ -553,7 +1335,15 @@
     },
     {
         "Name": "Southern Ritual Band",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatAdditively",
+                "TargetType": "stat",
+                "Target": "Attunement Slots",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1,
         "Durability": 120,
         "RepairCost": 1250,
@@ -561,7 +1351,15 @@
     },
     {
         "Name": "Southern Ritual Band+1",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatAdditively",
+                "TargetType": "stat",
+                "Target": "Attunement Slots",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.2,
         "Durability": 90,
         "RepairCost": 1900,
@@ -569,7 +1367,15 @@
     },
     {
         "Name": "Southern Ritual Band+2",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatAdditively",
+                "TargetType": "stat",
+                "Target": "Attunement Slots",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.5,
         "Durability": 75,
         "RepairCost": 2500,
@@ -601,7 +1407,15 @@
     },
     {
         "Name": "Covetous Silver Serpent Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Soul Gain Rate",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1,
         "Durability": 90,
         "RepairCost": 3000,
@@ -609,7 +1423,15 @@
     },
     {
         "Name": "Covetous Silver Serpent Ring+1",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Soul Gain Rate",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.2,
         "Durability": 70,
         "RepairCost": 4500,
@@ -617,7 +1439,15 @@
     },
     {
         "Name": "Covetous Silver Serpent Ring+2",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Soul Gain Rate",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.5,
         "Durability": 55,
         "RepairCost": 6000,
@@ -625,7 +1455,29 @@
     },
     {
         "Name": "Ring of the Evil Eye",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatAdditively",
+                "TargetType": "stat",
+                "Target": "HP On Kill",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyProperty",
+                "TargetType": "stat",
+                "Target": "Sfx I D On Kill",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyProperty",
+                "TargetType": "stat",
+                "Target": "Sfx On Kill Origin",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1,
         "Durability": 105,
         "RepairCost": 6000,
@@ -633,7 +1485,29 @@
     },
     {
         "Name": "Ring of the Evil Eye+1",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatAdditively",
+                "TargetType": "stat",
+                "Target": "HP On Kill",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyProperty",
+                "TargetType": "stat",
+                "Target": "Sfx I D On Kill",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyProperty",
+                "TargetType": "stat",
+                "Target": "Sfx On Kill Origin",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.2,
         "Durability": 80,
         "RepairCost": 9000,
@@ -641,7 +1515,29 @@
     },
     {
         "Name": "Ring of the Evil Eye+2",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatAdditively",
+                "TargetType": "stat",
+                "Target": "HP On Kill",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyProperty",
+                "TargetType": "stat",
+                "Target": "Sfx I D On Kill",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyProperty",
+                "TargetType": "stat",
+                "Target": "Sfx On Kill Origin",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.5,
         "Durability": 65,
         "RepairCost": 12000,
@@ -649,7 +1545,15 @@
     },
     {
         "Name": "Ring of Restoration",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "UnknownCommand10004002",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1,
         "Durability": 70,
         "RepairCost": 15000,
@@ -657,7 +1561,15 @@
     },
     {
         "Name": "Ring of Binding",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Unknown29",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 130,
         "RepairCost": 1000,
@@ -665,7 +1577,15 @@
     },
     {
         "Name": "Silvercat Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatAdditively",
+                "TargetType": "stat",
+                "Target": "Fall Damage Protection Modifier",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 130,
         "RepairCost": 1000,
@@ -673,7 +1593,15 @@
     },
     {
         "Name": "Redeye Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyEnemyAggroToPlayer",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 130,
         "RepairCost": 1000,
@@ -681,7 +1609,36 @@
     },
     {
         "Name": "Gower's Ring of Protection",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "SetStateInfo",
+                "TargetType": "stat",
+                "Target": "Disable Backstab",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "SetStateInfo",
+                "TargetType": "stat",
+                "Target": "Reduce Back Damage",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Unknown61",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Unknown62",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 10,
         "Durability": 75,
         "RepairCost": 8750,
@@ -697,7 +1654,15 @@
     },
     {
         "Name": "Slumbering Dragoncrest Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "SetStateInfo",
+                "TargetType": "stat",
+                "Target": "Disable Footstep Sound",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 130,
         "RepairCost": 1000,
@@ -705,7 +1670,29 @@
     },
     {
         "Name": "Hawk Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyBulletParam",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyBulletParam",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyBulletParam",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 130,
         "RepairCost": 1000,
@@ -713,7 +1700,15 @@
     },
     {
         "Name": "Old Sun Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "RandomlySpawnBulletAfterTakingDamageDurabilitybasedRandomness",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 3,
         "Durability": 75,
         "RepairCost": 5250,
@@ -721,7 +1716,15 @@
     },
     {
         "Name": "Illusory Ring of a Conqueror",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "SetStateInfo",
+                "TargetType": "stat",
+                "Target": "Hide Weapon Left",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 130,
         "RepairCost": 1000,
@@ -729,7 +1732,15 @@
     },
     {
         "Name": "King's Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyDamageFlatToBaseAr",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 110,
         "RepairCost": 2200,
@@ -737,7 +1748,15 @@
     },
     {
         "Name": "Ring of the Dead",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "SetStateInfo",
+                "TargetType": "stat",
+                "Target": "Unknown6",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 130,
         "RepairCost": 1000,
@@ -745,7 +1764,15 @@
     },
     {
         "Name": "Ring of Thorns",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "RandomlySpawnBulletAfterTakingDamageFlatRandomness",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.5,
         "Durability": 110,
         "RepairCost": 4400,
@@ -753,7 +1780,15 @@
     },
     {
         "Name": "Ring of Thorns+1",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "RandomlySpawnBulletAfterTakingDamageFlatRandomness",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.8,
         "Durability": 85,
         "RepairCost": 6600,
@@ -761,7 +1796,15 @@
     },
     {
         "Name": "Ring of Thorns+2",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "RandomlySpawnBulletAfterTakingDamageFlatRandomness",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1,
         "Durability": 70,
         "RepairCost": 8800,
@@ -769,7 +1812,15 @@
     },
     {
         "Name": "Delicate String",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ResetInvasionCooldownTimer",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 130,
         "RepairCost": 1000,
@@ -777,24 +1828,16 @@
     },
     {
         "Name": "White Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyProperty",
+                "TargetType": "stat",
+                "Target": "Appearence",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1,
-        "Durability": 130,
-        "RepairCost": 1000,
-        "ItemDiscovery": 0
-    },
-    {
-        "Name": "Illusory Ring of the Vengeful",
-        "Modifiers": [],
-        "Weight": 0.2,
-        "Durability": 130,
-        "RepairCost": 1000,
-        "ItemDiscovery": 0
-    },
-    {
-        "Name": "Illusory Ring of the Guilty",
-        "Modifiers": [],
-        "Weight": 0.2,
         "Durability": 130,
         "RepairCost": 1000,
         "ItemDiscovery": 0
@@ -809,7 +1852,15 @@
     },
     {
         "Name": "Illusory Ring of the Exalted",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "SetStateInfo",
+                "TargetType": "stat",
+                "Target": "Hide Weapon Right",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 130,
         "RepairCost": 1000,
@@ -817,7 +1868,22 @@
     },
     {
         "Name": "Crest of the Rat",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "InitiatePassiveServermediatedMultiplayerItem",
+                "TargetType": "stat",
+                "Target": "Crestofthe Rat",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyDamageFlatToBaseAr",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 100,
         "RepairCost": 2650,
@@ -825,7 +1891,15 @@
     },
     {
         "Name": "Bell Keeper's Seal",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "InitiatePassiveServermediatedMultiplayerItem",
+                "TargetType": "stat",
+                "Target": "Bell Keepers Soul",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 120,
         "RepairCost": 1200,
@@ -833,7 +1907,15 @@
     },
     {
         "Name": "Guardian's Seal",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "InitiatePassiveServermediatedMultiplayerItem",
+                "TargetType": "stat",
+                "Target": "Guardians Seal",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 120,
         "RepairCost": 1200,
@@ -841,7 +1923,15 @@
     },
     {
         "Name": "Crest of Blood",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyDamageFlatToBaseAr",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 100,
         "RepairCost": 2650,
@@ -849,7 +1939,15 @@
     },
     {
         "Name": "Blue Seal",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Max HP",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 110,
         "RepairCost": 1500,
@@ -857,7 +1955,36 @@
     },
     {
         "Name": "Abyss Seal",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyProperty",
+                "TargetType": "stat",
+                "Target": "Hex Self Damage Staff",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyProperty",
+                "TargetType": "stat",
+                "Target": "Hex Self Damage Chime",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Hex Power Staff",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Hex Power Chime",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 100,
         "RepairCost": 2650,
@@ -865,7 +1992,15 @@
     },
     {
         "Name": "Vanquisher's Seal",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ReplaceFistsWithAlternateWeapon",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 100,
         "RepairCost": 2650,
@@ -873,7 +2008,15 @@
     },
     {
         "Name": "Sun Seal",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Miracle Power",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 100,
         "RepairCost": 2650,
@@ -881,7 +2024,15 @@
     },
     {
         "Name": "Ancient Dragon Seal",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyEstusUsage",
+                "TargetType": "stat",
+                "Target": "Boostby50",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 120,
         "RepairCost": 1200,
@@ -889,7 +2040,22 @@
     },
     {
         "Name": "Simpleton's Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatAdditively",
+                "TargetType": "stat",
+                "Target": "Adaptability",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "SetStateInfo",
+                "TargetType": "stat",
+                "Target": "Unknown31",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.5,
         "Durability": 120,
         "RepairCost": 1250,
@@ -897,7 +2063,15 @@
     },
     {
         "Name": "Strength Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatAdditively",
+                "TargetType": "stat",
+                "Target": "Strength",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.5,
         "Durability": 120,
         "RepairCost": 1250,
@@ -905,7 +2079,15 @@
     },
     {
         "Name": "Dexterity Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatAdditively",
+                "TargetType": "stat",
+                "Target": "Dexterity",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 1.5,
         "Durability": 120,
         "RepairCost": 1250,
@@ -913,7 +2095,22 @@
     },
     {
         "Name": "Ivory Warrior Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatAdditively",
+                "TargetType": "stat",
+                "Target": "Anti Stability Modifier",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatAdditively",
+                "TargetType": "stat",
+                "Target": "Unknown22",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 5,
         "Durability": 30,
         "RepairCost": 4400,
@@ -921,7 +2118,22 @@
     },
     {
         "Name": "Sorcery Clutch Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyDamageFlatToBaseAr",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "NerfDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 2,
         "Durability": 30,
         "RepairCost": 4400,
@@ -929,7 +2141,22 @@
     },
     {
         "Name": "Lightning Clutch Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyDamageFlatToBaseAr",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "NerfDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 2,
         "Durability": 30,
         "RepairCost": 4400,
@@ -937,7 +2164,22 @@
     },
     {
         "Name": "Fire Clutch Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyDamageFlatToBaseAr",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "NerfDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 2,
         "Durability": 30,
         "RepairCost": 4400,
@@ -945,7 +2187,22 @@
     },
     {
         "Name": "Dark Clutch Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyDamageFlatToBaseAr",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "NerfDefense",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 2,
         "Durability": 30,
         "RepairCost": 4400,
@@ -953,7 +2210,15 @@
     },
     {
         "Name": "Baneful Bird Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Shield Stability",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 2,
         "Durability": 45,
         "RepairCost": 5250,
@@ -961,7 +2226,15 @@
     },
     {
         "Name": "Flynn's Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ApplyEquipLoadbasedFlatDamageToWeapon",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 30,
         "RepairCost": 4400,
@@ -969,7 +2242,36 @@
     },
     {
         "Name": "Ring of the Embedded",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "ModifyAttributeBasedOnCurrentValue",
+                "TargetType": "stat",
+                "Target": "Vigor",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyAttributeBasedOnCurrentValue",
+                "TargetType": "stat",
+                "Target": "Endurance",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyAttributeBasedOnCurrentValue",
+                "TargetType": "stat",
+                "Target": "Vitality",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "ModifyStatMultiplicatively",
+                "TargetType": "stat",
+                "Target": "Incoming Damage Rate",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 2,
         "Durability": 80,
         "RepairCost": 3750,
@@ -977,7 +2279,15 @@
     },
     {
         "Name": "Ring of the Living",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "SetStateInfo",
+                "TargetType": "stat",
+                "Target": "Disable Chr Phantom Color",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 130,
         "RepairCost": 1000,
@@ -985,7 +2295,15 @@
     },
     {
         "Name": "Yorgh's Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "AddSpellDeflectChance",
+                "TargetType": "stat",
+                "Target": "",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.5,
         "Durability": 10,
         "RepairCost": 6000,
@@ -993,7 +2311,15 @@
     },
     {
         "Name": "Agape Ring",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "SetStateInfo",
+                "TargetType": "stat",
+                "Target": "Disable Soul Absorption",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 500,
         "RepairCost": 3000,
