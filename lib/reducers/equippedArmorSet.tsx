@@ -1,6 +1,6 @@
 import ArmorSet from "@/lib/classes/armorSet";
+import EquippedArmor from "@/lib/interfaces/equippedArmor";
 import { ActionDispatch, createContext, useContext, useReducer } from "react";
-import EquippedArmor from "../interfaces/equippedArmor";
 
 export type EquippedArmorSetAction = {
     slot: keyof ArmorSet;
@@ -22,10 +22,10 @@ export function useEquippedArmorSetDispatch() {
 }
 
 function equippedArmorSetReducer(
-    initialArmor: ArmorSet,
+    initialArmorSet: ArmorSet,
     action: EquippedArmorSetAction,
 ): ArmorSet {
-    const result = ArmorSet.fromArmorSet(initialArmor);
+    const result = ArmorSet.fromArmorSet(initialArmorSet);
     result.setField(action.slot, action.equippedArmor);
     return result;
 }
@@ -35,14 +35,14 @@ export function EquippedArmorSetProvider({
 }: {
     children: React.ReactNode;
 }) {
-    const [equippedArmor, equippedArmorDispatch] = useReducer(
+    const [equippedArmorSet, equippedArmorSetDispatch] = useReducer(
         equippedArmorSetReducer,
         new ArmorSet(),
     );
 
     return (
-        <EquippedArmorSetContext value={equippedArmor}>
-            <EquippedArmorSetDispatchContext value={equippedArmorDispatch}>
+        <EquippedArmorSetContext value={equippedArmorSet}>
+            <EquippedArmorSetDispatchContext value={equippedArmorSetDispatch}>
                 {children}
             </EquippedArmorSetDispatchContext>
         </EquippedArmorSetContext>

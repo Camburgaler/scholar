@@ -1,7 +1,7 @@
 "use client";
 
 import CharacterInfo from "@/lib/components/CharacterInfo";
-import { EquippedArmorSetProvider } from "@/lib/reducers/equippedArmor";
+import { EquippedRingsProvider } from "@/lib/reducers/equippedRings";
 import { VirtualAttributesProvider } from "@/lib/reducers/virtualAttributes";
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
         // page container
         <div className="flex flex-col flex-1 items-center justify-center font-sans">
             {/* Reducers */}
-            <EquippedArmorSetProvider>
+            <EquippedRingsProvider>
                 <VirtualAttributesProvider>
                     {/* content container */}
                     <main className="flex flex-1 w-full h-full flex-col items-center justify-baseline p-4 sm:items-start">
@@ -103,7 +103,7 @@ export default function Home() {
                         </div>
                     </main>
                 </VirtualAttributesProvider>
-            </EquippedArmorSetProvider>
+            </EquippedRingsProvider>
         </div>
     );
 }

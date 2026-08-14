@@ -1,8 +1,9 @@
 import { ArmorDisplay } from "@/lib/components/characterInfo/middleColumn/ArmorDisplay";
+import RingDisplay from "@/lib/components/characterInfo/middleColumn/RingDisplay";
 import WeaponDisplay from "@/lib/components/characterInfo/middleColumn/WeaponDisplay";
 import StatDisplay from "@/lib/components/characterInfo/StatDisplay";
-import { AttributeToStatMap, Rings } from "@/lib/gameData";
-import { useEquippedArmorSet } from "@/lib/reducers/equippedArmor";
+import { AttributeToStatMap } from "@/lib/gameData";
+import { useEquippedArmorSet } from "@/lib/reducers/equippedArmorSet";
 import { useFocusedAttribute } from "@/lib/reducers/focusedAttribute";
 import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
 import { calculateStatDisplayValue } from "@/lib/scripts/statCalculation";
@@ -133,51 +134,15 @@ export default function MiddleColumn() {
             <hr />
 
             {/* Rings */}
-            {/* TODO: update context with ring selections */}
+            {/* TODO: prevent incompatible rings from being equipped at the same time */}
             <div className="grid grid-cols-2 gap-1 w-full">
                 <p className="col-span-2 flex items-center justify-center h-full">
                     Rings
                 </p>
-                <select
-                    className="col-span-1 flex text-left h-full w-full"
-                    defaultValue="No Ring"
-                >
-                    {Rings.map((ring) => (
-                        <option key={ring.Name} value={ring.Name}>
-                            {ring.Name}
-                        </option>
-                    ))}
-                </select>
-                <select
-                    className="col-span-1 flex text-right h-full w-full"
-                    defaultValue="No Ring"
-                >
-                    {Rings.map((ring) => (
-                        <option key={ring.Name} value={ring.Name}>
-                            {ring.Name}
-                        </option>
-                    ))}
-                </select>
-                <select
-                    className="col-span-1 flex text-left h-full w-full"
-                    defaultValue="No Ring"
-                >
-                    {Rings.map((ring) => (
-                        <option key={ring.Name} value={ring.Name}>
-                            {ring.Name}
-                        </option>
-                    ))}
-                </select>
-                <select
-                    className="col-span-1 flex text-right h-full w-full"
-                    defaultValue="No Ring"
-                >
-                    {Rings.map((ring) => (
-                        <option key={ring.Name} value={ring.Name}>
-                            {ring.Name}
-                        </option>
-                    ))}
-                </select>
+                <RingDisplay slot={0} />
+                <RingDisplay slot={1} isRightDisplay />
+                <RingDisplay slot={2} />
+                <RingDisplay slot={3} isRightDisplay />
             </div>
         </div>
     );

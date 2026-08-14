@@ -3,7 +3,7 @@ import { Chestpieces, Gauntlets, Helmets, Leggings } from "@/lib/gameData";
 import {
     useEquippedArmorSet,
     useEquippedArmorSetDispatch,
-} from "@/lib/reducers/equippedArmor";
+} from "@/lib/reducers/equippedArmorSet";
 import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
 import { filterArmor, getArmorByName } from "@/lib/scripts/armor";
 import { useEffect } from "react";

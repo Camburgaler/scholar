@@ -2,6 +2,7 @@ import LeftColumn from "@/lib/components/characterInfo/LeftColumn";
 import MiddleColumn from "@/lib/components/characterInfo/MiddleColumn";
 import RightColumn from "@/lib/components/characterInfo/RightColumn";
 import { FocusedAttributeProvider } from "@/lib/reducers/focusedAttribute";
+import { EquippedRingsProvider } from "../reducers/equippedRings";
 
 export default function CharacterInfo() {
     return (
@@ -12,18 +13,20 @@ export default function CharacterInfo() {
 
             {/* Reducers */}
             <FocusedAttributeProvider>
-                {/* Content */}
-                <div className="flex w-full h-full items-center justify-center align-center gap-4">
-                    <LeftColumn />
+                <EquippedRingsProvider>
+                    {/* Content */}
+                    <div className="flex w-full h-full items-center justify-center align-center gap-4">
+                        <LeftColumn />
 
-                    <hr className="h-full max-w-px" />
+                        <hr className="h-full max-w-px" />
 
-                    <MiddleColumn />
+                        <MiddleColumn />
 
-                    <hr className="h-full max-w-px" />
+                        <hr className="h-full max-w-px" />
 
-                    <RightColumn />
-                </div>
+                        <RightColumn />
+                    </div>
+                </EquippedRingsProvider>
             </FocusedAttributeProvider>
         </div>
     );

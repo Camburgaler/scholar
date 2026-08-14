@@ -1,5 +1,5 @@
 import { AttributeToStatMap } from "@/lib/gameData";
-import { useEquippedArmorSet } from "@/lib/reducers/equippedArmor";
+import { useEquippedArmorSet } from "@/lib/reducers/equippedArmorSet";
 import { useFocusedAttribute } from "@/lib/reducers/focusedAttribute";
 import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
 import { calculateStatDisplayValue } from "@/lib/scripts/statCalculation";

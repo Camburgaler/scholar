@@ -1,5 +1,5 @@
 import StatDisplay from "@/lib/components/characterInfo/StatDisplay";
-import { useEquippedArmorSet } from "@/lib/reducers/equippedArmor";
+import { useEquippedArmorSet } from "@/lib/reducers/equippedArmorSet";
 
 export default function RightColumn() {
     // Context

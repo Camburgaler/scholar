@@ -1,7 +1,7 @@
 import { Classes, Covenants, PlayerLevelUpSouls, Spells } from "@/lib/gameData";
 import Class from "@/lib/interfaces/class";
 import Spell from "@/lib/interfaces/spell";
-import { useEquippedArmorSet } from "@/lib/reducers/equippedArmor";
+import { useEquippedArmorSet } from "@/lib/reducers/equippedArmorSet";
 import {
     useFocusedAttribute,
     useFocusedAttributeDispatch,
