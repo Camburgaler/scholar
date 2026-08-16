@@ -1,5 +1,6 @@
 import "@/app/globals.css";
 import type { Metadata } from "next";
+import { version } from "../package.json";
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://scholar.camburgaler.com"),
@@ -19,6 +20,7 @@ export default function RootLayout({
                 {children}
                 <footer className="flex justify-between items-end mt-auto p-4">
                     <span className="flex flex-col">
+                        <p>v{version}</p>
                         <p>
                             Inspired by{" "}
                             <a
