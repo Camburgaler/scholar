@@ -4,8 +4,10 @@ import WeaponDisplay from "@/lib/components/characterInfo/middleColumn/WeaponDis
 import StatDisplay from "@/lib/components/characterInfo/StatDisplay";
 import { AttributeToStatMap } from "@/lib/gameData";
 import { useEquippedArmorSet } from "@/lib/reducers/equippedArmorSet";
+import { useEquippedRings } from "@/lib/reducers/equippedRings";
 import { useFocusedAttribute } from "@/lib/reducers/focusedAttribute";
 import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
+import { ringsWeight } from "@/lib/scripts/equippedRings";
 import { calculateStatDisplayValue } from "@/lib/scripts/statCalculation";
 import { StatMapKeyToStatNameMap } from "@/lib/types/statMap";
 
@@ -19,6 +21,7 @@ export default function MiddleColumn() {
     const virtualAttributes = useVirtualAttributes();
     const equippedArmor = useEquippedArmorSet();
     const focusedAttribute = useFocusedAttribute();
+    const equippedRings = useEquippedRings();
 
     return (
         <div className="flex flex-col w-full h-full items-left justify-baseline align-center">
@@ -56,7 +59,7 @@ export default function MiddleColumn() {
                             id="equip-load"
                             type="text"
                             disabled
-                            value={`${equippedArmor.weight().toFixed(1)}/${calculateStatDisplayValue("MaximumEquipLoad", virtualAttributes, equippedArmor).toFixed(1)}`}
+                            value={`${(equippedArmor.weight() + ringsWeight(equippedRings)).toFixed(1)}/${calculateStatDisplayValue("MaximumEquipLoad", virtualAttributes, equippedArmor, equippedRings).toFixed(1)}`}
                         />
                         <input
                             className="flex text-right max"
@@ -65,17 +68,17 @@ export default function MiddleColumn() {
                                 border: "none",
                                 color:
                                     getEquipLoadPercentFromRatio(
-                                        `${equippedArmor.weight()}/${calculateStatDisplayValue("MaximumEquipLoad", virtualAttributes, equippedArmor)}`,
+                                        `${equippedArmor.weight() + ringsWeight(equippedRings)}/${calculateStatDisplayValue("MaximumEquipLoad", virtualAttributes, equippedArmor, equippedRings)}`,
                                     ) > 100
                                         ? "red"
                                         : getEquipLoadPercentFromRatio(
-                                                `${equippedArmor.weight()}/${calculateStatDisplayValue("MaximumEquipLoad", virtualAttributes, equippedArmor)}`,
+                                                `${equippedArmor.weight() + ringsWeight(equippedRings)}/${calculateStatDisplayValue("MaximumEquipLoad", virtualAttributes, equippedArmor, equippedRings)}`,
                                             ) > 70
                                           ? "yellow"
                                           : "var(--contrast)",
                             }}
                             value={`${getEquipLoadPercentFromRatio(
-                                `${equippedArmor.weight()}/${calculateStatDisplayValue("MaximumEquipLoad", virtualAttributes, equippedArmor)}`,
+                                `${equippedArmor.weight() + ringsWeight(equippedRings)}/${calculateStatDisplayValue("MaximumEquipLoad", virtualAttributes, equippedArmor, equippedRings)}`,
                             ).toFixed(1)}%`}
                         />
                     </div>

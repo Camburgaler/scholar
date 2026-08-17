@@ -120,6 +120,14 @@ export const ModifierTargetToStatMapKey: Map<string, StatMapKey> = new Map<
     ["Spell Cast Time", "SpellCastingSpeed"],
     ["Bleed Damage", "AttackPowerBleed"],
     ["Poison Damage", "AttackPowerPoison"],
+    ["Magic Defense", "AbsorptionMagic"],
+    ["Fire Defense", "AbsorptionFire"],
+    ["Lightning Defense", "AbsorptionLightning"],
+    ["Dark Defense", "AbsorptionDark"],
+    ["Bleed Defense", "ResistanceBleed"],
+    ["Poison Defense", "ResistancePoison"],
+    ["Petrify Defense", "ResistancePetrify"],
+    ["Curse Defense", "ResistanceCurse"],
 ]);
 
 type StatMap<T> = {

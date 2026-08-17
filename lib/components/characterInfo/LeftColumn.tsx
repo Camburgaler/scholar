@@ -2,6 +2,7 @@ import { Classes, Covenants, PlayerLevelUpSouls, Spells } from "@/lib/gameData";
 import Class from "@/lib/interfaces/class";
 import Spell from "@/lib/interfaces/spell";
 import { useEquippedArmorSet } from "@/lib/reducers/equippedArmorSet";
+import { useEquippedRings } from "@/lib/reducers/equippedRings";
 import {
     useFocusedAttribute,
     useFocusedAttributeDispatch,
@@ -11,6 +12,7 @@ import {
     useVirtualAttributesDispatch,
 } from "@/lib/reducers/virtualAttributes";
 import { getClassByName } from "@/lib/scripts/class";
+import { ringsAttributeModifiers } from "@/lib/scripts/equippedRings";
 import { getSpellByName } from "@/lib/scripts/spell";
 import { calculateStatDisplayValue } from "@/lib/scripts/statCalculation";
 import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
@@ -28,6 +30,7 @@ export default function LeftColumn() {
     const virtualAttributes = useVirtualAttributes();
     const setVirtualAttributes = useVirtualAttributesDispatch();
     const equippedArmorSet = useEquippedArmorSet();
+    const equippedRings = useEquippedRings();
 
     // STATE
 
@@ -71,15 +74,17 @@ export default function LeftColumn() {
                 .map((attributeId: AttributeMapKey) =>
                     classAttributes[attributeId]! <
                     desiredAttributes[attributeId]! -
-                        equippedArmorSet.attributeModifier(attributeId)
+                        equippedArmorSet.attributeModifier(attributeId) -
+                        ringsAttributeModifiers(equippedRings, attributeId)
                         ? desiredAttributes[attributeId]! -
                           classAttributes[attributeId]! -
-                          equippedArmorSet.attributeModifier(attributeId)
+                          equippedArmorSet.attributeModifier(attributeId) -
+                          ringsAttributeModifiers(equippedRings, attributeId)
                         : 0,
                 )
                 .reduce((total: number, n: number) => total + n);
         },
-        [desiredAttributes, equippedArmorSet],
+        [desiredAttributes, equippedArmorSet, equippedRings],
     );
 
     const calculateFinalLevel = useCallback(
@@ -252,7 +257,8 @@ export default function LeftColumn() {
                 {
                     tempFinal[attributeId] = Math.max(
                         desiredAttributes[attributeId]! -
-                            equippedArmorSet.attributeModifier(attributeId),
+                            equippedArmorSet.attributeModifier(attributeId) -
+                            ringsAttributeModifiers(equippedRings, attributeId),
                         effectiveClass().Attributes[attributeId]!,
                     );
                     tempVirtual[attributeId] = Math.max(
@@ -266,7 +272,7 @@ export default function LeftColumn() {
         setVirtualAttributes(
             new Map(Object.entries(tempVirtual) as [AttributeMapKey, number][]),
         );
-    }, [desiredAttributes, equippedArmorSet, effectiveClass]);
+    }, [desiredAttributes, equippedArmorSet, effectiveClass, equippedRings]);
 
     /**
      * Updates the souls to next level and total soul cost when the final attributes change.
@@ -299,9 +305,10 @@ export default function LeftColumn() {
                 "SpellSlotCount",
                 virtualAttributes,
                 equippedArmorSet,
+                equippedRings,
             ),
         );
-    }, [virtualAttributes, equippedArmorSet]);
+    }, [virtualAttributes, equippedArmorSet, equippedRings]);
 
     /**
      * Updates the consumed spell slots when the spell slots change.

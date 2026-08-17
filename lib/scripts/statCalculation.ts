@@ -9,6 +9,8 @@ import {
     BaseStats,
     StatCalculationDetails,
 } from "@/lib/gameData";
+import EquippedRings from "@/lib/interfaces/equippedRings";
+import { ringsActiveEffects } from "@/lib/scripts/equippedRings";
 import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
 import { ResistanceMapKey } from "@/lib/types/resistanceMap";
 import {
@@ -955,6 +957,7 @@ export function calculateStatDisplayValue(
     statDisplayKey: StatDisplayKey,
     attributes: AttributeMap<number>,
     equippedArmor: ArmorSet,
+    equippedRings: EquippedRings,
 ): number {
     const statMapKey: StatMapKey = mapDisplayKeyToStatMapKey(statDisplayKey);
     let statValue = calculateStatFromAttributes(statMapKey, attributes);
@@ -1017,6 +1020,56 @@ export function calculateStatDisplayValue(
     // Add armor poise
     if (statMapKey === "Poise") {
         additiveModifier += equippedArmor.poise();
+    }
+
+    // Add active stat effects from rings
+    ringsActiveEffects(equippedRings)
+        .filter(
+            (effect) =>
+                effect.TargetType === "stat" &&
+                ModifierTargetToStatMapKey.get(effect.Target) === statMapKey,
+        )
+        .forEach((effect) => {
+            switch (effect.Method) {
+                case "additive":
+                    additiveModifier += effect.Value;
+                    break;
+                case "multiplicative":
+                    multiplicativeModifier += effect.Value;
+                    break;
+                default:
+                    break;
+            }
+        });
+
+    // Add active special effects from items
+    ringsActiveEffects(equippedRings)
+        .filter((effect) => effect.TargetType === "special")
+        .forEach((effect) => {
+            switch (effect.Target) {
+                case "All Physical Defense":
+                    if (
+                        statDisplayKey === "DefenseSlash" ||
+                        statDisplayKey === "DefenseThrust" ||
+                        statDisplayKey === "DefenseStrike"
+                    ) {
+                        if (effect.Method === "additive") {
+                            additiveModifier += effect.Value;
+                        } else if (effect.Method === "multiplicative") {
+                            multiplicativeModifier += effect.Value;
+                        }
+                    }
+                    break;
+                default:
+                    break;
+            }
+        });
+
+    if (statMapKey === "SpellCastingSpeed") {
+        // The game's raw data provides numbers that are meant to reduce cast time, but we display cast speed.
+        // We just need to negate any modifiers.
+        multiplicativeModifier = 1 + (1 - multiplicativeModifier);
+        additiveModifier *= -1;
     }
 
     return (statValue + additiveModifier) * multiplicativeModifier;

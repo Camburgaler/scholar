@@ -331,7 +331,7 @@
         "Modifiers": [
             {
                 "Description": "Increase Magic Defense by 5",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Magic Defense",
                 "Method": "additive",
                 "Value": 5
@@ -347,7 +347,7 @@
         "Modifiers": [
             {
                 "Description": "Increase Magic Defense by 8",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Magic Defense",
                 "Method": "additive",
                 "Value": 8
@@ -363,7 +363,7 @@
         "Modifiers": [
             {
                 "Description": "Increase Magic Defense by 10",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Magic Defense",
                 "Method": "additive",
                 "Value": 10
@@ -379,7 +379,7 @@
         "Modifiers": [
             {
                 "Description": "Increase Magic Defense by 15",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Magic Defense",
                 "Method": "additive",
                 "Value": 15
@@ -395,7 +395,7 @@
         "Modifiers": [
             {
                 "Description": "Increase Fire Defense by 5",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Fire Defense",
                 "Method": "additive",
                 "Value": 5
@@ -411,7 +411,7 @@
         "Modifiers": [
             {
                 "Description": "Increase Fire Defense by 8",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Fire Defense",
                 "Method": "additive",
                 "Value": 8
@@ -427,7 +427,7 @@
         "Modifiers": [
             {
                 "Description": "Increase Fire Defense by 10",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Fire Defense",
                 "Method": "additive",
                 "Value": 10
@@ -443,7 +443,7 @@
         "Modifiers": [
             {
                 "Description": "Increase Fire Defense by 15",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Fire Defense",
                 "Method": "additive",
                 "Value": 15
@@ -459,7 +459,7 @@
         "Modifiers": [
             {
                 "Description": "Increase Lightning Defense by 5",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Lightning Defense",
                 "Method": "additive",
                 "Value": 5
@@ -475,7 +475,7 @@
         "Modifiers": [
             {
                 "Description": "Increase Lightning Defense by 8",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Lightning Defense",
                 "Method": "additive",
                 "Value": 8
@@ -491,7 +491,7 @@
         "Modifiers": [
             {
                 "Description": "Increase Lightning Defense by 10",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Lightning Defense",
                 "Method": "additive",
                 "Value": 10
@@ -507,7 +507,7 @@
         "Modifiers": [
             {
                 "Description": "Increase Lightning Defense by 15",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Lightning Defense",
                 "Method": "additive",
                 "Value": 15
@@ -523,7 +523,7 @@
         "Modifiers": [
             {
                 "Description": "Increase Dark Defense by 5",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Dark Defense",
                 "Method": "additive",
                 "Value": 5
@@ -539,7 +539,7 @@
         "Modifiers": [
             {
                 "Description": "Increase Dark Defense by 8",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Dark Defense",
                 "Method": "additive",
                 "Value": 8
@@ -555,7 +555,7 @@
         "Modifiers": [
             {
                 "Description": "Increase Dark Defense by 10",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Dark Defense",
                 "Method": "additive",
                 "Value": 10
@@ -571,7 +571,7 @@
         "Modifiers": [
             {
                 "Description": "Increase Dark Defense by 15",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Dark Defense",
                 "Method": "additive",
                 "Value": 15
@@ -587,7 +587,7 @@
         "Modifiers": [
             {
                 "Description": "Increase Poison Defense by 15",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Poison Defense",
                 "Method": "additive",
                 "Value": 15
@@ -603,7 +603,7 @@
         "Modifiers": [
             {
                 "Description": "Increase Poison Defense by 30",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Poison Defense",
                 "Method": "additive",
                 "Value": 30
@@ -619,7 +619,7 @@
         "Modifiers": [
             {
                 "Description": "Increase Bleed Defense by 15",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Bleed Defense",
                 "Method": "additive",
                 "Value": 15
@@ -635,7 +635,7 @@
         "Modifiers": [
             {
                 "Description": "Increase Bleed Defense by 30",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Bleed Defense",
                 "Method": "additive",
                 "Value": 30
@@ -741,7 +741,7 @@
         "Modifiers": [
             {
                 "Description": "Increase Curse Defense by 40",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Curse Defense",
                 "Method": "additive",
                 "Value": 40
@@ -757,7 +757,7 @@
         "Modifiers": [
             {
                 "Description": "Increase Petrify Defense by 40",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Petrify Defense",
                 "Method": "additive",
                 "Value": 40
@@ -773,28 +773,28 @@
         "Modifiers": [
             {
                 "Description": "Increase Magic Defense by 6",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Magic Defense",
                 "Method": "additive",
                 "Value": 6
             },
             {
                 "Description": "Increase Lightning Defense by 6",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Lightning Defense",
                 "Method": "additive",
                 "Value": 6
             },
             {
                 "Description": "Increase Fire Defense by 6",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Fire Defense",
                 "Method": "additive",
                 "Value": 6
             },
             {
                 "Description": "Increase Dark Defense by 6",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Dark Defense",
                 "Method": "additive",
                 "Value": 6
@@ -810,28 +810,28 @@
         "Modifiers": [
             {
                 "Description": "Increase Magic Defense by 12",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Magic Defense",
                 "Method": "additive",
                 "Value": 12
             },
             {
                 "Description": "Increase Lightning Defense by 12",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Lightning Defense",
                 "Method": "additive",
                 "Value": 12
             },
             {
                 "Description": "Increase Fire Defense by 12",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Fire Defense",
                 "Method": "additive",
                 "Value": 12
             },
             {
                 "Description": "Increase Dark Defense by 12",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Dark Defense",
                 "Method": "additive",
                 "Value": 12
@@ -847,35 +847,28 @@
         "Modifiers": [
             {
                 "Description": "Increase Poison Defense by 12",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Poison Defense",
                 "Method": "additive",
                 "Value": 12
             },
             {
                 "Description": "Increase Bleed Defense by 12",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Bleed Defense",
                 "Method": "additive",
                 "Value": 12
             },
             {
-                "Description": "Increase Unknown7 Defense by 12",
-                "TargetType": "special",
-                "Target": "Unknown7 Defense",
-                "Method": "additive",
-                "Value": 12
-            },
-            {
                 "Description": "Increase Curse Defense by 12",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Curse Defense",
                 "Method": "additive",
                 "Value": 12
             },
             {
                 "Description": "Increase Petrify Defense by 12",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Petrify Defense",
                 "Method": "additive",
                 "Value": 12
@@ -891,35 +884,28 @@
         "Modifiers": [
             {
                 "Description": "Increase Poison Defense by 20",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Poison Defense",
                 "Method": "additive",
                 "Value": 20
             },
             {
                 "Description": "Increase Bleed Defense by 20",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Bleed Defense",
                 "Method": "additive",
                 "Value": 20
             },
             {
-                "Description": "Increase Unknown7 Defense by 20",
-                "TargetType": "special",
-                "Target": "Unknown7 Defense",
-                "Method": "additive",
-                "Value": 20
-            },
-            {
                 "Description": "Increase Curse Defense by 20",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Curse Defense",
                 "Method": "additive",
                 "Value": 20
             },
             {
                 "Description": "Increase Petrify Defense by 20",
-                "TargetType": "special",
+                "TargetType": "stat",
                 "Target": "Petrify Defense",
                 "Method": "additive",
                 "Value": 20
@@ -934,25 +920,25 @@
         "Name": "Ring of Blades",
         "Modifiers": [
             {
-                "Description": "Increase All Physical Damage by 25 when the weapon is infused with All Physical Damage",
+                "Description": "Increase All Physical Damage by 10 when the weapon is infused with Standard",
                 "TargetType": "special",
                 "Target": "All Physical Damage",
                 "Method": "additive",
-                "Value": 25
+                "Value": 10
             },
             {
-                "Description": "Increase All Physical Damage by 50 when the weapon has innate All Physical Damage",
+                "Description": "Increase All Physical Damage by 20 when the weapon has innate Standard",
                 "TargetType": "special",
                 "Target": "All Physical Damage",
                 "Method": "additive",
-                "Value": 50
+                "Value": 20
             },
             {
-                "Description": "Increase All Physical Damage by 60 when the weapon has innate AND infused All Physical Damage",
+                "Description": "Increase All Physical Damage by 24 when the weapon has innate AND infused Standard",
                 "TargetType": "special",
                 "Target": "All Physical Damage",
                 "Method": "additive",
-                "Value": 60
+                "Value": 24
             }
         ],
         "Weight": 1,
@@ -964,25 +950,25 @@
         "Name": "Ring of Blades+1",
         "Modifiers": [
             {
-                "Description": "Increase All Physical Damage by 25 when the weapon is infused with All Physical Damage",
+                "Description": "Increase All Physical Damage by 17 when the weapon is infused with Standard",
                 "TargetType": "special",
                 "Target": "All Physical Damage",
                 "Method": "additive",
-                "Value": 25
+                "Value": 17.5
             },
             {
-                "Description": "Increase All Physical Damage by 50 when the weapon has innate All Physical Damage",
+                "Description": "Increase All Physical Damage by 35 when the weapon has innate Standard",
                 "TargetType": "special",
                 "Target": "All Physical Damage",
                 "Method": "additive",
-                "Value": 50
+                "Value": 35
             },
             {
-                "Description": "Increase All Physical Damage by 60 when the weapon has innate AND infused All Physical Damage",
+                "Description": "Increase All Physical Damage by 42 when the weapon has innate AND infused Standard",
                 "TargetType": "special",
                 "Target": "All Physical Damage",
                 "Method": "additive",
-                "Value": 60
+                "Value": 42
             }
         ],
         "Weight": 1.5,
@@ -994,21 +980,21 @@
         "Name": "Ring of Blades+2",
         "Modifiers": [
             {
-                "Description": "Increase All Physical Damage by 25 when the weapon is infused with All Physical Damage",
+                "Description": "Increase All Physical Damage by 25 when the weapon is infused with Standard",
                 "TargetType": "special",
                 "Target": "All Physical Damage",
                 "Method": "additive",
                 "Value": 25
             },
             {
-                "Description": "Increase All Physical Damage by 50 when the weapon has innate All Physical Damage",
+                "Description": "Increase All Physical Damage by 50 when the weapon has innate Standard",
                 "TargetType": "special",
                 "Target": "All Physical Damage",
                 "Method": "additive",
                 "Value": 50
             },
             {
-                "Description": "Increase All Physical Damage by 60 when the weapon has innate AND infused All Physical Damage",
+                "Description": "Increase All Physical Damage by 60 when the weapon has innate AND infused Standard",
                 "TargetType": "special",
                 "Target": "All Physical Damage",
                 "Method": "additive",
@@ -1720,25 +1706,25 @@
         "Name": "King's Ring",
         "Modifiers": [
             {
-                "Description": "Increase Fire Damage by 25 when the weapon is infused with Fire Damage",
+                "Description": "Increase Fire Damage by 2 when the weapon is infused with Fire Damage",
                 "TargetType": "special",
                 "Target": "Fire Damage",
                 "Method": "additive",
-                "Value": 25
+                "Value": 2.5
             },
             {
-                "Description": "Increase Fire Damage by 50 when the weapon has innate Fire Damage",
+                "Description": "Increase Fire Damage by 5 when the weapon has innate Fire Damage",
                 "TargetType": "special",
                 "Target": "Fire Damage",
                 "Method": "additive",
-                "Value": 50
+                "Value": 5
             },
             {
-                "Description": "Increase Fire Damage by 60 when the weapon has innate AND infused Fire Damage",
+                "Description": "Increase Fire Damage by 6 when the weapon has innate AND infused Fire Damage",
                 "TargetType": "special",
                 "Target": "Fire Damage",
                 "Method": "additive",
-                "Value": 60
+                "Value": 6
             }
         ],
         "Weight": 0.2,
@@ -2162,25 +2148,25 @@
         "Name": "Sorcery Clutch Ring",
         "Modifiers": [
             {
-                "Description": "Increase Magic Damage by 25 when the weapon is infused with Magic Damage",
+                "Description": "Increase Magic Damage by 15 when the weapon is infused with Magic Damage",
                 "TargetType": "special",
                 "Target": "Magic Damage",
                 "Method": "additive",
-                "Value": 25
+                "Value": 15
             },
             {
-                "Description": "Increase Magic Damage by 50 when the weapon has innate Magic Damage",
+                "Description": "Increase Magic Damage by 30 when the weapon has innate Magic Damage",
                 "TargetType": "special",
                 "Target": "Magic Damage",
                 "Method": "additive",
-                "Value": 50
+                "Value": 30
             },
             {
-                "Description": "Increase Magic Damage by 60 when the weapon has innate AND infused Magic Damage",
+                "Description": "Increase Magic Damage by 36 when the weapon has innate AND infused Magic Damage",
                 "TargetType": "special",
                 "Target": "Magic Damage",
                 "Method": "additive",
-                "Value": 60
+                "Value": 36
             },
             {
                 "Description": "Decrease All Physical Defense by 80",
@@ -2199,25 +2185,25 @@
         "Name": "Lightning Clutch Ring",
         "Modifiers": [
             {
-                "Description": "Increase Lightning Damage by 25 when the weapon is infused with Lightning Damage",
+                "Description": "Increase Lightning Damage by 15 when the weapon is infused with Lightning Damage",
                 "TargetType": "special",
                 "Target": "Lightning Damage",
                 "Method": "additive",
-                "Value": 25
+                "Value": 15
             },
             {
-                "Description": "Increase Lightning Damage by 50 when the weapon has innate Lightning Damage",
+                "Description": "Increase Lightning Damage by 30 when the weapon has innate Lightning Damage",
                 "TargetType": "special",
                 "Target": "Lightning Damage",
                 "Method": "additive",
-                "Value": 50
+                "Value": 30
             },
             {
-                "Description": "Increase Lightning Damage by 60 when the weapon has innate AND infused Lightning Damage",
+                "Description": "Increase Lightning Damage by 36 when the weapon has innate AND infused Lightning Damage",
                 "TargetType": "special",
                 "Target": "Lightning Damage",
                 "Method": "additive",
-                "Value": 60
+                "Value": 36
             },
             {
                 "Description": "Decrease All Physical Defense by 80",
@@ -2236,25 +2222,25 @@
         "Name": "Fire Clutch Ring",
         "Modifiers": [
             {
-                "Description": "Increase Fire Damage by 25 when the weapon is infused with Fire Damage",
+                "Description": "Increase Fire Damage by 15 when the weapon is infused with Fire Damage",
                 "TargetType": "special",
                 "Target": "Fire Damage",
                 "Method": "additive",
-                "Value": 25
+                "Value": 15
             },
             {
-                "Description": "Increase Fire Damage by 50 when the weapon has innate Fire Damage",
+                "Description": "Increase Fire Damage by 30 when the weapon has innate Fire Damage",
                 "TargetType": "special",
                 "Target": "Fire Damage",
                 "Method": "additive",
-                "Value": 50
+                "Value": 30
             },
             {
-                "Description": "Increase Fire Damage by 60 when the weapon has innate AND infused Fire Damage",
+                "Description": "Increase Fire Damage by 36 when the weapon has innate AND infused Fire Damage",
                 "TargetType": "special",
                 "Target": "Fire Damage",
                 "Method": "additive",
-                "Value": 60
+                "Value": 36
             },
             {
                 "Description": "Decrease All Physical Defense by 80",
@@ -2273,25 +2259,25 @@
         "Name": "Dark Clutch Ring",
         "Modifiers": [
             {
-                "Description": "Increase Dark Damage by 25 when the weapon is infused with Dark Damage",
+                "Description": "Increase Dark Damage by 15 when the weapon is infused with Dark Damage",
                 "TargetType": "special",
                 "Target": "Dark Damage",
                 "Method": "additive",
-                "Value": 25
+                "Value": 15
             },
             {
-                "Description": "Increase Dark Damage by 50 when the weapon has innate Dark Damage",
+                "Description": "Increase Dark Damage by 30 when the weapon has innate Dark Damage",
                 "TargetType": "special",
                 "Target": "Dark Damage",
                 "Method": "additive",
-                "Value": 50
+                "Value": 30
             },
             {
-                "Description": "Increase Dark Damage by 60 when the weapon has innate AND infused Dark Damage",
+                "Description": "Increase Dark Damage by 36 when the weapon has innate AND infused Dark Damage",
                 "TargetType": "special",
                 "Target": "Dark Damage",
                 "Method": "additive",
-                "Value": 60
+                "Value": 36
             },
             {
                 "Description": "Decrease All Physical Defense by 80",

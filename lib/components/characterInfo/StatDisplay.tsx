@@ -1,5 +1,6 @@
 import { AttributeToStatMap } from "@/lib/gameData";
 import { useEquippedArmorSet } from "@/lib/reducers/equippedArmorSet";
+import { useEquippedRings } from "@/lib/reducers/equippedRings";
 import { useFocusedAttribute } from "@/lib/reducers/focusedAttribute";
 import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
 import { calculateStatDisplayValue } from "@/lib/scripts/statCalculation";
@@ -93,6 +94,7 @@ export default function StatDisplay(props: {
     const focusedAttribute = useFocusedAttribute();
     const virtualAttributes = useVirtualAttributes();
     const equippedArmorSet = useEquippedArmorSet();
+    const equippedRings = useEquippedRings();
 
     // State
     const [isFocused, setIsFocused] = useState(false);
@@ -113,12 +115,14 @@ export default function StatDisplay(props: {
             statDisplayKey,
             virtualAttributes,
             equippedArmorSet,
+            equippedRings,
         );
 
         if (statDisplayKey !== "Poise") {
             displayValue = Math.floor(displayValue);
         }
 
+        // TODO: Research whether stats can be negative. If so, which ones? How?
         setDisplayValue(displayValue);
     }, [virtualAttributes, equippedArmorSet]);
 
