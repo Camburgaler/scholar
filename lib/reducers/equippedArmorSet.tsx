@@ -32,7 +32,7 @@ function equippedArmorSetReducer(
     action: EquippedArmorSetAction,
 ): ArmorSet {
     const result = ArmorSet.fromArmorSet(initialArmorSet);
-    result.setField(action.slot, action.equippedArmor);
+    result.setArmor(action.slot, action.equippedArmor);
     return result;
 }
 

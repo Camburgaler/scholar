@@ -123,7 +123,7 @@ export default function MiddleColumn(): JSX.Element {
             {/* TODO: update with real options */}
             <div className="grid grid-cols-2 gap-1 w-full justify-between">
                 {/* Left hand */}
-                <div className="text-left col-span-1 flex flex-col w-full justify-between">
+                <div className="text-left col-span-1 flex flex-col w-full justify-between gap-1">
                     <p className="flex w-full">Left Hand</p>
                     <WeaponDisplay slot="LeftHandWeaponPrimary" />
                     <WeaponDisplay slot="LeftHandWeaponSecondary" />
@@ -131,7 +131,7 @@ export default function MiddleColumn(): JSX.Element {
                 </div>
 
                 {/* Right hand */}
-                <div className="text-right col-span-1 flex items-end flex-col w-full">
+                <div className="text-right col-span-1 flex items-end flex-col w-full gap-1">
                     <p className="w-full">Right Hand</p>
                     <WeaponDisplay slot="RightHandWeaponPrimary" />
                     <WeaponDisplay slot="RightHandWeaponSecondary" />

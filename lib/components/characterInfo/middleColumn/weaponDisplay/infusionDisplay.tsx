@@ -1,10 +1,41 @@
+import { WeaponEquipSlot } from "@/lib/classes/weaponSlots";
+import {
+    useEquippedWeapons,
+    useEquippedWeaponsDispatch,
+} from "@/lib/reducers/equippedWeapons";
+import { InfusionMapKey } from "@/lib/types/infusionMap";
 import { JSX } from "react/jsx-runtime";
 
-export default function InfusionDisplay(): JSX.Element {
+export default function InfusionDisplay(props: {
+    slot: WeaponEquipSlot;
+}): JSX.Element {
+    // Props
+    const { slot } = props;
+
+    // Context
+    const equippedWeapons = useEquippedWeapons();
+    const setEquippedWeapons = useEquippedWeaponsDispatch();
+
     return (
-        <select style={{ backgroundColor: "var(--secondary)" }}>
-            {/* TODO: Add infusion options */}
-            <option>B</option>
+        <select
+            style={{ backgroundColor: "var(--secondary)" }}
+            value={equippedWeapons.getWeapon(slot).infusion}
+            onChange={(e) => {
+                setEquippedWeapons({
+                    slot: slot,
+                    equippedWeapon: {
+                        ...equippedWeapons.getWeapon(slot),
+                        infusion: e.target.value as InfusionMapKey,
+                    },
+                });
+            }}
+        >
+            {/* TODO: Add infusion data */}
+            {Object.keys(equippedWeapons.getWeapon(slot).data.Infusions).map(
+                (infusion) => (
+                    <option key={infusion}>{infusion}</option>
+                ),
+            )}
         </select>
     );
 }

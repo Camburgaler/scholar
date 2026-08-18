@@ -64,10 +64,7 @@ class ArmorSet {
      */
     public static fromArmorSet(given: ArmorSet): ArmorSet {
         const newArmorSet = new ArmorSet();
-        newArmorSet.setHelmet(given.getHelmet());
-        newArmorSet.setChestpiece(given.getChestpiece());
-        newArmorSet.setGauntlets(given.getGauntlets());
-        newArmorSet.setLeggings(given.getLeggings());
+        newArmorSet.copyFrom(given);
         return newArmorSet;
     }
 
@@ -122,7 +119,7 @@ class ArmorSet {
     // GETTERS & SETTERS
 
     /**
-     * @method getField
+     * @method getArmor
      * @description Gets the armor set data for a given field.
      * @param slot The field to get the data for. Key of {@link ArmorSet}.
      * @returns The {@link EquippedArmor} data for the given field.
@@ -142,26 +139,15 @@ class ArmorSet {
     }
 
     /**
-     * @method setField
+     * @method setArmor
      * @description Sets the armor set data for a given field.
      * @param field The field to set the data for. Must refer to a member and not a method. Key of {@link ArmorSet}.
      * @param value The {@link EquippedArmor} to which the field should be set.
      */
-    public setField(field: keyof ArmorSet, value: EquippedArmor) {
+    public setArmor(field: keyof ArmorSet, value: EquippedArmor) {
         if (typeof this[field] !== "object") {
             // panic out
             throw new Error(`ArmorSet field ${field} is not a member`);
-        }
-
-        if (
-            typeof value !== "object" ||
-            value.data === undefined ||
-            value.reinforcementLevel === undefined
-        ) {
-            // panic out
-            throw new Error(
-                `ArmorSet field ${field} must be an EquippedArmor object`,
-            );
         }
 
         (this as any)[field] = value;

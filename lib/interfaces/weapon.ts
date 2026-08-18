@@ -17,6 +17,7 @@ interface Weapon extends Equippable {
     Category: string;
     Paired: boolean;
     Infusions: InfusionMap<WeaponInfusion>;
+    MaxReinforcementLevel: number;
 }
 
 export default Weapon;

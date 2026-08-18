@@ -1,7 +1,6 @@
 import LeftColumn from "@/lib/components/characterInfo/LeftColumn";
 import MiddleColumn from "@/lib/components/characterInfo/MiddleColumn";
 import RightColumn from "@/lib/components/characterInfo/RightColumn";
-import { EquippedRingsProvider } from "@/lib/reducers/equippedRings";
 import { FocusedAttributeProvider } from "@/lib/reducers/focusedAttribute";
 import { JSX } from "react/jsx-runtime";
 
@@ -17,20 +16,18 @@ export default function CharacterInfo(): JSX.Element {
 
             {/* Reducers */}
             <FocusedAttributeProvider>
-                <EquippedRingsProvider>
-                    {/* Content */}
-                    <div className="flex w-full h-full items-center justify-center align-center gap-4">
-                        <LeftColumn />
+                {/* Content */}
+                <div className="flex w-full h-full items-center justify-center align-center gap-4">
+                    <LeftColumn />
 
-                        <hr className="h-full max-w-px" />
+                    <hr className="h-full max-w-px" />
 
-                        <MiddleColumn />
+                    <MiddleColumn />
 
-                        <hr className="h-full max-w-px" />
+                    <hr className="h-full max-w-px" />
 
-                        <RightColumn />
-                    </div>
-                </EquippedRingsProvider>
+                    <RightColumn />
+                </div>
             </FocusedAttributeProvider>
         </div>
     );

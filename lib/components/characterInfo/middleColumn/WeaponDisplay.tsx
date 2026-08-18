@@ -1,21 +1,15 @@
+import { WeaponEquipSlot } from "@/lib/classes/weaponSlots";
+import InfusionDisplay from "@/lib/components/characterInfo/middleColumn/weaponDisplay/InfusionDisplay";
+import ReinforcementDisplay from "@/lib/components/characterInfo/middleColumn/weaponDisplay/ReinforcementDisplay";
 import { Weapons } from "@/lib/gameData";
 import { useEquippedRings } from "@/lib/reducers/equippedRings";
+import {
+    useEquippedWeapons,
+    useEquippedWeaponsDispatch,
+} from "@/lib/reducers/equippedWeapons";
+import { getWeaponByName } from "@/lib/scripts/weapon";
 import { useEffect, useState } from "react";
 import { JSX } from "react/jsx-runtime";
-import InfusionDisplay from "./weaponDisplay/infusionDisplay";
-import ReinforcementDisplay from "./weaponDisplay/reinforcementDisplay";
-
-/**
- * @type WeaponEquipSlot
- * @description Keys for the `slot` prop of the {@link WeaponDisplay} component
- */
-type WeaponEquipSlot =
-    | "LeftHandWeaponPrimary"
-    | "LeftHandWeaponSecondary"
-    | "LeftHandWeaponTertiary"
-    | "RightHandWeaponPrimary"
-    | "RightHandWeaponSecondary"
-    | "RightHandWeaponTertiary";
 
 /**
  * WeaponDisplay
@@ -30,9 +24,10 @@ export default function WeaponDisplay(props: {
 
     // Context
     const equippedRings = useEquippedRings();
+    const equippedWeapons = useEquippedWeapons();
+    const setEquippedWeapons = useEquippedWeaponsDispatch();
 
     // State
-    const [selected, setSelected] = useState("");
     const [vanquishersSeal, setVanquishersSeal] = useState(false);
 
     // Constants
@@ -53,23 +48,26 @@ export default function WeaponDisplay(props: {
     return (
         <div
             id={slot}
-            className="col-span-1 flex flex-col w-full justify-between"
+            className="col-span-1 flex flex-col w-full justify-between border rounded-md"
         >
             <div className="flex w-full justify-between">
-                {isRightHand ? <InfusionDisplay /> : null}
-                {isRightHand ? <ReinforcementDisplay /> : null}
-
                 {/* TODO: Make these values reflect the selected weapon */}
                 {/* TODO: Color-code these values based on damage type */}
                 <p className="w-full content-end">(10/0/0/0/0)</p>
-
-                {!isRightHand ? <ReinforcementDisplay /> : null}
-                {!isRightHand ? <InfusionDisplay /> : null}
             </div>
             <select
                 className="w-full"
-                value={selected}
-                onChange={(e) => setSelected(e.target.value)}
+                value={equippedWeapons.getWeapon(slot).data.Name}
+                onChange={(e) =>
+                    setEquippedWeapons({
+                        slot: slot,
+                        equippedWeapon: {
+                            data: getWeaponByName(e.target.value)!,
+                            infusion: "Basic",
+                            reinforcementLevel: 0,
+                        },
+                    })
+                }
             >
                 {Weapons.filter((weapon) =>
                     // Filter so that the "Vanquisher's Seal" ring acts as a toggle between "Fists" and "Fist (Vanquisher's Seal)",
@@ -90,6 +88,10 @@ export default function WeaponDisplay(props: {
                         </option>
                     ))}
             </select>
+            <div className="flex w-full justify-between">
+                <InfusionDisplay slot={slot} />
+                <ReinforcementDisplay slot={slot} />
+            </div>
         </div>
     );
 }
