@@ -13,26 +13,41 @@ import { JSX } from "react/jsx-runtime";
  * @class ArmorSet
  * @description A class representing an armor set. Provides static methods for creating armor sets. Provides methods for getting and setting armor set data.
  *
- * @member {EquippedArmor} helmet - The helmet equipped in the armor set. Initialized to No Armor.
- * @member {EquippedArmor} chestpiece - The chestpiece equipped in the armor set. Initialized to No Armor.
- * @member {EquippedArmor} gauntlets - The gauntlets equipped in the armor set. Initialized to No Armor.
- * @member {EquippedArmor} leggings - The leggings equipped in the armor set. Initialized to No Armor.
+ * @member {@link EquippedArmor} helmet - The helmet equipped in the armor set. Initialized to No Armor.
+ * @member {@link EquippedArmor} chestpiece - The chestpiece equipped in the armor set. Initialized to No Armor.
+ * @member {@link EquippedArmor} gauntlets - The gauntlets equipped in the armor set. Initialized to No Armor.
+ * @member {@link EquippedArmor} leggings - The leggings equipped in the armor set. Initialized to No Armor.
  */
 class ArmorSet {
     // MEMBERS
 
+    /**
+     * @member {@link EquippedArmor} helmet - The helmet equipped in the armor set.
+     */
     private helmet: EquippedArmor = {
         data: Helmets[0],
         reinforcementLevel: 0,
     };
+
+    /**
+     * @member {@link EquippedArmor} chestpiece - The chestpiece equipped in the armor set.
+     */
     private chestpiece: EquippedArmor = {
         data: Chestpieces[0],
         reinforcementLevel: 0,
     };
+
+    /**
+     * @member {@link EquippedArmor} gauntlets - The gauntlets equipped in the armor set.
+     */
     private gauntlets: EquippedArmor = {
         data: Gauntlets[0],
         reinforcementLevel: 0,
     };
+
+    /**
+     * @member {@link EquippedArmor} leggings - The leggings equipped in the armor set.
+     */
     private leggings: EquippedArmor = {
         data: Leggings[0],
         reinforcementLevel: 0,
@@ -44,8 +59,8 @@ class ArmorSet {
      * @method fromArmorSet
      * @static
      * @description Creates a new armor set from an existing armor set.
-     * @param {ArmorSet} given - The armor set to copy from.
-     * @returns {ArmorSet} The new armor set.
+     * @param given - The {@link ArmorSet} from which to copy.
+     * @returns The new {@link ArmorSet}.
      */
     public static fromArmorSet(given: ArmorSet): ArmorSet {
         const newArmorSet = new ArmorSet();
@@ -60,11 +75,11 @@ class ArmorSet {
      * @method fromEquippedArmor
      * @static
      * @description Creates a new armor set from equipped armors.
-     * @param {EquippedArmor} helmet - The helmet equipped in the armor set.
-     * @param {EquippedArmor} chestpiece - The chestpiece equipped in the armor set.
-     * @param {EquippedArmor} gauntlets - The gauntlets equipped in the armor set.
-     * @param {EquippedArmor} leggings - The leggings equipped in the armor set.
-     * @returns {ArmorSet} The new armor set.
+     * @param helmet - The helmet equipped in the armor set. {@link EquippedArmor}.
+     * @param chestpiece - The chestpiece equipped in the armor set. {@link EquippedArmor}.
+     * @param gauntlets - The gauntlets equipped in the armor set. {@link EquippedArmor}.
+     * @param leggings - The leggings equipped in the armor set. {@link EquippedArmor}.
+     * @returns The new {@link ArmorSet}.
      */
     public static fromEquippedArmor(
         helmet: EquippedArmor,
@@ -84,11 +99,11 @@ class ArmorSet {
      * @method fromArmor
      * @static
      * @description Creates a new armor set from armor data.
-     * @param {Armor} helmet - The helmet data in the armor set.
-     * @param {Armor} chestpiece - The chestpiece data in the armor set.
-     * @param {Armor} gauntlets - The gauntlets data in the armor set.
-     * @param {Armor} leggings - The leggings data in the armor set.
-     * @returns {ArmorSet} The new armor set.
+     * @param helmet - The helmet data in the armor set. {@link Armor}.
+     * @param chestpiece - The chestpiece data in the armor set. {@link Armor}.
+     * @param gauntlets - The gauntlets data in the armor set. {@link Armor}.
+     * @param leggings - The leggings data in the armor set. {@link Armor}.
+     * @returns The new armor set. {@link ArmorSet}.
      */
     public static fromArmor(
         helmet: Armor,
@@ -109,8 +124,8 @@ class ArmorSet {
     /**
      * @method getField
      * @description Gets the armor set data for a given field.
-     * @param slot The field to get the data for.
-     * @returns The armor set data for the given field.
+     * @param slot The field to get the data for. Key of {@link ArmorSet}.
+     * @returns The {@link EquippedArmor} data for the given field.
      */
     public getArmor(slot: keyof ArmorSet): EquippedArmor {
         if (this[slot] === undefined || this[slot] === null) {
@@ -129,10 +144,10 @@ class ArmorSet {
     /**
      * @method setField
      * @description Sets the armor set data for a given field.
-     * @param field The field to set the data for. Must refer to a member and not a method.
-     * @param value The value to set the field to. Must be an EquippedArmor object.
+     * @param field The field to set the data for. Must refer to a member and not a method. Key of {@link ArmorSet}.
+     * @param value The {@link EquippedArmor} to which the field should be set.
      */
-    public setField(field: keyof ArmorSet, value: any) {
+    public setField(field: keyof ArmorSet, value: EquippedArmor) {
         if (typeof this[field] !== "object") {
             // panic out
             throw new Error(`ArmorSet field ${field} is not a member`);
@@ -149,13 +164,13 @@ class ArmorSet {
             );
         }
 
-        this[field] = value;
+        (this as any)[field] = value;
     }
 
     /**
      * @method copyFrom
      * @description Copies the armor set from another armor set.
-     * @param armorSet The armor set to copy from.
+     * @param armorSet The {@link ArmorSet} from which to copy.
      */
     public copyFrom(armorSet: ArmorSet) {
         this.setHelmet(armorSet.getHelmet());
@@ -167,7 +182,7 @@ class ArmorSet {
     /**
      * @method getHelmet
      * @description Gets the helmet equipped in the armor set.
-     * @returns {EquippedArmor} The helmet equipped in the armor set.
+     * @returns The helmet equipped in the armor set. {@link EquippedArmor}.
      */
     public getHelmet(): EquippedArmor {
         return this.helmet;
@@ -176,7 +191,7 @@ class ArmorSet {
     /**
      * @method setHelmetData
      * @description Sets the helmet data in the armor set.
-     * @param helmet - The helmet data to set.
+     * @param helmet - The helmet data to set. {@link Armor}.
      */
     public setHelmetData(helmet: Armor): void {
         this.helmet.data = helmet;
@@ -194,7 +209,7 @@ class ArmorSet {
     /**
      * @method setHelmet
      * @description Sets the helmet in the armor set.
-     * @param helmet - The helmet to set.
+     * @param helmet - The helmet to set. {@link EquippedArmor}.
      */
     public setHelmet(helmet: EquippedArmor): void {
         this.setHelmetData(helmet.data);
@@ -204,7 +219,7 @@ class ArmorSet {
     /**
      * @method getChestpiece
      * @description Gets the chestpiece equipped in the armor set.
-     * @returns {EquippedArmor} The chestpiece equipped in the armor set.
+     * @returns The chestpiece equipped in the armor set. {@link EquippedArmor}.
      */
     public getChestpiece(): EquippedArmor {
         return this.chestpiece;
@@ -213,7 +228,7 @@ class ArmorSet {
     /**
      * @method setChestpieceData
      * @description Sets the chestpiece data in the armor set.
-     * @param chestpiece - The chestpiece data to set.
+     * @param chestpiece - The chestpiece data to set. {@link Armor}.
      */
     public setChestpieceData(chestpiece: Armor): void {
         this.chestpiece.data = chestpiece;
@@ -231,7 +246,7 @@ class ArmorSet {
     /**
      * @method setChestpiece
      * @description Sets the chestpiece in the armor set.
-     * @param chestpiece - The chestpiece to set.
+     * @param chestpiece - The chestpiece to set. {@link EquippedArmor}.
      */
     public setChestpiece(chestpiece: EquippedArmor): void {
         this.setChestpieceData(chestpiece.data);
@@ -241,7 +256,7 @@ class ArmorSet {
     /**
      * @method getGauntlets
      * @description Gets the gauntlets equipped in the armor set.
-     * @returns {EquippedArmor} The gauntlets equipped in the armor set.
+     * @returns The gauntlets equipped in the armor set. {@link EquippedArmor}.
      */
     public getGauntlets(): EquippedArmor {
         return this.gauntlets;
@@ -250,7 +265,7 @@ class ArmorSet {
     /**
      * @method setGauntletsData
      * @description Sets the gauntlets data in the armor set.
-     * @param gauntlets - The gauntlets data to set.
+     * @param gauntlets - The gauntlets data to set. {@link Armor}.
      */
     public setGauntletsData(gauntlets: Armor): void {
         this.gauntlets.data = gauntlets;
@@ -268,7 +283,7 @@ class ArmorSet {
     /**
      * @method setGauntlets
      * @description Sets the gauntlets in the armor set.
-     * @param gauntlets - The gauntlets to set.
+     * @param gauntlets - The gauntlets to set. {@link EquippedArmor}.
      */
     public setGauntlets(gauntlets: EquippedArmor): void {
         this.setGauntletsData(gauntlets.data);
@@ -278,7 +293,7 @@ class ArmorSet {
     /**
      * @method getLeggings
      * @description Gets the leggings equipped in the armor set.
-     * @returns {EquippedArmor} The leggings equipped in the armor set.
+     * @returns The leggings equipped in the armor set. {@link EquippedArmor}.
      */
     public getLeggings(): EquippedArmor {
         return this.leggings;
@@ -287,7 +302,7 @@ class ArmorSet {
     /**
      * @method setLeggingsData
      * @description Sets the leggings data in the armor set.
-     * @param leggings - The leggings data to set.
+     * @param leggings - The leggings data to set. {@link Armor}.
      */
     public setLeggingsData(leggings: Armor): void {
         this.leggings.data = leggings;
@@ -305,7 +320,7 @@ class ArmorSet {
     /**
      * @method setLeggings
      * @description Sets the leggings in the armor set.
-     * @param leggings - The leggings to set.
+     * @param leggings - The leggings to set. {@link EquippedArmor}.
      */
     public setLeggings(leggings: EquippedArmor): void {
         this.setLeggingsData(leggings.data);
@@ -317,7 +332,7 @@ class ArmorSet {
     /**
      * @method weight
      * @description Gets the total weight of the armor set.
-     * @returns {number} The total weight of the armor set.
+     * @returns The total weight of the armor set.
      */
     public weight(): number {
         return (
@@ -330,7 +345,7 @@ class ArmorSet {
 
     /**
      * @description Sums the defense values of an armor set for a given defense field.
-     * @param defenseField The defense field to sum the values for.
+     * @param defenseField The defense field to sum the values for. {@link DefenseMapKey}.
      * @returns The sum of the defense values for the given field.
      */
     public defense(defenseField: DefenseMapKey): number {
@@ -353,7 +368,7 @@ class ArmorSet {
 
     /**
      * @description Sums the resistance values of an armor set for a given resistance field.
-     * @param resistanceField The resistance field to sum the values for.
+     * @param resistanceField The resistance field to sum the values for. {@link ResistanceMapKey}.
      * @returns The sum of the resistance values for the given field.
      */
     public resistance(resistanceField: ResistanceMapKey): number {
@@ -411,7 +426,7 @@ class ArmorSet {
     /**
      * @method getModifierDisplays
      * @description Gets the ModifierDisplay components for the armor set.
-     * @returns {ModifierDisplay[]} The modifier displays for the armor set.
+     * @returns The {@link ModifierDisplay}s for the armor set.
      */
     public getModifierDisplays(): JSX.Element[] {
         let activeEffects: JSX.Element[] = [];
@@ -421,7 +436,7 @@ class ArmorSet {
             activeEffects.push(
                 <ModifierDisplay
                     description={modifier.Description}
-                    armorName={this.getHelmet().data.Name}
+                    equipmentName={this.getHelmet().data.Name}
                     isOddRow={isOddRow}
                 />,
             );
@@ -432,7 +447,7 @@ class ArmorSet {
             activeEffects.push(
                 <ModifierDisplay
                     description={`Increase Item Discovery by ${this.getHelmet().data.ItemDiscovery}`}
-                    armorName={this.getHelmet().data.Name}
+                    equipmentName={this.getHelmet().data.Name}
                     isOddRow={isOddRow}
                 />,
             );
@@ -443,7 +458,7 @@ class ArmorSet {
             activeEffects.push(
                 <ModifierDisplay
                     description={modifier.Description}
-                    armorName={this.getChestpiece().data.Name}
+                    equipmentName={this.getChestpiece().data.Name}
                     isOddRow={isOddRow}
                 />,
             );
@@ -454,7 +469,7 @@ class ArmorSet {
             activeEffects.push(
                 <ModifierDisplay
                     description={`Increase Item Discovery by ${this.getChestpiece().data.ItemDiscovery}`}
-                    armorName={this.getChestpiece().data.Name}
+                    equipmentName={this.getChestpiece().data.Name}
                     isOddRow={isOddRow}
                 />,
             );
@@ -465,7 +480,7 @@ class ArmorSet {
             activeEffects.push(
                 <ModifierDisplay
                     description={modifier.Description}
-                    armorName={this.getGauntlets().data.Name}
+                    equipmentName={this.getGauntlets().data.Name}
                     isOddRow={isOddRow}
                 />,
             );
@@ -476,7 +491,7 @@ class ArmorSet {
             activeEffects.push(
                 <ModifierDisplay
                     description={`Increase Item Discovery by ${this.getGauntlets().data.ItemDiscovery}`}
-                    armorName={this.getGauntlets().data.Name}
+                    equipmentName={this.getGauntlets().data.Name}
                     isOddRow={isOddRow}
                 />,
             );
@@ -487,7 +502,7 @@ class ArmorSet {
             activeEffects.push(
                 <ModifierDisplay
                     description={modifier.Description}
-                    armorName={this.getLeggings().data.Name}
+                    equipmentName={this.getLeggings().data.Name}
                     isOddRow={isOddRow}
                 />,
             );
@@ -498,7 +513,7 @@ class ArmorSet {
             activeEffects.push(
                 <ModifierDisplay
                     description={`Increase Item Discovery by ${this.getLeggings().data.ItemDiscovery}`}
-                    armorName={this.getLeggings().data.Name}
+                    equipmentName={this.getLeggings().data.Name}
                     isOddRow={isOddRow}
                 />,
             );
@@ -511,7 +526,7 @@ class ArmorSet {
     /**
      * @method activeEffects
      * @description Gets the active effects of the armor set.
-     * @returns {Modifier[]} The active effects of the armor set.
+     * @returns The active effects of the armor set. Array of {@link Modifier}s.
      */
     public activeEffects(): Modifier[] {
         let activeEffects: Modifier[] = [];
@@ -538,7 +553,7 @@ class ArmorSet {
     /**
      * @method attributeModifier
      * @description Gets the total attribute modifier of the armor set for a given attribute.
-     * @param attribute The attribute to get the modifier for.
+     * @param attribute The attribute to get the modifier for. {@link AttributeMapKey}.
      * @returns {number} The total attribute modifier of the armor set for the given attribute.
      */
     public attributeModifier(attribute: AttributeMapKey): number {
@@ -557,6 +572,12 @@ class ArmorSet {
         return modifierSum;
     }
 
+    /**
+     * @method thrustDefense
+     * @description Gets the total thrust defense of the armor set.
+     * @param physicalDefense The physical defense of the character.
+     * @returns {number} The total thrust defense of the armor set.
+     */
     public thrustDefense(physicalDefense: number): number {
         const helmet = this.getHelmet().data;
         const chestpiece = this.getChestpiece().data;
@@ -592,6 +613,12 @@ class ArmorSet {
         );
     }
 
+    /**
+     * @method slashDefense
+     * @description Gets the total slash defense of the armor set.
+     * @param physicalDefense The physical defense of the character.
+     * @returns {number} The total slash defense of the armor set.
+     */
     public slashDefense(physicalDefense: number): number {
         const helmet = this.getHelmet().data;
         const chestpiece = this.getChestpiece().data;
@@ -627,6 +654,12 @@ class ArmorSet {
         );
     }
 
+    /**
+     * @method strikeDefense
+     * @description Gets the total strike defense of the armor set.
+     * @param physicalDefense The physical defense of the character.
+     * @returns {number} The total strike defense of the armor set.
+     */
     public strikeDefense(physicalDefense: number): number {
         const helmet = this.getHelmet().data;
         const chestpiece = this.getChestpiece().data;

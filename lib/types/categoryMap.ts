@@ -1,5 +1,7 @@
-// This type is used to represent a map of weapon categories to values.
-
+/**
+ * @type CategoryMapKey
+ * @description The key type for the {@link AttributeMapKey}.
+ */
 export type CategoryMapKey =
     | "Fists"
     | "Hands"
@@ -32,6 +34,11 @@ export type CategoryMapKey =
     | "Greatshield"
     | "Torch";
 
+/**
+ * @type CategoryMap
+ * @description A map of weapon categories to values.
+ * @keys {@link CategoryMapKey}
+ */
 type CategoryMap<T> = {
     [K in CategoryMapKey]: T;
 };

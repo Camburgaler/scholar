@@ -2,8 +2,12 @@ import StatDisplay from "@/lib/components/characterInfo/StatDisplay";
 import { useEquippedArmorSet } from "@/lib/reducers/equippedArmorSet";
 import { useEquippedRings } from "@/lib/reducers/equippedRings";
 import { ringsModifierDisplays } from "@/lib/scripts/equippedRings";
+import { JSX } from "react/jsx-runtime";
 
-export default function RightColumn() {
+/**
+ * @description RightColumn is a component that displays the right column of the character info page. It displays certain stats and the character's active effects.
+ */
+export default function RightColumn(): JSX.Element {
     // Context
     const equippedArmor = useEquippedArmorSet();
     const equippedRings = useEquippedRings();

@@ -3,8 +3,14 @@
 import CharacterInfo from "@/lib/components/CharacterInfo";
 import { EquippedRingsProvider } from "@/lib/reducers/equippedRings";
 import { VirtualAttributesProvider } from "@/lib/reducers/virtualAttributes";
+import { JSX } from "react/jsx-runtime";
 
-export default function Home() {
+/**
+ * Home
+ * @description This is the top-level component of the app.
+ * @returns {JSX.Element}
+ */
+export default function Home(): JSX.Element {
     return (
         // page container
         <div className="flex flex-col flex-1 items-center justify-center font-sans">

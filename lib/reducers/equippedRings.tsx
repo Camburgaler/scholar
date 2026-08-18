@@ -3,6 +3,12 @@ import EquippedRings from "@/lib/interfaces/equippedRings";
 import Ring from "@/lib/interfaces/ring";
 import { ActionDispatch, createContext, useContext, useReducer } from "react";
 
+/**
+ * @type EquippedRingsAction
+ * @description The action type for the equipped rings reducer.
+ * @member slot The field of the equipped rings to set. Key of {@link EquippedRings}.
+ * @member ring The {@link Ring} to set the field to.
+ */
 export type EquippedRingsAction = {
     slot: keyof EquippedRings;
     ring: Ring;

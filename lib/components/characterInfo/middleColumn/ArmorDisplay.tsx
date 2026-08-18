@@ -6,12 +6,22 @@ import {
 } from "@/lib/reducers/equippedArmorSet";
 import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
 import { filterArmor, getArmorByName } from "@/lib/scripts/armor";
-import { useEffect } from "react";
+import { JSX, useEffect } from "react";
 
 // TODO: add a lock toggle to this similar to the one for the starting class
 //    the lock would control how the armor optimization behaves
 //    (e.g. if the armor is locked, the optimization should not change it)
-export function ArmorDisplay(props: { label: string; isOddRow?: boolean }) {
+
+/**
+ * ArmorDisplay
+ * @description A component that displays a piece of the equipped armor set.
+ * @prop label: The name of the armor to display.
+ * @prop isOddRow: Whether the row is odd or even. Optional.
+ */
+export function ArmorDisplay(props: {
+    label: string;
+    isOddRow?: boolean;
+}): JSX.Element {
     // Props
     const { label, isOddRow } = props;
 

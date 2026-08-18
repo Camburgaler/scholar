@@ -18,13 +18,21 @@ import { calculateStatDisplayValue } from "@/lib/scripts/statCalculation";
 import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
 import { useCallback, useEffect, useState } from "react";
 import { Lock, Trash, Unlock } from "react-bootstrap-icons";
+import { JSX } from "react/jsx-runtime";
 
+// CONSTANTS
+
+// This is the highest level for which the PlayerLevelUpSouls data is available
 const MAX_PLAYER_LEVEL_UP_SOULS_ID = 850;
+// This is the highest level that the character can reach
 const MAX_PLAYER_LEVEL = 838;
 
-export default function LeftColumn() {
+/**
+ * LeftColumn
+ * @description The left column of the character info page. Displays the character's attributes, class, souls, and spell list.
+ */
+export default function LeftColumn(): JSX.Element {
     // CONTEXT
-
     const focusedAttribute = useFocusedAttribute();
     const setFocusedAttribute = useFocusedAttributeDispatch();
     const virtualAttributes = useVirtualAttributes();
@@ -87,6 +95,7 @@ export default function LeftColumn() {
         [desiredAttributes, equippedArmorSet, equippedRings],
     );
 
+    // Calculate final level based on delta
     const calculateFinalLevel = useCallback(
         (startingClass: Class): number => {
             return startingClass.Level + delta(startingClass.Attributes);
@@ -183,6 +192,11 @@ export default function LeftColumn() {
 
     // HELPER FUNCTIONS
 
+    /**
+     * Returns the number of spell usages for the given spell.
+     * @param spell The {@link Spell} to get the number of spell usages for.
+     * @return {number} The number of spell usages for the given {@link Spell}.
+     */
     function getSpellUsages(spell: Spell): number {
         const attunementBreakpoints: number[] = [
             0, 15, 26, 32, 38, 43, 49, 58, 79, 94,
@@ -194,6 +208,11 @@ export default function LeftColumn() {
         return spell.UsageCountCurve[index];
     }
 
+    /**
+     * Returns the display name for the given spell.
+     * @param spell The {@link Spell} to get the display name for.
+     * @return The display name for the given {@link Spell}.
+     */
     function getSpellDisplayName(spell: Spell): string {
         return `${spell.Name} x ${getSpellUsages(spell)}
                                 ${
@@ -203,31 +222,25 @@ export default function LeftColumn() {
                                 }`;
     }
 
+    // Get effective class based on class lock
     const effectiveClass = useCallback((): Class => {
         return classLocked ? getClassByName(selectedClass)! : optimalClass;
     }, [classLocked, selectedClass, optimalClass]);
 
     // EFFECTS
 
-    /**
-     * Calculates the optimal class when the sorted classes change.
-     */
+    // Calculates the optimal class when the sorted classes change.
     useEffect(() => {
         // calculate best class
         setOptimalClass(sorted[0]);
     }, [sorted]);
 
-    /**
-     * Sorts the classes by ascending delta when the final stats change.
-     */
+    // Sorts the classes when the final stats change.
     useEffect(() => {
-        // sort classes
         setSorted(sortClasses());
     }, [finalAttributes, sortClasses]);
 
-    /**
-     * Updates the final stats and virtual stats when the desired stats, effective class, or equipped armor set change.
-     */
+    // Updates the final stats and virtual stats when the desired stats, effective class, or equipped armor set change.
     useEffect(() => {
         // calculate final stats
         let tempFinal: AttributeMap<number> = {
@@ -274,9 +287,7 @@ export default function LeftColumn() {
         );
     }, [desiredAttributes, equippedArmorSet, effectiveClass, equippedRings]);
 
-    /**
-     * Updates the souls to next level and total soul cost when the final attributes change.
-     */
+    // Updates the souls to next level and total soul cost when the final attributes change.
     useEffect(() => {
         setSoulsToNextLevel(calculateSoulsToNextLevel(effectiveClass()));
         setTotalSoulCost(calculateTotalSoulCost(effectiveClass()));
@@ -287,18 +298,14 @@ export default function LeftColumn() {
         finalAttributes,
     ]);
 
-    /**
-     * Sets selected class if classLocked is false
-     */
+    // Sets selected class if classLocked is false
     useEffect(() => {
         if (!classLocked) {
             setSelectedClass(optimalClass.Name);
         }
     }, [optimalClass, classLocked]);
 
-    /**
-     * Updates the spell slots when the virtual attributes change.
-     */
+    // Updates the spell slots when the virtual attributes change.
     useEffect(() => {
         setSpellSlots(
             calculateStatDisplayValue(
@@ -310,9 +317,7 @@ export default function LeftColumn() {
         );
     }, [virtualAttributes, equippedArmorSet, equippedRings]);
 
-    /**
-     * Updates the consumed spell slots when the spell slots change.
-     */
+    // Updates the consumed spell slots when the spell slots change.
     useEffect(() => {
         if (consumedSpellSlots > spellSlots) {
             setEquippedSpells(
@@ -321,9 +326,7 @@ export default function LeftColumn() {
         }
     }, [spellSlots]);
 
-    /**
-     * Updates the consumed spell slots when the equipped spells change.
-     */
+    // Updates the consumed spell slots when the equipped spells change.
     useEffect(() => {
         let consumedSpellSlots = 0;
 

@@ -1,5 +1,7 @@
-// This type is used to represent a map of weapon infusions to values.
-
+/**
+ * @type InfusionMapKey
+ * @description The key type for the {@link InfusionMap}.
+ */
 export type InfusionMapKey =
     | "Basic"
     | "Magic"
@@ -12,6 +14,10 @@ export type InfusionMapKey =
     | "Enchanted"
     | "Mundane";
 
+/**
+ * @type InfusionMap
+ * @description A map from a {@link InfusionMapKey} to a value of type T.
+ */
 type InfusionMap<T> = {
     [K in InfusionMapKey]?: T;
 };

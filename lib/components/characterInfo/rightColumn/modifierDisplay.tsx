@@ -1,10 +1,19 @@
+import { JSX } from "react/jsx-runtime";
+
+/**
+ * ModifierDisplay
+ * @description A component that displays a modifier description and equipment name.
+ * @prop description: The description of the modifier.
+ * @prop equipmentName: The name of the equipment that the modifier is applied to.
+ * @prop isOddRow: Whether the row is odd or even. Optional.
+ */
 export default function ModifierDisplay(props: {
     description: string;
-    armorName: string;
+    equipmentName: string;
     isOddRow?: boolean;
-}) {
-    const { description, armorName, isOddRow } = props;
-    const displayValue = `${description} (${armorName})`;
+}): JSX.Element {
+    const { description, equipmentName, isOddRow } = props;
+    const displayValue = `${description} (${equipmentName})`;
 
     return (
         <p

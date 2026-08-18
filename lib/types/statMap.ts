@@ -1,11 +1,9 @@
-export type WeaponEquipSlots =
-    | "LeftHandWeaponPrimary"
-    | "LeftHandWeaponSecondary"
-    | "LeftHandWeaponTertiary"
-    | "RightHandWeaponPrimary"
-    | "RightHandWeaponSecondary"
-    | "RightHandWeaponTertiary";
+import Modifier from "@/lib/interfaces/modifier";
 
+/**
+ * @type StatMapKey
+ * @description The key type for the {@link StatMap}.
+ */
 export type StatMapKey =
     | "MaximumHP"
     | "MaximumStamina"
@@ -32,6 +30,7 @@ export type StatMapKey =
     | "Agility"
     | "Poise";
 
+// An array of all stat map keys
 export const StatMapKeys: StatMapKey[] = [
     "MaximumHP",
     "MaximumStamina",
@@ -59,6 +58,7 @@ export const StatMapKeys: StatMapKey[] = [
     "Poise",
 ];
 
+// A map of the stat map keys to a boolean value that indicates whether the stat is a defense stat or not
 export const StatIsDefenseOrResistance: Map<StatMapKey, boolean> = new Map<
     StatMapKey,
     boolean
@@ -74,6 +74,7 @@ export const StatIsDefenseOrResistance: Map<StatMapKey, boolean> = new Map<
     ["ResistanceCurse", true],
 ]);
 
+// A map of the stat map keys to the name of the stat
 export const StatMapKeyToStatNameMap: Map<StatMapKey, string> = new Map<
     StatMapKey,
     string
@@ -110,6 +111,9 @@ export const StatMapKeyToStatNameMap: Map<StatMapKey, string> = new Map<
     ["ResistanceCurse", "Resistance (Curse)"],
 ]);
 
+/**
+ * A map of {@link Modifier} targets to their corresponding {@link StatMapKey}.
+ */
 export const ModifierTargetToStatMapKey: Map<string, StatMapKey> = new Map<
     string,
     StatMapKey
@@ -130,6 +134,10 @@ export const ModifierTargetToStatMapKey: Map<string, StatMapKey> = new Map<
     ["Curse Defense", "ResistanceCurse"],
 ]);
 
+/**
+ * @type StatMap
+ * @description A map from a {@link StatMapKey} to a value of type T.
+ */
 type StatMap<T> = {
     [key in StatMapKey]: T;
 };

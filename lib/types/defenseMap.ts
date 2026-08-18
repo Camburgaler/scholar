@@ -1,5 +1,7 @@
-// This type is used to represent a map of armor defenses to values.
-
+/**
+ * @type DefenseMapKey
+ * @description The key type for the {@link DefenseMap}.
+ */
 export type DefenseMapKey =
     | "Slash"
     | "Thrust"
@@ -10,6 +12,7 @@ export type DefenseMapKey =
     | "Fire"
     | "Dark";
 
+// The keys of the DefenseMap
 export const DefenseMapKeys: DefenseMapKey[] = [
     "Slash",
     "Thrust",
@@ -21,6 +24,10 @@ export const DefenseMapKeys: DefenseMapKey[] = [
     "Dark",
 ];
 
+/**
+ * @type DefenseMap
+ * @description A map from a {@link DefenseMapKey} to a value of type T.
+ */
 type DefenseMap<T> = {
     [K in DefenseMapKey]: T;
 };

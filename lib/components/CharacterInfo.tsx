@@ -1,10 +1,14 @@
 import LeftColumn from "@/lib/components/characterInfo/LeftColumn";
 import MiddleColumn from "@/lib/components/characterInfo/MiddleColumn";
 import RightColumn from "@/lib/components/characterInfo/RightColumn";
+import { EquippedRingsProvider } from "@/lib/reducers/equippedRings";
 import { FocusedAttributeProvider } from "@/lib/reducers/focusedAttribute";
-import { EquippedRingsProvider } from "../reducers/equippedRings";
+import { JSX } from "react/jsx-runtime";
 
-export default function CharacterInfo() {
+/**
+ * CharacterInfo is one of the three main components of the application. It displays the character's attributes, stats, equipment, and spells.
+ */
+export default function CharacterInfo(): JSX.Element {
     return (
         <div className="flex flex-col w-full items-center justify-center align-center">
             {/* Header */}

@@ -13,12 +13,17 @@ import {
 import { useEffect, useState } from "react";
 import { JSX } from "react/jsx-runtime";
 
+// StatDisplayKey is a type that represents a key for a stat display.
 export type StatDisplayKey =
     | StatMapKey
     | "DefenseStrike"
     | "DefenseSlash"
     | "DefenseThrust";
 
+/**
+ * Maps a display key to a stat map key.
+ * @param displayKey {@link StatDisplayKey}
+ */
 export function mapDisplayKeyToStatMapKey(
     displayKey: StatDisplayKey,
 ): StatMapKey {
@@ -28,6 +33,10 @@ export function mapDisplayKeyToStatMapKey(
     return displayKey as StatMapKey;
 }
 
+/**
+ * Maps a display key to an armor defense field.
+ * @param displayKey {@link StatDisplayKey}
+ */
 export function mapDisplayKeyToArmorDefenseField(
     displayKey: StatDisplayKey,
 ): DefenseMapKey {
@@ -55,10 +64,18 @@ export function mapDisplayKeyToArmorDefenseField(
     }
 }
 
+/**
+ * Checks if a display key is a stat map key.
+ * @param statDisplayKey {@link StatDisplayKey}
+ */
 function statDisplayKeyIsStatMapKey(statDisplayKey: StatDisplayKey): boolean {
     return StatMapKeys.includes(statDisplayKey as StatMapKey);
 }
 
+/**
+ * Maps a display key to a label.
+ * @param statDisplayKey {@link StatDisplayKey}
+ */
 function mapStatDisplayKeyToLabel(statDisplayKey: StatDisplayKey): string {
     if (statDisplayKeyIsStatMapKey(statDisplayKey)) {
         return StatMapKeyToStatNameMap.get(statDisplayKey as StatMapKey)!;
@@ -79,9 +96,8 @@ function mapStatDisplayKeyToLabel(statDisplayKey: StatDisplayKey): string {
 /**
  * StatDisplay is a component that displays a stat and its value.
  *
- * @prop {string} statMapKey - The key of the stat map that contains the stat value.
- * @prop {string} displayValue - The value of the stat.
- * @prop {boolean} isOddRow - Whether the row is odd or not. Optional.
+ * @prop statDisplayKey: The key of the stat to display. {@link StatDisplayKey}
+ * @prop isOddRow: Whether the row is odd or not. Optional.
  **/
 export default function StatDisplay(props: {
     statDisplayKey: StatDisplayKey;

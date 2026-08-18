@@ -1,10 +1,15 @@
+import ModifierDisplay from "@/lib/components/characterInfo/rightColumn/modifierDisplay";
 import EquippedRings from "@/lib/interfaces/equippedRings";
 import Modifier from "@/lib/interfaces/modifier";
 import { AttributeMapKey } from "@/lib/types/attributeMap";
 import { JSX } from "react/jsx-runtime";
-import ModifierDisplay from "../components/characterInfo/rightColumn/modifierDisplay";
 
-export function ringsActiveEffects(rings: EquippedRings) {
+/**
+ * @description Returns the active effects of the rings
+ * @param rings The equipped rings. {@link EquippedRings}
+ * @returns The active effects of the rings. Array of {@link Modifier}
+ */
+export function ringsActiveEffects(rings: EquippedRings): Modifier[] {
     return [
         ...rings[0].Modifiers,
         ...rings[1].Modifiers,
@@ -13,6 +18,12 @@ export function ringsActiveEffects(rings: EquippedRings) {
     ];
 }
 
+/**
+ * @description Returns the attribute modifiers of the rings
+ * @param rings The equipped rings. {@link EquippedRings}
+ * @param attribute The attribute to get the modifiers for. {@link AttributeMapKey}
+ * @returns The attribute modifiers of the rings.
+ */
 export function ringsAttributeModifiers(
     rings: EquippedRings,
     attribute: AttributeMapKey,
@@ -31,7 +42,12 @@ export function ringsAttributeModifiers(
     return total;
 }
 
-export function ringsModifierDisplays(rings: EquippedRings) {
+/**
+ * @description Returns the modifier displays of the rings
+ * @param rings The equipped rings. {@link EquippedRings}
+ * @returns The modifier displays of the rings. Array of {@link ModifierDisplay}
+ */
+export function ringsModifierDisplays(rings: EquippedRings): JSX.Element[] {
     let activeEffects: JSX.Element[] = [];
     let isOddRow = true;
 
@@ -39,7 +55,7 @@ export function ringsModifierDisplays(rings: EquippedRings) {
         activeEffects.push(
             <ModifierDisplay
                 description={modifier.Description}
-                armorName={rings[0].Name}
+                equipmentName={rings[0].Name}
                 isOddRow={isOddRow}
             />,
         );
@@ -50,7 +66,7 @@ export function ringsModifierDisplays(rings: EquippedRings) {
         activeEffects.push(
             <ModifierDisplay
                 description={`Increase Item Discovery by ${rings[0].ItemDiscovery}`}
-                armorName={rings[0].Name}
+                equipmentName={rings[0].Name}
                 isOddRow={isOddRow}
             />,
         );
@@ -61,7 +77,7 @@ export function ringsModifierDisplays(rings: EquippedRings) {
         activeEffects.push(
             <ModifierDisplay
                 description={modifier.Description}
-                armorName={rings[1].Name}
+                equipmentName={rings[1].Name}
                 isOddRow={isOddRow}
             />,
         );
@@ -72,7 +88,7 @@ export function ringsModifierDisplays(rings: EquippedRings) {
         activeEffects.push(
             <ModifierDisplay
                 description={`Increase Item Discovery by ${rings[1].ItemDiscovery}`}
-                armorName={rings[1].Name}
+                equipmentName={rings[1].Name}
                 isOddRow={isOddRow}
             />,
         );
@@ -83,7 +99,7 @@ export function ringsModifierDisplays(rings: EquippedRings) {
         activeEffects.push(
             <ModifierDisplay
                 description={modifier.Description}
-                armorName={rings[2].Name}
+                equipmentName={rings[2].Name}
                 isOddRow={isOddRow}
             />,
         );
@@ -94,7 +110,7 @@ export function ringsModifierDisplays(rings: EquippedRings) {
         activeEffects.push(
             <ModifierDisplay
                 description={`Increase Item Discovery by ${rings[2].ItemDiscovery}`}
-                armorName={rings[2].Name}
+                equipmentName={rings[2].Name}
                 isOddRow={isOddRow}
             />,
         );
@@ -105,7 +121,7 @@ export function ringsModifierDisplays(rings: EquippedRings) {
         activeEffects.push(
             <ModifierDisplay
                 description={modifier.Description}
-                armorName={rings[3].Name}
+                equipmentName={rings[3].Name}
                 isOddRow={isOddRow}
             />,
         );
@@ -116,7 +132,7 @@ export function ringsModifierDisplays(rings: EquippedRings) {
         activeEffects.push(
             <ModifierDisplay
                 description={`Increase Item Discovery by ${rings[3].ItemDiscovery}`}
-                armorName={rings[3].Name}
+                equipmentName={rings[3].Name}
                 isOddRow={isOddRow}
             />,
         );
@@ -126,7 +142,12 @@ export function ringsModifierDisplays(rings: EquippedRings) {
     return activeEffects;
 }
 
-export function ringsWeight(rings: EquippedRings) {
+/**
+ * @description Returns the weight of the rings
+ * @param rings The equipped rings. {@link EquippedRings}
+ * @returns The weight of the rings.
+ */
+export function ringsWeight(rings: EquippedRings): number {
     return (
         rings[0].Weight + rings[1].Weight + rings[2].Weight + rings[3].Weight
     );

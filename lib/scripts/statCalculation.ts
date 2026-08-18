@@ -19,8 +19,15 @@ import {
     StatMapKey,
 } from "@/lib/types/statMap";
 
+/**
+ * @type CurveMap
+ * @description A map of attack stat breakpoints to values.
+ * @member breakpoint The attack stat breakpoint.
+ * @member value The attack stat value.
+ */
 type CurveMap = { breakpoint: number; value: number };
 
+// A common stat curve for certain attack stats
 const ATTACK_STAT_CURVE: CurveMap[] = [
     // 0	50
     { breakpoint: 0, value: 0 },
@@ -192,6 +199,7 @@ const ATTACK_STAT_CURVE: CurveMap[] = [
     { breakpoint: 396, value: 150 },
 ];
 
+// A common stat curve for certain absorption stats
 const ABSORPTION_STAT_CURVE: CurveMap[] = [
     { breakpoint: 0, value: 0 },
     // 2	6
@@ -356,13 +364,12 @@ const ABSORPTION_STAT_CURVE: CurveMap[] = [
     { breakpoint: 99, value: 200 },
 ];
 
-// calculatePoise will calculate the Poise stat
-//
-// @param {number} adaptability - The Adaptability attribute value
-//
-// @param {number} endurance - The Endurance attribute value
-//
-// @return {number} The amount to add to the base value for Poise
+/**
+ * calculatePoise will calculate the Poise stat
+ * @param adaptability - The Adaptability attribute value
+ * @param endurance - The Endurance attribute value
+ * @return The amount to add to the base value for Poise
+ */
 function calculatePoise(adaptability: number, endurance: number): number {
     let effectiveAttributeValue = adaptability;
     let poise = 0;
@@ -388,15 +395,13 @@ function calculatePoise(adaptability: number, endurance: number): number {
     return poise;
 }
 
-// calculateCastingSpeed will calculate the Spell Casting Speed stat
-//
-// @param {number} attunement - The Attunement attribute value
-//
-// @param {number} faith - The Faith attribute value
-//
-// @param {number} intelligence - The Intelligence attribute value
-//
-// @return {number} The amount to add to the base value for Spell Casting Speed
+/**
+ * calculateCastingSpeed will calculate the Spell Casting Speed stat
+ * @param attunement - The Attunement attribute value
+ * @param faith - The Faith attribute value
+ * @param intelligence - The Intelligence attribute value
+ * @return The amount to add to the base value for Spell Casting Speed
+ */
 function calculateCastingSpeed(
     attunement: number,
     faith: number,
@@ -425,13 +430,12 @@ function calculateCastingSpeed(
     return castingSpeed;
 }
 
-// calculateAgility will calculate the Agility stat
-//
-// @param {number} adaptability - The Adaptability attribute value
-//
-// @param {number} attunement - The Attunement attribute value
-//
-// @return {number} The amount to add to the base value for Agility
+/**
+ * calculateAgility will calculate the Agility stat
+ * @param adaptability - The Adaptability attribute value
+ * @param attunement - The Attunement attribute value
+ * @return The amount to add to the base value for Agility
+ */
 function calculateAgility(adaptability: number, attunement: number): number {
     // Agility is hard capped at 120
 
@@ -459,13 +463,12 @@ function calculateAgility(adaptability: number, attunement: number): number {
     return Math.max(0, agility - baseValue);
 }
 
-// calculateFireAttackPower will calculate the Fire Attack Power stat
-//
-// @param {number} intelligence - The Intelligence attribute value
-//
-// @param {number} faith - The Faith attribute value
-//
-// @return {number} The amount to add to the base value for Fire Attack Power
+/**
+ * calculateFireAttackPower will calculate the Fire Attack Power stat
+ * @param intelligence The Intelligence attribute value
+ * @param faith The Faith attribute value
+ * @returns The amount to add to the base value for Fire Attack Power
+ */
 function calculateFireAttackPower(intelligence: number, faith: number): number {
     // Increases once (according to the stat curve below) with any 2 points in Intelligence and Faith
 
@@ -512,13 +515,12 @@ function calculateFireAttackPower(intelligence: number, faith: number): number {
     return statCurve[attributeScore];
 }
 
-// calculateDarkAttackPower will calculate the Dark Attack Power stat
-//
-// @param {number} intelligence - The Intelligence attribute value
-//
-// @param {number} faith - The Faith attribute value
-//
-// @return {number} The amount to add to the base value for Dark Attack Power
+/**
+ * calculateDarkAttackPower will calculate the Dark Attack Power stat
+ * @param intelligence The Intelligence attribute value
+ * @param faith The Faith attribute value
+ * @returns The amount to add to the base value for Dark Attack Power
+ */
 function calculateDarkAttackPower(intelligence: number, faith: number): number {
     // Scales with the lowest of Intelligence and Faith according to the stat curve below
 
@@ -561,13 +563,12 @@ function calculateDarkAttackPower(intelligence: number, faith: number): number {
     return statCurve[attributeScore];
 }
 
-// calculateCommonAttackPower will calculate certain Attack Power stats
-//
-// @param {number} primary - The primary scaling attribute's value
-//
-// @param {number} secondary - The secondary scaling attribute's value
-//
-// @return {number} The amount to add to the base value for Attack Power
+/**
+ * calculateCommonAttackPower will calculate the Attack Power stat
+ * @param primary The Primary attribute value
+ * @param secondary The Secondary attribute value
+ * @returns The amount to add to the base value for Attack Power
+ */
 function calculateCommonAttackPower(
     primary: number,
     secondary: number,
@@ -585,17 +586,14 @@ function calculateCommonAttackPower(
     );
 }
 
-// calculatePhysicalDefense will calculate the Physical Defense stat
-//
-// @param {number} endurance - The Endurance attribute value
-//
-// @param {number} vitality - The Vitality attribute value
-//
-// @param {number} strength - The Strength attribute value
-//
-// @param {number} dexterity - The Dexterity attribute value
-//
-// @return {number} The amount to add to the base value for Physical Defense
+/**
+ * calculatePhysicalDefense will calculate the Physical Defense stat
+ * @param endurance The Endurance attribute value
+ * @param vitality The Vitality attribute value
+ * @param strength The Strength attribute value
+ * @param dexterity The Dexterity attribute value
+ * @returns The amount to add to the base value for Physical Defense
+ */
 function calculatePhysicalDefense(
     endurance: number,
     vitality: number,
@@ -749,11 +747,11 @@ function calculatePhysicalDefense(
     );
 }
 
-// calculateCommonAbsorption will calculate certain Absorption stats
-//
-// @param {number} ...attributes - The attribute values
-//
-// @return {number} The amount to add to the base value for Absorption
+/**
+ * calculateCommonAbsorption will calculate the Absorption stat
+ * @param attributes The attribute values
+ * @returns The amount to add to the base value for Absorption
+ */
 function calculateCommonAbsorption(...attributes: number[]): number {
     // The points are summed and checked against the common stat curve
     // The breakpoints are scaled by the number of attributes
@@ -771,13 +769,12 @@ function calculateCommonAbsorption(...attributes: number[]): number {
     );
 }
 
-// calculateCommonResistance will calculate the Resistance stats
-//
-// @param {number} primary - The primary scaling attribute's value
-//
-// @param {number} secondary - The secondary scaling attribute's value
-//
-// @return {number} The amount to add to the base value for Resistance
+/**
+ * calculateCommonResistance will calculate the Resistance stat
+ * @param primary The Primary attribute value
+ * @param secondary The Secondary attribute value
+ * @returns The amount to add to the base value for Resistance
+ */
 function calculateCommonResistance(primary: number, secondary: number): number {
     // Scales with two attributes
     // Every fourth secondary attribute value will increase Reistance one tick, three out of four primary attribute values will increase Resistance one tick
@@ -805,12 +802,19 @@ function calculateCommonResistance(primary: number, secondary: number): number {
     return resistance;
 }
 
+/**
+ * calculateStatFromAttributes will calculate a stat's value based on the attributes
+ * @param statId The id of the stat to calculate. {@link StatMapKey}
+ * @param attributes The attributes to calculate the stat from. {@link AttributeMap<number>}
+ * @returns The value of the stat
+ */
 export function calculateStatFromAttributes(
     statId: StatMapKey,
     attributes: AttributeMap<number>,
 ): number {
     let statValue = BaseStats[statId];
 
+    // Certain stats need custom calculation
     switch (statId) {
         case "Poise":
             return (
@@ -927,6 +931,7 @@ export function calculateStatFromAttributes(
             break;
     }
 
+    // Other stats are scaled by attributes
     for (const [key, value] of Object.entries(AttributeToStatMap)) {
         const isEffective = value[statId];
 
@@ -953,6 +958,14 @@ export function calculateStatFromAttributes(
     return statValue;
 }
 
+/**
+ * calculateStatDisplayValue will calculate a stat's value based on the attributes, armor, and rings
+ * @param statDisplayKey The display key of the stat to calculate. {@link StatDisplayKey}
+ * @param attributes The attributes to calculate the stat from. {@link AttributeMap<number>}
+ * @param equippedArmor The armor to calculate the stat from. {@link ArmorSet}
+ * @param equippedRings The rings to calculate the stat from. {@link EquippedRings}
+ * @returns The display value of the stat
+ */
 export function calculateStatDisplayValue(
     statDisplayKey: StatDisplayKey,
     attributes: AttributeMap<number>,

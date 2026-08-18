@@ -10,13 +10,22 @@ import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
 import { ringsWeight } from "@/lib/scripts/equippedRings";
 import { calculateStatDisplayValue } from "@/lib/scripts/statCalculation";
 import { StatMapKeyToStatNameMap } from "@/lib/types/statMap";
+import { JSX } from "react/jsx-runtime";
 
-function getEquipLoadPercentFromRatio(ratio: string) {
+/**
+ * Converts a ratio to a percentage
+ * @param ratio The ratio to convert
+ * @returns The percentage
+ */
+function getEquipLoadPercentFromRatio(ratio: string): number {
     const [numerator, denominator] = ratio.split("/").map(Number);
     return (numerator / denominator) * 100;
 }
 
-export default function MiddleColumn() {
+/**
+ * @description The middle column of the character info page. Displays certain stats and the character's equipment.
+ */
+export default function MiddleColumn(): JSX.Element {
     // Context
     const virtualAttributes = useVirtualAttributes();
     const equippedArmor = useEquippedArmorSet();

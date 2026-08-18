@@ -4,11 +4,18 @@ import {
     useEquippedRings,
     useEquippedRingsDispatch,
 } from "@/lib/reducers/equippedRings";
+import { JSX } from "react/jsx-runtime";
 
+/**
+ * RingDisplay
+ * @description A component that displays one of the character's rings
+ * @prop slot: The slot of the ring to display. Key of {@link EquippedRings}.
+ * @prop isRightDisplay: Whether the display is on the right side of the character info. Optional.
+ */
 export default function RingDisplay(props: {
     slot: keyof EquippedRings;
     isRightDisplay?: boolean;
-}) {
+}): JSX.Element {
     // Props
     const { slot, isRightDisplay } = props;
 

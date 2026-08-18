@@ -1,5 +1,6 @@
 import "@/app/globals.css";
 import type { Metadata } from "next";
+import { JSX } from "react/jsx-runtime";
 import { version } from "../package.json";
 
 export const metadata: Metadata = {
@@ -9,11 +10,17 @@ export const metadata: Metadata = {
         "A build optimizer for Dark Souls II: Scholar of the First Sin",
 };
 
+/**
+ * Root layout
+ *
+ * @param {React.ReactNode} children
+ * @returns {JSX.Element}
+ */
 export default function RootLayout({
     children,
 }: Readonly<{
     children: React.ReactNode;
-}>) {
+}>): JSX.Element {
     return (
         <html lang="en" className="h-full antialiased box-border">
             <body className="min-h-full flex flex-col">
