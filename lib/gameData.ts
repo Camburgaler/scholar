@@ -98,7 +98,20 @@ export const Spells: Spell[] = spells.sort((a, b) =>
 
 // Weapons is a list of weapons
 // TODO: Sort
-export const Weapons: Weapon[] = weapons;
+export const Weapons: Weapon[] = weapons.sort((a, b) =>
+    // Sort by name
+    // "Fists" is always first
+    // "Fist (Vanquisher's Seal)" is always second
+    a.Name === "Fists"
+        ? -1
+        : b.Name === "Fists"
+          ? 1
+          : a.Name === "Fist (Vanquisher's Seal)"
+            ? -1
+            : b.Name === "Fist (Vanquisher's Seal)"
+              ? 1
+              : a.Name.localeCompare(b.Name),
+);
 
 // BaseStats is a map of stats to their respective values before scaling
 export const BaseStats: StatMap<number> = baseStats;

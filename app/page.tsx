@@ -31,7 +31,6 @@ export default function Home(): JSX.Element {
                         </div>
                         <hr />
 
-                        {/* Three columns, each about 30% of the page's width */}
                         <div className="app">
                             {/* left column with armor info */}
                             <article className="flex col-span-2 border rounded p-1 h-full">

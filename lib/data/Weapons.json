@@ -1,1 +1,5234 @@
-[]
+[
+    {
+        "Name": "Dagger",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 60,
+        "RepairCost": 430,
+        "Requirements": {
+            "Strength": 2,
+            "Dexterity": 6,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Dagger",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Bandit's Knife",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 60,
+        "RepairCost": 590,
+        "Requirements": {
+            "Strength": 3,
+            "Dexterity": 11,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Dagger",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Mytha's Bent Blade",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 40,
+        "RepairCost": 1500,
+        "Requirements": {
+            "Strength": 5,
+            "Dexterity": 20,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Dagger",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Shadow Dagger",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 60,
+        "RepairCost": 600,
+        "Requirements": {
+            "Strength": 4,
+            "Dexterity": 16,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Dagger",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Thief Dagger",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 30,
+        "RepairCost": 580,
+        "Requirements": {
+            "Strength": 2,
+            "Dexterity": 7,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Dagger",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Broken Thief Sword",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 30,
+        "RepairCost": 590,
+        "Requirements": {
+            "Strength": 9,
+            "Dexterity": 5,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Dagger",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Parrying Dagger",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 60,
+        "RepairCost": 570,
+        "Requirements": {
+            "Strength": 4,
+            "Dexterity": 9,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Dagger",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Manikin Knife",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 80,
+        "RepairCost": 1090,
+        "Requirements": {
+            "Strength": 6,
+            "Dexterity": 14,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Dagger",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Royal Dirk",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 90,
+        "RepairCost": 1090,
+        "Requirements": {
+            "Strength": 11,
+            "Dexterity": 15,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Dagger",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Blue Dagger",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 60,
+        "RepairCost": 1080,
+        "Requirements": {
+            "Strength": 6,
+            "Dexterity": 14,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Dagger",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Umbral Dagger",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 30,
+        "RepairCost": 1070,
+        "Requirements": {
+            "Strength": 12,
+            "Dexterity": 20,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Dagger",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Retainer's Short Sword",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 30,
+        "RepairCost": 590,
+        "Requirements": {
+            "Strength": 5,
+            "Dexterity": 15,
+            "Intelligence": 19,
+            "Faith": 0
+        },
+        "Category": "Dagger",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Broken Straight Sword",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 40,
+        "RepairCost": 275,
+        "Requirements": {
+            "Strength": 2,
+            "Dexterity": 3,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Straight Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Shortsword",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 60,
+        "RepairCost": 695,
+        "Requirements": {
+            "Strength": 7,
+            "Dexterity": 10,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Straight Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Longsword",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 60,
+        "RepairCost": 725,
+        "Requirements": {
+            "Strength": 10,
+            "Dexterity": 9,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Straight Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Broadsword",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 60,
+        "RepairCost": 755,
+        "Requirements": {
+            "Strength": 11,
+            "Dexterity": 6,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Straight Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Foot Soldier Sword",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 20,
+        "RepairCost": 745,
+        "Requirements": {
+            "Strength": 7,
+            "Dexterity": 6,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Straight Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Puzzling Stone Sword",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 60,
+        "RepairCost": 725,
+        "Requirements": {
+            "Strength": 7,
+            "Dexterity": 6,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Straight Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Possessed Armor Sword",
+        "Modifiers": [],
+        "Weight": 5,
+        "Durability": 50,
+        "RepairCost": 1225,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 13,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Straight Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Varangian Sword",
+        "Modifiers": [],
+        "Weight": 5,
+        "Durability": 40,
+        "RepairCost": 725,
+        "Requirements": {
+            "Strength": 14,
+            "Dexterity": 6,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Straight Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Blue Flame",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 60,
+        "RepairCost": 670,
+        "Requirements": {
+            "Strength": 13,
+            "Dexterity": 15,
+            "Intelligence": 12,
+            "Faith": 0
+        },
+        "Category": "Straight Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Fume Sword",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 40,
+        "RepairCost": 1255,
+        "Requirements": {
+            "Strength": 15,
+            "Dexterity": 22,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Straight Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Heide Knight Sword",
+        "Modifiers": [],
+        "Weight": 4,
+        "Durability": 70,
+        "RepairCost": 755,
+        "Requirements": {
+            "Strength": 11,
+            "Dexterity": 10,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Straight Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Red Rust Sword",
+        "Modifiers": [],
+        "Weight": 8,
+        "Durability": 80,
+        "RepairCost": 1255,
+        "Requirements": {
+            "Strength": 23,
+            "Dexterity": 13,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Straight Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Black Dragon Sword",
+        "Modifiers": [],
+        "Weight": 4,
+        "Durability": 60,
+        "RepairCost": 1255,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 15,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Straight Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Sun Sword",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 60,
+        "RepairCost": 725,
+        "Requirements": {
+            "Strength": 15,
+            "Dexterity": 13,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Straight Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Drakekeeper's Sword",
+        "Modifiers": [],
+        "Weight": 6,
+        "Durability": 90,
+        "RepairCost": 755,
+        "Requirements": {
+            "Strength": 16,
+            "Dexterity": 8,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Straight Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Ashen Warrior Sword",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 30,
+        "RepairCost": 695,
+        "Requirements": {
+            "Strength": 10,
+            "Dexterity": 18,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Straight Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Ivory Straight Sword",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 250,
+        "RepairCost": 1725,
+        "Requirements": {
+            "Strength": 6,
+            "Dexterity": 40,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Straight Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Estoc",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 45,
+        "RepairCost": 645,
+        "Requirements": {
+            "Strength": 12,
+            "Dexterity": 12,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Thrusting Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Mail Breaker",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 45,
+        "RepairCost": 555,
+        "Requirements": {
+            "Strength": 5,
+            "Dexterity": 12,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Thrusting Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Chaos Rapier",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 45,
+        "RepairCost": 630,
+        "Requirements": {
+            "Strength": 7,
+            "Dexterity": 14,
+            "Intelligence": 13,
+            "Faith": 13
+        },
+        "Category": "Thrusting Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Spider's Silk",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 30,
+        "RepairCost": 1130,
+        "Requirements": {
+            "Strength": 5,
+            "Dexterity": 20,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Thrusting Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Espada Ropera",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 80,
+        "RepairCost": 1165,
+        "Requirements": {
+            "Strength": 11,
+            "Dexterity": 18,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Thrusting Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Rapier",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 45,
+        "RepairCost": 630,
+        "Requirements": {
+            "Strength": 5,
+            "Dexterity": 12,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Thrusting Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Black Scorpion Stinger",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 30,
+        "RepairCost": 645,
+        "Requirements": {
+            "Strength": 10,
+            "Dexterity": 18,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Thrusting Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Ricard's Rapier",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 45,
+        "RepairCost": 1090,
+        "Requirements": {
+            "Strength": 8,
+            "Dexterity": 25,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Thrusting Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Ice Rapier",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 50,
+        "RepairCost": 1145,
+        "Requirements": {
+            "Strength": 13,
+            "Dexterity": 15,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Thrusting Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Falchion",
+        "Modifiers": [],
+        "Weight": 2.5,
+        "Durability": 45,
+        "RepairCost": 705,
+        "Requirements": {
+            "Strength": 9,
+            "Dexterity": 13,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Curved Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Shotel",
+        "Modifiers": [],
+        "Weight": 2.5,
+        "Durability": 45,
+        "RepairCost": 660,
+        "Requirements": {
+            "Strength": 10,
+            "Dexterity": 16,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Curved Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Warped Sword",
+        "Modifiers": [],
+        "Weight": 3.5,
+        "Durability": 50,
+        "RepairCost": 1205,
+        "Requirements": {
+            "Strength": 15,
+            "Dexterity": 25,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Curved Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Eleum Loyce",
+        "Modifiers": [],
+        "Weight": 3.5,
+        "Durability": 90,
+        "RepairCost": 1705,
+        "Requirements": {
+            "Strength": 18,
+            "Dexterity": 27,
+            "Intelligence": 0,
+            "Faith": 11
+        },
+        "Category": "Curved Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Manikin Sabre",
+        "Modifiers": [],
+        "Weight": 2.5,
+        "Durability": 45,
+        "RepairCost": 660,
+        "Requirements": {
+            "Strength": 6,
+            "Dexterity": 19,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Curved Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Scimitar",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 40,
+        "RepairCost": 660,
+        "Requirements": {
+            "Strength": 7,
+            "Dexterity": 16,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Curved Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Red Rust Scimitar",
+        "Modifiers": [],
+        "Weight": 6,
+        "Durability": 60,
+        "RepairCost": 730,
+        "Requirements": {
+            "Strength": 18,
+            "Dexterity": 15,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Curved Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Spider Fang",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 40,
+        "RepairCost": 1185,
+        "Requirements": {
+            "Strength": 10,
+            "Dexterity": 25,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Curved Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Melu Scimitar",
+        "Modifiers": [],
+        "Weight": 4,
+        "Durability": 75,
+        "RepairCost": 2820,
+        "Requirements": {
+            "Strength": 12,
+            "Dexterity": 9,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Curved Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Monastery Scimitar",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 40,
+        "RepairCost": 660,
+        "Requirements": {
+            "Strength": 9,
+            "Dexterity": 22,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Curved Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Uchigatana",
+        "Modifiers": [],
+        "Weight": 5,
+        "Durability": 40,
+        "RepairCost": 800,
+        "Requirements": {
+            "Strength": 10,
+            "Dexterity": 16,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Katana",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Washing Pole",
+        "Modifiers": [],
+        "Weight": 10,
+        "Durability": 20,
+        "RepairCost": 840,
+        "Requirements": {
+            "Strength": 18,
+            "Dexterity": 20,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Katana",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Chaos Blade",
+        "Modifiers": [],
+        "Weight": 6,
+        "Durability": 50,
+        "RepairCost": 1265,
+        "Requirements": {
+            "Strength": 12,
+            "Dexterity": 25,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Katana",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Blacksteel Katana",
+        "Modifiers": [],
+        "Weight": 8,
+        "Durability": 40,
+        "RepairCost": 840,
+        "Requirements": {
+            "Strength": 14,
+            "Dexterity": 25,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Katana",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Manslayer",
+        "Modifiers": [],
+        "Weight": 6,
+        "Durability": 40,
+        "RepairCost": 800,
+        "Requirements": {
+            "Strength": 11,
+            "Dexterity": 18,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Katana",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Darkdrift",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 20,
+        "RepairCost": 1725,
+        "Requirements": {
+            "Strength": 12,
+            "Dexterity": 28,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Katana",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Berserker Blade",
+        "Modifiers": [],
+        "Weight": 6,
+        "Durability": 40,
+        "RepairCost": 1340,
+        "Requirements": {
+            "Strength": 18,
+            "Dexterity": 18,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Katana",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Bewitched Alonne Sword",
+        "Modifiers": [],
+        "Weight": 9,
+        "Durability": 30,
+        "RepairCost": 1840,
+        "Requirements": {
+            "Strength": 22,
+            "Dexterity": 30,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Katana",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Bastard Sword",
+        "Modifiers": [],
+        "Weight": 6,
+        "Durability": 60,
+        "RepairCost": 880,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 11,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Flamberge",
+        "Modifiers": [],
+        "Weight": 7,
+        "Durability": 60,
+        "RepairCost": 880,
+        "Requirements": {
+            "Strength": 16,
+            "Dexterity": 15,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Claymore",
+        "Modifiers": [],
+        "Weight": 8,
+        "Durability": 60,
+        "RepairCost": 930,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 13,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Majestic Greatsword (Right Hand)",
+        "Modifiers": [],
+        "Weight": 9,
+        "Durability": 60,
+        "RepairCost": 1975,
+        "Requirements": {
+            "Strength": 25,
+            "Dexterity": 25,
+            "Intelligence": 20,
+            "Faith": 20
+        },
+        "Category": "Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Majestic Greatsword (Left Hand)",
+        "Modifiers": [],
+        "Weight": 9,
+        "Durability": 60,
+        "RepairCost": 1975,
+        "Requirements": {
+            "Strength": 25,
+            "Dexterity": 25,
+            "Intelligence": 20,
+            "Faith": 20
+        },
+        "Category": "Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Drangleic Sword",
+        "Modifiers": [],
+        "Weight": 9,
+        "Durability": 70,
+        "RepairCost": 1380,
+        "Requirements": {
+            "Strength": 25,
+            "Dexterity": 20,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Thorned Greatsword",
+        "Modifiers": [],
+        "Weight": 8,
+        "Durability": 85,
+        "RepairCost": 1380,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 15,
+            "Intelligence": 0,
+            "Faith": 14
+        },
+        "Category": "Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Bluemoon Greatsword",
+        "Modifiers": [],
+        "Weight": 15,
+        "Durability": 30,
+        "RepairCost": 230,
+        "Requirements": {
+            "Strength": 28,
+            "Dexterity": 10,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Moonlight Greatsword",
+        "Modifiers": [],
+        "Weight": 8,
+        "Durability": 75,
+        "RepairCost": 1475,
+        "Requirements": {
+            "Strength": 18,
+            "Dexterity": 18,
+            "Intelligence": 18,
+            "Faith": 0
+        },
+        "Category": "Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Mastodon Greatsword",
+        "Modifiers": [],
+        "Weight": 16,
+        "Durability": 70,
+        "RepairCost": 975,
+        "Requirements": {
+            "Strength": 30,
+            "Dexterity": 12,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Ruler's Sword",
+        "Modifiers": [],
+        "Weight": 8,
+        "Durability": 60,
+        "RepairCost": 1880,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 20,
+            "Intelligence": 16,
+            "Faith": 16
+        },
+        "Category": "Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Mirrah Greatsword",
+        "Modifiers": [],
+        "Weight": 7,
+        "Durability": 60,
+        "RepairCost": 930,
+        "Requirements": {
+            "Strength": 16,
+            "Dexterity": 20,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Old Mirrah Greatsword",
+        "Modifiers": [],
+        "Weight": 7,
+        "Durability": 20,
+        "RepairCost": 930,
+        "Requirements": {
+            "Strength": 16,
+            "Dexterity": 33,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Black Dragon Greatsword",
+        "Modifiers": [],
+        "Weight": 9,
+        "Durability": 70,
+        "RepairCost": 1430,
+        "Requirements": {
+            "Strength": 25,
+            "Dexterity": 16,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Black Knight Greatsword",
+        "Modifiers": [],
+        "Weight": 12,
+        "Durability": 70,
+        "RepairCost": 975,
+        "Requirements": {
+            "Strength": 28,
+            "Dexterity": 20,
+            "Intelligence": 8,
+            "Faith": 12
+        },
+        "Category": "Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Royal Greatsword",
+        "Modifiers": [],
+        "Weight": 6,
+        "Durability": 70,
+        "RepairCost": 880,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 15,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Old Knight Greatsword",
+        "Modifiers": [],
+        "Weight": 13,
+        "Durability": 30,
+        "RepairCost": 975,
+        "Requirements": {
+            "Strength": 17,
+            "Dexterity": 12,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Defender Greatsword",
+        "Modifiers": [],
+        "Weight": 12,
+        "Durability": 50,
+        "RepairCost": 1430,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 12,
+            "Intelligence": 0,
+            "Faith": 15
+        },
+        "Category": "Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Watcher Greatsword",
+        "Modifiers": [],
+        "Weight": 7,
+        "Durability": 50,
+        "RepairCost": 1335,
+        "Requirements": {
+            "Strength": 18,
+            "Dexterity": 16,
+            "Intelligence": 15,
+            "Faith": 0
+        },
+        "Category": "Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Key to the Embedded",
+        "Modifiers": [],
+        "Weight": 4,
+        "Durability": 60,
+        "RepairCost": 835,
+        "Requirements": {
+            "Strength": 15,
+            "Dexterity": 20,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Drakeblood Greatsword",
+        "Modifiers": [],
+        "Weight": 6,
+        "Durability": 60,
+        "RepairCost": 1335,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 18,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Loyce Greatsword",
+        "Modifiers": [],
+        "Weight": 8,
+        "Durability": 60,
+        "RepairCost": 1430,
+        "Requirements": {
+            "Strength": 25,
+            "Dexterity": 28,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Charred Loyce Greatsword",
+        "Modifiers": [],
+        "Weight": 9,
+        "Durability": 40,
+        "RepairCost": 1430,
+        "Requirements": {
+            "Strength": 25,
+            "Dexterity": 28,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Greatsword of the Forlorn",
+        "Modifiers": [],
+        "Weight": 9,
+        "Durability": 65,
+        "RepairCost": 930,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 15,
+            "Intelligence": 10,
+            "Faith": 10
+        },
+        "Category": "Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Hand Axe",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 50,
+        "RepairCost": 520,
+        "Requirements": {
+            "Strength": 9,
+            "Dexterity": 3,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Axe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Battle Axe",
+        "Modifiers": [],
+        "Weight": 4,
+        "Durability": 60,
+        "RepairCost": 805,
+        "Requirements": {
+            "Strength": 15,
+            "Dexterity": 5,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Axe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Bandit Axe",
+        "Modifiers": [],
+        "Weight": 5,
+        "Durability": 50,
+        "RepairCost": 845,
+        "Requirements": {
+            "Strength": 18,
+            "Dexterity": 5,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Axe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Infantry Axe",
+        "Modifiers": [],
+        "Weight": 3.5,
+        "Durability": 30,
+        "RepairCost": 580,
+        "Requirements": {
+            "Strength": 9,
+            "Dexterity": 1,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Axe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Gyrm Axe",
+        "Modifiers": [],
+        "Weight": 18,
+        "Durability": 120,
+        "RepairCost": 845,
+        "Requirements": {
+            "Strength": 28,
+            "Dexterity": 6,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Axe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Dragonslayer's Crescent Axe",
+        "Modifiers": [],
+        "Weight": 7,
+        "Durability": 60,
+        "RepairCost": 805,
+        "Requirements": {
+            "Strength": 18,
+            "Dexterity": 12,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Axe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Butcher's Knife",
+        "Modifiers": [],
+        "Weight": 16,
+        "Durability": 40,
+        "RepairCost": 1270,
+        "Requirements": {
+            "Strength": 25,
+            "Dexterity": 8,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Axe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Silverblack Sickle",
+        "Modifiers": [],
+        "Weight": 4,
+        "Durability": 60,
+        "RepairCost": 770,
+        "Requirements": {
+            "Strength": 15,
+            "Dexterity": 10,
+            "Intelligence": 8,
+            "Faith": 8
+        },
+        "Category": "Scythe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Crescent Axe",
+        "Modifiers": [],
+        "Weight": 12,
+        "Durability": 60,
+        "RepairCost": 770,
+        "Requirements": {
+            "Strength": 25,
+            "Dexterity": 14,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greataxe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Greataxe",
+        "Modifiers": [],
+        "Weight": 15,
+        "Durability": 80,
+        "RepairCost": 1365,
+        "Requirements": {
+            "Strength": 32,
+            "Dexterity": 10,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greataxe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Bandit Greataxe",
+        "Modifiers": [],
+        "Weight": 10,
+        "Durability": 60,
+        "RepairCost": 855,
+        "Requirements": {
+            "Strength": 28,
+            "Dexterity": 8,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greataxe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Lion Greataxe",
+        "Modifiers": [],
+        "Weight": 12,
+        "Durability": 60,
+        "RepairCost": 1005,
+        "Requirements": {
+            "Strength": 30,
+            "Dexterity": 8,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greataxe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Giant Stone Axe",
+        "Modifiers": [],
+        "Weight": 25,
+        "Durability": 70,
+        "RepairCost": 1650,
+        "Requirements": {
+            "Strength": 45,
+            "Dexterity": 8,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greataxe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Gyrm Greataxe",
+        "Modifiers": [],
+        "Weight": 24,
+        "Durability": 140,
+        "RepairCost": 1150,
+        "Requirements": {
+            "Strength": 50,
+            "Dexterity": 8,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greataxe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Black Dragon Greataxe",
+        "Modifiers": [],
+        "Weight": 12,
+        "Durability": 70,
+        "RepairCost": 1575,
+        "Requirements": {
+            "Strength": 35,
+            "Dexterity": 15,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greataxe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Black Knight Greataxe",
+        "Modifiers": [],
+        "Weight": 20,
+        "Durability": 60,
+        "RepairCost": 1150,
+        "Requirements": {
+            "Strength": 40,
+            "Dexterity": 18,
+            "Intelligence": 8,
+            "Faith": 10
+        },
+        "Category": "Greataxe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Drakekeeper's Greataxe",
+        "Modifiers": [],
+        "Weight": 16,
+        "Durability": 90,
+        "RepairCost": 1220,
+        "Requirements": {
+            "Strength": 40,
+            "Dexterity": 14,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greataxe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Club",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 50,
+        "RepairCost": 660,
+        "Requirements": {
+            "Strength": 12,
+            "Dexterity": 3,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Mace",
+        "Modifiers": [],
+        "Weight": 4,
+        "Durability": 60,
+        "RepairCost": 810,
+        "Requirements": {
+            "Strength": 12,
+            "Dexterity": 5,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Morning Star",
+        "Modifiers": [],
+        "Weight": 4,
+        "Durability": 60,
+        "RepairCost": 810,
+        "Requirements": {
+            "Strength": 15,
+            "Dexterity": 7,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Reinforced Club",
+        "Modifiers": [],
+        "Weight": 4,
+        "Durability": 20,
+        "RepairCost": 845,
+        "Requirements": {
+            "Strength": 16,
+            "Dexterity": 3,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Craftsman's Hammer",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 80,
+        "RepairCost": 810,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 10,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Mace of the Insolent",
+        "Modifiers": [],
+        "Weight": 4,
+        "Durability": 60,
+        "RepairCost": 1270,
+        "Requirements": {
+            "Strength": 15,
+            "Dexterity": 10,
+            "Intelligence": 0,
+            "Faith": 10
+        },
+        "Category": "Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Handmaid's Ladle",
+        "Modifiers": [],
+        "Weight": 0.2,
+        "Durability": 10,
+        "RepairCost": 405,
+        "Requirements": {
+            "Strength": 6,
+            "Dexterity": 5,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Blacksmith's Hammer",
+        "Modifiers": [],
+        "Weight": 5,
+        "Durability": 60,
+        "RepairCost": 620,
+        "Requirements": {
+            "Strength": 15,
+            "Dexterity": 7,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Black Dragon Warpick",
+        "Modifiers": [],
+        "Weight": 6,
+        "Durability": 70,
+        "RepairCost": 1310,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 15,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Aldia Hammer",
+        "Modifiers": [],
+        "Weight": 3.5,
+        "Durability": 60,
+        "RepairCost": 770,
+        "Requirements": {
+            "Strength": 18,
+            "Dexterity": 16,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Barbed Club",
+        "Modifiers": [],
+        "Weight": 5,
+        "Durability": 60,
+        "RepairCost": 1310,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 18,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Large Club",
+        "Modifiers": [],
+        "Weight": 12,
+        "Durability": 70,
+        "RepairCost": 1340,
+        "Requirements": {
+            "Strength": 26,
+            "Dexterity": 4,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Great Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Pickaxe",
+        "Modifiers": [],
+        "Weight": 8,
+        "Durability": 60,
+        "RepairCost": 845,
+        "Requirements": {
+            "Strength": 22,
+            "Dexterity": 8,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Great Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Great Club",
+        "Modifiers": [],
+        "Weight": 15,
+        "Durability": 70,
+        "RepairCost": 2155,
+        "Requirements": {
+            "Strength": 28,
+            "Dexterity": 4,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Great Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Gyrm Great Hammer",
+        "Modifiers": [],
+        "Weight": 20,
+        "Durability": 80,
+        "RepairCost": 1550,
+        "Requirements": {
+            "Strength": 40,
+            "Dexterity": 4,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Great Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Iron King Hammer",
+        "Modifiers": [],
+        "Weight": 24,
+        "Durability": 80,
+        "RepairCost": 1840,
+        "Requirements": {
+            "Strength": 50,
+            "Dexterity": 8,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Great Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Malformed Skull",
+        "Modifiers": [],
+        "Weight": 12,
+        "Durability": 20,
+        "RepairCost": 1445,
+        "Requirements": {
+            "Strength": 35,
+            "Dexterity": 7,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Great Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Dragon Tooth",
+        "Modifiers": [],
+        "Weight": 20,
+        "Durability": 70,
+        "RepairCost": 2155,
+        "Requirements": {
+            "Strength": 50,
+            "Dexterity": 10,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Great Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Giant Warrior Club",
+        "Modifiers": [],
+        "Weight": 30,
+        "Durability": 50,
+        "RepairCost": 1760,
+        "Requirements": {
+            "Strength": 60,
+            "Dexterity": 6,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Great Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Malformed Shell",
+        "Modifiers": [],
+        "Weight": 18,
+        "Durability": 50,
+        "RepairCost": 1630,
+        "Requirements": {
+            "Strength": 35,
+            "Dexterity": 8,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Great Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Demon's Great Hammer",
+        "Modifiers": [],
+        "Weight": 26,
+        "Durability": 70,
+        "RepairCost": 1445,
+        "Requirements": {
+            "Strength": 50,
+            "Dexterity": 8,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Great Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Archdrake Mace",
+        "Modifiers": [],
+        "Weight": 6,
+        "Durability": 60,
+        "RepairCost": 1130,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 16,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Old Knight Hammer",
+        "Modifiers": [],
+        "Weight": 18,
+        "Durability": 30,
+        "RepairCost": 1550,
+        "Requirements": {
+            "Strength": 30,
+            "Dexterity": 6,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Great Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Drakekeeper's Great Hammer",
+        "Modifiers": [],
+        "Weight": 20,
+        "Durability": 90,
+        "RepairCost": 1655,
+        "Requirements": {
+            "Strength": 50,
+            "Dexterity": 10,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Great Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Sacred Chime Hammer",
+        "Modifiers": [],
+        "Weight": 22,
+        "Durability": 70,
+        "RepairCost": 1945,
+        "Requirements": {
+            "Strength": 40,
+            "Dexterity": 12,
+            "Intelligence": 12,
+            "Faith": 12
+        },
+        "Category": "Great Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Sanctum Mace",
+        "Modifiers": [],
+        "Weight": 17,
+        "Durability": 30,
+        "RepairCost": 2050,
+        "Requirements": {
+            "Strength": 35,
+            "Dexterity": 6,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Spear",
+        "Modifiers": [],
+        "Weight": 3.5,
+        "Durability": 50,
+        "RepairCost": 800,
+        "Requirements": {
+            "Strength": 9,
+            "Dexterity": 12,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Spear",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Winged Spear",
+        "Modifiers": [],
+        "Weight": 4.5,
+        "Durability": 50,
+        "RepairCost": 835,
+        "Requirements": {
+            "Strength": 11,
+            "Dexterity": 18,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Spear",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Pike",
+        "Modifiers": [],
+        "Weight": 8,
+        "Durability": 50,
+        "RepairCost": 725,
+        "Requirements": {
+            "Strength": 12,
+            "Dexterity": 16,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Spear",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Partizan",
+        "Modifiers": [],
+        "Weight": 4.5,
+        "Durability": 60,
+        "RepairCost": 1300,
+        "Requirements": {
+            "Strength": 12,
+            "Dexterity": 20,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Spear",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Stone Soldier Spear",
+        "Modifiers": [],
+        "Weight": 7,
+        "Durability": 50,
+        "RepairCost": 835,
+        "Requirements": {
+            "Strength": 16,
+            "Dexterity": 20,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Spear",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Spitfire Spear",
+        "Modifiers": [],
+        "Weight": 10,
+        "Durability": 65,
+        "RepairCost": 1300,
+        "Requirements": {
+            "Strength": 10,
+            "Dexterity": 18,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Spear",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Yorgh's Spear",
+        "Modifiers": [],
+        "Weight": 19,
+        "Durability": 90,
+        "RepairCost": 1370,
+        "Requirements": {
+            "Strength": 30,
+            "Dexterity": 25,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Spear",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Silverblack Spear",
+        "Modifiers": [],
+        "Weight": 6,
+        "Durability": 50,
+        "RepairCost": 800,
+        "Requirements": {
+            "Strength": 9,
+            "Dexterity": 16,
+            "Intelligence": 8,
+            "Faith": 8
+        },
+        "Category": "Spear",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Heide Spear",
+        "Modifiers": [],
+        "Weight": 8,
+        "Durability": 60,
+        "RepairCost": 1335,
+        "Requirements": {
+            "Strength": 12,
+            "Dexterity": 25,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Spear",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Pate's Spear",
+        "Modifiers": [],
+        "Weight": 6,
+        "Durability": 50,
+        "RepairCost": 800,
+        "Requirements": {
+            "Strength": 11,
+            "Dexterity": 27,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Spear",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Channeler's Trident",
+        "Modifiers": [],
+        "Weight": 4,
+        "Durability": 40,
+        "RepairCost": 1260,
+        "Requirements": {
+            "Strength": 11,
+            "Dexterity": 15,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Spear",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Gargoyle Bident",
+        "Modifiers": [],
+        "Weight": 12,
+        "Durability": 60,
+        "RepairCost": 835,
+        "Requirements": {
+            "Strength": 22,
+            "Dexterity": 15,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Spear",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Dragonslayer Spear",
+        "Modifiers": [],
+        "Weight": 10,
+        "Durability": 60,
+        "RepairCost": 1300,
+        "Requirements": {
+            "Strength": 16,
+            "Dexterity": 25,
+            "Intelligence": 0,
+            "Faith": 14
+        },
+        "Category": "Spear",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Heide Lance",
+        "Modifiers": [],
+        "Weight": 8,
+        "Durability": 60,
+        "RepairCost": 885,
+        "Requirements": {
+            "Strength": 18,
+            "Dexterity": 12,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Lance",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Heide Greatlance",
+        "Modifiers": [],
+        "Weight": 10,
+        "Durability": 50,
+        "RepairCost": 835,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 16,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Lance",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Grand Lance",
+        "Modifiers": [],
+        "Weight": 12,
+        "Durability": 105,
+        "RepairCost": 1385,
+        "Requirements": {
+            "Strength": 22,
+            "Dexterity": 18,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Lance",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Chariot Lance",
+        "Modifiers": [],
+        "Weight": 16,
+        "Durability": 70,
+        "RepairCost": 1430,
+        "Requirements": {
+            "Strength": 30,
+            "Dexterity": 18,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Lance",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Rampart Golem Lance",
+        "Modifiers": [],
+        "Weight": 16,
+        "Durability": 40,
+        "RepairCost": 1075,
+        "Requirements": {
+            "Strength": 35,
+            "Dexterity": 20,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Lance",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Smelter Hammer",
+        "Modifiers": [],
+        "Weight": 35,
+        "Durability": 300,
+        "RepairCost": 1760,
+        "Requirements": {
+            "Strength": 70,
+            "Dexterity": 6,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Great Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Great Scythe",
+        "Modifiers": [],
+        "Weight": 5,
+        "Durability": 60,
+        "RepairCost": 690,
+        "Requirements": {
+            "Strength": 12,
+            "Dexterity": 14,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Scythe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Great Machete",
+        "Modifiers": [],
+        "Weight": 6,
+        "Durability": 30,
+        "RepairCost": 885,
+        "Requirements": {
+            "Strength": 18,
+            "Dexterity": 16,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Scythe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Full Moon Sickle",
+        "Modifiers": [],
+        "Weight": 8,
+        "Durability": 90,
+        "RepairCost": 925,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 18,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Scythe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Crescent Sickle",
+        "Modifiers": [],
+        "Weight": 8,
+        "Durability": 50,
+        "RepairCost": 755,
+        "Requirements": {
+            "Strength": 12,
+            "Dexterity": 19,
+            "Intelligence": 12,
+            "Faith": 0
+        },
+        "Category": "Scythe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Scythe of Nahr Alma",
+        "Modifiers": [],
+        "Weight": 5,
+        "Durability": 50,
+        "RepairCost": 800,
+        "Requirements": {
+            "Strength": 14,
+            "Dexterity": 12,
+            "Intelligence": 12,
+            "Faith": 12
+        },
+        "Category": "Scythe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Bone Scythe",
+        "Modifiers": [],
+        "Weight": 10,
+        "Durability": 40,
+        "RepairCost": 1340,
+        "Requirements": {
+            "Strength": 28,
+            "Dexterity": 20,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Scythe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Scythe of Want",
+        "Modifiers": [],
+        "Weight": 12,
+        "Durability": 60,
+        "RepairCost": 1425,
+        "Requirements": {
+            "Strength": 14,
+            "Dexterity": 20,
+            "Intelligence": 18,
+            "Faith": 18
+        },
+        "Category": "Scythe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Scythe of the Forlorn",
+        "Modifiers": [],
+        "Weight": 11,
+        "Durability": 55,
+        "RepairCost": 885,
+        "Requirements": {
+            "Strength": 15,
+            "Dexterity": 20,
+            "Intelligence": 10,
+            "Faith": 10
+        },
+        "Category": "Scythe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Lucerne",
+        "Modifiers": [],
+        "Weight": 6.5,
+        "Durability": 60,
+        "RepairCost": 745,
+        "Requirements": {
+            "Strength": 18,
+            "Dexterity": 14,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Halberd",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Scythe",
+        "Modifiers": [],
+        "Weight": 5,
+        "Durability": 60,
+        "RepairCost": 895,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 11,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Halberd",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Halberd",
+        "Modifiers": [],
+        "Weight": 6,
+        "Durability": 70,
+        "RepairCost": 945,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 14,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Halberd",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Helix Halberd",
+        "Modifiers": [],
+        "Weight": 9,
+        "Durability": 70,
+        "RepairCost": 1395,
+        "Requirements": {
+            "Strength": 16,
+            "Dexterity": 20,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Halberd",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Santier's Spear - Unbroken",
+        "Modifiers": [],
+        "Weight": 16,
+        "Durability": 500,
+        "RepairCost": 545,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 22,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Halberd",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Santier's Spear - Broken",
+        "Modifiers": [],
+        "Weight": 12,
+        "Durability": 500,
+        "RepairCost": 1445,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 22,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Halberd",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Mastodon Halberd",
+        "Modifiers": [],
+        "Weight": 19,
+        "Durability": 70,
+        "RepairCost": 990,
+        "Requirements": {
+            "Strength": 26,
+            "Dexterity": 15,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Halberd",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Blue Knight's Halberd",
+        "Modifiers": [],
+        "Weight": 12,
+        "Durability": 60,
+        "RepairCost": 945,
+        "Requirements": {
+            "Strength": 18,
+            "Dexterity": 20,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Halberd",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Dragonrider's Halberd",
+        "Modifiers": [],
+        "Weight": 12,
+        "Durability": 70,
+        "RepairCost": 990,
+        "Requirements": {
+            "Strength": 18,
+            "Dexterity": 17,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Halberd",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Black Knight Halberd",
+        "Modifiers": [],
+        "Weight": 14,
+        "Durability": 70,
+        "RepairCost": 895,
+        "Requirements": {
+            "Strength": 17,
+            "Dexterity": 26,
+            "Intelligence": 0,
+            "Faith": 9
+        },
+        "Category": "Halberd",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Syan's Halberd",
+        "Modifiers": [],
+        "Weight": 12,
+        "Durability": 60,
+        "RepairCost": 1445,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 25,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Halberd",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Roaring Halberd",
+        "Modifiers": [],
+        "Weight": 16,
+        "Durability": 40,
+        "RepairCost": 845,
+        "Requirements": {
+            "Strength": 16,
+            "Dexterity": 12,
+            "Intelligence": 12,
+            "Faith": 12
+        },
+        "Category": "Halberd",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Old Knight Halberd",
+        "Modifiers": [],
+        "Weight": 15,
+        "Durability": 20,
+        "RepairCost": 990,
+        "Requirements": {
+            "Strength": 16,
+            "Dexterity": 20,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Halberd",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Old Knight Pike",
+        "Modifiers": [],
+        "Weight": 16,
+        "Durability": 20,
+        "RepairCost": 945,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 16,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Halberd",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Drakekeeper's Warpick",
+        "Modifiers": [],
+        "Weight": 20,
+        "Durability": 90,
+        "RepairCost": 990,
+        "Requirements": {
+            "Strength": 40,
+            "Dexterity": 14,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Great Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Wrathful Axe",
+        "Modifiers": [],
+        "Weight": 15,
+        "Durability": 80,
+        "RepairCost": 1445,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 22,
+            "Intelligence": 0,
+            "Faith": 28
+        },
+        "Category": "Halberd",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Fists",
+        "Modifiers": [],
+        "Weight": 0,
+        "Durability": 10,
+        "RepairCost": 75,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Hands",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Fist (Vanquisher's Seal)",
+        "Modifiers": [],
+        "Weight": 0,
+        "Durability": 10,
+        "RepairCost": 75,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Fist",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Claws",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 30,
+        "RepairCost": 600,
+        "Requirements": {
+            "Strength": 9,
+            "Dexterity": 10,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Claw",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Malformed Claws",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 50,
+        "RepairCost": 630,
+        "Requirements": {
+            "Strength": 16,
+            "Dexterity": 14,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Claw",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Manikin Claws",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 50,
+        "RepairCost": 615,
+        "Requirements": {
+            "Strength": 9,
+            "Dexterity": 18,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Claw",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Work Hook",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 40,
+        "RepairCost": 585,
+        "Requirements": {
+            "Strength": 6,
+            "Dexterity": 10,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Claw",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Caestus",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 60,
+        "RepairCost": 540,
+        "Requirements": {
+            "Strength": 10,
+            "Dexterity": 7,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Fist",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Bone Fist",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 80,
+        "RepairCost": 1115,
+        "Requirements": {
+            "Strength": 15,
+            "Dexterity": 30,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Fist",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Whip",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 50,
+        "RepairCost": 495,
+        "Requirements": {
+            "Strength": 6,
+            "Dexterity": 17,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Whip",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Notched Whip",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 50,
+        "RepairCost": 625,
+        "Requirements": {
+            "Strength": 12,
+            "Dexterity": 20,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Whip",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Bloodied Whip",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 60,
+        "RepairCost": 660,
+        "Requirements": {
+            "Strength": 10,
+            "Dexterity": 15,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Whip",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Spotted Whip",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 60,
+        "RepairCost": 1145,
+        "Requirements": {
+            "Strength": 9,
+            "Dexterity": 25,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Whip",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Old Whip",
+        "Modifiers": [],
+        "Weight": 2.5,
+        "Durability": 40,
+        "RepairCost": 645,
+        "Requirements": {
+            "Strength": 7,
+            "Dexterity": 20,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Whip",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Sorcerer's Staff",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 30,
+        "RepairCost": 495,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 10,
+            "Faith": 0
+        },
+        "Category": "Staff",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Staff of Amana",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 45,
+        "RepairCost": 1130,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 35,
+            "Faith": 0
+        },
+        "Category": "Staff",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Witchtree Branch",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 30,
+        "RepairCost": 665,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 16,
+            "Faith": 0
+        },
+        "Category": "Staff",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Lizard Staff",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 30,
+        "RepairCost": 645,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 18,
+            "Faith": 0
+        },
+        "Category": "Staff",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Olenford's Staff",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 30,
+        "RepairCost": 1145,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 40,
+            "Faith": 0
+        },
+        "Category": "Staff",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Archdrake Staff",
+        "Modifiers": [],
+        "Weight": 3.5,
+        "Durability": 40,
+        "RepairCost": 630,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 18,
+            "Faith": 15
+        },
+        "Category": "Staff",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Bat Staff",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 30,
+        "RepairCost": 665,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 25,
+            "Faith": 0
+        },
+        "Category": "Staff",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Bone Staff",
+        "Modifiers": [],
+        "Weight": 4.5,
+        "Durability": 50,
+        "RepairCost": 665,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 20,
+            "Faith": 0
+        },
+        "Category": "Staff",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Staff of Wisdom",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 50,
+        "RepairCost": 1145,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 50,
+            "Faith": 0
+        },
+        "Category": "Staff",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Sunset Staff",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 30,
+        "RepairCost": 1145,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 22,
+            "Faith": 18
+        },
+        "Category": "Staff",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Pilgrim's Spontoon",
+        "Modifiers": [],
+        "Weight": 3.5,
+        "Durability": 40,
+        "RepairCost": 1145,
+        "Requirements": {
+            "Strength": 11,
+            "Dexterity": 12,
+            "Intelligence": 30,
+            "Faith": 30
+        },
+        "Category": "Spear",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Azal's Staff",
+        "Modifiers": [],
+        "Weight": 4,
+        "Durability": 4,
+        "RepairCost": 1700,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 35,
+            "Faith": 18
+        },
+        "Category": "Staff",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Retainer Staff",
+        "Modifiers": [],
+        "Weight": 2.5,
+        "Durability": 50,
+        "RepairCost": 1145,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 18,
+            "Faith": 0
+        },
+        "Category": "Staff",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Cleric's Sacred Chime",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 30,
+        "RepairCost": 415,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 10
+        },
+        "Category": "Chime",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Witchtree Bellvine",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 30,
+        "RepairCost": 1085,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 15
+        },
+        "Category": "Chime",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Priest's Chime",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 30,
+        "RepairCost": 585,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 18
+        },
+        "Category": "Chime",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Dragon Chime",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 30,
+        "RepairCost": 610,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 50
+        },
+        "Category": "Chime",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Chime of Want",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 30,
+        "RepairCost": 1585,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 15,
+            "Faith": 40
+        },
+        "Category": "Chime",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Archdrake Chime",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 30,
+        "RepairCost": 575,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 22
+        },
+        "Category": "Chime",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Idol's Chime",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 30,
+        "RepairCost": 1095,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 25
+        },
+        "Category": "Chime",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Caitha's Chime",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 30,
+        "RepairCost": 610,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 18,
+            "Faith": 22
+        },
+        "Category": "Chime",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Protective Chime",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 30,
+        "RepairCost": 620,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 25
+        },
+        "Category": "Chime",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Disc Chime",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 40,
+        "RepairCost": 1085,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 18
+        },
+        "Category": "Chime",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Chime of Screams",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 30,
+        "RepairCost": 1085,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 26
+        },
+        "Category": "Chime",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Black Witch's Staff",
+        "Modifiers": [],
+        "Weight": 2.5,
+        "Durability": 30,
+        "RepairCost": 1645,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 20,
+            "Faith": 20
+        },
+        "Category": "Staff",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Short Bow",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 60,
+        "RepairCost": 455,
+        "Requirements": {
+            "Strength": 7,
+            "Dexterity": 12,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Bow",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Long Bow",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 60,
+        "RepairCost": 605,
+        "Requirements": {
+            "Strength": 10,
+            "Dexterity": 16,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Bow",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Composite Bow",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 60,
+        "RepairCost": 1105,
+        "Requirements": {
+            "Strength": 14,
+            "Dexterity": 18,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Bow",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Sea Bow",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 60,
+        "RepairCost": 620,
+        "Requirements": {
+            "Strength": 16,
+            "Dexterity": 15,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Bow",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Dragonrider Bow",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 40,
+        "RepairCost": 1130,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 18,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Bow",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Bell Keeper Bow",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 70,
+        "RepairCost": 590,
+        "Requirements": {
+            "Strength": 4,
+            "Dexterity": 11,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Bow",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Bow of Want",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 70,
+        "RepairCost": 1090,
+        "Requirements": {
+            "Strength": 9,
+            "Dexterity": 20,
+            "Intelligence": 0,
+            "Faith": 18
+        },
+        "Category": "Bow",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Hunter's Blackbow",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 70,
+        "RepairCost": 1090,
+        "Requirements": {
+            "Strength": 9,
+            "Dexterity": 25,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Bow",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Alonne Greatbow",
+        "Modifiers": [],
+        "Weight": 8,
+        "Durability": 70,
+        "RepairCost": 1505,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 25,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatbow",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Dragonslayer Greatbow",
+        "Modifiers": [],
+        "Weight": 10,
+        "Durability": 70,
+        "RepairCost": 2005,
+        "Requirements": {
+            "Strength": 30,
+            "Dexterity": 20,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatbow",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Possessed Armor Greatbow",
+        "Modifiers": [],
+        "Weight": 10,
+        "Durability": 100,
+        "RepairCost": 1570,
+        "Requirements": {
+            "Strength": 25,
+            "Dexterity": 40,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatbow",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Twin-headed Greatbow",
+        "Modifiers": [],
+        "Weight": 15,
+        "Durability": 70,
+        "RepairCost": 1570,
+        "Requirements": {
+            "Strength": 45,
+            "Dexterity": 15,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatbow",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Light Crossbow",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 60,
+        "RepairCost": 660,
+        "Requirements": {
+            "Strength": 13,
+            "Dexterity": 4,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Crossbow",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Heavy Crossbow",
+        "Modifiers": [],
+        "Weight": 4,
+        "Durability": 70,
+        "RepairCost": 845,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 6,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Crossbow",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Shield Crossbow",
+        "Modifiers": [],
+        "Weight": 8,
+        "Durability": 60,
+        "RepairCost": 770,
+        "Requirements": {
+            "Strength": 19,
+            "Dexterity": 10,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Crossbow",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Avelyn",
+        "Modifiers": [],
+        "Weight": 6,
+        "Durability": 40,
+        "RepairCost": 1730,
+        "Requirements": {
+            "Strength": 25,
+            "Dexterity": 15,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Crossbow",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Sanctum Crossbow",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 45,
+        "RepairCost": 1310,
+        "Requirements": {
+            "Strength": 13,
+            "Dexterity": 4,
+            "Intelligence": 10,
+            "Faith": 10
+        },
+        "Category": "Crossbow",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Sanctum Repeating Crossbow",
+        "Modifiers": [],
+        "Weight": 10,
+        "Durability": 35,
+        "RepairCost": 1310,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 15,
+            "Intelligence": 10,
+            "Faith": 10
+        },
+        "Category": "Crossbow",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Murakumo",
+        "Modifiers": [],
+        "Weight": 12,
+        "Durability": 70,
+        "RepairCost": 1185,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 20,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Curved Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Arced Sword",
+        "Modifiers": [],
+        "Weight": 14,
+        "Durability": 70,
+        "RepairCost": 1270,
+        "Requirements": {
+            "Strength": 26,
+            "Dexterity": 16,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Curved Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Curved Dragon Greatsword",
+        "Modifiers": [],
+        "Weight": 18,
+        "Durability": 60,
+        "RepairCost": 1685,
+        "Requirements": {
+            "Strength": 30,
+            "Dexterity": 18,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Curved Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Curved Nil Greatsword",
+        "Modifiers": [],
+        "Weight": 17,
+        "Durability": 50,
+        "RepairCost": 1685,
+        "Requirements": {
+            "Strength": 28,
+            "Dexterity": 26,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Curved Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Zweihander",
+        "Modifiers": [],
+        "Weight": 12,
+        "Durability": 60,
+        "RepairCost": 1110,
+        "Requirements": {
+            "Strength": 24,
+            "Dexterity": 12,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Ultra Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Greatsword",
+        "Modifiers": [],
+        "Weight": 22,
+        "Durability": 70,
+        "RepairCost": 1335,
+        "Requirements": {
+            "Strength": 28,
+            "Dexterity": 10,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Ultra Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Smelter Sword",
+        "Modifiers": [],
+        "Weight": 22,
+        "Durability": 70,
+        "RepairCost": 1760,
+        "Requirements": {
+            "Strength": 40,
+            "Dexterity": 10,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Ultra Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Aged Smelter Sword",
+        "Modifiers": [],
+        "Weight": 22,
+        "Durability": 90,
+        "RepairCost": 1760,
+        "Requirements": {
+            "Strength": 40,
+            "Dexterity": 10,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Ultra Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Drakewing Ultra Greatsword",
+        "Modifiers": [],
+        "Weight": 12,
+        "Durability": 70,
+        "RepairCost": 1535,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 18,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Ultra Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "King's Ultra Greatsword",
+        "Modifiers": [],
+        "Weight": 28,
+        "Durability": 220,
+        "RepairCost": 2415,
+        "Requirements": {
+            "Strength": 50,
+            "Dexterity": 10,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Ultra Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Fume Ultra Greatsword",
+        "Modifiers": [],
+        "Weight": 28,
+        "Durability": 70,
+        "RepairCost": 1610,
+        "Requirements": {
+            "Strength": 40,
+            "Dexterity": 30,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Ultra Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Ivory King Ultra Greatsword",
+        "Modifiers": [],
+        "Weight": 14,
+        "Durability": 200,
+        "RepairCost": 1760,
+        "Requirements": {
+            "Strength": 30,
+            "Dexterity": 30,
+            "Intelligence": 8,
+            "Faith": 0
+        },
+        "Category": "Ultra Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Pursuer's Ultra Greatsword",
+        "Modifiers": [],
+        "Weight": 18,
+        "Durability": 60,
+        "RepairCost": 1685,
+        "Requirements": {
+            "Strength": 30,
+            "Dexterity": 18,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Ultra Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Drakekeeper's Ultra Greatsword",
+        "Modifiers": [],
+        "Weight": 20,
+        "Durability": 110,
+        "RepairCost": 1610,
+        "Requirements": {
+            "Strength": 38,
+            "Dexterity": 13,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Ultra Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Crypt Blacksword",
+        "Modifiers": [],
+        "Weight": 24,
+        "Durability": 70,
+        "RepairCost": 1760,
+        "Requirements": {
+            "Strength": 40,
+            "Dexterity": 10,
+            "Intelligence": 12,
+            "Faith": 12
+        },
+        "Category": "Ultra Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Old Knight Ultra Greatsword",
+        "Modifiers": [],
+        "Weight": 20,
+        "Durability": 30,
+        "RepairCost": 1185,
+        "Requirements": {
+            "Strength": 24,
+            "Dexterity": 10,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Ultra Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Black Knight Ultra Greatsword",
+        "Modifiers": [],
+        "Weight": 18,
+        "Durability": 70,
+        "RepairCost": 1260,
+        "Requirements": {
+            "Strength": 30,
+            "Dexterity": 16,
+            "Intelligence": 0,
+            "Faith": 13
+        },
+        "Category": "Ultra Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Lost Sinner's Sword",
+        "Modifiers": [],
+        "Weight": 12,
+        "Durability": 50,
+        "RepairCost": 2035,
+        "Requirements": {
+            "Strength": 24,
+            "Dexterity": 18,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Ultra Greatsword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Stone Twinblade",
+        "Modifiers": [],
+        "Weight": 10,
+        "Durability": 120,
+        "RepairCost": 835,
+        "Requirements": {
+            "Strength": 18,
+            "Dexterity": 22,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Twinblade",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Dragonrider Twinblade",
+        "Modifiers": [],
+        "Weight": 18,
+        "Durability": 120,
+        "RepairCost": 875,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 22,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Twinblade",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Twinblade",
+        "Modifiers": [],
+        "Weight": 8,
+        "Durability": 210,
+        "RepairCost": 835,
+        "Requirements": {
+            "Strength": 14,
+            "Dexterity": 26,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Twinblade",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Red Iron Twinblade",
+        "Modifiers": [],
+        "Weight": 14,
+        "Durability": 175,
+        "RepairCost": 1420,
+        "Requirements": {
+            "Strength": 26,
+            "Dexterity": 20,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Twinblade",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Curved Twinblade",
+        "Modifiers": [],
+        "Weight": 10,
+        "Durability": 125,
+        "RepairCost": 1295,
+        "Requirements": {
+            "Strength": 16,
+            "Dexterity": 20,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Twinblade",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Sorcerer's Twinblade",
+        "Modifiers": [],
+        "Weight": 10,
+        "Durability": 100,
+        "RepairCost": 1420,
+        "Requirements": {
+            "Strength": 11,
+            "Dexterity": 20,
+            "Intelligence": 20,
+            "Faith": 6
+        },
+        "Category": "Twinblade",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Pyromancy Flame",
+        "Modifiers": [],
+        "Weight": 0,
+        "Durability": 50,
+        "RepairCost": 555,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Hands",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Dark Pyromancy Flame",
+        "Modifiers": [],
+        "Weight": 0,
+        "Durability": 60,
+        "RepairCost": 1055,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Hands",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Black Flamestone Dagger",
+        "Modifiers": [],
+        "Weight": 4,
+        "Durability": 50,
+        "RepairCost": 590,
+        "Requirements": {
+            "Strength": 10,
+            "Dexterity": 12,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Dagger",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Yellow Quartz Longsword",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 30,
+        "RepairCost": 725,
+        "Requirements": {
+            "Strength": 13,
+            "Dexterity": 8,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Straight Sword",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Bound Hand Axe",
+        "Modifiers": [],
+        "Weight": 3.5,
+        "Durability": 60,
+        "RepairCost": 805,
+        "Requirements": {
+            "Strength": 15,
+            "Dexterity": 7,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Axe",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Homunculus Mace",
+        "Modifiers": [],
+        "Weight": 6,
+        "Durability": 60,
+        "RepairCost": 810,
+        "Requirements": {
+            "Strength": 14,
+            "Dexterity": 9,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Hammer",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Transgressor's Staff",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 50,
+        "RepairCost": 645,
+        "Requirements": {
+            "Strength": 0,
+            "Dexterity": 0,
+            "Intelligence": 15,
+            "Faith": 12
+        },
+        "Category": "Staff",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Buckler",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 50,
+        "RepairCost": 395,
+        "Requirements": {
+            "Strength": 7,
+            "Dexterity": 13,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Small Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Benhart's Parma",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 60,
+        "RepairCost": 470,
+        "Requirements": {
+            "Strength": 7,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Small Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Small Leather Shield",
+        "Modifiers": [],
+        "Weight": 0.5,
+        "Durability": 70,
+        "RepairCost": 560,
+        "Requirements": {
+            "Strength": 5,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Small Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Iron Parma",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 80,
+        "RepairCost": 620,
+        "Requirements": {
+            "Strength": 10,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Small Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Foot Soldier Shield",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 40,
+        "RepairCost": 370,
+        "Requirements": {
+            "Strength": 6,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Small Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Target Shield",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 50,
+        "RepairCost": 410,
+        "Requirements": {
+            "Strength": 8,
+            "Dexterity": 12,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Small Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Golden Falcon Shield",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 50,
+        "RepairCost": 635,
+        "Requirements": {
+            "Strength": 7,
+            "Dexterity": 10,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Small Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Manikin Shield",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 40,
+        "RepairCost": 620,
+        "Requirements": {
+            "Strength": 9,
+            "Dexterity": 12,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Small Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Llewellyn Shield",
+        "Modifiers": [],
+        "Weight": 2.5,
+        "Durability": 110,
+        "RepairCost": 1135,
+        "Requirements": {
+            "Strength": 9,
+            "Dexterity": 7,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Small Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Crimson Parma",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 40,
+        "RepairCost": 620,
+        "Requirements": {
+            "Strength": 6,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Small Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Cleric's Parma",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 50,
+        "RepairCost": 590,
+        "Requirements": {
+            "Strength": 7,
+            "Dexterity": 7,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Small Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Cleric's Small Shield",
+        "Modifiers": [],
+        "Weight": 2.5,
+        "Durability": 60,
+        "RepairCost": 590,
+        "Requirements": {
+            "Strength": 8,
+            "Dexterity": 12,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Small Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Magic Shield",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 60,
+        "RepairCost": 1105,
+        "Requirements": {
+            "Strength": 8,
+            "Dexterity": 14,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Small Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Cursed Bone Shield",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 70,
+        "RepairCost": 590,
+        "Requirements": {
+            "Strength": 12,
+            "Dexterity": 12,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Small Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Sanctum Shield",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 30,
+        "RepairCost": 1250,
+        "Requirements": {
+            "Strength": 6,
+            "Dexterity": 7,
+            "Intelligence": 18,
+            "Faith": 18
+        },
+        "Category": "Crossbow",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Varangian Shield",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 70,
+        "RepairCost": 620,
+        "Requirements": {
+            "Strength": 9,
+            "Dexterity": 11,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Small Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Watcher's Shield",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 70,
+        "RepairCost": 1105,
+        "Requirements": {
+            "Strength": 8,
+            "Dexterity": 11,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Small Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Large Leather Shield",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 60,
+        "RepairCost": 690,
+        "Requirements": {
+            "Strength": 7,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Blue Wooden Shield",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 50,
+        "RepairCost": 575,
+        "Requirements": {
+            "Strength": 6,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Silver Eagle Kite Shield",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 80,
+        "RepairCost": 800,
+        "Requirements": {
+            "Strength": 10,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Drangleic Shield",
+        "Modifiers": [],
+        "Weight": 6,
+        "Durability": 70,
+        "RepairCost": 1300,
+        "Requirements": {
+            "Strength": 16,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Lion Clan Shield",
+        "Modifiers": [],
+        "Weight": 2.5,
+        "Durability": 70,
+        "RepairCost": 765,
+        "Requirements": {
+            "Strength": 8,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Archdrake Shield",
+        "Modifiers": [],
+        "Weight": 4,
+        "Durability": 80,
+        "RepairCost": 800,
+        "Requirements": {
+            "Strength": 14,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "King's Shield",
+        "Modifiers": [],
+        "Weight": 5,
+        "Durability": 80,
+        "RepairCost": 1340,
+        "Requirements": {
+            "Strength": 16,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Mirrah Shield",
+        "Modifiers": [],
+        "Weight": 4.5,
+        "Durability": 70,
+        "RepairCost": 765,
+        "Requirements": {
+            "Strength": 12,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Old Knight's Shield",
+        "Modifiers": [],
+        "Weight": 8,
+        "Durability": 20,
+        "RepairCost": 800,
+        "Requirements": {
+            "Strength": 24,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Loyce Shield",
+        "Modifiers": [],
+        "Weight": 4.5,
+        "Durability": 60,
+        "RepairCost": 1265,
+        "Requirements": {
+            "Strength": 12,
+            "Dexterity": 15,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Charred Loyce Shield",
+        "Modifiers": [],
+        "Weight": 5,
+        "Durability": 40,
+        "RepairCost": 1265,
+        "Requirements": {
+            "Strength": 12,
+            "Dexterity": 16,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Spirit Tree Shield",
+        "Modifiers": [],
+        "Weight": 5,
+        "Durability": 60,
+        "RepairCost": 765,
+        "Requirements": {
+            "Strength": 10,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Golden Wing Shield",
+        "Modifiers": [],
+        "Weight": 5.5,
+        "Durability": 70,
+        "RepairCost": 1340,
+        "Requirements": {
+            "Strength": 12,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Vessel Shield",
+        "Modifiers": [],
+        "Weight": 5,
+        "Durability": 60,
+        "RepairCost": 1300,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 17,
+            "Intelligence": 8,
+            "Faith": 8
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Shield of the Insolent",
+        "Modifiers": [],
+        "Weight": 6,
+        "Durability": 40,
+        "RepairCost": 800,
+        "Requirements": {
+            "Strength": 10,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Silverblack Shield",
+        "Modifiers": [],
+        "Weight": 5.5,
+        "Durability": 70,
+        "RepairCost": 800,
+        "Requirements": {
+            "Strength": 16,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Stone Parma",
+        "Modifiers": [],
+        "Weight": 5,
+        "Durability": 80,
+        "RepairCost": 765,
+        "Requirements": {
+            "Strength": 18,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Grand Spirit Tree Shield",
+        "Modifiers": [],
+        "Weight": 4.5,
+        "Durability": 70,
+        "RepairCost": 800,
+        "Requirements": {
+            "Strength": 10,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Moon Butterfly Shield",
+        "Modifiers": [],
+        "Weight": 1,
+        "Durability": 50,
+        "RepairCost": 690,
+        "Requirements": {
+            "Strength": 6,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Slumbering Dragon Shield",
+        "Modifiers": [],
+        "Weight": 4.5,
+        "Durability": 60,
+        "RepairCost": 765,
+        "Requirements": {
+            "Strength": 14,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Chaos Shield",
+        "Modifiers": [],
+        "Weight": 4.5,
+        "Durability": 60,
+        "RepairCost": 800,
+        "Requirements": {
+            "Strength": 10,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Wooden Shield",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 60,
+        "RepairCost": 615,
+        "Requirements": {
+            "Strength": 7,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Hollow Soldier Shield",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 40,
+        "RepairCost": 575,
+        "Requirements": {
+            "Strength": 8,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Royal Kite Shield",
+        "Modifiers": [],
+        "Weight": 4,
+        "Durability": 60,
+        "RepairCost": 800,
+        "Requirements": {
+            "Strength": 12,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Red Rust Shield",
+        "Modifiers": [],
+        "Weight": 5,
+        "Durability": 70,
+        "RepairCost": 800,
+        "Requirements": {
+            "Strength": 17,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Rampart Golem Shield",
+        "Modifiers": [],
+        "Weight": 8,
+        "Durability": 5,
+        "RepairCost": 800,
+        "Requirements": {
+            "Strength": 19,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Bell Keeper Shield",
+        "Modifiers": [],
+        "Weight": 2,
+        "Durability": 50,
+        "RepairCost": 725,
+        "Requirements": {
+            "Strength": 7,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Defender's Shield",
+        "Modifiers": [],
+        "Weight": 5,
+        "Durability": 70,
+        "RepairCost": 1340,
+        "Requirements": {
+            "Strength": 15,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Black Dragon Shield",
+        "Modifiers": [],
+        "Weight": 5.5,
+        "Durability": 70,
+        "RepairCost": 1340,
+        "Requirements": {
+            "Strength": 15,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Drakekeeper's Shield",
+        "Modifiers": [],
+        "Weight": 7,
+        "Durability": 110,
+        "RepairCost": 840,
+        "Requirements": {
+            "Strength": 17,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Porcine Shield",
+        "Modifiers": [],
+        "Weight": 4,
+        "Durability": 20,
+        "RepairCost": 800,
+        "Requirements": {
+            "Strength": 9,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Bone Shield",
+        "Modifiers": [],
+        "Weight": 6,
+        "Durability": 30,
+        "RepairCost": 800,
+        "Requirements": {
+            "Strength": 8,
+            "Dexterity": 8,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Twin Dragon Greatshield",
+        "Modifiers": [],
+        "Weight": 7,
+        "Durability": 80,
+        "RepairCost": 865,
+        "Requirements": {
+            "Strength": 20,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatshield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Tower Shield",
+        "Modifiers": [],
+        "Weight": 13,
+        "Durability": 90,
+        "RepairCost": 1325,
+        "Requirements": {
+            "Strength": 30,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatshield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Orma's Greatshield",
+        "Modifiers": [],
+        "Weight": 16,
+        "Durability": 90,
+        "RepairCost": 2030,
+        "Requirements": {
+            "Strength": 33,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatshield",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "Reeve's Greatshield",
+        "Modifiers": [],
+        "Weight": 16,
+        "Durability": 90,
+        "RepairCost": 1930,
+        "Requirements": {
+            "Strength": 33,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatshield",
+        "Paired": true,
+        "Infusions": {}
+    },
+    {
+        "Name": "King's Mirror",
+        "Modifiers": [],
+        "Weight": 14.5,
+        "Durability": 80,
+        "RepairCost": 1430,
+        "Requirements": {
+            "Strength": 35,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatshield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Dragonrider Greatshield",
+        "Modifiers": [],
+        "Weight": 13.5,
+        "Durability": 100,
+        "RepairCost": 1220,
+        "Requirements": {
+            "Strength": 35,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatshield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Mastodon Greatshield",
+        "Modifiers": [],
+        "Weight": 14,
+        "Durability": 100,
+        "RepairCost": 1635,
+        "Requirements": {
+            "Strength": 30,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatshield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Havel's Greatshield",
+        "Modifiers": [],
+        "Weight": 20,
+        "Durability": 120,
+        "RepairCost": 2530,
+        "Requirements": {
+            "Strength": 45,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatshield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Gyrm Greatshield",
+        "Modifiers": [],
+        "Weight": 15,
+        "Durability": 100,
+        "RepairCost": 1430,
+        "Requirements": {
+            "Strength": 32,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatshield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Pursuer's Greatshield",
+        "Modifiers": [],
+        "Weight": 16,
+        "Durability": 80,
+        "RepairCost": 1325,
+        "Requirements": {
+            "Strength": 38,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatshield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Pate's Shield",
+        "Modifiers": [],
+        "Weight": 10.5,
+        "Durability": 70,
+        "RepairCost": 1220,
+        "Requirements": {
+            "Strength": 25,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatshield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Old Knight Greatshield",
+        "Modifiers": [],
+        "Weight": 13,
+        "Durability": 40,
+        "RepairCost": 1635,
+        "Requirements": {
+            "Strength": 28,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatshield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Drakekeeper's Greatshield",
+        "Modifiers": [],
+        "Weight": 16.5,
+        "Durability": 130,
+        "RepairCost": 1325,
+        "Requirements": {
+            "Strength": 37,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatshield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Greatshield of Glory",
+        "Modifiers": [],
+        "Weight": 15,
+        "Durability": 120,
+        "RepairCost": 1930,
+        "Requirements": {
+            "Strength": 35,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatshield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Phoenix Parma",
+        "Modifiers": [],
+        "Weight": 2.5,
+        "Durability": 50,
+        "RepairCost": 635,
+        "Requirements": {
+            "Strength": 9,
+            "Dexterity": 10,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Small Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Sunlight Parma",
+        "Modifiers": [],
+        "Weight": 1.5,
+        "Durability": 50,
+        "RepairCost": 620,
+        "Requirements": {
+            "Strength": 7,
+            "Dexterity": 11,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Small Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Watchdragon Parma",
+        "Modifiers": [],
+        "Weight": 4.5,
+        "Durability": 60,
+        "RepairCost": 1300,
+        "Requirements": {
+            "Strength": 10,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Blossom Kite Shield",
+        "Modifiers": [],
+        "Weight": 4,
+        "Durability": 60,
+        "RepairCost": 765,
+        "Requirements": {
+            "Strength": 12,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Rebel's Greatshield",
+        "Modifiers": [],
+        "Weight": 13.5,
+        "Durability": 90,
+        "RepairCost": 1325,
+        "Requirements": {
+            "Strength": 29,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatshield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Wicked Eye Greatshield",
+        "Modifiers": [],
+        "Weight": 13.8,
+        "Durability": 70,
+        "RepairCost": 1620,
+        "Requirements": {
+            "Strength": 31,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Greatshield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Black Flamestone Parma",
+        "Modifiers": [],
+        "Weight": 2.5,
+        "Durability": 40,
+        "RepairCost": 875,
+        "Requirements": {
+            "Strength": 8,
+            "Dexterity": 10,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Yellow Quartz Shield",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 60,
+        "RepairCost": 575,
+        "Requirements": {
+            "Strength": 12,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Bound Wooden Shield",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 60,
+        "RepairCost": 650,
+        "Requirements": {
+            "Strength": 11,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Homunculus Wooden Shield",
+        "Modifiers": [],
+        "Weight": 3.5,
+        "Durability": 70,
+        "RepairCost": 800,
+        "Requirements": {
+            "Strength": 8,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Medium Shield",
+        "Paired": false,
+        "Infusions": {}
+    },
+    {
+        "Name": "Transgressor's Leather Shield",
+        "Modifiers": [],
+        "Weight": 3,
+        "Durability": 70,
+        "RepairCost": 635,
+        "Requirements": {
+            "Strength": 7,
+            "Dexterity": 0,
+            "Intelligence": 0,
+            "Faith": 0
+        },
+        "Category": "Small Shield",
+        "Paired": false,
+        "Infusions": {}
+    }
+]
