@@ -5,6 +5,14 @@
     --secondary: #212121;
     --contrast: white;
     --accent: #f1a639;
+
+    --physical: tan;
+    --magic: lightblue;
+    --fire: orange;
+    --lightning: yellow;
+    --dark: lightgray;
+    --poison: lightgreen;
+    --bleed: pink;
 }
 
 html {

@@ -93,11 +93,11 @@ export default function RightColumn(): JSX.Element {
 
             {/* Resistances */}
             <div className="flex flex-col w-full">
-                {/* Bleed Resistance */}
-                <StatDisplay statDisplayKey="ResistanceBleed" isOddRow />
-
                 {/* Poison Resistance */}
-                <StatDisplay statDisplayKey="ResistancePoison" />
+                <StatDisplay statDisplayKey="ResistancePoison" isOddRow />
+
+                {/* Bleed Resistance */}
+                <StatDisplay statDisplayKey="ResistanceBleed" />
 
                 {/* Petrify Resistance */}
                 <StatDisplay statDisplayKey="ResistancePetrify" isOddRow />

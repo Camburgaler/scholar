@@ -51,6 +51,7 @@ export default function WeaponDisplay(props: {
             id={slot}
             className="col-span-1 flex flex-col w-full justify-between border rounded-md"
         >
+            {/* TODO: Cleverer damage display? */}
             <DamageDisplay slot={slot} />
             <select
                 className="w-full"

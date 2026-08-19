@@ -119,6 +119,33 @@ export default function StatDisplay(props: {
     // Constants
     const statMapKey = mapDisplayKeyToStatMapKey(statDisplayKey);
     const label = mapStatDisplayKeyToLabel(statDisplayKey);
+    const textColor =
+        statDisplayKey === "Defense" ||
+        statDisplayKey === "DefenseSlash" ||
+        statDisplayKey === "DefenseStrike" ||
+        statDisplayKey === "DefenseThrust" ||
+        statDisplayKey === "PhysicalAttackPowerByStrength" ||
+        statDisplayKey === "PhysicalAttackPowerByDexterity"
+            ? "var(--physical)"
+            : statDisplayKey === "AbsorptionMagic" ||
+                statDisplayKey === "AttackPowerMagic"
+              ? "var(--magic)"
+              : statDisplayKey === "AbsorptionFire" ||
+                  statDisplayKey === "AttackPowerFire"
+                ? "var(--fire)"
+                : statDisplayKey === "AbsorptionLightning" ||
+                    statDisplayKey === "AttackPowerLightning"
+                  ? "var(--lightning)"
+                  : statDisplayKey === "AbsorptionDark" ||
+                      statDisplayKey === "AttackPowerDark"
+                    ? "var(--dark)"
+                    : statDisplayKey === "ResistancePoison" ||
+                        statDisplayKey === "AttackPowerPoison"
+                      ? "var(--poison)"
+                      : statDisplayKey === "ResistanceBleed" ||
+                          statDisplayKey === "AttackPowerBleed"
+                        ? "var(--bleed)"
+                        : "";
 
     // determines if the focused attribute affects this stat
     useEffect(() => {
@@ -149,13 +176,13 @@ export default function StatDisplay(props: {
                 backgroundColor: isOddRow
                     ? "var(--primary)"
                     : "var(--secondary)",
-                color: isFocused ? "var(--accent)" : "var(--contrast)",
                 fontWeight: isFocused ? "bold" : "normal",
             }}
             id={statDisplayKey}
         >
             <label
                 className="flex items-center justify-center h-full"
+                style={{ color: textColor }}
                 htmlFor={statDisplayKey}
             >
                 {label}:

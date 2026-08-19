@@ -23,23 +23,23 @@ export default function DamageDisplay(props: {
             style={{ justifyContent: isRightHand ? "end" : "start" }}
         >
             (
-            <p id="physical" style={{ color: "tan" }}>
+            <p id="physical" style={{ color: "var(--physical)" }}>
                 10
             </p>
             /
-            <p id="magic" style={{ color: "lightblue" }}>
+            <p id="magic" style={{ color: "var(--magic)" }}>
                 0
             </p>
             /
-            <p id="fire" style={{ color: "pink" }}>
+            <p id="fire" style={{ color: "var(--fire)" }}>
                 0
             </p>
             /
-            <p id="lightning" style={{ color: "yellow" }}>
+            <p id="lightning" style={{ color: "var(--lightning)" }}>
                 0
             </p>
             /
-            <p id="dark" style={{ color: "white" }}>
+            <p id="dark" style={{ color: "var(--dark)" }}>
                 0
             </p>
             )
