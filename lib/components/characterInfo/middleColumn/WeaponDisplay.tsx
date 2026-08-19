@@ -1,4 +1,5 @@
 import { WeaponEquipSlot } from "@/lib/classes/weaponSlots";
+import DamageDisplay from "@/lib/components/characterInfo/middleColumn/weaponDisplay/DamageDisplay";
 import InfusionDisplay from "@/lib/components/characterInfo/middleColumn/weaponDisplay/InfusionDisplay";
 import ReinforcementDisplay from "@/lib/components/characterInfo/middleColumn/weaponDisplay/ReinforcementDisplay";
 import { Weapons } from "@/lib/gameData";
@@ -50,11 +51,7 @@ export default function WeaponDisplay(props: {
             id={slot}
             className="col-span-1 flex flex-col w-full justify-between border rounded-md"
         >
-            <div className="flex w-full justify-between">
-                {/* TODO: Make these values reflect the selected weapon */}
-                {/* TODO: Color-code these values based on damage type */}
-                <p className="w-full content-end">(10/0/0/0/0)</p>
-            </div>
+            <DamageDisplay slot={slot} />
             <select
                 className="w-full"
                 value={equippedWeapons.getWeapon(slot).data.Name}
