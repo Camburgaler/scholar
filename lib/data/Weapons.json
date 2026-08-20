@@ -154,7 +154,71 @@
     },
     {
         "Name": "Blue Dagger",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Sorcery Power by 5.0%",
+                "TargetType": "special",
+                "Target": "Sorcery Power",
+                "Method": "multiplicative",
+                "Value": 0.05
+            },
+            {
+                "Description": "Increase Miracle Power by 5.0%",
+                "TargetType": "special",
+                "Target": "Miracle Power",
+                "Method": "multiplicative",
+                "Value": 0.05
+            },
+            {
+                "Description": "Increase Pyromancy Power by 5.0%",
+                "TargetType": "special",
+                "Target": "Pyromancy Power",
+                "Method": "multiplicative",
+                "Value": 0.05
+            },
+            {
+                "Description": "Increase Hex Power Staff by 5.0%",
+                "TargetType": "special",
+                "Target": "Hex Power Staff",
+                "Method": "multiplicative",
+                "Value": 0.05
+            },
+            {
+                "Description": "Increase Hex Power Chime by 5.0%",
+                "TargetType": "special",
+                "Target": "Hex Power Chime",
+                "Method": "multiplicative",
+                "Value": 0.05
+            },
+            {
+                "Description": "Decrease Magic Defense by 20",
+                "TargetType": "stat",
+                "Target": "Magic Defense",
+                "Method": "additive",
+                "Value": -20
+            },
+            {
+                "Description": "Decrease Lightning Defense by 20",
+                "TargetType": "stat",
+                "Target": "Lightning Defense",
+                "Method": "additive",
+                "Value": -20
+            },
+            {
+                "Description": "Decrease Fire Defense by 20",
+                "TargetType": "stat",
+                "Target": "Fire Defense",
+                "Method": "additive",
+                "Value": -20
+            },
+            {
+                "Description": "Decrease Dark Defense by 20",
+                "TargetType": "stat",
+                "Target": "Dark Defense",
+                "Method": "additive",
+                "Value": -20
+            }
+        ],
         "Weight": 0.5,
         "Durability": 60,
         "RepairCost": 1080,
@@ -1123,7 +1187,15 @@
     },
     {
         "Name": "Ruler's Sword",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Scale weapon damage based on number of souls held. Min souls: 10000, Max souls: 1000000, Min scaling: 85.0%, Max scaling: 130.0%",
+                "TargetType": "special",
+                "Target": "Weapon Damage Scaling",
+                "Method": "multiplicative",
+                "Value": 0
+            }
+        ],
         "Weight": 8,
         "Durability": 60,
         "RepairCost": 1880,
@@ -1344,7 +1416,15 @@
     },
     {
         "Name": "Greatsword of the Forlorn",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Scale weapon damage based on Hollowing. Min value: 1, Max value: 10, Min scaling: 110.0%, Max scaling: 200.0%",
+                "TargetType": "special",
+                "Target": "Weapon Damage Scaling",
+                "Method": "multiplicative",
+                "Value": 0
+            }
+        ],
         "Weight": 9,
         "Durability": 65,
         "RepairCost": 930,
@@ -1752,7 +1832,36 @@
     },
     {
         "Name": "Handmaid's Ladle",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Vitality by 1",
+                "TargetType": "attribute",
+                "Target": "Vitality",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "Increase Endurance by 1",
+                "TargetType": "attribute",
+                "Target": "Endurance",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "Increase Adaptability by 2",
+                "TargetType": "attribute",
+                "Target": "Adaptability",
+                "Method": "additive",
+                "Value": 2
+            },
+            {
+                "Description": "Decrease Dexterity by 1",
+                "TargetType": "attribute",
+                "Target": "Dexterity",
+                "Method": "additive",
+                "Value": -1
+            }
+        ],
         "Weight": 0.2,
         "Durability": 10,
         "RepairCost": 405,
@@ -1939,7 +2048,22 @@
     },
     {
         "Name": "Dragon Tooth",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Magic Defense by 5",
+                "TargetType": "stat",
+                "Target": "Magic Defense",
+                "Method": "additive",
+                "Value": 5
+            },
+            {
+                "Description": "Increase Fire Defense by 5",
+                "TargetType": "stat",
+                "Target": "Fire Defense",
+                "Method": "additive",
+                "Value": 5
+            }
+        ],
         "Weight": 20,
         "Durability": 70,
         "RepairCost": 2155,
@@ -2194,7 +2318,64 @@
     },
     {
         "Name": "Yorgh's Spear",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Poison Defense by 20",
+                "TargetType": "stat",
+                "Target": "Poison Defense",
+                "Method": "additive",
+                "Value": 20
+            },
+            {
+                "Description": "Increase Bleed Defense by 7",
+                "TargetType": "stat",
+                "Target": "Bleed Defense",
+                "Method": "additive",
+                "Value": 7
+            },
+            {
+                "Description": "Increase Curse Defense by 7",
+                "TargetType": "stat",
+                "Target": "Curse Defense",
+                "Method": "additive",
+                "Value": 7
+            },
+            {
+                "Description": "Increase Petrify Defense by 7",
+                "TargetType": "stat",
+                "Target": "Petrify Defense",
+                "Method": "additive",
+                "Value": 7
+            },
+            {
+                "Description": "Decrease Magic Defense by 7",
+                "TargetType": "stat",
+                "Target": "Magic Defense",
+                "Method": "additive",
+                "Value": -7
+            },
+            {
+                "Description": "Decrease Lightning Defense by 7",
+                "TargetType": "stat",
+                "Target": "Lightning Defense",
+                "Method": "additive",
+                "Value": -7
+            },
+            {
+                "Description": "Decrease Fire Defense by 7",
+                "TargetType": "stat",
+                "Target": "Fire Defense",
+                "Method": "additive",
+                "Value": -7
+            },
+            {
+                "Description": "Decrease Dark Defense by 7",
+                "TargetType": "stat",
+                "Target": "Dark Defense",
+                "Method": "additive",
+                "Value": -7
+            }
+        ],
         "Weight": 19,
         "Durability": 90,
         "RepairCost": 1370,
@@ -2534,7 +2715,15 @@
     },
     {
         "Name": "Scythe of the Forlorn",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Scale weapon damage based on Hollowing. Min value: 1, Max value: 10, Min scaling: 110.0%, Max scaling: 200.0%",
+                "TargetType": "special",
+                "Target": "Weapon Damage Scaling",
+                "Method": "multiplicative",
+                "Value": 0
+            }
+        ],
         "Weight": 11,
         "Durability": 55,
         "RepairCost": 885,
@@ -2908,7 +3097,22 @@
     },
     {
         "Name": "Work Hook",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Dexterity by 5",
+                "TargetType": "attribute",
+                "Target": "Dexterity",
+                "Method": "additive",
+                "Value": 5
+            },
+            {
+                "Description": "Decrease Adaptability by 1",
+                "TargetType": "attribute",
+                "Target": "Adaptability",
+                "Method": "additive",
+                "Value": -1
+            }
+        ],
         "Weight": 1,
         "Durability": 40,
         "RepairCost": 585,
@@ -3061,7 +3265,15 @@
     },
     {
         "Name": "Staff of Amana",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Scale weapon damage based on Hollowing. Min value: 1, Max value: 10, Min scaling: 100.0%, Max scaling: 10.0%",
+                "TargetType": "special",
+                "Target": "Weapon Damage Scaling",
+                "Method": "multiplicative",
+                "Value": 0
+            }
+        ],
         "Weight": 3,
         "Durability": 45,
         "RepairCost": 1130,
@@ -3231,7 +3443,29 @@
     },
     {
         "Name": "Azal's Staff",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Decrease Max Spell Usages by 75.0%",
+                "TargetType": "stat",
+                "Target": "Max Spell Usages",
+                "Method": "multiplicative",
+                "Value": -0.75
+            },
+            {
+                "Description": "Increase Sorcery Power by 2.5%",
+                "TargetType": "special",
+                "Target": "Sorcery Power",
+                "Method": "multiplicative",
+                "Value": 0.025
+            },
+            {
+                "Description": "Increase Hex Power Staff by 2.5%",
+                "TargetType": "special",
+                "Target": "Hex Power Staff",
+                "Method": "multiplicative",
+                "Value": 0.025
+            }
+        ],
         "Weight": 4,
         "Durability": 4,
         "RepairCost": 1700,
@@ -3418,7 +3652,15 @@
     },
     {
         "Name": "Disc Chime",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Miracle Power by 3.0%",
+                "TargetType": "special",
+                "Target": "Miracle Power",
+                "Method": "multiplicative",
+                "Value": 0.03
+            }
+        ],
         "Weight": 2,
         "Durability": 40,
         "RepairCost": 1085,
@@ -3435,7 +3677,15 @@
     },
     {
         "Name": "Chime of Screams",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Decrease Faith by 1",
+                "TargetType": "attribute",
+                "Target": "Faith",
+                "Method": "additive",
+                "Value": -1
+            }
+        ],
         "Weight": 0.5,
         "Durability": 30,
         "RepairCost": 1085,
@@ -3469,7 +3719,15 @@
     },
     {
         "Name": "Short Bow",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Decrease Bow Range by 5.0%",
+                "TargetType": "special",
+                "Target": "Bow Range",
+                "Method": "additive",
+                "Value": 0
+            }
+        ],
         "Weight": 1,
         "Durability": 60,
         "RepairCost": 455,
@@ -3503,7 +3761,15 @@
     },
     {
         "Name": "Composite Bow",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Decrease Bow Range by 5.0%",
+                "TargetType": "special",
+                "Target": "Bow Range",
+                "Method": "additive",
+                "Value": 0
+            }
+        ],
         "Weight": 2,
         "Durability": 60,
         "RepairCost": 1105,
@@ -3520,7 +3786,15 @@
     },
     {
         "Name": "Sea Bow",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Bow Range by 25.0%",
+                "TargetType": "special",
+                "Target": "Bow Range",
+                "Method": "additive",
+                "Value": 0
+            }
+        ],
         "Weight": 2,
         "Durability": 60,
         "RepairCost": 620,
@@ -3537,7 +3811,15 @@
     },
     {
         "Name": "Dragonrider Bow",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Decrease Bow Range by 5.0%",
+                "TargetType": "special",
+                "Target": "Bow Range",
+                "Method": "additive",
+                "Value": 0
+            }
+        ],
         "Weight": 3,
         "Durability": 40,
         "RepairCost": 1130,
@@ -3588,7 +3870,15 @@
     },
     {
         "Name": "Hunter's Blackbow",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Bow Range by 20.0%",
+                "TargetType": "special",
+                "Target": "Bow Range",
+                "Method": "additive",
+                "Value": 0
+            }
+        ],
         "Weight": 2,
         "Durability": 70,
         "RepairCost": 1090,
@@ -3673,7 +3963,15 @@
     },
     {
         "Name": "Light Crossbow",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Decrease Crossbow Range by 15.0%",
+                "TargetType": "special",
+                "Target": "Crossbow Range",
+                "Method": "additive",
+                "Value": 0
+            }
+        ],
         "Weight": 3,
         "Durability": 60,
         "RepairCost": 660,
@@ -3707,7 +4005,15 @@
     },
     {
         "Name": "Shield Crossbow",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Crossbow Range by 10.0%",
+                "TargetType": "special",
+                "Target": "Crossbow Range",
+                "Method": "additive",
+                "Value": 0
+            }
+        ],
         "Weight": 8,
         "Durability": 60,
         "RepairCost": 770,
@@ -3724,7 +4030,15 @@
     },
     {
         "Name": "Avelyn",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Decrease Crossbow Range by 15.0%",
+                "TargetType": "special",
+                "Target": "Crossbow Range",
+                "Method": "additive",
+                "Value": 0
+            }
+        ],
         "Weight": 6,
         "Durability": 40,
         "RepairCost": 1730,
@@ -3826,7 +4140,22 @@
     },
     {
         "Name": "Curved Nil Greatsword",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Scale weapon damage based on NG cycle. Min cycle: 2, Max cycle: 10, Min attack bonus: 30, Max attack bonus: 200",
+                "TargetType": "special",
+                "Target": "Weapon Damage",
+                "Method": "additive",
+                "Value": 0
+            },
+            {
+                "Description": "Scale weapon damage based on NG cycle. Min cycle: 2, Max cycle: 10, Min attack bonus: 5, Max attack bonus: 100",
+                "TargetType": "special",
+                "Target": "Weapon Damage",
+                "Method": "additive",
+                "Value": 0
+            }
+        ],
         "Weight": 17,
         "Durability": 50,
         "RepairCost": 1685,
@@ -4064,7 +4393,15 @@
     },
     {
         "Name": "Lost Sinner's Sword",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Scale weapon damage based on Sin. Min value: 1, Max value: 30, Min scaling: 100.0%, Max scaling: 0.0%",
+                "TargetType": "special",
+                "Target": "Weapon Damage Scaling",
+                "Method": "multiplicative",
+                "Value": 0
+            }
+        ],
         "Weight": 12,
         "Durability": 50,
         "RepairCost": 2035,
@@ -4200,7 +4537,15 @@
     },
     {
         "Name": "Dark Pyromancy Flame",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Scale weapon damage based on Hollowing. Min value: 1, Max value: 10, Min scaling: 110.0%, Max scaling: 200.0%",
+                "TargetType": "special",
+                "Target": "Weapon Damage Scaling",
+                "Method": "multiplicative",
+                "Value": 0
+            }
+        ],
         "Weight": 0,
         "Durability": 60,
         "RepairCost": 1055,
@@ -4744,7 +5089,15 @@
     },
     {
         "Name": "Loyce Shield",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase HP by 2 every 1 second(s)",
+                "TargetType": "special",
+                "Target": "HP Regen",
+                "Method": "additive",
+                "Value": 2
+            }
+        ],
         "Weight": 4.5,
         "Durability": 60,
         "RepairCost": 1265,
@@ -4761,7 +5114,15 @@
     },
     {
         "Name": "Charred Loyce Shield",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase HP by 2 every 1 second(s)",
+                "TargetType": "special",
+                "Target": "HP Regen",
+                "Method": "additive",
+                "Value": 2
+            }
+        ],
         "Weight": 5,
         "Durability": 40,
         "RepairCost": 1265,
@@ -4812,7 +5173,57 @@
     },
     {
         "Name": "Vessel Shield",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Vigor by 1",
+                "TargetType": "attribute",
+                "Target": "Vigor",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "Increase Endurance by 1",
+                "TargetType": "attribute",
+                "Target": "Endurance",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "Increase Strength by 4",
+                "TargetType": "attribute",
+                "Target": "Strength",
+                "Method": "additive",
+                "Value": 4
+            },
+            {
+                "Description": "Increase Dexterity by 4",
+                "TargetType": "attribute",
+                "Target": "Dexterity",
+                "Method": "additive",
+                "Value": 4
+            },
+            {
+                "Description": "Increase Adaptability by 1",
+                "TargetType": "attribute",
+                "Target": "Adaptability",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "Increase Intelligence by 1",
+                "TargetType": "attribute",
+                "Target": "Intelligence",
+                "Method": "additive",
+                "Value": 1
+            },
+            {
+                "Description": "Increase Faith by 1",
+                "TargetType": "attribute",
+                "Target": "Faith",
+                "Method": "additive",
+                "Value": 1
+            }
+        ],
         "Weight": 5,
         "Durability": 60,
         "RepairCost": 1300,
@@ -4829,7 +5240,15 @@
     },
     {
         "Name": "Shield of the Insolent",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Stamina Recovery by 5.0%",
+                "TargetType": "special",
+                "Target": "Stamina Recovery",
+                "Method": "multiplicative",
+                "Value": 5.000000000000004
+            }
+        ],
         "Weight": 6,
         "Durability": 40,
         "RepairCost": 800,
@@ -4914,7 +5333,15 @@
     },
     {
         "Name": "Slumbering Dragon Shield",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Stamina Recovery by 5.0%",
+                "TargetType": "special",
+                "Target": "Stamina Recovery",
+                "Method": "multiplicative",
+                "Value": 5.000000000000004
+            }
+        ],
         "Weight": 4.5,
         "Durability": 60,
         "RepairCost": 765,
@@ -5407,7 +5834,15 @@
     },
     {
         "Name": "Watchdragon Parma",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Item Discovery by 50",
+                "TargetType": "special",
+                "Target": "Item Discovery",
+                "Method": "additive",
+                "Value": 0
+            }
+        ],
         "Weight": 4.5,
         "Durability": 60,
         "RepairCost": 1300,
@@ -5424,7 +5859,15 @@
     },
     {
         "Name": "Blossom Kite Shield",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase Stamina Recovery by 5.0%",
+                "TargetType": "special",
+                "Target": "Stamina Recovery",
+                "Method": "multiplicative",
+                "Value": 5.000000000000004
+            }
+        ],
         "Weight": 4,
         "Durability": 60,
         "RepairCost": 765,
@@ -5458,7 +5901,15 @@
     },
     {
         "Name": "Wicked Eye Greatshield",
-        "Modifiers": [],
+        "Modifiers": [
+            {
+                "Description": "Increase HP On Kill by 15",
+                "TargetType": "special",
+                "Target": "HP On Kill",
+                "Method": "additive",
+                "Value": 15
+            }
+        ],
         "Weight": 13.8,
         "Durability": 70,
         "RepairCost": 1620,

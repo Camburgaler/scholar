@@ -44,7 +44,7 @@ export default function WeaponDisplay(props: {
                 setVanquishersSeal(true);
             }
         });
-    });
+    }, [equippedRings]);
 
     return (
         <div

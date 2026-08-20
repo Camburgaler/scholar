@@ -1,6 +1,7 @@
 import StatDisplay from "@/lib/components/characterInfo/StatDisplay";
 import { useEquippedArmorSet } from "@/lib/reducers/equippedArmorSet";
 import { useEquippedRings } from "@/lib/reducers/equippedRings";
+import { useEquippedWeapons } from "@/lib/reducers/equippedWeapons";
 import { ringsModifierDisplays } from "@/lib/scripts/equippedRings";
 import { JSX } from "react/jsx-runtime";
 
@@ -11,6 +12,7 @@ export default function RightColumn(): JSX.Element {
     // Context
     const equippedArmor = useEquippedArmorSet();
     const equippedRings = useEquippedRings();
+    const equippedWeapons = useEquippedWeapons();
 
     return (
         <div className="flex flex-col w-4xl h-full justify-baseline items-end align-center">
@@ -116,6 +118,7 @@ export default function RightColumn(): JSX.Element {
                 <div className="flex flex-col w-full border rounded-2xl p-2 gap-1 min-h-30 max-h-65 overflow-y-auto">
                     {...equippedArmor.getModifierDisplays()}
                     {...ringsModifierDisplays(equippedRings)}
+                    {...equippedWeapons.getModifierDisplays()}
                 </div>
             </div>
         </div>

@@ -1,4 +1,5 @@
 import ArmorSet from "@/lib/classes/armorSet";
+import WeaponSlots from "@/lib/classes/weaponSlots";
 import {
     mapDisplayKeyToArmorDefenseField,
     mapDisplayKeyToStatMapKey,
@@ -971,6 +972,7 @@ export function calculateStatDisplayValue(
     attributes: AttributeMap<number>,
     equippedArmor: ArmorSet,
     equippedRings: EquippedRings,
+    equippedWeapons: WeaponSlots,
 ): number {
     const statMapKey: StatMapKey = mapDisplayKeyToStatMapKey(statDisplayKey);
     let statValue = calculateStatFromAttributes(statMapKey, attributes);
@@ -1009,34 +1011,12 @@ export function calculateStatDisplayValue(
         }
     }
 
-    // Add active effects from armor
-    equippedArmor
-        .activeEffects()
-        .filter(
-            (effect) =>
-                effect.TargetType === "stat" &&
-                ModifierTargetToStatMapKey.get(effect.Target) === statMapKey,
-        )
-        .forEach((effect) => {
-            switch (effect.Method) {
-                case "additive":
-                    additiveModifier += effect.Value;
-                    break;
-                case "multiplicative":
-                    multiplicativeModifier += effect.Value;
-                    break;
-                default:
-                    break;
-            }
-        });
-
-    // Add armor poise
-    if (statMapKey === "Poise") {
-        additiveModifier += equippedArmor.poise();
-    }
-
-    // Add active stat effects from rings
-    ringsActiveEffects(equippedRings)
+    // Add active effects
+    [
+        ...equippedArmor.activeEffects(),
+        ...ringsActiveEffects(equippedRings),
+        ...equippedWeapons.activeEffects(),
+    ]
         .filter(
             (effect) =>
                 effect.TargetType === "stat" &&
@@ -1077,6 +1057,11 @@ export function calculateStatDisplayValue(
                     break;
             }
         });
+
+    // Add armor poise
+    if (statMapKey === "Poise") {
+        additiveModifier += equippedArmor.poise();
+    }
 
     if (statMapKey === "SpellCastingSpeed") {
         // The game's raw data provides numbers that are meant to reduce cast time, but we display cast speed.

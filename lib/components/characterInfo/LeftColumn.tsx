@@ -3,6 +3,7 @@ import Class from "@/lib/interfaces/class";
 import Spell from "@/lib/interfaces/spell";
 import { useEquippedArmorSet } from "@/lib/reducers/equippedArmorSet";
 import { useEquippedRings } from "@/lib/reducers/equippedRings";
+import { useEquippedWeapons } from "@/lib/reducers/equippedWeapons";
 import {
     useFocusedAttribute,
     useFocusedAttributeDispatch,
@@ -39,6 +40,7 @@ export default function LeftColumn(): JSX.Element {
     const setVirtualAttributes = useVirtualAttributesDispatch();
     const equippedArmorSet = useEquippedArmorSet();
     const equippedRings = useEquippedRings();
+    const equippedWeapons = useEquippedWeapons();
 
     // STATE
 
@@ -313,6 +315,7 @@ export default function LeftColumn(): JSX.Element {
                 virtualAttributes,
                 equippedArmorSet,
                 equippedRings,
+                equippedWeapons,
             ),
         );
     }, [virtualAttributes, equippedArmorSet, equippedRings]);

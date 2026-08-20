@@ -1608,6 +1608,20 @@
                 "Target": "Bow Range",
                 "Method": "additive",
                 "Value": 0
+            },
+            {
+                "Description": "Increase Greatbow Range by 5.0%",
+                "TargetType": "special",
+                "Target": "Greatbow Range",
+                "Method": "additive",
+                "Value": 0
+            },
+            {
+                "Description": "Increase Crossbow Range by 5.0%",
+                "TargetType": "special",
+                "Target": "Crossbow Range",
+                "Method": "additive",
+                "Value": 0
             }
         ],
         "Weight": 2.6,

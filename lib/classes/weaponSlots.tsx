@@ -1,6 +1,9 @@
+import ModifierDisplay from "@/lib/components/characterInfo/rightColumn/modifierDisplay";
 import { Weapons } from "@/lib/gameData";
 import EquippedWeapon from "@/lib/interfaces/equippedWeapon";
+import Modifier from "@/lib/interfaces/modifier";
 import Weapon from "@/lib/interfaces/weapon";
+import { JSX } from "react/jsx-runtime";
 
 /**
  * @type WeaponEquipSlot
@@ -354,5 +357,120 @@ export default class WeaponSlots {
      */
     public setRHT(weapon: EquippedWeapon): void {
         this.RightHandWeaponTertiary = weapon;
+    }
+
+    // PUBLIC METHODS
+
+    /**
+     * @method getModifierDisplays
+     * @description Gets the ModifierDisplay components for the weapon slots.
+     * @returns The {@link ModifierDisplay}s for the weapon slots.
+     */
+    public getModifierDisplays(): JSX.Element[] {
+        let activeEffects: JSX.Element[] = [];
+        let isOddRow = true;
+
+        this.getLHP().data.Modifiers.forEach((modifier) => {
+            activeEffects.push(
+                <ModifierDisplay
+                    description={modifier.Description}
+                    equipmentName={this.getLHP().data.Name}
+                    isOddRow={isOddRow}
+                />,
+            );
+            isOddRow = !isOddRow;
+        });
+
+        this.getLHS().data.Modifiers.forEach((modifier) => {
+            activeEffects.push(
+                <ModifierDisplay
+                    description={modifier.Description}
+                    equipmentName={this.getLHS().data.Name}
+                    isOddRow={isOddRow}
+                />,
+            );
+            isOddRow = !isOddRow;
+        });
+
+        this.getLHT().data.Modifiers.forEach((modifier) => {
+            activeEffects.push(
+                <ModifierDisplay
+                    description={modifier.Description}
+                    equipmentName={this.getLHT().data.Name}
+                    isOddRow={isOddRow}
+                />,
+            );
+            isOddRow = !isOddRow;
+        });
+
+        this.getRHP().data.Modifiers.forEach((modifier) => {
+            activeEffects.push(
+                <ModifierDisplay
+                    description={modifier.Description}
+                    equipmentName={this.getRHP().data.Name}
+                    isOddRow={isOddRow}
+                />,
+            );
+            isOddRow = !isOddRow;
+        });
+
+        this.getRHS().data.Modifiers.forEach((modifier) => {
+            activeEffects.push(
+                <ModifierDisplay
+                    description={modifier.Description}
+                    equipmentName={this.getRHS().data.Name}
+                    isOddRow={isOddRow}
+                />,
+            );
+            isOddRow = !isOddRow;
+        });
+
+        this.getRHT().data.Modifiers.forEach((modifier) => {
+            activeEffects.push(
+                <ModifierDisplay
+                    description={modifier.Description}
+                    equipmentName={this.getRHT().data.Name}
+                    isOddRow={isOddRow}
+                />,
+            );
+            isOddRow = !isOddRow;
+        });
+
+        return activeEffects;
+    }
+
+    /**
+     * @method activeEffects
+     * @description Gets the active effects of the weapon slots.
+     * @returns The active effects of the weapon slots. Array of {@link Modifier}s.
+     */
+    public activeEffects(): Modifier[] {
+        let activeEffects: Modifier[] = [];
+
+        this.getLHP().data.Modifiers.forEach((modifier) => {
+            activeEffects.push(modifier);
+        });
+
+        this.getLHS().data.Modifiers.forEach((modifier) => {
+            activeEffects.push(modifier);
+        });
+
+        this.getLHT().data.Modifiers.forEach((modifier) => {
+            activeEffects.push(modifier);
+        });
+
+        this.getRHP().data.Modifiers.forEach((modifier) => {
+            activeEffects.push(modifier);
+        });
+
+        this.getRHS().data.Modifiers.forEach((modifier) => {
+            activeEffects.push(modifier);
+        });
+
+        this.getRHT().data.Modifiers.forEach((modifier) => {
+            activeEffects.push(modifier);
+        });
+
+        return activeEffects;
     }
 }
