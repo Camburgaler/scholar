@@ -30,12 +30,9 @@ export default function InfusionDisplay(props: {
                 });
             }}
         >
-            {/* TODO: Add infusion data */}
-            {Object.keys(equippedWeapons.getWeapon(slot).data.Infusions).map(
-                (infusion) => (
-                    <option key={infusion}>{infusion}</option>
-                ),
-            )}
+            {equippedWeapons.getWeapon(slot).data.Infusions.map((infusion) => (
+                <option key={infusion.Name}>{infusion.Name}</option>
+            ))}
         </select>
     );
 }

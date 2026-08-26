@@ -3,7 +3,7 @@
  * @description The key type for the {@link InfusionMap}.
  */
 export type InfusionMapKey =
-    | "Basic"
+    | "Physical"
     | "Magic"
     | "Fire"
     | "Lightning"

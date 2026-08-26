@@ -39,12 +39,30 @@ export default function WeaponDisplay(props: {
 
     // Effect
     useEffect(() => {
+        // If the "Vanquisher's Seal" ring is equipped, set the "vanquishersSeal" state to true
         Object.entries(equippedRings).forEach(([key, ring]) => {
             if (ring.Name === "Vanquisher's Seal") {
                 setVanquishersSeal(true);
             }
         });
     }, [equippedRings]);
+
+    useEffect(() => {
+        // If vanquishersSeal is true, set the equipped weapon to "Fist (Vanquisher's Seal)"
+        if (
+            vanquishersSeal &&
+            equippedWeapons.getWeapon(slot).data.Name === "Fists"
+        ) {
+            setEquippedWeapons({
+                slot: slot,
+                equippedWeapon: {
+                    data: getWeaponByName("Fist (Vanquisher's Seal)")!,
+                    infusion: "Physical",
+                    reinforcementLevel: 0,
+                },
+            });
+        }
+    }, [vanquishersSeal, equippedWeapons, setEquippedWeapons]);
 
     return (
         <div
@@ -61,7 +79,7 @@ export default function WeaponDisplay(props: {
                         slot: slot,
                         equippedWeapon: {
                             data: getWeaponByName(e.target.value)!,
-                            infusion: "Basic",
+                            infusion: "Physical",
                             reinforcementLevel: 0,
                         },
                     })

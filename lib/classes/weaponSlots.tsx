@@ -36,7 +36,7 @@ export default class WeaponSlots {
     private LeftHandWeaponPrimary: EquippedWeapon = {
         data: Weapons[0],
         reinforcementLevel: 0,
-        infusion: "Basic",
+        infusion: "Physical",
     };
 
     /**
@@ -45,7 +45,7 @@ export default class WeaponSlots {
     private LeftHandWeaponSecondary: EquippedWeapon = {
         data: Weapons[0],
         reinforcementLevel: 0,
-        infusion: "Basic",
+        infusion: "Physical",
     };
 
     /**
@@ -54,7 +54,7 @@ export default class WeaponSlots {
     private LeftHandWeaponTertiary: EquippedWeapon = {
         data: Weapons[0],
         reinforcementLevel: 0,
-        infusion: "Basic",
+        infusion: "Physical",
     };
 
     /**
@@ -63,7 +63,7 @@ export default class WeaponSlots {
     private RightHandWeaponPrimary: EquippedWeapon = {
         data: Weapons[0],
         reinforcementLevel: 0,
-        infusion: "Basic",
+        infusion: "Physical",
     };
 
     /**
@@ -72,7 +72,7 @@ export default class WeaponSlots {
     private RightHandWeaponSecondary: EquippedWeapon = {
         data: Weapons[0],
         reinforcementLevel: 0,
-        infusion: "Basic",
+        infusion: "Physical",
     };
 
     /**
@@ -81,7 +81,7 @@ export default class WeaponSlots {
     private RightHandWeaponTertiary: EquippedWeapon = {
         data: Weapons[0],
         reinforcementLevel: 0,
-        infusion: "Basic",
+        infusion: "Physical",
     };
 
     // STATIC METHODS
@@ -147,32 +147,32 @@ export default class WeaponSlots {
             LeftHandWeaponPrimary: {
                 data: lhp,
                 reinforcementLevel: 0,
-                infusion: "Basic",
+                infusion: "Physical",
             },
             LeftHandWeaponSecondary: {
                 data: lhs,
                 reinforcementLevel: 0,
-                infusion: "Basic",
+                infusion: "Physical",
             },
             LeftHandWeaponTertiary: {
                 data: lht,
                 reinforcementLevel: 0,
-                infusion: "Basic",
+                infusion: "Physical",
             },
             RightHandWeaponPrimary: {
                 data: rhp,
                 reinforcementLevel: 0,
-                infusion: "Basic",
+                infusion: "Physical",
             },
             RightHandWeaponSecondary: {
                 data: rhs,
                 reinforcementLevel: 0,
-                infusion: "Basic",
+                infusion: "Physical",
             },
             RightHandWeaponTertiary: {
                 data: rht,
                 reinforcementLevel: 0,
-                infusion: "Basic",
+                infusion: "Physical",
             },
         };
     }

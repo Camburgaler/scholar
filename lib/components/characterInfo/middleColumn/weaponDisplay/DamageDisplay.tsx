@@ -1,5 +1,11 @@
 import { WeaponEquipSlot } from "@/lib/classes/weaponSlots";
+import { useEquippedArmorSet } from "@/lib/reducers/equippedArmorSet";
+import { useEquippedRings } from "@/lib/reducers/equippedRings";
 import { useEquippedWeapons } from "@/lib/reducers/equippedWeapons";
+import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
+import { getTotalDamage } from "@/lib/scripts/infusion";
+import AttackPowerTypeMap from "@/lib/types/attackPowerTypeMap";
+import { useEffect, useState } from "react";
 import { JSX } from "react/jsx-runtime";
 
 export default function DamageDisplay(props: {
@@ -10,6 +16,9 @@ export default function DamageDisplay(props: {
 
     // Context
     const equippedWeapons = useEquippedWeapons();
+    const virtualAttributes = useVirtualAttributes();
+    const equippedArmor = useEquippedArmorSet();
+    const equippedRings = useEquippedRings();
 
     // Constants
     const isRightHand =
@@ -17,30 +26,60 @@ export default function DamageDisplay(props: {
         slot === "RightHandWeaponSecondary" ||
         slot === "RightHandWeaponTertiary";
 
+    // State
+    const [damage, setDamage] = useState<AttackPowerTypeMap<number>>({
+        Physical: 0,
+        Magic: 0,
+        Fire: 0,
+        Lightning: 0,
+        Dark: 0,
+    });
+
+    // Effects
+    useEffect(() => {
+        setDamage(
+            getTotalDamage(
+                equippedWeapons,
+                slot,
+                virtualAttributes,
+                equippedArmor,
+                equippedRings,
+            ),
+        );
+    }, [equippedWeapons, virtualAttributes, equippedArmor, equippedRings]);
+
     return (
         <div
-            className="flex w-full justify-between text-xl"
+            className="flex w-full justify-between"
             style={{ justifyContent: isRightHand ? "end" : "start" }}
         >
             (
             <p id="physical" style={{ color: "var(--physical)" }}>
-                10
+                {Math.floor(damage.Physical)}
             </p>
             /
             <p id="magic" style={{ color: "var(--magic)" }}>
-                0
+                {Math.floor(damage.Magic)}
             </p>
             /
             <p id="fire" style={{ color: "var(--fire)" }}>
-                0
+                {Math.floor(damage.Fire)}
             </p>
             /
             <p id="lightning" style={{ color: "var(--lightning)" }}>
-                0
+                {Math.floor(damage.Lightning)}
             </p>
             /
             <p id="dark" style={{ color: "var(--dark)" }}>
-                0
+                {Math.floor(damage.Dark)}
+            </p>
+            /
+            <p id="poison" style={{ color: "var(--poison)" }}>
+                {Math.floor(damage.Poison || 0)}
+            </p>
+            /
+            <p id="bleed" style={{ color: "var(--bleed)" }}>
+                {Math.floor(damage.Bleed || 0)}
             </p>
             )
         </div>
