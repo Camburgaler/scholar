@@ -390,11 +390,11 @@ export default function LeftColumn(): JSX.Element {
 
             <hr />
 
-            {/* Stats */}
+            {/* Attributes */}
             <table className="w-full">
                 <thead>
                     <tr>
-                        <th className="text-left w-full">Stat</th>
+                        <th className="text-left w-full">Attribute</th>
                         <th className="text-center">Base</th>
                         <th className="text-right">Desired</th>
                         <th className="text-right">Final</th>
@@ -402,27 +402,6 @@ export default function LeftColumn(): JSX.Element {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr className="w-full">
-                        <td className="text-left">Soul Level:</td>
-                        <td className="text-center">
-                            <input
-                                type="number"
-                                disabled
-                                value={effectiveClass().Level}
-                                className="text-right h-full max-w-15"
-                            />
-                        </td>
-                        <td></td>
-                        <td className="text-right">
-                            <input
-                                type="number"
-                                disabled
-                                value={calculateFinalLevel(effectiveClass())}
-                                className="text-right h-full max-w-15"
-                            />
-                        </td>
-                        <td></td>
-                    </tr>
                     {Object.keys(desiredAttributes).map(
                         (attributeId: string) => (
                             <tr
@@ -504,6 +483,27 @@ export default function LeftColumn(): JSX.Element {
                             </tr>
                         ),
                     )}
+                    <tr className="w-full border-t">
+                        <td className="text-left">Soul Level:</td>
+                        <td className="text-center">
+                            <input
+                                type="number"
+                                disabled
+                                value={effectiveClass().Level}
+                                className="text-right h-full max-w-15"
+                            />
+                        </td>
+                        <td></td>
+                        <td className="text-right">
+                            <input
+                                type="number"
+                                disabled
+                                value={calculateFinalLevel(effectiveClass())}
+                                className="text-right h-full max-w-15"
+                            />
+                        </td>
+                        <td></td>
+                    </tr>
                 </tbody>
             </table>
             <hr />
