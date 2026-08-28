@@ -77,20 +77,40 @@ export default function WeaponTooltip(props: {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {Object.keys(infusion.Damages).map(
-                                        (attackPowerType) => (
+                                    {Object.keys(infusion.Damages)
+                                        .filter(
+                                            (attackPowerType) =>
+                                                attackPowerType != "Petrify" &&
+                                                attackPowerType != "Curse",
+                                        )
+                                        .map((attackPowerType) => (
                                             <tr key={attackPowerType}>
-                                                <td className="text-left">
+                                                <td
+                                                    className="text-left"
+                                                    style={{
+                                                        color: `var(--${attackPowerType.toLowerCase()})`,
+                                                    }}
+                                                >
                                                     {attackPowerType}
                                                 </td>
-                                                <td className="text-center">
+                                                <td
+                                                    className="text-center"
+                                                    style={{
+                                                        color: `var(--${attackPowerType.toLowerCase()})`,
+                                                    }}
+                                                >
                                                     {Math.floor(
                                                         baseDamage[
                                                             attackPowerType as AttackPowerTypeMapKey
                                                         ]!,
                                                     )}
                                                 </td>
-                                                <td className="text-center">
+                                                <td
+                                                    className="text-center"
+                                                    style={{
+                                                        color: `var(--${attackPowerType.toLowerCase()})`,
+                                                    }}
+                                                >
                                                     +
                                                     {Math.floor(
                                                         scalingDamage[
@@ -99,8 +119,7 @@ export default function WeaponTooltip(props: {
                                                     )}
                                                 </td>
                                             </tr>
-                                        ),
-                                    )}
+                                        ))}
                                 </tbody>
                             </table>
                             {/* TODO: Requirements */}

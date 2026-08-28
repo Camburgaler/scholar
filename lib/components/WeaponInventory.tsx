@@ -180,6 +180,7 @@ export default function WeaponInventory(): JSX.Element {
                     </div>
                 </div>
                 <div className="w-full h-full content-end">
+                    {/* TODO: Make this toggle visibiltiy for another section for customizing the sorting of the weapons in the weapon inventory */}
                     <button className="border rounded-lg p-1 w-full">
                         Sorting configs...
                     </button>
