@@ -3,7 +3,6 @@ import { useEquippedArmorSet } from "@/lib/reducers/equippedArmorSet";
 import { useEquippedRings } from "@/lib/reducers/equippedRings";
 import { useEquippedWeapons } from "@/lib/reducers/equippedWeapons";
 import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
-import { getTotalDamage } from "@/lib/scripts/infusion";
 import AttackPowerTypeMap from "@/lib/types/attackPowerTypeMap";
 import { useEffect, useState } from "react";
 import { JSX } from "react/jsx-runtime";
@@ -22,9 +21,9 @@ export default function DamageDisplay(props: {
 
     // Constants
     const isRightHand =
-        slot === "RightHandWeaponPrimary" ||
-        slot === "RightHandWeaponSecondary" ||
-        slot === "RightHandWeaponTertiary";
+        slot === "rightPrimary" ||
+        slot === "rightSecondary" ||
+        slot === "rightTertiary";
 
     // State
     const [damage, setDamage] = useState<AttackPowerTypeMap<number>>({
@@ -38,13 +37,14 @@ export default function DamageDisplay(props: {
     // Effects
     useEffect(() => {
         setDamage(
-            getTotalDamage(
-                equippedWeapons,
-                slot,
-                virtualAttributes,
-                equippedArmor,
-                equippedRings,
-            ),
+            equippedWeapons
+                .getWeapon(slot)
+                .totalDamage(
+                    equippedWeapons,
+                    virtualAttributes,
+                    equippedArmor,
+                    equippedRings,
+                ),
         );
     }, [equippedWeapons, virtualAttributes, equippedArmor, equippedRings]);
 

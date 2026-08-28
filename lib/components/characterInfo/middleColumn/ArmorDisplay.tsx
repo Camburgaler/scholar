@@ -1,4 +1,4 @@
-import ArmorSet from "@/lib/classes/armorSet";
+import { ArmorSetKey } from "@/lib/classes/armorSet";
 import { Chestpieces, Gauntlets, Helmets, Leggings } from "@/lib/gameData";
 import {
     useEquippedArmorSet,
@@ -41,7 +41,7 @@ export function ArmorDisplay(props: {
                 : label === "Leggings"
                   ? Leggings
                   : [];
-    const slot: keyof ArmorSet = label.toLowerCase() as keyof ArmorSet;
+    const slot: ArmorSetKey = label.toLowerCase() as ArmorSetKey;
 
     // Effects
     useEffect(() => {

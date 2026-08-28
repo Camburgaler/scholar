@@ -1,6 +1,5 @@
+import EquippedWeapon from "@/lib/classes/equippedWeapon";
 import ModifierDisplay from "@/lib/components/characterInfo/rightColumn/modifierDisplay";
-import { Weapons } from "@/lib/gameData";
-import EquippedWeapon from "@/lib/interfaces/equippedWeapon";
 import Modifier from "@/lib/interfaces/modifier";
 import Weapon from "@/lib/interfaces/weapon";
 import { JSX } from "react/jsx-runtime";
@@ -10,12 +9,12 @@ import { JSX } from "react/jsx-runtime";
  * @description The equip slot of a weapon.
  */
 export type WeaponEquipSlot =
-    | "LeftHandWeaponPrimary"
-    | "LeftHandWeaponSecondary"
-    | "LeftHandWeaponTertiary"
-    | "RightHandWeaponPrimary"
-    | "RightHandWeaponSecondary"
-    | "RightHandWeaponTertiary";
+    | "leftPrimary"
+    | "leftSecondary"
+    | "leftTertiary"
+    | "rightPrimary"
+    | "rightSecondary"
+    | "rightTertiary";
 
 /**
  * @class WeaponSlots
@@ -33,56 +32,32 @@ export default class WeaponSlots {
     /**
      * @member LeftHandWeaponPrimary: The left hand primary weapon. {@link EquippedWeapon}
      */
-    private LeftHandWeaponPrimary: EquippedWeapon = {
-        data: Weapons[0],
-        reinforcementLevel: 0,
-        infusion: "Physical",
-    };
+    public leftPrimary: EquippedWeapon = new EquippedWeapon();
 
     /**
      * @member LeftHandWeaponSecondary: The left hand secondary weapon. {@link EquippedWeapon}
      */
-    private LeftHandWeaponSecondary: EquippedWeapon = {
-        data: Weapons[0],
-        reinforcementLevel: 0,
-        infusion: "Physical",
-    };
+    public leftSecondary: EquippedWeapon = new EquippedWeapon();
 
     /**
      * @member LeftHandWeaponTertiary: The left hand tertiary weapon. {@link EquippedWeapon}
      */
-    private LeftHandWeaponTertiary: EquippedWeapon = {
-        data: Weapons[0],
-        reinforcementLevel: 0,
-        infusion: "Physical",
-    };
+    public leftTertiary: EquippedWeapon = new EquippedWeapon();
 
     /**
      * @member RightHandWeaponPrimary: The right hand primary weapon. {@link EquippedWeapon}
      */
-    private RightHandWeaponPrimary: EquippedWeapon = {
-        data: Weapons[0],
-        reinforcementLevel: 0,
-        infusion: "Physical",
-    };
+    public rightPrimary: EquippedWeapon = new EquippedWeapon();
 
     /**
      * @member RightHandWeaponSecondary: The right hand secondary weapon. {@link EquippedWeapon}
      */
-    private RightHandWeaponSecondary: EquippedWeapon = {
-        data: Weapons[0],
-        reinforcementLevel: 0,
-        infusion: "Physical",
-    };
+    public rightSecondary: EquippedWeapon = new EquippedWeapon();
 
     /**
      * @member RightHandWeaponTertiary: The right hand tertiary weapon. {@link EquippedWeapon}
      */
-    private RightHandWeaponTertiary: EquippedWeapon = {
-        data: Weapons[0],
-        reinforcementLevel: 0,
-        infusion: "Physical",
-    };
+    public rightTertiary: EquippedWeapon = new EquippedWeapon();
 
     // STATIC METHODS
 
@@ -99,82 +74,58 @@ export default class WeaponSlots {
 
     /**
      * @description Creates a new {@link WeaponSlots} from {@link EquippedWeapon}s.
-     * @param lhp The left hand primary weapon. {@link EquippedWeapon}
-     * @param lhs The left hand secondary weapon. {@link EquippedWeapon}
-     * @param lht The left hand tertiary weapon. {@link EquippedWeapon}
-     * @param rhp The right hand primary weapon. {@link EquippedWeapon}
-     * @param rhs The right hand secondary weapon. {@link EquippedWeapon}
-     * @param rht The right hand tertiary weapon. {@link EquippedWeapon}
+     * @param lp The left hand primary weapon. {@link EquippedWeapon}
+     * @param ls The left hand secondary weapon. {@link EquippedWeapon}
+     * @param lt The left hand tertiary weapon. {@link EquippedWeapon}
+     * @param rp The right hand primary weapon. {@link EquippedWeapon}
+     * @param rs The right hand secondary weapon. {@link EquippedWeapon}
+     * @param rt The right hand tertiary weapon. {@link EquippedWeapon}
      * @returns The new {@link WeaponSlots}.
      */
     public static fromEquippedWeapons(
-        lhp: EquippedWeapon,
-        lhs: EquippedWeapon,
-        lht: EquippedWeapon,
-        rhp: EquippedWeapon,
-        rhs: EquippedWeapon,
-        rht: EquippedWeapon,
-    ) {
-        return {
-            LeftHandWeaponPrimary: lhp,
-            LeftHandWeaponSecondary: lhs,
-            LeftHandWeaponTertiary: lht,
-            RightHandWeaponPrimary: rhp,
-            RightHandWeaponSecondary: rhs,
-            RightHandWeaponTertiary: rht,
-        };
+        lp: EquippedWeapon,
+        ls: EquippedWeapon,
+        lt: EquippedWeapon,
+        rp: EquippedWeapon,
+        rs: EquippedWeapon,
+        rt: EquippedWeapon,
+    ): WeaponSlots {
+        let weaponSlots = new WeaponSlots();
+        weaponSlots.leftPrimary = lp;
+        weaponSlots.leftSecondary = ls;
+        weaponSlots.leftTertiary = lt;
+        weaponSlots.rightPrimary = rp;
+        weaponSlots.rightSecondary = rs;
+        weaponSlots.rightTertiary = rt;
+        return weaponSlots;
     }
 
     /**
      * @description Creates a new {@link WeaponSlots} from {@link Weapon}s.
-     * @param lhp The left hand primary weapon. {@link Weapon}
-     * @param lhs The left hand secondary weapon. {@link Weapon}
-     * @param lht The left hand tertiary weapon. {@link Weapon}
-     * @param rhp The right hand primary weapon. {@link Weapon}
-     * @param rhs The right hand secondary weapon. {@link Weapon}
-     * @param rht The right hand tertiary weapon. {@link Weapon}
+     * @param lp The left hand primary weapon. {@link Weapon}
+     * @param ls The left hand secondary weapon. {@link Weapon}
+     * @param lt The left hand tertiary weapon. {@link Weapon}
+     * @param rp The right hand primary weapon. {@link Weapon}
+     * @param rs The right hand secondary weapon. {@link Weapon}
+     * @param rt The right hand tertiary weapon. {@link Weapon}
      * @returns The new {@link WeaponSlots}.
      */
     public static fromWeapons(
-        lhp: Weapon,
-        lhs: Weapon,
-        lht: Weapon,
-        rhp: Weapon,
-        rhs: Weapon,
-        rht: Weapon,
-    ) {
-        return {
-            LeftHandWeaponPrimary: {
-                data: lhp,
-                reinforcementLevel: 0,
-                infusion: "Physical",
-            },
-            LeftHandWeaponSecondary: {
-                data: lhs,
-                reinforcementLevel: 0,
-                infusion: "Physical",
-            },
-            LeftHandWeaponTertiary: {
-                data: lht,
-                reinforcementLevel: 0,
-                infusion: "Physical",
-            },
-            RightHandWeaponPrimary: {
-                data: rhp,
-                reinforcementLevel: 0,
-                infusion: "Physical",
-            },
-            RightHandWeaponSecondary: {
-                data: rhs,
-                reinforcementLevel: 0,
-                infusion: "Physical",
-            },
-            RightHandWeaponTertiary: {
-                data: rht,
-                reinforcementLevel: 0,
-                infusion: "Physical",
-            },
-        };
+        lp: Weapon,
+        ls: Weapon,
+        lt: Weapon,
+        rp: Weapon,
+        rs: Weapon,
+        rt: Weapon,
+    ): WeaponSlots {
+        let weaponSlots = new WeaponSlots();
+        weaponSlots.leftPrimary = EquippedWeapon.fromWeapon(lp);
+        weaponSlots.leftSecondary = EquippedWeapon.fromWeapon(ls);
+        weaponSlots.leftTertiary = EquippedWeapon.fromWeapon(lt);
+        weaponSlots.rightPrimary = EquippedWeapon.fromWeapon(rp);
+        weaponSlots.rightSecondary = EquippedWeapon.fromWeapon(rs);
+        weaponSlots.rightTertiary = EquippedWeapon.fromWeapon(rt);
+        return weaponSlots;
     }
 
     // GETTERS & SETTERS
@@ -183,13 +134,13 @@ export default class WeaponSlots {
      * @description Copies the {@link WeaponSlots} from another {@link WeaponSlots}.
      * @param weaponSlots The {@link WeaponSlots} to copy.
      */
-    public copyFrom(weaponSlots: WeaponSlots) {
-        this.setLHP(weaponSlots.getLHP());
-        this.setLHS(weaponSlots.getLHS());
-        this.setLHT(weaponSlots.getLHT());
-        this.setRHP(weaponSlots.getRHP());
-        this.setRHS(weaponSlots.getRHS());
-        this.setRHT(weaponSlots.getRHT());
+    public copyFrom(weaponSlots: WeaponSlots): void {
+        this.leftPrimary = weaponSlots.leftPrimary;
+        this.leftSecondary = weaponSlots.leftSecondary;
+        this.leftTertiary = weaponSlots.leftTertiary;
+        this.rightPrimary = weaponSlots.rightPrimary;
+        this.rightSecondary = weaponSlots.rightSecondary;
+        this.rightTertiary = weaponSlots.rightTertiary;
     }
 
     /**
@@ -206,157 +157,16 @@ export default class WeaponSlots {
      * @param slot The {@link WeaponEquipSlot} to set.
      * @param equippedWeapon The {@link EquippedWeapon} to set.
      */
-    public setWeapon(slot: WeaponEquipSlot, equippedWeapon: EquippedWeapon) {
+    public setWeapon(
+        slot: WeaponEquipSlot,
+        equippedWeapon: EquippedWeapon,
+    ): void {
         if (typeof this[slot] !== "object") {
             // panic out
             throw new Error(`ArmorSet field ${slot} is not a member`);
         }
 
         this[slot] = equippedWeapon;
-    }
-
-    /**
-     * @description Gets the left hand primary {@link EquippedWeapon}.
-     * @returns The left hand primary {@link EquippedWeapon}.
-     */
-    public getLHP(): EquippedWeapon {
-        return this.LeftHandWeaponPrimary;
-    }
-
-    /**
-     * @description Gets the left hand primary {@link Weapon}.
-     * @returns The left hand primary {@link Weapon}.
-     */
-    public getLHPWeapon(): Weapon {
-        return this.LeftHandWeaponPrimary.data;
-    }
-
-    /**
-     * @description Sets the left hand primary {@link EquippedWeapon}.
-     * @param weapon The {@link EquippedWeapon} to set.
-     */
-    public setLHP(weapon: EquippedWeapon): void {
-        this.LeftHandWeaponPrimary = weapon;
-    }
-
-    /**
-     * @description Gets the left hand secondary {@link EquippedWeapon}.
-     * @returns The left hand secondary {@link EquippedWeapon}.
-     */
-    public getLHS(): EquippedWeapon {
-        return this.LeftHandWeaponSecondary;
-    }
-
-    /**
-     * @description Gets the left hand secondary {@link Weapon}.
-     * @returns The left hand secondary {@link Weapon}.
-     */
-    public getLHSWeapon(): Weapon {
-        return this.LeftHandWeaponSecondary.data;
-    }
-
-    /**
-     * @description Sets the left hand secondary {@link EquippedWeapon}.
-     * @param weapon The {@link EquippedWeapon} to set.
-     */
-    public setLHS(weapon: EquippedWeapon): void {
-        this.LeftHandWeaponSecondary = weapon;
-    }
-
-    /**
-     * @description Gets the left hand tertiary {@link EquippedWeapon}.
-     * @returns The left hand tertiary {@link EquippedWeapon}.
-     */
-    public getLHT(): EquippedWeapon {
-        return this.LeftHandWeaponTertiary;
-    }
-
-    /**
-     * @description Gets the left hand tertiary {@link Weapon}.
-     * @returns The left hand tertiary {@link Weapon}.
-     */
-    public getLHTWeapon(): Weapon {
-        return this.LeftHandWeaponTertiary.data;
-    }
-
-    /**
-     * @description Sets the left hand tertiary {@link EquippedWeapon}.
-     * @param weapon The {@link EquippedWeapon} to set.
-     */
-    public setLHT(weapon: EquippedWeapon): void {
-        this.LeftHandWeaponTertiary = weapon;
-    }
-
-    /**
-     * @description Gets the right hand primary {@link EquippedWeapon}.
-     * @returns The right hand primary {@link EquippedWeapon}.
-     */
-    public getRHP(): EquippedWeapon {
-        return this.RightHandWeaponPrimary;
-    }
-
-    /**
-     * @description Gets the right hand primary {@link Weapon}.
-     * @returns The right hand primary {@link Weapon}.
-     */
-    public getRHPWeapon(): Weapon {
-        return this.RightHandWeaponPrimary.data;
-    }
-
-    /**
-     * @description Sets the right hand primary {@link EquippedWeapon}.
-     * @param weapon The {@link EquippedWeapon} to set.
-     */
-    public setRHP(weapon: EquippedWeapon): void {
-        this.RightHandWeaponPrimary = weapon;
-    }
-
-    /**
-     * @description Gets the right hand secondary {@link EquippedWeapon}.
-     * @returns The right hand secondary {@link EquippedWeapon}.
-     */
-    public getRHS(): EquippedWeapon {
-        return this.RightHandWeaponSecondary;
-    }
-
-    /**
-     * @description Gets the right hand secondary {@link Weapon}.
-     * @returns The right hand secondary {@link Weapon}.
-     */
-    public getRHSWeapon(): Weapon {
-        return this.RightHandWeaponSecondary.data;
-    }
-
-    /**
-     * @description Sets the right hand secondary {@link EquippedWeapon}.
-     * @param weapon The {@link EquippedWeapon} to set.
-     */
-    public setRHS(weapon: EquippedWeapon): void {
-        this.RightHandWeaponSecondary = weapon;
-    }
-
-    /**
-     * @description Gets the right hand tertiary {@link EquippedWeapon}.
-     * @returns The right hand tertiary {@link EquippedWeapon}.
-     */
-    public getRHT(): EquippedWeapon {
-        return this.RightHandWeaponTertiary;
-    }
-
-    /**
-     * @description Gets the right hand tertiary {@link Weapon}.
-     * @returns The right hand tertiary {@link Weapon}.
-     */
-    public getRHTWeapon(): Weapon {
-        return this.RightHandWeaponTertiary.data;
-    }
-
-    /**
-     * @description Sets the right hand tertiary {@link EquippedWeapon}.
-     * @param weapon The {@link EquippedWeapon} to set.
-     */
-    public setRHT(weapon: EquippedWeapon): void {
-        this.RightHandWeaponTertiary = weapon;
     }
 
     // PUBLIC METHODS
@@ -370,66 +180,66 @@ export default class WeaponSlots {
         let activeEffects: JSX.Element[] = [];
         let isOddRow = true;
 
-        this.getLHP().data.Modifiers.forEach((modifier) => {
+        this.leftPrimary.modifiers.forEach((modifier) => {
             activeEffects.push(
                 <ModifierDisplay
                     description={modifier.Description}
-                    equipmentName={this.getLHP().data.Name}
+                    equipmentName={this.leftPrimary.name}
                     isOddRow={isOddRow}
                 />,
             );
             isOddRow = !isOddRow;
         });
 
-        this.getLHS().data.Modifiers.forEach((modifier) => {
+        this.leftSecondary.modifiers.forEach((modifier) => {
             activeEffects.push(
                 <ModifierDisplay
                     description={modifier.Description}
-                    equipmentName={this.getLHS().data.Name}
+                    equipmentName={this.leftSecondary.name}
                     isOddRow={isOddRow}
                 />,
             );
             isOddRow = !isOddRow;
         });
 
-        this.getLHT().data.Modifiers.forEach((modifier) => {
+        this.leftTertiary.modifiers.forEach((modifier) => {
             activeEffects.push(
                 <ModifierDisplay
                     description={modifier.Description}
-                    equipmentName={this.getLHT().data.Name}
+                    equipmentName={this.leftTertiary.name}
                     isOddRow={isOddRow}
                 />,
             );
             isOddRow = !isOddRow;
         });
 
-        this.getRHP().data.Modifiers.forEach((modifier) => {
+        this.rightPrimary.modifiers.forEach((modifier) => {
             activeEffects.push(
                 <ModifierDisplay
                     description={modifier.Description}
-                    equipmentName={this.getRHP().data.Name}
+                    equipmentName={this.rightPrimary.name}
                     isOddRow={isOddRow}
                 />,
             );
             isOddRow = !isOddRow;
         });
 
-        this.getRHS().data.Modifiers.forEach((modifier) => {
+        this.rightSecondary.modifiers.forEach((modifier) => {
             activeEffects.push(
                 <ModifierDisplay
                     description={modifier.Description}
-                    equipmentName={this.getRHS().data.Name}
+                    equipmentName={this.rightSecondary.name}
                     isOddRow={isOddRow}
                 />,
             );
             isOddRow = !isOddRow;
         });
 
-        this.getRHT().data.Modifiers.forEach((modifier) => {
+        this.rightTertiary.modifiers.forEach((modifier) => {
             activeEffects.push(
                 <ModifierDisplay
                     description={modifier.Description}
-                    equipmentName={this.getRHT().data.Name}
+                    equipmentName={this.rightTertiary.name}
                     isOddRow={isOddRow}
                 />,
             );
@@ -447,27 +257,27 @@ export default class WeaponSlots {
     public activeEffects(): Modifier[] {
         let activeEffects: Modifier[] = [];
 
-        this.getLHP().data.Modifiers.forEach((modifier) => {
+        this.leftPrimary.modifiers.forEach((modifier) => {
             activeEffects.push(modifier);
         });
 
-        this.getLHS().data.Modifiers.forEach((modifier) => {
+        this.leftSecondary.modifiers.forEach((modifier) => {
             activeEffects.push(modifier);
         });
 
-        this.getLHT().data.Modifiers.forEach((modifier) => {
+        this.leftTertiary.modifiers.forEach((modifier) => {
             activeEffects.push(modifier);
         });
 
-        this.getRHP().data.Modifiers.forEach((modifier) => {
+        this.rightPrimary.modifiers.forEach((modifier) => {
             activeEffects.push(modifier);
         });
 
-        this.getRHS().data.Modifiers.forEach((modifier) => {
+        this.rightSecondary.modifiers.forEach((modifier) => {
             activeEffects.push(modifier);
         });
 
-        this.getRHT().data.Modifiers.forEach((modifier) => {
+        this.rightTertiary.modifiers.forEach((modifier) => {
             activeEffects.push(modifier);
         });
 

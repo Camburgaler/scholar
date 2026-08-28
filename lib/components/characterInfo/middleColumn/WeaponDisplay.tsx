@@ -1,7 +1,9 @@
+import EquippedWeapon from "@/lib/classes/equippedWeapon";
 import { WeaponEquipSlot } from "@/lib/classes/weaponSlots";
 import DamageDisplay from "@/lib/components/characterInfo/middleColumn/weaponDisplay/DamageDisplay";
 import InfusionDisplay from "@/lib/components/characterInfo/middleColumn/weaponDisplay/InfusionDisplay";
 import ReinforcementDisplay from "@/lib/components/characterInfo/middleColumn/weaponDisplay/ReinforcementDisplay";
+import WeaponTooltip from "@/lib/components/WeaponTooltip";
 import { Weapons } from "@/lib/gameData";
 import { useEquippedRings } from "@/lib/reducers/equippedRings";
 import {
@@ -33,9 +35,9 @@ export default function WeaponDisplay(props: {
 
     // Constants
     const isRightHand =
-        slot === "RightHandWeaponPrimary" ||
-        slot === "RightHandWeaponSecondary" ||
-        slot === "RightHandWeaponTertiary";
+        slot === "rightPrimary" ||
+        slot === "rightSecondary" ||
+        slot === "rightTertiary";
 
     // Effect
     useEffect(() => {
@@ -51,63 +53,65 @@ export default function WeaponDisplay(props: {
         // If vanquishersSeal is true, set the equipped weapon to "Fist (Vanquisher's Seal)"
         if (
             vanquishersSeal &&
-            equippedWeapons.getWeapon(slot).data.Name === "Fists"
+            equippedWeapons.getWeapon(slot).name === "Fists"
         ) {
             setEquippedWeapons({
                 slot: slot,
-                equippedWeapon: {
-                    data: getWeaponByName("Fist (Vanquisher's Seal)")!,
-                    infusion: "Physical",
-                    reinforcementLevel: 0,
-                },
+                equippedWeapon: EquippedWeapon.fromWeapon(
+                    getWeaponByName("Fist (Vanquisher's Seal)")!,
+                ),
             });
         }
     }, [vanquishersSeal, equippedWeapons, setEquippedWeapons]);
 
     return (
-        <div
-            id={slot}
-            className="col-span-1 flex flex-col w-full justify-between border rounded-md"
+        <WeaponTooltip
+            side={isRightHand ? "right" : "left"}
+            equippedWeapon={equippedWeapons.getWeapon(slot)}
         >
-            {/* TODO: Cleverer damage display? */}
-            <DamageDisplay slot={slot} />
-            <select
-                className="w-full"
-                value={equippedWeapons.getWeapon(slot).data.Name}
-                onChange={(e) =>
-                    setEquippedWeapons({
-                        slot: slot,
-                        equippedWeapon: {
-                            data: getWeaponByName(e.target.value)!,
-                            infusion: "Physical",
-                            reinforcementLevel: 0,
-                        },
-                    })
-                }
+            <div
+                id={slot}
+                className="col-span-1 flex flex-col w-full justify-between border rounded-md"
             >
-                {Weapons.filter((weapon) =>
-                    // Filter so that the "Vanquisher's Seal" ring acts as a toggle between "Fists" and "Fist (Vanquisher's Seal)",
-                    vanquishersSeal
-                        ? weapon.Name !== "Fists"
-                        : weapon.Name !== "Fist (Vanquisher's Seal)",
-                )
-                    .filter((weapon) =>
-                        // Filter so that the "Majestic Greatsword (Left Hand)" and "Majestic Greatsword (Right Hand)" only appear on the appropriate hands
-                        isRightHand
-                            ? weapon.Name !== "Majestic Greatsword (Left Hand)"
-                            : weapon.Name !==
-                              "Majestic Greatsword (Right Hand)",
+                {/* TODO: Cleverer damage display? */}
+                <DamageDisplay slot={slot} />
+                <select
+                    className="w-full"
+                    value={equippedWeapons.getWeapon(slot).name}
+                    onChange={(e) =>
+                        setEquippedWeapons({
+                            slot: slot,
+                            equippedWeapon: EquippedWeapon.fromWeapon(
+                                getWeaponByName(e.target.value)!,
+                            ),
+                        })
+                    }
+                >
+                    {Weapons.filter((weapon) =>
+                        // Filter so that the "Vanquisher's Seal" ring acts as a toggle between "Fists" and "Fist (Vanquisher's Seal)",
+                        vanquishersSeal
+                            ? weapon.Name !== "Fists"
+                            : weapon.Name !== "Fist (Vanquisher's Seal)",
                     )
-                    .map((weapon) => (
-                        <option key={weapon.Name} value={weapon.Name}>
-                            {weapon.Name}
-                        </option>
-                    ))}
-            </select>
-            <div className="flex w-full justify-between">
-                <InfusionDisplay slot={slot} />
-                <ReinforcementDisplay slot={slot} />
+                        .filter((weapon) =>
+                            // Filter so that the "Majestic Greatsword (Left Hand)" and "Majestic Greatsword (Right Hand)" only appear on the appropriate hands
+                            isRightHand
+                                ? weapon.Name !==
+                                  "Majestic Greatsword (Left Hand)"
+                                : weapon.Name !==
+                                  "Majestic Greatsword (Right Hand)",
+                        )
+                        .map((weapon) => (
+                            <option key={weapon.Name} value={weapon.Name}>
+                                {weapon.Name}
+                            </option>
+                        ))}
+                </select>
+                <div className="flex w-full justify-between">
+                    <InfusionDisplay slot={slot} />
+                    <ReinforcementDisplay slot={slot} />
+                </div>
             </div>
-        </div>
+        </WeaponTooltip>
     );
 }

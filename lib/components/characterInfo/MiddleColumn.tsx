@@ -70,7 +70,7 @@ export default function MiddleColumn(): JSX.Element {
                             id="equip-load"
                             type="text"
                             disabled
-                            value={`${(equippedArmor.weight() + ringsWeight(equippedRings)).toFixed(1)}/${calculateStatDisplayValue("MaximumEquipLoad", virtualAttributes, equippedArmor, equippedRings, equippedWeapons).toFixed(1)}`}
+                            value={`${(equippedArmor.weight + ringsWeight(equippedRings)).toFixed(1)}/${calculateStatDisplayValue("MaximumEquipLoad", virtualAttributes, equippedArmor, equippedRings, equippedWeapons).toFixed(1)}`}
                         />
                         <input
                             className="flex text-right max"
@@ -79,17 +79,17 @@ export default function MiddleColumn(): JSX.Element {
                                 border: "none",
                                 color:
                                     getEquipLoadPercentFromRatio(
-                                        `${equippedArmor.weight() + ringsWeight(equippedRings)}/${calculateStatDisplayValue("MaximumEquipLoad", virtualAttributes, equippedArmor, equippedRings, equippedWeapons)}`,
+                                        `${equippedArmor.weight + ringsWeight(equippedRings)}/${calculateStatDisplayValue("MaximumEquipLoad", virtualAttributes, equippedArmor, equippedRings, equippedWeapons)}`,
                                     ) > 100
                                         ? "red"
                                         : getEquipLoadPercentFromRatio(
-                                                `${equippedArmor.weight() + ringsWeight(equippedRings)}/${calculateStatDisplayValue("MaximumEquipLoad", virtualAttributes, equippedArmor, equippedRings, equippedWeapons)}`,
+                                                `${equippedArmor.weight + ringsWeight(equippedRings)}/${calculateStatDisplayValue("MaximumEquipLoad", virtualAttributes, equippedArmor, equippedRings, equippedWeapons)}`,
                                             ) > 70
                                           ? "yellow"
                                           : "var(--contrast)",
                             }}
                             value={`${getEquipLoadPercentFromRatio(
-                                `${equippedArmor.weight() + ringsWeight(equippedRings)}/${calculateStatDisplayValue("MaximumEquipLoad", virtualAttributes, equippedArmor, equippedRings, equippedWeapons)}`,
+                                `${equippedArmor.weight + ringsWeight(equippedRings)}/${calculateStatDisplayValue("MaximumEquipLoad", virtualAttributes, equippedArmor, equippedRings, equippedWeapons)}`,
                             ).toFixed(1)}%`}
                         />
                     </div>
@@ -127,17 +127,17 @@ export default function MiddleColumn(): JSX.Element {
                 {/* Left hand */}
                 <div className="text-left col-span-1 flex flex-col w-full justify-between gap-1">
                     <p className="flex w-full">Left Hand</p>
-                    <WeaponDisplay slot="LeftHandWeaponPrimary" />
-                    <WeaponDisplay slot="LeftHandWeaponSecondary" />
-                    <WeaponDisplay slot="LeftHandWeaponTertiary" />
+                    <WeaponDisplay slot="leftPrimary" />
+                    <WeaponDisplay slot="leftSecondary" />
+                    <WeaponDisplay slot="leftTertiary" />
                 </div>
 
                 {/* Right hand */}
                 <div className="text-right col-span-1 flex items-end flex-col w-full gap-1">
                     <p className="w-full">Right Hand</p>
-                    <WeaponDisplay slot="RightHandWeaponPrimary" />
-                    <WeaponDisplay slot="RightHandWeaponSecondary" />
-                    <WeaponDisplay slot="RightHandWeaponTertiary" />
+                    <WeaponDisplay slot="rightPrimary" />
+                    <WeaponDisplay slot="rightSecondary" />
+                    <WeaponDisplay slot="rightTertiary" />
                 </div>
 
                 {/* TODO: make this affect stat calculation */}

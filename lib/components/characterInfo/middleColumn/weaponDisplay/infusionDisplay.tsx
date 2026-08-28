@@ -19,18 +19,18 @@ export default function InfusionDisplay(props: {
     return (
         <select
             style={{ backgroundColor: "var(--secondary)" }}
-            value={equippedWeapons.getWeapon(slot).infusion}
+            value={equippedWeapons.getWeapon(slot).infusionKey}
             onChange={(e) => {
+                let newEquippedWeapon = equippedWeapons.getWeapon(slot);
+                newEquippedWeapon.infusionKey = e.target
+                    .value as InfusionMapKey;
                 setEquippedWeapons({
                     slot: slot,
-                    equippedWeapon: {
-                        ...equippedWeapons.getWeapon(slot),
-                        infusion: e.target.value as InfusionMapKey,
-                    },
+                    equippedWeapon: newEquippedWeapon,
                 });
             }}
         >
-            {equippedWeapons.getWeapon(slot).data.Infusions.map((infusion) => (
+            {equippedWeapons.getWeapon(slot).infusions.map((infusion) => (
                 <option key={infusion.Name}>{infusion.Name}</option>
             ))}
         </select>

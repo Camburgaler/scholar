@@ -1,5 +1,5 @@
+import EquippedWeapon from "@/lib/classes/equippedWeapon";
 import WeaponSlots, { WeaponEquipSlot } from "@/lib/classes/weaponSlots";
-import EquippedWeapon from "@/lib/interfaces/equippedWeapon";
 import { ActionDispatch, createContext, useContext, useReducer } from "react";
 
 /**

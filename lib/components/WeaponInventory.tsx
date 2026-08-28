@@ -1,13 +1,59 @@
+import EquippedWeapon from "@/lib/classes/equippedWeapon";
 import WeaponTooltip from "@/lib/components/WeaponTooltip";
 import { Weapons } from "@/lib/gameData";
-import { useState } from "react";
+import { InfusionMapKey } from "@/lib/types/infusionMap";
+import { useVirtualizer } from "@tanstack/react-virtual";
+import { useMemo, useRef, useState } from "react";
 import { JSX } from "react/jsx-runtime";
 
 export default function WeaponInventory(): JSX.Element {
+    // Constants
+    const allWeapons: EquippedWeapon[] = Weapons.flatMap((weapon) => {
+        let infusedWeapons: EquippedWeapon[] = [];
+
+        weapon.Infusions.forEach((infusion) => {
+            let infusedWeapon = EquippedWeapon.fromWeapon(weapon);
+            infusedWeapon.infusionKey = infusion.Name as InfusionMapKey;
+            infusedWeapons.push(infusedWeapon);
+        });
+
+        return infusedWeapons;
+    });
+
     // State
     const [weaponInventory, setWeaponInventory] = useState([
         Weapons.find((weapon) => weapon.Name === "Fists")!,
     ]);
+    const [weaponSearch, setWeaponSearch] = useState("");
+
+    // Memos
+    const filteredWeapons = useMemo(() => {
+        const search = weaponSearch.trim().toLowerCase();
+
+        if (!search) {
+            return allWeapons;
+        }
+
+        return allWeapons.filter((weapon) => {
+            const name =
+                weapon.infusionKey !== "Physical"
+                    ? `${weapon.infusionKey} ${weapon.name}`
+                    : weapon.name;
+
+            return name.toLowerCase().includes(search);
+        });
+    }, [weaponSearch]);
+
+    // The scrollable element for your list
+    const parentRef = useRef<HTMLDivElement>(null);
+
+    // The virtualizer
+    const rowVirtualizer = useVirtualizer({
+        count: filteredWeapons.length,
+        getScrollElement: () => parentRef.current,
+        estimateSize: () => 32,
+        overscan: 5,
+    });
 
     // Effects
     // TODO: Vanquisher's Seal
@@ -68,31 +114,70 @@ export default function WeaponInventory(): JSX.Element {
                         );
                     })}
                 </div>
-                <div className="border rounded-lg p-1 w-full min-h-30 max-h-100 overflow-auto flex flex-col">
-                    {Weapons.map((weapon, i) => {
-                        return (
-                            <WeaponTooltip
-                                key={i}
-                                equippedWeapon={{
-                                    data: weapon,
-                                    infusion: "Basic",
-                                    reinforcementLevel: 0,
-                                }}
-                            >
-                                <p
-                                    style={{
-                                        backgroundColor:
-                                            i % 2 === 0
-                                                ? "var(--primary)"
-                                                : "var(--secondary)",
-                                    }}
-                                    className="p-1"
-                                >
-                                    {weapon.Name}
-                                </p>
-                            </WeaponTooltip>
-                        );
-                    })}
+                <div className="relative border rounded-lg w-full h-100 flex flex-col">
+                    <div className="p-1 shrink-0">
+                        <input
+                            className="border rounded-lg p-1 w-full"
+                            type="text"
+                            placeholder="Search all weapons..."
+                            value={weaponSearch}
+                            onChange={(e) => setWeaponSearch(e.target.value)}
+                        />
+                    </div>
+
+                    <div className="overflow-auto" ref={parentRef}>
+                        <div
+                            style={{
+                                height: `${rowVirtualizer.getTotalSize()}px`,
+                                width: "100%",
+                                position: "relative",
+                            }}
+                        >
+                            {rowVirtualizer
+                                .getVirtualItems()
+                                .map((virtualItem) => {
+                                    const weapon =
+                                        filteredWeapons[virtualItem.index];
+
+                                    return (
+                                        <div
+                                            key={virtualItem.index}
+                                            style={{
+                                                position: "absolute",
+                                                top: 0,
+                                                left: 0,
+                                                width: "100%",
+                                                height: `${virtualItem.size}px`,
+                                                transform: `translateY(${virtualItem.start}px)`,
+                                            }}
+                                        >
+                                            <WeaponTooltip
+                                                equippedWeapon={weapon}
+                                                side="left"
+                                            >
+                                                <p
+                                                    style={{
+                                                        backgroundColor:
+                                                            virtualItem.index %
+                                                                2 ===
+                                                            0
+                                                                ? "var(--primary)"
+                                                                : "var(--secondary)",
+                                                    }}
+                                                    className="p-1"
+                                                >
+                                                    {weapon.infusionKey !=
+                                                    "Physical"
+                                                        ? `${weapon.infusionKey} `
+                                                        : ""}
+                                                    {weapon.name}
+                                                </p>
+                                            </WeaponTooltip>
+                                        </div>
+                                    );
+                                })}
+                        </div>
+                    </div>
                 </div>
                 <div className="w-full h-full content-end">
                     <button className="border rounded-lg p-1 w-full">
