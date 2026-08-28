@@ -96,6 +96,7 @@ export default function WeaponInventory(): JSX.Element {
             {/* TODO:             - instructions/tips for sorting */}
 
             <div className="flex flex-col gap-1 w-full h-full items-center align-center">
+                {/* Character inventory */}
                 <div className="border rounded-lg p-1 w-full min-h-30 flex flex-col overflow-auto">
                     {weaponInventory.map((weapon, i) => {
                         return (
@@ -114,7 +115,10 @@ export default function WeaponInventory(): JSX.Element {
                         );
                     })}
                 </div>
+
+                {/* All weapons */}
                 <div className="relative border rounded-lg w-full h-100 flex flex-col">
+                    {/* Searchbox */}
                     <div className="p-1 shrink-0">
                         <input
                             className="border rounded-lg p-1 w-full"
@@ -125,6 +129,7 @@ export default function WeaponInventory(): JSX.Element {
                         />
                     </div>
 
+                    {/* Weapon list */}
                     <div className="overflow-auto" ref={parentRef}>
                         <div
                             style={{
@@ -155,6 +160,7 @@ export default function WeaponInventory(): JSX.Element {
                                                 equippedWeapon={weapon}
                                                 side="left"
                                             >
+                                                {/* TODO: add button here for moving the weapon into the character's inventory */}
                                                 <p
                                                     style={{
                                                         backgroundColor:
