@@ -10,6 +10,7 @@
         "upgrade": "ncu -u && npm install"
     },
     "dependencies": {
+        "@tanstack/react-virtual": "^3.14.10",
         "next": "^16.3.3",
         "npm-check-updates": "^23.1.0",
         "radix-ui": "^1.6.7",
