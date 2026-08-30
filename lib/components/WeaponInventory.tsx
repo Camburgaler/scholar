@@ -1,9 +1,10 @@
 import EquippedWeapon from "@/lib/classes/equippedWeapon";
+import VirtualizedList from "@/lib/components/VirtualizedList";
 import WeaponTooltip from "@/lib/components/WeaponTooltip";
 import { Weapons } from "@/lib/gameData";
 import { InfusionMapKey } from "@/lib/types/infusionMap";
-import { useVirtualizer } from "@tanstack/react-virtual";
-import { useMemo, useRef, useState } from "react";
+import { useState } from "react";
+import { ArrowUp, XLg } from "react-bootstrap-icons";
 import { JSX } from "react/jsx-runtime";
 
 export default function WeaponInventory(): JSX.Element {
@@ -21,39 +22,11 @@ export default function WeaponInventory(): JSX.Element {
     });
 
     // State
-    const [weaponInventory, setWeaponInventory] = useState([
-        Weapons.find((weapon) => weapon.Name === "Fists")!,
+    const [weaponInventory, setWeaponInventory] = useState<EquippedWeapon[]>([
+        EquippedWeapon.fromWeapon(
+            Weapons.find((weapon) => weapon.Name === "Fists")!,
+        ),
     ]);
-    const [weaponSearch, setWeaponSearch] = useState("");
-
-    // Memos
-    const filteredWeapons = useMemo(() => {
-        const search = weaponSearch.trim().toLowerCase();
-
-        if (!search) {
-            return allWeapons;
-        }
-
-        return allWeapons.filter((weapon) => {
-            const name =
-                weapon.infusionKey !== "Physical"
-                    ? `${weapon.infusionKey} ${weapon.name}`
-                    : weapon.name;
-
-            return name.toLowerCase().includes(search);
-        });
-    }, [weaponSearch]);
-
-    // The scrollable element for your list
-    const parentRef = useRef<HTMLDivElement>(null);
-
-    // The virtualizer
-    const rowVirtualizer = useVirtualizer({
-        count: filteredWeapons.length,
-        getScrollElement: () => parentRef.current,
-        estimateSize: () => 32,
-        overscan: 5,
-    });
 
     // Effects
     // TODO: Vanquisher's Seal
@@ -97,96 +70,118 @@ export default function WeaponInventory(): JSX.Element {
 
             <div className="flex flex-col gap-1 w-full h-full items-center align-center">
                 {/* Character inventory */}
-                <div className="border rounded-lg p-1 w-full min-h-30 flex flex-col overflow-auto">
-                    {weaponInventory.map((weapon, i) => {
-                        return (
-                            <p
-                                key={i}
+                <VirtualizedList
+                    list={weaponInventory}
+                    searchboxPlaceholder="Search inventory..."
+                    renderFunc={(item: EquippedWeapon, index: number) => (
+                        <WeaponTooltip equippedWeapon={item} side="left">
+                            <div
+                                className="w-full flex items-center"
                                 style={{
                                     backgroundColor:
-                                        i % 2 === 0
+                                        index % 2 === 0
                                             ? "var(--primary)"
                                             : "var(--secondary)",
                                 }}
-                                className="p-1"
                             >
-                                {weapon.Name}
-                            </p>
-                        );
-                    })}
-                </div>
+                                {item.name != "Fists" &&
+                                item.name != "Fist (Vanquisher's Seal)" ? (
+                                    <button
+                                        className="p-1"
+                                        onClick={() => {
+                                            // TODO: Remove the first instance of a weapon that matches this one
+
+                                            const index =
+                                                weaponInventory.findIndex(
+                                                    (weapon) => weapon === item,
+                                                );
+                                            let newWeaponInventory = [];
+                                            for (
+                                                let i = 0;
+                                                i < weaponInventory.length;
+                                                i++
+                                            ) {
+                                                if (i === index) {
+                                                    continue;
+                                                }
+
+                                                newWeaponInventory.push(
+                                                    weaponInventory[i],
+                                                );
+                                            }
+
+                                            setWeaponInventory(
+                                                newWeaponInventory,
+                                            );
+                                        }}
+                                    >
+                                        <XLg />
+                                    </button>
+                                ) : null}
+                                <p className="p-1">{item.name}</p>
+                            </div>
+                        </WeaponTooltip>
+                    )}
+                    filterFunc={(item: EquippedWeapon, searchStr: string) => {
+                        const name =
+                            item.infusionKey !== "Physical"
+                                ? `${item.infusionKey} ${item.name}`
+                                : item.name;
+
+                        return name.toLowerCase().includes(searchStr);
+                    }}
+                />
 
                 {/* All weapons */}
-                <div className="relative border rounded-lg w-full h-100 flex flex-col">
-                    {/* Searchbox */}
-                    <div className="p-1 shrink-0">
-                        <input
-                            className="border rounded-lg p-1 w-full"
-                            type="text"
-                            placeholder="Search all weapons..."
-                            value={weaponSearch}
-                            onChange={(e) => setWeaponSearch(e.target.value)}
-                        />
-                    </div>
+                <VirtualizedList
+                    list={allWeapons}
+                    searchboxPlaceholder="Search all weapons..."
+                    renderFunc={(item: EquippedWeapon, index: number) => (
+                        <WeaponTooltip equippedWeapon={item} side="left">
+                            <div
+                                className="flex items-center"
+                                style={{
+                                    backgroundColor:
+                                        index % 2 === 0
+                                            ? "var(--primary)"
+                                            : "var(--secondary)",
+                                }}
+                            >
+                                {item.name != "Fists" &&
+                                item.name != "Fist (Vanquisher's Seal)" ? (
+                                    <button
+                                        className="p-1"
+                                        onClick={() => {
+                                            setWeaponInventory([
+                                                ...weaponInventory,
+                                                item,
+                                            ]);
+                                        }}
+                                    >
+                                        <ArrowUp />
+                                    </button>
+                                ) : null}
+                                <p className="p-1">
+                                    {item.infusionKey != "Physical"
+                                        ? `${item.infusionKey} `
+                                        : ""}
+                                    {item.name}
+                                </p>
+                            </div>
+                        </WeaponTooltip>
+                    )}
+                    filterFunc={(item: EquippedWeapon, searchStr: string) => {
+                        const name =
+                            item.infusionKey !== "Physical"
+                                ? `${item.infusionKey} ${item.name}`
+                                : item.name;
 
-                    {/* Weapon list */}
-                    <div className="overflow-auto" ref={parentRef}>
-                        <div
-                            style={{
-                                height: `${rowVirtualizer.getTotalSize()}px`,
-                                width: "100%",
-                                position: "relative",
-                            }}
-                        >
-                            {rowVirtualizer
-                                .getVirtualItems()
-                                .map((virtualItem) => {
-                                    const weapon =
-                                        filteredWeapons[virtualItem.index];
+                        return name.toLowerCase().includes(searchStr);
+                    }}
+                />
 
-                                    return (
-                                        <div
-                                            key={virtualItem.index}
-                                            style={{
-                                                position: "absolute",
-                                                top: 0,
-                                                left: 0,
-                                                width: "100%",
-                                                height: `${virtualItem.size}px`,
-                                                transform: `translateY(${virtualItem.start}px)`,
-                                            }}
-                                        >
-                                            <WeaponTooltip
-                                                equippedWeapon={weapon}
-                                                side="left"
-                                            >
-                                                {/* TODO: add button here for moving the weapon into the character's inventory */}
-                                                <p
-                                                    style={{
-                                                        backgroundColor:
-                                                            virtualItem.index %
-                                                                2 ===
-                                                            0
-                                                                ? "var(--primary)"
-                                                                : "var(--secondary)",
-                                                    }}
-                                                    className="p-1"
-                                                >
-                                                    {weapon.infusionKey !=
-                                                    "Physical"
-                                                        ? `${weapon.infusionKey} `
-                                                        : ""}
-                                                    {weapon.name}
-                                                </p>
-                                            </WeaponTooltip>
-                                        </div>
-                                    );
-                                })}
-                        </div>
-                    </div>
-                </div>
                 <div className="w-full h-full content-end">
-                    {/* TODO: Make this toggle visibiltiy for another section for customizing the sorting of the weapons in the weapon inventory */}
+                    {/* TODO: Make this toggle visibility for another section for customizing the sorting of the weapons in the weapon inventory */}
                     <button className="border rounded-lg p-1 w-full">
                         Sorting configs...
                     </button>
