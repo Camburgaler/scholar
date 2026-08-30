@@ -124,6 +124,9 @@ export default function WeaponTooltip(props: {
                             </table>
                             {/* TODO: Requirements */}
                             {/* TODO: Scaling */}
+                            {/* TODO: Sorcery/incantation/hex power */}
+                            {/* TODO: Damage reduction */}
+                            {/* TODO: Modifiers */}
                         </div>
                     </Tooltip.Content>
                 </Tooltip.Portal>
