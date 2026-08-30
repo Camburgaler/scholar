@@ -110690,7 +110690,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 1,
                     "Lightning": 0,
                     "Fire": 0,
