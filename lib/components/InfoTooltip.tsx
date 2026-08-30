@@ -1,11 +1,13 @@
 import { Tooltip } from "radix-ui";
+import { JSX } from "react/jsx-runtime";
 
-type InfoTooltipProps = {
+export default function InfoTooltip(props: {
     children: React.ReactNode;
     content: React.ReactNode;
-};
+}): JSX.Element {
+    // Props
+    const { children, content } = props;
 
-function InfoTooltip({ children, content }: InfoTooltipProps) {
     return (
         <Tooltip.Root>
             <Tooltip.Trigger asChild>{children}</Tooltip.Trigger>
