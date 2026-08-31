@@ -97,9 +97,11 @@ class EquippedWeapon {
                 this.infusion.DamageRates[
                     attackPowerType as AttackPowerTypeMapKey
                 ]!;
+
             if (
                 attackPowerType == "Physical" &&
-                this.infusionKey != "Physical"
+                this.infusionKey != "Physical" &&
+                this.infusionKey != "Raw"
             ) {
                 damages[attackPowerType as AttackPowerTypeMapKey] /= 2;
             }

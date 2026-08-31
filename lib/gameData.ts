@@ -97,7 +97,6 @@ export const Spells: Spell[] = spells.sort((a, b) =>
 );
 
 // Weapons is a list of weapons
-// TODO: Sort
 export const Weapons: Weapon[] = weapons.sort((a, b) =>
     // Sort by name
     // "Fists" is always first
