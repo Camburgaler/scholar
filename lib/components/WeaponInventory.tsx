@@ -2,12 +2,16 @@ import EquippedWeapon from "@/lib/classes/equippedWeapon";
 import VirtualizedList from "@/lib/components/VirtualizedList";
 import WeaponTooltip from "@/lib/components/WeaponTooltip";
 import { Weapons } from "@/lib/gameData";
+import { useEquippedRings } from "@/lib/reducers/equippedRings";
 import { InfusionMapKey } from "@/lib/types/infusionMap";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ArrowUp, XLg } from "react-bootstrap-icons";
 import { JSX } from "react/jsx-runtime";
 
 export default function WeaponInventory(): JSX.Element {
+    // Context
+    const equippedRings = useEquippedRings();
+
     // Constants
     const allWeapons: EquippedWeapon[] = Weapons.flatMap((weapon) => {
         let infusedWeapons: EquippedWeapon[] = [];
@@ -22,14 +26,53 @@ export default function WeaponInventory(): JSX.Element {
     });
 
     // State
-    const [weaponInventory, setWeaponInventory] = useState<EquippedWeapon[]>([
+    const [defaultWeapon, setDefaultWeapon] = useState<EquippedWeapon>(
         EquippedWeapon.fromWeapon(
             Weapons.find((weapon) => weapon.Name === "Fists")!,
+        ),
+    );
+    const [weaponInventory, setWeaponInventory] = useState<EquippedWeapon[]>([
+        EquippedWeapon.fromWeapon(
+            Weapons.find((weapon) => weapon.Name === defaultWeapon.name)!,
         ),
     ]);
 
     // Effects
-    // TODO: Vanquisher's Seal
+    useEffect(() => {
+        // If the "Vanquisher's Seal" ring is equipped, set the default weapon to "Fist (Vanquisher's Seal)"
+        let isVanquishersSealEquipped = false;
+        Object.entries(equippedRings).forEach(([_, ring]) => {
+            if (ring.Name === "Vanquisher's Seal") {
+                isVanquishersSealEquipped = true;
+            }
+        });
+
+        if (isVanquishersSealEquipped) {
+            setDefaultWeapon(
+                EquippedWeapon.fromWeapon(
+                    Weapons.find(
+                        (weapon) => weapon.Name === "Fist (Vanquisher's Seal)",
+                    )!,
+                ),
+            );
+        } else {
+            setDefaultWeapon(
+                EquippedWeapon.fromWeapon(
+                    Weapons.find((weapon) => weapon.Name === "Fists")!,
+                ),
+            );
+        }
+    }, [equippedRings]);
+
+    useEffect(() => {
+        // When the default weapon changes, update the weapon inventory
+        const tempInventory = weaponInventory.filter(
+            (weapon) =>
+                weapon.name !== "Fists" &&
+                weapon.name !== "Fist (Vanquisher's Seal)",
+        );
+        setWeaponInventory([defaultWeapon, ...tempInventory]);
+    }, [defaultWeapon]);
 
     return (
         <div className="flex flex-col w-full h-full items-center justify-center align-center">

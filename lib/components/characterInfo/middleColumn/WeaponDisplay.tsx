@@ -42,11 +42,13 @@ export default function WeaponDisplay(props: {
     // Effect
     useEffect(() => {
         // If the "Vanquisher's Seal" ring is equipped, set the "vanquishersSeal" state to true
-        Object.entries(equippedRings).forEach(([key, ring]) => {
+        let isVanquishersSealEquipped = false;
+        Object.entries(equippedRings).forEach(([_, ring]) => {
             if (ring.Name === "Vanquisher's Seal") {
-                setVanquishersSeal(true);
+                isVanquishersSealEquipped = true;
             }
         });
+        setVanquishersSeal(isVanquishersSealEquipped);
     }, [equippedRings]);
 
     useEffect(() => {
