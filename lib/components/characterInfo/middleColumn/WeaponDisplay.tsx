@@ -49,7 +49,7 @@ export default function WeaponDisplay(props: {
             }
         });
         setVanquishersSeal(isVanquishersSealEquipped);
-    }, [equippedRings]);
+    }, [equippedRings, setVanquishersSeal]);
 
     useEffect(() => {
         // If vanquishersSeal is true, set the equipped weapon to "Fist (Vanquisher's Seal)"
@@ -61,6 +61,16 @@ export default function WeaponDisplay(props: {
                 slot: slot,
                 equippedWeapon: EquippedWeapon.fromWeapon(
                     getWeaponByName("Fist (Vanquisher's Seal)")!,
+                ),
+            });
+        } else if (
+            !vanquishersSeal &&
+            equippedWeapons.getWeapon(slot).name === "Fist (Vanquisher's Seal)"
+        ) {
+            setEquippedWeapons({
+                slot: slot,
+                equippedWeapon: EquippedWeapon.fromWeapon(
+                    getWeaponByName("Fists")!,
                 ),
             });
         }
@@ -75,7 +85,6 @@ export default function WeaponDisplay(props: {
                 id={slot}
                 className="col-span-1 flex flex-col w-full justify-between border rounded-md"
             >
-                {/* TODO: Cleverer damage display? */}
                 <DamageDisplay slot={slot} />
                 <select
                     className="w-full"

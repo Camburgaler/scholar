@@ -7,6 +7,7 @@ import AttackPowerTypeMap from "@/lib/types/attackPowerTypeMap";
 import { useEffect, useState } from "react";
 import { JSX } from "react/jsx-runtime";
 
+// TODO: Cleverer damage display?
 export default function DamageDisplay(props: {
     slot: WeaponEquipSlot;
 }): JSX.Element {
