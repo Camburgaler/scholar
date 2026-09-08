@@ -28,7 +28,7 @@ export function ringsAttributeModifiers(
     rings: EquippedRings,
     attribute: AttributeMapKey,
 ): number {
-    var total = 0;
+    let total = 0;
     const modifiers: Modifier[] = ringsActiveEffects(rings).filter(
         (modifier) =>
             modifier.TargetType === "attribute" &&

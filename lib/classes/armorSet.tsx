@@ -188,7 +188,10 @@ class ArmorSet {
      * @param defenseField The defense field to sum the values for. {@link DefenseMapKey}.
      * @returns The sum of the defense values for the given field.
      */
-    public defense(defenseField: DefenseMapKey): number {
+    public defense(
+        defenseField: DefenseMapKey,
+        physicalDefense?: number,
+    ): number {
         const helmetDefense = this.helmet.data.Defenses[defenseField];
         const helmetReinforcementLevel = this.helmet.reinforcementLevel;
         const chestpieceDefense = this.chestpiece.data.Defenses[defenseField];
@@ -198,12 +201,33 @@ class ArmorSet {
         const leggingsDefense = this.leggings.data.Defenses[defenseField];
         const leggingsReinforcementLevel = this.leggings.reinforcementLevel;
 
-        return (
+        let value =
             reinforcedValue(helmetDefense, helmetReinforcementLevel) +
             reinforcedValue(chestpieceDefense, chestpieceReinforcementLevel) +
             reinforcedValue(gauntletsDefense, gauntletsReinforcementLevel) +
-            reinforcedValue(leggingsDefense, leggingsReinforcementLevel)
-        );
+            reinforcedValue(leggingsDefense, leggingsReinforcementLevel);
+
+        if (
+            defenseField === "Slash" ||
+            defenseField === "Strike" ||
+            defenseField === "Thrust"
+        ) {
+            if (physicalDefense !== undefined) {
+                value +=
+                    physicalDefense * this.helmet.data.DefenseScalingPhysical +
+                    physicalDefense *
+                        this.chestpiece.data.DefenseScalingPhysical +
+                    physicalDefense *
+                        this.gauntlets.data.DefenseScalingPhysical +
+                    physicalDefense * this.leggings.data.DefenseScalingPhysical;
+            } else {
+                throw new Error(
+                    "Physical defense must be provided for slash, strike, and thrust defenses",
+                );
+            }
+        }
+
+        return value;
     }
 
     /**
@@ -240,7 +264,7 @@ class ArmorSet {
      * @description Gets the total poise of the armor set.
      * @returns {number} The total poise of the armor set.
      */
-    public poise(): number {
+    public get poise(): number {
         return (
             this.helmet.data.Poise +
             this.chestpiece.data.Poise +
@@ -254,7 +278,7 @@ class ArmorSet {
      * @description Gets the total item discovery of the armor set.
      * @returns {number} The total item discovery of the armor set.
      */
-    public itemDiscovery(): number {
+    public get itemDiscovery(): number {
         return (
             this.helmet.data.ItemDiscovery +
             this.chestpiece.data.ItemDiscovery +
@@ -268,7 +292,7 @@ class ArmorSet {
      * @description Gets the ModifierDisplay components for the armor set.
      * @returns The {@link ModifierDisplay}s for the armor set.
      */
-    public getModifierDisplays(): JSX.Element[] {
+    public get modifierDisplays(): JSX.Element[] {
         let activeEffects: JSX.Element[] = [];
         let isOddRow = true;
 
@@ -368,7 +392,7 @@ class ArmorSet {
      * @description Gets the active effects of the armor set.
      * @returns The active effects of the armor set. Array of {@link Modifier}s.
      */
-    public activeEffects(): Modifier[] {
+    public get activeEffects(): Modifier[] {
         let activeEffects: Modifier[] = [];
 
         this.helmet.data.Modifiers.forEach((modifier) => {
@@ -399,7 +423,7 @@ class ArmorSet {
     public attributeModifier(attribute: AttributeMapKey): number {
         let modifierSum = 0;
 
-        this.activeEffects()
+        this.activeEffects
             .filter(
                 (modifier) =>
                     modifier.TargetType === "attribute" &&
@@ -411,130 +435,6 @@ class ArmorSet {
 
         return modifierSum;
     }
-
-    /**
-     * @method thrustDefense
-     * @description Gets the total thrust defense of the armor set.
-     * @param physicalDefense The physical defense of the character.
-     * @returns {number} The total thrust defense of the armor set.
-     */
-    public thrustDefense(physicalDefense: number): number {
-        const helmet = this.helmet.data;
-        const chestpiece = this.chestpiece.data;
-        const gauntlets = this.gauntlets.data;
-        const leggings = this.leggings.data;
-
-        const reinforcedThrustHelmet = reinforcedValue(
-            helmet.Defenses.Thrust,
-            this.helmet.reinforcementLevel,
-        );
-        const reinforcedThrustChestpiece = reinforcedValue(
-            chestpiece.Defenses.Thrust,
-            this.chestpiece.reinforcementLevel,
-        );
-        const reinforcedThrustGauntlets = reinforcedValue(
-            gauntlets.Defenses.Thrust,
-            this.gauntlets.reinforcementLevel,
-        );
-        const reinforcedThrustLeggings = reinforcedValue(
-            leggings.Defenses.Thrust,
-            this.leggings.reinforcementLevel,
-        );
-
-        return (
-            reinforcedThrustHelmet +
-            physicalDefense * helmet.DefenseScalingPhysical +
-            reinforcedThrustChestpiece +
-            physicalDefense * chestpiece.DefenseScalingPhysical +
-            reinforcedThrustGauntlets +
-            physicalDefense * gauntlets.DefenseScalingPhysical +
-            reinforcedThrustLeggings +
-            physicalDefense * leggings.DefenseScalingPhysical
-        );
-    }
-
-    /**
-     * @method slashDefense
-     * @description Gets the total slash defense of the armor set.
-     * @param physicalDefense The physical defense of the character.
-     * @returns {number} The total slash defense of the armor set.
-     */
-    public slashDefense(physicalDefense: number): number {
-        const helmet = this.helmet.data;
-        const chestpiece = this.chestpiece.data;
-        const gauntlets = this.gauntlets.data;
-        const leggings = this.leggings.data;
-
-        const reinforcedSlashHelmet = reinforcedValue(
-            helmet.Defenses.Slash,
-            this.helmet.reinforcementLevel,
-        );
-        const reinforcedSlashChestpiece = reinforcedValue(
-            chestpiece.Defenses.Slash,
-            this.chestpiece.reinforcementLevel,
-        );
-        const reinforcedSlashGauntlets = reinforcedValue(
-            gauntlets.Defenses.Slash,
-            this.gauntlets.reinforcementLevel,
-        );
-        const reinforcedSlashLeggings = reinforcedValue(
-            leggings.Defenses.Slash,
-            this.leggings.reinforcementLevel,
-        );
-
-        return (
-            reinforcedSlashHelmet +
-            physicalDefense * helmet.DefenseScalingPhysical +
-            reinforcedSlashChestpiece +
-            physicalDefense * chestpiece.DefenseScalingPhysical +
-            reinforcedSlashGauntlets +
-            physicalDefense * gauntlets.DefenseScalingPhysical +
-            reinforcedSlashLeggings +
-            physicalDefense * leggings.DefenseScalingPhysical
-        );
-    }
-
-    /**
-     * @method strikeDefense
-     * @description Gets the total strike defense of the armor set.
-     * @param physicalDefense The physical defense of the character.
-     * @returns {number} The total strike defense of the armor set.
-     */
-    public strikeDefense(physicalDefense: number): number {
-        const helmet = this.helmet.data;
-        const chestpiece = this.chestpiece.data;
-        const gauntlets = this.gauntlets.data;
-        const leggings = this.leggings.data;
-
-        const reinforcedStrikeHelmet = reinforcedValue(
-            helmet.Defenses.Strike,
-            this.helmet.reinforcementLevel,
-        );
-        const reinforcedStrikeChestpiece = reinforcedValue(
-            chestpiece.Defenses.Strike,
-            this.chestpiece.reinforcementLevel,
-        );
-        const reinforcedStrikeGauntlets = reinforcedValue(
-            gauntlets.Defenses.Strike,
-            this.gauntlets.reinforcementLevel,
-        );
-        const reinforcedStrikeLeggings = reinforcedValue(
-            leggings.Defenses.Strike,
-            this.leggings.reinforcementLevel,
-        );
-
-        return (
-            reinforcedStrikeHelmet +
-            physicalDefense * helmet.DefenseScalingPhysical +
-            reinforcedStrikeChestpiece +
-            physicalDefense * chestpiece.DefenseScalingPhysical +
-            reinforcedStrikeGauntlets +
-            physicalDefense * gauntlets.DefenseScalingPhysical +
-            reinforcedStrikeLeggings +
-            physicalDefense * leggings.DefenseScalingPhysical
-        );
-    }
-
     public fitness(): number {
         // TODO: Implement fitness calculation
         return 0;

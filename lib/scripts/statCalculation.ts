@@ -1,7 +1,5 @@
 import ArmorSet from "@/lib/classes/armorSet";
-import WeaponSlots from "@/lib/classes/weaponSlots";
 import {
-    mapDisplayKeyToArmorDefenseField,
     mapDisplayKeyToStatMapKey,
     StatDisplayKey,
 } from "@/lib/components/characterInfo/StatDisplay";
@@ -11,14 +9,13 @@ import {
     StatCalculationDetails,
 } from "@/lib/gameData";
 import EquippedRings from "@/lib/interfaces/equippedRings";
-import { ringsActiveEffects } from "@/lib/scripts/equippedRings";
 import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
-import { ResistanceMapKey } from "@/lib/types/resistanceMap";
 import {
     ModifierTargetToStatMapKey,
     StatIsDefenseOrResistance,
     StatMapKey,
 } from "@/lib/types/statMap";
+import Modifier from "../interfaces/modifier";
 
 /**
  * @type CurveMap
@@ -970,9 +967,12 @@ export function calculateStatFromAttributes(
 export function calculateStatDisplayValue(
     statDisplayKey: StatDisplayKey,
     attributes: AttributeMap<number>,
-    equippedArmor: ArmorSet,
-    equippedRings: EquippedRings,
-    equippedWeapons: WeaponSlots,
+    // equippedArmor: ArmorSet,
+    // equippedRings: EquippedRings,
+    // equippedWeapons: WeaponSlots,
+    activeEffects: Modifier[],
+    defense?: number,
+    poise?: number,
 ): number {
     const statMapKey: StatMapKey = mapDisplayKeyToStatMapKey(statDisplayKey);
     let statValue = calculateStatFromAttributes(statMapKey, attributes);
@@ -987,36 +987,40 @@ export function calculateStatDisplayValue(
         ) {
             switch (statDisplayKey) {
                 case "DefenseStrike":
-                    statValue = equippedArmor.strikeDefense(statValue);
-                    break;
+                // statValue = equippedArmor.defense("Strike", statValue);
+                // break;
                 case "DefenseSlash":
-                    statValue = equippedArmor.slashDefense(statValue);
-                    break;
+                // statValue = equippedArmor.defense("Slash", statValue);
+                // break;
                 case "DefenseThrust":
-                    statValue = equippedArmor.thrustDefense(statValue);
+                    // statValue = equippedArmor.defense("Thrust", statValue);
+                    statValue = defense!;
                     break;
                 case "Defense":
                     // Do nothing since the display value of the "Defense" stat stays the same regardless of armor
                     break;
                 default:
-                    statValue += equippedArmor.defense(
-                        mapDisplayKeyToArmorDefenseField(statDisplayKey),
-                    );
+                    // statValue += equippedArmor.defense(
+                    //     mapDisplayKeyToArmorDefenseField(statDisplayKey),
+                    // );
+                    statValue += defense!;
                     break;
             }
         } else {
-            statValue += equippedArmor.resistance(
-                statDisplayKey.replace("Resistance", "") as ResistanceMapKey,
-            );
+            // statValue += equippedArmor.resistance(
+            //     statDisplayKey.replace("Resistance", "") as ResistanceMapKey,
+            // );
+            statValue += defense!;
         }
     }
 
     // Add active effects
-    [
-        ...equippedArmor.activeEffects(),
-        ...ringsActiveEffects(equippedRings),
-        ...equippedWeapons.activeEffects(),
-    ]
+    // [
+    //     ...equippedArmor.activeEffects,
+    //     ...ringsActiveEffects(equippedRings),
+    //     ...equippedWeapons.activeEffects(),
+    // ]
+    activeEffects
         .filter(
             (effect) =>
                 effect.TargetType === "stat" &&
@@ -1036,7 +1040,8 @@ export function calculateStatDisplayValue(
         });
 
     // Add active special effects from items
-    ringsActiveEffects(equippedRings)
+    // ringsActiveEffects(equippedRings)
+    activeEffects
         .filter((effect) => effect.TargetType === "special")
         .forEach((effect) => {
             switch (effect.Target) {
@@ -1060,7 +1065,7 @@ export function calculateStatDisplayValue(
 
     // Add armor poise
     if (statMapKey === "Poise") {
-        additiveModifier += equippedArmor.poise();
+        additiveModifier += poise!;
     }
 
     if (statMapKey === "SpellCastingSpeed") {

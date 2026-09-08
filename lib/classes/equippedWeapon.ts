@@ -12,6 +12,7 @@ import AttackPowerTypeMap, {
 } from "@/lib/types/attackPowerTypeMap";
 import AttributeMap from "@/lib/types/attributeMap";
 import { InfusionMapKey } from "@/lib/types/infusionMap";
+import { ringsActiveEffects } from "../scripts/equippedRings";
 
 /**
  * @type EquippedWeapon
@@ -143,17 +144,27 @@ class EquippedWeapon {
                     calculateStatDisplayValue(
                         "PhysicalAttackPowerByStrength",
                         virtualAttributes,
-                        equippedArmor,
-                        equippedRings,
-                        equippedWeapons,
+                        // equippedArmor,
+                        // equippedRings,
+                        // equippedWeapons,
+                        [
+                            ...equippedArmor.activeEffects,
+                            ...ringsActiveEffects(equippedRings),
+                            ...equippedWeapons.activeEffects(),
+                        ],
                     ) * scales.PhysicalByStrength;
                 damages.Physical +=
                     calculateStatDisplayValue(
                         "PhysicalAttackPowerByDexterity",
                         virtualAttributes,
-                        equippedArmor,
-                        equippedRings,
-                        equippedWeapons,
+                        // equippedArmor,
+                        // equippedRings,
+                        // equippedWeapons,
+                        [
+                            ...equippedArmor.activeEffects,
+                            ...ringsActiveEffects(equippedRings),
+                            ...equippedWeapons.activeEffects(),
+                        ],
                     ) * scales.PhysicalByDexterity;
             }
         }
@@ -163,9 +174,14 @@ class EquippedWeapon {
                 calculateStatDisplayValue(
                     "AttackPowerMagic",
                     virtualAttributes,
-                    equippedArmor,
-                    equippedRings,
-                    equippedWeapons,
+                    // equippedArmor,
+                    // equippedRings,
+                    // equippedWeapons,
+                    [
+                        ...equippedArmor.activeEffects,
+                        ...ringsActiveEffects(equippedRings),
+                        ...equippedWeapons.activeEffects(),
+                    ],
                 ) * scales.Magic;
         }
 
@@ -174,9 +190,14 @@ class EquippedWeapon {
                 calculateStatDisplayValue(
                     "AttackPowerLightning",
                     virtualAttributes,
-                    equippedArmor,
-                    equippedRings,
-                    equippedWeapons,
+                    // equippedArmor,
+                    // equippedRings,
+                    // equippedWeapons,
+                    [
+                        ...equippedArmor.activeEffects,
+                        ...ringsActiveEffects(equippedRings),
+                        ...equippedWeapons.activeEffects(),
+                    ],
                 ) * scales.Lightning;
         }
 
@@ -185,9 +206,14 @@ class EquippedWeapon {
                 calculateStatDisplayValue(
                     "AttackPowerFire",
                     virtualAttributes,
-                    equippedArmor,
-                    equippedRings,
-                    equippedWeapons,
+                    // equippedArmor,
+                    // equippedRings,
+                    // equippedWeapons,
+                    [
+                        ...equippedArmor.activeEffects,
+                        ...ringsActiveEffects(equippedRings),
+                        ...equippedWeapons.activeEffects(),
+                    ],
                 ) * scales.Fire;
         }
 
@@ -196,9 +222,14 @@ class EquippedWeapon {
                 calculateStatDisplayValue(
                     "AttackPowerDark",
                     virtualAttributes,
-                    equippedArmor,
-                    equippedRings,
-                    equippedWeapons,
+                    // equippedArmor,
+                    // equippedRings,
+                    // equippedWeapons,
+                    [
+                        ...equippedArmor.activeEffects,
+                        ...ringsActiveEffects(equippedRings),
+                        ...equippedWeapons.activeEffects(),
+                    ],
                 ) * scales.Dark;
         }
 
@@ -207,9 +238,14 @@ class EquippedWeapon {
                 calculateStatDisplayValue(
                     "AttackPowerPoison",
                     virtualAttributes,
-                    equippedArmor,
-                    equippedRings,
-                    equippedWeapons,
+                    // equippedArmor,
+                    // equippedRings,
+                    // equippedWeapons,
+                    [
+                        ...equippedArmor.activeEffects,
+                        ...ringsActiveEffects(equippedRings),
+                        ...equippedWeapons.activeEffects(),
+                    ],
                 ) * scales.Poison!;
         }
 
@@ -218,9 +254,14 @@ class EquippedWeapon {
                 calculateStatDisplayValue(
                     "AttackPowerBleed",
                     virtualAttributes,
-                    equippedArmor,
-                    equippedRings,
-                    equippedWeapons,
+                    // equippedArmor,
+                    // equippedRings,
+                    // equippedWeapons,
+                    [
+                        ...equippedArmor.activeEffects,
+                        ...ringsActiveEffects(equippedRings),
+                        ...equippedWeapons.activeEffects(),
+                    ],
                 ) * scales.Bleed!;
         }
 
