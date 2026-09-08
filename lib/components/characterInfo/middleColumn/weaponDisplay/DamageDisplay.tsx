@@ -2,8 +2,10 @@ import { WeaponEquipSlot } from "@/lib/classes/weaponSlots";
 import { useEquippedArmorSet } from "@/lib/reducers/equippedArmorSet";
 import { useEquippedRings } from "@/lib/reducers/equippedRings";
 import { useEquippedWeapons } from "@/lib/reducers/equippedWeapons";
+import { useTwoHanding } from "@/lib/reducers/twoHanding";
 import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
 import AttackPowerTypeMap from "@/lib/types/attackPowerTypeMap";
+import AttributeMap from "@/lib/types/attributeMap";
 import { useEffect, useState } from "react";
 import { JSX } from "react/jsx-runtime";
 
@@ -19,6 +21,7 @@ export default function DamageDisplay(props: {
     const virtualAttributes = useVirtualAttributes();
     const equippedArmor = useEquippedArmorSet();
     const equippedRings = useEquippedRings();
+    const twoHanding = useTwoHanding();
 
     // Constants
     const isRightHand =
@@ -37,17 +40,28 @@ export default function DamageDisplay(props: {
 
     // Effects
     useEffect(() => {
+        let attributes: AttributeMap<number> = { ...virtualAttributes };
+        if (twoHanding) {
+            attributes.Strength = Math.floor(attributes.Strength * 1.5);
+        }
+
         setDamage(
             equippedWeapons
                 .getWeapon(slot)
                 .totalDamage(
                     equippedWeapons,
-                    virtualAttributes,
+                    attributes,
                     equippedArmor,
                     equippedRings,
                 ),
         );
-    }, [equippedWeapons, virtualAttributes, equippedArmor, equippedRings]);
+    }, [
+        equippedWeapons,
+        virtualAttributes,
+        equippedArmor,
+        equippedRings,
+        twoHanding,
+    ]);
 
     return (
         <div

@@ -3,8 +3,10 @@ import { useEquippedArmorSet } from "@/lib/reducers/equippedArmorSet";
 import { useEquippedRings } from "@/lib/reducers/equippedRings";
 import { useEquippedWeapons } from "@/lib/reducers/equippedWeapons";
 import { useFocusedAttribute } from "@/lib/reducers/focusedAttribute";
+import { useTwoHanding } from "@/lib/reducers/twoHanding";
 import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
 import { calculateStatDisplayValue } from "@/lib/scripts/statCalculation";
+import AttributeMap from "@/lib/types/attributeMap";
 import { DefenseMapKey } from "@/lib/types/defenseMap";
 import {
     StatMapKey,
@@ -113,6 +115,7 @@ export default function StatDisplay(props: {
     const equippedArmorSet = useEquippedArmorSet();
     const equippedRings = useEquippedRings();
     const equippedWeapons = useEquippedWeapons();
+    const twoHanding = useTwoHanding();
 
     // State
     const [isFocused, setIsFocused] = useState(false);
@@ -156,9 +159,14 @@ export default function StatDisplay(props: {
 
     // updates the display value
     useEffect(() => {
+        let attributes: AttributeMap<number> = { ...virtualAttributes };
+        if (twoHanding && statDisplayKey === "PhysicalAttackPowerByStrength") {
+            attributes.Strength = Math.floor(attributes.Strength * 1.5);
+        }
+
         let displayValue = calculateStatDisplayValue(
             statDisplayKey,
-            virtualAttributes,
+            attributes,
             equippedArmorSet,
             equippedRings,
             equippedWeapons,
@@ -170,7 +178,13 @@ export default function StatDisplay(props: {
 
         // TODO: Research whether stats can be negative. If so, which ones? How?
         setDisplayValue(displayValue);
-    }, [virtualAttributes, equippedArmorSet, equippedRings, equippedWeapons]);
+    }, [
+        virtualAttributes,
+        equippedArmorSet,
+        equippedRings,
+        equippedWeapons,
+        twoHanding,
+    ]);
 
     return (
         <div

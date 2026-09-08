@@ -9,6 +9,8 @@ import AttackPowerTypeMap, {
 } from "@/lib/types/attackPowerTypeMap";
 import { Tooltip } from "radix-ui";
 import { JSX } from "react/jsx-runtime";
+import { useTwoHanding } from "../reducers/twoHanding";
+import AttributeMap from "../types/attributeMap";
 
 export default function WeaponTooltip(props: {
     children: JSX.Element;
@@ -23,15 +25,22 @@ export default function WeaponTooltip(props: {
     const equippedArmorSet = useEquippedArmorSet();
     const equippedRings = useEquippedRings();
     const equippedWeapons = useEquippedWeapons();
+    const twoHanding = useTwoHanding();
 
     // Constants
     const infusion: Infusion = equippedWeapon.infusions.find(
         (infusion) => infusion.Name === equippedWeapon.infusionKey,
     )!;
     const baseDamage: AttackPowerTypeMap<number> = equippedWeapon.baseDamage();
+
+    let attributes: AttributeMap<number> = { ...virtualAttributes };
+    if (twoHanding) {
+        attributes.Strength = Math.floor(attributes.Strength * 1.5);
+    }
+
     const scalingDamage: AttackPowerTypeMap<number> =
         equippedWeapon.scalingDamage(
-            virtualAttributes,
+            attributes,
             equippedArmorSet,
             equippedRings,
             equippedWeapons,

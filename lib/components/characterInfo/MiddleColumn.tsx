@@ -7,6 +7,10 @@ import { useEquippedArmorSet } from "@/lib/reducers/equippedArmorSet";
 import { useEquippedRings } from "@/lib/reducers/equippedRings";
 import { useEquippedWeapons } from "@/lib/reducers/equippedWeapons";
 import { useFocusedAttribute } from "@/lib/reducers/focusedAttribute";
+import {
+    useTwoHanding,
+    useTwoHandingDispatch,
+} from "@/lib/reducers/twoHanding";
 import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
 import { ringsWeight } from "@/lib/scripts/equippedRings";
 import { calculateStatDisplayValue } from "@/lib/scripts/statCalculation";
@@ -33,6 +37,8 @@ export default function MiddleColumn(): JSX.Element {
     const focusedAttribute = useFocusedAttribute();
     const equippedRings = useEquippedRings();
     const equippedWeapons = useEquippedWeapons();
+    const twoHanding = useTwoHanding();
+    const twoHandingDispatch = useTwoHandingDispatch();
 
     return (
         <div className="flex flex-col w-full h-full items-left justify-baseline align-center">
@@ -122,7 +128,6 @@ export default function MiddleColumn(): JSX.Element {
             <hr />
 
             {/* Weapons */}
-            {/* TODO: update with real options */}
             <div className="grid grid-cols-2 gap-1 w-full justify-between">
                 {/* Left hand */}
                 <div className="text-left col-span-1 flex flex-col w-full justify-between gap-1">
@@ -141,7 +146,12 @@ export default function MiddleColumn(): JSX.Element {
                 </div>
 
                 {/* TODO: make this affect stat calculation */}
-                <input id="two-handing" type="checkbox" />
+                <input
+                    id="two-handing"
+                    type="checkbox"
+                    checked={twoHanding}
+                    onChange={() => twoHandingDispatch({ value: !twoHanding })}
+                />
                 <label htmlFor="two-handing">Two-Handed</label>
             </div>
 
