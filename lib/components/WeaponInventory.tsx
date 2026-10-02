@@ -1,6 +1,6 @@
 import EquippedWeapon from "@/lib/classes/equippedWeapon";
-import VirtualizedList from "@/lib/components/VirtualizedList";
-import WeaponTooltip from "@/lib/components/WeaponTooltip";
+import VirtualizedList from "@/lib/components/common/VirtualizedList";
+import WeaponTooltip from "@/lib/components/common/WeaponTooltip";
 import { Weapons } from "@/lib/gameData";
 import { useEquippedRings } from "@/lib/reducers/equippedRings";
 import { InfusionMapKey } from "@/lib/types/infusionMap";
@@ -116,17 +116,10 @@ export default function WeaponInventory(): JSX.Element {
                 <VirtualizedList
                     list={weaponInventory}
                     searchboxPlaceholder="Search inventory..."
-                    renderFunc={(item: EquippedWeapon, index: number) => (
+                    renderFunc={(item: EquippedWeapon) => (
                         <WeaponTooltip equippedWeapon={item} side="left">
-                            <div
-                                className="w-full flex items-center"
-                                style={{
-                                    backgroundColor:
-                                        index % 2 === 0
-                                            ? "var(--primary)"
-                                            : "var(--secondary)",
-                                }}
-                            >
+                            <div className="w-full flex items-center justify-between align-center">
+                                <p className="p-1">{item.name}</p>
                                 {item.name != "Fists" &&
                                 item.name != "Fist (Vanquisher's Seal)" ? (
                                     <button
@@ -161,7 +154,6 @@ export default function WeaponInventory(): JSX.Element {
                                         <XLg />
                                     </button>
                                 ) : null}
-                                <p className="p-1">{item.name}</p>
                             </div>
                         </WeaponTooltip>
                     )}
@@ -179,17 +171,9 @@ export default function WeaponInventory(): JSX.Element {
                 <VirtualizedList
                     list={allWeapons}
                     searchboxPlaceholder="Search all weapons..."
-                    renderFunc={(item: EquippedWeapon, index: number) => (
+                    renderFunc={(item: EquippedWeapon) => (
                         <WeaponTooltip equippedWeapon={item} side="left">
-                            <div
-                                className="flex items-center"
-                                style={{
-                                    backgroundColor:
-                                        index % 2 === 0
-                                            ? "var(--primary)"
-                                            : "var(--secondary)",
-                                }}
-                            >
+                            <div className="flex items-center">
                                 {item.name != "Fists" &&
                                 item.name != "Fist (Vanquisher's Seal)" ? (
                                     <button

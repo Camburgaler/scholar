@@ -3,7 +3,7 @@ import { WeaponEquipSlot } from "@/lib/classes/weaponSlots";
 import DamageDisplay from "@/lib/components/characterInfo/middleColumn/weaponDisplay/DamageDisplay";
 import InfusionDisplay from "@/lib/components/characterInfo/middleColumn/weaponDisplay/InfusionDisplay";
 import ReinforcementDisplay from "@/lib/components/characterInfo/middleColumn/weaponDisplay/ReinforcementDisplay";
-import WeaponTooltip from "@/lib/components/WeaponTooltip";
+import WeaponTooltip from "@/lib/components/common/WeaponTooltip";
 import { Weapons } from "@/lib/gameData";
 import { useEquippedRings } from "@/lib/reducers/equippedRings";
 import {

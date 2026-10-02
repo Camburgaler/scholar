@@ -1,0 +1,267 @@
+import EquippedWeapon from "@/lib/classes/equippedWeapon";
+import Infusion from "@/lib/interfaces/infusion";
+import { useEquippedArmorSet } from "@/lib/reducers/equippedArmorSet";
+import { useEquippedRings } from "@/lib/reducers/equippedRings";
+import {
+    useEquippedWeapons,
+    useEquippedWeaponsDispatch,
+} from "@/lib/reducers/equippedWeapons";
+import { useTwoHanding } from "@/lib/reducers/twoHanding";
+import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
+import AttackPowerTypeMap, {
+    AttackPowerTypeMapKey,
+} from "@/lib/types/attackPowerTypeMap";
+import AttributeMap from "@/lib/types/attributeMap";
+import { Tooltip } from "radix-ui";
+import { JSX } from "react/jsx-runtime";
+
+export default function WeaponTooltip(props: {
+    children: JSX.Element;
+    equippedWeapon: EquippedWeapon;
+    side?: "top" | "right" | "bottom" | "left";
+}): JSX.Element {
+    // Props
+    const { children, equippedWeapon, side } = props;
+
+    // Context
+    const virtualAttributes = useVirtualAttributes();
+    const equippedArmorSet = useEquippedArmorSet();
+    const equippedRings = useEquippedRings();
+    const equippedWeapons = useEquippedWeapons();
+    const setEquippedWeapons = useEquippedWeaponsDispatch();
+    const twoHanding = useTwoHanding();
+
+    // Constants
+    const infusion: Infusion = equippedWeapon.infusions.find(
+        (infusion) => infusion.Name === equippedWeapon.infusionKey,
+    )!;
+    const baseDamage: AttackPowerTypeMap<number> = equippedWeapon.baseDamage();
+
+    let attributes: AttributeMap<number> = { ...virtualAttributes };
+    if (twoHanding) {
+        attributes.Strength = Math.floor(attributes.Strength * 1.5);
+    }
+
+    const scalingDamage: AttackPowerTypeMap<number> =
+        equippedWeapon.scalingDamage(
+            attributes,
+            equippedArmorSet,
+            equippedRings,
+            equippedWeapons,
+        );
+    const title = `${
+        equippedWeapon.infusionKey != "Physical"
+            ? equippedWeapon.infusionKey + " "
+            : ""
+    }${equippedWeapon.name}${
+        equippedWeapon.reinforcementLevel != 0
+            ? " +" + equippedWeapon.reinforcementLevel
+            : ""
+    }`;
+
+    return (
+        <Tooltip.Provider>
+            <Tooltip.Root delayDuration={100}>
+                <Tooltip.Trigger asChild>{children}</Tooltip.Trigger>
+
+                <Tooltip.Portal>
+                    <Tooltip.Content side={side || "top"}>
+                        <Tooltip.Arrow
+                            height={10}
+                            style={{ fill: "var(--contrast)" }}
+                        />
+                        <div
+                            className="flex flex-col border shadow-md rounded-md p-2 min-w-60 z-100"
+                            style={{
+                                backgroundColor: "var(--primary)",
+                                color: "var(--secondary)",
+                                borderColor: "var(--contrast)",
+                            }}
+                        >
+                            <b>{title}</b>
+                            <hr />
+
+                            <p>Attack Power</p>
+                            <table className="w-full p-1 rounded-lg">
+                                <tbody>
+                                    {Object.keys(infusion.Damages)
+                                        .filter((attackPowerType) => {
+                                            const baseDamageValue =
+                                                baseDamage[
+                                                    attackPowerType as AttackPowerTypeMapKey
+                                                ]!;
+                                            const scalingDamageValue =
+                                                scalingDamage[
+                                                    attackPowerType as AttackPowerTypeMapKey
+                                                ]!;
+
+                                            return (
+                                                attackPowerType != "Petrify" &&
+                                                attackPowerType != "Curse" &&
+                                                baseDamageValue > 0 &&
+                                                scalingDamageValue > 0
+                                            );
+                                        })
+                                        .map((attackPowerType) => (
+                                            <tr key={attackPowerType}>
+                                                <td
+                                                    className="text-left"
+                                                    style={{
+                                                        color: `var(--${attackPowerType.toLowerCase()})`,
+                                                    }}
+                                                >
+                                                    {attackPowerType}
+                                                </td>
+                                                <td
+                                                    className="text-center"
+                                                    style={{
+                                                        color: `var(--${attackPowerType.toLowerCase()})`,
+                                                    }}
+                                                >
+                                                    {Math.floor(
+                                                        baseDamage[
+                                                            attackPowerType as AttackPowerTypeMapKey
+                                                        ]!,
+                                                    )}
+                                                </td>
+                                                <td
+                                                    className="text-center"
+                                                    style={{
+                                                        color: `var(--${attackPowerType.toLowerCase()})`,
+                                                    }}
+                                                >
+                                                    +
+                                                    {Math.floor(
+                                                        scalingDamage[
+                                                            attackPowerType as AttackPowerTypeMapKey
+                                                        ]!,
+                                                    )}
+                                                </td>
+                                            </tr>
+                                        ))}
+                                </tbody>
+                            </table>
+                            <hr />
+                            {/* TODO: Requirements */}
+                            {/* TODO: Scaling */}
+                            {/* TODO: Sorcery/incantation/hex power */}
+                            {/* TODO: Damage reduction */}
+                            {/* TODO: Modifiers */}
+                            <p>Equip</p>
+                            <div className="grid grid-cols-2 gap-1">
+                                <button
+                                    onClick={() =>
+                                        setEquippedWeapons({
+                                            slot: "leftPrimary",
+                                            equippedWeapon,
+                                        })
+                                    }
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.color =
+                                            "var(--accent)";
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.color =
+                                            "var(--contrast)";
+                                    }}
+                                >
+                                    Left Hand Primary
+                                </button>
+                                <button
+                                    onClick={() =>
+                                        setEquippedWeapons({
+                                            slot: "rightPrimary",
+                                            equippedWeapon,
+                                        })
+                                    }
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.color =
+                                            "var(--accent)";
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.color =
+                                            "var(--contrast)";
+                                    }}
+                                >
+                                    Right Hand Primary
+                                </button>
+                                <button
+                                    onClick={() =>
+                                        setEquippedWeapons({
+                                            slot: "leftSecondary",
+                                            equippedWeapon,
+                                        })
+                                    }
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.color =
+                                            "var(--accent)";
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.color =
+                                            "var(--contrast)";
+                                    }}
+                                >
+                                    Left Hand Secondary
+                                </button>
+                                <button
+                                    onClick={() =>
+                                        setEquippedWeapons({
+                                            slot: "rightSecondary",
+                                            equippedWeapon,
+                                        })
+                                    }
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.color =
+                                            "var(--accent)";
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.color =
+                                            "var(--contrast)";
+                                    }}
+                                >
+                                    Right Hand Secondary
+                                </button>
+                                <button
+                                    onClick={() =>
+                                        setEquippedWeapons({
+                                            slot: "leftTertiary",
+                                            equippedWeapon,
+                                        })
+                                    }
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.color =
+                                            "var(--accent)";
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.color =
+                                            "var(--contrast)";
+                                    }}
+                                >
+                                    Left Hand Tertiary
+                                </button>
+                                <button
+                                    onClick={() =>
+                                        setEquippedWeapons({
+                                            slot: "rightTertiary",
+                                            equippedWeapon,
+                                        })
+                                    }
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.color =
+                                            "var(--accent)";
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.color =
+                                            "var(--contrast)";
+                                    }}
+                                >
+                                    Right Hand Tertiary
+                                </button>
+                            </div>
+                        </div>
+                    </Tooltip.Content>
+                </Tooltip.Portal>
+            </Tooltip.Root>
+        </Tooltip.Provider>
+    );
+}

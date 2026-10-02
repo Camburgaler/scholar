@@ -124,6 +124,7 @@ export default function StatDisplay(props: {
     // Constants
     const statMapKey = mapDisplayKeyToStatMapKey(statDisplayKey);
     const label = mapStatDisplayKeyToLabel(statDisplayKey);
+    // TODO: Convert to map?
     const textColor =
         statDisplayKey === "Defense" ||
         statDisplayKey === "DefenseSlash" ||
