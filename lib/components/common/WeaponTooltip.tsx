@@ -58,6 +58,14 @@ export default function WeaponTooltip(props: {
             ? " +" + equippedWeapon.reinforcementLevel
             : ""
     }`;
+    const requirements = Object.entries(equippedWeapon.requirements)
+        .filter(([, requirement]) => requirement > 0)
+        .map(([attribute, requirement]) => (
+            <tr key={attribute}>
+                <td className="text-left">{attribute}</td>
+                <td className="text-center">{requirement}</td>
+            </tr>
+        ));
 
     return (
         <Tooltip.Provider>
@@ -81,7 +89,7 @@ export default function WeaponTooltip(props: {
                             <b>{title}</b>
                             <hr />
 
-                            <p>Attack Power</p>
+                            <p className="text-center">Attack Power</p>
                             <table className="w-full p-1 rounded-lg">
                                 <tbody>
                                     {Object.keys(infusion.Damages)
@@ -142,12 +150,26 @@ export default function WeaponTooltip(props: {
                                 </tbody>
                             </table>
                             <hr />
-                            {/* TODO: Requirements */}
+                            <p className="text-center">Requirements</p>
+                            <table>
+                                <tbody>
+                                    {requirements.length > 0 ? (
+                                        requirements
+                                    ) : (
+                                        <tr>
+                                            <td className="italic col-span-2">
+                                                None
+                                            </td>
+                                        </tr>
+                                    )}
+                                </tbody>
+                            </table>
+                            <hr />
                             {/* TODO: Scaling */}
                             {/* TODO: Sorcery/incantation/hex power */}
                             {/* TODO: Damage reduction */}
                             {/* TODO: Modifiers */}
-                            <p>Equip</p>
+                            <p className="text-center">Equip</p>
                             <div className="grid grid-cols-2 gap-1">
                                 <button
                                     onClick={() =>

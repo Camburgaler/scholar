@@ -67,6 +67,10 @@ class EquippedWeapon {
         )!;
     }
 
+    public get requirements(): AttributeMap<number> {
+        return this._data.Requirements;
+    }
+
     public copyFrom(equippedWeapon: EquippedWeapon) {
         this._data = equippedWeapon._data;
         this.reinforcementLevel = equippedWeapon.reinforcementLevel;
