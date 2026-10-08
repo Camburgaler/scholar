@@ -12,6 +12,7 @@ import AttackPowerTypeMap, {
     AttackPowerTypeMapKey,
 } from "@/lib/types/attackPowerTypeMap";
 import AttributeMap from "@/lib/types/attributeMap";
+import { InfusionMapKey } from "@/lib/types/infusionMap";
 import { Tooltip } from "radix-ui";
 import { JSX } from "react/jsx-runtime";
 
@@ -66,6 +67,11 @@ export default function WeaponTooltip(props: {
                 <td className="text-center">{requirement}</td>
             </tr>
         ));
+    const scalingCoefficient = (
+        ["Physical", "Raw", "Mundane"] as InfusionMapKey[]
+    ).includes(equippedWeapon.infusionKey)
+        ? 1
+        : 0.5;
 
     return (
         <Tooltip.Provider>
@@ -165,7 +171,182 @@ export default function WeaponTooltip(props: {
                                 </tbody>
                             </table>
                             <hr />
-                            {/* TODO: Scaling */}
+                            <p className="text-center">Scaling</p>
+                            <table className="w-full p-1 rounded-lg flex justify-center">
+                                <tbody>
+                                    <thead>
+                                        <tr className="text-center w-full justify-between">
+                                            {/* TODO: Replace words with icons */}
+                                            {equippedWeapon.infusion.DamageRates
+                                                .Physical > 0 && (
+                                                <th className="min-w-12">
+                                                    STR
+                                                </th>
+                                            )}
+                                            {equippedWeapon.infusion.DamageRates
+                                                .Physical > 0 && (
+                                                <th className="min-w-12">
+                                                    DEX
+                                                </th>
+                                            )}
+                                            {equippedWeapon.infusion.DamageRates
+                                                .Magic > 0 && (
+                                                <th className="min-w-12">
+                                                    MGC
+                                                </th>
+                                            )}
+                                            {equippedWeapon.infusion.DamageRates
+                                                .Fire > 0 && (
+                                                <th className="min-w-12">
+                                                    FIR
+                                                </th>
+                                            )}
+                                            {equippedWeapon.infusion.DamageRates
+                                                .Lightning > 0 && (
+                                                <th className="min-w-12">
+                                                    LTG
+                                                </th>
+                                            )}
+                                            {equippedWeapon.infusion.DamageRates
+                                                .Dark > 0 && (
+                                                <th className="min-w-12">
+                                                    DRK
+                                                </th>
+                                            )}
+                                            {equippedWeapon.infusion.DamageRates
+                                                .Poison! > 0 && (
+                                                <th className="min-w-12">
+                                                    PSN
+                                                </th>
+                                            )}
+                                            {equippedWeapon.infusion.DamageRates
+                                                .Bleed! > 0 && (
+                                                <th className="min-w-12">
+                                                    BLD
+                                                </th>
+                                            )}
+                                        </tr>
+                                    </thead>
+                                    {/* Scaling, per damage type, is determined by the infusion and the reinforcement level */}
+                                    {/* Default, Raw, and Mundane infusions just pulls the scaling value and uses that */}
+                                    {/* Other infusions halve the scaling value and derive the letter therefrom */}
+                                    <tr>
+                                        {/* STR */}
+                                        {equippedWeapon.infusion.DamageRates
+                                            .Physical > 0 && (
+                                            <td className="text-center">
+                                                {(
+                                                    Math.floor(
+                                                        equippedWeapon.scaling
+                                                            .PhysicalByStrength *
+                                                            scalingCoefficient *
+                                                            100,
+                                                    ) / 100
+                                                ).toFixed(2)}
+                                            </td>
+                                        )}
+                                        {/* DEX */}
+                                        {equippedWeapon.infusion.DamageRates
+                                            .Physical > 0 && (
+                                            <td className="text-center">
+                                                {(
+                                                    Math.floor(
+                                                        equippedWeapon.scaling
+                                                            .PhysicalByDexterity *
+                                                            scalingCoefficient *
+                                                            100,
+                                                    ) / 100
+                                                ).toFixed(2)}
+                                            </td>
+                                        )}
+                                        {/* MGC */}
+                                        {equippedWeapon.infusion.DamageRates
+                                            .Magic > 0 && (
+                                            <td className="text-center">
+                                                {(
+                                                    Math.floor(
+                                                        equippedWeapon.scaling
+                                                            .Magic *
+                                                            scalingCoefficient *
+                                                            100,
+                                                    ) / 100
+                                                ).toFixed(2)}
+                                            </td>
+                                        )}
+                                        {/* FIR */}
+                                        {equippedWeapon.infusion.DamageRates
+                                            .Fire > 0 && (
+                                            <td className="text-center">
+                                                {(
+                                                    Math.floor(
+                                                        equippedWeapon.scaling
+                                                            .Fire *
+                                                            scalingCoefficient *
+                                                            100,
+                                                    ) / 100
+                                                ).toFixed(2)}
+                                            </td>
+                                        )}
+                                        {/* LTG */}
+                                        {equippedWeapon.infusion.DamageRates
+                                            .Lightning > 0 && (
+                                            <td className="text-center">
+                                                {(
+                                                    Math.floor(
+                                                        equippedWeapon.scaling
+                                                            .Lightning *
+                                                            scalingCoefficient *
+                                                            100,
+                                                    ) / 100
+                                                ).toFixed(2)}
+                                            </td>
+                                        )}
+                                        {/* DRK */}
+                                        {equippedWeapon.infusion.DamageRates
+                                            .Dark > 0 && (
+                                            <td className="text-center">
+                                                {(
+                                                    Math.floor(
+                                                        equippedWeapon.scaling
+                                                            .Dark *
+                                                            scalingCoefficient *
+                                                            100,
+                                                    ) / 100
+                                                ).toFixed(2)}
+                                            </td>
+                                        )}
+                                        {/* PSN */}
+                                        {equippedWeapon.infusion.DamageRates
+                                            .Poison! > 0 && (
+                                            <td className="text-center">
+                                                {(
+                                                    Math.floor(
+                                                        equippedWeapon.scaling
+                                                            .Poison *
+                                                            scalingCoefficient *
+                                                            100,
+                                                    ) / 100
+                                                ).toFixed(2)}
+                                            </td>
+                                        )}
+                                        {/* BLD */}
+                                        {equippedWeapon.infusion.DamageRates
+                                            .Bleed! > 0 && (
+                                            <td className="text-center">
+                                                {(
+                                                    Math.floor(
+                                                        equippedWeapon.scaling
+                                                            .Bleed *
+                                                            scalingCoefficient *
+                                                            100,
+                                                    ) / 100
+                                                ).toFixed(2)}
+                                            </td>
+                                        )}
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <hr />
                             {/* TODO: Sorcery/incantation/hex power */}
                             {/* TODO: Damage reduction */}
                             {/* TODO: Modifiers */}

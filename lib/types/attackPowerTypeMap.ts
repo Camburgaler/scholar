@@ -23,6 +23,18 @@ export type AttackPowerTypeMapKey =
     | RequiredAttackPowerTypes
     | OptionalAttackPowerTypes;
 
+export const AttackPowerTypes: AttackPowerTypeMapKey[] = [
+    "Physical",
+    "Magic",
+    "Lightning",
+    "Fire",
+    "Dark",
+    "Poison",
+    "Bleed",
+    "Petrify",
+    "Curse",
+];
+
 /**
  * @type AttackPowerTypeMap
  * @description A map of attack power types to values.

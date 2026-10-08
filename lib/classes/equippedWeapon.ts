@@ -2,8 +2,9 @@ import ArmorSet from "@/lib/classes/armorSet";
 import WeaponSlots from "@/lib/classes/weaponSlots";
 import { Weapons } from "@/lib/gameData";
 import EquippedRings from "@/lib/interfaces/equippedRings";
-import Infusion, { Scaling } from "@/lib/interfaces/infusion";
+import Infusion from "@/lib/interfaces/infusion";
 import Modifier from "@/lib/interfaces/modifier";
+import { Scaling, ScalingFactors } from "@/lib/interfaces/scaling";
 import Weapon from "@/lib/interfaces/weapon";
 import { reinforcedValue } from "@/lib/scripts/slopeIntercept";
 import { calculateStatDisplayValue } from "@/lib/scripts/statCalculation";
@@ -71,6 +72,14 @@ class EquippedWeapon {
         return this._data.Requirements;
     }
 
+    public get scaling(): ScalingFactors {
+        const scalingIndex = ("Level" +
+            this.reinforcementLevel
+                .toString()
+                .padStart(2, "0")) as keyof Scaling;
+        return this.infusion.Scaling[scalingIndex];
+    }
+
     public copyFrom(equippedWeapon: EquippedWeapon) {
         this._data = equippedWeapon._data;
         this.reinforcementLevel = equippedWeapon.reinforcementLevel;
@@ -114,6 +123,7 @@ class EquippedWeapon {
         return damages;
     }
 
+    // TODO: Add negative scaling for when a required attribute doesn't meet the threshold
     public scalingDamage(
         virtualAttributes: AttributeMap<number>,
         equippedArmor: ArmorSet,
@@ -132,12 +142,7 @@ class EquippedWeapon {
             Petrify: 0,
             Curse: 0,
         };
-
-        const scalingIndex = ("Level" +
-            this.reinforcementLevel
-                .toString()
-                .padStart(2, "0")) as keyof Scaling;
-        const scales = this.infusion.Scaling[scalingIndex];
+        const scales: ScalingFactors = this.scaling;
 
         if (this.infusionKey === "Enchanted") {
             // TODO: Scale physical damage by Intelligence
