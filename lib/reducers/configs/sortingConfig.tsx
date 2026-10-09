@@ -1,12 +1,12 @@
 import { ActionDispatch, createContext, useContext, useReducer } from "react";
 
-type SortingConfigs = "none" | "weapon" | "armor";
+type SortingConfig = "none" | "weapon" | "armor";
 
 export type SortingConfigAction = {
-    value: SortingConfigs;
+    value: SortingConfig;
 };
 
-const SortingConfigContext = createContext<SortingConfigs>("none");
+const SortingConfigContext = createContext<SortingConfig>("none");
 
 export function useSortingConfig() {
     return useContext(SortingConfigContext);
@@ -21,9 +21,11 @@ export function useSortingConfigDispatch() {
 }
 
 function sortingConfigReducer(
-    initialValue: SortingConfigs,
+    initialValue: SortingConfig,
     newAttributes: SortingConfigAction,
-): SortingConfigs {
+): SortingConfig {
+    if (initialValue === newAttributes.value) return "none";
+
     return newAttributes.value;
 }
 

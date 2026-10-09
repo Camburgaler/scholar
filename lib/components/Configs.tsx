@@ -1,3 +1,4 @@
+import { useSortingConfig } from "@/lib/reducers/configs/sortingConfig";
 import {
     useWikiTarget,
     useWikiTargetDispatch,
@@ -7,6 +8,7 @@ export default function Configs() {
     // Context
     const wikiTarget = useWikiTarget();
     const setWikiTarget = useWikiTargetDispatch();
+    const sortingConfig = useSortingConfig();
 
     // Constants
 
@@ -65,7 +67,11 @@ export default function Configs() {
             </div>
             <hr />
 
-            {/* TODO: Sorting configs */}
+            {/* Sorting configs */}
+            <div className="flex gap-5 w-full items-center justify-center align-center">
+                <h3 className="text-lg font-bold">Sorting Config:</h3>
+                <p>Current sorting config: {sortingConfig}</p>
+            </div>
         </div>
     );
 }

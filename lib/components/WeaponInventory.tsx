@@ -2,6 +2,7 @@ import EquippedWeapon from "@/lib/classes/equippedWeapon";
 import VirtualizedList from "@/lib/components/common/VirtualizedList";
 import WeaponTooltip from "@/lib/components/common/WeaponTooltip";
 import { Weapons } from "@/lib/gameData";
+import { useSortingConfigDispatch } from "@/lib/reducers/configs/sortingConfig";
 import { useEquippedRings } from "@/lib/reducers/equipment/equippedRings";
 import { InfusionMapKey } from "@/lib/types/infusionMap";
 import { useEffect, useState } from "react";
@@ -11,6 +12,7 @@ import { JSX } from "react/jsx-runtime";
 export default function WeaponInventory(): JSX.Element {
     // Context
     const equippedRings = useEquippedRings();
+    const setSortingConfig = useSortingConfigDispatch();
 
     // Constants
     const allWeapons: EquippedWeapon[] = Weapons.flatMap((weapon) => {
@@ -208,8 +210,10 @@ export default function WeaponInventory(): JSX.Element {
                 />
 
                 <div className="w-full h-full content-end">
-                    {/* TODO: Make this toggle visibility for another section for customizing the sorting of the weapons in the weapon inventory */}
-                    <button className="border rounded-lg p-1 w-full">
+                    <button
+                        className="border rounded-lg p-1 w-full"
+                        onClick={() => setSortingConfig({ value: "weapon" })}
+                    >
                         Sorting configs...
                     </button>
                 </div>
