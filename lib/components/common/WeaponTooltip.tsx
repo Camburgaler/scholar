@@ -157,84 +157,46 @@ export default function WeaponTooltip(props: {
                             </table>
                             <hr />
                             <p className="text-center">Requirements</p>
-                            <table>
-                                <tbody>
-                                    {requirements.length > 0 ? (
-                                        requirements
-                                    ) : (
-                                        <tr>
-                                            <td className="italic col-span-2">
-                                                None
-                                            </td>
-                                        </tr>
-                                    )}
-                                </tbody>
-                            </table>
+                            {requirements.length > 0 ? (
+                                <table>
+                                    <tbody>{requirements}</tbody>
+                                </table>
+                            ) : (
+                                <p className="italic">None</p>
+                            )}
                             <hr />
                             <p className="text-center">Scaling</p>
-                            <table className="w-full p-1 rounded-lg flex justify-center">
+                            <table className="w-full p-1 rounded-lg justify-center">
+                                <thead>
+                                    <tr className="text-center w-full justify-between">
+                                        {/* TODO: Replace words with icons */}
+                                        {equippedWeapon.infusion.DamageRates
+                                            .Physical > 0 && <th>STR</th>}
+                                        {equippedWeapon.infusion.DamageRates
+                                            .Physical > 0 && <th>DEX</th>}
+                                        {equippedWeapon.infusion.DamageRates
+                                            .Magic > 0 && <th>MGC</th>}
+                                        {equippedWeapon.infusion.DamageRates
+                                            .Fire > 0 && <th>FIR</th>}
+                                        {equippedWeapon.infusion.DamageRates
+                                            .Lightning > 0 && <th>LTG</th>}
+                                        {equippedWeapon.infusion.DamageRates
+                                            .Dark > 0 && <th>DRK</th>}
+                                        {equippedWeapon.infusion.DamageRates
+                                            .Poison! > 0 && <th>PSN</th>}
+                                        {equippedWeapon.infusion.DamageRates
+                                            .Bleed! > 0 && <th>BLD</th>}
+                                    </tr>
+                                </thead>
                                 <tbody>
-                                    <thead>
-                                        <tr className="text-center w-full justify-between">
-                                            {/* TODO: Replace words with icons */}
-                                            {equippedWeapon.infusion.DamageRates
-                                                .Physical > 0 && (
-                                                <th className="min-w-12">
-                                                    STR
-                                                </th>
-                                            )}
-                                            {equippedWeapon.infusion.DamageRates
-                                                .Physical > 0 && (
-                                                <th className="min-w-12">
-                                                    DEX
-                                                </th>
-                                            )}
-                                            {equippedWeapon.infusion.DamageRates
-                                                .Magic > 0 && (
-                                                <th className="min-w-12">
-                                                    MGC
-                                                </th>
-                                            )}
-                                            {equippedWeapon.infusion.DamageRates
-                                                .Fire > 0 && (
-                                                <th className="min-w-12">
-                                                    FIR
-                                                </th>
-                                            )}
-                                            {equippedWeapon.infusion.DamageRates
-                                                .Lightning > 0 && (
-                                                <th className="min-w-12">
-                                                    LTG
-                                                </th>
-                                            )}
-                                            {equippedWeapon.infusion.DamageRates
-                                                .Dark > 0 && (
-                                                <th className="min-w-12">
-                                                    DRK
-                                                </th>
-                                            )}
-                                            {equippedWeapon.infusion.DamageRates
-                                                .Poison! > 0 && (
-                                                <th className="min-w-12">
-                                                    PSN
-                                                </th>
-                                            )}
-                                            {equippedWeapon.infusion.DamageRates
-                                                .Bleed! > 0 && (
-                                                <th className="min-w-12">
-                                                    BLD
-                                                </th>
-                                            )}
-                                        </tr>
-                                    </thead>
                                     {/* Scaling, per damage type, is determined by the infusion and the reinforcement level */}
                                     {/* Default, Raw, and Mundane infusions just pulls the scaling value and uses that */}
                                     {/* Other infusions halve the scaling value and derive the letter therefrom */}
-                                    <tr>
+                                    <tr className="text-center">
                                         {/* STR */}
                                         {equippedWeapon.infusion.DamageRates
                                             .Physical > 0 && (
-                                            <td className="text-center">
+                                            <td>
                                                 {(
                                                     Math.floor(
                                                         equippedWeapon.scaling
@@ -248,7 +210,7 @@ export default function WeaponTooltip(props: {
                                         {/* DEX */}
                                         {equippedWeapon.infusion.DamageRates
                                             .Physical > 0 && (
-                                            <td className="text-center">
+                                            <td>
                                                 {(
                                                     Math.floor(
                                                         equippedWeapon.scaling
@@ -262,7 +224,7 @@ export default function WeaponTooltip(props: {
                                         {/* MGC */}
                                         {equippedWeapon.infusion.DamageRates
                                             .Magic > 0 && (
-                                            <td className="text-center">
+                                            <td>
                                                 {(
                                                     Math.floor(
                                                         equippedWeapon.scaling
@@ -276,7 +238,7 @@ export default function WeaponTooltip(props: {
                                         {/* FIR */}
                                         {equippedWeapon.infusion.DamageRates
                                             .Fire > 0 && (
-                                            <td className="text-center">
+                                            <td>
                                                 {(
                                                     Math.floor(
                                                         equippedWeapon.scaling
@@ -290,7 +252,7 @@ export default function WeaponTooltip(props: {
                                         {/* LTG */}
                                         {equippedWeapon.infusion.DamageRates
                                             .Lightning > 0 && (
-                                            <td className="text-center">
+                                            <td>
                                                 {(
                                                     Math.floor(
                                                         equippedWeapon.scaling
@@ -304,7 +266,7 @@ export default function WeaponTooltip(props: {
                                         {/* DRK */}
                                         {equippedWeapon.infusion.DamageRates
                                             .Dark > 0 && (
-                                            <td className="text-center">
+                                            <td>
                                                 {(
                                                     Math.floor(
                                                         equippedWeapon.scaling
@@ -318,7 +280,7 @@ export default function WeaponTooltip(props: {
                                         {/* PSN */}
                                         {equippedWeapon.infusion.DamageRates
                                             .Poison! > 0 && (
-                                            <td className="text-center">
+                                            <td>
                                                 {(
                                                     Math.floor(
                                                         equippedWeapon.scaling
@@ -332,7 +294,7 @@ export default function WeaponTooltip(props: {
                                         {/* BLD */}
                                         {equippedWeapon.infusion.DamageRates
                                             .Bleed! > 0 && (
-                                            <td className="text-center">
+                                            <td>
                                                 {(
                                                     Math.floor(
                                                         equippedWeapon.scaling
@@ -349,7 +311,22 @@ export default function WeaponTooltip(props: {
                             <hr />
                             {/* TODO: Sorcery/incantation/hex power */}
                             {/* TODO: Damage reduction */}
-                            {/* TODO: Modifiers */}
+                            <p className="text-center">Special Effects</p>
+                            {equippedWeapon.modifiers.length > 0 ? (
+                                equippedWeapon.modifiers.map((modifier) => (
+                                    <p
+                                        key={modifier.Description}
+                                        className="italic"
+                                    >
+                                        {modifier.Description}
+                                    </p>
+                                ))
+                            ) : (
+                                <p key="none" className="italic">
+                                    None
+                                </p>
+                            )}
+                            <hr />
                             <p className="text-center">Equip</p>
                             <div className="grid grid-cols-2 gap-1">
                                 <button
