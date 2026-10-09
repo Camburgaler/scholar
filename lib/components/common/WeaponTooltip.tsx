@@ -16,6 +16,19 @@ import { InfusionMapKey } from "@/lib/types/infusionMap";
 import { Tooltip } from "radix-ui";
 import { JSX } from "react/jsx-runtime";
 
+function getWikiLink(weaponName: string): string {
+    const basePath = "https://darksouls2.wiki.gg/wiki/";
+    var formattedName = weaponName.replace(/ /g, "_");
+
+    if (weaponName == "Fists" || weaponName == "Fist (Vanquisher's Seal)")
+        formattedName = "Bare_Fist";
+
+    if (weaponName.includes("Majestic Greatsword"))
+        formattedName = "Majestic_Greatsword";
+
+    return basePath + formattedName;
+}
+
 export default function WeaponTooltip(props: {
     children: JSX.Element;
     equippedWeapon: EquippedWeapon;
@@ -92,7 +105,17 @@ export default function WeaponTooltip(props: {
                                 borderColor: "var(--contrast)",
                             }}
                         >
-                            <b>{title}</b>
+                            <div className="w-full justify-between flex">
+                                <b>{title}</b>
+                                <a
+                                    href={getWikiLink(equippedWeapon.name)}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="border rounded p-1 hover:bg-accent hover:text-primary"
+                                >
+                                    Wiki&#129141;
+                                </a>
+                            </div>
                             <hr />
 
                             <p className="text-center">Attack Power</p>
