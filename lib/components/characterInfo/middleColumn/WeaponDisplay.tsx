@@ -5,11 +5,11 @@ import InfusionDisplay from "@/lib/components/characterInfo/middleColumn/weaponD
 import ReinforcementDisplay from "@/lib/components/characterInfo/middleColumn/weaponDisplay/ReinforcementDisplay";
 import WeaponTooltip from "@/lib/components/common/WeaponTooltip";
 import { Weapons } from "@/lib/gameData";
-import { useEquippedRings } from "@/lib/reducers/equippedRings";
+import { useEquippedRings } from "@/lib/reducers/equipment/equippedRings";
 import {
     useEquippedWeapons,
     useEquippedWeaponsDispatch,
-} from "@/lib/reducers/equippedWeapons";
+} from "@/lib/reducers/equipment/equippedWeapons";
 import { getWeaponByName } from "@/lib/scripts/weapon";
 import { useEffect, useState } from "react";
 import { JSX } from "react/jsx-runtime";

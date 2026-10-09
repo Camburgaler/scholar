@@ -3,15 +3,15 @@ import RingDisplay from "@/lib/components/characterInfo/middleColumn/RingDisplay
 import WeaponDisplay from "@/lib/components/characterInfo/middleColumn/WeaponDisplay";
 import StatDisplay from "@/lib/components/characterInfo/StatDisplay";
 import { AttributeToStatMap } from "@/lib/gameData";
-import { useEquippedArmorSet } from "@/lib/reducers/equippedArmorSet";
-import { useEquippedRings } from "@/lib/reducers/equippedRings";
-import { useEquippedWeapons } from "@/lib/reducers/equippedWeapons";
-import { useFocusedAttribute } from "@/lib/reducers/focusedAttribute";
+import { useFocusedAttribute } from "@/lib/reducers/attributes/focusedAttribute";
 import {
     useTwoHanding,
     useTwoHandingDispatch,
-} from "@/lib/reducers/twoHanding";
-import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
+} from "@/lib/reducers/attributes/twoHanding";
+import { useVirtualAttributes } from "@/lib/reducers/attributes/virtualAttributes";
+import { useEquippedArmorSet } from "@/lib/reducers/equipment/equippedArmorSet";
+import { useEquippedRings } from "@/lib/reducers/equipment/equippedRings";
+import { useEquippedWeapons } from "@/lib/reducers/equipment/equippedWeapons";
 import { ringsWeight } from "@/lib/scripts/equippedRings";
 import { calculateStatDisplayValue } from "@/lib/scripts/statCalculation";
 import { StatMapKeyToStatNameMap } from "@/lib/types/statMap";

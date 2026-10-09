@@ -1,7 +1,7 @@
 import LeftColumn from "@/lib/components/characterInfo/LeftColumn";
 import MiddleColumn from "@/lib/components/characterInfo/MiddleColumn";
 import RightColumn from "@/lib/components/characterInfo/RightColumn";
-import { FocusedAttributeProvider } from "@/lib/reducers/focusedAttribute";
+import { FocusedAttributeProvider } from "@/lib/reducers/attributes/focusedAttribute";
 import { JSX } from "react/jsx-runtime";
 
 /**

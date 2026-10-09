@@ -2,7 +2,7 @@ import { WeaponEquipSlot } from "@/lib/classes/weaponSlots";
 import {
     useEquippedWeapons,
     useEquippedWeaponsDispatch,
-} from "@/lib/reducers/equippedWeapons";
+} from "@/lib/reducers/equipment/equippedWeapons";
 import { JSX } from "react/jsx-runtime";
 
 export default function ReinforcementDisplay(props: {

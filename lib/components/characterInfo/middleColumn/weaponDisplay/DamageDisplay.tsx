@@ -1,9 +1,9 @@
 import { WeaponEquipSlot } from "@/lib/classes/weaponSlots";
-import { useEquippedArmorSet } from "@/lib/reducers/equippedArmorSet";
-import { useEquippedRings } from "@/lib/reducers/equippedRings";
-import { useEquippedWeapons } from "@/lib/reducers/equippedWeapons";
-import { useTwoHanding } from "@/lib/reducers/twoHanding";
-import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
+import { useTwoHanding } from "@/lib/reducers/attributes/twoHanding";
+import { useVirtualAttributes } from "@/lib/reducers/attributes/virtualAttributes";
+import { useEquippedArmorSet } from "@/lib/reducers/equipment/equippedArmorSet";
+import { useEquippedRings } from "@/lib/reducers/equipment/equippedRings";
+import { useEquippedWeapons } from "@/lib/reducers/equipment/equippedWeapons";
 import AttackPowerTypeMap from "@/lib/types/attackPowerTypeMap";
 import AttributeMap from "@/lib/types/attributeMap";
 import { useEffect, useState } from "react";

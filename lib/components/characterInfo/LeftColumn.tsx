@@ -1,17 +1,17 @@
 import { Classes, Covenants, PlayerLevelUpSouls, Spells } from "@/lib/gameData";
 import Class from "@/lib/interfaces/class";
 import Spell from "@/lib/interfaces/spell";
-import { useEquippedArmorSet } from "@/lib/reducers/equippedArmorSet";
-import { useEquippedRings } from "@/lib/reducers/equippedRings";
-import { useEquippedWeapons } from "@/lib/reducers/equippedWeapons";
 import {
     useFocusedAttribute,
     useFocusedAttributeDispatch,
-} from "@/lib/reducers/focusedAttribute";
+} from "@/lib/reducers/attributes/focusedAttribute";
 import {
     useVirtualAttributes,
     useVirtualAttributesDispatch,
-} from "@/lib/reducers/virtualAttributes";
+} from "@/lib/reducers/attributes/virtualAttributes";
+import { useEquippedArmorSet } from "@/lib/reducers/equipment/equippedArmorSet";
+import { useEquippedRings } from "@/lib/reducers/equipment/equippedRings";
+import { useEquippedWeapons } from "@/lib/reducers/equipment/equippedWeapons";
 import { getClassByName } from "@/lib/scripts/class";
 import { ringsAttributeModifiers } from "@/lib/scripts/equippedRings";
 import { getSpellByName } from "@/lib/scripts/spell";

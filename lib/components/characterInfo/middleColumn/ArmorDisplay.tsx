@@ -1,10 +1,10 @@
 import { ArmorSetKey } from "@/lib/classes/armorSet";
 import { Chestpieces, Gauntlets, Helmets, Leggings } from "@/lib/gameData";
+import { useVirtualAttributes } from "@/lib/reducers/attributes/virtualAttributes";
 import {
     useEquippedArmorSet,
     useEquippedArmorSetDispatch,
-} from "@/lib/reducers/equippedArmorSet";
-import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
+} from "@/lib/reducers/equipment/equippedArmorSet";
 import { filterArmor, getArmorByName } from "@/lib/scripts/armor";
 import { JSX, useEffect } from "react";
 

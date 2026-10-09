@@ -1,7 +1,7 @@
 import StatDisplay from "@/lib/components/characterInfo/StatDisplay";
-import { useEquippedArmorSet } from "@/lib/reducers/equippedArmorSet";
-import { useEquippedRings } from "@/lib/reducers/equippedRings";
-import { useEquippedWeapons } from "@/lib/reducers/equippedWeapons";
+import { useEquippedArmorSet } from "@/lib/reducers/equipment/equippedArmorSet";
+import { useEquippedRings } from "@/lib/reducers/equipment/equippedRings";
+import { useEquippedWeapons } from "@/lib/reducers/equipment/equippedWeapons";
 import { ringsModifierDisplays } from "@/lib/scripts/equippedRings";
 import { JSX } from "react/jsx-runtime";
 

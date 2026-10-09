@@ -2,7 +2,7 @@ import EquippedWeapon from "@/lib/classes/equippedWeapon";
 import VirtualizedList from "@/lib/components/common/VirtualizedList";
 import WeaponTooltip from "@/lib/components/common/WeaponTooltip";
 import { Weapons } from "@/lib/gameData";
-import { useEquippedRings } from "@/lib/reducers/equippedRings";
+import { useEquippedRings } from "@/lib/reducers/equipment/equippedRings";
 import { InfusionMapKey } from "@/lib/types/infusionMap";
 import { useEffect, useState } from "react";
 import { ArrowUp, XLg } from "react-bootstrap-icons";

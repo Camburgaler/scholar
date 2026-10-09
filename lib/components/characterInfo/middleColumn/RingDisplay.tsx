@@ -3,7 +3,7 @@ import EquippedRings from "@/lib/interfaces/equippedRings";
 import {
     useEquippedRings,
     useEquippedRingsDispatch,
-} from "@/lib/reducers/equippedRings";
+} from "@/lib/reducers/equipment/equippedRings";
 import { JSX } from "react/jsx-runtime";
 
 /**

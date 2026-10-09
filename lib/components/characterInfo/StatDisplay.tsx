@@ -1,10 +1,10 @@
 import { AttributeToStatMap } from "@/lib/gameData";
-import { useEquippedArmorSet } from "@/lib/reducers/equippedArmorSet";
-import { useEquippedRings } from "@/lib/reducers/equippedRings";
-import { useEquippedWeapons } from "@/lib/reducers/equippedWeapons";
-import { useFocusedAttribute } from "@/lib/reducers/focusedAttribute";
-import { useTwoHanding } from "@/lib/reducers/twoHanding";
-import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
+import { useFocusedAttribute } from "@/lib/reducers/attributes/focusedAttribute";
+import { useTwoHanding } from "@/lib/reducers/attributes/twoHanding";
+import { useVirtualAttributes } from "@/lib/reducers/attributes/virtualAttributes";
+import { useEquippedArmorSet } from "@/lib/reducers/equipment/equippedArmorSet";
+import { useEquippedRings } from "@/lib/reducers/equipment/equippedRings";
+import { useEquippedWeapons } from "@/lib/reducers/equipment/equippedWeapons";
 import { calculateStatDisplayValue } from "@/lib/scripts/statCalculation";
 import AttributeMap from "@/lib/types/attributeMap";
 import { DefenseMapKey } from "@/lib/types/defenseMap";

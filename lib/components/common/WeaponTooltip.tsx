@@ -1,13 +1,14 @@
 import EquippedWeapon from "@/lib/classes/equippedWeapon";
 import Infusion from "@/lib/interfaces/infusion";
-import { useEquippedArmorSet } from "@/lib/reducers/equippedArmorSet";
-import { useEquippedRings } from "@/lib/reducers/equippedRings";
+import { useTwoHanding } from "@/lib/reducers/attributes/twoHanding";
+import { useVirtualAttributes } from "@/lib/reducers/attributes/virtualAttributes";
+import { useWikiTarget, WikiTarget } from "@/lib/reducers/configs/wikiTarget";
+import { useEquippedArmorSet } from "@/lib/reducers/equipment/equippedArmorSet";
+import { useEquippedRings } from "@/lib/reducers/equipment/equippedRings";
 import {
     useEquippedWeapons,
     useEquippedWeaponsDispatch,
-} from "@/lib/reducers/equippedWeapons";
-import { useTwoHanding } from "@/lib/reducers/twoHanding";
-import { useVirtualAttributes } from "@/lib/reducers/virtualAttributes";
+} from "@/lib/reducers/equipment/equippedWeapons";
 import AttackPowerTypeMap, {
     AttackPowerTypeMapKey,
 } from "@/lib/types/attackPowerTypeMap";
@@ -16,7 +17,7 @@ import { InfusionMapKey } from "@/lib/types/infusionMap";
 import { Tooltip } from "radix-ui";
 import { JSX } from "react/jsx-runtime";
 
-function getWikiLink(weaponName: string): string {
+function getWikiGGLink(weaponName: string): string {
     const basePath = "https://darksouls2.wiki.gg/wiki/";
     var formattedName = weaponName.replace(/ /g, "_");
 
@@ -27,6 +28,43 @@ function getWikiLink(weaponName: string): string {
         formattedName = "Majestic_Greatsword";
 
     return basePath + formattedName;
+}
+
+function getFextralifeLink(weaponName: string): string {
+    const basePath = "https://darksouls2.wiki.fextralife.com/";
+    var formattedName = weaponName.replace(/ /g, "_");
+
+    if (weaponName == "Fists" || weaponName == "Fist (Vanquisher's Seal)")
+        formattedName = "Vanquisher's_Seal";
+
+    if (weaponName.includes("Majestic Greatsword"))
+        formattedName = "Majestic_Greatsword";
+
+    return basePath + formattedName;
+}
+
+function getWikidotLink(weaponName: string): string {
+    const basePath = "https://darksouls2.wikidot.com/";
+    var formattedName = weaponName.replace(/[\s']/g, "-").toLowerCase();
+
+    if (weaponName == "Fists" || weaponName == "Fist (Vanquisher's Seal)")
+        formattedName = "fist";
+
+    if (weaponName.includes("Majestic Greatsword"))
+        formattedName = "majestic-greatsword";
+
+    return basePath + formattedName;
+}
+
+function getWikiLink(weaponName: string, wikiTarget: WikiTarget): string {
+    switch (wikiTarget) {
+        case "fextralife":
+            return getFextralifeLink(weaponName);
+        case "wikiDot":
+            return getWikidotLink(weaponName);
+        default:
+            return getWikiGGLink(weaponName);
+    }
 }
 
 export default function WeaponTooltip(props: {
@@ -44,6 +82,7 @@ export default function WeaponTooltip(props: {
     const equippedWeapons = useEquippedWeapons();
     const setEquippedWeapons = useEquippedWeaponsDispatch();
     const twoHanding = useTwoHanding();
+    const wikiTarget = useWikiTarget();
 
     // Constants
     const infusion: Infusion = equippedWeapon.infusions.find(
@@ -108,7 +147,10 @@ export default function WeaponTooltip(props: {
                             <div className="w-full justify-between flex">
                                 <b>{title}</b>
                                 <a
-                                    href={getWikiLink(equippedWeapon.name)}
+                                    href={getWikiLink(
+                                        equippedWeapon.name,
+                                        wikiTarget,
+                                    )}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="border rounded p-1 hover:bg-accent hover:text-primary"
