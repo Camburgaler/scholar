@@ -1,6 +1,7 @@
 "use client";
 
 import CharacterInfo from "@/lib/components/CharacterInfo";
+import Configs from "@/lib/components/Configs";
 import WeaponInventory from "@/lib/components/WeaponInventory";
 import { EquippedArmorSetProvider } from "@/lib/reducers/equippedArmorSet";
 import { EquippedRingsProvider } from "@/lib/reducers/equippedRings";
@@ -77,6 +78,10 @@ export default function Home(): JSX.Element {
                                         {/* right column with weapon info */}
                                         <article className="flex col-span-1 border rounded p-1 h-full">
                                             <WeaponInventory />
+                                        </article>
+                                        {/* bottom section with configs */}
+                                        <article className="flex col-span-6 border rounded p-1 h-full">
+                                            <Configs />
                                         </article>
                                     </div>
                                 </main>
