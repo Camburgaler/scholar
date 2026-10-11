@@ -23,7 +23,7 @@ export default function WeaponSorting() {
 
         for (const weapon of Weapons) {
             let row: WeaponAttackRow = {
-                name: weapon.Name,
+                weapon: weapon,
             } as WeaponAttackRow;
             let max = 0;
 
