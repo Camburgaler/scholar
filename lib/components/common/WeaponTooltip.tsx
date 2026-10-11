@@ -19,7 +19,7 @@ import { JSX } from "react/jsx-runtime";
 
 function getWikiGGLink(weaponName: string): string {
     const basePath = "https://darksouls2.wiki.gg/wiki/";
-    var formattedName = weaponName.replace(/ /g, "_");
+    let formattedName = weaponName.replace(/ /g, "_");
 
     if (weaponName == "Fists" || weaponName == "Fist (Vanquisher's Seal)")
         formattedName = "Bare_Fist";
@@ -32,7 +32,7 @@ function getWikiGGLink(weaponName: string): string {
 
 function getFextralifeLink(weaponName: string): string {
     const basePath = "https://darksouls2.wiki.fextralife.com/";
-    var formattedName = weaponName.replace(/ /g, "_");
+    let formattedName = weaponName.replace(/ /g, "_");
 
     if (weaponName == "Fists" || weaponName == "Fist (Vanquisher's Seal)")
         formattedName = "Vanquisher's_Seal";
@@ -45,7 +45,7 @@ function getFextralifeLink(weaponName: string): string {
 
 function getWikidotLink(weaponName: string): string {
     const basePath = "https://darksouls2.wikidot.com/";
-    var formattedName = weaponName.replace(/[\s']/g, "-").toLowerCase();
+    let formattedName = weaponName.replace(/[\s']/g, "-").toLowerCase();
 
     if (weaponName == "Fists" || weaponName == "Fist (Vanquisher's Seal)")
         formattedName = "fist";

@@ -1,3 +1,4 @@
+import WeaponSorting from "@/lib/components/configs/WeaponSorting";
 import { useSortingConfig } from "@/lib/reducers/configs/sortingConfig";
 import {
     useWikiTarget,
@@ -69,8 +70,12 @@ export default function Configs() {
 
             {/* Sorting configs */}
             <div className="flex gap-5 w-full items-center justify-center align-center">
-                <h3 className="text-lg font-bold">Sorting Config:</h3>
-                <p>Current sorting config: {sortingConfig}</p>
+                {sortingConfig === "armor" && (
+                    <div>
+                        <h3>Armor Sorting</h3>
+                    </div>
+                )}
+                {sortingConfig === "weapon" && <WeaponSorting />}
             </div>
         </div>
     );

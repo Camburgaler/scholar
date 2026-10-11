@@ -127,8 +127,6 @@ export default function WeaponInventory(): JSX.Element {
                                     <button
                                         className="p-1"
                                         onClick={() => {
-                                            // TODO: Remove the first instance of a weapon that matches this one
-
                                             const index =
                                                 weaponInventory.findIndex(
                                                     (weapon) => weapon === item,
@@ -156,6 +154,8 @@ export default function WeaponInventory(): JSX.Element {
                                         <XLg />
                                     </button>
                                 ) : null}
+                                {/* TODO: Add symbol and logic for "there is a more optimal infusion for this weapon" */}
+                                {/* TODO: Add symbol and logic for "this weapon at max reinforcement is more optimal than one of your current weapons at max reinforcement" */}
                             </div>
                         </WeaponTooltip>
                     )}
