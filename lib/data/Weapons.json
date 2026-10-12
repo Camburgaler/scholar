@@ -1586,7 +1586,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -3364,7 +3364,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -5336,7 +5336,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -7114,7 +7114,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -8892,7 +8892,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -10670,7 +10670,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -12448,7 +12448,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -14226,7 +14226,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -16068,7 +16068,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -18040,7 +18040,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 1,
                     "Lightning": 0,
                     "Fire": 0,
@@ -19818,7 +19818,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -21596,7 +21596,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -23374,7 +23374,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -25152,7 +25152,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -26930,7 +26930,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -28708,7 +28708,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -30486,7 +30486,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 1,
@@ -32264,7 +32264,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -34042,7 +34042,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 1,
                     "Lightning": 0,
                     "Fire": 0,
@@ -35820,7 +35820,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -37598,7 +37598,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 1,
                     "Fire": 0,
@@ -39376,7 +39376,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -41154,7 +41154,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -42932,7 +42932,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -44710,7 +44710,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -46488,7 +46488,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -48460,7 +48460,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -50238,7 +50238,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -52016,7 +52016,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 1,
@@ -53794,7 +53794,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -55572,7 +55572,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -57350,7 +57350,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -59128,7 +59128,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -60906,7 +60906,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -62684,7 +62684,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -64462,7 +64462,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -66240,7 +66240,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -68018,7 +68018,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -69796,7 +69796,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -71574,7 +71574,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -73352,7 +73352,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -75130,7 +75130,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -76908,7 +76908,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -78686,7 +78686,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -80464,7 +80464,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -82242,7 +82242,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -84020,7 +84020,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -85798,7 +85798,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -87576,7 +87576,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -89354,7 +89354,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -91132,7 +91132,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -92910,7 +92910,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -94688,7 +94688,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -96466,7 +96466,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -98244,7 +98244,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -100022,7 +100022,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -101800,7 +101800,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -103578,7 +103578,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -105356,7 +105356,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -107134,7 +107134,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 1,
                     "Fire": 0,
@@ -108912,7 +108912,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -110690,7 +110690,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 1,
+                    "Physical": 0,
                     "Magic": 1,
                     "Lightning": 0,
                     "Fire": 0,
@@ -112468,7 +112468,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -114254,7 +114254,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -116032,7 +116032,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -117810,7 +117810,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -119588,7 +119588,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -121366,7 +121366,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 1,
@@ -123144,7 +123144,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -124922,7 +124922,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -126700,7 +126700,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 1,
                     "Fire": 0,
@@ -128478,7 +128478,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 1,
                     "Lightning": 0,
                     "Fire": 0,
@@ -130450,7 +130450,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 1,
                     "Lightning": 1,
                     "Fire": 0,
@@ -132228,7 +132228,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -134006,7 +134006,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 1,
@@ -135792,7 +135792,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -137570,7 +137570,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -139348,7 +139348,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -141126,7 +141126,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -142904,7 +142904,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -144682,7 +144682,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -146460,7 +146460,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 1,
                     "Fire": 0,
@@ -148238,7 +148238,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -150016,7 +150016,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -151794,7 +151794,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 1,
                     "Lightning": 0,
                     "Fire": 0,
@@ -153572,7 +153572,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -155350,7 +155350,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -157128,7 +157128,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -158906,7 +158906,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -160684,7 +160684,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -162462,7 +162462,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -164240,7 +164240,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 1,
@@ -166018,7 +166018,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -167620,7 +167620,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -169222,7 +169222,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -170824,7 +170824,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -172426,7 +172426,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -174028,7 +174028,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -175630,7 +175630,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 1,
                     "Fire": 0,
@@ -177261,7 +177261,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -178863,7 +178863,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -180465,7 +180465,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -182067,7 +182067,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -183669,7 +183669,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -185271,7 +185271,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -186873,7 +186873,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -188475,7 +188475,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -190077,7 +190077,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -191679,7 +191679,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 1,
@@ -193281,7 +193281,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -194898,7 +194898,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -196500,7 +196500,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -198102,7 +198102,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -199704,7 +199704,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -201306,7 +201306,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -202908,7 +202908,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -204510,7 +204510,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -206112,7 +206112,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -207714,7 +207714,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -209492,7 +209492,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -211270,7 +211270,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -213048,7 +213048,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -214826,7 +214826,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -216604,7 +216604,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -218382,7 +218382,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 1,
@@ -220217,7 +220217,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -221995,7 +221995,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -223773,7 +223773,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 1,
                     "Fire": 0,
@@ -225551,7 +225551,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -227329,7 +227329,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -229107,7 +229107,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -231079,7 +231079,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 1,
                     "Fire": 0,
@@ -232857,7 +232857,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 1,
                     "Fire": 0,
@@ -234635,7 +234635,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -236607,7 +236607,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 1,
                     "Lightning": 0,
                     "Fire": 0,
@@ -238209,7 +238209,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -239987,7 +239987,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -241765,7 +241765,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -243543,7 +243543,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -245321,7 +245321,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 1,
                     "Lightning": 0,
                     "Fire": 0,
@@ -247099,7 +247099,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -248877,7 +248877,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -250857,7 +250857,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -252635,7 +252635,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -254413,7 +254413,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -256191,7 +256191,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -257969,7 +257969,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -259747,7 +259747,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -261525,7 +261525,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -263303,7 +263303,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -265081,7 +265081,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -266859,7 +266859,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 1,
                     "Lightning": 0,
                     "Fire": 0,
@@ -268637,7 +268637,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 1,
@@ -270415,7 +270415,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -272193,7 +272193,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -273971,7 +273971,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -275749,7 +275749,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -277527,7 +277527,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -279305,7 +279305,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -281471,7 +281471,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -283249,7 +283249,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -285027,7 +285027,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -286820,7 +286820,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -288422,7 +288422,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -290024,7 +290024,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -291802,7 +291802,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -293774,7 +293774,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -295552,7 +295552,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -297330,7 +297330,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -312108,7 +312108,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -313534,7 +313534,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -314968,7 +314968,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -316402,7 +316402,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -317836,7 +317836,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 1,
                     "Lightning": 0,
                     "Fire": 0,
@@ -319262,7 +319262,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -320688,7 +320688,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 1,
                     "Fire": 0,
@@ -322122,7 +322122,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -323548,7 +323548,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -324974,7 +324974,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -326400,7 +326400,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -327826,7 +327826,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -329260,7 +329260,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -330686,7 +330686,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -332120,7 +332120,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -333554,7 +333554,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -334980,7 +334980,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -336406,7 +336406,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -338184,7 +338184,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -339962,7 +339962,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -341740,7 +341740,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -343533,7 +343533,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -345311,7 +345311,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -347089,7 +347089,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -349255,7 +349255,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -351033,7 +351033,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -352811,7 +352811,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -354589,7 +354589,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 1,
                     "Lightning": 0,
                     "Fire": 0,
@@ -356367,7 +356367,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -358145,7 +358145,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -359923,7 +359923,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -361701,7 +361701,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -363479,7 +363479,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 1,
@@ -365265,7 +365265,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -367043,7 +367043,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -368821,7 +368821,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 1,
                     "Lightning": 0,
                     "Fire": 0,
@@ -370599,7 +370599,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -372377,7 +372377,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -374155,7 +374155,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -376875,7 +376875,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -378653,7 +378653,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -380431,7 +380431,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,
@@ -382033,7 +382033,7 @@
                     }
                 },
                 "DamageRates": {
-                    "Physical": 0,
+                    "Physical": 1,
                     "Magic": 0,
                     "Lightning": 0,
                     "Fire": 0,

@@ -96,7 +96,9 @@ export default function WeaponSorting() {
 
                 {/* TODO: Detailed results */}
                 <div className="flex flex-col col-span-2 w-full items-center justify-center align-center">
-                    <h4 className="text-md font-bold">Attack Rating</h4>
+                    <h4 className="text-md font-bold">
+                        Attack Rating per Infusion
+                    </h4>
                     <hr />
 
                     <WeaponAttackTable rows={weaponData} />

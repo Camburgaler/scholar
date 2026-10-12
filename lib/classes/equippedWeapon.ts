@@ -123,7 +123,6 @@ class EquippedWeapon {
         return damages;
     }
 
-    // TODO: Add negative scaling for when a required attribute doesn't meet the threshold
     public scalingDamage(
         virtualAttributes: AttributeMap<number>,
         equippedArmor: ArmorSet,
@@ -144,29 +143,38 @@ class EquippedWeapon {
         };
         const scales: ScalingFactors = this.scaling;
 
-        if (this.infusionKey === "Enchanted") {
-            // TODO: Scale physical damage by Intelligence
-        } else {
-            if (baseDamage.Physical) {
+        // Physical
+        if (baseDamage.Physical) {
+            damages.Physical +=
+                calculateStatDisplayValue(
+                    "PhysicalAttackPowerByStrength",
+                    virtualAttributes,
+                    equippedArmor,
+                    equippedRings,
+                    equippedWeapons,
+                ) * scales.PhysicalByStrength;
+            damages.Physical +=
+                calculateStatDisplayValue(
+                    "PhysicalAttackPowerByDexterity",
+                    virtualAttributes,
+                    equippedArmor,
+                    equippedRings,
+                    equippedWeapons,
+                ) * scales.PhysicalByDexterity;
+            if (this.infusionKey === "Enchanted") {
+                // Enchanted infusion scales physical damage by Intelligence
                 damages.Physical +=
                     calculateStatDisplayValue(
-                        "PhysicalAttackPowerByStrength",
+                        "AttackPowerMagic",
                         virtualAttributes,
                         equippedArmor,
                         equippedRings,
                         equippedWeapons,
-                    ) * scales.PhysicalByStrength;
-                damages.Physical +=
-                    calculateStatDisplayValue(
-                        "PhysicalAttackPowerByDexterity",
-                        virtualAttributes,
-                        equippedArmor,
-                        equippedRings,
-                        equippedWeapons,
-                    ) * scales.PhysicalByDexterity;
+                    ) * scales.PhysicalByEnchant;
             }
         }
 
+        // Magic
         if (baseDamage.Magic) {
             damages.Magic +=
                 calculateStatDisplayValue(
@@ -178,6 +186,7 @@ class EquippedWeapon {
                 ) * scales.Magic;
         }
 
+        // Lightning
         if (baseDamage.Lightning) {
             damages.Lightning +=
                 calculateStatDisplayValue(
@@ -189,6 +198,7 @@ class EquippedWeapon {
                 ) * scales.Lightning;
         }
 
+        // Fire
         if (baseDamage.Fire) {
             damages.Fire +=
                 calculateStatDisplayValue(
@@ -200,6 +210,7 @@ class EquippedWeapon {
                 ) * scales.Fire;
         }
 
+        // Dark
         if (baseDamage.Dark) {
             damages.Dark +=
                 calculateStatDisplayValue(
@@ -211,6 +222,7 @@ class EquippedWeapon {
                 ) * scales.Dark;
         }
 
+        // Poison
         if (baseDamage.Poison) {
             damages.Poison! +=
                 calculateStatDisplayValue(
@@ -222,6 +234,7 @@ class EquippedWeapon {
                 ) * scales.Poison!;
         }
 
+        // Bleed
         if (baseDamage.Bleed) {
             damages.Bleed! +=
                 calculateStatDisplayValue(

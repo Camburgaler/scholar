@@ -36,7 +36,13 @@ function conditionallyRenderWeaponTooltip(
             )}
             side="right"
         >
-            <p>{value}</p>
+            <p
+                style={{
+                    color: value === row.max ? "var(--accent)" : "",
+                }}
+            >
+                {value}
+            </p>
         </WeaponTooltip>
     ) : (
         <p>-</p>
@@ -67,7 +73,13 @@ const columns = [
                 equippedWeapon={getEquippedWeapon(row.weapon, "Physical", 0)}
                 side="right"
             >
-                <p>{value}</p>
+                <p
+                    style={{
+                        color: value === row.max ? "var(--accent)" : "",
+                    }}
+                >
+                    {value}
+                </p>
             </WeaponTooltip>
         ),
     },
