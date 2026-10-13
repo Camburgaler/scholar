@@ -26,7 +26,7 @@ export default function VirtualizedTable<T>({
     initialSort,
     rowHeight = 30,
     overscan = 8,
-    maxHeight = "32rem",
+    maxHeight = "50rem",
     emptyMessage = "No results found.",
 }: VirtualizedTableProps<T>) {
     const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -101,7 +101,7 @@ export default function VirtualizedTable<T>({
     return (
         <div
             ref={scrollContainerRef}
-            className="relative overflow-auto w-full"
+            className="flex relative overflow-auto w-full"
             style={containerStyle}
         >
             <table className="w-full min-w-max border-separate border-spacing-0 text-left">
@@ -124,11 +124,11 @@ export default function VirtualizedTable<T>({
                                     style={{
                                         width: column.width,
                                     }}
-                                    className={
+                                    className={`sticky top-0 ${
                                         column.align === "right"
                                             ? "text-right"
                                             : ""
-                                    }
+                                    }`}
                                 >
                                     {column.sortable === false ? (
                                         column.header

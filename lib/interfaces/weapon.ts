@@ -1,6 +1,7 @@
 import Equippable from "@/lib/interfaces/equippable";
 import Infusion from "@/lib/interfaces/infusion";
 import AttributeMap from "@/lib/types/attributeMap";
+import { Category } from "@/lib/types/categoryMap";
 import InfusionMap from "@/lib/types/infusionMap";
 
 /**
@@ -14,7 +15,7 @@ import InfusionMap from "@/lib/types/infusionMap";
  */
 interface Weapon extends Equippable {
     Requirements: AttributeMap<number>;
-    Category: string;
+    Category: Category;
     Paired: boolean;
     Infusions: Infusion[];
     MaxReinforcementLevel: number;

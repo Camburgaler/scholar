@@ -13,6 +13,18 @@ export type InfusionMapKey =
     | "Raw"
     | "Enchanted"
     | "Mundane";
+export const InfusionMapKeys: InfusionMapKey[] = [
+    "Physical",
+    "Magic",
+    "Fire",
+    "Lightning",
+    "Dark",
+    "Poison",
+    "Bleed",
+    "Raw",
+    "Enchanted",
+    "Mundane",
+];
 
 /**
  * @type InfusionMap

@@ -117,3 +117,11 @@ textarea {
     border-radius: 0.5rem;
     padding: 0.25rem;
 }
+
+.list .item:nth-child(even) {
+    background-color: var(--secondary);
+}
+
+.list .item:nth-child(odd) {
+    background-color: var(--primary);
+}

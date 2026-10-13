@@ -43,7 +43,7 @@ export default function MiddleColumn(): JSX.Element {
     return (
         <div className="flex flex-col w-full h-full items-left justify-baseline align-center">
             {/* Stats */}
-            <div className="flex flex-col w-full items-left justify-baseline align-center">
+            <div className="list flex flex-col w-full items-left justify-baseline align-center">
                 {/* HP */}
                 <StatDisplay statDisplayKey="MaximumHP" isOddRow />
 
@@ -52,9 +52,8 @@ export default function MiddleColumn(): JSX.Element {
 
                 {/* Equip load */}
                 <div
-                    className="flex gap-1 w-full justify-between"
+                    className="item flex gap-1 w-full justify-between"
                     style={{
-                        backgroundColor: "var(--primary)",
                         fontWeight: AttributeToStatMap[focusedAttribute!]?.[
                             "MaximumEquipLoad"
                         ]!
