@@ -4,6 +4,10 @@ import WeaponAttackTable, {
 } from "@/lib/components/configs/weaponSorting/WeaponAttackTable";
 import { Weapons } from "@/lib/gameData";
 import { useVirtualAttributes } from "@/lib/reducers/attributes/virtualAttributes";
+import {
+    useWeaponSorting,
+    useWeaponSortingDispatch,
+} from "@/lib/reducers/configs/weaponSorting";
 import { useEquippedArmorSet } from "@/lib/reducers/equipment/equippedArmorSet";
 import { useEquippedRings } from "@/lib/reducers/equipment/equippedRings";
 import { useEquippedWeapons } from "@/lib/reducers/equipment/equippedWeapons";
@@ -23,8 +27,11 @@ export default function WeaponSorting() {
     const virtualAttributes = useVirtualAttributes();
     const equippedRings = useEquippedRings();
     const equippedArmorSet = useEquippedArmorSet();
+    const { reinforcementLevel } = useWeaponSorting();
+    const setReinforcementLevel = useWeaponSortingDispatch();
 
     // State
+
     const weaponData = useMemo(() => {
         let rows: WeaponAttackRow[] = [];
 
@@ -37,8 +44,10 @@ export default function WeaponSorting() {
             for (const infusion of weapon.Infusions) {
                 const infusedWeapon = EquippedWeapon.fromWeapon(weapon);
                 infusedWeapon.infusionKey = infusion.Name as InfusionMapKey;
-                // TODO: include weapon reinforcement level
-                // infusedWeapon.reinforcementLevel = 0;
+                infusedWeapon.reinforcementLevel =
+                    weapon.MaxReinforcementLevel === 5
+                        ? Math.floor(reinforcementLevel / 2)
+                        : reinforcementLevel;
 
                 const totalDamage = infusedWeapon.totalDamage(
                     equippedWeapons,
@@ -64,7 +73,13 @@ export default function WeaponSorting() {
         }
 
         return rows;
-    }, [equippedWeapons, virtualAttributes, equippedRings, equippedArmorSet]);
+    }, [
+        equippedWeapons,
+        virtualAttributes,
+        equippedRings,
+        equippedArmorSet,
+        reinforcementLevel,
+    ]);
 
     return (
         <div className="flex flex-col w-full items-center">
@@ -86,8 +101,17 @@ export default function WeaponSorting() {
                         <div className="list flex flex-col w-full items-center justify-center align-center">
                             <div className="item flex w-full items-center justify-between p-2">
                                 <label>Reinforcement Level</label>
-                                {/* TODO: Force weapon results to have this reinforcement level */}
-                                <select defaultValue="0" className="flex">
+                                {/* Force weapon results to have this reinforcement level */}
+                                <select
+                                    value={reinforcementLevel}
+                                    className="flex"
+                                    onChange={(e) =>
+                                        setReinforcementLevel({
+                                            key: "reinforcementLevel",
+                                            value: parseInt(e.target.value),
+                                        })
+                                    }
+                                >
                                     <option value="0">+0/+0</option>
                                     <option value="1">+1/+0</option>
                                     <option value="2">+2/+1</option>
