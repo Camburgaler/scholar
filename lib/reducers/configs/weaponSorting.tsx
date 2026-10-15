@@ -2,15 +2,17 @@ import { ActionDispatch, createContext, useContext, useReducer } from "react";
 
 export type WeaponSorting = {
     reinforcementLevel: number;
+    mustMeetRequirements: boolean;
 };
 
 export type WeaponSortingAction = {
-    key: string;
-    value: number;
+    key: keyof WeaponSorting;
+    value: any;
 };
 
 const WeaponSortingContext = createContext<WeaponSorting>({
     reinforcementLevel: 0,
+    mustMeetRequirements: false,
 });
 
 export function useWeaponSorting() {
@@ -44,6 +46,7 @@ export function WeaponSortingProvider({
         weaponSortingReducer,
         {
             reinforcementLevel: 0,
+            mustMeetRequirements: false,
         },
     );
 

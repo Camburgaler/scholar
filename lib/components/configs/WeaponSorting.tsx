@@ -3,6 +3,7 @@ import WeaponAttackTable, {
     WeaponAttackRow,
 } from "@/lib/components/configs/weaponSorting/WeaponAttackTable";
 import { Weapons } from "@/lib/gameData";
+import Weapon from "@/lib/interfaces/weapon";
 import { useVirtualAttributes } from "@/lib/reducers/attributes/virtualAttributes";
 import {
     useWeaponSorting,
@@ -12,6 +13,10 @@ import { useEquippedArmorSet } from "@/lib/reducers/equipment/equippedArmorSet";
 import { useEquippedRings } from "@/lib/reducers/equipment/equippedRings";
 import { useEquippedWeapons } from "@/lib/reducers/equipment/equippedWeapons";
 import { AttackPowerTypes } from "@/lib/types/attackPowerTypeMap";
+import AttributeMap, {
+    AttributeMapKey,
+    ScalingAttributes,
+} from "@/lib/types/attributeMap";
 import {
     BowCategories,
     CatalystCategories,
@@ -21,21 +26,44 @@ import {
 import { InfusionMapKey, InfusionMapKeys } from "@/lib/types/infusionMap";
 import { useMemo } from "react";
 
+function meetsRequirements(
+    weapon: Weapon,
+    attributes: AttributeMap<number>,
+): boolean {
+    for (const key of ScalingAttributes) {
+        if (
+            weapon.Requirements[key as AttributeMapKey]! >
+            attributes[key as AttributeMapKey]!
+        ) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
 export default function WeaponSorting() {
     // Context
     const equippedWeapons = useEquippedWeapons();
     const virtualAttributes = useVirtualAttributes();
     const equippedRings = useEquippedRings();
     const equippedArmorSet = useEquippedArmorSet();
-    const { reinforcementLevel } = useWeaponSorting();
-    const setReinforcementLevel = useWeaponSortingDispatch();
+    const { reinforcementLevel, mustMeetRequirements } = useWeaponSorting();
+    const setWeaponSorting = useWeaponSortingDispatch();
 
     // State
-
     const weaponData = useMemo(() => {
         let rows: WeaponAttackRow[] = [];
 
         for (const weapon of Weapons) {
+            // Filter out weapons that don't meet the requirements
+            if (
+                mustMeetRequirements &&
+                !meetsRequirements(weapon, virtualAttributes)
+            ) {
+                continue;
+            }
+
             let row: WeaponAttackRow = {
                 weapon: weapon,
             } as WeaponAttackRow;
@@ -44,11 +72,30 @@ export default function WeaponSorting() {
             for (const infusion of weapon.Infusions) {
                 const infusedWeapon = EquippedWeapon.fromWeapon(weapon);
                 infusedWeapon.infusionKey = infusion.Name as InfusionMapKey;
-                infusedWeapon.reinforcementLevel =
-                    weapon.MaxReinforcementLevel === 5
-                        ? Math.floor(reinforcementLevel / 2)
-                        : reinforcementLevel;
 
+                // Set the reinforcement level from the config
+                const maxReinforcementLevel = weapon.MaxReinforcementLevel;
+                if (
+                    weapon.Name === "Fists" ||
+                    weapon.Name === "Fist (Vanquisher's Seal)"
+                ) {
+                    infusedWeapon.reinforcementLevel = 0;
+                }
+                switch (maxReinforcementLevel) {
+                    case 0:
+                        infusedWeapon.reinforcementLevel = 0;
+                        break;
+                    case 5:
+                        infusedWeapon.reinforcementLevel = Math.floor(
+                            reinforcementLevel / 2,
+                        );
+                        break;
+                    default:
+                        infusedWeapon.reinforcementLevel = reinforcementLevel;
+                        break;
+                }
+
+                // Calculate the total damage
                 const totalDamage = infusedWeapon.totalDamage(
                     equippedWeapons,
                     virtualAttributes,
@@ -56,6 +103,7 @@ export default function WeaponSorting() {
                     equippedRings,
                 );
 
+                // Calculate the attack rating by summing all the damage
                 const attackRating = Math.floor(
                     Object.values(totalDamage).reduce((a, b) => a + b, 0),
                 );
@@ -79,6 +127,7 @@ export default function WeaponSorting() {
         equippedRings,
         equippedArmorSet,
         reinforcementLevel,
+        mustMeetRequirements,
     ]);
 
     return (
@@ -106,7 +155,7 @@ export default function WeaponSorting() {
                                     value={reinforcementLevel}
                                     className="flex"
                                     onChange={(e) =>
-                                        setReinforcementLevel({
+                                        setWeaponSorting({
                                             key: "reinforcementLevel",
                                             value: parseInt(e.target.value),
                                         })
@@ -126,12 +175,21 @@ export default function WeaponSorting() {
                                 </select>
                             </div>
 
-                            {/* TODO: Filter out weapons with unmet attribute requirements */}
+                            {/* Filter out weapons with unmet attribute requirements */}
                             <div className="item flex w-full items-center justify-between p-2">
                                 <label>
                                     Ignore Weapons With Unmet Requirements
                                 </label>
-                                <input type="checkbox" />
+                                <input
+                                    type="checkbox"
+                                    checked={mustMeetRequirements}
+                                    onChange={(e) =>
+                                        setWeaponSorting({
+                                            key: "mustMeetRequirements",
+                                            value: e.target.checked,
+                                        })
+                                    }
+                                />
                             </div>
 
                             {/* TODO: Filter out unbuffable weapons */}
@@ -149,6 +207,12 @@ export default function WeaponSorting() {
                             {/* TODO: Ignore status effect (i.e. poison, bleed, petrify, curse) values for the sake of sorting */}
                             <div className="item flex w-full items-center justify-between p-2">
                                 <label>Ignore Status Effects</label>
+                                <input type="checkbox" />
+                            </div>
+
+                            {/* TODO: Ignore weapons not in the character's inventory */}
+                            <div className="item flex w-full items-center justify-between p-2">
+                                <label>Ignore Unowned Weapons</label>
                                 <input type="checkbox" />
                             </div>
                         </div>

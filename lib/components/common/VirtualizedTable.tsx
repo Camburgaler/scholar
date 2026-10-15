@@ -25,8 +25,8 @@ export default function VirtualizedTable<T>({
     getRowId,
     initialSort,
     rowHeight = 30,
-    overscan = 8,
-    maxHeight = "50rem",
+    overscan = 5,
+    maxHeight = "32rem",
     emptyMessage = "No results found.",
 }: VirtualizedTableProps<T>) {
     const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -187,6 +187,7 @@ export default function VirtualizedTable<T>({
                                             }
                                             style={{
                                                 paddingLeft: "0.25rem",
+                                                height: rowHeight,
                                             }}
                                         >
                                             {content}

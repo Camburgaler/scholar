@@ -16,9 +16,14 @@ function getEquippedWeapon(
     infusion: InfusionMapKey,
     reinforcementLevel: number,
 ): EquippedWeapon {
+    let rl = reinforcementLevel;
+    if (weapon.Name === "Fists" || weapon.Name === "Fist (Vanquisher's Seal)") {
+        rl = 0;
+    }
+
     let equippedWeapon = EquippedWeapon.fromWeapon(weapon);
     equippedWeapon.infusionKey = infusion;
-    equippedWeapon.reinforcementLevel = reinforcementLevel;
+    equippedWeapon.reinforcementLevel = rl;
     return equippedWeapon;
 }
 
@@ -65,6 +70,7 @@ export default function WeaponAttackTable({ rows }: WeaponAttackTableProps) {
             header: "Weapon",
             accessor: (row) => row.weapon.Name,
             width: "16rem",
+            // TODO: Symbol indicating that the weapon is in the character's inventory
         },
         {
             id: "max",

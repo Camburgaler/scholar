@@ -3,6 +3,12 @@
  * @description A portion of {@link AttributeMapKey}.
  */
 type ScalingAttributeKey = "Strength" | "Dexterity" | "Intelligence" | "Faith";
+export const ScalingAttributes: ScalingAttributeKey[] = [
+    "Strength",
+    "Dexterity",
+    "Intelligence",
+    "Faith",
+];
 
 /**
  * @type OptionalAttributeKey
