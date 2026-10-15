@@ -192,12 +192,6 @@ export default function WeaponSorting() {
                                 />
                             </div>
 
-                            {/* TODO: Filter out unbuffable weapons */}
-                            <div className="item flex w-full items-center justify-between p-2">
-                                <label>Ignore Unbuffable Weapons</label>
-                                <input type="checkbox" />
-                            </div>
-
                             {/* TODO: Filter out weapons with more than one damage type */}
                             <div className="item flex w-full items-center justify-between p-2">
                                 <label>Ignore Weapons With Split Damage</label>
