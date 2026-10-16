@@ -213,20 +213,22 @@ export default function WeaponSorting() {
                                 weapons with unmet requirements
                             </button>
 
-                            {/* Filter out weapons with more than one damage type */}
-                            <div className="item flex w-full items-center justify-between p-2">
-                                <label>Compare Total Damage</label>
-                                <input
-                                    type="checkbox"
-                                    checked={compareTotalDamage}
-                                    onChange={(e) =>
-                                        setWeaponSorting({
-                                            key: "compareTotalDamage",
-                                            value: e.target.checked,
-                                        })
-                                    }
-                                />
-                            </div>
+                            {/* Compare the total damage of the weapon or the greatest damage type */}
+                            <button
+                                className="item flex w-full items-center justify-between hover:bg-accent"
+                                onClick={() =>
+                                    setWeaponSorting({
+                                        key: "compareTotalDamage",
+                                        value: !compareTotalDamage,
+                                    })
+                                }
+                            >
+                                Compare{" "}
+                                {compareTotalDamage
+                                    ? "TOTAL OF DAMAGE TYPES"
+                                    : "GREATEST DAMAGE TYPE"}{" "}
+                                for sorting
+                            </button>
 
                             {/* TODO: Ignore status effect (i.e. poison, bleed, petrify, curse) values for the sake of sorting */}
                             <div className="item flex w-full items-center justify-between p-2">
