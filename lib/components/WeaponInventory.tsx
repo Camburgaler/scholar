@@ -4,6 +4,10 @@ import WeaponTooltip from "@/lib/components/common/WeaponTooltip";
 import { Weapons } from "@/lib/gameData";
 import { useSortingConfigDispatch } from "@/lib/reducers/configs/sortingConfig";
 import { useEquippedRings } from "@/lib/reducers/equipment/equippedRings";
+import {
+    useWeaponInventory,
+    useWeaponInventoryDispatch,
+} from "@/lib/reducers/equipment/weaponInventory";
 import { InfusionMapKey } from "@/lib/types/infusionMap";
 import { useEffect, useState } from "react";
 import { ArrowUp, XLg } from "react-bootstrap-icons";
@@ -13,6 +17,8 @@ export default function WeaponInventory(): JSX.Element {
     // Context
     const equippedRings = useEquippedRings();
     const setSortingConfig = useSortingConfigDispatch();
+    const weaponInventory = useWeaponInventory();
+    const setWeaponInventory = useWeaponInventoryDispatch();
 
     // Constants
     const allWeapons: EquippedWeapon[] = Weapons.flatMap((weapon) => {
@@ -33,13 +39,7 @@ export default function WeaponInventory(): JSX.Element {
             Weapons.find((weapon) => weapon.Name === "Fists")!,
         ),
     );
-    const [weaponInventory, setWeaponInventory] = useState<EquippedWeapon[]>([
-        EquippedWeapon.fromWeapon(
-            Weapons.find((weapon) => weapon.Name === defaultWeapon.name)!,
-        ),
-    ]);
 
-    // Effects
     useEffect(() => {
         // If the "Vanquisher's Seal" ring is equipped, set the default weapon to "Fist (Vanquisher's Seal)"
         let isVanquishersSealEquipped = false;
@@ -67,13 +67,10 @@ export default function WeaponInventory(): JSX.Element {
     }, [equippedRings]);
 
     useEffect(() => {
-        // When the default weapon changes, update the weapon inventory
-        const tempInventory = weaponInventory.filter(
-            (weapon) =>
-                weapon.name !== "Fists" &&
-                weapon.name !== "Fist (Vanquisher's Seal)",
-        );
-        setWeaponInventory([defaultWeapon, ...tempInventory]);
+        setWeaponInventory({
+            action: "add",
+            data: defaultWeapon,
+        });
     }, [defaultWeapon]);
 
     return (
@@ -116,28 +113,10 @@ export default function WeaponInventory(): JSX.Element {
                                     <button
                                         className="p-1"
                                         onClick={() => {
-                                            const index =
-                                                weaponInventory.findIndex(
-                                                    (weapon) => weapon === item,
-                                                );
-                                            let newWeaponInventory = [];
-                                            for (
-                                                let i = 0;
-                                                i < weaponInventory.length;
-                                                i++
-                                            ) {
-                                                if (i === index) {
-                                                    continue;
-                                                }
-
-                                                newWeaponInventory.push(
-                                                    weaponInventory[i],
-                                                );
-                                            }
-
-                                            setWeaponInventory(
-                                                newWeaponInventory,
-                                            );
+                                            setWeaponInventory({
+                                                action: "remove",
+                                                data: item,
+                                            });
                                         }}
                                     >
                                         <XLg />
@@ -170,10 +149,10 @@ export default function WeaponInventory(): JSX.Element {
                                     <button
                                         className="p-1"
                                         onClick={() => {
-                                            setWeaponInventory([
-                                                ...weaponInventory,
-                                                item,
-                                            ]);
+                                            setWeaponInventory({
+                                                action: "add",
+                                                data: item,
+                                            });
                                         }}
                                     >
                                         <ArrowUp />
