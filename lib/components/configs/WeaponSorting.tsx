@@ -13,7 +13,9 @@ import {
 import { useEquippedArmorSet } from "@/lib/reducers/equipment/equippedArmorSet";
 import { useEquippedRings } from "@/lib/reducers/equipment/equippedRings";
 import { useEquippedWeapons } from "@/lib/reducers/equipment/equippedWeapons";
-import { AttackPowerTypes } from "@/lib/types/attackPowerTypeMap";
+import AttackPowerTypeMap, {
+    AttackPowerTypes,
+} from "@/lib/types/attackPowerTypeMap";
 import AttributeMap, {
     AttributeMapKey,
     ScalingAttributes,
@@ -47,14 +49,54 @@ function isEmptyRow(row: WeaponAttackRow) {
     return row.max === 0;
 }
 
+function getTotalOfDamages(
+    totalDamage: AttackPowerTypeMap<number>,
+    includeStatusEffects: boolean,
+) {
+    if (!includeStatusEffects) {
+        totalDamage.Bleed = 0;
+        totalDamage.Curse = 0;
+        totalDamage.Poison = 0;
+        totalDamage.Petrify = 0;
+    }
+
+    return Math.floor(
+        Object.entries(totalDamage).reduce((a, [_, b]) => a + b, 0),
+    );
+}
+
+function getGreatestDamage(
+    totalDamage: AttackPowerTypeMap<number>,
+    includeStatusEffects: boolean,
+) {
+    if (!includeStatusEffects) {
+        totalDamage.Bleed = 0;
+        totalDamage.Curse = 0;
+        totalDamage.Poison = 0;
+        totalDamage.Petrify = 0;
+    }
+
+    let highestDamage = 0;
+    for (const value of Object.values(totalDamage)) {
+        if (value > highestDamage) {
+            highestDamage = value;
+        }
+    }
+    return Math.floor(highestDamage);
+}
+
 export default function WeaponSorting() {
     // Context
     const equippedWeapons = useEquippedWeapons();
     const virtualAttributes = useVirtualAttributes();
     const equippedRings = useEquippedRings();
     const equippedArmorSet = useEquippedArmorSet();
-    const { reinforcementLevel, mustMeetRequirements, compareTotalDamage } =
-        useWeaponSorting();
+    const {
+        reinforcementLevel,
+        mustMeetRequirements,
+        compareTotalDamage,
+        includeStatusEffects,
+    } = useWeaponSorting();
     const setWeaponSorting = useWeaponSortingDispatch();
     const twoHanding = useTwoHanding();
 
@@ -122,18 +164,16 @@ export default function WeaponSorting() {
                 let attackRating = 0;
                 if (compareTotalDamage) {
                     // Calculate the attack rating by summing all the damages
-                    attackRating = Math.floor(
-                        Object.values(totalDamage).reduce((a, b) => a + b, 0),
+                    attackRating = getTotalOfDamages(
+                        totalDamage,
+                        includeStatusEffects,
                     );
                 } else {
                     // Calculate the attack rating by finding the highest damage
-                    let highestDamage = 0;
-                    for (const value of Object.values(totalDamage)) {
-                        if (value > highestDamage) {
-                            highestDamage = value;
-                        }
-                    }
-                    attackRating = Math.floor(highestDamage);
+                    attackRating = getGreatestDamage(
+                        totalDamage,
+                        includeStatusEffects,
+                    );
                 }
 
                 row[infusion.Name as InfusionMapKey] = attackRating;
@@ -163,6 +203,7 @@ export default function WeaponSorting() {
         mustMeetRequirements,
         compareTotalDamage,
         twoHanding,
+        includeStatusEffects,
     ]);
 
     return (
@@ -173,7 +214,6 @@ export default function WeaponSorting() {
                 {/* TODO: Configs */}
                 <div className="grid grid-cols-2 gap-1 w-full items-start">
                     {/* TODO: Miscellanous configs */}
-                    {/* TODO: Create reducer */}
                     <div className="flex flex-col w-full items-center justify-center align-center">
                         <div className="w-full items-center justify-center align-center">
                             <h4 className="text-md font-bold text-center">
@@ -241,11 +281,19 @@ export default function WeaponSorting() {
                                 for sorting
                             </button>
 
-                            {/* TODO: Ignore status effect (i.e. poison, bleed, petrify, curse) values for the sake of sorting */}
-                            <div className="item flex w-full items-center justify-between p-2">
-                                <label>Ignore Status Effects</label>
-                                <input type="checkbox" />
-                            </div>
+                            {/* Ignore status effect (i.e. poison, bleed, petrify, curse) values for the sake of sorting */}
+                            <button
+                                className="item flex w-full items-center justify-between hover:bg-accent"
+                                onClick={() =>
+                                    setWeaponSorting({
+                                        key: "includeStatusEffects",
+                                        value: !includeStatusEffects,
+                                    })
+                                }
+                            >
+                                {includeStatusEffects ? "INCLUDE" : "IGNORE"}{" "}
+                                status effects for sorting
+                            </button>
 
                             {/* TODO: Ignore weapons not in the character's inventory */}
                             <div className="item flex w-full items-center justify-between p-2">
