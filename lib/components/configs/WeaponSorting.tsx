@@ -102,20 +102,6 @@ export default function WeaponSorting() {
                 const infusedWeapon = EquippedWeapon.fromWeapon(weapon);
                 infusedWeapon.infusionKey = infusion.Name as InfusionMapKey;
 
-                // Calculate the total damage
-                const totalDamage = infusedWeapon.totalDamage(
-                    equippedWeapons,
-                    virtualAttributes,
-                    equippedArmorSet,
-                    equippedRings,
-                );
-
-                // Filter out weapons with split damage
-                if (mustNotHaveSplitDamage && isSplitDamage(totalDamage)) {
-                    row[infusion.Name as InfusionMapKey] = 0;
-                    continue;
-                }
-
                 // Set the reinforcement level from the config
                 const maxReinforcementLevel = weapon.MaxReinforcementLevel;
                 if (
@@ -136,6 +122,20 @@ export default function WeaponSorting() {
                     default:
                         infusedWeapon.reinforcementLevel = reinforcementLevel;
                         break;
+                }
+
+                // Calculate the total damage
+                const totalDamage = infusedWeapon.totalDamage(
+                    equippedWeapons,
+                    virtualAttributes,
+                    equippedArmorSet,
+                    equippedRings,
+                );
+
+                // Filter out weapons with split damage
+                if (mustNotHaveSplitDamage && isSplitDamage(totalDamage)) {
+                    row[infusion.Name as InfusionMapKey] = 0;
+                    continue;
                 }
 
                 // Calculate the attack rating by summing all the damage
