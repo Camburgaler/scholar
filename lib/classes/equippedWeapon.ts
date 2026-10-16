@@ -25,7 +25,7 @@ class EquippedWeapon {
     private _data: Weapon = Weapons[0];
 
     public reinforcementLevel: number = 0;
-    public infusionKey: InfusionMapKey = "Physical";
+    public infusionKey: InfusionMapKey = "Standard";
 
     // STATIC METHODS
 
@@ -113,7 +113,7 @@ class EquippedWeapon {
 
             if (
                 attackPowerType == "Physical" &&
-                this.infusionKey != "Physical" &&
+                this.infusionKey != "Standard" &&
                 this.infusionKey != "Raw"
             ) {
                 damages[attackPowerType as AttackPowerTypeMapKey] /= 2;

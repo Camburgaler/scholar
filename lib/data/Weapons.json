@@ -15,7 +15,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 5.8,
@@ -1793,7 +1793,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 6.5,
@@ -3571,7 +3571,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 12,
@@ -3765,7 +3765,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 6,
@@ -5543,7 +5543,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 7.9,
@@ -7321,7 +7321,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 6,
@@ -9099,7 +9099,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 4,
@@ -10877,7 +10877,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 5.3,
@@ -12655,7 +12655,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 10,
@@ -14497,7 +14497,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 4.8,
@@ -16275,7 +16275,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 3.4,
@@ -16469,7 +16469,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 1.7,
@@ -18247,7 +18247,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 8,
@@ -20025,7 +20025,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 10,
@@ -21803,7 +21803,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 11.3,
@@ -23581,7 +23581,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 12,
@@ -25359,7 +25359,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 11.5,
@@ -27137,7 +27137,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 5,
@@ -28915,7 +28915,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 4,
@@ -30693,7 +30693,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 12.5,
@@ -32471,7 +32471,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 8.8,
@@ -34249,7 +34249,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 6.6,
@@ -36027,7 +36027,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 7.5,
@@ -37805,7 +37805,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 13.8,
@@ -39583,7 +39583,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 36,
@@ -41361,7 +41361,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 8.8,
@@ -43139,7 +43139,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 12.3,
@@ -44917,7 +44917,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 4.2,
@@ -46695,7 +46695,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 8.6,
@@ -46889,7 +46889,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 10.5,
@@ -48667,7 +48667,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 7.5,
@@ -50445,7 +50445,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 7.4,
@@ -52223,7 +52223,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 23.4,
@@ -54001,7 +54001,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 11.8,
@@ -55779,7 +55779,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 11.5,
@@ -57557,7 +57557,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 20,
@@ -59335,7 +59335,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 8,
@@ -61113,7 +61113,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 10.2,
@@ -62891,7 +62891,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 12,
@@ -64669,7 +64669,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 10,
@@ -66447,7 +66447,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 30,
@@ -68225,7 +68225,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 5.6,
@@ -70003,7 +70003,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 12.3,
@@ -71781,7 +71781,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 11,
@@ -73559,7 +73559,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 18,
@@ -75337,7 +75337,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 25.2,
@@ -77115,7 +77115,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 12.5,
@@ -78893,7 +78893,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 9.5,
@@ -80671,7 +80671,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 11.5,
@@ -82449,7 +82449,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 12,
@@ -84227,7 +84227,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 30,
@@ -86005,7 +86005,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 9.5,
@@ -87783,7 +87783,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 15.4,
@@ -89561,7 +89561,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 13,
@@ -91339,7 +91339,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 16,
@@ -93117,7 +93117,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 6,
@@ -94895,7 +94895,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 14,
@@ -96673,7 +96673,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 12.5,
@@ -98451,7 +98451,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 14.5,
@@ -100229,7 +100229,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 9.8,
@@ -102007,7 +102007,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 11.4,
@@ -103785,7 +103785,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 18,
@@ -105563,7 +105563,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 25.2,
@@ -107341,7 +107341,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 18.8,
@@ -109119,7 +109119,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 45.6,
@@ -110897,7 +110897,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 15,
@@ -112683,7 +112683,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 33.6,
@@ -114461,7 +114461,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 12.5,
@@ -116239,7 +116239,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 11,
@@ -118017,7 +118017,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 40.8,
@@ -119795,7 +119795,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 18.8,
@@ -121573,7 +121573,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 13.5,
@@ -123351,7 +123351,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 14,
@@ -125129,7 +125129,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 24,
@@ -126907,7 +126907,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 22.2,
@@ -128685,7 +128685,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 0,
@@ -128879,7 +128879,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 13.4,
@@ -130657,7 +130657,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 10.8,
@@ -132435,7 +132435,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 8.4,
@@ -134221,7 +134221,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 10.2,
@@ -135999,7 +135999,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 13.5,
@@ -137777,7 +137777,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 14,
@@ -139555,7 +139555,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 15.5,
@@ -141333,7 +141333,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 10,
@@ -143111,7 +143111,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 19,
@@ -144889,7 +144889,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 13.4,
@@ -146667,7 +146667,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 33.6,
@@ -148445,7 +148445,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 8,
@@ -150223,7 +150223,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 14,
@@ -152001,7 +152001,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 19.5,
@@ -153779,7 +153779,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 18.5,
@@ -155557,7 +155557,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 15.5,
@@ -157335,7 +157335,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 49.8,
@@ -159113,7 +159113,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 20.5,
@@ -160891,7 +160891,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 49.2,
@@ -162669,7 +162669,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 22.8,
@@ -164447,7 +164447,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 19,
@@ -166225,7 +166225,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 10.5,
@@ -167827,7 +167827,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 12,
@@ -169429,7 +169429,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 11,
@@ -171031,7 +171031,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 14,
@@ -172633,7 +172633,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 16.8,
@@ -174235,7 +174235,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 5,
@@ -175866,7 +175866,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 2,
@@ -177468,7 +177468,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 14.5,
@@ -179070,7 +179070,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 39.6,
@@ -180672,7 +180672,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 12,
@@ -182274,7 +182274,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 32.4,
@@ -183876,7 +183876,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 18,
@@ -185478,7 +185478,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 15,
@@ -187080,7 +187080,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 21,
@@ -188682,7 +188682,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 22.5,
@@ -190284,7 +190284,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 33.6,
@@ -191886,7 +191886,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 26,
@@ -193503,7 +193503,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 31.4,
@@ -195105,7 +195105,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 26,
@@ -196707,7 +196707,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 28.8,
@@ -198309,7 +198309,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 30,
@@ -199911,7 +199911,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 12.5,
@@ -201513,7 +201513,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 25,
@@ -203115,7 +203115,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 22.5,
@@ -204717,7 +204717,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 45.6,
@@ -206319,7 +206319,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 9.3,
@@ -207921,7 +207921,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 10.5,
@@ -209699,7 +209699,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 12,
@@ -211477,7 +211477,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 9.5,
@@ -213255,7 +213255,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 11.5,
@@ -215033,7 +215033,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 9.5,
@@ -216811,7 +216811,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 19.2,
@@ -218646,7 +218646,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 17.2,
@@ -220424,7 +220424,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 7.5,
@@ -222202,7 +222202,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 10.5,
@@ -223980,7 +223980,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 18,
@@ -225758,7 +225758,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 12,
@@ -227536,7 +227536,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 31.2,
@@ -229314,7 +229314,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 21.6,
@@ -229508,7 +229508,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 15.4,
@@ -231286,7 +231286,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 13.5,
@@ -233064,7 +233064,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 17,
@@ -234842,7 +234842,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 37.2,
@@ -235036,7 +235036,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 4.7,
@@ -236814,7 +236814,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 11.6,
@@ -238416,7 +238416,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 14,
@@ -240194,7 +240194,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 13.5,
@@ -241972,7 +241972,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 14,
@@ -243750,7 +243750,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 10,
@@ -245528,7 +245528,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 11.6,
@@ -247306,7 +247306,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 39,
@@ -249084,7 +249084,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 31.2,
@@ -249286,7 +249286,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 9.8,
@@ -251064,7 +251064,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 16.3,
@@ -252842,7 +252842,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 16.5,
@@ -254620,7 +254620,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 17.5,
@@ -256398,7 +256398,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 18.8,
@@ -258176,7 +258176,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 23.4,
@@ -259954,7 +259954,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 23.4,
@@ -261732,7 +261732,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 20.5,
@@ -263510,7 +263510,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 23.4,
@@ -265288,7 +265288,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 30,
@@ -267066,7 +267066,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 21.4,
@@ -268844,7 +268844,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 16.5,
@@ -270622,7 +270622,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 37.2,
@@ -272400,7 +272400,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 18,
@@ -274178,7 +274178,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 19,
@@ -275956,7 +275956,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 21,
@@ -277734,7 +277734,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 11,
@@ -279512,7 +279512,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 0,
@@ -279706,7 +279706,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 0,
@@ -279900,7 +279900,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 7.8,
@@ -281678,7 +281678,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 6.5,
@@ -283456,7 +283456,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 7.5,
@@ -285249,7 +285249,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 2,
@@ -287027,7 +287027,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 4.5,
@@ -288629,7 +288629,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 1.2,
@@ -290231,7 +290231,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 10.5,
@@ -292009,7 +292009,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 10.3,
@@ -292203,7 +292203,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 13,
@@ -293981,7 +293981,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 23.4,
@@ -295759,7 +295759,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 23.4,
@@ -297537,7 +297537,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 11.3,
@@ -298091,7 +298091,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 11.5,
@@ -298637,7 +298637,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 12.5,
@@ -299183,7 +299183,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 11,
@@ -299729,7 +299729,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 14,
@@ -300275,7 +300275,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 9.5,
@@ -300821,7 +300821,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 10.3,
@@ -301367,7 +301367,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 9.5,
@@ -301913,7 +301913,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 18,
@@ -302459,7 +302459,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 10.8,
@@ -303005,7 +303005,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 4.2,
@@ -303573,7 +303573,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 5.4,
@@ -303767,7 +303767,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 7,
@@ -304313,7 +304313,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 9,
@@ -304859,7 +304859,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 10,
@@ -305405,7 +305405,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 9.5,
@@ -305951,7 +305951,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 16.8,
@@ -306497,7 +306497,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 30,
@@ -307043,7 +307043,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 10.5,
@@ -307589,7 +307589,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 15,
@@ -308135,7 +308135,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 12.5,
@@ -308681,7 +308681,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 11,
@@ -309235,7 +309235,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 9,
@@ -309789,7 +309789,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 6.4,
@@ -310335,7 +310335,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 11,
@@ -310889,7 +310889,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 6.5,
@@ -312315,7 +312315,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 7.5,
@@ -313749,7 +313749,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 8.3,
@@ -315183,7 +315183,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 7.3,
@@ -316617,7 +316617,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 21.6,
@@ -318043,7 +318043,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 5.5,
@@ -319469,7 +319469,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 12,
@@ -320903,7 +320903,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 7.8,
@@ -322329,7 +322329,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 13,
@@ -323755,7 +323755,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 34.8,
@@ -325181,7 +325181,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 4.7,
@@ -326607,7 +326607,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 15,
@@ -328041,7 +328041,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 12.5,
@@ -329467,7 +329467,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 14.5,
@@ -330901,7 +330901,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 33.6,
@@ -332335,7 +332335,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 8.5,
@@ -333761,7 +333761,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 5.1,
@@ -335187,7 +335187,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 2.4,
@@ -336613,7 +336613,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 19,
@@ -338391,7 +338391,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 43.2,
@@ -340169,7 +340169,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 48,
@@ -341962,7 +341962,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 16.6,
@@ -343740,7 +343740,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 18,
@@ -345518,7 +345518,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 20,
@@ -347296,7 +347296,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 42,
@@ -347490,7 +347490,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 42,
@@ -347684,7 +347684,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 42.6,
@@ -349462,7 +349462,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 54,
@@ -351240,7 +351240,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 24.6,
@@ -353018,7 +353018,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 14,
@@ -354796,7 +354796,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 46.8,
@@ -356574,7 +356574,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 16.5,
@@ -358352,7 +358352,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 44.4,
@@ -360130,7 +360130,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 17.5,
@@ -361908,7 +361908,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 18.8,
@@ -363694,7 +363694,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 55.2,
@@ -365472,7 +365472,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 9,
@@ -367250,7 +367250,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 22.2,
@@ -369028,7 +369028,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 7.5,
@@ -370806,7 +370806,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 17,
@@ -372584,7 +372584,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 11.4,
@@ -374362,7 +374362,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 0,
@@ -374908,7 +374908,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 12.5,
@@ -375110,7 +375110,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 15,
@@ -375304,7 +375304,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 7,
@@ -377082,7 +377082,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 11,
@@ -378860,7 +378860,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 9,
@@ -380638,7 +380638,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 14.5,
@@ -382240,7 +382240,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 8,
@@ -382786,7 +382786,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 6,
@@ -384036,7 +384036,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 5.3,
@@ -385286,7 +385286,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 5,
@@ -386536,7 +386536,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 6.5,
@@ -387786,7 +387786,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 4.3,
@@ -389036,7 +389036,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 6,
@@ -390286,7 +390286,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 4.5,
@@ -391536,7 +391536,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 3.5,
@@ -392786,7 +392786,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 7.4,
@@ -394036,7 +394036,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 5,
@@ -395286,7 +395286,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 4.8,
@@ -396536,7 +396536,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 2.5,
@@ -397786,7 +397786,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 2.3,
@@ -399036,7 +399036,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 2.4,
@@ -400286,7 +400286,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 0,
@@ -400832,7 +400832,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 5.3,
@@ -402082,7 +402082,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 12,
@@ -403332,7 +403332,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 6.5,
@@ -404582,7 +404582,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 5.5,
@@ -405832,7 +405832,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 6,
@@ -407082,7 +407082,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 8.8,
@@ -408332,7 +408332,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 6.3,
@@ -409582,7 +409582,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 5.5,
@@ -410832,7 +410832,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 8.4,
@@ -411026,7 +411026,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 6.8,
@@ -412276,7 +412276,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 7.5,
@@ -413534,7 +413534,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 3.8,
@@ -414792,7 +414792,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 2.8,
@@ -416042,7 +416042,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 3,
@@ -417292,7 +417292,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 2.5,
@@ -418592,7 +418592,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 3.3,
@@ -419850,7 +419850,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 6.5,
@@ -421100,7 +421100,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 3.5,
@@ -422350,7 +422350,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 7.5,
@@ -423600,7 +423600,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 6.4,
@@ -424850,7 +424850,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 4.5,
@@ -426108,7 +426108,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 4,
@@ -427358,7 +427358,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 6,
@@ -428608,7 +428608,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 6,
@@ -429858,7 +429858,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 9.5,
@@ -431108,7 +431108,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 8,
@@ -432358,7 +432358,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 10.8,
@@ -433608,7 +433608,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 3.5,
@@ -434858,7 +434858,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 2.5,
@@ -436108,7 +436108,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 10.8,
@@ -437358,7 +437358,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 24,
@@ -438608,7 +438608,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 10.3,
@@ -439858,7 +439858,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 7.5,
@@ -441108,7 +441108,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 7.8,
@@ -442358,7 +442358,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 14,
@@ -443608,7 +443608,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 15,
@@ -444858,7 +444858,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 20,
@@ -446108,7 +446108,7 @@
         "Paired": true,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 20,
@@ -447358,7 +447358,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 33.6,
@@ -448608,7 +448608,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 37.2,
@@ -449858,7 +449858,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 12.5,
@@ -451108,7 +451108,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 25.4,
@@ -452358,7 +452358,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 16,
@@ -453608,7 +453608,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 31.2,
@@ -454858,7 +454858,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 13.5,
@@ -456108,7 +456108,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 15,
@@ -457358,7 +457358,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 13.5,
@@ -458608,7 +458608,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 9.5,
@@ -459858,7 +459858,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 2.3,
@@ -461108,7 +461108,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 5,
@@ -462366,7 +462366,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 10.5,
@@ -463624,7 +463624,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 10,
@@ -464874,7 +464874,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 14.5,
@@ -466132,7 +466132,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 14.5,
@@ -467382,7 +467382,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 6,
@@ -468632,7 +468632,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 9.5,
@@ -469882,7 +469882,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 9,
@@ -471132,7 +471132,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 7,
@@ -472382,7 +472382,7 @@
         "Paired": false,
         "Infusions": [
             {
-                "Name": "Physical",
+                "Name": "Standard",
                 "Damages": {
                     "Physical": {
                         "Slope": 2.5,

@@ -100,7 +100,7 @@ function WeaponTooltipContent({
             equippedWeapons,
         );
     const title = `${
-        equippedWeapon.infusionKey != "Physical"
+        equippedWeapon.infusionKey != "Standard"
             ? equippedWeapon.infusionKey + " "
             : ""
     }${equippedWeapon.name}${

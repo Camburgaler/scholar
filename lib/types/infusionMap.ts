@@ -3,7 +3,7 @@
  * @description The key type for the {@link InfusionMap}.
  */
 export type InfusionMapKey =
-    | "Physical"
+    | "Standard"
     | "Magic"
     | "Fire"
     | "Lightning"
@@ -14,7 +14,7 @@ export type InfusionMapKey =
     | "Enchanted"
     | "Mundane";
 export const InfusionMapKeys: InfusionMapKey[] = [
-    "Physical",
+    "Standard",
     "Magic",
     "Fire",
     "Lightning",

@@ -150,7 +150,7 @@ export default function WeaponInventory(): JSX.Element {
                     )}
                     filterFunc={(item: EquippedWeapon, searchStr: string) => {
                         const name =
-                            item.infusionKey !== "Physical"
+                            item.infusionKey !== "Standard"
                                 ? `${item.infusionKey} ${item.name}`
                                 : item.name;
 
@@ -180,7 +180,7 @@ export default function WeaponInventory(): JSX.Element {
                                     </button>
                                 ) : null}
                                 <p className="p-1">
-                                    {item.infusionKey != "Physical"
+                                    {item.infusionKey != "Standard"
                                         ? `${item.infusionKey} `
                                         : ""}
                                     {item.name}
@@ -190,7 +190,7 @@ export default function WeaponInventory(): JSX.Element {
                     )}
                     filterFunc={(item: EquippedWeapon, searchStr: string) => {
                         const name =
-                            item.infusionKey !== "Physical"
+                            item.infusionKey !== "Standard"
                                 ? `${item.infusionKey} ${item.name}`
                                 : item.name;
 

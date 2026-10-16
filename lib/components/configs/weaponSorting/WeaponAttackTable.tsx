@@ -80,15 +80,15 @@ export default function WeaponAttackTable({ rows }: WeaponAttackTableProps) {
             cell: (_row, value) => <b>{value}</b>,
         },
         {
-            id: "physical",
-            header: "Physical",
-            accessor: (row) => row.Physical!,
+            id: "standard",
+            header: "Standard",
+            accessor: (row) => row.Standard!,
             align: "right",
             cell: (row, value) => (
                 <WeaponTooltip
                     equippedWeapon={getEquippedWeapon(
                         row.weapon,
-                        "Physical",
+                        "Standard",
                         reinforcementLevel,
                     )}
                     side="right"
