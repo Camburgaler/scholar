@@ -103,6 +103,7 @@ export default function WeaponSorting() {
         enabledDamageTypes,
         invertDamageTypeFilter,
         requireAllEnabledDamageTypes,
+        enabledCategories,
     } = useWeaponSorting();
     const setWeaponSorting = useWeaponSortingDispatch();
     const twoHanding = useTwoHanding();
@@ -138,7 +139,11 @@ export default function WeaponSorting() {
                 );
             }
 
-            return inInventory && requirementsMet;
+            return (
+                inInventory &&
+                requirementsMet &&
+                enabledCategories[weapon.Category]
+            );
         });
 
         for (const weapon of filteredWeapons) {
@@ -263,6 +268,7 @@ export default function WeaponSorting() {
         enabledDamageTypes,
         invertDamageTypeFilter,
         requireAllEnabledDamageTypes,
+        enabledCategories,
     ]);
 
     return (
@@ -270,7 +276,7 @@ export default function WeaponSorting() {
             <h3 className="text-lg font-bold">Weapon Sorting</h3>
 
             <div className="grid grid-cols-3 gap-5 w-full">
-                {/* TODO: Configs */}
+                {/* Configs */}
                 <div className="grid grid-cols-2 gap-1 w-full items-start">
                     {/* Miscellanous configs */}
                     <div className="flex flex-col w-full items-center justify-center align-center">
@@ -568,19 +574,197 @@ export default function WeaponSorting() {
                         </div>
                     </div>
 
-                    {/* TODO: Weapon categories */}
+                    {/* Weapon categories */}
                     <div className="flex flex-col w-full items-center justify-center align-center">
                         <h4 className="text-md font-bold">Categories</h4>
                         <div className="flex gap-4 w-full items-center justify-between align-center">
-                            <button className="w-full">ALL</button>
-                            <button className="w-full">NONE</button>
+                            <button
+                                className="w-full"
+                                onClick={() => {
+                                    setWeaponSorting({
+                                        key: "enabledCategories",
+                                        value: {
+                                            Axe: true,
+                                            Claw: true,
+                                            "Curved Greatsword": true,
+                                            "Curved Sword": true,
+                                            Dagger: true,
+                                            Fist: true,
+                                            Greataxe: true,
+                                            "Great Hammer": true,
+                                            Greatsword: true,
+                                            Halberd: true,
+                                            Hammer: true,
+                                            Katana: true,
+                                            Lance: true,
+                                            Scythe: true,
+                                            Spear: true,
+                                            "Straight Sword": true,
+                                            "Thrusting Sword": true,
+                                            Twinblade: true,
+                                            "Ultra Greatsword": true,
+                                            Whip: true,
+                                            Bow: true,
+                                            Crossbow: true,
+                                            Greatbow: true,
+                                            "Small Shield": true,
+                                            "Standard Shield": true,
+                                            Greatshield: true,
+                                            Staff: true,
+                                            Chime: true,
+                                            Hands: true,
+                                        },
+                                    });
+                                }}
+                            >
+                                ALL
+                            </button>
+                            <button
+                                className="w-full"
+                                onClick={() => {
+                                    setWeaponSorting({
+                                        key: "enabledCategories",
+                                        value: {
+                                            Axe: false,
+                                            Claw: false,
+                                            "Curved Greatsword": false,
+                                            "Curved Sword": false,
+                                            Dagger: false,
+                                            Fist: false,
+                                            Greataxe: false,
+                                            "Great Hammer": false,
+                                            Greatsword: false,
+                                            Halberd: false,
+                                            Hammer: false,
+                                            Katana: false,
+                                            Lance: false,
+                                            Scythe: false,
+                                            Spear: false,
+                                            "Straight Sword": false,
+                                            "Thrusting Sword": false,
+                                            Twinblade: false,
+                                            "Ultra Greatsword": false,
+                                            Whip: false,
+                                            Bow: false,
+                                            Crossbow: false,
+                                            Greatbow: false,
+                                            "Small Shield": false,
+                                            "Standard Shield": false,
+                                            Greatshield: false,
+                                            Staff: false,
+                                            Chime: false,
+                                            Hands: false,
+                                        },
+                                    });
+                                }}
+                            >
+                                NONE
+                            </button>
                         </div>
                         <hr />
 
                         <h4 className="text-md font-bold">Weapons</h4>
                         <div className="flex gap-4 w-full items-center justify-between align-center">
-                            <button className="w-full">ALL</button>
-                            <button className="w-full">NONE</button>
+                            <button
+                                className="w-full"
+                                onClick={() => {
+                                    setWeaponSorting({
+                                        key: "enabledCategories",
+                                        value: {
+                                            Axe: true,
+                                            Claw: true,
+                                            "Curved Greatsword": true,
+                                            "Curved Sword": true,
+                                            Dagger: true,
+                                            Fist: true,
+                                            Greataxe: true,
+                                            "Great Hammer": true,
+                                            Greatsword: true,
+                                            Halberd: true,
+                                            Hammer: true,
+                                            Katana: true,
+                                            Lance: true,
+                                            Scythe: true,
+                                            Spear: true,
+                                            "Straight Sword": true,
+                                            "Thrusting Sword": true,
+                                            Twinblade: true,
+                                            "Ultra Greatsword": true,
+                                            Whip: true,
+                                            Bow: enabledCategories.Bow,
+                                            Crossbow:
+                                                enabledCategories.Crossbow,
+                                            Greatbow:
+                                                enabledCategories.Greatbow,
+                                            "Small Shield":
+                                                enabledCategories[
+                                                    "Small Shield"
+                                                ],
+                                            "Standard Shield":
+                                                enabledCategories[
+                                                    "Standard Shield"
+                                                ],
+                                            Greatshield:
+                                                enabledCategories.Greatshield,
+                                            Staff: enabledCategories.Staff,
+                                            Chime: enabledCategories.Chime,
+                                            Hands: enabledCategories.Hands,
+                                        },
+                                    });
+                                }}
+                            >
+                                ALL
+                            </button>
+                            <button
+                                className="w-full"
+                                onClick={() => {
+                                    setWeaponSorting({
+                                        key: "enabledCategories",
+                                        value: {
+                                            Axe: false,
+                                            Claw: false,
+                                            "Curved Greatsword": false,
+                                            "Curved Sword": false,
+                                            Dagger: false,
+                                            Fist: false,
+                                            Greataxe: false,
+                                            "Great Hammer": false,
+                                            Greatsword: false,
+                                            Halberd: false,
+                                            Hammer: false,
+                                            Katana: false,
+                                            Lance: false,
+                                            Scythe: false,
+                                            Spear: false,
+                                            "Straight Sword": false,
+                                            "Thrusting Sword": false,
+                                            Twinblade: false,
+                                            "Ultra Greatsword": false,
+                                            Whip: false,
+                                            Bow: enabledCategories.Bow,
+                                            Crossbow:
+                                                enabledCategories.Crossbow,
+                                            Greatbow:
+                                                enabledCategories.Greatbow,
+                                            "Small Shield":
+                                                enabledCategories[
+                                                    "Small Shield"
+                                                ],
+                                            "Standard Shield":
+                                                enabledCategories[
+                                                    "Standard Shield"
+                                                ],
+                                            Greatshield:
+                                                enabledCategories.Greatshield,
+                                            Staff: enabledCategories.Staff,
+                                            Chime: enabledCategories.Chime,
+                                            Hands: enabledCategories.Hands,
+                                        },
+                                    });
+                                }}
+                            >
+                                NONE
+                            </button>
                         </div>
 
                         <div className="list flex flex-col w-full items-center justify-center align-center">
@@ -590,7 +774,22 @@ export default function WeaponSorting() {
                                     className="item flex w-full items-center justify-between"
                                 >
                                     <label>{category}</label>
-                                    <input type="checkbox" />
+                                    <input
+                                        type="checkbox"
+                                        checked={enabledCategories[category]}
+                                        onChange={() => {
+                                            setWeaponSorting({
+                                                key: "enabledCategories",
+                                                value: {
+                                                    ...enabledCategories,
+                                                    [category]:
+                                                        !enabledCategories[
+                                                            category
+                                                        ],
+                                                },
+                                            });
+                                        }}
+                                    />
                                 </div>
                             ))}
                         </div>
@@ -607,7 +806,21 @@ export default function WeaponSorting() {
                                         className="item flex w-full items-center justify-between"
                                     >
                                         <label>{bow}</label>
-                                        <input type="checkbox" />
+                                        <input
+                                            type="checkbox"
+                                            checked={enabledCategories[bow]}
+                                            onChange={() => {
+                                                setWeaponSorting({
+                                                    key: "enabledCategories",
+                                                    value: {
+                                                        ...enabledCategories,
+                                                        [bow]: !enabledCategories[
+                                                            bow
+                                                        ],
+                                                    },
+                                                });
+                                            }}
+                                        />
                                     </div>
                                 ))}
                             </div>
@@ -625,7 +838,22 @@ export default function WeaponSorting() {
                                         className="item flex w-full items-center justify-between"
                                     >
                                         <label>{shield}</label>
-                                        <input type="checkbox" />
+                                        <input
+                                            type="checkbox"
+                                            checked={enabledCategories[shield]}
+                                            onChange={() => {
+                                                setWeaponSorting({
+                                                    key: "enabledCategories",
+                                                    value: {
+                                                        ...enabledCategories,
+                                                        [shield]:
+                                                            !enabledCategories[
+                                                                shield
+                                                            ],
+                                                    },
+                                                });
+                                            }}
+                                        />
                                     </div>
                                 ))}
                             </div>
@@ -647,7 +875,24 @@ export default function WeaponSorting() {
                                                 ? "Pyromancy Flame"
                                                 : catalyst}
                                         </label>
-                                        <input type="checkbox" />
+                                        <input
+                                            type="checkbox"
+                                            checked={
+                                                enabledCategories[catalyst]
+                                            }
+                                            onChange={() => {
+                                                setWeaponSorting({
+                                                    key: "enabledCategories",
+                                                    value: {
+                                                        ...enabledCategories,
+                                                        [catalyst]:
+                                                            !enabledCategories[
+                                                                catalyst
+                                                            ],
+                                                    },
+                                                });
+                                            }}
+                                        />
                                     </div>
                                 ))}
                             </div>

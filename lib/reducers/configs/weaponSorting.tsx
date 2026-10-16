@@ -1,4 +1,5 @@
 import AttackPowerTypeMap from "@/lib/types/attackPowerTypeMap";
+import CategoryMap from "@/lib/types/categoryMap";
 import InfusionMap from "@/lib/types/infusionMap";
 import { ActionDispatch, createContext, useContext, useReducer } from "react";
 
@@ -12,6 +13,7 @@ export type WeaponSorting = {
     enabledDamageTypes: AttackPowerTypeMap<boolean>;
     invertDamageTypeFilter: boolean;
     requireAllEnabledDamageTypes: boolean;
+    enabledCategories: CategoryMap<boolean>;
 };
 
 export type WeaponSortingAction = {
@@ -50,6 +52,37 @@ const WeaponSortingContext = createContext<WeaponSorting>({
     },
     invertDamageTypeFilter: false,
     requireAllEnabledDamageTypes: false,
+    enabledCategories: {
+        Axe: true,
+        Claw: true,
+        "Curved Greatsword": true,
+        "Curved Sword": true,
+        Dagger: true,
+        Fist: true,
+        Greataxe: true,
+        "Great Hammer": true,
+        Greatsword: true,
+        Halberd: true,
+        Hammer: true,
+        Katana: true,
+        Lance: true,
+        Scythe: true,
+        Spear: true,
+        "Straight Sword": true,
+        "Thrusting Sword": true,
+        Twinblade: true,
+        "Ultra Greatsword": true,
+        Whip: true,
+        Bow: false,
+        Crossbow: false,
+        Greatbow: false,
+        "Small Shield": false,
+        "Standard Shield": false,
+        Greatshield: false,
+        Staff: false,
+        Chime: false,
+        Hands: false,
+    },
 });
 
 export function useWeaponSorting() {
@@ -112,6 +145,37 @@ export function WeaponSortingProvider({
             },
             invertDamageTypeFilter: false,
             requireAllEnabledDamageTypes: false,
+            enabledCategories: {
+                Axe: true,
+                Claw: true,
+                "Curved Greatsword": true,
+                "Curved Sword": true,
+                Dagger: true,
+                Fist: true,
+                Greataxe: true,
+                "Great Hammer": true,
+                Greatsword: true,
+                Halberd: true,
+                Hammer: true,
+                Katana: true,
+                Lance: true,
+                Scythe: true,
+                Spear: true,
+                "Straight Sword": true,
+                "Thrusting Sword": true,
+                Twinblade: true,
+                "Ultra Greatsword": true,
+                Whip: true,
+                Bow: false,
+                Crossbow: false,
+                Greatbow: false,
+                "Small Shield": false,
+                "Standard Shield": false,
+                Greatshield: false,
+                Staff: false,
+                Chime: false,
+                Hands: false,
+            },
         },
     );
 
