@@ -15,6 +15,7 @@ import { useEquippedRings } from "@/lib/reducers/equipment/equippedRings";
 import { useEquippedWeapons } from "@/lib/reducers/equipment/equippedWeapons";
 import { useWeaponInventory } from "@/lib/reducers/equipment/weaponInventory";
 import AttackPowerTypeMap, {
+    AttackPowerTypeMapKey,
     AttackPowerTypes,
 } from "@/lib/types/attackPowerTypeMap";
 import AttributeMap, {
@@ -99,6 +100,9 @@ export default function WeaponSorting() {
         includeStatusEffects,
         mustBeInInventory,
         enabledInfusions,
+        enabledDamageTypes,
+        invertDamageTypeFilter,
+        requireAllEnabledDamageTypes,
     } = useWeaponSorting();
     const setWeaponSorting = useWeaponSortingDispatch();
     const twoHanding = useTwoHanding();
@@ -144,7 +148,36 @@ export default function WeaponSorting() {
             let max = 0;
             row.max = max;
             const filteredInfusions = weapon.Infusions.filter((infusion) => {
-                return enabledInfusions[infusion.Name as InfusionMapKey];
+                let matchesDamageTypeFilter = requireAllEnabledDamageTypes;
+
+                for (const [attackPowerType, value] of Object.entries(
+                    infusion.DamageRates,
+                )) {
+                    const isPresentOnInfusion = value > 0;
+
+                    if (!isPresentOnInfusion) {
+                        continue;
+                    }
+
+                    if (requireAllEnabledDamageTypes) {
+                        matchesDamageTypeFilter =
+                            matchesDamageTypeFilter &&
+                            enabledDamageTypes[
+                                attackPowerType as AttackPowerTypeMapKey
+                            ]!;
+                    } else {
+                        matchesDamageTypeFilter =
+                            matchesDamageTypeFilter ||
+                            enabledDamageTypes[
+                                attackPowerType as AttackPowerTypeMapKey
+                            ]!;
+                    }
+                }
+
+                return (
+                    enabledInfusions[infusion.Name as InfusionMapKey] &&
+                    !invertDamageTypeFilter === matchesDamageTypeFilter
+                );
             });
 
             for (const infusion of filteredInfusions) {
@@ -227,6 +260,9 @@ export default function WeaponSorting() {
         mustBeInInventory,
         weaponInventory,
         enabledInfusions,
+        enabledDamageTypes,
+        invertDamageTypeFilter,
+        requireAllEnabledDamageTypes,
     ]);
 
     return (
@@ -236,7 +272,7 @@ export default function WeaponSorting() {
             <div className="grid grid-cols-3 gap-5 w-full">
                 {/* TODO: Configs */}
                 <div className="grid grid-cols-2 gap-1 w-full items-start">
-                    {/* TODO: Miscellanous configs */}
+                    {/* Miscellanous configs */}
                     <div className="flex flex-col w-full items-center justify-center align-center">
                         <div className="w-full items-center justify-center align-center">
                             <h4 className="text-md font-bold text-center">
@@ -417,75 +453,122 @@ export default function WeaponSorting() {
                         </div>
                         <hr />
 
-                        {/* TODO: Damage type filters */}
+                        {/* Damage type filters */}
                         <div className="flex flex-col w-full items-center justify-center align-center">
                             <h4 className="text-md font-bold text-center">
                                 Damage Types
                             </h4>
 
-                            {/* TODO: Buttons that will enable/disable all damage types */}
+                            {/* Buttons that will enable/disable all damage types */}
                             <div className="flex gap-4 w-full items-center justify-between align-center">
-                                <button className="w-full">ALL</button>
-                                <button className="w-full">NONE</button>
+                                <button
+                                    className="w-full"
+                                    onClick={() => {
+                                        setWeaponSorting({
+                                            key: "enabledDamageTypes",
+                                            value: {
+                                                Physical: true,
+                                                Magic: true,
+                                                Fire: true,
+                                                Lightning: true,
+                                                Dark: true,
+                                                Poison: true,
+                                                Bleed: true,
+                                                Petrify: true,
+                                                Curse: true,
+                                            },
+                                        });
+                                    }}
+                                >
+                                    ALL
+                                </button>
+                                <button
+                                    className="w-full"
+                                    onClick={() => {
+                                        setWeaponSorting({
+                                            key: "enabledDamageTypes",
+                                            value: {
+                                                Physical: false,
+                                                Magic: false,
+                                                Fire: false,
+                                                Lightning: false,
+                                                Dark: false,
+                                                Poison: false,
+                                                Bleed: false,
+                                                Petrify: false,
+                                                Curse: false,
+                                            },
+                                        });
+                                    }}
+                                >
+                                    NONE
+                                </button>
                             </div>
 
-                            {/* TODO: Toggle for negation of the filter */}
-                            <button className="w-full">
-                                ONLY INCLUDE results that contain...
+                            {/* Toggle for negation of the filter */}
+                            <button
+                                className="w-full"
+                                onClick={() =>
+                                    setWeaponSorting({
+                                        key: "invertDamageTypeFilter",
+                                        value: !invertDamageTypeFilter,
+                                    })
+                                }
+                            >
+                                {invertDamageTypeFilter
+                                    ? "EXCLUDE"
+                                    : "ONLY INCLUDE"}{" "}
+                                results that contain...
                             </button>
 
-                            {/* TODO: Radio list for filter logic */}
-                            <div className="flex flex-col w-full items-center justify-center align-center">
-                                {/* TODO: Only include results that contain any (i.e. at least one) of the selected damage types */}
-                                <div className="item flex w-full items-center justify-between p-2">
-                                    <label>ANY of the following</label>
-                                    <input
-                                        type="radio"
-                                        id="ANY"
-                                        name="filterLogic"
-                                        value="ANY"
-                                    />
-                                </div>
+                            {/* Toggle button for filter logic */}
+                            <button
+                                className="w-full"
+                                onClick={() => {
+                                    setWeaponSorting({
+                                        key: "requireAllEnabledDamageTypes",
+                                        value: !requireAllEnabledDamageTypes,
+                                    });
+                                }}
+                            >
+                                ...
+                                {requireAllEnabledDamageTypes
+                                    ? "ONLY"
+                                    : "ANY OF"}{" "}
+                                the following
+                            </button>
 
-                                {/* TODO: Only include results that contain all of the selected damage types */}
-                                <div className="item flex w-full items-center justify-between p-2">
-                                    <label>ALL of the following</label>
-                                    <input
-                                        type="radio"
-                                        id="ALL"
-                                        name="filterLogic"
-                                        value="ALL"
-                                    />
-                                </div>
-
-                                {/* TODO: Only include results that contain exactly the selected damage types */}
-                                <div className="item flex w-full items-center justify-between p-2">
-                                    <label>EXACTLY the following</label>
-                                    <input
-                                        type="radio"
-                                        id="EXACTLY"
-                                        name="filterLogic"
-                                        value="EXACTLY"
-                                    />
-                                </div>
-
-                                {/* Checkbox list for damage types */}
-                                <div className="list flex flex-col w-full items-center justify-center align-center">
-                                    {AttackPowerTypes.map((type) => (
-                                        <div
-                                            key={type}
-                                            className="item flex w-full items-center justify-between"
-                                        >
-                                            <label>{type}</label>
-                                            <input type="checkbox" />
-                                        </div>
-                                    ))}
-                                </div>
+                            {/* Checkbox list for damage types */}
+                            <div className="list flex flex-col w-full items-center justify-center align-center">
+                                {AttackPowerTypes.map((type) => (
+                                    <div
+                                        key={type}
+                                        className="item flex w-full items-center justify-between"
+                                    >
+                                        <label>{type}</label>
+                                        <input
+                                            type="checkbox"
+                                            id={type}
+                                            name={type}
+                                            checked={enabledDamageTypes[type]}
+                                            onChange={(e) =>
+                                                setWeaponSorting({
+                                                    key: "enabledDamageTypes",
+                                                    value: {
+                                                        ...enabledDamageTypes,
+                                                        [type]: e.target
+                                                            .checked,
+                                                    },
+                                                })
+                                            }
+                                        />
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     </div>
 
-                    {/* Weapon categories */}
+                    {/* TODO: Weapon categories */}
                     <div className="flex flex-col w-full items-center justify-center align-center">
                         <h4 className="text-md font-bold">Categories</h4>
                         <div className="flex gap-4 w-full items-center justify-between align-center">

@@ -1,3 +1,4 @@
+import AttackPowerTypeMap from "@/lib/types/attackPowerTypeMap";
 import InfusionMap from "@/lib/types/infusionMap";
 import { ActionDispatch, createContext, useContext, useReducer } from "react";
 
@@ -8,6 +9,9 @@ export type WeaponSorting = {
     includeStatusEffects: boolean;
     mustBeInInventory: boolean;
     enabledInfusions: InfusionMap<boolean>;
+    enabledDamageTypes: AttackPowerTypeMap<boolean>;
+    invertDamageTypeFilter: boolean;
+    requireAllEnabledDamageTypes: boolean;
 };
 
 export type WeaponSortingAction = {
@@ -33,6 +37,19 @@ const WeaponSortingContext = createContext<WeaponSorting>({
         Enchanted: true,
         Mundane: true,
     },
+    enabledDamageTypes: {
+        Physical: true,
+        Magic: true,
+        Fire: true,
+        Lightning: true,
+        Dark: true,
+        Poison: true,
+        Bleed: true,
+        Petrify: true,
+        Curse: true,
+    },
+    invertDamageTypeFilter: false,
+    requireAllEnabledDamageTypes: false,
 });
 
 export function useWeaponSorting() {
@@ -82,6 +99,19 @@ export function WeaponSortingProvider({
                 Enchanted: true,
                 Mundane: true,
             },
+            enabledDamageTypes: {
+                Physical: true,
+                Magic: true,
+                Fire: true,
+                Lightning: true,
+                Dark: true,
+                Poison: true,
+                Bleed: true,
+                Petrify: true,
+                Curse: true,
+            },
+            invertDamageTypeFilter: false,
+            requireAllEnabledDamageTypes: false,
         },
     );
 
