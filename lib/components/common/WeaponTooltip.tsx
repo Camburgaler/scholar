@@ -137,7 +137,7 @@ function WeaponTooltipContent({
                     href={getWikiLink(equippedWeapon.name, wikiTarget)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="border rounded p-1 hover:bg-accent hover:text-primary"
+                    className="border rounded p-1"
                 >
                     Wiki&#129141;
                 </a>
@@ -376,12 +376,6 @@ function WeaponTooltipContent({
                             equippedWeapon,
                         })
                     }
-                    onMouseEnter={(e) => {
-                        e.currentTarget.style.color = "var(--accent)";
-                    }}
-                    onMouseLeave={(e) => {
-                        e.currentTarget.style.color = "var(--contrast)";
-                    }}
                 >
                     Left Hand Primary
                 </button>
@@ -392,12 +386,6 @@ function WeaponTooltipContent({
                             equippedWeapon,
                         })
                     }
-                    onMouseEnter={(e) => {
-                        e.currentTarget.style.color = "var(--accent)";
-                    }}
-                    onMouseLeave={(e) => {
-                        e.currentTarget.style.color = "var(--contrast)";
-                    }}
                 >
                     Right Hand Primary
                 </button>
@@ -408,12 +396,6 @@ function WeaponTooltipContent({
                             equippedWeapon,
                         })
                     }
-                    onMouseEnter={(e) => {
-                        e.currentTarget.style.color = "var(--accent)";
-                    }}
-                    onMouseLeave={(e) => {
-                        e.currentTarget.style.color = "var(--contrast)";
-                    }}
                 >
                     Left Hand Secondary
                 </button>
@@ -424,12 +406,6 @@ function WeaponTooltipContent({
                             equippedWeapon,
                         })
                     }
-                    onMouseEnter={(e) => {
-                        e.currentTarget.style.color = "var(--accent)";
-                    }}
-                    onMouseLeave={(e) => {
-                        e.currentTarget.style.color = "var(--contrast)";
-                    }}
                 >
                     Right Hand Secondary
                 </button>
@@ -440,12 +416,6 @@ function WeaponTooltipContent({
                             equippedWeapon,
                         })
                     }
-                    onMouseEnter={(e) => {
-                        e.currentTarget.style.color = "var(--accent)";
-                    }}
-                    onMouseLeave={(e) => {
-                        e.currentTarget.style.color = "var(--contrast)";
-                    }}
                 >
                     Left Hand Tertiary
                 </button>
@@ -456,12 +426,6 @@ function WeaponTooltipContent({
                             equippedWeapon,
                         })
                     }
-                    onMouseEnter={(e) => {
-                        e.currentTarget.style.color = "var(--accent)";
-                    }}
-                    onMouseLeave={(e) => {
-                        e.currentTarget.style.color = "var(--contrast)";
-                    }}
                 >
                     Right Hand Tertiary
                 </button>

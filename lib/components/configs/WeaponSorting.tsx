@@ -12,10 +12,7 @@ import {
 import { useEquippedArmorSet } from "@/lib/reducers/equipment/equippedArmorSet";
 import { useEquippedRings } from "@/lib/reducers/equipment/equippedRings";
 import { useEquippedWeapons } from "@/lib/reducers/equipment/equippedWeapons";
-import AttackPowerTypeMap, {
-    AttackPowerTypeMapKey,
-    AttackPowerTypes,
-} from "@/lib/types/attackPowerTypeMap";
+import { AttackPowerTypes } from "@/lib/types/attackPowerTypeMap";
 import AttributeMap, {
     AttributeMapKey,
     ScalingAttributes,
@@ -45,26 +42,6 @@ function meetsRequirements(
     return true;
 }
 
-function isSplitDamage(totalDamage: AttackPowerTypeMap<number>): boolean {
-    return (
-        Object.entries(totalDamage)
-            // Filter out attack power types that are a status effect and not a damage type
-            .filter(([key, _]) =>
-                (
-                    [
-                        "Dark",
-                        "Fire",
-                        "Lightning",
-                        "Magic",
-                        "Physical",
-                    ] as AttackPowerTypeMapKey[]
-                ).includes(key as AttackPowerTypeMapKey),
-            )
-            // Return whether there is more than one damage type
-            .reduce((a, [_, b]) => (b > 0 ? a + 1 : a), 0) > 1
-    );
-}
-
 function isEmptyRow(row: WeaponAttackRow) {
     return row.max === 0;
 }
@@ -75,7 +52,7 @@ export default function WeaponSorting() {
     const virtualAttributes = useVirtualAttributes();
     const equippedRings = useEquippedRings();
     const equippedArmorSet = useEquippedArmorSet();
-    const { reinforcementLevel, mustMeetRequirements, mustNotHaveSplitDamage } =
+    const { reinforcementLevel, mustMeetRequirements, compareTotalDamage } =
         useWeaponSorting();
     const setWeaponSorting = useWeaponSortingDispatch();
 
@@ -132,16 +109,22 @@ export default function WeaponSorting() {
                     equippedRings,
                 );
 
-                // Filter out weapons with split damage
-                if (mustNotHaveSplitDamage && isSplitDamage(totalDamage)) {
-                    row[infusion.Name as InfusionMapKey] = 0;
-                    continue;
+                let attackRating = 0;
+                if (compareTotalDamage) {
+                    // Calculate the attack rating by summing all the damages
+                    attackRating = Math.floor(
+                        Object.values(totalDamage).reduce((a, b) => a + b, 0),
+                    );
+                } else {
+                    // Calculate the attack rating by finding the highest damage
+                    let highestDamage = 0;
+                    for (const value of Object.values(totalDamage)) {
+                        if (value > highestDamage) {
+                            highestDamage = value;
+                        }
+                    }
+                    attackRating = Math.floor(highestDamage);
                 }
-
-                // Calculate the attack rating by summing all the damage
-                const attackRating = Math.floor(
-                    Object.values(totalDamage).reduce((a, b) => a + b, 0),
-                );
 
                 row[infusion.Name as InfusionMapKey] = attackRating;
 
@@ -168,7 +151,7 @@ export default function WeaponSorting() {
         equippedArmorSet,
         reinforcementLevel,
         mustMeetRequirements,
-        mustNotHaveSplitDamage,
+        compareTotalDamage,
     ]);
 
     return (
@@ -217,31 +200,28 @@ export default function WeaponSorting() {
                             </div>
 
                             {/* Filter out weapons with unmet attribute requirements */}
-                            <div className="item flex w-full items-center justify-between p-2">
-                                <label>
-                                    Ignore Weapons With Unmet Requirements
-                                </label>
-                                <input
-                                    type="checkbox"
-                                    checked={mustMeetRequirements}
-                                    onChange={(e) =>
-                                        setWeaponSorting({
-                                            key: "mustMeetRequirements",
-                                            value: e.target.checked,
-                                        })
-                                    }
-                                />
-                            </div>
+                            <button
+                                className="item flex w-full items-center justify-between hover:bg-accent"
+                                onClick={() =>
+                                    setWeaponSorting({
+                                        key: "mustMeetRequirements",
+                                        value: !mustMeetRequirements,
+                                    })
+                                }
+                            >
+                                {mustMeetRequirements ? "FILTER" : "ALLOW"}{" "}
+                                weapons with unmet requirements
+                            </button>
 
                             {/* Filter out weapons with more than one damage type */}
                             <div className="item flex w-full items-center justify-between p-2">
-                                <label>Ignore Weapons With Split Damage</label>
+                                <label>Compare Total Damage</label>
                                 <input
                                     type="checkbox"
-                                    checked={mustNotHaveSplitDamage}
+                                    checked={compareTotalDamage}
                                     onChange={(e) =>
                                         setWeaponSorting({
-                                            key: "mustNotHaveSplitDamage",
+                                            key: "compareTotalDamage",
                                             value: e.target.checked,
                                         })
                                     }

@@ -87,6 +87,14 @@ button {
     padding: 0.25rem;
 }
 
+button:hover {
+    color: var(--accent);
+}
+
+button * {
+    color: inherit;
+}
+
 input[disabled] {
     color: var(--accent);
 }
