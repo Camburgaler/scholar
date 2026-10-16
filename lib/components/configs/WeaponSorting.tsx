@@ -4,6 +4,7 @@ import WeaponAttackTable, {
 } from "@/lib/components/configs/weaponSorting/WeaponAttackTable";
 import { Weapons } from "@/lib/gameData";
 import Weapon from "@/lib/interfaces/weapon";
+import { useTwoHanding } from "@/lib/reducers/attributes/twoHanding";
 import { useVirtualAttributes } from "@/lib/reducers/attributes/virtualAttributes";
 import {
     useWeaponSorting,
@@ -55,16 +56,25 @@ export default function WeaponSorting() {
     const { reinforcementLevel, mustMeetRequirements, compareTotalDamage } =
         useWeaponSorting();
     const setWeaponSorting = useWeaponSortingDispatch();
+    const twoHanding = useTwoHanding();
 
     // State
     const weaponData = useMemo(() => {
         let rows: WeaponAttackRow[] = [];
+        const effectiveAttributes: AttributeMap<number> = {
+            ...virtualAttributes,
+            Strength: Math.floor(
+                twoHanding
+                    ? virtualAttributes.Strength * 1.5
+                    : virtualAttributes.Strength,
+            ),
+        };
 
         for (const weapon of Weapons) {
             // Filter out weapons that don't meet the requirements
             if (
                 mustMeetRequirements &&
-                !meetsRequirements(weapon, virtualAttributes)
+                !meetsRequirements(weapon, effectiveAttributes)
             ) {
                 continue;
             }
@@ -104,7 +114,7 @@ export default function WeaponSorting() {
                 // Calculate the total damage
                 const totalDamage = infusedWeapon.totalDamage(
                     equippedWeapons,
-                    virtualAttributes,
+                    effectiveAttributes,
                     equippedArmorSet,
                     equippedRings,
                 );
@@ -152,6 +162,7 @@ export default function WeaponSorting() {
         reinforcementLevel,
         mustMeetRequirements,
         compareTotalDamage,
+        twoHanding,
     ]);
 
     return (
