@@ -5,6 +5,7 @@ export type WeaponSorting = {
     mustMeetRequirements: boolean;
     compareTotalDamage: boolean;
     includeStatusEffects: boolean;
+    mustBeInInventory: boolean;
 };
 
 export type WeaponSortingAction = {
@@ -17,6 +18,7 @@ const WeaponSortingContext = createContext<WeaponSorting>({
     mustMeetRequirements: false,
     compareTotalDamage: false,
     includeStatusEffects: true,
+    mustBeInInventory: false,
 });
 
 export function useWeaponSorting() {
@@ -53,6 +55,7 @@ export function WeaponSortingProvider({
             mustMeetRequirements: false,
             compareTotalDamage: false,
             includeStatusEffects: true,
+            mustBeInInventory: false,
         },
     );
 

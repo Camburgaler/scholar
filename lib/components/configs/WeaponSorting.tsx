@@ -13,6 +13,7 @@ import {
 import { useEquippedArmorSet } from "@/lib/reducers/equipment/equippedArmorSet";
 import { useEquippedRings } from "@/lib/reducers/equipment/equippedRings";
 import { useEquippedWeapons } from "@/lib/reducers/equipment/equippedWeapons";
+import { useWeaponInventory } from "@/lib/reducers/equipment/weaponInventory";
 import AttackPowerTypeMap, {
     AttackPowerTypes,
 } from "@/lib/types/attackPowerTypeMap";
@@ -96,9 +97,11 @@ export default function WeaponSorting() {
         mustMeetRequirements,
         compareTotalDamage,
         includeStatusEffects,
+        mustBeInInventory,
     } = useWeaponSorting();
     const setWeaponSorting = useWeaponSortingDispatch();
     const twoHanding = useTwoHanding();
+    const weaponInventory = useWeaponInventory();
 
     // State
     const weaponData = useMemo(() => {
@@ -111,16 +114,29 @@ export default function WeaponSorting() {
                     : virtualAttributes.Strength,
             ),
         };
+        const filteredWeapons = Weapons.filter((weapon) => {
+            let inInventory = true;
+            let requirementsMet = true;
 
-        for (const weapon of Weapons) {
-            // Filter out weapons that don't meet the requirements
-            if (
-                mustMeetRequirements &&
-                !meetsRequirements(weapon, effectiveAttributes)
-            ) {
-                continue;
+            if (mustBeInInventory) {
+                // Filter out weapons that are not in the inventory
+                inInventory = weaponInventory.some(
+                    (invWeapon) => invWeapon.name === weapon.Name,
+                );
             }
 
+            if (mustMeetRequirements) {
+                // Filter out weapons that don't meet the requirements
+                requirementsMet = meetsRequirements(
+                    weapon,
+                    effectiveAttributes,
+                );
+            }
+
+            return inInventory && requirementsMet;
+        });
+
+        for (const weapon of filteredWeapons) {
             let row: WeaponAttackRow = {
                 weapon: weapon,
             } as WeaponAttackRow;
@@ -204,6 +220,8 @@ export default function WeaponSorting() {
         compareTotalDamage,
         twoHanding,
         includeStatusEffects,
+        mustBeInInventory,
+        weaponInventory,
     ]);
 
     return (
@@ -295,11 +313,19 @@ export default function WeaponSorting() {
                                 status effects for sorting
                             </button>
 
-                            {/* TODO: Ignore weapons not in the character's inventory */}
-                            <div className="item flex w-full items-center justify-between p-2">
-                                <label>Ignore Unowned Weapons</label>
-                                <input type="checkbox" />
-                            </div>
+                            {/* Ignore weapons not in the character's inventory */}
+                            <button
+                                className="item flex w-full items-center justify-between hover:bg-accent"
+                                onClick={() =>
+                                    setWeaponSorting({
+                                        key: "mustBeInInventory",
+                                        value: !mustBeInInventory,
+                                    })
+                                }
+                            >
+                                {mustBeInInventory ? "FILTER" : "ALLOW"} weapons
+                                not in inventory
+                            </button>
                         </div>
                         <hr />
 
