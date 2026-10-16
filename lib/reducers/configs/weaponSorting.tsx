@@ -1,3 +1,4 @@
+import InfusionMap from "@/lib/types/infusionMap";
 import { ActionDispatch, createContext, useContext, useReducer } from "react";
 
 export type WeaponSorting = {
@@ -6,6 +7,7 @@ export type WeaponSorting = {
     compareTotalDamage: boolean;
     includeStatusEffects: boolean;
     mustBeInInventory: boolean;
+    enabledInfusions: InfusionMap<boolean>;
 };
 
 export type WeaponSortingAction = {
@@ -19,6 +21,18 @@ const WeaponSortingContext = createContext<WeaponSorting>({
     compareTotalDamage: false,
     includeStatusEffects: true,
     mustBeInInventory: false,
+    enabledInfusions: {
+        Standard: true,
+        Magic: true,
+        Fire: true,
+        Lightning: true,
+        Dark: true,
+        Poison: true,
+        Bleed: true,
+        Raw: true,
+        Enchanted: true,
+        Mundane: true,
+    },
 });
 
 export function useWeaponSorting() {
@@ -56,6 +70,18 @@ export function WeaponSortingProvider({
             compareTotalDamage: false,
             includeStatusEffects: true,
             mustBeInInventory: false,
+            enabledInfusions: {
+                Standard: true,
+                Magic: true,
+                Fire: true,
+                Lightning: true,
+                Dark: true,
+                Poison: true,
+                Bleed: true,
+                Raw: true,
+                Enchanted: true,
+                Mundane: true,
+            },
         },
     );
 

@@ -98,6 +98,7 @@ export default function WeaponSorting() {
         compareTotalDamage,
         includeStatusEffects,
         mustBeInInventory,
+        enabledInfusions,
     } = useWeaponSorting();
     const setWeaponSorting = useWeaponSortingDispatch();
     const twoHanding = useTwoHanding();
@@ -142,8 +143,11 @@ export default function WeaponSorting() {
             } as WeaponAttackRow;
             let max = 0;
             row.max = max;
+            const filteredInfusions = weapon.Infusions.filter((infusion) => {
+                return enabledInfusions[infusion.Name as InfusionMapKey];
+            });
 
-            for (const infusion of weapon.Infusions) {
+            for (const infusion of filteredInfusions) {
                 const infusedWeapon = EquippedWeapon.fromWeapon(weapon);
                 infusedWeapon.infusionKey = infusion.Name as InfusionMapKey;
 
@@ -222,6 +226,7 @@ export default function WeaponSorting() {
         includeStatusEffects,
         mustBeInInventory,
         weaponInventory,
+        enabledInfusions,
     ]);
 
     return (
@@ -334,13 +339,55 @@ export default function WeaponSorting() {
                             Infusions
                         </h4>
                         <div className="flex flex-col w-full items-center justify-center align-center">
-                            {/* TODO: Buttons to enable/disable all infusions */}
+                            {/* Buttons to enable/disable all infusions */}
                             <div className="flex gap-4 w-full items-center justify-between align-center">
-                                <button className="w-full">ALL</button>
-                                <button className="w-full">NONE</button>
+                                <button
+                                    className="w-full"
+                                    onClick={() => {
+                                        setWeaponSorting({
+                                            key: "enabledInfusions",
+                                            value: {
+                                                Standard: true,
+                                                Magic: true,
+                                                Fire: true,
+                                                Lightning: true,
+                                                Dark: true,
+                                                Poison: true,
+                                                Bleed: true,
+                                                Raw: true,
+                                                Enchanted: true,
+                                                Mundane: true,
+                                            },
+                                        });
+                                    }}
+                                >
+                                    ALL
+                                </button>
+                                <button
+                                    className="w-full"
+                                    onClick={() =>
+                                        setWeaponSorting({
+                                            key: "enabledInfusions",
+                                            value: {
+                                                Standard: false,
+                                                Magic: false,
+                                                Fire: false,
+                                                Lightning: false,
+                                                Dark: false,
+                                                Poison: false,
+                                                Bleed: false,
+                                                Raw: false,
+                                                Enchanted: false,
+                                                Mundane: false,
+                                            },
+                                        })
+                                    }
+                                >
+                                    NONE
+                                </button>
                             </div>
 
-                            {/* TODO: Checkbox list of infusions */}
+                            {/* Checkbox list of infusions */}
                             <div className="list flex flex-col w-full items-center justify-center align-center">
                                 {InfusionMapKeys.map((infusion) => (
                                     <div
@@ -348,7 +395,22 @@ export default function WeaponSorting() {
                                         className="item flex w-full items-center justify-between"
                                     >
                                         <label>{infusion}</label>
-                                        <input type="checkbox" />
+                                        <input
+                                            type="checkbox"
+                                            id={infusion}
+                                            name={infusion}
+                                            checked={enabledInfusions[infusion]}
+                                            onChange={(e) =>
+                                                setWeaponSorting({
+                                                    key: "enabledInfusions",
+                                                    value: {
+                                                        ...enabledInfusions,
+                                                        [infusion]:
+                                                            e.target.checked,
+                                                    },
+                                                })
+                                            }
+                                        />
                                     </div>
                                 ))}
                             </div>
