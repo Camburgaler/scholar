@@ -207,7 +207,10 @@ export default function VirtualizedTable<T>({
                                                         : "",
                                             }}
                                         >
-                                            {content ?? "-"}
+                                            {content === undefined ||
+                                            value === 0
+                                                ? "-"
+                                                : content}
                                         </td>
                                     );
                                 })}

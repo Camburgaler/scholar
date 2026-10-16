@@ -12,7 +12,10 @@ import {
 import { useEquippedArmorSet } from "@/lib/reducers/equipment/equippedArmorSet";
 import { useEquippedRings } from "@/lib/reducers/equipment/equippedRings";
 import { useEquippedWeapons } from "@/lib/reducers/equipment/equippedWeapons";
-import { AttackPowerTypes } from "@/lib/types/attackPowerTypeMap";
+import AttackPowerTypeMap, {
+    AttackPowerTypeMapKey,
+    AttackPowerTypes,
+} from "@/lib/types/attackPowerTypeMap";
 import AttributeMap, {
     AttributeMapKey,
     ScalingAttributes,
@@ -42,13 +45,38 @@ function meetsRequirements(
     return true;
 }
 
+function isSplitDamage(totalDamage: AttackPowerTypeMap<number>): boolean {
+    return (
+        Object.entries(totalDamage)
+            // Filter out attack power types that are a status effect and not a damage type
+            .filter(([key, _]) =>
+                (
+                    [
+                        "Dark",
+                        "Fire",
+                        "Lightning",
+                        "Magic",
+                        "Physical",
+                    ] as AttackPowerTypeMapKey[]
+                ).includes(key as AttackPowerTypeMapKey),
+            )
+            // Return whether there is more than one damage type
+            .reduce((a, [_, b]) => (b > 0 ? a + 1 : a), 0) > 1
+    );
+}
+
+function isEmptyRow(row: WeaponAttackRow) {
+    return row.max === 0;
+}
+
 export default function WeaponSorting() {
     // Context
     const equippedWeapons = useEquippedWeapons();
     const virtualAttributes = useVirtualAttributes();
     const equippedRings = useEquippedRings();
     const equippedArmorSet = useEquippedArmorSet();
-    const { reinforcementLevel, mustMeetRequirements } = useWeaponSorting();
+    const { reinforcementLevel, mustMeetRequirements, mustNotHaveSplitDamage } =
+        useWeaponSorting();
     const setWeaponSorting = useWeaponSortingDispatch();
 
     // State
@@ -68,10 +96,25 @@ export default function WeaponSorting() {
                 weapon: weapon,
             } as WeaponAttackRow;
             let max = 0;
+            row.max = max;
 
             for (const infusion of weapon.Infusions) {
                 const infusedWeapon = EquippedWeapon.fromWeapon(weapon);
                 infusedWeapon.infusionKey = infusion.Name as InfusionMapKey;
+
+                // Calculate the total damage
+                const totalDamage = infusedWeapon.totalDamage(
+                    equippedWeapons,
+                    virtualAttributes,
+                    equippedArmorSet,
+                    equippedRings,
+                );
+
+                // Filter out weapons with split damage
+                if (mustNotHaveSplitDamage && isSplitDamage(totalDamage)) {
+                    row[infusion.Name as InfusionMapKey] = 0;
+                    continue;
+                }
 
                 // Set the reinforcement level from the config
                 const maxReinforcementLevel = weapon.MaxReinforcementLevel;
@@ -95,14 +138,6 @@ export default function WeaponSorting() {
                         break;
                 }
 
-                // Calculate the total damage
-                const totalDamage = infusedWeapon.totalDamage(
-                    equippedWeapons,
-                    virtualAttributes,
-                    equippedArmorSet,
-                    equippedRings,
-                );
-
                 // Calculate the attack rating by summing all the damage
                 const attackRating = Math.floor(
                     Object.values(totalDamage).reduce((a, b) => a + b, 0),
@@ -117,6 +152,11 @@ export default function WeaponSorting() {
                 row.max = max;
             }
 
+            // Filter out weapons that don't have any infusion
+            if (isEmptyRow(row)) {
+                continue;
+            }
+
             rows.push(row);
         }
 
@@ -128,6 +168,7 @@ export default function WeaponSorting() {
         equippedArmorSet,
         reinforcementLevel,
         mustMeetRequirements,
+        mustNotHaveSplitDamage,
     ]);
 
     return (
@@ -192,10 +233,19 @@ export default function WeaponSorting() {
                                 />
                             </div>
 
-                            {/* TODO: Filter out weapons with more than one damage type */}
+                            {/* Filter out weapons with more than one damage type */}
                             <div className="item flex w-full items-center justify-between p-2">
                                 <label>Ignore Weapons With Split Damage</label>
-                                <input type="checkbox" />
+                                <input
+                                    type="checkbox"
+                                    checked={mustNotHaveSplitDamage}
+                                    onChange={(e) =>
+                                        setWeaponSorting({
+                                            key: "mustNotHaveSplitDamage",
+                                            value: e.target.checked,
+                                        })
+                                    }
+                                />
                             </div>
 
                             {/* TODO: Ignore status effect (i.e. poison, bleed, petrify, curse) values for the sake of sorting */}

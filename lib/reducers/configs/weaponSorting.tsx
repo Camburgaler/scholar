@@ -3,6 +3,7 @@ import { ActionDispatch, createContext, useContext, useReducer } from "react";
 export type WeaponSorting = {
     reinforcementLevel: number;
     mustMeetRequirements: boolean;
+    mustNotHaveSplitDamage: boolean;
 };
 
 export type WeaponSortingAction = {
@@ -13,6 +14,7 @@ export type WeaponSortingAction = {
 const WeaponSortingContext = createContext<WeaponSorting>({
     reinforcementLevel: 0,
     mustMeetRequirements: false,
+    mustNotHaveSplitDamage: false,
 });
 
 export function useWeaponSorting() {
@@ -47,6 +49,7 @@ export function WeaponSortingProvider({
         {
             reinforcementLevel: 0,
             mustMeetRequirements: false,
+            mustNotHaveSplitDamage: false,
         },
     );
 
