@@ -130,6 +130,17 @@ export default class WeaponSlots {
 
     // GETTERS & SETTERS
 
+    public get weight(): number {
+        return (
+            this.leftPrimary.weight +
+            this.leftSecondary.weight +
+            this.leftTertiary.weight +
+            this.rightPrimary.weight +
+            this.rightSecondary.weight +
+            this.rightTertiary.weight
+        );
+    }
+
     /**
      * @description Copies the {@link WeaponSlots} from another {@link WeaponSlots}.
      * @param weaponSlots The {@link WeaponSlots} to copy.

@@ -80,6 +80,10 @@ class EquippedWeapon {
         return this.infusion.Scaling[scalingIndex];
     }
 
+    public get weight(): number {
+        return this._data.Weight;
+    }
+
     public copyFrom(equippedWeapon: EquippedWeapon) {
         this._data = equippedWeapon._data;
         this.reinforcementLevel = equippedWeapon.reinforcementLevel;
