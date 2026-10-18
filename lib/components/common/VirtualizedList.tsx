@@ -3,12 +3,14 @@ import { JSX, useMemo, useRef, useState } from "react";
 
 export default function VirtualizedList(props: {
     list: any[];
+    height?: number;
     searchboxPlaceholder?: string;
     renderFunc?: (item: any) => JSX.Element;
     filterFunc?: (item: any, searchStr: string) => boolean;
 }): JSX.Element {
     // Props
-    const { list, searchboxPlaceholder, renderFunc, filterFunc } = props;
+    const { list, height, searchboxPlaceholder, renderFunc, filterFunc } =
+        props;
 
     // State
     const [search, setSearch] = useState<string>("");
@@ -33,7 +35,7 @@ export default function VirtualizedList(props: {
     const listVirtualizer = useVirtualizer({
         count: filteredList.length,
         getScrollElement: () => parentRef.current,
-        estimateSize: () => 50,
+        estimateSize: () => height || 50,
         overscan: 5,
     });
 
@@ -64,14 +66,14 @@ export default function VirtualizedList(props: {
 
                         return (
                             <div
-                                className="p-1 content-center"
+                                className="p-1 content-center flex"
                                 key={virtualItem.index}
                                 style={{
                                     position: "absolute",
                                     top: 0,
                                     left: 0,
                                     width: "100%",
-                                    height: `${virtualItem.size}px`,
+                                    minHeight: `${virtualItem.size}px`,
                                     transform: `translateY(${virtualItem.start}px)`,
                                     backgroundColor:
                                         virtualItem.index % 2 === 0

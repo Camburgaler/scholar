@@ -13,6 +13,7 @@ import AttackPowerTypeMap, {
 } from "@/lib/types/attackPowerTypeMap";
 import AttributeMap from "@/lib/types/attributeMap";
 import { InfusionMapKey } from "@/lib/types/infusionMap";
+import { UUID } from "crypto";
 
 /**
  * @type EquippedWeapon
@@ -22,6 +23,7 @@ import { InfusionMapKey } from "@/lib/types/infusionMap";
  * @member infusion - The infusion applied to the weapon. {@link InfusionMapKey}
  */
 class EquippedWeapon {
+    private _id: UUID = crypto.randomUUID() as UUID;
     private _data: Weapon = Weapons[0];
 
     public reinforcementLevel: number = 0;
@@ -82,6 +84,10 @@ class EquippedWeapon {
 
     public get weight(): number {
         return this._data.Weight;
+    }
+
+    public get id(): UUID {
+        return this._id;
     }
 
     public copyFrom(equippedWeapon: EquippedWeapon) {

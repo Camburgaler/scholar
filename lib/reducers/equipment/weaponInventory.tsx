@@ -41,6 +41,14 @@ function WeaponInventoryReducer(
             }
         }
 
+        const updateIndex = result.findIndex(
+            (weapon) => weapon.id === action.data.id,
+        );
+        if (updateIndex !== -1) {
+            result[updateIndex] = action.data;
+            return result;
+        }
+
         result.push(action.data);
     } else if (action.action === "remove") {
         result.splice(result.indexOf(action.data), 1);

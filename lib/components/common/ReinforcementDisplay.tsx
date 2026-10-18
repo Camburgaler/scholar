@@ -17,7 +17,6 @@ export default function ReinforcementDisplay(props: {
 
     return (
         <select
-            style={{ backgroundColor: "var(--secondary)" }}
             value={equippedWeapons.getWeapon(slot).reinforcementLevel}
             onChange={(e) => {
                 let newEquippedWeapon = equippedWeapons.getWeapon(slot);

@@ -79,7 +79,8 @@ input {
     color: var(--contrast);
 }
 
-button {
+button,
+select {
     background-color: var(--primary);
     color: var(--contrast);
     border: 1px solid;
@@ -87,23 +88,14 @@ button {
     padding: 0.25rem;
 }
 
-button:hover {
+button:hover,
+select:hover,
+input[disabled] {
     color: var(--accent);
 }
 
 button * {
     color: inherit;
-}
-
-input[disabled] {
-    color: var(--accent);
-}
-
-select {
-    background-color: var(--primary);
-    color: var(--contrast);
-    border-radius: 0.5rem;
-    padding: 0.25rem;
 }
 
 th {

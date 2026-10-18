@@ -1,4 +1,5 @@
 import EquippedWeapon from "@/lib/classes/equippedWeapon";
+import InfusionDisplay from "@/lib/components/common/InfusionDisplay";
 import VirtualizedList from "@/lib/components/common/VirtualizedList";
 import WeaponTooltip from "@/lib/components/common/WeaponTooltip";
 import { Weapons } from "@/lib/gameData";
@@ -78,7 +79,6 @@ export default function WeaponInventory(): JSX.Element {
             <h2 className="text-2xl text-right font-bold">Weapon Inventory</h2>
             <hr />
 
-            {/* TODO: add weapon sorting algorithm */}
             {/* TODO: add inventory system for weapons: */}
             {/* TODO:     - player can add the currently displayed starting class's weapons to their inventory with one button */}
             {/* TODO:     - three views in weapon inventory: */}
@@ -88,42 +88,47 @@ export default function WeaponInventory(): JSX.Element {
             {/* TODO:             - each weapon will show an icon next to it if it can be optimized via infusion */}
             {/* TODO:                 - the icon will be that of the optimal infusion */}
             {/* TODO:                 - to differentiate from the info that just shows what infusion the weapon currently has, there will be an exclamation point on the icon */}
-            {/* TODO:         - collapsible configs for sorting */}
-            {/* TODO:             - toggle for only showing weapons for which the character meets the requirements */}
-            {/* TODO:             - toggle for only showing buffable weapons */}
-            {/* TODO:             - toggle for showing weapons that use split damage */}
-            {/* TODO:             - toggle for considering status effects in sorting calculations */}
-            {/* TODO:             - filters based on infusion */}
-            {/* TODO:             - filters based on attack power types */}
-            {/* TODO:             - filters based on weapon category */}
-            {/* TODO:             - instructions/tips for sorting */}
 
             <div className="flex flex-col gap-1 w-full h-full items-center align-center">
                 {/* Character inventory */}
-                {/* TODO: Sort using WeaponSorting */}
                 <VirtualizedList
                     list={weaponInventory}
+                    height={75}
                     searchboxPlaceholder="Search inventory..."
                     renderFunc={(item: EquippedWeapon) => (
                         <WeaponTooltip equippedWeapon={item} side="left">
-                            <div className="w-full flex items-center justify-between align-center">
-                                <p className="p-1">{item.name}</p>
-                                {item.name != "Fists" &&
-                                item.name != "Fist (Vanquisher's Seal)" ? (
-                                    <button
-                                        className="p-1"
-                                        onClick={() => {
+                            <div className="w-full flex flex-col items-center">
+                                <div className="w-full flex items-center justify-between align-center">
+                                    <p className="p-1">{item.name}</p>
+                                    {item.name != "Fists" &&
+                                    item.name != "Fist (Vanquisher's Seal)" ? (
+                                        <button
+                                            className="p-1"
+                                            onClick={() => {
+                                                setWeaponInventory({
+                                                    action: "remove",
+                                                    data: item,
+                                                });
+                                            }}
+                                        >
+                                            <XLg />
+                                        </button>
+                                    ) : null}
+                                    {/* TODO: Add symbol and logic for "there is a more optimal infusion for this weapon" */}
+                                    {/* TODO: Add symbol and logic for "this weapon at max reinforcement is more optimal than one of your current weapons at max reinforcement" */}
+                                </div>
+                                <div className="w-full flex items-center justify-between align-center">
+                                    {/* TODO: reinforcement level selector */}
+                                    <InfusionDisplay
+                                        weapon={item}
+                                        updateFunc={(weapon: EquippedWeapon) =>
                                             setWeaponInventory({
-                                                action: "remove",
-                                                data: item,
-                                            });
-                                        }}
-                                    >
-                                        <XLg />
-                                    </button>
-                                ) : null}
-                                {/* TODO: Add symbol and logic for "there is a more optimal infusion for this weapon" */}
-                                {/* TODO: Add symbol and logic for "this weapon at max reinforcement is more optimal than one of your current weapons at max reinforcement" */}
+                                                action: "add",
+                                                data: weapon,
+                                            })
+                                        }
+                                    />
+                                </div>
                             </div>
                         </WeaponTooltip>
                     )}

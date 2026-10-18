@@ -1,8 +1,8 @@
 import EquippedWeapon from "@/lib/classes/equippedWeapon";
 import { WeaponEquipSlot } from "@/lib/classes/weaponSlots";
 import DamageDisplay from "@/lib/components/characterInfo/middleColumn/weaponDisplay/DamageDisplay";
-import InfusionDisplay from "@/lib/components/characterInfo/middleColumn/weaponDisplay/InfusionDisplay";
-import ReinforcementDisplay from "@/lib/components/characterInfo/middleColumn/weaponDisplay/ReinforcementDisplay";
+import InfusionDisplay from "@/lib/components/common/InfusionDisplay";
+import ReinforcementDisplay from "@/lib/components/common/ReinforcementDisplay";
 import WeaponTooltip from "@/lib/components/common/WeaponTooltip";
 import { Weapons } from "@/lib/gameData";
 import { useEquippedRings } from "@/lib/reducers/equipment/equippedRings";
@@ -10,6 +10,7 @@ import {
     useEquippedWeapons,
     useEquippedWeaponsDispatch,
 } from "@/lib/reducers/equipment/equippedWeapons";
+import { useWeaponInventoryDispatch } from "@/lib/reducers/equipment/weaponInventory";
 import { getWeaponByName } from "@/lib/scripts/weapon";
 import { useEffect, useState } from "react";
 import { JSX } from "react/jsx-runtime";
@@ -29,6 +30,7 @@ export default function WeaponDisplay(props: {
     const equippedRings = useEquippedRings();
     const equippedWeapons = useEquippedWeapons();
     const setEquippedWeapons = useEquippedWeaponsDispatch();
+    const setWeaponInventory = useWeaponInventoryDispatch();
 
     // State
     const [vanquishersSeal, setVanquishersSeal] = useState(false);
@@ -119,7 +121,19 @@ export default function WeaponDisplay(props: {
                         ))}
                 </select>
                 <div className="flex w-full justify-between">
-                    <InfusionDisplay slot={slot} />
+                    <InfusionDisplay
+                        weapon={equippedWeapons.getWeapon(slot)}
+                        updateFunc={(weapon: EquippedWeapon) => {
+                            setEquippedWeapons({
+                                slot: slot,
+                                equippedWeapon: weapon,
+                            });
+                            setWeaponInventory({
+                                action: "add",
+                                data: weapon,
+                            });
+                        }}
+                    />
                     <ReinforcementDisplay slot={slot} />
                 </div>
             </div>
