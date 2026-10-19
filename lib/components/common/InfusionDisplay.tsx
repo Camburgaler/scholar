@@ -18,6 +18,7 @@ export default function InfusionDisplay(props: {
                     .value as InfusionMapKey;
                 updateFunc(newEquippedWeapon);
             }}
+            disabled={weapon.infusions.length <= 1}
         >
             {weapon.infusions.map((infusion) => (
                 <option key={infusion.Name}>{infusion.Name}</option>

@@ -94,6 +94,11 @@ input[disabled] {
     color: var(--accent);
 }
 
+select:disabled {
+    color: var(--primary);
+    background-color: var(--secondary);
+}
+
 button * {
     color: inherit;
 }

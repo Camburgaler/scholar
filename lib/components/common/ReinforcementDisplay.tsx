@@ -26,6 +26,9 @@ export default function ReinforcementDisplay(props: {
                     equippedWeapon: newEquippedWeapon,
                 });
             }}
+            disabled={
+                equippedWeapons.getWeapon(slot).maxReinforcementLevel == 0
+            }
         >
             {[
                 ...Array(
