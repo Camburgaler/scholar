@@ -10,8 +10,11 @@ import {
     useEquippedWeapons,
     useEquippedWeaponsDispatch,
 } from "@/lib/reducers/equipment/equippedWeapons";
-import { useWeaponInventoryDispatch } from "@/lib/reducers/equipment/weaponInventory";
-import { getWeaponByName } from "@/lib/scripts/weapon";
+import {
+    useWeaponInventory,
+    useWeaponInventoryDispatch,
+} from "@/lib/reducers/equipment/weaponInventory";
+import { getWeaponById, getWeaponByName } from "@/lib/scripts/weapon";
 import { useEffect, useState } from "react";
 import { JSX } from "react/jsx-runtime";
 
@@ -30,6 +33,7 @@ export default function WeaponDisplay(props: {
     const equippedRings = useEquippedRings();
     const equippedWeapons = useEquippedWeapons();
     const setEquippedWeapons = useEquippedWeaponsDispatch();
+    const weaponInventory = useWeaponInventory();
     const setWeaponInventory = useWeaponInventoryDispatch();
 
     // State
@@ -77,6 +81,38 @@ export default function WeaponDisplay(props: {
             });
         }
     }, [vanquishersSeal, equippedWeapons, setEquippedWeapons]);
+
+    useEffect(() => {
+        // If the equipped weapon is removed from the inventory, set the equipped weapon to "Fists"
+        if (
+            getWeaponById(
+                weaponInventory,
+                equippedWeapons.getWeapon(slot).id,
+            ) === undefined
+        ) {
+            setEquippedWeapons({
+                slot: slot,
+                equippedWeapon: EquippedWeapon.fromWeapon(
+                    getWeaponByName("Fists")!,
+                ),
+            });
+        }
+    }, [weaponInventory, setEquippedWeapons]);
+
+    useEffect(() => {
+        // If a weapon is equipped that is not in the inventory, add it to the inventory
+        if (
+            getWeaponById(
+                weaponInventory,
+                equippedWeapons.getWeapon(slot).id,
+            ) === undefined
+        ) {
+            setWeaponInventory({
+                action: "add",
+                data: equippedWeapons.getWeapon(slot),
+            });
+        }
+    }, [equippedWeapons, setWeaponInventory]);
 
     return (
         <WeaponTooltip

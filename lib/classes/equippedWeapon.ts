@@ -43,6 +43,13 @@ class EquippedWeapon {
     public static fromWeapon(weapon: Weapon): EquippedWeapon {
         let equippedWeapon = new EquippedWeapon();
         equippedWeapon._data = weapon;
+
+        if (weapon.Name === "Fists") {
+            equippedWeapon._id = "00000000-0000-0000-0000-000000000000";
+        } else if (weapon.Name === "Fist (Vanquisher's Seal)") {
+            equippedWeapon._id = "00000000-0000-0000-0000-000000000001";
+        }
+
         return equippedWeapon;
     }
 
@@ -91,6 +98,7 @@ class EquippedWeapon {
     }
 
     public copyFrom(equippedWeapon: EquippedWeapon) {
+        this._id = equippedWeapon._id;
         this._data = equippedWeapon._data;
         this.reinforcementLevel = equippedWeapon.reinforcementLevel;
         this.infusionKey = equippedWeapon.infusionKey;
