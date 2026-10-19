@@ -1,5 +1,6 @@
 import EquippedWeapon from "@/lib/classes/equippedWeapon";
 import InfusionDisplay from "@/lib/components/common/InfusionDisplay";
+import ReinforcementDisplay from "@/lib/components/common/ReinforcementDisplay";
 import VirtualizedList from "@/lib/components/common/VirtualizedList";
 import WeaponTooltip from "@/lib/components/common/WeaponTooltip";
 import { Weapons } from "@/lib/gameData";
@@ -79,16 +80,6 @@ export default function WeaponInventory(): JSX.Element {
             <h2 className="text-2xl text-right font-bold">Weapon Inventory</h2>
             <hr />
 
-            {/* TODO: add inventory system for weapons: */}
-            {/* TODO:     - player can add the currently displayed starting class's weapons to their inventory with one button */}
-            {/* TODO:     - three views in weapon inventory: */}
-            {/* TODO:         - sorted weapons from within their inventory */}
-            {/* TODO:             - each weapon is "generic", meaning that it can have its infusion changed as necessary */}
-            {/* TODO:             - each weapon can be interacted with to remove from inventory, infuse, or upgrade */}
-            {/* TODO:             - each weapon will show an icon next to it if it can be optimized via infusion */}
-            {/* TODO:                 - the icon will be that of the optimal infusion */}
-            {/* TODO:                 - to differentiate from the info that just shows what infusion the weapon currently has, there will be an exclamation point on the icon */}
-
             <div className="flex flex-col gap-1 w-full h-full items-center align-center">
                 {/* Character inventory */}
                 <VirtualizedList
@@ -117,9 +108,17 @@ export default function WeaponInventory(): JSX.Element {
                                     {/* TODO: Add symbol and logic for "there is a more optimal infusion for this weapon" */}
                                     {/* TODO: Add symbol and logic for "this weapon at max reinforcement is more optimal than one of your current weapons at max reinforcement" */}
                                 </div>
-                                <div className="w-full flex items-center justify-between align-center">
-                                    {/* TODO: reinforcement level selector */}
+                                <div className="w-full flex items-center justify-baseline align-center">
                                     <InfusionDisplay
+                                        weapon={item}
+                                        updateFunc={(weapon: EquippedWeapon) =>
+                                            setWeaponInventory({
+                                                action: "add",
+                                                data: weapon,
+                                            })
+                                        }
+                                    />
+                                    <ReinforcementDisplay
                                         weapon={item}
                                         updateFunc={(weapon: EquippedWeapon) =>
                                             setWeaponInventory({

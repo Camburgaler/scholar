@@ -1,40 +1,24 @@
-import { WeaponEquipSlot } from "@/lib/classes/weaponSlots";
-import {
-    useEquippedWeapons,
-    useEquippedWeaponsDispatch,
-} from "@/lib/reducers/equipment/equippedWeapons";
+import EquippedWeapon from "@/lib/classes/equippedWeapon";
 import { JSX } from "react/jsx-runtime";
 
 export default function ReinforcementDisplay(props: {
-    slot: WeaponEquipSlot;
+    weapon: EquippedWeapon;
+    updateFunc: (weapon: EquippedWeapon) => void;
 }): JSX.Element {
     // Props
-    const { slot } = props;
-
-    // Context
-    const equippedWeapons = useEquippedWeapons();
-    const setEquippedWeapons = useEquippedWeaponsDispatch();
+    const { weapon, updateFunc } = props;
 
     return (
         <select
-            value={equippedWeapons.getWeapon(slot).reinforcementLevel}
+            value={weapon.reinforcementLevel}
             onChange={(e) => {
-                let newEquippedWeapon = equippedWeapons.getWeapon(slot);
+                let newEquippedWeapon = weapon;
                 newEquippedWeapon.reinforcementLevel = parseInt(e.target.value);
-                setEquippedWeapons({
-                    slot: slot,
-                    equippedWeapon: newEquippedWeapon,
-                });
+                updateFunc(newEquippedWeapon);
             }}
-            disabled={
-                equippedWeapons.getWeapon(slot).maxReinforcementLevel == 0
-            }
+            disabled={weapon.maxReinforcementLevel == 0}
         >
-            {[
-                ...Array(
-                    equippedWeapons.getWeapon(slot).maxReinforcementLevel + 1,
-                ),
-            ].map((_, index) => (
+            {[...Array(weapon.maxReinforcementLevel + 1)].map((_, index) => (
                 <option key={index} value={index}>
                     +{index}
                 </option>

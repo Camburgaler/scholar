@@ -166,7 +166,19 @@ export default function WeaponDisplay(props: {
                             });
                         }}
                     />
-                    <ReinforcementDisplay slot={slot} />
+                    <ReinforcementDisplay
+                        weapon={equippedWeapons.getWeapon(slot)}
+                        updateFunc={(weapon: EquippedWeapon) => {
+                            setEquippedWeapons({
+                                slot: slot,
+                                equippedWeapon: weapon,
+                            });
+                            setWeaponInventory({
+                                action: "add",
+                                data: weapon,
+                            });
+                        }}
+                    />
                 </div>
             </div>
         </WeaponTooltip>

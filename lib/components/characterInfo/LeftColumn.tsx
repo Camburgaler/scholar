@@ -355,6 +355,7 @@ export default function LeftColumn(): JSX.Element {
                 </label>
 
                 <div className="flex gap-2 items-center">
+                    {/* TODO: Add button that adds the current class's starting equipment to the inventories */}
                     <button
                         className="h-full w-full p-1"
                         onClick={() => setClassLocked(!classLocked)}
