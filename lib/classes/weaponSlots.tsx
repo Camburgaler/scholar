@@ -2,6 +2,7 @@ import EquippedWeapon from "@/lib/classes/equippedWeapon";
 import ModifierDisplay from "@/lib/components/characterInfo/rightColumn/modifierDisplay";
 import Modifier from "@/lib/interfaces/modifier";
 import Weapon from "@/lib/interfaces/weapon";
+import { UUID } from "crypto";
 import { JSX } from "react/jsx-runtime";
 
 /**
@@ -15,6 +16,14 @@ export type WeaponEquipSlot =
     | "rightPrimary"
     | "rightSecondary"
     | "rightTertiary";
+export const WeaponEquipSlots: WeaponEquipSlot[] = [
+    "leftPrimary",
+    "leftSecondary",
+    "leftTertiary",
+    "rightPrimary",
+    "rightSecondary",
+    "rightTertiary",
+];
 
 /**
  * @class WeaponSlots
@@ -293,5 +302,23 @@ export default class WeaponSlots {
         });
 
         return activeEffects;
+    }
+
+    public isWeaponEquipped(id: UUID): WeaponEquipSlot | undefined {
+        if (this.leftPrimary.id === id) {
+            return "leftPrimary";
+        } else if (this.leftSecondary.id === id) {
+            return "leftSecondary";
+        } else if (this.leftTertiary.id === id) {
+            return "leftTertiary";
+        } else if (this.rightPrimary.id === id) {
+            return "rightPrimary";
+        } else if (this.rightSecondary.id === id) {
+            return "rightSecondary";
+        } else if (this.rightTertiary.id === id) {
+            return "rightTertiary";
+        } else {
+            return undefined;
+        }
     }
 }

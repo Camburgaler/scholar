@@ -75,9 +75,7 @@ export default function WeaponDisplay(props: {
         ) {
             setEquippedWeapons({
                 slot: slot,
-                equippedWeapon: EquippedWeapon.fromWeapon(
-                    getWeaponByName("Fists")!,
-                ),
+                equippedWeapon: new EquippedWeapon(),
             });
         }
     }, [vanquishersSeal, equippedWeapons, setEquippedWeapons]);
@@ -92,9 +90,7 @@ export default function WeaponDisplay(props: {
         ) {
             setEquippedWeapons({
                 slot: slot,
-                equippedWeapon: EquippedWeapon.fromWeapon(
-                    getWeaponByName("Fists")!,
-                ),
+                equippedWeapon: new EquippedWeapon(),
             });
         }
     }, [weaponInventory, setEquippedWeapons]);

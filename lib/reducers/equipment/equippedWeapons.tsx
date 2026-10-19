@@ -1,5 +1,8 @@
 import EquippedWeapon from "@/lib/classes/equippedWeapon";
-import WeaponSlots, { WeaponEquipSlot } from "@/lib/classes/weaponSlots";
+import WeaponSlots, {
+    WeaponEquipSlot,
+    WeaponEquipSlots,
+} from "@/lib/classes/weaponSlots";
 import { ActionDispatch, createContext, useContext, useReducer } from "react";
 
 /**
@@ -33,6 +36,18 @@ function equippedWeaponsReducer(
 ): WeaponSlots {
     const result = WeaponSlots.fromWeaponSlots(initialWeapons);
     result.setWeapon(action.slot, action.equippedWeapon);
+
+    // If the new weapon matches an already equipped weapon, remove the old one
+    WeaponEquipSlots.forEach((slot) => {
+        if (
+            slot !== action.slot &&
+            initialWeapons[slot].name !== "Fists" &&
+            initialWeapons[slot].name !== "Fist (Vanquisher's Seal)" &&
+            action.equippedWeapon.id === result[slot].id
+        ) {
+            result.setWeapon(slot, new EquippedWeapon());
+        }
+    });
     return result;
 }
 

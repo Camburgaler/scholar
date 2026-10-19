@@ -23,7 +23,7 @@ import { UUID } from "crypto";
  * @member infusion - The infusion applied to the weapon. {@link InfusionMapKey}
  */
 class EquippedWeapon {
-    private _id: UUID = crypto.randomUUID() as UUID;
+    private _id: UUID = "00000000-0000-0000-0000-000000000000";
     private _data: Weapon = Weapons[0];
 
     public reinforcementLevel: number = 0;
@@ -48,6 +48,8 @@ class EquippedWeapon {
             equippedWeapon._id = "00000000-0000-0000-0000-000000000000";
         } else if (weapon.Name === "Fist (Vanquisher's Seal)") {
             equippedWeapon._id = "00000000-0000-0000-0000-000000000001";
+        } else {
+            equippedWeapon._id = crypto.randomUUID() as UUID;
         }
 
         return equippedWeapon;
