@@ -142,7 +142,7 @@ export default function WeaponSorting() {
             return (
                 inInventory &&
                 requirementsMet &&
-                enabledCategories[weapon.Category]
+                (enabledCategories[weapon.Category] || weapon.Name === "Fists")
             );
         });
 
