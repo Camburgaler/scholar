@@ -55,7 +55,7 @@ export default function Home(): JSX.Element {
 
                                                         <div className="app">
                                                             {/* left column with armor info */}
-                                                            <article className="flex col-span-2 border rounded p-1 h-full">
+                                                            <article className="flex col-span-1 border rounded p-1 h-full">
                                                                 <ArmorInventory />
                                                             </article>
                                                             {/* main column with build info */}
@@ -67,7 +67,7 @@ export default function Home(): JSX.Element {
                                                                 <WeaponInventory />
                                                             </article>
                                                             {/* bottom section with configs */}
-                                                            <article className="flex col-span-6 border rounded p-1 h-full">
+                                                            <article className="flex col-span-5 border rounded p-1 h-full">
                                                                 <Configs />
                                                             </article>
                                                         </div>
