@@ -1,6 +1,6 @@
 import { ActionDispatch, createContext, useContext, useReducer } from "react";
 
-type SortingConfig = "none" | "weapon" | "armor";
+export type SortingConfig = "none" | "weapon" | "armor";
 
 export type SortingConfigAction = {
     value: SortingConfig;
