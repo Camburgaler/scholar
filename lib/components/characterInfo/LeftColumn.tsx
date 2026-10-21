@@ -17,7 +17,7 @@ import { ringsAttributeModifiers } from "@/lib/scripts/equippedRings";
 import { getSpellByName } from "@/lib/scripts/spell";
 import { calculateStatDisplayValue } from "@/lib/scripts/statCalculation";
 import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { Lock, Trash, Unlock } from "react-bootstrap-icons";
 import { JSX } from "react/jsx-runtime";
 
@@ -60,22 +60,22 @@ export default function LeftColumn(): JSX.Element {
     });
 
     // Final attributes are the optimal class's attributes after leveling up
-    const [finalAttributes, setFinalAttributes] = useState<
-        AttributeMap<number>
-    >({
-        Vigor: 0,
-        Endurance: 0,
-        Vitality: 0,
-        Adaptability: 0,
-        Strength: 0,
-        Dexterity: 0,
-        Intelligence: 0,
-        Faith: 0,
-        Attunement: 0,
-    });
+    // const [finalAttributes, setFinalAttributes] = useState<
+    //     AttributeMap<number>
+    // >({
+    //     Vigor: 0,
+    //     Endurance: 0,
+    //     Vitality: 0,
+    //     Adaptability: 0,
+    //     Strength: 0,
+    //     Dexterity: 0,
+    //     Intelligence: 0,
+    //     Faith: 0,
+    //     Attunement: 0,
+    // });
 
     // Optimal class is the class with the lowest delta
-    const [optimalClass, setOptimalClass] = useState<Class>(Classes[0] ?? {});
+    // const [optimalClass, setOptimalClass] = useState<Class>(Classes[0] ?? {});
 
     // Delta is the difference between the desired stats and the class' stats
     const delta = useCallback(
@@ -143,16 +143,12 @@ export default function LeftColumn(): JSX.Element {
             c.sortingValue = calculateTotalSoulCost(c);
             return c;
         }).sort((a: Class, b: Class) => a.sortingValue! - b.sortingValue!);
-    }, [delta, calculateTotalSoulCost]);
+    }, [calculateTotalSoulCost]);
 
     // Sorted classes are the classes sorted by ascending delta
-    const [sorted, setSorted] = useState<Class[]>(sortClasses());
-
-    // Souls to next level
-    const [soulsToNextLevel, setSoulsToNextLevel] = useState(0);
-
-    // Total soul cost
-    const [totalSoulCost, setTotalSoulCost] = useState(0);
+    // const [sorted, setSorted] = useState<Class[]>(sortClasses());
+    const sorted = sortClasses();
+    const optimalClass = sorted[0];
 
     // Covenant
     const [covenant, setCovenant] = useState("None");
@@ -167,7 +163,14 @@ export default function LeftColumn(): JSX.Element {
 
     // Spell Slots
     // This is the number of spell slots granted by the virtual attributes
-    const [spellSlots, setSpellSlots] = useState(0);
+    // const [spellSlots, setSpellSlots] = useState(0);
+    const spellSlots = calculateStatDisplayValue(
+        "SpellSlotCount",
+        virtualAttributes,
+        equippedArmorSet,
+        equippedRings,
+        equippedWeapons,
+    );
 
     // Equipped Spells
     // This is a list of spells that are currently equipped
@@ -188,7 +191,7 @@ export default function LeftColumn(): JSX.Element {
     function updateDesiredAttributes(statId: string, value: number): void {
         setDesiredAttributes({
             ...desiredAttributes,
-            [statId]: Math.min(Math.max(value, 0), 99),
+            [statId]: Math.min(Math.max(value, 0), 99) as number,
         });
     }
 
@@ -229,23 +232,31 @@ export default function LeftColumn(): JSX.Element {
         return classLocked ? getClassByName(selectedClass)! : optimalClass;
     }, [classLocked, selectedClass, optimalClass]);
 
+    // Souls to next level
+    // const [soulsToNextLevel, setSoulsToNextLevel] = useState(0);
+    const soulsToNextLevel = calculateSoulsToNextLevel(effectiveClass());
+
+    // Total soul cost
+    // const [totalSoulCost, setTotalSoulCost] = useState(0);
+    const totalSoulCost = calculateTotalSoulCost(effectiveClass());
+
     // EFFECTS
 
     // Calculates the optimal class when the sorted classes change.
-    useEffect(() => {
-        // calculate best class
-        setOptimalClass(sorted[0]);
-    }, [sorted]);
+    // useEffect(() => {
+    //     // calculate best class
+    //     setOptimalClass(sorted[0]);
+    // }, [sorted]);
 
     // Sorts the classes when the final stats change.
-    useEffect(() => {
-        setSorted(sortClasses());
-    }, [finalAttributes, sortClasses]);
+    // useEffect(() => {
+    //     setSorted(sortClasses());
+    // }, [finalAttributes, sortClasses]);
 
     // Updates the final stats and virtual stats when the desired stats, effective class, or equipped armor set change.
-    useEffect(() => {
+    const finalAttributes: AttributeMap<number> = useMemo(() => {
         // calculate final stats
-        let tempFinal: AttributeMap<number> = {
+        const tempFinal: AttributeMap<number> = {
             Vigor: 0,
             Endurance: 0,
             Vitality: 0,
@@ -256,7 +267,7 @@ export default function LeftColumn(): JSX.Element {
             Faith: 0,
             Attunement: 0,
         };
-        let tempVirtual: AttributeMap<number> = {
+        const tempVirtual: AttributeMap<number> = {
             Vigor: 0,
             Endurance: 0,
             Vitality: 0,
@@ -283,22 +294,23 @@ export default function LeftColumn(): JSX.Element {
                 }
             },
         );
-        setFinalAttributes(tempFinal);
+        // setFinalAttributes(tempFinal);
         setVirtualAttributes(
             new Map(Object.entries(tempVirtual) as [AttributeMapKey, number][]),
         );
+        return tempFinal;
     }, [desiredAttributes, equippedArmorSet, effectiveClass, equippedRings]);
 
     // Updates the souls to next level and total soul cost when the final attributes change.
-    useEffect(() => {
-        setSoulsToNextLevel(calculateSoulsToNextLevel(effectiveClass()));
-        setTotalSoulCost(calculateTotalSoulCost(effectiveClass()));
-    }, [
-        effectiveClass,
-        calculateSoulsToNextLevel,
-        calculateTotalSoulCost,
-        finalAttributes,
-    ]);
+    // useEffect(() => {
+    //     // setSoulsToNextLevel(calculateSoulsToNextLevel(effectiveClass()));
+    //     // setTotalSoulCost(calculateTotalSoulCost(effectiveClass()));
+    // }, [
+    //     effectiveClass,
+    //     calculateSoulsToNextLevel,
+    //     calculateTotalSoulCost,
+    //     finalAttributes,
+    // ]);
 
     // Sets selected class if classLocked is false
     useEffect(() => {
@@ -308,17 +320,17 @@ export default function LeftColumn(): JSX.Element {
     }, [optimalClass, classLocked]);
 
     // Updates the spell slots when the virtual attributes change.
-    useEffect(() => {
-        setSpellSlots(
-            calculateStatDisplayValue(
-                "SpellSlotCount",
-                virtualAttributes,
-                equippedArmorSet,
-                equippedRings,
-                equippedWeapons,
-            ),
-        );
-    }, [virtualAttributes, equippedArmorSet, equippedRings]);
+    // useEffect(() => {
+    //     setSpellSlots(
+    //         calculateStatDisplayValue(
+    //             "SpellSlotCount",
+    //             virtualAttributes,
+    //             equippedArmorSet,
+    //             equippedRings,
+    //             equippedWeapons,
+    //         ),
+    //     );
+    // }, [virtualAttributes, equippedArmorSet, equippedRings]);
 
     // Updates the consumed spell slots when the spell slots change.
     useEffect(() => {
@@ -450,7 +462,7 @@ export default function LeftColumn(): JSX.Element {
                                         onChange={(e) =>
                                             updateDesiredAttributes(
                                                 attributeId as AttributeMapKey,
-                                                parseInt(e.target.value),
+                                                parseInt(e.target.value) || 0,
                                             )
                                         }
                                     />

@@ -111,6 +111,7 @@ export default function WeaponSorting() {
 
     // State
     const weaponData = useMemo(() => {
+        // TODO: Implement durability/repair cost filters
         let rows: WeaponAttackRow[] = [];
         const effectiveAttributes: AttributeMap<number> = {
             ...virtualAttributes,

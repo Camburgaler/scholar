@@ -1,4 +1,5 @@
 import { ArmorSetKey } from "@/lib/classes/armorSet";
+import EquippedArmor from "@/lib/classes/equippedArmor";
 import { Chestpieces, Gauntlets, Helmets, Leggings } from "@/lib/gameData";
 import { useVirtualAttributes } from "@/lib/reducers/attributes/virtualAttributes";
 import {
@@ -6,7 +7,7 @@ import {
     useEquippedArmorSetDispatch,
 } from "@/lib/reducers/equipment/equippedArmorSet";
 import { filterArmor, getArmorByName } from "@/lib/scripts/armor";
-import { JSX, useEffect } from "react";
+import { JSX } from "react";
 
 // TODO: add a lock toggle to this similar to the one for the starting class
 //    the lock would control how the armor optimization behaves
@@ -44,22 +45,23 @@ export function ArmorDisplay(props: {
     const slot: ArmorSetKey = label.toLowerCase() as ArmorSetKey;
 
     // Effects
-    useEffect(() => {
-        // when the virtual attributes change, if the new attributes don't meet the current armor requirements, unequip the armor
-        if (
-            !filterArmor(armorList, virtualAttributes).some(
-                (armor) => armor === equippedArmorSet.getArmor(slot).data,
-            )
-        ) {
-            setEquippedArmor({
-                slot: slot,
-                equippedArmor: {
-                    data: armorList[0],
-                    reinforcementLevel: 0,
-                },
-            });
-        }
-    }, [virtualAttributes]);
+    // const equippedArmor = useMemo(() => {
+    // when the virtual attributes change, if the new attributes don't meet the current armor requirements, unequip the armor
+    if (
+        !filterArmor(armorList, virtualAttributes).some(
+            (armor) => armor === equippedArmorSet.getArmor(slot).data,
+        )
+    ) {
+        setEquippedArmor({
+            slot: slot,
+            // equippedArmor: {
+            //     data: armorList[0],
+            //     reinforcementLevel: 0,
+            // },
+            equippedArmor: new EquippedArmor(armorList[0]),
+        });
+    }
+    // }, [virtualAttributes]);
 
     // TODO: add on-hover tooltip that shows the stats of the currently equipped armor
     // TODO: add graph of normal distribution of armor stats and where the currently equipped armor falls on that distribution
@@ -86,10 +88,13 @@ export function ArmorDisplay(props: {
                     onChange={(e) =>
                         setEquippedArmor({
                             slot: slot,
-                            equippedArmor: {
-                                data: getArmorByName(armorList, e.target.value),
-                                reinforcementLevel: 0,
-                            },
+                            // equippedArmor: {
+                            //     data: getArmorByName(armorList, e.target.value),
+                            //     reinforcementLevel: 0,
+                            // },
+                            equippedArmor: new EquippedArmor(
+                                getArmorByName(armorList, e.target.value),
+                            ),
                         })
                     }
                 >
@@ -105,17 +110,22 @@ export function ArmorDisplay(props: {
                     onChange={(e) =>
                         setEquippedArmor({
                             slot: slot,
-                            equippedArmor: {
-                                data: equippedArmorSet.getArmor(slot).data,
-                                reinforcementLevel: Number(e.target.value),
-                            },
+                            // equippedArmor: {
+                            //     data: equippedArmorSet.getArmor(slot).data,
+                            //     reinforcementLevel: Number(e.target.value),
+                            // },
+                            equippedArmor:
+                                EquippedArmor.newWithReinforcementLevel(
+                                    equippedArmorSet.getArmor(slot).data,
+                                    Number(e.target.value),
+                                ),
                         })
                     }
                 >
                     {[
                         ...Array(
-                            equippedArmorSet.getArmor(slot).data
-                                .MaxReinforcementLevel + 1,
+                            equippedArmorSet.getArmor(slot)
+                                .maxReinforcementLevel + 1,
                         ),
                     ].map((_, index) => (
                         <option key={index} value={index}>

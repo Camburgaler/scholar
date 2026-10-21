@@ -1,7 +1,7 @@
+import EquippedArmor from "@/lib/classes/equippedArmor";
 import ModifierDisplay from "@/lib/components/characterInfo/rightColumn/modifierDisplay";
 import { Chestpieces, Gauntlets, Helmets, Leggings } from "@/lib/gameData";
 import Armor from "@/lib/interfaces/armor";
-import EquippedArmor from "@/lib/interfaces/equippedArmor";
 import Modifier from "@/lib/interfaces/modifier";
 import { reinforcedValue } from "@/lib/scripts/slopeIntercept";
 import { AttributeMapKey } from "@/lib/types/attributeMap";
@@ -23,37 +23,27 @@ export type ArmorSetKey = "helmet" | "chestpiece" | "gauntlets" | "leggings";
 class ArmorSet {
     // MEMBERS
 
+    public fitness: number = 0;
+
     /**
      * @member {@link EquippedArmor} helmet - The helmet equipped in the armor set.
      */
-    public helmet: EquippedArmor = {
-        data: Helmets[0],
-        reinforcementLevel: 0,
-    };
+    public helmet = new EquippedArmor(Helmets[0]);
 
     /**
      * @member {@link EquippedArmor} chestpiece - The chestpiece equipped in the armor set.
      */
-    public chestpiece: EquippedArmor = {
-        data: Chestpieces[0],
-        reinforcementLevel: 0,
-    };
+    public chestpiece = new EquippedArmor(Chestpieces[0]);
 
     /**
      * @member {@link EquippedArmor} gauntlets - The gauntlets equipped in the armor set.
      */
-    public gauntlets: EquippedArmor = {
-        data: Gauntlets[0],
-        reinforcementLevel: 0,
-    };
+    public gauntlets = new EquippedArmor(Gauntlets[0]);
 
     /**
      * @member {@link EquippedArmor} leggings - The leggings equipped in the armor set.
      */
-    public leggings: EquippedArmor = {
-        data: Leggings[0],
-        reinforcementLevel: 0,
-    };
+    public leggings = new EquippedArmor(Leggings[0]);
 
     // STATIC METHODS
 
@@ -111,10 +101,10 @@ class ArmorSet {
         leggings: Armor,
     ): ArmorSet {
         const newArmorSet = new ArmorSet();
-        newArmorSet.helmet.data = helmet;
-        newArmorSet.chestpiece.data = chestpiece;
-        newArmorSet.gauntlets.data = gauntlets;
-        newArmorSet.leggings.data = leggings;
+        newArmorSet.helmet = new EquippedArmor(helmet);
+        newArmorSet.chestpiece = new EquippedArmor(chestpiece);
+        newArmorSet.gauntlets = new EquippedArmor(gauntlets);
+        newArmorSet.leggings = new EquippedArmor(leggings);
         return newArmorSet;
     }
 
@@ -176,10 +166,10 @@ class ArmorSet {
      */
     public get weight(): number {
         return (
-            this.helmet.data.Weight +
-            this.chestpiece.data.Weight +
-            this.gauntlets.data.Weight +
-            this.leggings.data.Weight
+            this.helmet.weight +
+            this.chestpiece.weight +
+            this.gauntlets.weight +
+            this.leggings.weight
         );
     }
 
@@ -189,13 +179,13 @@ class ArmorSet {
      * @returns The sum of the defense values for the given field.
      */
     public defense(defenseField: DefenseMapKey): number {
-        const helmetDefense = this.helmet.data.Defenses[defenseField];
+        const helmetDefense = this.helmet.defenses[defenseField];
         const helmetReinforcementLevel = this.helmet.reinforcementLevel;
-        const chestpieceDefense = this.chestpiece.data.Defenses[defenseField];
+        const chestpieceDefense = this.chestpiece.defenses[defenseField];
         const chestpieceReinforcementLevel = this.chestpiece.reinforcementLevel;
-        const gauntletsDefense = this.gauntlets.data.Defenses[defenseField];
+        const gauntletsDefense = this.gauntlets.defenses[defenseField];
         const gauntletsReinforcementLevel = this.gauntlets.reinforcementLevel;
-        const leggingsDefense = this.leggings.data.Defenses[defenseField];
+        const leggingsDefense = this.leggings.defenses[defenseField];
         const leggingsReinforcementLevel = this.leggings.reinforcementLevel;
 
         return (
@@ -212,16 +202,14 @@ class ArmorSet {
      * @returns The sum of the resistance values for the given field.
      */
     public resistance(resistanceField: ResistanceMapKey): number {
-        const helmetResistance = this.helmet.data.Resistances[resistanceField];
+        const helmetResistance = this.helmet.resistances[resistanceField];
         const helmetReinforcementLevel = this.helmet.reinforcementLevel;
         const chestpieceResistance =
-            this.chestpiece.data.Resistances[resistanceField];
+            this.chestpiece.resistances[resistanceField];
         const chestpieceReinforcementLevel = this.chestpiece.reinforcementLevel;
-        const gauntletsResistance =
-            this.gauntlets.data.Resistances[resistanceField];
+        const gauntletsResistance = this.gauntlets.resistances[resistanceField];
         const gauntletsReinforcementLevel = this.gauntlets.reinforcementLevel;
-        const leggingsResistance =
-            this.leggings.data.Resistances[resistanceField];
+        const leggingsResistance = this.leggings.resistances[resistanceField];
         const leggingsReinforcementLevel = this.leggings.reinforcementLevel;
 
         return (
@@ -242,10 +230,10 @@ class ArmorSet {
      */
     public poise(): number {
         return (
-            this.helmet.data.Poise +
-            this.chestpiece.data.Poise +
-            this.gauntlets.data.Poise +
-            this.leggings.data.Poise
+            this.helmet.poise +
+            this.chestpiece.poise +
+            this.gauntlets.poise +
+            this.leggings.poise
         );
     }
 
@@ -256,10 +244,10 @@ class ArmorSet {
      */
     public itemDiscovery(): number {
         return (
-            this.helmet.data.ItemDiscovery +
-            this.chestpiece.data.ItemDiscovery +
-            this.gauntlets.data.ItemDiscovery +
-            this.leggings.data.ItemDiscovery
+            this.helmet.itemDiscovery +
+            this.chestpiece.itemDiscovery +
+            this.gauntlets.itemDiscovery +
+            this.leggings.itemDiscovery
         );
     }
 
@@ -272,88 +260,88 @@ class ArmorSet {
         let activeEffects: JSX.Element[] = [];
         let isOddRow = true;
 
-        this.helmet.data.Modifiers.forEach((modifier) => {
+        this.helmet.modifiers.forEach((modifier) => {
             activeEffects.push(
                 <ModifierDisplay
                     description={modifier.Description}
-                    equipmentName={this.helmet.data.Name}
+                    equipmentName={this.helmet.name}
                     isOddRow={isOddRow}
                 />,
             );
             isOddRow = !isOddRow;
         });
 
-        if (this.helmet.data.ItemDiscovery > 0) {
+        if (this.helmet.itemDiscovery > 0) {
             activeEffects.push(
                 <ModifierDisplay
-                    description={`Increase Item Discovery by ${this.helmet.data.ItemDiscovery}`}
-                    equipmentName={this.helmet.data.Name}
+                    description={`Increase Item Discovery by ${this.helmet.itemDiscovery}`}
+                    equipmentName={this.helmet.name}
                     isOddRow={isOddRow}
                 />,
             );
             isOddRow = !isOddRow;
         }
 
-        this.chestpiece.data.Modifiers.forEach((modifier) => {
+        this.chestpiece.modifiers.forEach((modifier) => {
             activeEffects.push(
                 <ModifierDisplay
                     description={modifier.Description}
-                    equipmentName={this.chestpiece.data.Name}
+                    equipmentName={this.chestpiece.name}
                     isOddRow={isOddRow}
                 />,
             );
             isOddRow = !isOddRow;
         });
 
-        if (this.chestpiece.data.ItemDiscovery > 0) {
+        if (this.chestpiece.itemDiscovery > 0) {
             activeEffects.push(
                 <ModifierDisplay
-                    description={`Increase Item Discovery by ${this.chestpiece.data.ItemDiscovery}`}
-                    equipmentName={this.chestpiece.data.Name}
+                    description={`Increase Item Discovery by ${this.chestpiece.itemDiscovery}`}
+                    equipmentName={this.chestpiece.name}
                     isOddRow={isOddRow}
                 />,
             );
             isOddRow = !isOddRow;
         }
 
-        this.gauntlets.data.Modifiers.forEach((modifier) => {
+        this.gauntlets.modifiers.forEach((modifier) => {
             activeEffects.push(
                 <ModifierDisplay
                     description={modifier.Description}
-                    equipmentName={this.gauntlets.data.Name}
+                    equipmentName={this.gauntlets.name}
                     isOddRow={isOddRow}
                 />,
             );
             isOddRow = !isOddRow;
         });
 
-        if (this.gauntlets.data.ItemDiscovery > 0) {
+        if (this.gauntlets.itemDiscovery > 0) {
             activeEffects.push(
                 <ModifierDisplay
-                    description={`Increase Item Discovery by ${this.gauntlets.data.ItemDiscovery}`}
-                    equipmentName={this.gauntlets.data.Name}
+                    description={`Increase Item Discovery by ${this.gauntlets.itemDiscovery}`}
+                    equipmentName={this.gauntlets.name}
                     isOddRow={isOddRow}
                 />,
             );
             isOddRow = !isOddRow;
         }
 
-        this.leggings.data.Modifiers.forEach((modifier) => {
+        this.leggings.modifiers.forEach((modifier) => {
             activeEffects.push(
                 <ModifierDisplay
                     description={modifier.Description}
-                    equipmentName={this.leggings.data.Name}
+                    equipmentName={this.leggings.name}
                     isOddRow={isOddRow}
                 />,
             );
             isOddRow = !isOddRow;
         });
 
-        if (this.leggings.data.ItemDiscovery > 0) {
+        if (this.leggings.itemDiscovery > 0) {
             activeEffects.push(
                 <ModifierDisplay
-                    description={`Increase Item Discovery by ${this.leggings.data.ItemDiscovery}`}
-                    equipmentName={this.leggings.data.Name}
+                    description={`Increase Item Discovery by ${this.leggings.itemDiscovery}`}
+                    equipmentName={this.leggings.name}
                     isOddRow={isOddRow}
                 />,
             );
@@ -371,19 +359,19 @@ class ArmorSet {
     public activeEffects(): Modifier[] {
         let activeEffects: Modifier[] = [];
 
-        this.helmet.data.Modifiers.forEach((modifier) => {
+        this.helmet.modifiers.forEach((modifier) => {
             activeEffects.push(modifier);
         });
 
-        this.chestpiece.data.Modifiers.forEach((modifier) => {
+        this.chestpiece.modifiers.forEach((modifier) => {
             activeEffects.push(modifier);
         });
 
-        this.gauntlets.data.Modifiers.forEach((modifier) => {
+        this.gauntlets.modifiers.forEach((modifier) => {
             activeEffects.push(modifier);
         });
 
-        this.leggings.data.Modifiers.forEach((modifier) => {
+        this.leggings.modifiers.forEach((modifier) => {
             activeEffects.push(modifier);
         });
 
@@ -419,37 +407,32 @@ class ArmorSet {
      * @returns {number} The total thrust defense of the armor set.
      */
     public thrustDefense(physicalDefense: number): number {
-        const helmet = this.helmet.data;
-        const chestpiece = this.chestpiece.data;
-        const gauntlets = this.gauntlets.data;
-        const leggings = this.leggings.data;
-
         const reinforcedThrustHelmet = reinforcedValue(
-            helmet.Defenses.Thrust,
+            this.helmet.defenses.Thrust,
             this.helmet.reinforcementLevel,
         );
         const reinforcedThrustChestpiece = reinforcedValue(
-            chestpiece.Defenses.Thrust,
+            this.chestpiece.defenses.Thrust,
             this.chestpiece.reinforcementLevel,
         );
         const reinforcedThrustGauntlets = reinforcedValue(
-            gauntlets.Defenses.Thrust,
+            this.gauntlets.defenses.Thrust,
             this.gauntlets.reinforcementLevel,
         );
         const reinforcedThrustLeggings = reinforcedValue(
-            leggings.Defenses.Thrust,
+            this.leggings.defenses.Thrust,
             this.leggings.reinforcementLevel,
         );
 
         return (
             reinforcedThrustHelmet +
-            physicalDefense * helmet.DefenseScalingPhysical +
+            physicalDefense * this.helmet.defenseScalingPhysical +
             reinforcedThrustChestpiece +
-            physicalDefense * chestpiece.DefenseScalingPhysical +
+            physicalDefense * this.chestpiece.defenseScalingPhysical +
             reinforcedThrustGauntlets +
-            physicalDefense * gauntlets.DefenseScalingPhysical +
+            physicalDefense * this.gauntlets.defenseScalingPhysical +
             reinforcedThrustLeggings +
-            physicalDefense * leggings.DefenseScalingPhysical
+            physicalDefense * this.leggings.defenseScalingPhysical
         );
     }
 
@@ -460,37 +443,32 @@ class ArmorSet {
      * @returns {number} The total slash defense of the armor set.
      */
     public slashDefense(physicalDefense: number): number {
-        const helmet = this.helmet.data;
-        const chestpiece = this.chestpiece.data;
-        const gauntlets = this.gauntlets.data;
-        const leggings = this.leggings.data;
-
         const reinforcedSlashHelmet = reinforcedValue(
-            helmet.Defenses.Slash,
+            this.helmet.defenses.Slash,
             this.helmet.reinforcementLevel,
         );
         const reinforcedSlashChestpiece = reinforcedValue(
-            chestpiece.Defenses.Slash,
+            this.chestpiece.defenses.Slash,
             this.chestpiece.reinforcementLevel,
         );
         const reinforcedSlashGauntlets = reinforcedValue(
-            gauntlets.Defenses.Slash,
+            this.gauntlets.defenses.Slash,
             this.gauntlets.reinforcementLevel,
         );
         const reinforcedSlashLeggings = reinforcedValue(
-            leggings.Defenses.Slash,
+            this.leggings.defenses.Slash,
             this.leggings.reinforcementLevel,
         );
 
         return (
             reinforcedSlashHelmet +
-            physicalDefense * helmet.DefenseScalingPhysical +
+            physicalDefense * this.helmet.defenseScalingPhysical +
             reinforcedSlashChestpiece +
-            physicalDefense * chestpiece.DefenseScalingPhysical +
+            physicalDefense * this.chestpiece.defenseScalingPhysical +
             reinforcedSlashGauntlets +
-            physicalDefense * gauntlets.DefenseScalingPhysical +
+            physicalDefense * this.gauntlets.defenseScalingPhysical +
             reinforcedSlashLeggings +
-            physicalDefense * leggings.DefenseScalingPhysical
+            physicalDefense * this.leggings.defenseScalingPhysical
         );
     }
 
@@ -501,43 +479,33 @@ class ArmorSet {
      * @returns {number} The total strike defense of the armor set.
      */
     public strikeDefense(physicalDefense: number): number {
-        const helmet = this.helmet.data;
-        const chestpiece = this.chestpiece.data;
-        const gauntlets = this.gauntlets.data;
-        const leggings = this.leggings.data;
-
         const reinforcedStrikeHelmet = reinforcedValue(
-            helmet.Defenses.Strike,
+            this.helmet.defenses.Strike,
             this.helmet.reinforcementLevel,
         );
         const reinforcedStrikeChestpiece = reinforcedValue(
-            chestpiece.Defenses.Strike,
+            this.chestpiece.defenses.Strike,
             this.chestpiece.reinforcementLevel,
         );
         const reinforcedStrikeGauntlets = reinforcedValue(
-            gauntlets.Defenses.Strike,
+            this.gauntlets.defenses.Strike,
             this.gauntlets.reinforcementLevel,
         );
         const reinforcedStrikeLeggings = reinforcedValue(
-            leggings.Defenses.Strike,
+            this.leggings.defenses.Strike,
             this.leggings.reinforcementLevel,
         );
 
         return (
             reinforcedStrikeHelmet +
-            physicalDefense * helmet.DefenseScalingPhysical +
+            physicalDefense * this.helmet.defenseScalingPhysical +
             reinforcedStrikeChestpiece +
-            physicalDefense * chestpiece.DefenseScalingPhysical +
+            physicalDefense * this.chestpiece.defenseScalingPhysical +
             reinforcedStrikeGauntlets +
-            physicalDefense * gauntlets.DefenseScalingPhysical +
+            physicalDefense * this.gauntlets.defenseScalingPhysical +
             reinforcedStrikeLeggings +
-            physicalDefense * leggings.DefenseScalingPhysical
+            physicalDefense * this.leggings.defenseScalingPhysical
         );
-    }
-
-    public fitness(): number {
-        // TODO: Implement fitness calculation
-        return 0;
     }
 }
 

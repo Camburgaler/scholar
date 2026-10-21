@@ -13,7 +13,7 @@ import {
     StatMapKeys,
     StatMapKeyToStatNameMap,
 } from "@/lib/types/statMap";
-import { useEffect, useState } from "react";
+import { useMemo } from "react";
 import { JSX } from "react/jsx-runtime";
 
 // StatDisplayKey is a type that represents a key for a stat display.
@@ -118,11 +118,12 @@ export default function StatDisplay(props: {
     const twoHanding = useTwoHanding();
 
     // State
-    const [isFocused, setIsFocused] = useState(false);
-    const [displayValue, setDisplayValue] = useState(0);
+    // const [isFocused, setIsFocused] = useState(false);
+    // const [displayValue, setDisplayValue] = useState(0);
 
     // Constants
     const statMapKey = mapDisplayKeyToStatMapKey(statDisplayKey);
+    const isFocused = AttributeToStatMap[focusedAttribute!]?.[statMapKey]!;
     const label = mapStatDisplayKeyToLabel(statDisplayKey);
     // TODO: Convert to map?
     const textColor =
@@ -154,12 +155,12 @@ export default function StatDisplay(props: {
                         : "";
 
     // determines if the focused attribute affects this stat
-    useEffect(() => {
-        setIsFocused(AttributeToStatMap[focusedAttribute!]?.[statMapKey]!);
-    }, [focusedAttribute]);
+    // useEffect(() => {
+    //     setIsFocused(AttributeToStatMap[focusedAttribute!]?.[statMapKey]!);
+    // }, [focusedAttribute]);
 
     // updates the display value
-    useEffect(() => {
+    const displayValue = useMemo(() => {
         let attributes: AttributeMap<number> = { ...virtualAttributes };
         if (twoHanding && statDisplayKey === "PhysicalAttackPowerByStrength") {
             attributes.Strength = Math.floor(attributes.Strength * 1.5);
@@ -178,7 +179,9 @@ export default function StatDisplay(props: {
         }
 
         // TODO: Research whether stats can be negative. If so, which ones? How?
-        setDisplayValue(displayValue);
+        // setDisplayValue(displayValue);
+
+        return displayValue;
     }, [
         virtualAttributes,
         equippedArmorSet,

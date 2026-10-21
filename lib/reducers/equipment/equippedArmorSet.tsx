@@ -1,5 +1,5 @@
 import ArmorSet from "@/lib/classes/armorSet";
-import EquippedArmor from "@/lib/interfaces/equippedArmor";
+import EquippedArmor from "@/lib/classes/equippedArmor";
 import { ActionDispatch, createContext, useContext, useReducer } from "react";
 
 /**

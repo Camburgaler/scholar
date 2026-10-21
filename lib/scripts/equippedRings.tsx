@@ -48,7 +48,7 @@ export function ringsAttributeModifiers(
  * @returns The modifier displays of the rings. Array of {@link ModifierDisplay}
  */
 export function ringsModifierDisplays(rings: EquippedRings): JSX.Element[] {
-    let activeEffects: JSX.Element[] = [];
+    const activeEffects: JSX.Element[] = [];
     let isOddRow = true;
 
     rings[0].Modifiers.forEach((modifier) => {
