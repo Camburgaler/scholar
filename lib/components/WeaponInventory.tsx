@@ -24,10 +24,10 @@ export default function WeaponInventory(): JSX.Element {
 
     // Constants
     const allWeapons: EquippedWeapon[] = Weapons.flatMap((weapon) => {
-        let infusedWeapons: EquippedWeapon[] = [];
+        const infusedWeapons: EquippedWeapon[] = [];
 
         weapon.Infusions.forEach((infusion) => {
-            let infusedWeapon = EquippedWeapon.fromWeapon(weapon);
+            const infusedWeapon = EquippedWeapon.fromWeapon(weapon);
             infusedWeapon.infusionKey = infusion.Name as InfusionMapKey;
             infusedWeapons.push(infusedWeapon);
         });
