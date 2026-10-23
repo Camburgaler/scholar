@@ -118,45 +118,32 @@ export default function StatDisplay(props: {
     const twoHanding = useTwoHanding();
 
     // State
-    const [isFocused, setIsFocused] = useState(false);
     const [displayValue, setDisplayValue] = useState(0);
 
     // Constants
     const statMapKey = mapDisplayKeyToStatMapKey(statDisplayKey);
     const label = mapStatDisplayKeyToLabel(statDisplayKey);
-    // TODO: Convert to map?
-    const textColor =
-        statDisplayKey === "Defense" ||
-        statDisplayKey === "DefenseSlash" ||
-        statDisplayKey === "DefenseStrike" ||
-        statDisplayKey === "DefenseThrust" ||
-        statDisplayKey === "PhysicalAttackPowerByStrength" ||
-        statDisplayKey === "PhysicalAttackPowerByDexterity"
-            ? "var(--physical)"
-            : statDisplayKey === "AbsorptionMagic" ||
-                statDisplayKey === "AttackPowerMagic"
-              ? "var(--magic)"
-              : statDisplayKey === "AbsorptionFire" ||
-                  statDisplayKey === "AttackPowerFire"
-                ? "var(--fire)"
-                : statDisplayKey === "AbsorptionLightning" ||
-                    statDisplayKey === "AttackPowerLightning"
-                  ? "var(--lightning)"
-                  : statDisplayKey === "AbsorptionDark" ||
-                      statDisplayKey === "AttackPowerDark"
-                    ? "var(--dark)"
-                    : statDisplayKey === "ResistancePoison" ||
-                        statDisplayKey === "AttackPowerPoison"
-                      ? "var(--poison)"
-                      : statDisplayKey === "ResistanceBleed" ||
-                          statDisplayKey === "AttackPowerBleed"
-                        ? "var(--bleed)"
-                        : "";
-
-    // determines if the focused attribute affects this stat
-    useEffect(() => {
-        setIsFocused(AttributeToStatMap[focusedAttribute!]?.[statMapKey]!);
-    }, [focusedAttribute]);
+    const textColorMap = new Map<StatDisplayKey, string>([
+        ["Defense", "var(--physical)"],
+        ["DefenseSlash", "var(--physical)"],
+        ["DefenseStrike", "var(--physical)"],
+        ["DefenseThrust", "var(--physical)"],
+        ["PhysicalAttackPowerByStrength", "var(--physical)"],
+        ["PhysicalAttackPowerByDexterity", "var(--physical)"],
+        ["AbsorptionMagic", "var(--magic)"],
+        ["AttackPowerMagic", "var(--magic)"],
+        ["AbsorptionFire", "var(--fire)"],
+        ["AttackPowerFire", "var(--fire)"],
+        ["AbsorptionLightning", "var(--lightning)"],
+        ["AttackPowerLightning", "var(--lightning)"],
+        ["AbsorptionDark", "var(--dark)"],
+        ["AttackPowerDark", "var(--dark)"],
+        ["ResistancePoison", "var(--poison)"],
+        ["AttackPowerPoison", "var(--poison)"],
+        ["ResistanceBleed", "var(--bleed)"],
+        ["AttackPowerBleed", "var(--bleed)"],
+    ]);
+    const isFocused = AttributeToStatMap[focusedAttribute!]?.[statMapKey]!;
 
     // updates the display value
     useEffect(() => {
@@ -177,7 +164,6 @@ export default function StatDisplay(props: {
             displayValue = Math.floor(displayValue);
         }
 
-        // TODO: Research whether stats can be negative. If so, which ones? How?
         setDisplayValue(displayValue);
     }, [
         virtualAttributes,
@@ -200,7 +186,7 @@ export default function StatDisplay(props: {
         >
             <label
                 className="flex items-center justify-center h-full"
-                style={{ color: textColor }}
+                style={{ color: textColorMap.get(statDisplayKey) || "" }}
                 htmlFor={statDisplayKey}
             >
                 {label}:
