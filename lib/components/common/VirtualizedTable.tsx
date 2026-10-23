@@ -29,6 +29,9 @@ export default function VirtualizedTable<T>({
     maxHeight = "32rem",
     emptyMessage = "No results found.",
 }: VirtualizedTableProps<T>) {
+    // Skipping automatic memoization because Tanstack Virtual is incompatible
+    "use no memo";
+
     const scrollContainerRef = useRef<HTMLDivElement>(null);
 
     const [sort, setSort] = useState<SortState | null>(initialSort ?? null);
@@ -56,7 +59,8 @@ export default function VirtualizedTable<T>({
         });
     }, [data, columns, sort]);
 
-    const rowVirtualizer = useVirtualizer({
+    // prettier-ignore
+    const rowVirtualizer = useVirtualizer({ // eslint-disable-line react-hooks/incompatible-library
         count: sortedData.length,
         getScrollElement: () => scrollContainerRef.current,
         estimateSize: () => rowHeight,
