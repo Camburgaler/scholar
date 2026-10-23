@@ -1,5 +1,3 @@
-import Modifier from "@/lib/interfaces/modifier";
-
 /**
  * @type StatMapKey
  * @description The key type for the {@link StatMap}.
@@ -112,7 +110,7 @@ export const StatMapKeyToStatNameMap: Map<StatMapKey, string> = new Map<
 ]);
 
 /**
- * A map of {@link Modifier} targets to their corresponding {@link StatMapKey}.
+ * A map of Modifier targets to their corresponding {@link StatMapKey}.
  */
 export const ModifierTargetToStatMapKey: Map<string, StatMapKey> = new Map<
     string,
