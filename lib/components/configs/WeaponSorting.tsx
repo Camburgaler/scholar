@@ -111,7 +111,7 @@ export default function WeaponSorting() {
 
     // State
     const weaponData = useMemo(() => {
-        let rows: WeaponAttackRow[] = [];
+        const rows: WeaponAttackRow[] = [];
         const effectiveAttributes: AttributeMap<number> = {
             ...virtualAttributes,
             Strength: Math.floor(
@@ -147,7 +147,7 @@ export default function WeaponSorting() {
         });
 
         for (const weapon of filteredWeapons) {
-            let row: WeaponAttackRow = {
+            const row: WeaponAttackRow = {
                 weapon: weapon,
             } as WeaponAttackRow;
             let max = 0;
