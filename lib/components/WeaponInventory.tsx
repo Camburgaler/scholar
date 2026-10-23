@@ -11,7 +11,7 @@ import {
     useWeaponInventoryDispatch,
 } from "@/lib/reducers/equipment/weaponInventory";
 import { InfusionMapKey } from "@/lib/types/infusionMap";
-import { useEffect, useMemo } from "react";
+import { useEffect } from "react";
 import { ArrowUp, XLg } from "react-bootstrap-icons";
 import { JSX } from "react/jsx-runtime";
 
@@ -35,7 +35,7 @@ export default function WeaponInventory(): JSX.Element {
         return infusedWeapons;
     });
 
-    const defaultWeapon = useMemo(() => {
+    useEffect(() => {
         // If the "Vanquisher's Seal" ring is equipped, set the default weapon to "Fist (Vanquisher's Seal)"
         let isVanquishersSealEquipped = false;
         Object.entries(equippedRings).forEach(([_, ring]) => {
@@ -44,25 +44,24 @@ export default function WeaponInventory(): JSX.Element {
             }
         });
 
+        let defaultWeapon: EquippedWeapon;
         if (isVanquishersSealEquipped) {
-            return EquippedWeapon.fromWeapon(
+            defaultWeapon = EquippedWeapon.fromWeapon(
                 Weapons.find(
                     (weapon) => weapon.Name === "Fist (Vanquisher's Seal)",
                 )!,
             );
         } else {
-            return EquippedWeapon.fromWeapon(
+            defaultWeapon = EquippedWeapon.fromWeapon(
                 Weapons.find((weapon) => weapon.Name === "Fists")!,
             );
         }
-    }, [equippedRings]);
 
-    useEffect(() => {
         setWeaponInventory({
             action: "add",
             data: defaultWeapon,
         });
-    }, [defaultWeapon]);
+    }, [equippedRings, setWeaponInventory]);
 
     return (
         <div className="flex flex-col w-full h-full items-center justify-center align-center">
