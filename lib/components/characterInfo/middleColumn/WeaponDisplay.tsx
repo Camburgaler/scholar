@@ -78,21 +78,6 @@ export default function WeaponDisplay(props: {
     }, [vanquishersSeal, equippedWeapons, setEquippedWeapons, slot]);
 
     useEffect(() => {
-        // If the equipped weapon is removed from the inventory, set the equipped weapon to "Fists"
-        if (
-            getWeaponById(
-                weaponInventory,
-                equippedWeapons.getWeapon(slot).id,
-            ) === undefined
-        ) {
-            setEquippedWeapons({
-                slot: slot,
-                equippedWeapon: new EquippedWeapon(),
-            });
-        }
-    }, [weaponInventory, setEquippedWeapons, slot, equippedWeapons]);
-
-    useEffect(() => {
         // If a weapon is equipped that is not in the inventory, add it to the inventory
         if (
             getWeaponById(

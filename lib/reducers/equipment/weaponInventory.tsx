@@ -50,7 +50,7 @@ function WeaponInventoryReducer(
         }
 
         result.push(action.data);
-    } else if (action.action === "remove") {
+    } else {
         result.splice(result.indexOf(action.data), 1);
     }
 

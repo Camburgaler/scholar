@@ -7,6 +7,10 @@ import { Weapons } from "@/lib/gameData";
 import { useSortingConfigDispatch } from "@/lib/reducers/configs/sortingConfig";
 import { useEquippedRings } from "@/lib/reducers/equipment/equippedRings";
 import {
+    useEquippedWeapons,
+    useEquippedWeaponsDispatch,
+} from "@/lib/reducers/equipment/equippedWeapons";
+import {
     useWeaponInventory,
     useWeaponInventoryDispatch,
 } from "@/lib/reducers/equipment/weaponInventory";
@@ -21,6 +25,8 @@ export default function WeaponInventory(): JSX.Element {
     const setSortingConfig = useSortingConfigDispatch();
     const weaponInventory = useWeaponInventory();
     const setWeaponInventory = useWeaponInventoryDispatch();
+    const equippedWeapons = useEquippedWeapons();
+    const setEquippedWeapons = useEquippedWeaponsDispatch();
 
     // Constants
     const allWeapons: EquippedWeapon[] = Weapons.flatMap((weapon) => {
@@ -87,6 +93,13 @@ export default function WeaponInventory(): JSX.Element {
                                                 setWeaponInventory({
                                                     action: "remove",
                                                     data: item,
+                                                });
+                                                setEquippedWeapons({
+                                                    slot: equippedWeapons.getSlotById(
+                                                        item.id,
+                                                    )!,
+                                                    equippedWeapon:
+                                                        new EquippedWeapon(),
                                                 });
                                             }}
                                         >

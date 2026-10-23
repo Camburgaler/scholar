@@ -304,21 +304,19 @@ export default class WeaponSlots {
         return activeEffects;
     }
 
-    public isWeaponEquipped(id: UUID): WeaponEquipSlot | undefined {
-        if (this.leftPrimary.id === id) {
-            return "leftPrimary";
-        } else if (this.leftSecondary.id === id) {
-            return "leftSecondary";
-        } else if (this.leftTertiary.id === id) {
-            return "leftTertiary";
-        } else if (this.rightPrimary.id === id) {
-            return "rightPrimary";
-        } else if (this.rightSecondary.id === id) {
-            return "rightSecondary";
-        } else if (this.rightTertiary.id === id) {
-            return "rightTertiary";
-        } else {
-            return undefined;
-        }
+    public getSlotById(id: UUID): WeaponEquipSlot | undefined {
+        return this.leftPrimary.id === id
+            ? "leftPrimary"
+            : this.leftSecondary.id === id
+              ? "leftSecondary"
+              : this.leftTertiary.id === id
+                ? "leftTertiary"
+                : this.rightPrimary.id === id
+                  ? "rightPrimary"
+                  : this.rightSecondary.id === id
+                    ? "rightSecondary"
+                    : this.rightTertiary.id === id
+                      ? "rightTertiary"
+                      : undefined;
     }
 }
