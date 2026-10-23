@@ -13,7 +13,7 @@ import {
     StatMapKeys,
     StatMapKeyToStatNameMap,
 } from "@/lib/types/statMap";
-import { useEffect, useState } from "react";
+import { useMemo } from "react";
 import { JSX } from "react/jsx-runtime";
 
 // StatDisplayKey is a type that represents a key for a stat display.
@@ -117,9 +117,6 @@ export default function StatDisplay(props: {
     const equippedWeapons = useEquippedWeapons();
     const twoHanding = useTwoHanding();
 
-    // State
-    const [displayValue, setDisplayValue] = useState(0);
-
     // Constants
     const statMapKey = mapDisplayKeyToStatMapKey(statDisplayKey);
     const label = mapStatDisplayKeyToLabel(statDisplayKey);
@@ -143,11 +140,12 @@ export default function StatDisplay(props: {
         ["ResistanceBleed", "var(--bleed)"],
         ["AttackPowerBleed", "var(--bleed)"],
     ]);
-    const isFocused = AttributeToStatMap[focusedAttribute!]?.[statMapKey]!;
+    const isFocused =
+        AttributeToStatMap[focusedAttribute!]?.[statMapKey] || false;
 
     // updates the display value
-    useEffect(() => {
-        let attributes: AttributeMap<number> = { ...virtualAttributes };
+    const displayValue = useMemo(() => {
+        const attributes: AttributeMap<number> = { ...virtualAttributes };
         if (twoHanding && statDisplayKey === "PhysicalAttackPowerByStrength") {
             attributes.Strength = Math.floor(attributes.Strength * 1.5);
         }
@@ -164,7 +162,7 @@ export default function StatDisplay(props: {
             displayValue = Math.floor(displayValue);
         }
 
-        setDisplayValue(displayValue);
+        return displayValue;
     }, [
         virtualAttributes,
         equippedArmorSet,
