@@ -34,14 +34,14 @@ class EquippedWeapon {
     public static fromEquippedWeapon(
         equippedWeapon: EquippedWeapon,
     ): EquippedWeapon {
-        let equippedWeaponCopy = new EquippedWeapon();
+        const equippedWeaponCopy = new EquippedWeapon();
         equippedWeaponCopy.copyFrom(equippedWeapon);
 
         return equippedWeaponCopy;
     }
 
     public static fromWeapon(weapon: Weapon): EquippedWeapon {
-        let equippedWeapon = new EquippedWeapon();
+        const equippedWeapon = new EquippedWeapon();
         equippedWeapon._data = weapon;
 
         if (weapon.Name === "Fists") {
@@ -109,7 +109,7 @@ class EquippedWeapon {
     // PUBLIC METHODS
 
     public baseDamage(): AttackPowerTypeMap<number> {
-        let damages: AttackPowerTypeMap<number> = {
+        const damages: AttackPowerTypeMap<number> = {
             Physical: 0,
             Magic: 0,
             Lightning: 0,
@@ -150,7 +150,7 @@ class EquippedWeapon {
         equippedWeapons: WeaponSlots,
     ): AttackPowerTypeMap<number> {
         const baseDamage = this.baseDamage();
-        let damages: AttackPowerTypeMap<number> = {
+        const damages: AttackPowerTypeMap<number> = {
             Physical: 0,
             Magic: 0,
             Lightning: 0,
@@ -275,8 +275,8 @@ class EquippedWeapon {
         equippedArmor: ArmorSet,
         equippedRings: EquippedRings,
     ): AttackPowerTypeMap<number> {
-        let damages: AttackPowerTypeMap<number> = this.baseDamage();
-        let scaling: AttackPowerTypeMap<number> = this.scalingDamage(
+        const damages: AttackPowerTypeMap<number> = this.baseDamage();
+        const scaling: AttackPowerTypeMap<number> = this.scalingDamage(
             virtualAttributes,
             equippedArmor,
             equippedRings,
