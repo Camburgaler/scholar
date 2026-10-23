@@ -143,7 +143,7 @@ export default function LeftColumn(): JSX.Element {
             c.sortingValue = calculateTotalSoulCost(c);
             return c;
         }).sort((a: Class, b: Class) => a.sortingValue! - b.sortingValue!);
-    }, [delta, calculateTotalSoulCost]);
+    }, [calculateTotalSoulCost]);
 
     // Sorted classes are the classes sorted by ascending delta
     const [sorted, setSorted] = useState<Class[]>(sortClasses());
