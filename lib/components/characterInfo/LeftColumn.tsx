@@ -143,10 +143,9 @@ export default function LeftColumn(): JSX.Element {
     }, [calculateTotalSoulCost]);
 
     // Sorted classes are the classes sorted by ascending delta
-    const [sorted, setSorted] = useState<Class[]>(sortClasses());
+    const sorted = sortClasses();
 
     // Optimal class is the class with the lowest delta
-    // const [optimalClass, setOptimalClass] = useState<Class>(Classes[0] ?? {});
     const optimalClass = sorted[0];
 
     // Souls to next level
@@ -231,11 +230,6 @@ export default function LeftColumn(): JSX.Element {
     }, [classLocked, selectedClass, optimalClass]);
 
     // EFFECTS
-
-    // Sorts the classes when the final stats change.
-    useEffect(() => {
-        setSorted(sortClasses());
-    }, [finalAttributes, sortClasses]);
 
     // Updates the final stats and virtual stats when the desired stats, effective class, or equipped armor set change.
     useEffect(() => {
