@@ -11,7 +11,7 @@ import {
     useWeaponInventoryDispatch,
 } from "@/lib/reducers/equipment/weaponInventory";
 import { InfusionMapKey } from "@/lib/types/infusionMap";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo } from "react";
 import { ArrowUp, XLg } from "react-bootstrap-icons";
 import { JSX } from "react/jsx-runtime";
 
@@ -35,14 +35,7 @@ export default function WeaponInventory(): JSX.Element {
         return infusedWeapons;
     });
 
-    // State
-    const [defaultWeapon, setDefaultWeapon] = useState<EquippedWeapon>(
-        EquippedWeapon.fromWeapon(
-            Weapons.find((weapon) => weapon.Name === "Fists")!,
-        ),
-    );
-
-    useEffect(() => {
+    const defaultWeapon = useMemo(() => {
         // If the "Vanquisher's Seal" ring is equipped, set the default weapon to "Fist (Vanquisher's Seal)"
         let isVanquishersSealEquipped = false;
         Object.entries(equippedRings).forEach(([_, ring]) => {
@@ -52,18 +45,14 @@ export default function WeaponInventory(): JSX.Element {
         });
 
         if (isVanquishersSealEquipped) {
-            setDefaultWeapon(
-                EquippedWeapon.fromWeapon(
-                    Weapons.find(
-                        (weapon) => weapon.Name === "Fist (Vanquisher's Seal)",
-                    )!,
-                ),
+            return EquippedWeapon.fromWeapon(
+                Weapons.find(
+                    (weapon) => weapon.Name === "Fist (Vanquisher's Seal)",
+                )!,
             );
         } else {
-            setDefaultWeapon(
-                EquippedWeapon.fromWeapon(
-                    Weapons.find((weapon) => weapon.Name === "Fists")!,
-                ),
+            return EquippedWeapon.fromWeapon(
+                Weapons.find((weapon) => weapon.Name === "Fists")!,
             );
         }
     }, [equippedRings]);
