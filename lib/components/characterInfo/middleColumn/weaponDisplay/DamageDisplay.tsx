@@ -4,9 +4,8 @@ import { useVirtualAttributes } from "@/lib/reducers/attributes/virtualAttribute
 import { useEquippedArmorSet } from "@/lib/reducers/equipment/equippedArmorSet";
 import { useEquippedRings } from "@/lib/reducers/equipment/equippedRings";
 import { useEquippedWeapons } from "@/lib/reducers/equipment/equippedWeapons";
-import AttackPowerTypeMap from "@/lib/types/attackPowerTypeMap";
 import AttributeMap from "@/lib/types/attributeMap";
-import { useEffect, useState } from "react";
+import { useMemo } from "react";
 import { JSX } from "react/jsx-runtime";
 
 // TODO: Cleverer damage display?
@@ -29,38 +28,28 @@ export default function DamageDisplay(props: {
         slot === "rightSecondary" ||
         slot === "rightTertiary";
 
-    // State
-    const [damage, setDamage] = useState<AttackPowerTypeMap<number>>({
-        Physical: 0,
-        Magic: 0,
-        Fire: 0,
-        Lightning: 0,
-        Dark: 0,
-    });
-
     // Effects
-    useEffect(() => {
-        let attributes: AttributeMap<number> = { ...virtualAttributes };
+    const damage = useMemo(() => {
+        const attributes: AttributeMap<number> = { ...virtualAttributes };
         if (twoHanding) {
             attributes.Strength = Math.floor(attributes.Strength * 1.5);
         }
 
-        setDamage(
-            equippedWeapons
-                .getWeapon(slot)
-                .totalDamage(
-                    equippedWeapons,
-                    attributes,
-                    equippedArmor,
-                    equippedRings,
-                ),
-        );
+        return equippedWeapons
+            .getWeapon(slot)
+            .totalDamage(
+                equippedWeapons,
+                attributes,
+                equippedArmor,
+                equippedRings,
+            );
     }, [
         equippedWeapons,
         virtualAttributes,
         equippedArmor,
         equippedRings,
         twoHanding,
+        slot,
     ]);
 
     return (
