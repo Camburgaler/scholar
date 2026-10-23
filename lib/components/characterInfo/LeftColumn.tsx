@@ -138,16 +138,9 @@ export default function LeftColumn(): JSX.Element {
     // This is the class selected by the user if classLocked is false
     const [selectedClass, setSelectedClass] = useState(Classes[0].Name);
 
-    // Spell Slots
-    // const [spellSlots, setSpellSlots] = useState(0);
-
     // Equipped Spells
     // This is a list of spells that are currently equipped
-    const [equippedSpells, setEquippedSpells] = useState<Spell[]>([]);
-
-    // Consumed Spell Slots
-    // This is the number of spell slots that have been consumed by the equipped spells
-    const [consumedSpellSlots, setConsumedSpellSlots] = useState(0);
+    const [rawEquippedSpells, setRawEquippedSpells] = useState<Spell[]>([]);
 
     // STATE UPDATE FUNCTIONS
 
@@ -285,27 +278,29 @@ export default function LeftColumn(): JSX.Element {
             equippedRings,
             equippedWeapons,
         );
-    }, [virtualAttributes, equippedArmorSet, equippedRings]);
+    }, [virtualAttributes, equippedArmorSet, equippedRings, equippedWeapons]);
 
-    // Updates the consumed spell slots when the spell slots change.
-    useEffect(() => {
-        if (consumedSpellSlots > spellSlots) {
-            setEquippedSpells(
-                equippedSpells.slice(0, equippedSpells.length - 1),
-            );
+    const equippedSpells = useMemo(() => {
+        let consumed = 0;
+        const validSpells: Spell[] = [];
+        for (const spell of rawEquippedSpells) {
+            if (consumed + spell.SpellSlotCost <= spellSlots) {
+                consumed += spell.SpellSlotCost;
+                validSpells.push(spell);
+            } else {
+                break; // Stop once the limit is reached
+            }
         }
-    }, [spellSlots]);
+        return validSpells;
+    }, [rawEquippedSpells, spellSlots]);
 
-    // Updates the consumed spell slots when the equipped spells change.
-    useEffect(() => {
-        let consumedSpellSlots = 0;
-
-        for (const spell of equippedSpells) {
-            consumedSpellSlots += spell.SpellSlotCost;
-        }
-
-        setConsumedSpellSlots(consumedSpellSlots);
-    }, [equippedSpells]);
+    // Consumed Spell Slots
+    // This is the number of spell slots that have been consumed by the equipped spells
+    const consumedSpellSlots = useMemo(
+        () =>
+            equippedSpells.reduce((sum, spell) => sum + spell.SpellSlotCost, 0),
+        [equippedSpells],
+    );
 
     // RENDER
     return (
@@ -564,7 +559,7 @@ export default function LeftColumn(): JSX.Element {
                             {index % 2 === 0 ? (
                                 <button
                                     onClick={() =>
-                                        setEquippedSpells(
+                                        setRawEquippedSpells(
                                             equippedSpells.filter(
                                                 (_, i) => i !== index,
                                             ),
@@ -585,7 +580,7 @@ export default function LeftColumn(): JSX.Element {
                             {index % 2 === 1 ? (
                                 <button
                                     onClick={() =>
-                                        setEquippedSpells(
+                                        setRawEquippedSpells(
                                             equippedSpells.filter(
                                                 (_, i) => i !== index,
                                             ),
@@ -601,11 +596,20 @@ export default function LeftColumn(): JSX.Element {
                     <select
                         className="flex h-full w-full col-span-1"
                         onChange={(e) => {
-                            setEquippedSpells(
-                                equippedSpells.concat(
-                                    getSpellByName(e.target.value) as Spell,
-                                ),
-                            );
+                            const newSpell = getSpellByName(
+                                e.target.value,
+                            ) as Spell;
+
+                            if (
+                                newSpell &&
+                                consumedSpellSlots + newSpell.SpellSlotCost <=
+                                    spellSlots
+                            ) {
+                                setRawEquippedSpells(
+                                    equippedSpells.concat(newSpell),
+                                );
+                            }
+
                             e.target.value = "none";
                         }}
                     >
