@@ -277,13 +277,6 @@ export default function LeftColumn(): JSX.Element {
         );
     }, [desiredAttributes, effectiveClass, setVirtualAttributes]);
 
-    // Sets selected class if classLocked is false
-    useEffect(() => {
-        if (!classLocked) {
-            setSelectedClass(sortClasses[0].Name);
-        }
-    }, [sortClasses, classLocked]);
-
     // Updates the spell slots when the virtual attributes change.
     useEffect(() => {
         setSpellSlots(
@@ -335,7 +328,13 @@ export default function LeftColumn(): JSX.Element {
                     {/* TODO: Add button that adds the current class's starting equipment to the inventories */}
                     <button
                         className="h-full w-full p-1"
-                        onClick={() => setClassLocked(!classLocked)}
+                        onClick={() => {
+                            if (!classLocked) {
+                                setSelectedClass(sortClasses[0].Name);
+                            }
+
+                            setClassLocked(!classLocked);
+                        }}
                     >
                         {classLocked ? (
                             <Lock className="h-full w-full" />
