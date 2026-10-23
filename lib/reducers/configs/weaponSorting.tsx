@@ -18,7 +18,7 @@ export type WeaponSorting = {
 
 export type WeaponSortingAction = {
     key: keyof WeaponSorting;
-    value: any;
+    value: WeaponSorting[keyof WeaponSorting];
 };
 
 const WeaponSortingContext = createContext<WeaponSorting>({
