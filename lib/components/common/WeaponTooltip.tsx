@@ -87,7 +87,7 @@ function WeaponTooltipContent({
     )!;
     const baseDamage: AttackPowerTypeMap<number> = equippedWeapon.baseDamage();
 
-    let attributes: AttributeMap<number> = { ...virtualAttributes };
+    const attributes: AttributeMap<number> = { ...virtualAttributes };
     if (twoHanding) {
         attributes.Strength = Math.floor(attributes.Strength * 1.5);
     }
