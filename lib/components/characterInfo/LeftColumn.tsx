@@ -17,7 +17,7 @@ import { ringsAttributeModifiers } from "@/lib/scripts/equippedRings";
 import { getSpellByName } from "@/lib/scripts/spell";
 import { calculateStatDisplayValue } from "@/lib/scripts/statCalculation";
 import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { Lock, Trash, Unlock } from "react-bootstrap-icons";
 import { JSX } from "react/jsx-runtime";
 
@@ -135,18 +135,12 @@ export default function LeftColumn(): JSX.Element {
     );
 
     // Sort classes by ascending delta
-    const sortClasses = useCallback((): Class[] => {
+    const sortClasses = useMemo((): Class[] => {
         return Classes.map((c: Class) => {
             c.sortingValue = calculateTotalSoulCost(c);
             return c;
         }).sort((a: Class, b: Class) => a.sortingValue! - b.sortingValue!);
     }, [calculateTotalSoulCost]);
-
-    // Sorted classes are the classes sorted by ascending delta
-    const sorted = sortClasses();
-
-    // Optimal class is the class with the lowest delta
-    const optimalClass = sorted[0];
 
     // Souls to next level
     const [soulsToNextLevel, setSoulsToNextLevel] = useState(0);
@@ -225,9 +219,9 @@ export default function LeftColumn(): JSX.Element {
     }
 
     // Get effective class based on class lock
-    const effectiveClass = useCallback((): Class => {
-        return classLocked ? getClassByName(selectedClass)! : optimalClass;
-    }, [classLocked, selectedClass, optimalClass]);
+    const effectiveClass = useMemo((): Class => {
+        return classLocked ? getClassByName(selectedClass)! : sortClasses[0];
+    }, [classLocked, selectedClass, sortClasses]);
 
     // EFFECTS
 
@@ -263,11 +257,11 @@ export default function LeftColumn(): JSX.Element {
                         desiredAttributes[attributeId]! -
                             equippedArmorSet.attributeModifier(attributeId) -
                             ringsAttributeModifiers(equippedRings, attributeId),
-                        effectiveClass().Attributes[attributeId]!,
+                        effectiveClass.Attributes[attributeId]!,
                     );
                     tempVirtual[attributeId] = Math.max(
                         desiredAttributes[attributeId]!,
-                        effectiveClass().Attributes[attributeId]!,
+                        effectiveClass.Attributes[attributeId]!,
                     );
                 }
             },
@@ -280,8 +274,8 @@ export default function LeftColumn(): JSX.Element {
 
     // Updates the souls to next level and total soul cost when the final attributes change.
     useEffect(() => {
-        setSoulsToNextLevel(calculateSoulsToNextLevel(effectiveClass()));
-        setTotalSoulCost(calculateTotalSoulCost(effectiveClass()));
+        setSoulsToNextLevel(calculateSoulsToNextLevel(effectiveClass));
+        setTotalSoulCost(calculateTotalSoulCost(effectiveClass));
     }, [
         effectiveClass,
         calculateSoulsToNextLevel,
@@ -292,9 +286,9 @@ export default function LeftColumn(): JSX.Element {
     // Sets selected class if classLocked is false
     useEffect(() => {
         if (!classLocked) {
-            setSelectedClass(optimalClass.Name);
+            setSelectedClass(sortClasses[0].Name);
         }
-    }, [optimalClass, classLocked]);
+    }, [sortClasses, classLocked]);
 
     // Updates the spell slots when the virtual attributes change.
     useEffect(() => {
@@ -361,7 +355,7 @@ export default function LeftColumn(): JSX.Element {
                             value={selectedClass}
                             onChange={(e) => setSelectedClass(e.target.value)}
                         >
-                            {sorted.map((c) => (
+                            {sortClasses.map((c) => (
                                 <option key={c.Name} value={c.Name}>
                                     {c.Name}
                                 </option>
@@ -372,7 +366,7 @@ export default function LeftColumn(): JSX.Element {
                             className="flex w-30 text-right h-full"
                             id="starting-class"
                             disabled
-                            value={optimalClass.Name}
+                            value={sortClasses[0].Name}
                         />
                     )}
                 </div>
@@ -417,7 +411,7 @@ export default function LeftColumn(): JSX.Element {
                                         type="number"
                                         disabled
                                         value={
-                                            effectiveClass().Attributes[
+                                            effectiveClass.Attributes[
                                                 attributeId as AttributeMapKey
                                             ]!
                                         }
@@ -479,7 +473,7 @@ export default function LeftColumn(): JSX.Element {
                             <input
                                 type="number"
                                 disabled
-                                value={effectiveClass().Level}
+                                value={effectiveClass.Level}
                                 className="text-right h-full max-w-15"
                             />
                         </td>
@@ -488,7 +482,7 @@ export default function LeftColumn(): JSX.Element {
                             <input
                                 type="number"
                                 disabled
-                                value={calculateFinalLevel(effectiveClass())}
+                                value={calculateFinalLevel(effectiveClass)}
                                 className="text-right h-full max-w-15"
                             />
                         </td>
