@@ -127,12 +127,6 @@ export default function LeftColumn(): JSX.Element {
         }).sort((a: Class, b: Class) => a.sortingValue! - b.sortingValue!);
     }, [calculateTotalSoulCost]);
 
-    // Souls to next level
-    const [soulsToNextLevel, setSoulsToNextLevel] = useState(0);
-
-    // Total soul cost
-    const [totalSoulCost, setTotalSoulCost] = useState(0);
-
     // Covenant
     const [covenant, setCovenant] = useState("None");
 
@@ -241,6 +235,18 @@ export default function LeftColumn(): JSX.Element {
         return tempFinal;
     }, [desiredAttributes, equippedArmorSet, effectiveClass, equippedRings]);
 
+    // Souls to next level
+    const soulsToNextLevel = useMemo(
+        () => calculateSoulsToNextLevel(effectiveClass),
+        [effectiveClass, calculateSoulsToNextLevel],
+    );
+
+    // Total soul cost
+    const totalSoulCost = useMemo(
+        () => calculateTotalSoulCost(effectiveClass),
+        [effectiveClass, calculateTotalSoulCost],
+    );
+
     // Updates the virtual attributes when the desired attributes or effective class change.
     useEffect(() => {
         const tempVirtual: AttributeMap<number> = {
@@ -270,17 +276,6 @@ export default function LeftColumn(): JSX.Element {
             new Map(Object.entries(tempVirtual) as [AttributeMapKey, number][]),
         );
     }, [desiredAttributes, effectiveClass, setVirtualAttributes]);
-
-    // Updates the souls to next level and total soul cost when the final attributes change.
-    useEffect(() => {
-        setSoulsToNextLevel(calculateSoulsToNextLevel(effectiveClass));
-        setTotalSoulCost(calculateTotalSoulCost(effectiveClass));
-    }, [
-        effectiveClass,
-        calculateSoulsToNextLevel,
-        calculateTotalSoulCost,
-        finalAttributes,
-    ]);
 
     // Sets selected class if classLocked is false
     useEffect(() => {
