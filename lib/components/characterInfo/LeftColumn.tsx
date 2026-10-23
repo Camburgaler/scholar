@@ -188,7 +188,7 @@ export default function LeftColumn(): JSX.Element {
     function updateDesiredAttributes(statId: string, value: number): void {
         setDesiredAttributes({
             ...desiredAttributes,
-            [statId]: Math.min(Math.max(value, 0), 99),
+            [statId]: Math.min(Math.max(value, 0), 99) || 0,
         });
     }
 
