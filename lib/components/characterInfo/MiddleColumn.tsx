@@ -15,7 +15,7 @@ import { useEquippedWeapons } from "@/lib/reducers/equipment/equippedWeapons";
 import { ringsWeight } from "@/lib/scripts/equippedRings";
 import { calculateStatDisplayValue } from "@/lib/scripts/statCalculation";
 import { StatMapKeyToStatNameMap } from "@/lib/types/statMap";
-import { useEffect, useState } from "react";
+import { useMemo } from "react";
 import { JSX } from "react/jsx-runtime";
 
 /**
@@ -41,15 +41,12 @@ export default function MiddleColumn(): JSX.Element {
     const twoHanding = useTwoHanding();
     const twoHandingDispatch = useTwoHandingDispatch();
 
-    // State
-    const [equipLoad, setEquipLoad] = useState<number>(0);
-
     // Effects
-    useEffect(() => {
-        setEquipLoad(
+    const equipLoad = useMemo(() => {
+        return (
             equippedArmor.weight +
-                ringsWeight(equippedRings) +
-                equippedWeapons.weight,
+            ringsWeight(equippedRings) +
+            equippedWeapons.weight
         );
     }, [equippedArmor, equippedRings, equippedWeapons]);
 
@@ -69,7 +66,7 @@ export default function MiddleColumn(): JSX.Element {
                     style={{
                         fontWeight: AttributeToStatMap[focusedAttribute!]?.[
                             "MaximumEquipLoad"
-                        ]!
+                        ]
                             ? "bold"
                             : "normal",
                     }}
