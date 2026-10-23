@@ -74,9 +74,6 @@ export default function LeftColumn(): JSX.Element {
         Attunement: 0,
     });
 
-    // Optimal class is the class with the lowest delta
-    const [optimalClass, setOptimalClass] = useState<Class>(Classes[0] ?? {});
-
     // Delta is the difference between the desired stats and the class' stats
     const delta = useCallback(
         (classAttributes: AttributeMap<number>): number => {
@@ -147,6 +144,10 @@ export default function LeftColumn(): JSX.Element {
 
     // Sorted classes are the classes sorted by ascending delta
     const [sorted, setSorted] = useState<Class[]>(sortClasses());
+
+    // Optimal class is the class with the lowest delta
+    // const [optimalClass, setOptimalClass] = useState<Class>(Classes[0] ?? {});
+    const optimalClass = sorted[0];
 
     // Souls to next level
     const [soulsToNextLevel, setSoulsToNextLevel] = useState(0);
@@ -230,12 +231,6 @@ export default function LeftColumn(): JSX.Element {
     }, [classLocked, selectedClass, optimalClass]);
 
     // EFFECTS
-
-    // Calculates the optimal class when the sorted classes change.
-    useEffect(() => {
-        // calculate best class
-        setOptimalClass(sorted[0]);
-    }, [sorted]);
 
     // Sorts the classes when the final stats change.
     useEffect(() => {
