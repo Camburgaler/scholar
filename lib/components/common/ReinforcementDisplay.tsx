@@ -12,7 +12,8 @@ export default function ReinforcementDisplay(props: {
         <select
             value={weapon.reinforcementLevel}
             onChange={(e) => {
-                let newEquippedWeapon = weapon;
+                const newEquippedWeapon =
+                    EquippedWeapon.fromEquippedWeapon(weapon);
                 newEquippedWeapon.reinforcementLevel = parseInt(e.target.value);
                 updateFunc(newEquippedWeapon);
             }}
