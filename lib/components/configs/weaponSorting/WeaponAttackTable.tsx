@@ -21,7 +21,7 @@ function getEquippedWeapon(
         rl = 0;
     }
 
-    let equippedWeapon = EquippedWeapon.fromWeapon(weapon);
+    const equippedWeapon = EquippedWeapon.fromWeapon(weapon);
     equippedWeapon.infusionKey = infusion;
     equippedWeapon.reinforcementLevel = rl;
     return equippedWeapon;
