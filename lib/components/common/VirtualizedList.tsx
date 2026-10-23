@@ -8,6 +8,9 @@ export default function VirtualizedList<T>(props: {
     renderFunc?: (item: T) => JSX.Element;
     filterFunc?: (item: T, searchStr: string) => boolean;
 }): JSX.Element {
+    // Skipping automatic memoization because Tanstack Virtual is incompatible
+    "use no memo";
+
     // Props
     const { list, height, searchboxPlaceholder, renderFunc, filterFunc } =
         props;
@@ -32,11 +35,13 @@ export default function VirtualizedList<T>(props: {
     const parentRef = useRef<HTMLDivElement>(null);
 
     // The virtualizers
-    const listVirtualizer = useVirtualizer({
-        count: filteredList.length,
-        getScrollElement: () => parentRef.current,
-        estimateSize: () => height || 50,
-        overscan: 5,
+    const listVirtualizer =
+        // prettier-ignore
+        useVirtualizer({ // eslint-disable-line react-hooks/incompatible-library
+            count: filteredList.length,
+            getScrollElement: () => parentRef.current,
+            estimateSize: () => height || 50,
+            overscan: 5,
     });
 
     return (
