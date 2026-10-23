@@ -152,7 +152,7 @@ class ArmorSet {
             throw new Error(`ArmorSet field ${field} is not a member`);
         }
 
-        (this as any)[field] = value;
+        this[field as ArmorSetKey] = value;
     }
 
     /**
@@ -269,7 +269,7 @@ class ArmorSet {
      * @returns The {@link ModifierDisplay}s for the armor set.
      */
     public getModifierDisplays(): JSX.Element[] {
-        let activeEffects: JSX.Element[] = [];
+        const activeEffects: JSX.Element[] = [];
         let isOddRow = true;
 
         this.helmet.data.Modifiers.forEach((modifier) => {
@@ -369,7 +369,7 @@ class ArmorSet {
      * @returns The active effects of the armor set. Array of {@link Modifier}s.
      */
     public activeEffects(): Modifier[] {
-        let activeEffects: Modifier[] = [];
+        const activeEffects: Modifier[] = [];
 
         this.helmet.data.Modifiers.forEach((modifier) => {
             activeEffects.push(modifier);
