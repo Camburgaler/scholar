@@ -13,7 +13,8 @@ export default function InfusionDisplay(props: {
         <select
             value={weapon.infusionKey}
             onChange={(e) => {
-                let newEquippedWeapon = weapon;
+                const newEquippedWeapon =
+                    EquippedWeapon.fromEquippedWeapon(weapon);
                 newEquippedWeapon.infusionKey = e.target
                     .value as InfusionMapKey;
                 updateFunc(newEquippedWeapon);
