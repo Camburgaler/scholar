@@ -76,7 +76,7 @@ export default class WeaponSlots {
      * @returns The new {@link WeaponSlots}.
      */
     public static fromWeaponSlots(slots: WeaponSlots): WeaponSlots {
-        let weaponSlots = new WeaponSlots();
+        const weaponSlots = new WeaponSlots();
         weaponSlots.copyFrom(slots);
         return weaponSlots;
     }
@@ -99,7 +99,7 @@ export default class WeaponSlots {
         rs: EquippedWeapon,
         rt: EquippedWeapon,
     ): WeaponSlots {
-        let weaponSlots = new WeaponSlots();
+        const weaponSlots = new WeaponSlots();
         weaponSlots.leftPrimary = lp;
         weaponSlots.leftSecondary = ls;
         weaponSlots.leftTertiary = lt;
@@ -127,7 +127,7 @@ export default class WeaponSlots {
         rs: Weapon,
         rt: Weapon,
     ): WeaponSlots {
-        let weaponSlots = new WeaponSlots();
+        const weaponSlots = new WeaponSlots();
         weaponSlots.leftPrimary = EquippedWeapon.fromWeapon(lp);
         weaponSlots.leftSecondary = EquippedWeapon.fromWeapon(ls);
         weaponSlots.leftTertiary = EquippedWeapon.fromWeapon(lt);
@@ -197,7 +197,7 @@ export default class WeaponSlots {
      * @returns The {@link ModifierDisplay}s for the weapon slots.
      */
     public getModifierDisplays(): JSX.Element[] {
-        let activeEffects: JSX.Element[] = [];
+        const activeEffects: JSX.Element[] = [];
         let isOddRow = true;
 
         this.leftPrimary.modifiers.forEach((modifier) => {
@@ -275,7 +275,7 @@ export default class WeaponSlots {
      * @returns The active effects of the weapon slots. Array of {@link Modifier}s.
      */
     public activeEffects(): Modifier[] {
-        let activeEffects: Modifier[] = [];
+        const activeEffects: Modifier[] = [];
 
         this.leftPrimary.modifiers.forEach((modifier) => {
             activeEffects.push(modifier);
