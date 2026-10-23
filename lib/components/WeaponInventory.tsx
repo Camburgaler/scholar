@@ -142,7 +142,7 @@ export default function WeaponInventory(): JSX.Element {
                 />
 
                 {/* All weapons */}
-                <VirtualizedList
+                <VirtualizedList<EquippedWeapon>
                     list={allWeapons}
                     searchboxPlaceholder="Search all weapons..."
                     renderFunc={(item: EquippedWeapon) => (

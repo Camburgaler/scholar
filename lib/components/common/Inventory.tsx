@@ -62,7 +62,7 @@ export default function Inventory<ItemType>(
 
             <div className="flex flex-col gap-1 w-full h-full items-center align-center">
                 {/* Character inventory */}
-                <VirtualizedList
+                <VirtualizedList<ItemType>
                     list={inventory}
                     height={75}
                     searchboxPlaceholder="Search inventory..."
@@ -107,7 +107,7 @@ export default function Inventory<ItemType>(
                 />
 
                 {/* All items */}
-                <VirtualizedList
+                <VirtualizedList<ItemType>
                     list={allItems}
                     searchboxPlaceholder={`Search all ${title.toLowerCase()}...`}
                     renderFunc={(item: ItemType) => {

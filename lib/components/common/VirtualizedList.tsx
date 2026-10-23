@@ -1,12 +1,12 @@
 import { useVirtualizer } from "@tanstack/react-virtual";
 import { JSX, useMemo, useRef, useState } from "react";
 
-export default function VirtualizedList(props: {
-    list: any[];
+export default function VirtualizedList<T>(props: {
+    list: T[];
     height?: number;
     searchboxPlaceholder?: string;
-    renderFunc?: (item: any) => JSX.Element;
-    filterFunc?: (item: any, searchStr: string) => boolean;
+    renderFunc?: (item: T) => JSX.Element;
+    filterFunc?: (item: T, searchStr: string) => boolean;
 }): JSX.Element {
     // Props
     const { list, height, searchboxPlaceholder, renderFunc, filterFunc } =
@@ -26,7 +26,7 @@ export default function VirtualizedList(props: {
         return list.filter((weapon) => {
             return filterFunc ? filterFunc(weapon, searchStr) : true;
         });
-    }, [search, list]);
+    }, [search, list, filterFunc]);
 
     // The scrollable elements for your lists
     const parentRef = useRef<HTMLDivElement>(null);
@@ -53,44 +53,49 @@ export default function VirtualizedList(props: {
             </div>
 
             {/* List */}
-            <div className="overflow-auto" ref={parentRef}>
-                <div
-                    style={{
-                        height: `${listVirtualizer.getTotalSize()}px`,
-                        width: "100%",
-                        position: "relative",
-                    }}
-                >
-                    {listVirtualizer.getVirtualItems().map((virtualItem) => {
-                        const item: any = filteredList[virtualItem.index];
 
-                        return (
-                            <div
-                                className="p-1 content-center flex"
-                                key={virtualItem.index}
-                                style={{
-                                    position: "absolute",
-                                    top: 0,
-                                    left: 0,
-                                    width: "100%",
-                                    minHeight: `${virtualItem.size}px`,
-                                    transform: `translateY(${virtualItem.start}px)`,
-                                    backgroundColor:
-                                        virtualItem.index % 2 === 0
-                                            ? "var(--primary)"
-                                            : "var(--secondary)",
-                                }}
-                            >
-                                {renderFunc ? (
-                                    renderFunc(item)
-                                ) : (
-                                    <div key={virtualItem.index}>{item}</div>
-                                )}
-                            </div>
-                        );
-                    })}
+            {renderFunc ? (
+                <div className="overflow-auto" ref={parentRef}>
+                    <div
+                        style={{
+                            height: `${listVirtualizer.getTotalSize()}px`,
+                            width: "100%",
+                            position: "relative",
+                        }}
+                    >
+                        {listVirtualizer
+                            .getVirtualItems()
+                            .map((virtualItem) => {
+                                const item: T = filteredList[virtualItem.index];
+
+                                return (
+                                    <div
+                                        className="p-1 content-center flex"
+                                        key={virtualItem.index}
+                                        style={{
+                                            position: "absolute",
+                                            top: 0,
+                                            left: 0,
+                                            width: "100%",
+                                            minHeight: `${virtualItem.size}px`,
+                                            transform: `translateY(${virtualItem.start}px)`,
+                                            backgroundColor:
+                                                virtualItem.index % 2 === 0
+                                                    ? "var(--primary)"
+                                                    : "var(--secondary)",
+                                        }}
+                                    >
+                                        {renderFunc(item)}
+                                    </div>
+                                );
+                            })}
+                    </div>
                 </div>
-            </div>
+            ) : (
+                <div className="p-1 content-center flex w-full">
+                    No render function provided.
+                </div>
+            )}
         </div>
     );
 }

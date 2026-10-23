@@ -169,6 +169,7 @@ export default function StatDisplay(props: {
         equippedRings,
         equippedWeapons,
         twoHanding,
+        statDisplayKey,
     ]);
 
     return (
