@@ -15,7 +15,7 @@ import {
     useWeaponInventoryDispatch,
 } from "@/lib/reducers/equipment/weaponInventory";
 import { getWeaponById, getWeaponByName } from "@/lib/scripts/weapon";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo } from "react";
 import { JSX } from "react/jsx-runtime";
 
 /**
@@ -36,9 +36,6 @@ export default function WeaponDisplay(props: {
     const weaponInventory = useWeaponInventory();
     const setWeaponInventory = useWeaponInventoryDispatch();
 
-    // State
-    const [vanquishersSeal, setVanquishersSeal] = useState(false);
-
     // Constants
     const isRightHand =
         slot === "rightPrimary" ||
@@ -46,7 +43,7 @@ export default function WeaponDisplay(props: {
         slot === "rightTertiary";
 
     // Effect
-    useEffect(() => {
+    const vanquishersSeal = useMemo(() => {
         // If the "Vanquisher's Seal" ring is equipped, set the "vanquishersSeal" state to true
         let isVanquishersSealEquipped = false;
         Object.entries(equippedRings).forEach(([_, ring]) => {
@@ -54,8 +51,8 @@ export default function WeaponDisplay(props: {
                 isVanquishersSealEquipped = true;
             }
         });
-        setVanquishersSeal(isVanquishersSealEquipped);
-    }, [equippedRings, setVanquishersSeal]);
+        return isVanquishersSealEquipped;
+    }, [equippedRings]);
 
     useEffect(() => {
         // If vanquishersSeal is true, set the equipped weapon to "Fist (Vanquisher's Seal)"
@@ -78,7 +75,7 @@ export default function WeaponDisplay(props: {
                 equippedWeapon: new EquippedWeapon(),
             });
         }
-    }, [vanquishersSeal, equippedWeapons, setEquippedWeapons]);
+    }, [vanquishersSeal, equippedWeapons, setEquippedWeapons, slot]);
 
     useEffect(() => {
         // If the equipped weapon is removed from the inventory, set the equipped weapon to "Fists"
@@ -93,7 +90,7 @@ export default function WeaponDisplay(props: {
                 equippedWeapon: new EquippedWeapon(),
             });
         }
-    }, [weaponInventory, setEquippedWeapons]);
+    }, [weaponInventory, setEquippedWeapons, slot, equippedWeapons]);
 
     useEffect(() => {
         // If a weapon is equipped that is not in the inventory, add it to the inventory
@@ -108,7 +105,7 @@ export default function WeaponDisplay(props: {
                 data: equippedWeapons.getWeapon(slot),
             });
         }
-    }, [equippedWeapons, setWeaponInventory]);
+    }, [equippedWeapons, setWeaponInventory, slot, weaponInventory]);
 
     return (
         <WeaponTooltip
