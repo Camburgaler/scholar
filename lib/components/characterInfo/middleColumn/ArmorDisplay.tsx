@@ -1,12 +1,13 @@
 import { ArmorSetKey } from "@/lib/classes/armorSet";
 import { Chestpieces, Gauntlets, Helmets, Leggings } from "@/lib/gameData";
+import Armor from "@/lib/interfaces/armor";
 import { useVirtualAttributes } from "@/lib/reducers/attributes/virtualAttributes";
 import {
     useEquippedArmorSet,
     useEquippedArmorSetDispatch,
 } from "@/lib/reducers/equipment/equippedArmorSet";
 import { filterArmor, getArmorByName } from "@/lib/scripts/armor";
-import { JSX, useEffect } from "react";
+import { JSX, useEffect, useMemo } from "react";
 
 // TODO: add a lock toggle to this similar to the one for the starting class
 //    the lock would control how the armor optimization behaves
@@ -31,35 +32,42 @@ export function ArmorDisplay(props: {
     const virtualAttributes = useVirtualAttributes();
 
     // Constants
-    const armorList =
-        label === "Helmet"
-            ? Helmets
-            : label === "Chestpiece"
-              ? Chestpieces
-              : label === "Gauntlets"
-                ? Gauntlets
-                : label === "Leggings"
-                  ? Leggings
-                  : [];
+    const armorListMap = useMemo(
+        () =>
+            new Map<string, Armor[]>([
+                ["Helmet", Helmets],
+                ["Chestpiece", Chestpieces],
+                ["Gauntlets", Gauntlets],
+                ["Leggings", Leggings],
+            ]),
+        [],
+    );
     const slot: ArmorSetKey = label.toLowerCase() as ArmorSetKey;
 
     // Effects
     useEffect(() => {
         // when the virtual attributes change, if the new attributes don't meet the current armor requirements, unequip the armor
         if (
-            !filterArmor(armorList, virtualAttributes).some(
+            !filterArmor(armorListMap.get(label)!, virtualAttributes).some(
                 (armor) => armor === equippedArmorSet.getArmor(slot).data,
             )
         ) {
             setEquippedArmor({
                 slot: slot,
                 equippedArmor: {
-                    data: armorList[0],
+                    data: armorListMap.get(label)![0],
                     reinforcementLevel: 0,
                 },
             });
         }
-    }, [virtualAttributes]);
+    }, [
+        virtualAttributes,
+        equippedArmorSet,
+        setEquippedArmor,
+        slot,
+        label,
+        armorListMap,
+    ]);
 
     // TODO: add on-hover tooltip that shows the stats of the currently equipped armor
     // TODO: add graph of normal distribution of armor stats and where the currently equipped armor falls on that distribution
@@ -87,13 +95,19 @@ export function ArmorDisplay(props: {
                         setEquippedArmor({
                             slot: slot,
                             equippedArmor: {
-                                data: getArmorByName(armorList, e.target.value),
+                                data: getArmorByName(
+                                    armorListMap.get(label)!,
+                                    e.target.value,
+                                ),
                                 reinforcementLevel: 0,
                             },
                         })
                     }
                 >
-                    {filterArmor(armorList, virtualAttributes).map((armor) => (
+                    {filterArmor(
+                        armorListMap.get(label)!,
+                        virtualAttributes,
+                    ).map((armor) => (
                         <option key={armor.Name} value={armor.Name}>
                             {armor.Name}
                         </option>
