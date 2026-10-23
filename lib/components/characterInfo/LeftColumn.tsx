@@ -59,21 +59,6 @@ export default function LeftColumn(): JSX.Element {
         Attunement: 0,
     });
 
-    // Final attributes are the optimal class's attributes after leveling up
-    const [finalAttributes, setFinalAttributes] = useState<
-        AttributeMap<number>
-    >({
-        Vigor: 0,
-        Endurance: 0,
-        Vitality: 0,
-        Adaptability: 0,
-        Strength: 0,
-        Dexterity: 0,
-        Intelligence: 0,
-        Faith: 0,
-        Attunement: 0,
-    });
-
     // Delta is the difference between the desired stats and the class' stats
     const delta = useCallback(
         (classAttributes: AttributeMap<number>): number => {
@@ -225,10 +210,10 @@ export default function LeftColumn(): JSX.Element {
 
     // EFFECTS
 
-    // Updates the final stats and virtual stats when the desired stats, effective class, or equipped armor set change.
-    useEffect(() => {
+    // Final attributes are the optimal class's attributes after leveling up
+    const finalAttributes = useMemo(() => {
         // calculate final stats
-        let tempFinal: AttributeMap<number> = {
+        const tempFinal: AttributeMap<number> = {
             Vigor: 0,
             Endurance: 0,
             Vitality: 0,
@@ -239,17 +224,7 @@ export default function LeftColumn(): JSX.Element {
             Faith: 0,
             Attunement: 0,
         };
-        let tempVirtual: AttributeMap<number> = {
-            Vigor: 0,
-            Endurance: 0,
-            Vitality: 0,
-            Adaptability: 0,
-            Strength: 0,
-            Dexterity: 0,
-            Intelligence: 0,
-            Faith: 0,
-            Attunement: 0,
-        };
+
         (Object.keys(desiredAttributes) as AttributeMapKey[]).forEach(
             (attributeId: AttributeMapKey) => {
                 {
@@ -259,6 +234,30 @@ export default function LeftColumn(): JSX.Element {
                             ringsAttributeModifiers(equippedRings, attributeId),
                         effectiveClass.Attributes[attributeId]!,
                     );
+                }
+            },
+        );
+
+        return tempFinal;
+    }, [desiredAttributes, equippedArmorSet, effectiveClass, equippedRings]);
+
+    // Updates the virtual attributes when the desired attributes or effective class change.
+    useEffect(() => {
+        const tempVirtual: AttributeMap<number> = {
+            Vigor: 0,
+            Endurance: 0,
+            Vitality: 0,
+            Adaptability: 0,
+            Strength: 0,
+            Dexterity: 0,
+            Intelligence: 0,
+            Faith: 0,
+            Attunement: 0,
+        };
+
+        (Object.keys(desiredAttributes) as AttributeMapKey[]).forEach(
+            (attributeId: AttributeMapKey) => {
+                {
                     tempVirtual[attributeId] = Math.max(
                         desiredAttributes[attributeId]!,
                         effectiveClass.Attributes[attributeId]!,
@@ -266,11 +265,11 @@ export default function LeftColumn(): JSX.Element {
                 }
             },
         );
-        setFinalAttributes(tempFinal);
+
         setVirtualAttributes(
             new Map(Object.entries(tempVirtual) as [AttributeMapKey, number][]),
         );
-    }, [desiredAttributes, equippedArmorSet, effectiveClass, equippedRings]);
+    }, [desiredAttributes, effectiveClass, setVirtualAttributes]);
 
     // Updates the souls to next level and total soul cost when the final attributes change.
     useEffect(() => {
