@@ -139,8 +139,7 @@ export default function LeftColumn(): JSX.Element {
     const [selectedClass, setSelectedClass] = useState(Classes[0].Name);
 
     // Spell Slots
-    // This is the number of spell slots granted by the virtual attributes
-    const [spellSlots, setSpellSlots] = useState(0);
+    // const [spellSlots, setSpellSlots] = useState(0);
 
     // Equipped Spells
     // This is a list of spells that are currently equipped
@@ -277,16 +276,14 @@ export default function LeftColumn(): JSX.Element {
         );
     }, [desiredAttributes, effectiveClass, setVirtualAttributes]);
 
-    // Updates the spell slots when the virtual attributes change.
-    useEffect(() => {
-        setSpellSlots(
-            calculateStatDisplayValue(
-                "SpellSlotCount",
-                virtualAttributes,
-                equippedArmorSet,
-                equippedRings,
-                equippedWeapons,
-            ),
+    // Spell Slots is the number of spell slots granted by the virtual attributes
+    const spellSlots = useMemo(() => {
+        return calculateStatDisplayValue(
+            "SpellSlotCount",
+            virtualAttributes,
+            equippedArmorSet,
+            equippedRings,
+            equippedWeapons,
         );
     }, [virtualAttributes, equippedArmorSet, equippedRings]);
 
