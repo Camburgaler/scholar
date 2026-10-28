@@ -44,17 +44,16 @@ describe("ArmorSet", () => {
         });
     });
 
-    // TODO: Fix static factories
-    // describe("static factories", () => {
-    //     it("fromArmorSet creates independent copy", () => {
-    //         const original = new ArmorSet();
-    //         original.helmet.reinforcementLevel = 7;
+    describe("static factories", () => {
+        it("fromArmorSet creates independent copy", () => {
+            const original = new ArmorSet();
+            original.helmet.reinforcementLevel = 7;
 
-    //         const copy = ArmorSet.fromArmorSet(original);
-    //         copy.helmet.reinforcementLevel = 10;
+            const copy = ArmorSet.fromArmorSet(original);
+            copy.helmet.reinforcementLevel = 10;
 
-    //         expect(original.helmet.reinforcementLevel).toBe(7);
-    //         expect(copy.helmet.reinforcementLevel).toBe(10);
-    //     });
-    // });
+            expect(original.helmet.reinforcementLevel).toBe(7);
+            expect(copy.helmet.reinforcementLevel).toBe(10);
+        });
+    });
 });

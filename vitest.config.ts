@@ -30,7 +30,7 @@ export default defineConfig({
             ],
 
             // Report directories
-            reportsDirectory: "./coverage",
+            reportsDirectory: "./reports/vitest",
 
             // Thresholds for CI (will fail if not met)
             thresholds: {

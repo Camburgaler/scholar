@@ -161,10 +161,19 @@ class ArmorSet {
      * @param armorSet The {@link ArmorSet} from which to copy.
      */
     public copyFrom(armorSet: ArmorSet) {
-        this.helmet = armorSet.helmet;
-        this.chestpiece = armorSet.chestpiece;
-        this.gauntlets = armorSet.gauntlets;
-        this.leggings = armorSet.leggings;
+        this.helmet.data = armorSet.helmet.data;
+        this.helmet.reinforcementLevel = armorSet.helmet.reinforcementLevel;
+
+        this.chestpiece.data = armorSet.chestpiece.data;
+        this.chestpiece.reinforcementLevel =
+            armorSet.chestpiece.reinforcementLevel;
+
+        this.gauntlets.data = armorSet.gauntlets.data;
+        this.gauntlets.reinforcementLevel =
+            armorSet.gauntlets.reinforcementLevel;
+
+        this.leggings.data = armorSet.leggings.data;
+        this.leggings.reinforcementLevel = armorSet.leggings.reinforcementLevel;
     }
 
     // PUBLIC METHODS
