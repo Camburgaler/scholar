@@ -3,7 +3,7 @@ import {
     SortingConfig,
     useSortingConfigDispatch,
 } from "@/lib/reducers/configs/sortingConfig";
-import { ReactNode, useEffect } from "react";
+import { JSX, ReactNode, useEffect } from "react";
 import { ArrowUp, XLg } from "react-bootstrap-icons";
 
 interface InventoryProps<ItemType> {
