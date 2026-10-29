@@ -5,7 +5,6 @@ import {
 } from "@/lib/reducers/configs/sortingConfig";
 import { ReactNode, useEffect } from "react";
 import { ArrowUp, XLg } from "react-bootstrap-icons";
-import { JSX } from "react/jsx-runtime";
 
 interface InventoryProps<ItemType> {
     title: string;
@@ -27,9 +26,7 @@ interface InventoryProps<ItemType> {
     filterFunc: (item: ItemType, searchStr: string) => boolean;
 }
 
-export default function Inventory<ItemType>(
-    props: InventoryProps<ItemType>,
-): JSX.Element {
+export default function Inventory<ItemType>(props: InventoryProps<ItemType>) {
     const {
         title,
         allItems,

@@ -1,5 +1,3 @@
-import { JSX } from "react/jsx-runtime";
-
 /**
  * ModifierDisplay
  * @description A component that displays a modifier description and equipment name.
@@ -11,7 +9,7 @@ export default function ModifierDisplay(props: {
     description: string;
     equipmentName: string;
     isOddRow?: boolean;
-}): JSX.Element {
+}) {
     const { description, equipmentName, isOddRow } = props;
     const displayValue = `${description} (${equipmentName})`;
 

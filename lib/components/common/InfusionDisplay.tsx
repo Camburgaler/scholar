@@ -1,11 +1,10 @@
 import EquippedWeapon from "@/lib/classes/equippedWeapon";
 import { InfusionMapKey } from "@/lib/types/infusionMap";
-import { JSX } from "react/jsx-runtime";
 
 export default function InfusionDisplay(props: {
     weapon: EquippedWeapon;
     updateFunc: (weapon: EquippedWeapon) => void;
-}): JSX.Element {
+}) {
     // Props
     const { weapon, updateFunc } = props;
 

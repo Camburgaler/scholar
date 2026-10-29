@@ -14,7 +14,6 @@ import {
     StatMapKeyToStatNameMap,
 } from "@/lib/types/statMap";
 import { useMemo } from "react";
-import { JSX } from "react/jsx-runtime";
 
 // StatDisplayKey is a type that represents a key for a stat display.
 export type StatDisplayKey =
@@ -105,7 +104,7 @@ function mapStatDisplayKeyToLabel(statDisplayKey: StatDisplayKey): string {
 export default function StatDisplay(props: {
     statDisplayKey: StatDisplayKey;
     isOddRow?: boolean;
-}): JSX.Element {
+}) {
     // Props
     const { statDisplayKey, isOddRow } = props;
 

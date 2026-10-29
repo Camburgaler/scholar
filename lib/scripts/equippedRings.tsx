@@ -47,7 +47,7 @@ export function ringsAttributeModifiers(
  * @param rings The equipped rings. {@link EquippedRings}
  * @returns The modifier displays of the rings. Array of {@link ModifierDisplay}
  */
-export function ringsModifierDisplays(rings: EquippedRings): JSX.Element[] {
+export function ringsModifierDisplays(rings: EquippedRings) {
     const activeEffects: JSX.Element[] = [];
     let isOddRow = true;
 

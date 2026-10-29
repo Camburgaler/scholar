@@ -14,14 +14,8 @@ import { EquippedRingsProvider } from "@/lib/reducers/equipment/equippedRings";
 import { EquippedWeaponsProvider } from "@/lib/reducers/equipment/equippedWeapons";
 import { WeaponInventoryProvider } from "@/lib/reducers/equipment/weaponInventory";
 import { Tooltip } from "radix-ui";
-import { JSX } from "react/jsx-runtime";
 
-/**
- * Home
- * @description This is the top-level component of the app.
- * @returns {JSX.Element}
- */
-export default function Home(): JSX.Element {
+export default function Home() {
     return (
         // page container
         <div className="flex flex-col flex-1 items-center justify-center font-sans">

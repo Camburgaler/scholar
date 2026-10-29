@@ -6,12 +6,9 @@ import { useEquippedRings } from "@/lib/reducers/equipment/equippedRings";
 import { useEquippedWeapons } from "@/lib/reducers/equipment/equippedWeapons";
 import AttributeMap from "@/lib/types/attributeMap";
 import { useMemo } from "react";
-import { JSX } from "react/jsx-runtime";
 
 // TODO: Cleverer damage display?
-export default function DamageDisplay(props: {
-    slot: WeaponEquipSlot;
-}): JSX.Element {
+export default function DamageDisplay(props: { slot: WeaponEquipSlot }) {
     // Props
     const { slot } = props;
 

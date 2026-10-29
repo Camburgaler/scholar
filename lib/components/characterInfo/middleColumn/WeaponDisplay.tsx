@@ -16,16 +16,13 @@ import {
 } from "@/lib/reducers/equipment/weaponInventory";
 import { getWeaponById, getWeaponByName } from "@/lib/scripts/weapon";
 import { useEffect, useMemo } from "react";
-import { JSX } from "react/jsx-runtime";
 
 /**
  * WeaponDisplay
  * @description A component that displays one of the character's weapons
  * @prop slot: The slot of the weapon to display. {@link WeaponEquipSlot}.
  */
-export default function WeaponDisplay(props: {
-    slot: WeaponEquipSlot;
-}): JSX.Element {
+export default function WeaponDisplay(props: { slot: WeaponEquipSlot }) {
     // Props
     const { slot } = props;
 

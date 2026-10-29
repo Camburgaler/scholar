@@ -19,7 +19,6 @@ import { calculateStatDisplayValue } from "@/lib/scripts/statCalculation";
 import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { Lock, Trash, Unlock } from "react-bootstrap-icons";
-import { JSX } from "react/jsx-runtime";
 
 // CONSTANTS
 
@@ -32,7 +31,7 @@ const MAX_PLAYER_LEVEL = 838;
  * LeftColumn
  * @description The left column of the character info page. Displays the character's attributes, class, souls, and spell list.
  */
-export default function LeftColumn(): JSX.Element {
+export default function LeftColumn() {
     // CONTEXT
     const focusedAttribute = useFocusedAttribute();
     const setFocusedAttribute = useFocusedAttributeDispatch();

@@ -1,10 +1,9 @@
 import { Tooltip } from "radix-ui";
-import { JSX } from "react/jsx-runtime";
 
 export default function InfoTooltip(props: {
     children: React.ReactNode;
     content: React.ReactNode;
-}): JSX.Element {
+}) {
     // Props
     const { children, content } = props;
 

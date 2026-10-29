@@ -438,7 +438,7 @@ export default function WeaponTooltip(props: {
     children: JSX.Element;
     equippedWeapon: EquippedWeapon;
     side?: "top" | "right" | "bottom" | "left";
-}): JSX.Element {
+}) {
     // Props
     const { children, equippedWeapon, side } = props;
 

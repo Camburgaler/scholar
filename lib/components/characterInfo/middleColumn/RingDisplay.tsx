@@ -4,7 +4,6 @@ import {
     useEquippedRings,
     useEquippedRingsDispatch,
 } from "@/lib/reducers/equipment/equippedRings";
-import { JSX } from "react/jsx-runtime";
 
 /**
  * RingDisplay
@@ -15,7 +14,7 @@ import { JSX } from "react/jsx-runtime";
 export default function RingDisplay(props: {
     slot: keyof EquippedRings;
     isRightDisplay?: boolean;
-}): JSX.Element {
+}) {
     // Props
     const { slot, isRightDisplay } = props;
 

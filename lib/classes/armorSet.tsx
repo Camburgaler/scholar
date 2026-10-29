@@ -7,7 +7,6 @@ import { reinforcedValue } from "@/lib/scripts/slopeIntercept";
 import { AttributeMapKey } from "@/lib/types/attributeMap";
 import { DefenseMapKey } from "@/lib/types/defenseMap";
 import { ResistanceMapKey } from "@/lib/types/resistanceMap";
-import { JSX } from "react/jsx-runtime";
 
 export type ArmorSetKey = "helmet" | "chestpiece" | "gauntlets" | "leggings";
 
@@ -277,8 +276,8 @@ class ArmorSet {
      * @description Gets the ModifierDisplay components for the armor set.
      * @returns The {@link ModifierDisplay}s for the armor set.
      */
-    public getModifierDisplays(): JSX.Element[] {
-        const activeEffects: JSX.Element[] = [];
+    public getModifierDisplays() {
+        const activeEffects = [];
         let isOddRow = true;
 
         this.helmet.data.Modifiers.forEach((modifier) => {

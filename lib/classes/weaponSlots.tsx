@@ -196,7 +196,7 @@ export default class WeaponSlots {
      * @description Gets the ModifierDisplay components for the weapon slots.
      * @returns The {@link ModifierDisplay}s for the weapon slots.
      */
-    public getModifierDisplays(): JSX.Element[] {
+    public getModifierDisplays() {
         const activeEffects: JSX.Element[] = [];
         let isOddRow = true;
 

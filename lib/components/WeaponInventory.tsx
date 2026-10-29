@@ -17,9 +17,8 @@ import {
 import { InfusionMapKey } from "@/lib/types/infusionMap";
 import { useEffect } from "react";
 import { ArrowUp, XLg } from "react-bootstrap-icons";
-import { JSX } from "react/jsx-runtime";
 
-export default function WeaponInventory(): JSX.Element {
+export default function WeaponInventory() {
     // Context
     const equippedRings = useEquippedRings();
     const setSortingConfig = useSortingConfigDispatch();
