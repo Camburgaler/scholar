@@ -56,12 +56,98 @@ function getWikidotLink(weaponName: string): string {
     return basePath + formattedName;
 }
 
+function getFandomLink(weaponName: string): string {
+    const basePath = "https://darksouls.fandom.com/wiki/";
+    let formattedName = weaponName.replace(/ /g, "_");
+
+    const weaponsWithSpecialWikiLinks: string[] = [
+        "Club",
+        "Zweihander",
+        "Heavy Crossbow",
+        "Claymore",
+        "Moonlight Greatsword",
+        "Dragon Tooth",
+        "Avelyn",
+        "Whip",
+        "Black Knight Halberd",
+        "Scythe",
+        "Shortsword",
+        "Rapier",
+        "Longsword",
+        "Notched Whip",
+        "Washing Pole",
+        "Light Crossbow",
+        "Tower Shield",
+        "Dagger",
+        "Greatsword",
+        "Spear",
+        "Black Knight Greatsword",
+        "Large Club",
+        "Black Knight Greataxe",
+        "Mace",
+        "Hand Axe",
+        "Winged Spear",
+        "Great Club",
+        "Greataxe",
+        "Battle Axe",
+        "Flamberge",
+        "Chaos Blade",
+        "Demon's Great Hammer",
+        "Pike",
+        "Morning Star",
+        "Bastard Sword",
+        "Havel's Greatshield",
+        "Scimitar",
+        "Parrying Dagger",
+        "Caestus",
+        "Short Bow",
+        "Estoc",
+        "Pickaxe",
+        "Partizan",
+        "Wooden Shield",
+        "Halberd",
+        "Uchigatana",
+        "Lucerne",
+        "Shotel",
+        "Ricard's Rapier",
+        "Broadsword",
+        "Great Scythe",
+        "Target Shield",
+        "Falchion",
+        "Reinforced Club",
+        "Bandit's Knife",
+        "Murakumo",
+        "Dragonslayer Greatbow",
+        "Symbol of Avarice",
+        "Small Leather Shield",
+        "Crescent Axe",
+        "Channeller's Trident",
+        "Buckler",
+        "Mail Breaker",
+        "Composite Bow",
+        "Large Leather Shield",
+    ];
+
+    if (weaponName == "Fists" || weaponName == "Fist (Vanquisher's Seal)")
+        formattedName = "Fists_(Dark_Souls_II)";
+
+    if (weaponName.includes("Majestic Greatsword"))
+        formattedName = "Majestic_Greatsword";
+
+    if (weaponsWithSpecialWikiLinks.includes(weaponName))
+        formattedName += "_(Dark_Souls_II)";
+
+    return basePath + formattedName;
+}
+
 function getWikiLink(weaponName: string, wikiTarget: WikiTarget): string {
     switch (wikiTarget) {
         case "fextralife":
             return getFextralifeLink(weaponName);
         case "wikiDot":
             return getWikidotLink(weaponName);
+        case "fandom":
+            return getFandomLink(weaponName);
         default:
             return getWikiGGLink(weaponName);
     }

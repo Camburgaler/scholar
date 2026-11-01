@@ -1,6 +1,6 @@
 import { ActionDispatch, createContext, useContext, useReducer } from "react";
 
-export type WikiTarget = "wikiGG" | "fextralife" | "wikiDot";
+export type WikiTarget = "wikiGG" | "fextralife" | "wikiDot" | "fandom";
 
 export type WikiTargetAction = {
     value: WikiTarget;

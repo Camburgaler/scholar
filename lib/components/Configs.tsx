@@ -64,6 +64,19 @@ export default function Configs() {
                         />
                         <label htmlFor="wikiDot">Wikidot</label>
                     </div>
+
+                    {/* fandom */}
+                    <div>
+                        <input
+                            type="radio"
+                            id="fandom"
+                            name="wikiTarget"
+                            value="fandom"
+                            checked={wikiTarget === "fandom"}
+                            onChange={() => setWikiTarget({ value: "fandom" })}
+                        />
+                        <label htmlFor="fandom">Fandom</label>
+                    </div>
                 </div>
             </div>
             <hr />
