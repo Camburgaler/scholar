@@ -13,19 +13,31 @@ import { useEquippedArmorSet } from "@/lib/reducers/equipment/equippedArmorSet";
 import { useEquippedRings } from "@/lib/reducers/equipment/equippedRings";
 import { useEquippedWeapons } from "@/lib/reducers/equipment/equippedWeapons";
 import { ringsWeight } from "@/lib/scripts/equippedRings";
+import { reinforcedValue } from "@/lib/scripts/slopeIntercept";
 import { calculateStatDisplayValue } from "@/lib/scripts/statCalculation";
 import { StatMapKeyToStatNameMap } from "@/lib/types/statMap";
 import { useMemo } from "react";
 
-/**
- * Converts a ratio to a percentage
- * @param ratio The ratio to convert
- * @returns The percentage
- */
-function getEquipLoadPercentFromRatio(ratio: string): number {
-    const [numerator, denominator] = ratio.split("/").map(Number);
-    return (numerator / denominator) * 100;
-}
+// function calculateStaminaRegen(equipLoadPercent: number): number {
+//     const lowEquipLoadSlopeIntercept = { Slope: -0.13, Intercept: 51.9 }; // From 0% to 30%
+//     const midEquipLoadSlopeIntercept = { Slope: -0.3575, Intercept: 58.725 }; // From 30% to 70%
+//     const highEquipLoadSlopeIntercept = { Slope: -0.258, Intercept: 51.76 }; // From 70% to 120%
+
+//     // Stamina regen decreases (mostly) linearly with equip load percentage.
+//     // At 0% equip load, the regen is at its maximum (baseRegen).
+//     // Regen decreases linearly from 51.9 at 0% to 48.0 at 30%
+//     // Regen decreases linearly from 48.0 at 30% to 33.7 at 70%
+//     // Regen decreases linearly from 33.7 at 70% to 20.8 at 120%
+//     if (equipLoadPercent <= 30) {
+//         return reinforcedValue(lowEquipLoadSlopeIntercept, equipLoadPercent);
+//     } else if (equipLoadPercent <= 70) {
+//         return reinforcedValue(midEquipLoadSlopeIntercept, equipLoadPercent);
+//     } else if (equipLoadPercent <= 120) {
+//         return reinforcedValue(highEquipLoadSlopeIntercept, equipLoadPercent);
+//     } else {
+//         return 20.8;
+//     }
+// }
 
 /**
  * @description The middle column of the character info page. Displays certain stats and the character's equipment.
@@ -49,6 +61,59 @@ export default function MiddleColumn() {
         );
     }, [equippedArmor, equippedRings, equippedWeapons]);
 
+    const equipLoadPercent = useMemo(() => {
+        return (
+            (equipLoad /
+                calculateStatDisplayValue(
+                    "MaximumStamina",
+                    virtualAttributes,
+                    equippedArmor,
+                    equippedRings,
+                    equippedWeapons,
+                )) *
+            100
+        );
+    }, [
+        equipLoad,
+        virtualAttributes,
+        equippedArmor,
+        equippedRings,
+        equippedWeapons,
+    ]);
+
+    const staminaRegen = useMemo(() => {
+        const lowEquipLoadSlopeIntercept = { Slope: -0.13, Intercept: 51.9 }; // From 0% to 30%
+        const midEquipLoadSlopeIntercept = {
+            Slope: -0.3575,
+            Intercept: 58.725,
+        }; // From 30% to 70%
+        const highEquipLoadSlopeIntercept = { Slope: -0.258, Intercept: 51.76 }; // From 70% to 120%
+
+        // Stamina regen decreases (mostly) linearly with equip load percentage.
+        // At 0% equip load, the regen is at its maximum.
+        // Regen decreases linearly from 51.9 at 0% to 48.0 at 30%
+        // Regen decreases linearly from 48.0 at 30% to 33.7 at 70%
+        // Regen decreases linearly from 33.7 at 70% to 20.8 at 120%
+        if (equipLoadPercent <= 30) {
+            return reinforcedValue(
+                lowEquipLoadSlopeIntercept,
+                equipLoadPercent,
+            );
+        } else if (equipLoadPercent <= 70) {
+            return reinforcedValue(
+                midEquipLoadSlopeIntercept,
+                equipLoadPercent,
+            );
+        } else if (equipLoadPercent <= 120) {
+            return reinforcedValue(
+                highEquipLoadSlopeIntercept,
+                equipLoadPercent,
+            );
+        } else {
+            return 20.8;
+        }
+    }, [equipLoadPercent]);
+
     return (
         <div className="flex flex-col w-full h-full items-left justify-baseline align-center">
             {/* Stats */}
@@ -57,7 +122,45 @@ export default function MiddleColumn() {
                 <StatDisplay statDisplayKey="MaximumHP" isOddRow />
 
                 {/* Stamina */}
-                <StatDisplay statDisplayKey="MaximumStamina" />
+                {/* <StatDisplay statDisplayKey="MaximumStamina" /> */}
+                <div
+                    className="flex gap-1 w-full justify-between"
+                    style={{
+                        backgroundColor: "var(--secondary)",
+                        fontWeight: AttributeToStatMap[focusedAttribute!]?.[
+                            "MaximumStamina"
+                        ]
+                            ? "bold"
+                            : "normal",
+                    }}
+                    id={"MaximumStamina"}
+                >
+                    <label
+                        className="flex items-center justify-start h-full min-w-40"
+                        htmlFor={"MaximumStamina"}
+                    >
+                        {StatMapKeyToStatNameMap.get("MaximumStamina")}:
+                    </label>
+                    <p
+                        className="flex items-center justify-end w-full h-full"
+                        style={{ border: "none" }}
+                    >
+                        Regen: {staminaRegen.toFixed(1)}/s
+                    </p>
+                    <input
+                        className="flex text-right h-full max-w-15"
+                        id={"MaximumStamina"}
+                        type="text"
+                        disabled
+                        value={calculateStatDisplayValue(
+                            "MaximumStamina",
+                            virtualAttributes,
+                            equippedArmor,
+                            equippedRings,
+                            equippedWeapons,
+                        )}
+                    />
+                </div>
 
                 {/* Equip load */}
                 <div
@@ -92,19 +195,13 @@ export default function MiddleColumn() {
                             style={{
                                 border: "none",
                                 color:
-                                    getEquipLoadPercentFromRatio(
-                                        `${equipLoad}/${calculateStatDisplayValue("MaximumEquipLoad", virtualAttributes, equippedArmor, equippedRings, equippedWeapons)}`,
-                                    ) > 100
+                                    equipLoadPercent > 100
                                         ? "red"
-                                        : getEquipLoadPercentFromRatio(
-                                                `${equipLoad}/${calculateStatDisplayValue("MaximumEquipLoad", virtualAttributes, equippedArmor, equippedRings, equippedWeapons)}`,
-                                            ) > 70
+                                        : equipLoadPercent > 70
                                           ? "yellow"
                                           : "var(--contrast)",
                             }}
-                            value={`${getEquipLoadPercentFromRatio(
-                                `${equipLoad}/${calculateStatDisplayValue("MaximumEquipLoad", virtualAttributes, equippedArmor, equippedRings, equippedWeapons)}`,
-                            ).toFixed(1)}%`}
+                            value={`${equipLoadPercent.toFixed(1)}%`}
                         />
                     </div>
                 </div>
