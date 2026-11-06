@@ -871,7 +871,8 @@
                 "TargetType": "special",
                 "Target": "Backstab",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "SetStateInfo"
             }
         ],
         "Weight": 5.7,
@@ -1311,7 +1312,8 @@
                 "TargetType": "stat",
                 "Target": "Max Equip Load",
                 "Method": "multiplicative",
-                "Value": 0.015
+                "Value": 0.015,
+                "SpEffect": ""
             }
         ],
         "Weight": 3.2,
@@ -1607,7 +1609,8 @@
                 "TargetType": "special",
                 "Target": "Fall Damage Protection Modifier",
                 "Method": "additive",
-                "Value": 2
+                "Value": 2,
+                "SpEffect": "ModifyStatAdditively"
             }
         ],
         "Weight": 1.4,
@@ -1975,7 +1978,8 @@
                 "TargetType": "special",
                 "Target": "Spell Effect Length",
                 "Method": "multiplicative",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "ModifySpellEffectLength"
             }
         ],
         "Weight": 2.5,
@@ -2847,7 +2851,8 @@
                 "TargetType": "stat",
                 "Target": "Spell Cast Time",
                 "Method": "multiplicative",
-                "Value": -0.05
+                "Value": -0.05,
+                "SpEffect": ""
             }
         ],
         "Weight": 2.2,
@@ -3575,7 +3580,8 @@
                 "TargetType": "special",
                 "Target": "Soul Gain Rate",
                 "Method": "multiplicative",
-                "Value": 0.05
+                "Value": 0.05,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 3,
@@ -3655,14 +3661,16 @@
                 "TargetType": "attribute",
                 "Target": "Adaptability",
                 "Method": "additive",
-                "Value": 2
+                "Value": 2,
+                "SpEffect": ""
             },
             {
                 "Description": "Decrease Intelligence by 1",
                 "TargetType": "attribute",
                 "Target": "Intelligence",
                 "Method": "additive",
-                "Value": -1
+                "Value": -1,
+                "SpEffect": ""
             }
         ],
         "Weight": 3.8,
@@ -3742,7 +3750,8 @@
                 "TargetType": "special",
                 "Target": "Backstab",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "SetStateInfo"
             }
         ],
         "Weight": 29.8,
@@ -3822,7 +3831,8 @@
                 "TargetType": "special",
                 "Target": "Backstab",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "SetStateInfo"
             }
         ],
         "Weight": 29.8,
@@ -4550,7 +4560,8 @@
                 "TargetType": "special",
                 "Target": "Fall Damage Protection Modifier",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": "ModifyStatAdditively"
             }
         ],
         "Weight": 1.5,
@@ -4630,7 +4641,8 @@
                 "TargetType": "special",
                 "Target": "Fall Damage Protection Modifier",
                 "Method": "additive",
-                "Value": 2
+                "Value": 2,
+                "SpEffect": "ModifyStatAdditively"
             }
         ],
         "Weight": 1.5,
@@ -7950,7 +7962,8 @@
                 "TargetType": "special",
                 "Target": "Soul Gain Rate",
                 "Method": "multiplicative",
-                "Value": 0.1
+                "Value": 0.1,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 3.5,

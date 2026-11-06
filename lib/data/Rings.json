@@ -15,7 +15,8 @@
                 "TargetType": "stat",
                 "Target": "Max HP",
                 "Method": "multiplicative",
-                "Value": 0.05
+                "Value": 0.05,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.2,
@@ -31,7 +32,8 @@
                 "TargetType": "stat",
                 "Target": "Max HP",
                 "Method": "multiplicative",
-                "Value": 0.075
+                "Value": 0.075,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.5,
@@ -47,7 +49,8 @@
                 "TargetType": "stat",
                 "Target": "Max HP",
                 "Method": "multiplicative",
-                "Value": 0.125
+                "Value": 0.125,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.8,
@@ -63,7 +66,8 @@
                 "TargetType": "stat",
                 "Target": "Max HP",
                 "Method": "multiplicative",
-                "Value": 0.15
+                "Value": 0.15,
+                "SpEffect": ""
             }
         ],
         "Weight": 1.2,
@@ -79,7 +83,8 @@
                 "TargetType": "special",
                 "Target": "Stamina Recovery",
                 "Method": "multiplicative",
-                "Value": 14.999999999999991
+                "Value": 14.999999999999991,
+                "SpEffect": "ModifyStaminaRecovery"
             }
         ],
         "Weight": 0.2,
@@ -95,7 +100,8 @@
                 "TargetType": "special",
                 "Target": "Stamina Recovery",
                 "Method": "multiplicative",
-                "Value": 19.999999999999996
+                "Value": 19.999999999999996,
+                "SpEffect": "ModifyStaminaRecovery"
             }
         ],
         "Weight": 0.5,
@@ -111,7 +117,8 @@
                 "TargetType": "special",
                 "Target": "Stamina Recovery",
                 "Method": "multiplicative",
-                "Value": 25
+                "Value": 25,
+                "SpEffect": "ModifyStaminaRecovery"
             }
         ],
         "Weight": 0.8,
@@ -127,7 +134,8 @@
                 "TargetType": "stat",
                 "Target": "Max Equip Load",
                 "Method": "multiplicative",
-                "Value": 0.1
+                "Value": 0.1,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.2,
@@ -143,7 +151,8 @@
                 "TargetType": "stat",
                 "Target": "Max Equip Load",
                 "Method": "multiplicative",
-                "Value": 0.15
+                "Value": 0.15,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.5,
@@ -159,7 +168,8 @@
                 "TargetType": "stat",
                 "Target": "Max Equip Load",
                 "Method": "multiplicative",
-                "Value": 0.2
+                "Value": 0.2,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.8,
@@ -175,21 +185,24 @@
                 "TargetType": "stat",
                 "Target": "Max HP",
                 "Method": "multiplicative",
-                "Value": 0.03
+                "Value": 0.03,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Max Stamina by 5.0%",
                 "TargetType": "special",
                 "Target": "Max Stamina",
                 "Method": "multiplicative",
-                "Value": 0.05
+                "Value": 0.05,
+                "SpEffect": "ModifyStatMultiplicatively"
             },
             {
                 "Description": "Increase Max Equip Load by 5.0%",
                 "TargetType": "stat",
                 "Target": "Max Equip Load",
                 "Method": "multiplicative",
-                "Value": 0.05
+                "Value": 0.05,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.5,
@@ -205,21 +218,24 @@
                 "TargetType": "stat",
                 "Target": "Max HP",
                 "Method": "multiplicative",
-                "Value": 0.05
+                "Value": 0.05,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Max Stamina by 10.0%",
                 "TargetType": "special",
                 "Target": "Max Stamina",
                 "Method": "multiplicative",
-                "Value": 0.1
+                "Value": 0.1,
+                "SpEffect": "ModifyStatMultiplicatively"
             },
             {
                 "Description": "Increase Max Equip Load by 10.0%",
                 "TargetType": "stat",
                 "Target": "Max Equip Load",
                 "Method": "multiplicative",
-                "Value": 0.1
+                "Value": 0.1,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.8,
@@ -235,21 +251,24 @@
                 "TargetType": "stat",
                 "Target": "Max HP",
                 "Method": "multiplicative",
-                "Value": 0.075
+                "Value": 0.075,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Max Stamina by 12.5%",
                 "TargetType": "special",
                 "Target": "Max Stamina",
                 "Method": "multiplicative",
-                "Value": 0.125
+                "Value": 0.125,
+                "SpEffect": "ModifyStatMultiplicatively"
             },
             {
                 "Description": "Increase Max Equip Load by 12.5%",
                 "TargetType": "stat",
                 "Target": "Max Equip Load",
                 "Method": "multiplicative",
-                "Value": 0.125
+                "Value": 0.125,
+                "SpEffect": ""
             }
         ],
         "Weight": 1,
@@ -265,14 +284,16 @@
                 "TargetType": "special",
                 "Target": "All Physical Defense",
                 "Method": "additive",
-                "Value": 50
+                "Value": 50,
+                "SpEffect": "BuffDefense"
             },
             {
                 "Description": "Decrease PvE Damage Reduction by 10.0%",
                 "TargetType": "special",
                 "Target": "PvE Damage Reduction",
                 "Method": "multiplicative",
-                "Value": -0.1
+                "Value": -0.1,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 1,
@@ -288,14 +309,16 @@
                 "TargetType": "special",
                 "Target": "All Physical Defense",
                 "Method": "additive",
-                "Value": 75
+                "Value": 75,
+                "SpEffect": "BuffDefense"
             },
             {
                 "Description": "Decrease PvE Damage Reduction by 10.0%",
                 "TargetType": "special",
                 "Target": "PvE Damage Reduction",
                 "Method": "multiplicative",
-                "Value": -0.1
+                "Value": -0.1,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 1.5,
@@ -311,14 +334,16 @@
                 "TargetType": "special",
                 "Target": "All Physical Defense",
                 "Method": "additive",
-                "Value": 100
+                "Value": 100,
+                "SpEffect": "BuffDefense"
             },
             {
                 "Description": "Decrease PvE Damage Reduction by 12.5%",
                 "TargetType": "special",
                 "Target": "PvE Damage Reduction",
                 "Method": "multiplicative",
-                "Value": -0.125
+                "Value": -0.125,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 2,
@@ -334,7 +359,8 @@
                 "TargetType": "stat",
                 "Target": "Magic Defense",
                 "Method": "additive",
-                "Value": 5
+                "Value": 5,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.2,
@@ -350,7 +376,8 @@
                 "TargetType": "stat",
                 "Target": "Magic Defense",
                 "Method": "additive",
-                "Value": 8
+                "Value": 8,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.5,
@@ -366,7 +393,8 @@
                 "TargetType": "stat",
                 "Target": "Magic Defense",
                 "Method": "additive",
-                "Value": 10
+                "Value": 10,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.8,
@@ -382,7 +410,8 @@
                 "TargetType": "stat",
                 "Target": "Magic Defense",
                 "Method": "additive",
-                "Value": 15
+                "Value": 15,
+                "SpEffect": ""
             }
         ],
         "Weight": 1,
@@ -398,7 +427,8 @@
                 "TargetType": "stat",
                 "Target": "Fire Defense",
                 "Method": "additive",
-                "Value": 5
+                "Value": 5,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.2,
@@ -414,7 +444,8 @@
                 "TargetType": "stat",
                 "Target": "Fire Defense",
                 "Method": "additive",
-                "Value": 8
+                "Value": 8,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.5,
@@ -430,7 +461,8 @@
                 "TargetType": "stat",
                 "Target": "Fire Defense",
                 "Method": "additive",
-                "Value": 10
+                "Value": 10,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.8,
@@ -446,7 +478,8 @@
                 "TargetType": "stat",
                 "Target": "Fire Defense",
                 "Method": "additive",
-                "Value": 15
+                "Value": 15,
+                "SpEffect": ""
             }
         ],
         "Weight": 1,
@@ -462,7 +495,8 @@
                 "TargetType": "stat",
                 "Target": "Lightning Defense",
                 "Method": "additive",
-                "Value": 5
+                "Value": 5,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.2,
@@ -478,7 +512,8 @@
                 "TargetType": "stat",
                 "Target": "Lightning Defense",
                 "Method": "additive",
-                "Value": 8
+                "Value": 8,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.5,
@@ -494,7 +529,8 @@
                 "TargetType": "stat",
                 "Target": "Lightning Defense",
                 "Method": "additive",
-                "Value": 10
+                "Value": 10,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.8,
@@ -510,7 +546,8 @@
                 "TargetType": "stat",
                 "Target": "Lightning Defense",
                 "Method": "additive",
-                "Value": 15
+                "Value": 15,
+                "SpEffect": ""
             }
         ],
         "Weight": 1,
@@ -526,7 +563,8 @@
                 "TargetType": "stat",
                 "Target": "Dark Defense",
                 "Method": "additive",
-                "Value": 5
+                "Value": 5,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.2,
@@ -542,7 +580,8 @@
                 "TargetType": "stat",
                 "Target": "Dark Defense",
                 "Method": "additive",
-                "Value": 8
+                "Value": 8,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.5,
@@ -558,7 +597,8 @@
                 "TargetType": "stat",
                 "Target": "Dark Defense",
                 "Method": "additive",
-                "Value": 10
+                "Value": 10,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.8,
@@ -574,7 +614,8 @@
                 "TargetType": "stat",
                 "Target": "Dark Defense",
                 "Method": "additive",
-                "Value": 15
+                "Value": 15,
+                "SpEffect": ""
             }
         ],
         "Weight": 1,
@@ -590,7 +631,8 @@
                 "TargetType": "stat",
                 "Target": "Poison Defense",
                 "Method": "additive",
-                "Value": 15
+                "Value": 15,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.5,
@@ -606,7 +648,8 @@
                 "TargetType": "stat",
                 "Target": "Poison Defense",
                 "Method": "additive",
-                "Value": 30
+                "Value": 30,
+                "SpEffect": ""
             }
         ],
         "Weight": 1.5,
@@ -622,7 +665,8 @@
                 "TargetType": "stat",
                 "Target": "Bleed Defense",
                 "Method": "additive",
-                "Value": 15
+                "Value": 15,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.5,
@@ -638,7 +682,8 @@
                 "TargetType": "stat",
                 "Target": "Bleed Defense",
                 "Method": "additive",
-                "Value": 30
+                "Value": 30,
+                "SpEffect": ""
             }
         ],
         "Weight": 1.5,
@@ -654,21 +699,24 @@
                 "TargetType": "special",
                 "Target": "Weapon Degradation Rate",
                 "Method": "multiplicative",
-                "Value": -0.2
+                "Value": -0.2,
+                "SpEffect": "ModifyStatMultiplicatively"
             },
             {
                 "Description": "Decrease Armor Degradation Rate by 20.0%",
                 "TargetType": "special",
                 "Target": "Armor Degradation Rate",
                 "Method": "multiplicative",
-                "Value": -0.2
+                "Value": -0.2,
+                "SpEffect": "ModifyStatMultiplicatively"
             },
             {
                 "Description": "Decrease Ring Degradation Rate by 20.0%",
                 "TargetType": "special",
                 "Target": "Ring Degradation Rate",
                 "Method": "multiplicative",
-                "Value": -0.2
+                "Value": -0.2,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 0.5,
@@ -684,21 +732,24 @@
                 "TargetType": "special",
                 "Target": "Weapon Degradation Rate",
                 "Method": "multiplicative",
-                "Value": -0.35
+                "Value": -0.35,
+                "SpEffect": "ModifyStatMultiplicatively"
             },
             {
                 "Description": "Decrease Armor Degradation Rate by 25.0%",
                 "TargetType": "special",
                 "Target": "Armor Degradation Rate",
                 "Method": "multiplicative",
-                "Value": -0.25
+                "Value": -0.25,
+                "SpEffect": "ModifyStatMultiplicatively"
             },
             {
                 "Description": "Decrease Ring Degradation Rate by 25.0%",
                 "TargetType": "special",
                 "Target": "Ring Degradation Rate",
                 "Method": "multiplicative",
-                "Value": -0.25
+                "Value": -0.25,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 0.8,
@@ -714,21 +765,24 @@
                 "TargetType": "special",
                 "Target": "Weapon Degradation Rate",
                 "Method": "multiplicative",
-                "Value": -0.5
+                "Value": -0.5,
+                "SpEffect": "ModifyStatMultiplicatively"
             },
             {
                 "Description": "Decrease Armor Degradation Rate by 35.0%",
                 "TargetType": "special",
                 "Target": "Armor Degradation Rate",
                 "Method": "multiplicative",
-                "Value": -0.35
+                "Value": -0.35,
+                "SpEffect": "ModifyStatMultiplicatively"
             },
             {
                 "Description": "Decrease Ring Degradation Rate by 35.0%",
                 "TargetType": "special",
                 "Target": "Ring Degradation Rate",
                 "Method": "multiplicative",
-                "Value": -0.35
+                "Value": -0.35,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 1,
@@ -744,7 +798,8 @@
                 "TargetType": "stat",
                 "Target": "Curse Defense",
                 "Method": "additive",
-                "Value": 40
+                "Value": 40,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.8,
@@ -760,7 +815,8 @@
                 "TargetType": "stat",
                 "Target": "Petrify Defense",
                 "Method": "additive",
-                "Value": 40
+                "Value": 40,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.8,
@@ -776,28 +832,32 @@
                 "TargetType": "stat",
                 "Target": "Magic Defense",
                 "Method": "additive",
-                "Value": 6
+                "Value": 6,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Lightning Defense by 6",
                 "TargetType": "stat",
                 "Target": "Lightning Defense",
                 "Method": "additive",
-                "Value": 6
+                "Value": 6,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Fire Defense by 6",
                 "TargetType": "stat",
                 "Target": "Fire Defense",
                 "Method": "additive",
-                "Value": 6
+                "Value": 6,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Dark Defense by 6",
                 "TargetType": "stat",
                 "Target": "Dark Defense",
                 "Method": "additive",
-                "Value": 6
+                "Value": 6,
+                "SpEffect": ""
             }
         ],
         "Weight": 1,
@@ -813,28 +873,32 @@
                 "TargetType": "stat",
                 "Target": "Magic Defense",
                 "Method": "additive",
-                "Value": 12
+                "Value": 12,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Lightning Defense by 12",
                 "TargetType": "stat",
                 "Target": "Lightning Defense",
                 "Method": "additive",
-                "Value": 12
+                "Value": 12,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Fire Defense by 12",
                 "TargetType": "stat",
                 "Target": "Fire Defense",
                 "Method": "additive",
-                "Value": 12
+                "Value": 12,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Dark Defense by 12",
                 "TargetType": "stat",
                 "Target": "Dark Defense",
                 "Method": "additive",
-                "Value": 12
+                "Value": 12,
+                "SpEffect": ""
             }
         ],
         "Weight": 4,
@@ -850,28 +914,32 @@
                 "TargetType": "stat",
                 "Target": "Poison Defense",
                 "Method": "additive",
-                "Value": 12
+                "Value": 12,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Bleed Defense by 12",
                 "TargetType": "stat",
                 "Target": "Bleed Defense",
                 "Method": "additive",
-                "Value": 12
+                "Value": 12,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Curse Defense by 12",
                 "TargetType": "stat",
                 "Target": "Curse Defense",
                 "Method": "additive",
-                "Value": 12
+                "Value": 12,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Petrify Defense by 12",
                 "TargetType": "stat",
                 "Target": "Petrify Defense",
                 "Method": "additive",
-                "Value": 12
+                "Value": 12,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.8,
@@ -887,28 +955,32 @@
                 "TargetType": "stat",
                 "Target": "Poison Defense",
                 "Method": "additive",
-                "Value": 20
+                "Value": 20,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Bleed Defense by 20",
                 "TargetType": "stat",
                 "Target": "Bleed Defense",
                 "Method": "additive",
-                "Value": 20
+                "Value": 20,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Curse Defense by 20",
                 "TargetType": "stat",
                 "Target": "Curse Defense",
                 "Method": "additive",
-                "Value": 20
+                "Value": 20,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Petrify Defense by 20",
                 "TargetType": "stat",
                 "Target": "Petrify Defense",
                 "Method": "additive",
-                "Value": 20
+                "Value": 20,
+                "SpEffect": ""
             }
         ],
         "Weight": 1.5,
@@ -920,25 +992,20 @@
         "Name": "Ring of Blades",
         "Modifiers": [
             {
-                "Description": "Increase All Physical Damage by 10 when the weapon is infused with Standard",
+                "Description": "Increase Physical Damage by 10 when the weapon is not infused with Standard",
                 "TargetType": "special",
-                "Target": "All Physical Damage",
+                "Target": "Physical Damage",
                 "Method": "additive",
-                "Value": 10
+                "Value": 10,
+                "SpEffect": "ModifyDamageFlatToBaseAr"
             },
             {
-                "Description": "Increase All Physical Damage by 20 when the weapon has innate Standard",
+                "Description": "Increase Physical Damage by 20 when the weapon has innate Physical Damage",
                 "TargetType": "special",
-                "Target": "All Physical Damage",
+                "Target": "Physical Damage",
                 "Method": "additive",
-                "Value": 20
-            },
-            {
-                "Description": "Increase All Physical Damage by 24 when the weapon has innate AND infused Standard",
-                "TargetType": "special",
-                "Target": "All Physical Damage",
-                "Method": "additive",
-                "Value": 24
+                "Value": 20,
+                "SpEffect": "ModifyDamageFlatToBaseAr"
             }
         ],
         "Weight": 1,
@@ -950,25 +1017,20 @@
         "Name": "Ring of Blades+1",
         "Modifiers": [
             {
-                "Description": "Increase All Physical Damage by 17 when the weapon is infused with Standard",
+                "Description": "Increase Physical Damage by 17 when the weapon is not infused with Standard",
                 "TargetType": "special",
-                "Target": "All Physical Damage",
+                "Target": "Physical Damage",
                 "Method": "additive",
-                "Value": 17.5
+                "Value": 17.5,
+                "SpEffect": "ModifyDamageFlatToBaseAr"
             },
             {
-                "Description": "Increase All Physical Damage by 35 when the weapon has innate Standard",
+                "Description": "Increase Physical Damage by 35 when the weapon has innate Physical Damage",
                 "TargetType": "special",
-                "Target": "All Physical Damage",
+                "Target": "Physical Damage",
                 "Method": "additive",
-                "Value": 35
-            },
-            {
-                "Description": "Increase All Physical Damage by 42 when the weapon has innate AND infused Standard",
-                "TargetType": "special",
-                "Target": "All Physical Damage",
-                "Method": "additive",
-                "Value": 42
+                "Value": 35,
+                "SpEffect": "ModifyDamageFlatToBaseAr"
             }
         ],
         "Weight": 1.5,
@@ -980,25 +1042,20 @@
         "Name": "Ring of Blades+2",
         "Modifiers": [
             {
-                "Description": "Increase All Physical Damage by 25 when the weapon is infused with Standard",
+                "Description": "Increase Physical Damage by 25 when the weapon is not infused with Standard",
                 "TargetType": "special",
-                "Target": "All Physical Damage",
+                "Target": "Physical Damage",
                 "Method": "additive",
-                "Value": 25
+                "Value": 25,
+                "SpEffect": "ModifyDamageFlatToBaseAr"
             },
             {
-                "Description": "Increase All Physical Damage by 50 when the weapon has innate Standard",
+                "Description": "Increase Physical Damage by 50 when the weapon has innate Physical Damage",
                 "TargetType": "special",
-                "Target": "All Physical Damage",
+                "Target": "Physical Damage",
                 "Method": "additive",
-                "Value": 50
-            },
-            {
-                "Description": "Increase All Physical Damage by 60 when the weapon has innate AND infused Standard",
-                "TargetType": "special",
-                "Target": "All Physical Damage",
-                "Method": "additive",
-                "Value": 60
+                "Value": 50,
+                "SpEffect": "ModifyDamageFlatToBaseAr"
             }
         ],
         "Weight": 2,
@@ -1014,7 +1071,8 @@
                 "TargetType": "attribute",
                 "Target": "Intelligence",
                 "Method": "additive",
-                "Value": 5
+                "Value": 5,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.5,
@@ -1030,7 +1088,8 @@
                 "TargetType": "attribute",
                 "Target": "Faith",
                 "Method": "additive",
-                "Value": 5
+                "Value": 5,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.5,
@@ -1046,7 +1105,8 @@
                 "TargetType": "special",
                 "Target": "Attack Poise Damage",
                 "Method": "additive",
-                "Value": 30
+                "Value": 30,
+                "SpEffect": "ModifyStatAdditively"
             }
         ],
         "Weight": 1.5,
@@ -1062,14 +1122,16 @@
                 "TargetType": "special",
                 "Target": "Current HP Ratio",
                 "Method": "additive",
-                "Value": 30
+                "Value": 30,
+                "SpEffect": "ModifyStatAdditively"
             },
             {
                 "Description": "Increase Outgoing Physical Damage Rate by 20.0%",
                 "TargetType": "special",
                 "Target": "Outgoing Physical Damage Rate",
                 "Method": "multiplicative",
-                "Value": 0.2
+                "Value": 0.2,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 1.5,
@@ -1085,14 +1147,16 @@
                 "TargetType": "special",
                 "Target": "Current HP Ratio2",
                 "Method": "additive",
-                "Value": 30
+                "Value": 30,
+                "SpEffect": "ModifyStatAdditively"
             },
             {
                 "Description": "Decrease Incoming Physical Damage Rate by 35.0%",
                 "TargetType": "special",
                 "Target": "Incoming Physical Damage Rate",
                 "Method": "multiplicative",
-                "Value": -0.35
+                "Value": -0.35,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 1,
@@ -1108,7 +1172,8 @@
                 "TargetType": "special",
                 "Target": "Poise",
                 "Method": "additive",
-                "Value": 10
+                "Value": 10,
+                "SpEffect": "ModifyStatAdditively"
             }
         ],
         "Weight": 2,
@@ -1124,7 +1189,8 @@
                 "TargetType": "special",
                 "Target": "Poise",
                 "Method": "additive",
-                "Value": 20
+                "Value": 20,
+                "SpEffect": "ModifyStatAdditively"
             }
         ],
         "Weight": 3,
@@ -1140,7 +1206,8 @@
                 "TargetType": "special",
                 "Target": "Poise",
                 "Method": "additive",
-                "Value": 30
+                "Value": 30,
+                "SpEffect": "ModifyStatAdditively"
             }
         ],
         "Weight": 5,
@@ -1156,7 +1223,8 @@
                 "TargetType": "special",
                 "Target": "Thrust Counterattack Damage Rate",
                 "Method": "multiplicative",
-                "Value": 0.125
+                "Value": 0.125,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 0.5,
@@ -1172,7 +1240,8 @@
                 "TargetType": "special",
                 "Target": "Soul Loss On Death",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "SetStateInfo"
             }
         ],
         "Weight": 1,
@@ -1188,7 +1257,8 @@
                 "TargetType": "special",
                 "Target": "Hollowing and Soul Loss On Death",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "SetStateInfo"
             }
         ],
         "Weight": 1,
@@ -1204,7 +1274,8 @@
                 "TargetType": "special",
                 "Target": "Spell Effect Length",
                 "Method": "multiplicative",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "ModifySpellEffectLength"
             }
         ],
         "Weight": 0.2,
@@ -1220,7 +1291,8 @@
                 "TargetType": "special",
                 "Target": "Spell Effect Length",
                 "Method": "multiplicative",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "ModifySpellEffectLength"
             }
         ],
         "Weight": 0.5,
@@ -1236,7 +1308,8 @@
                 "TargetType": "special",
                 "Target": "Spell Effect Length",
                 "Method": "multiplicative",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "ModifySpellEffectLength"
             }
         ],
         "Weight": 0.8,
@@ -1252,7 +1325,8 @@
                 "TargetType": "stat",
                 "Target": "Spell Cast Time",
                 "Method": "multiplicative",
-                "Value": -0.2
+                "Value": -0.2,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.2,
@@ -1268,7 +1342,8 @@
                 "TargetType": "stat",
                 "Target": "Spell Cast Time",
                 "Method": "multiplicative",
-                "Value": -0.35
+                "Value": -0.35,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.5,
@@ -1284,7 +1359,8 @@
                 "TargetType": "stat",
                 "Target": "Spell Cast Time",
                 "Method": "multiplicative",
-                "Value": -0.4
+                "Value": -0.4,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.8,
@@ -1300,14 +1376,16 @@
                 "TargetType": "stat",
                 "Target": "Max Spell Usages",
                 "Method": "multiplicative",
-                "Value": 0.1
+                "Value": 0.1,
+                "SpEffect": ""
             },
             {
                 "Description": "Decrease Max HP by 20.0%",
                 "TargetType": "stat",
                 "Target": "Max HP",
                 "Method": "multiplicative",
-                "Value": -0.2
+                "Value": -0.2,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.5,
@@ -1323,14 +1401,16 @@
                 "TargetType": "stat",
                 "Target": "Max Spell Usages",
                 "Method": "multiplicative",
-                "Value": 0.2
+                "Value": 0.2,
+                "SpEffect": ""
             },
             {
                 "Description": "Decrease Max HP by 25.0%",
                 "TargetType": "stat",
                 "Target": "Max HP",
                 "Method": "multiplicative",
-                "Value": -0.25
+                "Value": -0.25,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.8,
@@ -1346,14 +1426,16 @@
                 "TargetType": "stat",
                 "Target": "Max Spell Usages",
                 "Method": "multiplicative",
-                "Value": 0.3
+                "Value": 0.3,
+                "SpEffect": ""
             },
             {
                 "Description": "Decrease Max HP by 50.0%",
                 "TargetType": "stat",
                 "Target": "Max HP",
                 "Method": "multiplicative",
-                "Value": -0.5
+                "Value": -0.5,
+                "SpEffect": ""
             }
         ],
         "Weight": 1,
@@ -1369,7 +1451,8 @@
                 "TargetType": "stat",
                 "Target": "Attunement Slots",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             }
         ],
         "Weight": 1,
@@ -1385,7 +1468,8 @@
                 "TargetType": "stat",
                 "Target": "Attunement Slots",
                 "Method": "additive",
-                "Value": 2
+                "Value": 2,
+                "SpEffect": ""
             }
         ],
         "Weight": 1.2,
@@ -1401,7 +1485,8 @@
                 "TargetType": "stat",
                 "Target": "Attunement Slots",
                 "Method": "additive",
-                "Value": 3
+                "Value": 3,
+                "SpEffect": ""
             }
         ],
         "Weight": 1.5,
@@ -1441,7 +1526,8 @@
                 "TargetType": "special",
                 "Target": "Soul Gain Rate",
                 "Method": "multiplicative",
-                "Value": 0.1
+                "Value": 0.1,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 1,
@@ -1457,7 +1543,8 @@
                 "TargetType": "special",
                 "Target": "Soul Gain Rate",
                 "Method": "multiplicative",
-                "Value": 0.2
+                "Value": 0.2,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 1.2,
@@ -1473,7 +1560,8 @@
                 "TargetType": "special",
                 "Target": "Soul Gain Rate",
                 "Method": "multiplicative",
-                "Value": 0.3
+                "Value": 0.3,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 1.5,
@@ -1489,7 +1577,8 @@
                 "TargetType": "special",
                 "Target": "HP On Kill",
                 "Method": "additive",
-                "Value": 30
+                "Value": 30,
+                "SpEffect": "ModifyStatAdditively"
             }
         ],
         "Weight": 1,
@@ -1505,7 +1594,8 @@
                 "TargetType": "special",
                 "Target": "HP On Kill",
                 "Method": "additive",
-                "Value": 50
+                "Value": 50,
+                "SpEffect": "ModifyStatAdditively"
             }
         ],
         "Weight": 1.2,
@@ -1521,7 +1611,8 @@
                 "TargetType": "special",
                 "Target": "HP On Kill",
                 "Method": "additive",
-                "Value": 80
+                "Value": 80,
+                "SpEffect": "ModifyStatAdditively"
             }
         ],
         "Weight": 1.5,
@@ -1537,7 +1628,8 @@
                 "TargetType": "special",
                 "Target": "HP Regen",
                 "Method": "additive",
-                "Value": 2
+                "Value": 2,
+                "SpEffect": "UnknownCommand10004002"
             }
         ],
         "Weight": 1,
@@ -1553,7 +1645,8 @@
                 "TargetType": "special",
                 "Target": "Hollowing HP Reduction",
                 "Method": "multiplicative",
-                "Value": -0.5
+                "Value": -0.5,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 0.2,
@@ -1569,7 +1662,8 @@
                 "TargetType": "special",
                 "Target": "Fall Damage Protection Modifier",
                 "Method": "additive",
-                "Value": 4
+                "Value": 4,
+                "SpEffect": "ModifyStatAdditively"
             }
         ],
         "Weight": 0.2,
@@ -1585,7 +1679,8 @@
                 "TargetType": "special",
                 "Target": "Aggro",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "ModifyEnemyAggroToPlayer"
             }
         ],
         "Weight": 0.2,
@@ -1601,28 +1696,32 @@
                 "TargetType": "special",
                 "Target": "Backstab",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "SetStateInfo"
             },
             {
                 "Description": "Reduce Damage From Behind",
                 "TargetType": "special",
                 "Target": "Damage From Behind",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "SetStateInfo"
             },
             {
                 "Description": "Decrease Physical Damage From Behind by 20.0%",
                 "TargetType": "special",
                 "Target": "Physical Damage From Behind",
                 "Method": "multiplicative",
-                "Value": -0.2
+                "Value": -0.2,
+                "SpEffect": "ModifyStatMultiplicatively"
             },
             {
                 "Description": "Decrease Elemental Damage From Behind by 85.0%",
                 "TargetType": "special",
                 "Target": "Elemental Damage From Behind",
                 "Method": "multiplicative",
-                "Value": -0.85
+                "Value": -0.85,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 10,
@@ -1646,7 +1745,8 @@
                 "TargetType": "special",
                 "Target": "Footstep Sound",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "SetStateInfo"
             }
         ],
         "Weight": 0.2,
@@ -1662,21 +1762,24 @@
                 "TargetType": "special",
                 "Target": "Bow Range",
                 "Method": "additive",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "ModifyBulletParam"
             },
             {
                 "Description": "Increase Greatbow Range by 7.5%",
                 "TargetType": "special",
                 "Target": "Greatbow Range",
                 "Method": "additive",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "ModifyBulletParam"
             },
             {
                 "Description": "Increase Crossbow Range by 7.5%",
                 "TargetType": "special",
                 "Target": "Crossbow Range",
                 "Method": "additive",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "ModifyBulletParam"
             }
         ],
         "Weight": 0.2,
@@ -1692,7 +1795,8 @@
                 "TargetType": "special",
                 "Target": "Trigger Explosion",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "RandomlySpawnBulletAfterTakingDamageDurabilitybasedRandomness"
             }
         ],
         "Weight": 3,
@@ -1708,7 +1812,8 @@
                 "TargetType": "special",
                 "Target": "Left Weapon",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "SetStateInfo"
             }
         ],
         "Weight": 0.2,
@@ -1724,21 +1829,24 @@
                 "TargetType": "special",
                 "Target": "Fire Damage",
                 "Method": "additive",
-                "Value": 2.5
+                "Value": 2.5,
+                "SpEffect": "ModifyDamageFlatToBaseAr"
             },
             {
                 "Description": "Increase Fire Damage by 5 when the weapon has innate Fire Damage",
                 "TargetType": "special",
                 "Target": "Fire Damage",
                 "Method": "additive",
-                "Value": 5
+                "Value": 5,
+                "SpEffect": "ModifyDamageFlatToBaseAr"
             },
             {
-                "Description": "Increase Fire Damage by 6 when the weapon has innate AND infused Fire Damage",
+                "Description": "Increase Fire Damage by 6 when the weapon has innate Fire Damage AND infused with Fire Damage",
                 "TargetType": "special",
                 "Target": "Fire Damage",
                 "Method": "additive",
-                "Value": 6
+                "Value": 6,
+                "SpEffect": "ModifyDamageFlatToBaseAr"
             }
         ],
         "Weight": 0.2,
@@ -1754,7 +1862,8 @@
                 "TargetType": "special",
                 "Target": "Human Appearance",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "SetStateInfo"
             }
         ],
         "Weight": 0.2,
@@ -1770,7 +1879,8 @@
                 "TargetType": "special",
                 "Target": "Counterattack",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "RandomlySpawnBulletAfterTakingDamageFlatRandomness"
             }
         ],
         "Weight": 0.5,
@@ -1786,7 +1896,8 @@
                 "TargetType": "special",
                 "Target": "Counterattack",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "RandomlySpawnBulletAfterTakingDamageFlatRandomness"
             }
         ],
         "Weight": 0.8,
@@ -1802,7 +1913,8 @@
                 "TargetType": "special",
                 "Target": "Counterattack",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "RandomlySpawnBulletAfterTakingDamageFlatRandomness"
             }
         ],
         "Weight": 1,
@@ -1818,7 +1930,8 @@
                 "TargetType": "special",
                 "Target": "Invasion Cooldown Timer",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "ResetInvasionCooldownTimer"
             }
         ],
         "Weight": 0.2,
@@ -1834,7 +1947,8 @@
                 "TargetType": "special",
                 "Target": "White Phantom Appearance",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "ModifyProperty"
             }
         ],
         "Weight": 1,
@@ -1858,7 +1972,8 @@
                 "TargetType": "special",
                 "Target": "Right Weapon",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "SetStateInfo"
             }
         ],
         "Weight": 0.2,
@@ -1874,28 +1989,32 @@
                 "TargetType": "special",
                 "Target": "Covenant Invasion",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "InitiatePassiveServermediatedMultiplayerItem"
             },
             {
                 "Description": "Increase Poison Damage by 25 when the weapon is infused with Poison Damage",
                 "TargetType": "stat",
                 "Target": "Poison Damage",
                 "Method": "additive",
-                "Value": 25
+                "Value": 25,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Poison Damage by 50 when the weapon has innate Poison Damage",
                 "TargetType": "stat",
                 "Target": "Poison Damage",
                 "Method": "additive",
-                "Value": 50
+                "Value": 50,
+                "SpEffect": ""
             },
             {
-                "Description": "Increase Poison Damage by 60 when the weapon has innate AND infused Poison Damage",
+                "Description": "Increase Poison Damage by 60 when the weapon has innate Poison Damage AND infused with Poison Damage",
                 "TargetType": "stat",
                 "Target": "Poison Damage",
                 "Method": "additive",
-                "Value": 60
+                "Value": 60,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.2,
@@ -1911,7 +2030,8 @@
                 "TargetType": "special",
                 "Target": "Covenant Invasion",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "InitiatePassiveServermediatedMultiplayerItem"
             }
         ],
         "Weight": 0.2,
@@ -1927,7 +2047,8 @@
                 "TargetType": "special",
                 "Target": "Covenant Invasion",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "InitiatePassiveServermediatedMultiplayerItem"
             }
         ],
         "Weight": 0.2,
@@ -1943,21 +2064,24 @@
                 "TargetType": "stat",
                 "Target": "Bleed Damage",
                 "Method": "additive",
-                "Value": 25
+                "Value": 25,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Bleed Damage by 50 when the weapon has innate Bleed Damage",
                 "TargetType": "stat",
                 "Target": "Bleed Damage",
                 "Method": "additive",
-                "Value": 50
+                "Value": 50,
+                "SpEffect": ""
             },
             {
-                "Description": "Increase Bleed Damage by 60 when the weapon has innate AND infused Bleed Damage",
+                "Description": "Increase Bleed Damage by 60 when the weapon has innate Bleed Damage AND infused with Bleed Damage",
                 "TargetType": "stat",
                 "Target": "Bleed Damage",
                 "Method": "additive",
-                "Value": 60
+                "Value": 60,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.2,
@@ -1973,7 +2097,8 @@
                 "TargetType": "stat",
                 "Target": "Max HP",
                 "Method": "multiplicative",
-                "Value": 0.03
+                "Value": 0.03,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.2,
@@ -1989,28 +2114,32 @@
                 "TargetType": "special",
                 "Target": "Hex Self Damage Staff",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "ModifyProperty"
             },
             {
                 "Description": "Take 30 damage every time the player casts a hex from a chime",
                 "TargetType": "special",
                 "Target": "Hex Self Damage Chime",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "ModifyProperty"
             },
             {
                 "Description": "Increase Hex Power Staff by 7.5%",
                 "TargetType": "special",
                 "Target": "Hex Power Staff",
                 "Method": "multiplicative",
-                "Value": 0.075
+                "Value": 0.075,
+                "SpEffect": "ModifyStatMultiplicatively"
             },
             {
                 "Description": "Increase Hex Power Chime by 7.5%",
                 "TargetType": "special",
                 "Target": "Hex Power Chime",
                 "Method": "multiplicative",
-                "Value": 0.075
+                "Value": 0.075,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 0.2,
@@ -2026,28 +2155,32 @@
                 "TargetType": "special",
                 "Target": "Bare Fist Base Damage",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "ReplaceFistsWithAlternateWeapon"
             },
             {
                 "Description": "Increase damage scaling of bare fists",
                 "TargetType": "special",
                 "Target": "Bare Fist Damage Scaling",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "ReplaceFistsWithAlternateWeapon"
             },
             {
                 "Description": "Increase damage on ladders",
                 "TargetType": "special",
                 "Target": "Ladder Damage",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "ReplaceFistsWithAlternateWeapon"
             },
             {
                 "Description": "Enable powerstancing bare fists",
                 "TargetType": "special",
                 "Target": "Powerstancing Bare Fist",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "ReplaceFistsWithAlternateWeapon"
             }
         ],
         "Weight": 0.2,
@@ -2063,7 +2196,8 @@
                 "TargetType": "special",
                 "Target": "Miracle Power",
                 "Method": "multiplicative",
-                "Value": 0.05
+                "Value": 0.05,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 0.2,
@@ -2079,7 +2213,8 @@
                 "TargetType": "special",
                 "Target": "Estus Healing",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "ModifyEstusUsage"
             }
         ],
         "Weight": 0.2,
@@ -2095,14 +2230,16 @@
                 "TargetType": "attribute",
                 "Target": "Adaptability",
                 "Method": "additive",
-                "Value": 5
+                "Value": 5,
+                "SpEffect": ""
             },
             {
                 "Description": "Invisible while rolling",
                 "TargetType": "special",
                 "Target": "Invisible While Rolling",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "SetStateInfo"
             }
         ],
         "Weight": 1.5,
@@ -2118,7 +2255,8 @@
                 "TargetType": "attribute",
                 "Target": "Strength",
                 "Method": "additive",
-                "Value": 5
+                "Value": 5,
+                "SpEffect": ""
             }
         ],
         "Weight": 1.5,
@@ -2134,7 +2272,8 @@
                 "TargetType": "attribute",
                 "Target": "Dexterity",
                 "Method": "additive",
-                "Value": 5
+                "Value": 5,
+                "SpEffect": ""
             }
         ],
         "Weight": 1.5,
@@ -2150,7 +2289,8 @@
                 "TargetType": "special",
                 "Target": "Stamina Damage",
                 "Method": "additive",
-                "Value": 20
+                "Value": 20,
+                "SpEffect": "ModifyStatAdditively"
             }
         ],
         "Weight": 5,
@@ -2166,28 +2306,32 @@
                 "TargetType": "special",
                 "Target": "Magic Damage",
                 "Method": "additive",
-                "Value": 15
+                "Value": 15,
+                "SpEffect": "ModifyDamageFlatToBaseAr"
             },
             {
                 "Description": "Increase Magic Damage by 30 when the weapon has innate Magic Damage",
                 "TargetType": "special",
                 "Target": "Magic Damage",
                 "Method": "additive",
-                "Value": 30
+                "Value": 30,
+                "SpEffect": "ModifyDamageFlatToBaseAr"
             },
             {
-                "Description": "Increase Magic Damage by 36 when the weapon has innate AND infused Magic Damage",
+                "Description": "Increase Magic Damage by 36 when the weapon has innate Magic Damage AND infused with Magic Damage",
                 "TargetType": "special",
                 "Target": "Magic Damage",
                 "Method": "additive",
-                "Value": 36
+                "Value": 36,
+                "SpEffect": "ModifyDamageFlatToBaseAr"
             },
             {
                 "Description": "Decrease All Physical Defense by 80",
                 "TargetType": "special",
                 "Target": "All Physical Defense",
                 "Method": "additive",
-                "Value": -80
+                "Value": -80,
+                "SpEffect": "NerfDefense"
             }
         ],
         "Weight": 2,
@@ -2203,28 +2347,32 @@
                 "TargetType": "special",
                 "Target": "Lightning Damage",
                 "Method": "additive",
-                "Value": 15
+                "Value": 15,
+                "SpEffect": "ModifyDamageFlatToBaseAr"
             },
             {
                 "Description": "Increase Lightning Damage by 30 when the weapon has innate Lightning Damage",
                 "TargetType": "special",
                 "Target": "Lightning Damage",
                 "Method": "additive",
-                "Value": 30
+                "Value": 30,
+                "SpEffect": "ModifyDamageFlatToBaseAr"
             },
             {
-                "Description": "Increase Lightning Damage by 36 when the weapon has innate AND infused Lightning Damage",
+                "Description": "Increase Lightning Damage by 36 when the weapon has innate Lightning Damage AND infused with Lightning Damage",
                 "TargetType": "special",
                 "Target": "Lightning Damage",
                 "Method": "additive",
-                "Value": 36
+                "Value": 36,
+                "SpEffect": "ModifyDamageFlatToBaseAr"
             },
             {
                 "Description": "Decrease All Physical Defense by 80",
                 "TargetType": "special",
                 "Target": "All Physical Defense",
                 "Method": "additive",
-                "Value": -80
+                "Value": -80,
+                "SpEffect": "NerfDefense"
             }
         ],
         "Weight": 2,
@@ -2240,28 +2388,32 @@
                 "TargetType": "special",
                 "Target": "Fire Damage",
                 "Method": "additive",
-                "Value": 15
+                "Value": 15,
+                "SpEffect": "ModifyDamageFlatToBaseAr"
             },
             {
                 "Description": "Increase Fire Damage by 30 when the weapon has innate Fire Damage",
                 "TargetType": "special",
                 "Target": "Fire Damage",
                 "Method": "additive",
-                "Value": 30
+                "Value": 30,
+                "SpEffect": "ModifyDamageFlatToBaseAr"
             },
             {
-                "Description": "Increase Fire Damage by 36 when the weapon has innate AND infused Fire Damage",
+                "Description": "Increase Fire Damage by 36 when the weapon has innate Fire Damage AND infused with Fire Damage",
                 "TargetType": "special",
                 "Target": "Fire Damage",
                 "Method": "additive",
-                "Value": 36
+                "Value": 36,
+                "SpEffect": "ModifyDamageFlatToBaseAr"
             },
             {
                 "Description": "Decrease All Physical Defense by 80",
                 "TargetType": "special",
                 "Target": "All Physical Defense",
                 "Method": "additive",
-                "Value": -80
+                "Value": -80,
+                "SpEffect": "NerfDefense"
             }
         ],
         "Weight": 2,
@@ -2277,28 +2429,32 @@
                 "TargetType": "special",
                 "Target": "Dark Damage",
                 "Method": "additive",
-                "Value": 15
+                "Value": 15,
+                "SpEffect": "ModifyDamageFlatToBaseAr"
             },
             {
                 "Description": "Increase Dark Damage by 30 when the weapon has innate Dark Damage",
                 "TargetType": "special",
                 "Target": "Dark Damage",
                 "Method": "additive",
-                "Value": 30
+                "Value": 30,
+                "SpEffect": "ModifyDamageFlatToBaseAr"
             },
             {
-                "Description": "Increase Dark Damage by 36 when the weapon has innate AND infused Dark Damage",
+                "Description": "Increase Dark Damage by 36 when the weapon has innate Dark Damage AND infused with Dark Damage",
                 "TargetType": "special",
                 "Target": "Dark Damage",
                 "Method": "additive",
-                "Value": 36
+                "Value": 36,
+                "SpEffect": "ModifyDamageFlatToBaseAr"
             },
             {
                 "Description": "Decrease All Physical Defense by 80",
                 "TargetType": "special",
                 "Target": "All Physical Defense",
                 "Method": "additive",
-                "Value": -80
+                "Value": -80,
+                "SpEffect": "NerfDefense"
             }
         ],
         "Weight": 2,
@@ -2314,7 +2470,8 @@
                 "TargetType": "special",
                 "Target": "Shield Stability",
                 "Method": "multiplicative",
-                "Value": 4
+                "Value": 4,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 2,
@@ -2330,7 +2487,8 @@
                 "TargetType": "special",
                 "Target": "Physical Attack Rating",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "ApplyEquipLoadbasedFlatDamageToWeapon"
             }
         ],
         "Weight": 0.2,
@@ -2346,28 +2504,32 @@
                 "TargetType": "attribute",
                 "Target": "Vigor",
                 "Method": "additive",
-                "Value": -1
+                "Value": -1,
+                "SpEffect": ""
             },
             {
                 "Description": "Decrease Endurance by 1",
                 "TargetType": "attribute",
                 "Target": "Endurance",
                 "Method": "additive",
-                "Value": -1
+                "Value": -1,
+                "SpEffect": ""
             },
             {
                 "Description": "Decrease Vitality by 1",
                 "TargetType": "attribute",
                 "Target": "Vitality",
                 "Method": "additive",
-                "Value": -1
+                "Value": -1,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Incoming Damage Rate by 8.5%",
                 "TargetType": "special",
                 "Target": "Incoming Damage Rate",
                 "Method": "multiplicative",
-                "Value": 0.085
+                "Value": 0.085,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 2,
@@ -2383,7 +2545,8 @@
                 "TargetType": "special",
                 "Target": "Phantom Color",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "SetStateInfo"
             }
         ],
         "Weight": 0.2,
@@ -2399,14 +2562,16 @@
                 "TargetType": "special",
                 "Target": "Spell Deflection Chance",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "AddSpellDeflectChance"
             },
             {
                 "Description": "Enables spell deflection for shield parries",
                 "TargetType": "special",
                 "Target": "Shiled Parry Spell Deflection",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "AddSpellDeflectChance"
             }
         ],
         "Weight": 0.5,
@@ -2422,7 +2587,8 @@
                 "TargetType": "special",
                 "Target": "Soul Absorption",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "SetStateInfo"
             }
         ],
         "Weight": 0.2,

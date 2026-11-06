@@ -1,5 +1,6 @@
 import {
     AttributeToStatMap,
+    BaseStats,
     Chestpieces,
     Classes,
     Covenants,
@@ -9,6 +10,7 @@ import {
     PlayerLevelUpSouls,
     Rings,
     Spells,
+    StatCalculationDetails,
     Weapons,
 } from "@/lib/gameData";
 
@@ -164,5 +166,10 @@ describe("gameData", () => {
         expect(Weapons.length).toBe(327);
         expect(Weapons[0].Name).toBe("Fists");
         expect(Weapons[1].Name).toBe("Fist (Vanquisher's Seal)");
+    });
+
+    it("loads stat data", () => {
+        expect(BaseStats).not.toBeNull();
+        expect(StatCalculationDetails).not.toBeNull();
     });
 });

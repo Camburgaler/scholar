@@ -6,6 +6,7 @@ import Infusion from "@/lib/interfaces/infusion";
 import Modifier from "@/lib/interfaces/modifier";
 import { Scaling, ScalingFactors } from "@/lib/interfaces/scaling";
 import Weapon from "@/lib/interfaces/weapon";
+import { ringsActiveEffects } from "@/lib/scripts/equippedRings";
 import { reinforcedValue } from "@/lib/scripts/slopeIntercept";
 import { calculateStatDisplayValue } from "@/lib/scripts/statCalculation";
 import AttackPowerTypeMap, {
@@ -162,6 +163,11 @@ class EquippedWeapon {
             Curse: 0,
         };
         const scales: ScalingFactors = this.scaling;
+        const activeEffects = [
+            ...ringsActiveEffects(equippedRings),
+            ...equippedArmor.activeEffects(),
+            ...equippedWeapons.activeEffects(),
+        ];
 
         // Physical
         if (baseDamage.Physical) {
@@ -192,6 +198,15 @@ class EquippedWeapon {
                         equippedWeapons,
                     ) * scales.PhysicalByEnchant;
             }
+            activeEffects.forEach((effect) => {
+                if (effect.TargetType === "special") {
+                    switch (
+                        effect.SpEffect
+                        // TODO: Handle special effects that scale physical damage
+                    ) {
+                    }
+                }
+            });
         }
 
         // Magic

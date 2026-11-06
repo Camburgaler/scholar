@@ -943,7 +943,8 @@
                 "TargetType": "attribute",
                 "Target": "Intelligence",
                 "Method": "additive",
-                "Value": 2
+                "Value": 2,
+                "SpEffect": ""
             }
         ],
         "Weight": 2.2,
@@ -1311,7 +1312,8 @@
                 "TargetType": "stat",
                 "Target": "Max Equip Load",
                 "Method": "multiplicative",
-                "Value": 0.01
+                "Value": 0.01,
+                "SpEffect": ""
             }
         ],
         "Weight": 1.2,
@@ -1607,21 +1609,24 @@
                 "TargetType": "special",
                 "Target": "Bow Range",
                 "Method": "additive",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "ModifyBulletParam"
             },
             {
                 "Description": "Increase Greatbow Range by 5.0%",
                 "TargetType": "special",
                 "Target": "Greatbow Range",
                 "Method": "additive",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "ModifyBulletParam"
             },
             {
                 "Description": "Increase Crossbow Range by 5.0%",
                 "TargetType": "special",
                 "Target": "Crossbow Range",
                 "Method": "additive",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "ModifyBulletParam"
             }
         ],
         "Weight": 2.6,
@@ -1701,7 +1706,8 @@
                 "TargetType": "attribute",
                 "Target": "Intelligence",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.8,
@@ -1997,7 +2003,8 @@
                 "TargetType": "stat",
                 "Target": "Attunement Slots",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             }
         ],
         "Weight": 1.5,
@@ -2077,42 +2084,48 @@
                 "TargetType": "stat",
                 "Target": "Max HP",
                 "Method": "multiplicative",
-                "Value": -0.1
+                "Value": -0.1,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Sorcery Power by 3.0%",
                 "TargetType": "special",
                 "Target": "Sorcery Power",
                 "Method": "multiplicative",
-                "Value": 0.03
+                "Value": 0.03,
+                "SpEffect": "ModifyStatMultiplicatively"
             },
             {
                 "Description": "Increase Miracle Power by 3.0%",
                 "TargetType": "special",
                 "Target": "Miracle Power",
                 "Method": "multiplicative",
-                "Value": 0.03
+                "Value": 0.03,
+                "SpEffect": "ModifyStatMultiplicatively"
             },
             {
                 "Description": "Increase Pyromancy Power by 3.0%",
                 "TargetType": "special",
                 "Target": "Pyromancy Power",
                 "Method": "multiplicative",
-                "Value": 0.03
+                "Value": 0.03,
+                "SpEffect": "ModifyStatMultiplicatively"
             },
             {
                 "Description": "Increase Hex Power Staff by 3.0%",
                 "TargetType": "special",
                 "Target": "Hex Power Staff",
                 "Method": "multiplicative",
-                "Value": 0.03
+                "Value": 0.03,
+                "SpEffect": "ModifyStatMultiplicatively"
             },
             {
                 "Description": "Increase Hex Power Chime by 3.0%",
                 "TargetType": "special",
                 "Target": "Hex Power Chime",
                 "Method": "multiplicative",
-                "Value": 0.03
+                "Value": 0.03,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 0.5,
@@ -2264,7 +2277,8 @@
                 "TargetType": "special",
                 "Target": "Spell Effect Length",
                 "Method": "multiplicative",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "ModifySpellEffectLength"
             }
         ],
         "Weight": 0.9,
@@ -2488,49 +2502,56 @@
                 "TargetType": "attribute",
                 "Target": "Vitality",
                 "Method": "additive",
-                "Value": -1
+                "Value": -1,
+                "SpEffect": ""
             },
             {
                 "Description": "Decrease Vigor by 1",
                 "TargetType": "attribute",
                 "Target": "Vigor",
                 "Method": "additive",
-                "Value": -1
+                "Value": -1,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Endurance by 1",
                 "TargetType": "attribute",
                 "Target": "Endurance",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Strength by 1",
                 "TargetType": "attribute",
                 "Target": "Strength",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Dexterity by 1",
                 "TargetType": "attribute",
                 "Target": "Dexterity",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Intelligence by 1",
                 "TargetType": "attribute",
                 "Target": "Intelligence",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Faith by 1",
                 "TargetType": "attribute",
                 "Target": "Faith",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             }
         ],
         "Weight": 4,
@@ -2610,21 +2631,24 @@
                 "TargetType": "special",
                 "Target": "Headshot Damage",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "SetStateInfo"
             },
             {
                 "Description": "Increase Miracle Power by 1.5%",
                 "TargetType": "special",
                 "Target": "Miracle Power",
                 "Method": "multiplicative",
-                "Value": 0.015
+                "Value": 0.015,
+                "SpEffect": "ModifyStatMultiplicatively"
             },
             {
                 "Description": "Increase Hex Power Chime by 1.5%",
                 "TargetType": "special",
                 "Target": "Hex Power Chime",
                 "Method": "multiplicative",
-                "Value": 0.015
+                "Value": 0.015,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 6,
@@ -2776,7 +2800,8 @@
                 "TargetType": "special",
                 "Target": "Soak",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "ModifyProperty"
             }
         ],
         "Weight": 4.3,
@@ -2928,7 +2953,8 @@
                 "TargetType": "special",
                 "Target": "Soul Gain Rate",
                 "Method": "multiplicative",
-                "Value": 0.025
+                "Value": 0.025,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 8,
@@ -3296,7 +3322,8 @@
                 "TargetType": "attribute",
                 "Target": "Faith",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             }
         ],
         "Weight": 1.4,
@@ -3376,7 +3403,8 @@
                 "TargetType": "attribute",
                 "Target": "Faith",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             }
         ],
         "Weight": 1.2,
@@ -3672,7 +3700,8 @@
                 "TargetType": "attribute",
                 "Target": "Intelligence",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             }
         ],
         "Weight": 1.9,
@@ -3752,7 +3781,8 @@
                 "TargetType": "attribute",
                 "Target": "Intelligence",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             }
         ],
         "Weight": 1.8,
@@ -4192,7 +4222,8 @@
                 "TargetType": "attribute",
                 "Target": "Intelligence",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             }
         ],
         "Weight": 5.4,
@@ -4488,14 +4519,16 @@
                 "TargetType": "attribute",
                 "Target": "Intelligence",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Faith by 1",
                 "TargetType": "attribute",
                 "Target": "Faith",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             }
         ],
         "Weight": 3.8,
@@ -4575,14 +4608,16 @@
                 "TargetType": "special",
                 "Target": "Soul Gain Rate",
                 "Method": "multiplicative",
-                "Value": 0.025
+                "Value": 0.025,
+                "SpEffect": "ModifyStatMultiplicatively"
             },
             {
                 "Description": "Increase Intelligence by 2",
                 "TargetType": "attribute",
                 "Target": "Intelligence",
                 "Method": "additive",
-                "Value": 2
+                "Value": 2,
+                "SpEffect": ""
             }
         ],
         "Weight": 4.8,
@@ -4662,7 +4697,8 @@
                 "TargetType": "special",
                 "Target": "Soul Gain Rate",
                 "Method": "multiplicative",
-                "Value": 0.025
+                "Value": 0.025,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 1.4,
@@ -4742,14 +4778,16 @@
                 "TargetType": "attribute",
                 "Target": "Faith",
                 "Method": "additive",
-                "Value": 2
+                "Value": 2,
+                "SpEffect": ""
             },
             {
                 "Description": "Decrease Intelligence by 1",
                 "TargetType": "attribute",
                 "Target": "Intelligence",
                 "Method": "additive",
-                "Value": -1
+                "Value": -1,
+                "SpEffect": ""
             }
         ],
         "Weight": 1.3,
@@ -4829,7 +4867,8 @@
                 "TargetType": "special",
                 "Target": "Headshot Stagger",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "SetStateInfo"
             }
         ],
         "Weight": 6.3,
@@ -4909,7 +4948,8 @@
                 "TargetType": "special",
                 "Target": "Headshot Stagger",
                 "Method": "toggle",
-                "Value": 0
+                "Value": 0,
+                "SpEffect": "SetStateInfo"
             }
         ],
         "Weight": 6.3,
@@ -5565,7 +5605,8 @@
                 "TargetType": "attribute",
                 "Target": "Vitality",
                 "Method": "additive",
-                "Value": 2
+                "Value": 2,
+                "SpEffect": ""
             }
         ],
         "Weight": 6.8,
@@ -5645,7 +5686,8 @@
                 "TargetType": "special",
                 "Target": "Fall Damage Protection Modifier",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": "ModifyStatAdditively"
             }
         ],
         "Weight": 0.5,
@@ -6013,7 +6055,8 @@
                 "TargetType": "attribute",
                 "Target": "Intelligence",
                 "Method": "additive",
-                "Value": 3
+                "Value": 3,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.6,
@@ -6165,14 +6208,16 @@
                 "TargetType": "attribute",
                 "Target": "Intelligence",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Faith by 1",
                 "TargetType": "attribute",
                 "Target": "Faith",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             }
         ],
         "Weight": 2,
@@ -6540,14 +6585,16 @@
                 "TargetType": "attribute",
                 "Target": "Endurance",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Vitality by 1",
                 "TargetType": "attribute",
                 "Target": "Vitality",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             }
         ],
         "Weight": 7.5,
@@ -6699,7 +6746,8 @@
                 "TargetType": "attribute",
                 "Target": "Faith",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             }
         ],
         "Weight": 7,
@@ -6779,14 +6827,16 @@
                 "TargetType": "attribute",
                 "Target": "Intelligence",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Faith by 1",
                 "TargetType": "attribute",
                 "Target": "Faith",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             }
         ],
         "Weight": 1,
@@ -6866,7 +6916,8 @@
                 "TargetType": "attribute",
                 "Target": "Faith",
                 "Method": "additive",
-                "Value": 2
+                "Value": 2,
+                "SpEffect": ""
             }
         ],
         "Weight": 4.8,
@@ -7090,14 +7141,16 @@
                 "TargetType": "attribute",
                 "Target": "Intelligence",
                 "Method": "additive",
-                "Value": 3
+                "Value": 3,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Faith by 3",
                 "TargetType": "attribute",
                 "Target": "Faith",
                 "Method": "additive",
-                "Value": 3
+                "Value": 3,
+                "SpEffect": ""
             }
         ],
         "Weight": 3.8,
@@ -7321,7 +7374,8 @@
                 "TargetType": "stat",
                 "Target": "Max Equip Load",
                 "Method": "multiplicative",
-                "Value": 0.03
+                "Value": 0.03,
+                "SpEffect": ""
             }
         ],
         "Weight": 5.1,
@@ -8409,14 +8463,16 @@
                 "TargetType": "attribute",
                 "Target": "Dexterity",
                 "Method": "additive",
-                "Value": 2
+                "Value": 2,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Endurance by 1",
                 "TargetType": "attribute",
                 "Target": "Endurance",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             }
         ],
         "Weight": 3,
@@ -8712,7 +8768,8 @@
                 "TargetType": "attribute",
                 "Target": "Adaptability",
                 "Method": "additive",
-                "Value": 2
+                "Value": 2,
+                "SpEffect": ""
             }
         ],
         "Weight": 5,
@@ -8792,21 +8849,24 @@
                 "TargetType": "attribute",
                 "Target": "Intelligence",
                 "Method": "additive",
-                "Value": 2
+                "Value": 2,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Faith by 2",
                 "TargetType": "attribute",
                 "Target": "Faith",
                 "Method": "additive",
-                "Value": 2
+                "Value": 2,
+                "SpEffect": ""
             },
             {
                 "Description": "Decrease Spell Cast Time by 10.0%",
                 "TargetType": "stat",
                 "Target": "Spell Cast Time",
                 "Method": "multiplicative",
-                "Value": -0.1
+                "Value": -0.1,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.9,
@@ -8886,14 +8946,16 @@
                 "TargetType": "attribute",
                 "Target": "Faith",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Max Spell Usages by 5.0%",
                 "TargetType": "stat",
                 "Target": "Max Spell Usages",
                 "Method": "multiplicative",
-                "Value": 0.05
+                "Value": 0.05,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.9,
@@ -8973,21 +9035,24 @@
                 "TargetType": "attribute",
                 "Target": "Intelligence",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Faith by 1",
                 "TargetType": "attribute",
                 "Target": "Faith",
                 "Method": "additive",
-                "Value": 1
+                "Value": 1,
+                "SpEffect": ""
             },
             {
                 "Description": "Increase Max Spell Usages by 5.0%",
                 "TargetType": "stat",
                 "Target": "Max Spell Usages",
                 "Method": "multiplicative",
-                "Value": 0.05
+                "Value": 0.05,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.9,
@@ -9067,14 +9132,16 @@
                 "TargetType": "attribute",
                 "Target": "Intelligence",
                 "Method": "additive",
-                "Value": 3
+                "Value": 3,
+                "SpEffect": ""
             },
             {
                 "Description": "Decrease Spell Cast Time by 5.0%",
                 "TargetType": "stat",
                 "Target": "Spell Cast Time",
                 "Method": "multiplicative",
-                "Value": -0.05
+                "Value": -0.05,
+                "SpEffect": ""
             }
         ],
         "Weight": 0.9,
@@ -9154,7 +9221,8 @@
                 "TargetType": "special",
                 "Target": "Soul Gain Rate",
                 "Method": "multiplicative",
-                "Value": 0.025
+                "Value": 0.025,
+                "SpEffect": "ModifyStatMultiplicatively"
             }
         ],
         "Weight": 1.5,

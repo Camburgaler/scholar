@@ -9,10 +9,11 @@
  */
 interface Modifier {
     Description: string;
-    TargetType: string;
+    TargetType: "attribute" | "stat" | "special";
     Target: string;
-    Method: string;
+    Method: "additive" | "multiplicative" | "toggle";
     Value: number;
+    SpEffect: string;
 }
 
 export default Modifier;

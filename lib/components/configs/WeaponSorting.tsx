@@ -139,6 +139,7 @@ export default function WeaponSorting() {
                 );
             }
 
+            // Only include weapons that are in the enabled categories or are fists (which are always enabled)
             return (
                 inInventory &&
                 requirementsMet &&
@@ -152,6 +153,8 @@ export default function WeaponSorting() {
             } as WeaponAttackRow;
             let max = 0;
             row.max = max;
+
+            // Remove infusions that are not enabled or don't meet the damage type filter
             const filteredInfusions = weapon.Infusions.filter((infusion) => {
                 let matchesDamageTypeFilter = requireAllEnabledDamageTypes;
 
