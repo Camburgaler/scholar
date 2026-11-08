@@ -112,14 +112,9 @@ export default function WeaponSorting() {
     // State
     const weaponData = useMemo(() => {
         const rows: WeaponAttackRow[] = [];
-        const effectiveAttributes: AttributeMap<number> = {
-            ...virtualAttributes,
-            Strength: Math.floor(
-                twoHanding
-                    ? virtualAttributes.Strength * 1.5
-                    : virtualAttributes.Strength,
-            ),
-        };
+        const requirementStrength = twoHanding
+            ? virtualAttributes.Strength * 2
+            : virtualAttributes.Strength;
         const filteredWeapons = Weapons.filter((weapon) => {
             let inInventory = true;
             let requirementsMet = true;
@@ -133,10 +128,10 @@ export default function WeaponSorting() {
 
             if (mustMeetRequirements) {
                 // Filter out weapons that don't meet the requirements
-                requirementsMet = meetsRequirements(
-                    weapon,
-                    effectiveAttributes,
-                );
+                requirementsMet = meetsRequirements(weapon, {
+                    ...virtualAttributes,
+                    Strength: requirementStrength,
+                });
             }
 
             // Only include weapons that are in the enabled categories or are fists (which are always enabled)
@@ -217,7 +212,7 @@ export default function WeaponSorting() {
                 // Calculate the total damage
                 const totalDamage = infusedWeapon.totalDamage(
                     equippedWeapons,
-                    effectiveAttributes,
+                    virtualAttributes,
                     equippedArmorSet,
                     equippedRings,
                 );

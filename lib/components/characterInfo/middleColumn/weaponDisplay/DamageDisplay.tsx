@@ -1,5 +1,4 @@
 import { WeaponEquipSlot } from "@/lib/classes/weaponSlots";
-import { useTwoHanding } from "@/lib/reducers/attributes/twoHanding";
 import { useVirtualAttributes } from "@/lib/reducers/attributes/virtualAttributes";
 import { useEquippedArmorSet } from "@/lib/reducers/equipment/equippedArmorSet";
 import { useEquippedRings } from "@/lib/reducers/equipment/equippedRings";
@@ -17,7 +16,6 @@ export default function DamageDisplay(props: { slot: WeaponEquipSlot }) {
     const virtualAttributes = useVirtualAttributes();
     const equippedArmor = useEquippedArmorSet();
     const equippedRings = useEquippedRings();
-    const twoHanding = useTwoHanding();
 
     // Constants
     const isRightHand =
@@ -28,9 +26,6 @@ export default function DamageDisplay(props: { slot: WeaponEquipSlot }) {
     // Effects
     const damage = useMemo(() => {
         const attributes: AttributeMap<number> = { ...virtualAttributes };
-        if (twoHanding) {
-            attributes.Strength = Math.floor(attributes.Strength * 1.5);
-        }
 
         return equippedWeapons
             .getWeapon(slot)
@@ -45,7 +40,6 @@ export default function DamageDisplay(props: { slot: WeaponEquipSlot }) {
         virtualAttributes,
         equippedArmor,
         equippedRings,
-        twoHanding,
         slot,
     ]);
 

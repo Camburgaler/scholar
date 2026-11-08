@@ -1,6 +1,5 @@
 import EquippedWeapon from "@/lib/classes/equippedWeapon";
 import Infusion from "@/lib/interfaces/infusion";
-import { useTwoHanding } from "@/lib/reducers/attributes/twoHanding";
 import { useVirtualAttributes } from "@/lib/reducers/attributes/virtualAttributes";
 import { useWikiTarget, WikiTarget } from "@/lib/reducers/configs/wikiTarget";
 import { useEquippedArmorSet } from "@/lib/reducers/equipment/equippedArmorSet";
@@ -164,7 +163,6 @@ function WeaponTooltipContent({
     const equippedRings = useEquippedRings();
     const equippedWeapons = useEquippedWeapons();
     const setEquippedWeapons = useEquippedWeaponsDispatch();
-    const twoHanding = useTwoHanding();
     const wikiTarget = useWikiTarget();
 
     // Constants
@@ -174,9 +172,6 @@ function WeaponTooltipContent({
     const baseDamage: AttackPowerTypeMap<number> = equippedWeapon.baseDamage();
 
     const attributes: AttributeMap<number> = { ...virtualAttributes };
-    if (twoHanding) {
-        attributes.Strength = Math.floor(attributes.Strength * 1.5);
-    }
 
     const scalingDamage: AttackPowerTypeMap<number> =
         equippedWeapon.scalingDamage(

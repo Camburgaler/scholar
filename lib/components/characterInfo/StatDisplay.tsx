@@ -1,6 +1,5 @@
 import { AttributeToStatMap } from "@/lib/gameData";
 import { useFocusedAttribute } from "@/lib/reducers/attributes/focusedAttribute";
-import { useTwoHanding } from "@/lib/reducers/attributes/twoHanding";
 import { useVirtualAttributes } from "@/lib/reducers/attributes/virtualAttributes";
 import { useEquippedArmorSet } from "@/lib/reducers/equipment/equippedArmorSet";
 import { useEquippedRings } from "@/lib/reducers/equipment/equippedRings";
@@ -114,7 +113,6 @@ export default function StatDisplay(props: {
     const equippedArmorSet = useEquippedArmorSet();
     const equippedRings = useEquippedRings();
     const equippedWeapons = useEquippedWeapons();
-    const twoHanding = useTwoHanding();
 
     // Constants
     const statMapKey = mapDisplayKeyToStatMapKey(statDisplayKey);
@@ -145,9 +143,6 @@ export default function StatDisplay(props: {
     // updates the display value
     const displayValue = useMemo(() => {
         const attributes: AttributeMap<number> = { ...virtualAttributes };
-        if (twoHanding && statDisplayKey === "PhysicalAttackPowerByStrength") {
-            attributes.Strength = Math.floor(attributes.Strength * 1.5);
-        }
 
         let displayValue = calculateStatDisplayValue(
             statDisplayKey,
@@ -167,7 +162,6 @@ export default function StatDisplay(props: {
         equippedArmorSet,
         equippedRings,
         equippedWeapons,
-        twoHanding,
         statDisplayKey,
     ]);
 
