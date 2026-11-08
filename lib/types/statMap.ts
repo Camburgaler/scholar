@@ -80,7 +80,7 @@ export const StatMapKeyToStatNameMap: Map<StatMapKey, string> = new Map<
     // Middle Column
     ["MaximumHP", "Maximum HP"],
     ["MaximumStamina", "Maximum Stamina"],
-    ["MaximumEquipLoad", "Equip Load"],
+    ["MaximumEquipLoad", "Maximum Equip Load"],
     ["Poise", "Poise"],
     ["SpellSlotCount", "Attunement Slots"],
 

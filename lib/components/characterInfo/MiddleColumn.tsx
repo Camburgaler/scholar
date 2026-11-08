@@ -61,25 +61,19 @@ export default function MiddleColumn() {
         );
     }, [equippedArmor, equippedRings, equippedWeapons]);
 
-    const equipLoadPercent = useMemo(() => {
-        return (
-            (equipLoad /
-                calculateStatDisplayValue(
-                    "MaximumStamina",
-                    virtualAttributes,
-                    equippedArmor,
-                    equippedRings,
-                    equippedWeapons,
-                )) *
-            100
+    const maximumEquipLoad = useMemo(() => {
+        return calculateStatDisplayValue(
+            "MaximumEquipLoad",
+            virtualAttributes,
+            equippedArmor,
+            equippedRings,
+            equippedWeapons,
         );
-    }, [
-        equipLoad,
-        virtualAttributes,
-        equippedArmor,
-        equippedRings,
-        equippedWeapons,
-    ]);
+    }, [virtualAttributes, equippedArmor, equippedRings, equippedWeapons]);
+
+    const equipLoadPercent = useMemo(() => {
+        return (equipLoad / maximumEquipLoad) * 100;
+    }, [equipLoad, maximumEquipLoad]);
 
     const staminaRegen = useMemo(() => {
         const lowEquipLoadSlopeIntercept = { Slope: -0.13, Intercept: 51.9 }; // From 0% to 30%
@@ -88,6 +82,7 @@ export default function MiddleColumn() {
             Intercept: 58.725,
         }; // From 30% to 70%
         const highEquipLoadSlopeIntercept = { Slope: -0.258, Intercept: 51.76 }; // From 70% to 120%
+        let regen = 20.8;
 
         // Stamina regen decreases (mostly) linearly with equip load percentage.
         // At 0% equip load, the regen is at its maximum.
@@ -95,23 +90,23 @@ export default function MiddleColumn() {
         // Regen decreases linearly from 48.0 at 30% to 33.7 at 70%
         // Regen decreases linearly from 33.7 at 70% to 20.8 at 120%
         if (equipLoadPercent <= 30) {
-            return reinforcedValue(
+            regen = reinforcedValue(
                 lowEquipLoadSlopeIntercept,
                 equipLoadPercent,
             );
         } else if (equipLoadPercent <= 70) {
-            return reinforcedValue(
+            regen = reinforcedValue(
                 midEquipLoadSlopeIntercept,
                 equipLoadPercent,
             );
         } else if (equipLoadPercent <= 120) {
-            return reinforcedValue(
+            regen = reinforcedValue(
                 highEquipLoadSlopeIntercept,
                 equipLoadPercent,
             );
-        } else {
-            return 20.8;
         }
+
+        return regen;
     }, [equipLoadPercent]);
 
     return (
@@ -143,7 +138,15 @@ export default function MiddleColumn() {
                     </label>
                     <p
                         className="flex items-center justify-end w-full h-full"
-                        style={{ border: "none" }}
+                        style={{
+                            border: "none",
+                            color:
+                                equipLoadPercent > 70
+                                    ? "red"
+                                    : equipLoadPercent > 30
+                                      ? "yellow"
+                                      : "var(--contrast)",
+                        }}
                     >
                         Regen: {staminaRegen.toFixed(1)}/s
                     </p>
@@ -175,35 +178,33 @@ export default function MiddleColumn() {
                     id={"MaximumEquipLoad"}
                 >
                     <label
-                        className="flex items-center justify-center h-full"
+                        className="flex items-center justify-start h-full min-w-40"
                         htmlFor={"MaximumEquipLoad"}
                     >
                         {StatMapKeyToStatNameMap.get("MaximumEquipLoad")}:
                     </label>
-                    <div className="flex flex-col items-end justify-end">
-                        <input
-                            className="flex text-right max-w-30 h-full"
-                            style={{ border: "none" }}
-                            id="equip-load"
-                            type="text"
-                            disabled
-                            value={`${equipLoad.toFixed(1)}/${calculateStatDisplayValue("MaximumEquipLoad", virtualAttributes, equippedArmor, equippedRings, equippedWeapons).toFixed(1)}`}
-                        />
-                        <input
-                            className="flex text-right max"
-                            disabled
-                            style={{
-                                border: "none",
-                                color:
-                                    equipLoadPercent > 100
-                                        ? "red"
-                                        : equipLoadPercent > 70
-                                          ? "yellow"
-                                          : "var(--contrast)",
-                            }}
-                            value={`${equipLoadPercent.toFixed(1)}%`}
-                        />
-                    </div>
+                    <p
+                        className="flex text-right justify-end items-center w-full h-full"
+                        style={{
+                            border: "none",
+                            color:
+                                equipLoadPercent > 100
+                                    ? "red"
+                                    : equipLoadPercent > 70
+                                      ? "yellow"
+                                      : "var(--contrast)",
+                        }}
+                    >
+                        Current: {equipLoad.toFixed(1)} (
+                        {equipLoadPercent.toFixed(1)}%)
+                    </p>
+                    <input
+                        className="flex text-right h-full max-w-15"
+                        id="equip-load"
+                        type="text"
+                        disabled
+                        value={maximumEquipLoad.toFixed(1)}
+                    />
                 </div>
 
                 {/* Poise */}
