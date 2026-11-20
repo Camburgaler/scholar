@@ -117,25 +117,25 @@ describe("gameData", () => {
         it("loads helmet data", () => {
             expect(Helmets).not.toBeNull();
             expect(Helmets.length).toBe(122);
-            expect(Helmets[0].Name).toBe("No Armor");
+            expect(Helmets[0].Name).toBe("No Helmet");
         });
 
         it("loads chestpiece data", () => {
             expect(Chestpieces).not.toBeNull();
             expect(Chestpieces.length).toBe(111);
-            expect(Chestpieces[0].Name).toBe("No Armor");
+            expect(Chestpieces[0].Name).toBe("No Chestpiece");
         });
 
         it("loads gauntlets data", () => {
             expect(Gauntlets).not.toBeNull();
             expect(Gauntlets.length).toBe(103);
-            expect(Gauntlets[0].Name).toBe("No Armor");
+            expect(Gauntlets[0].Name).toBe("No Gauntlets");
         });
 
         it("loads leggings data", () => {
             expect(Leggings).not.toBeNull();
             expect(Leggings.length).toBe(103);
-            expect(Leggings[0].Name).toBe("No Armor");
+            expect(Leggings[0].Name).toBe("No Leggings");
         });
     });
 

@@ -29,29 +29,29 @@ export const Classes: Class[] = classes;
 // Helmets is a list of helmet armor
 export const Helmets: Armor[] = helmets.sort((a, b) =>
     // Sort by name
-    // "No Armor" is always first
-    b.Name === "No Armor" ? 1 : a.Name.localeCompare(b.Name),
+    // "No Helmet" is always first
+    b.Name === "No Helmet" ? 1 : a.Name.localeCompare(b.Name),
 ) as Armor[];
 
 // Chestpieces is a list of chestpiece armor
 export const Chestpieces: Armor[] = chestpieces.sort((a, b) =>
     // Sort by name
-    // "No Armor" is always first
-    b.Name === "No Armor" ? 1 : a.Name.localeCompare(b.Name),
+    // "No Chestpiece" is always first
+    b.Name === "No Chestpiece" ? 1 : a.Name.localeCompare(b.Name),
 ) as Armor[];
 
 // Gauntlets is a list of gauntlet armor
 export const Gauntlets: Armor[] = gauntlets.sort((a, b) =>
     // Sort by name
-    // "No Armor" is always first
-    b.Name === "No Armor" ? 1 : a.Name.localeCompare(b.Name),
+    // "No Gauntlets" is always first
+    b.Name === "No Gauntlets" ? 1 : a.Name.localeCompare(b.Name),
 ) as Armor[];
 
 // Leggings is a list of leggings armor
 export const Leggings: Armor[] = leggings.sort((a, b) =>
     // Sort by name
-    // "No Armor" is always first
-    b.Name === "No Armor" ? 1 : a.Name.localeCompare(b.Name),
+    // "No Leggings" is always first
+    b.Name === "No Leggings" ? 1 : a.Name.localeCompare(b.Name),
 ) as Armor[];
 
 // PlayerLevelUpSouls is a list of the souls required to level up at each level
