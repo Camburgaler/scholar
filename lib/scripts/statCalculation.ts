@@ -1,11 +1,6 @@
 import ArmorSet from "@/lib/classes/armorSet";
 import WeaponSlots from "@/lib/classes/weaponSlots";
 import {
-    mapDisplayKeyToArmorDefenseField,
-    mapDisplayKeyToStatMapKey,
-    StatDisplayKey,
-} from "@/lib/components/characterInfo/StatDisplay";
-import {
     AttributeToStatMap,
     BaseStats,
     StatCalculationDetails,
@@ -14,6 +9,11 @@ import EquippedRings from "@/lib/interfaces/equippedRings";
 import { ringsActiveEffects } from "@/lib/scripts/equippedRings";
 import AttributeMap, { AttributeMapKey } from "@/lib/types/attributeMap";
 import { ResistanceMapKey } from "@/lib/types/resistanceMap";
+import {
+    mapDisplayKeyToArmorDefenseField,
+    mapDisplayKeyToStatMapKey,
+    StatDisplayKey,
+} from "@/lib/types/statDisplayKey";
 import {
     ModifierTargetToStatMapKey,
     StatIsDefenseOrResistance,
@@ -1013,7 +1013,7 @@ export function calculateStatDisplayValue(
 
     // Add active effects
     [
-        ...equippedArmor.activeEffects(),
+        ...equippedArmor.activeEffects,
         ...ringsActiveEffects(equippedRings),
         ...equippedWeapons.activeEffects(),
     ]
@@ -1060,7 +1060,7 @@ export function calculateStatDisplayValue(
 
     // Add armor poise
     if (statMapKey === "Poise") {
-        additiveModifier += equippedArmor.poise();
+        additiveModifier += equippedArmor.poise;
     }
 
     if (statMapKey === "SpellCastingSpeed") {
