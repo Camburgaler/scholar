@@ -26,7 +26,7 @@ class ArmorSet {
      * @member {@link EquippedArmor} helmet - The helmet equipped in the armor set.
      */
     public helmet: EquippedArmor = {
-        data: Helmets[0],
+        data: structuredClone(Helmets[0]),
         reinforcementLevel: 0,
     };
 
@@ -34,7 +34,7 @@ class ArmorSet {
      * @member {@link EquippedArmor} chestpiece - The chestpiece equipped in the armor set.
      */
     public chestpiece: EquippedArmor = {
-        data: Chestpieces[0],
+        data: structuredClone(Chestpieces[0]),
         reinforcementLevel: 0,
     };
 
@@ -42,7 +42,7 @@ class ArmorSet {
      * @member {@link EquippedArmor} gauntlets - The gauntlets equipped in the armor set.
      */
     public gauntlets: EquippedArmor = {
-        data: Gauntlets[0],
+        data: structuredClone(Gauntlets[0]),
         reinforcementLevel: 0,
     };
 
@@ -50,7 +50,7 @@ class ArmorSet {
      * @member {@link EquippedArmor} leggings - The leggings equipped in the armor set.
      */
     public leggings: EquippedArmor = {
-        data: Leggings[0],
+        data: structuredClone(Leggings[0]),
         reinforcementLevel: 0,
     };
 
@@ -86,10 +86,10 @@ class ArmorSet {
         leggings: EquippedArmor,
     ): ArmorSet {
         const newArmorSet = new ArmorSet();
-        newArmorSet.helmet = helmet;
-        newArmorSet.chestpiece = chestpiece;
-        newArmorSet.gauntlets = gauntlets;
-        newArmorSet.leggings = leggings;
+        newArmorSet.helmet = structuredClone(helmet);
+        newArmorSet.chestpiece = structuredClone(chestpiece);
+        newArmorSet.gauntlets = structuredClone(gauntlets);
+        newArmorSet.leggings = structuredClone(leggings);
         return newArmorSet;
     }
 
@@ -110,10 +110,10 @@ class ArmorSet {
         leggings: Armor,
     ): ArmorSet {
         const newArmorSet = new ArmorSet();
-        newArmorSet.helmet.data = helmet;
-        newArmorSet.chestpiece.data = chestpiece;
-        newArmorSet.gauntlets.data = gauntlets;
-        newArmorSet.leggings.data = leggings;
+        newArmorSet.helmet.data = structuredClone(helmet);
+        newArmorSet.chestpiece.data = structuredClone(chestpiece);
+        newArmorSet.gauntlets.data = structuredClone(gauntlets);
+        newArmorSet.leggings.data = structuredClone(leggings);
         return newArmorSet;
     }
 
@@ -128,12 +128,14 @@ class ArmorSet {
     public getArmor(slot: ArmorSetKey): EquippedArmor {
         if (this[slot] === undefined || this[slot] === null) {
             // panic out
-            throw new Error(`ArmorSet slot ${slot} is undefined`);
+            throw new Error(`ArmorSet slot '${slot}' is undefined`);
         }
 
         if (typeof this[slot] !== "object") {
             // panic out
-            throw new Error(`ArmorSet slot ${slot} is not an object`);
+            throw new Error(
+                `ArmorSet slot '${slot}' is not an object. Type: ${typeof this[slot]}, Value: ${this[slot]}`,
+            );
         }
 
         return this[slot];
@@ -146,9 +148,16 @@ class ArmorSet {
      * @param value The {@link EquippedArmor} to which the field should be set.
      */
     public setArmor(field: keyof ArmorSet, value: EquippedArmor) {
-        if (typeof this[field] !== "object") {
-            // panic out
-            throw new Error(`ArmorSet field ${field} is not a member`);
+        if (value === undefined || value === null) {
+            throw new Error(
+                `Cannot set ArmorSet slot '${field}' to undefined or null`,
+            );
+        }
+
+        if (typeof value !== "object") {
+            throw new Error(
+                `Cannot set ArmorSet slot '${field}' to a non-EquippedArmor object`,
+            );
         }
 
         this[field as ArmorSetKey] = value;
@@ -160,19 +169,10 @@ class ArmorSet {
      * @param armorSet The {@link ArmorSet} from which to copy.
      */
     public copyFrom(armorSet: ArmorSet) {
-        this.helmet.data = armorSet.helmet.data;
-        this.helmet.reinforcementLevel = armorSet.helmet.reinforcementLevel;
-
-        this.chestpiece.data = armorSet.chestpiece.data;
-        this.chestpiece.reinforcementLevel =
-            armorSet.chestpiece.reinforcementLevel;
-
-        this.gauntlets.data = armorSet.gauntlets.data;
-        this.gauntlets.reinforcementLevel =
-            armorSet.gauntlets.reinforcementLevel;
-
-        this.leggings.data = armorSet.leggings.data;
-        this.leggings.reinforcementLevel = armorSet.leggings.reinforcementLevel;
+        this.helmet = structuredClone(armorSet.helmet);
+        this.chestpiece = structuredClone(armorSet.chestpiece);
+        this.gauntlets = structuredClone(armorSet.gauntlets);
+        this.leggings = structuredClone(armorSet.leggings);
     }
 
     // PUBLIC METHODS
@@ -192,63 +192,11 @@ class ArmorSet {
     }
 
     /**
-     * @description Sums the defense values of an armor set for a given defense field.
-     * @param defenseField The defense field to sum the values for. {@link DefenseMapKey}.
-     * @returns The sum of the defense values for the given field.
-     */
-    public defense(defenseField: DefenseMapKey): number {
-        const helmetDefense = this.helmet.data.Defenses[defenseField];
-        const helmetReinforcementLevel = this.helmet.reinforcementLevel;
-        const chestpieceDefense = this.chestpiece.data.Defenses[defenseField];
-        const chestpieceReinforcementLevel = this.chestpiece.reinforcementLevel;
-        const gauntletsDefense = this.gauntlets.data.Defenses[defenseField];
-        const gauntletsReinforcementLevel = this.gauntlets.reinforcementLevel;
-        const leggingsDefense = this.leggings.data.Defenses[defenseField];
-        const leggingsReinforcementLevel = this.leggings.reinforcementLevel;
-
-        return (
-            reinforcedValue(helmetDefense, helmetReinforcementLevel) +
-            reinforcedValue(chestpieceDefense, chestpieceReinforcementLevel) +
-            reinforcedValue(gauntletsDefense, gauntletsReinforcementLevel) +
-            reinforcedValue(leggingsDefense, leggingsReinforcementLevel)
-        );
-    }
-
-    /**
-     * @description Sums the resistance values of an armor set for a given resistance field.
-     * @param resistanceField The resistance field to sum the values for. {@link ResistanceMapKey}.
-     * @returns The sum of the resistance values for the given field.
-     */
-    public resistance(resistanceField: ResistanceMapKey): number {
-        const helmetResistance = this.helmet.data.Resistances[resistanceField];
-        const helmetReinforcementLevel = this.helmet.reinforcementLevel;
-        const chestpieceResistance =
-            this.chestpiece.data.Resistances[resistanceField];
-        const chestpieceReinforcementLevel = this.chestpiece.reinforcementLevel;
-        const gauntletsResistance =
-            this.gauntlets.data.Resistances[resistanceField];
-        const gauntletsReinforcementLevel = this.gauntlets.reinforcementLevel;
-        const leggingsResistance =
-            this.leggings.data.Resistances[resistanceField];
-        const leggingsReinforcementLevel = this.leggings.reinforcementLevel;
-
-        return (
-            reinforcedValue(helmetResistance, helmetReinforcementLevel) +
-            reinforcedValue(
-                chestpieceResistance,
-                chestpieceReinforcementLevel,
-            ) +
-            reinforcedValue(gauntletsResistance, gauntletsReinforcementLevel) +
-            reinforcedValue(leggingsResistance, leggingsReinforcementLevel)
-        );
-    }
-
-    /**
      * @method poise
      * @description Gets the total poise of the armor set.
      * @returns {number} The total poise of the armor set.
      */
-    public poise(): number {
+    public get poise(): number {
         return (
             this.helmet.data.Poise +
             this.chestpiece.data.Poise +
@@ -262,7 +210,7 @@ class ArmorSet {
      * @description Gets the total item discovery of the armor set.
      * @returns {number} The total item discovery of the armor set.
      */
-    public itemDiscovery(): number {
+    public get itemDiscovery(): number {
         return (
             this.helmet.data.ItemDiscovery +
             this.chestpiece.data.ItemDiscovery +
@@ -276,7 +224,7 @@ class ArmorSet {
      * @description Gets the ModifierDisplay components for the armor set.
      * @returns The {@link ModifierDisplay}s for the armor set.
      */
-    public getModifierDisplays() {
+    public get modifierDisplays() {
         const activeEffects = [];
         let isOddRow = true;
 
@@ -376,7 +324,7 @@ class ArmorSet {
      * @description Gets the active effects of the armor set.
      * @returns The active effects of the armor set. Array of {@link Modifier}s.
      */
-    public activeEffects(): Modifier[] {
+    public get activeEffects(): Modifier[] {
         const activeEffects: Modifier[] = [];
 
         this.helmet.data.Modifiers.forEach((modifier) => {
@@ -399,6 +347,58 @@ class ArmorSet {
     }
 
     /**
+     * @description Sums the defense values of an armor set for a given defense field.
+     * @param defenseField The defense field to sum the values for. {@link DefenseMapKey}.
+     * @returns The sum of the defense values for the given field.
+     */
+    public defense(defenseField: DefenseMapKey): number {
+        const helmetDefense = this.helmet.data.Defenses[defenseField];
+        const helmetReinforcementLevel = this.helmet.reinforcementLevel;
+        const chestpieceDefense = this.chestpiece.data.Defenses[defenseField];
+        const chestpieceReinforcementLevel = this.chestpiece.reinforcementLevel;
+        const gauntletsDefense = this.gauntlets.data.Defenses[defenseField];
+        const gauntletsReinforcementLevel = this.gauntlets.reinforcementLevel;
+        const leggingsDefense = this.leggings.data.Defenses[defenseField];
+        const leggingsReinforcementLevel = this.leggings.reinforcementLevel;
+
+        return (
+            reinforcedValue(helmetDefense, helmetReinforcementLevel) +
+            reinforcedValue(chestpieceDefense, chestpieceReinforcementLevel) +
+            reinforcedValue(gauntletsDefense, gauntletsReinforcementLevel) +
+            reinforcedValue(leggingsDefense, leggingsReinforcementLevel)
+        );
+    }
+
+    /**
+     * @description Sums the resistance values of an armor set for a given resistance field.
+     * @param resistanceField The resistance field to sum the values for. {@link ResistanceMapKey}.
+     * @returns The sum of the resistance values for the given field.
+     */
+    public resistance(resistanceField: ResistanceMapKey): number {
+        const helmetResistance = this.helmet.data.Resistances[resistanceField];
+        const helmetReinforcementLevel = this.helmet.reinforcementLevel;
+        const chestpieceResistance =
+            this.chestpiece.data.Resistances[resistanceField];
+        const chestpieceReinforcementLevel = this.chestpiece.reinforcementLevel;
+        const gauntletsResistance =
+            this.gauntlets.data.Resistances[resistanceField];
+        const gauntletsReinforcementLevel = this.gauntlets.reinforcementLevel;
+        const leggingsResistance =
+            this.leggings.data.Resistances[resistanceField];
+        const leggingsReinforcementLevel = this.leggings.reinforcementLevel;
+
+        return (
+            reinforcedValue(helmetResistance, helmetReinforcementLevel) +
+            reinforcedValue(
+                chestpieceResistance,
+                chestpieceReinforcementLevel,
+            ) +
+            reinforcedValue(gauntletsResistance, gauntletsReinforcementLevel) +
+            reinforcedValue(leggingsResistance, leggingsReinforcementLevel)
+        );
+    }
+
+    /**
      * @method attributeModifier
      * @description Gets the total attribute modifier of the armor set for a given attribute.
      * @param attribute The attribute to get the modifier for. {@link AttributeMapKey}.
@@ -407,7 +407,7 @@ class ArmorSet {
     public attributeModifier(attribute: AttributeMapKey): number {
         let modifierSum = 0;
 
-        this.activeEffects()
+        this.activeEffects
             .filter(
                 (modifier) =>
                     modifier.TargetType === "attribute" &&
@@ -541,11 +541,6 @@ class ArmorSet {
             reinforcedStrikeLeggings +
             physicalDefense * leggings.DefenseScalingPhysical
         );
-    }
-
-    public fitness(): number {
-        // TODO: Implement fitness calculation
-        return 0;
     }
 }
 

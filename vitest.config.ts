@@ -42,19 +42,19 @@ export default defineConfig({
                 },
 
                 // Per-file thresholds (enforce on critical files)
-                "lib/scripts/statCalculation.ts": {
-                    lines: 0,
-                    statements: 0,
-                },
+                // "lib/scripts/statCalculation.ts": {
+                //     lines: 0,
+                //     statements: 0,
+                // },
             },
 
             // Watermarks for colored output in reports
-            watermarks: {
-                branches: [50, 90],
-                functions: [50, 90],
-                lines: [50, 90],
-                statements: [50, 90],
-            },
+            // watermarks: {
+            //     branches: [50, 90],
+            //     functions: [50, 90],
+            //     lines: [50, 90],
+            //     statements: [50, 90],
+            // },
         },
     },
 
